@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="keymaker_8h" kind="file">
+    <compoundname>keymaker.h</compoundname>
+    <includes local="no">string</includes>
+    <includes local="no">vector</includes>
+    <includes refid="types_8h" local="no">xapian/types.h</includes>
+    <includes local="no">xapian/visibility.h</includes>
+    <includedby refid="xapian_8h" local="no">xapian.h</includedby>
+    <incdepgraph>
+      <node id="123">
+        <label>xapian/visibility.h</label>
+      </node>
+      <node id="119">
+        <label>string</label>
+      </node>
+      <node id="122">
+        <label>xapian/deprecated.h</label>
+      </node>
+      <node id="121">
+        <label>xapian/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="122" relation="include">
+        </childnode>
+      </node>
+      <node id="120">
+        <label>vector</label>
+      </node>
+      <node id="118">
+        <label>xapian/keymaker.h</label>
+        <link refid="keymaker.h"/>
+        <childnode refid="119" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+        <childnode refid="121" relation="include">
+        </childnode>
+        <childnode refid="123" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="126">
+        <label>xapian/letor.h</label>
+        <link refid="letor_8h"/>
+      </node>
+      <node id="125">
+        <label>xapian.h</label>
+        <link refid="xapian_8h"/>
+        <childnode refid="126" relation="include">
+        </childnode>
+      </node>
+      <node id="124">
+        <label>xapian/keymaker.h</label>
+        <link refid="keymaker.h"/>
+        <childnode refid="125" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classXapian_1_1KeyMaker" prot="public">Xapian::KeyMaker</innerclass>
+    <innerclass refid="classXapian_1_1MultiValueKeyMaker" prot="public">Xapian::MultiValueKeyMaker</innerclass>
+    <innernamespace refid="namespaceXapian">Xapian</innernamespace>
+    <briefdescription>
+<para>Build key strings for MSet ordering or collapsing. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/keymaker.h"/>
+  </compounddef>
+</doxygen>

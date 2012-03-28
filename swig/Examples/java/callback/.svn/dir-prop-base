@@ -1,0 +1,18 @@
+K 10
+svn:ignore
+V 99
+*.class
+*.java
+*_wrap.c
+*_wrap.cxx
+*_wrap.h
+*.dll
+*.dsw
+*.exp
+*.lib
+*.ncb
+*.opt
+*.plg
+Release
+Debug
+END

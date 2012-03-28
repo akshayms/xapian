@@ -1,0 +1,9 @@
+K 10
+svn:ignore
+V 53
+files
+*.substvars
+tmp
+xapian-omega
+xapian-scriptindex
+END

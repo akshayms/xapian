@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="classXapian_1_1DatabaseModifiedError" kind="class" prot="public">
+    <compoundname>Xapian::DatabaseModifiedError</compoundname>
+    <basecompoundref refid="classXapian_1_1DatabaseError" prot="public" virt="non-virtual">Xapian::DatabaseError</basecompoundref>
+    <includes local="no">error.h</includes>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classXapian_1_1DatabaseModifiedError_160342de1e2002ba800b4ea626d5f24a2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::DatabaseModifiedError::DatabaseModifiedError</definition>
+        <argsstring>(const std::string &amp;msg_, const std::string &amp;context_, const char *error_string_)</argsstring>
+        <name>DatabaseModifiedError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>context_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>error_string_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="432" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="431" bodyend="432"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1DatabaseModifiedError_1364c4151a63cf75904f0283d0675d483" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::DatabaseModifiedError::DatabaseModifiedError</definition>
+        <argsstring>(const std::string &amp;msg_, const std::string &amp;context_, const char *type_, const char *error_string_)</argsstring>
+        <name>DatabaseModifiedError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>context_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>type_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>error_string_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="444" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="443" bodyend="444"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1DatabaseModifiedError_1178773760019a6387102d28668544165" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::DatabaseModifiedError::DatabaseModifiedError</definition>
+        <argsstring>(const std::string &amp;msg_, const std::string &amp;context_, const char *type_, int errno_)</argsstring>
+        <name>DatabaseModifiedError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>context_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>type_</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>errno_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="450" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="449" bodyend="450"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classXapian_1_1DatabaseModifiedError_131e20e49ef29dc3191678df4baaa44c3" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::DatabaseModifiedError::DatabaseModifiedError</definition>
+        <argsstring>(const std::string &amp;msg_, const std::string &amp;context_=std::string(), int errno_=0)</argsstring>
+        <name>DatabaseModifiedError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>context_</declname>
+          <defval>std::string()</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>errno_</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>General purpose constructor which allows setting errno. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="435" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="434" bodyend="435"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1DatabaseModifiedError_199af30b8e22f7d46dd37011ce419cbad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::DatabaseModifiedError::DatabaseModifiedError</definition>
+        <argsstring>(const std::string &amp;msg_, int errno_)</argsstring>
+        <name>DatabaseModifiedError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>errno_</declname>
+        </param>
+        <briefdescription>
+<para>Construct from message and errno value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="438" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="437" bodyend="438"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classXapian_1_1DatabaseModifiedError" kindref="compound">DatabaseModifiedError</ref> indicates a database was modified. </para>    </briefdescription>
+    <detaileddescription>
+<para>To recover after catching this error, you need to call <ref refid="classXapian_1_1Database_1f316aa13ee123e2af75f4b44e1f23db9" kindref="member">Xapian::Database::reopen()</ref> on the <ref refid="classXapian_1_1Database" kindref="compound">Database</ref> and repeat the operation which failed. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="347">
+        <label>Xapian::DatabaseError</label>
+        <link refid="classXapian_1_1DatabaseError"/>
+        <childnode refid="348" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="349">
+        <label>Xapian::Error</label>
+        <link refid="classXapian_1_1Error"/>
+      </node>
+      <node id="348">
+        <label>Xapian::RuntimeError</label>
+        <link refid="classXapian_1_1RuntimeError"/>
+        <childnode refid="349" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="346">
+        <label>Xapian::DatabaseModifiedError</label>
+        <link refid="classXapian_1_1DatabaseModifiedError"/>
+        <childnode refid="347" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="351">
+        <label>Xapian::DatabaseError</label>
+        <link refid="classXapian_1_1DatabaseError"/>
+        <childnode refid="352" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="353">
+        <label>Xapian::Error</label>
+        <link refid="classXapian_1_1Error"/>
+      </node>
+      <node id="352">
+        <label>Xapian::RuntimeError</label>
+        <link refid="classXapian_1_1RuntimeError"/>
+        <childnode refid="353" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="350">
+        <label>Xapian::DatabaseModifiedError</label>
+        <link refid="classXapian_1_1DatabaseModifiedError"/>
+        <childnode refid="351" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="424" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="424" bodyend="451"/>
+    <listofallmembers>
+      <member refid="classXapian_1_1DatabaseError_19dcfefb4abfcb9bbc1cae90d28e9e021" prot="public" virt="non-virtual"><scope>Xapian::DatabaseModifiedError</scope><name>DatabaseError</name></member>
+      <member refid="classXapian_1_1DatabaseError_19ec4456656d91a738c66540e3bb7f67f" prot="public" virt="non-virtual"><scope>Xapian::DatabaseModifiedError</scope><name>DatabaseError</name></member>
+      <member refid="classXapian_1_1DatabaseModifiedError_160342de1e2002ba800b4ea626d5f24a2" prot="private" virt="non-virtual"><scope>Xapian::DatabaseModifiedError</scope><name>DatabaseModifiedError</name></member>
+      <member refid="classXapian_1_1DatabaseModifiedError_131e20e49ef29dc3191678df4baaa44c3" prot="public" virt="non-virtual"><scope>Xapian::DatabaseModifiedError</scope><name>DatabaseModifiedError</name></member>
+      <member refid="classXapian_1_1DatabaseModifiedError_199af30b8e22f7d46dd37011ce419cbad" prot="public" virt="non-virtual"><scope>Xapian::DatabaseModifiedError</scope><name>DatabaseModifiedError</name></member>
+      <member refid="classXapian_1_1DatabaseModifiedError_1364c4151a63cf75904f0283d0675d483" prot="private" virt="non-virtual"><scope>Xapian::DatabaseModifiedError</scope><name>DatabaseModifiedError</name></member>
+      <member refid="classXapian_1_1DatabaseModifiedError_1178773760019a6387102d28668544165" prot="private" virt="non-virtual"><scope>Xapian::DatabaseModifiedError</scope><name>DatabaseModifiedError</name></member>
+      <member refid="classXapian_1_1Error_190c683965555b4bc86b08e8667170e44" prot="public" virt="non-virtual"><scope>Xapian::DatabaseModifiedError</scope><name>get_context</name></member>
+      <member refid="classXapian_1_1Error_1bd64e380eb6d864dc907ee62c1f58a74" prot="public" virt="non-virtual"><scope>Xapian::DatabaseModifiedError</scope><name>get_description</name></member>
+      <member refid="classXapian_1_1Error_16f94a579f8e176f85c6fb036592dab61" prot="public" virt="non-virtual"><scope>Xapian::DatabaseModifiedError</scope><name>get_error_string</name></member>
+      <member refid="classXapian_1_1Error_1ea05df48ea71dfd045da28ab984cdaa3" prot="public" virt="non-virtual"><scope>Xapian::DatabaseModifiedError</scope><name>get_msg</name></member>
+      <member refid="classXapian_1_1Error_1136945e703317bdf6e18d8cf511a5bfb" prot="public" virt="non-virtual"><scope>Xapian::DatabaseModifiedError</scope><name>get_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

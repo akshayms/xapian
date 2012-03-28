@@ -1,0 +1,837 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="classXapian_1_1WritableDatabase" kind="class" prot="public">
+    <compoundname>Xapian::WritableDatabase</compoundname>
+    <basecompoundref refid="classXapian_1_1Database" prot="public" virt="non-virtual">Xapian::Database</basecompoundref>
+    <includes local="no">database.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classXapian_1_1WritableDatabase_198ae55d72630237f346986b60e765e36" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual Xapian::WritableDatabase::~WritableDatabase</definition>
+        <argsstring>()</argsstring>
+        <name>~WritableDatabase</name>
+        <briefdescription>
+<para>Destroy this handle on the database. </para>        </briefdescription>
+        <detaileddescription>
+<para>If there are no copies of this object remaining, the database will be closed. If there are any transactions in progress these will be aborted as if cancel_transaction had been called. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="482"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1WritableDatabase_1c80ed31814feebd10c6222386e31472e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::WritableDatabase::WritableDatabase</definition>
+        <argsstring>()</argsstring>
+        <name>WritableDatabase</name>
+        <briefdescription>
+<para>Create an empty <ref refid="classXapian_1_1WritableDatabase" kindref="compound">WritableDatabase</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="486"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1WritableDatabase_12084dc5811aedc7de65d77e7979a2ec8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::WritableDatabase::WritableDatabase</definition>
+        <argsstring>(const std::string &amp;path, int action)</argsstring>
+        <name>WritableDatabase</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>action</declname>
+        </param>
+        <briefdescription>
+<para>Open a database for update, automatically determining the database backend to use. </para>        </briefdescription>
+        <detaileddescription>
+<para>If the database is to be created, <ref refid="namespaceXapian" kindref="compound">Xapian</ref> will try to create the directory indicated by path if it doesn&apos;t already exist (but only the leaf directory, not recursively).</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>directory that the database is stored in. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>action</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>one of:<itemizedlist>
+<listitem><para><ref refid="namespaceXapian_13d32111900603ce02b8c8467b9c5bacb" kindref="member">Xapian::DB_CREATE_OR_OPEN</ref> open for read/write; create if no db exists</para></listitem><listitem><para><ref refid="namespaceXapian_11236aaa6a3d7a37a4c6b95439e449f7a" kindref="member">Xapian::DB_CREATE</ref> create new database; fail if db exists</para></listitem><listitem><para><ref refid="namespaceXapian_1fbc13e6712a12dcfd0c048242fc313ed" kindref="member">Xapian::DB_CREATE_OR_OVERWRITE</ref> overwrite existing db; create if none exists</para></listitem><listitem><para><ref refid="namespaceXapian_154521467b649894bdc411f4c35e56ac3" kindref="member">Xapian::DB_OPEN</ref> open for read/write; fail if no db exists</para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classXapian_1_1DatabaseCorruptError" kindref="compound">Xapian::DatabaseCorruptError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>will be thrown if the database is in a corrupt state.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="classXapian_1_1DatabaseLockError" kindref="compound">Xapian::DatabaseLockError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>will be thrown if a lock couldn&apos;t be acquired on the database. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="510"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1WritableDatabase_11529742b3f7eb92f07e75f2308bc2f3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::WritableDatabase::WritableDatabase</definition>
+        <argsstring>(const WritableDatabase &amp;other)</argsstring>
+        <name>WritableDatabase</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1WritableDatabase" kindref="compound">WritableDatabase</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Copying is allowed. </para>        </briefdescription>
+        <detaileddescription>
+<para>The internals are reference counted, so copying is cheap. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="519"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1WritableDatabase_1c97254827cb74c93606ae046dcdd3754" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::WritableDatabase::operator=</definition>
+        <argsstring>(const WritableDatabase &amp;other)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1WritableDatabase" kindref="compound">WritableDatabase</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Assignment is allowed. </para>        </briefdescription>
+        <detaileddescription>
+<para>The internals are reference counted, so assignment is cheap.</para><para>Note that only an <ref refid="classXapian_1_1WritableDatabase" kindref="compound">WritableDatabase</ref> may be assigned to an <ref refid="classXapian_1_1WritableDatabase" kindref="compound">WritableDatabase</ref>: an attempt to assign a <ref refid="classXapian_1_1Database" kindref="compound">Database</ref> is caught at compile-time. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="528"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1WritableDatabase_1cbea2163142de795024880a7123bc693" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::WritableDatabase::commit</definition>
+        <argsstring>()</argsstring>
+        <name>commit</name>
+        <briefdescription>
+<para>Commit any pending modifications made to the database. </para>        </briefdescription>
+        <detaileddescription>
+<para>For efficiency reasons, when performing multiple updates to a database it is best (indeed, almost essential) to make as many modifications as memory will permit in a single pass through the database. To ensure this, <ref refid="namespaceXapian" kindref="compound">Xapian</ref> batches up modifications.</para><para>This method may be called at any time to commit any pending modifications to the database.</para><para>If any of the modifications fail, an exception will be thrown and the database will be left in a state in which each separate addition, replacement or deletion operation has either been fully performed or not performed at all: it is then up to the application to work out which operations need to be repeated.</para><para>It&apos;s not valid to call <ref refid="classXapian_1_1WritableDatabase_1cbea2163142de795024880a7123bc693" kindref="member">commit()</ref> within a transaction.</para><para>Beware of calling <ref refid="classXapian_1_1WritableDatabase_1cbea2163142de795024880a7123bc693" kindref="member">commit()</ref> too frequently: this will make indexing take much longer.</para><para>Note that <ref refid="classXapian_1_1WritableDatabase_1cbea2163142de795024880a7123bc693" kindref="member">commit()</ref> need not be called explicitly: it will be called automatically when the database is closed, or when a sufficient number of modifications have been made. By default, this is every 10000 documents added, deleted, or modified. This value is rather conservative, and if you have a machine with plenty of memory, you can improve indexing throughput dramatically by setting XAPIAN_FLUSH_THRESHOLD in the environment to a larger value.</para><para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classXapian_1_1DatabaseError" kindref="compound">Xapian::DatabaseError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>will be thrown if a problem occurs while modifying the database.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="classXapian_1_1DatabaseCorruptError" kindref="compound">Xapian::DatabaseCorruptError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>will be thrown if the database is in a corrupt state. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="565"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1WritableDatabase_1e767fd6fec96a126763f818fdc0abca7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::WritableDatabase::flush</definition>
+        <argsstring>()</argsstring>
+        <name>flush</name>
+        <briefdescription>
+<para>Pre-1.1.0 name for <ref refid="classXapian_1_1WritableDatabase_1cbea2163142de795024880a7123bc693" kindref="member">commit()</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>Use <ref refid="classXapian_1_1WritableDatabase_1cbea2163142de795024880a7123bc693" kindref="member">commit()</ref> instead in new code. This alias may be deprecated in the future. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="572" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/database.h" bodystart="572" bodyend="572"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1WritableDatabase_11436584192e592cead34ea6a4d5af56f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::WritableDatabase::begin_transaction</definition>
+        <argsstring>(bool flushed=true)</argsstring>
+        <name>begin_transaction</name>
+        <param>
+          <type>bool</type>
+          <declname>flushed</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Begin a transaction. </para>        </briefdescription>
+        <detaileddescription>
+<para>In <ref refid="namespaceXapian" kindref="compound">Xapian</ref> a transaction is a group of modifications to the database which are linked such that either all will be applied simultaneously or none will be applied at all. Even in the case of a power failure, this characteristic should be preserved (as long as the filesystem isn&apos;t corrupted, etc).</para><para>A transaction is started with <ref refid="classXapian_1_1WritableDatabase_11436584192e592cead34ea6a4d5af56f" kindref="member">begin_transaction()</ref> and can either be committed by calling <ref refid="classXapian_1_1WritableDatabase_13d330f3a27cc17d78635781c7b77280f" kindref="member">commit_transaction()</ref> or aborted by calling <ref refid="classXapian_1_1WritableDatabase_1537b50dd4aad61020ea8536e93559a72" kindref="member">cancel_transaction()</ref>.</para><para>By default, a transaction implicitly calls <ref refid="classXapian_1_1WritableDatabase_1cbea2163142de795024880a7123bc693" kindref="member">commit()</ref> before and after so that the modifications stand and fall without affecting modifications before or after.</para><para>The downside of these implicit calls to <ref refid="classXapian_1_1WritableDatabase_1cbea2163142de795024880a7123bc693" kindref="member">commit()</ref> is that small transactions can harm indexing performance in the same way that explicitly calling <ref refid="classXapian_1_1WritableDatabase_1cbea2163142de795024880a7123bc693" kindref="member">commit()</ref> frequently can.</para><para>If you&apos;re applying atomic groups of changes and only wish to ensure that each group is either applied or not applied, then you can prevent the automatic <ref refid="classXapian_1_1WritableDatabase_1cbea2163142de795024880a7123bc693" kindref="member">commit()</ref> before and after the transaction by starting the transaction with begin_transaction(false). However, if cancel_transaction is called (or if commit_transaction isn&apos;t called before the <ref refid="classXapian_1_1WritableDatabase" kindref="compound">WritableDatabase</ref> object is destroyed) then any changes which were pending before the transaction began will also be discarded.</para><para>Transactions aren&apos;t currently supported by the <ref refid="namespaceXapian_1_1InMemory" kindref="compound">InMemory</ref> backend.</para><para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classXapian_1_1UnimplementedError" kindref="compound">Xapian::UnimplementedError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>will be thrown if transactions are not available for this database type.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="classXapian_1_1InvalidOperationError" kindref="compound">Xapian::InvalidOperationError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>will be thrown if this is called at an invalid time, such as when a transaction is already in progress. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="612"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1WritableDatabase_13d330f3a27cc17d78635781c7b77280f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::WritableDatabase::commit_transaction</definition>
+        <argsstring>()</argsstring>
+        <name>commit_transaction</name>
+        <briefdescription>
+<para>Complete the transaction currently in progress. </para>        </briefdescription>
+        <detaileddescription>
+<para>If this method completes successfully and this is a flushed transaction, all the database modifications made during the transaction will have been committed to the database.</para><para>If an error occurs, an exception will be thrown, and none of the modifications made to the database during the transaction will have been applied to the database.</para><para>In all cases the transaction will no longer be in progress.</para><para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classXapian_1_1DatabaseError" kindref="compound">Xapian::DatabaseError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>will be thrown if a problem occurs while modifying the database.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="classXapian_1_1DatabaseCorruptError" kindref="compound">Xapian::DatabaseCorruptError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>will be thrown if the database is in a corrupt state.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="classXapian_1_1InvalidOperationError" kindref="compound">Xapian::InvalidOperationError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>will be thrown if a transaction is not currently in progress.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="classXapian_1_1UnimplementedError" kindref="compound">Xapian::UnimplementedError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>will be thrown if transactions are not available for this database type. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="639"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1WritableDatabase_1537b50dd4aad61020ea8536e93559a72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::WritableDatabase::cancel_transaction</definition>
+        <argsstring>()</argsstring>
+        <name>cancel_transaction</name>
+        <briefdescription>
+<para>Abort the transaction currently in progress, discarding the pending modifications made to the database. </para>        </briefdescription>
+        <detaileddescription>
+<para>If an error occurs in this method, an exception will be thrown, but the transaction will be cancelled anyway.</para><para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classXapian_1_1DatabaseError" kindref="compound">Xapian::DatabaseError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>will be thrown if a problem occurs while modifying the database.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="classXapian_1_1DatabaseCorruptError" kindref="compound">Xapian::DatabaseCorruptError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>will be thrown if the database is in a corrupt state.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="classXapian_1_1InvalidOperationError" kindref="compound">Xapian::InvalidOperationError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>will be thrown if a transaction is not currently in progress.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="classXapian_1_1UnimplementedError" kindref="compound">Xapian::UnimplementedError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>will be thrown if transactions are not available for this database type. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="659"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1WritableDatabase_1ecdd2e1d3a0364c4933ef4fe655f080b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceXapian_18fa9094bebe1256a7be935a5ede87a64" kindref="member">Xapian::docid</ref></type>
+        <definition>Xapian::docid Xapian::WritableDatabase::add_document</definition>
+        <argsstring>(const Xapian::Document &amp;document)</argsstring>
+        <name>add_document</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1Document" kindref="compound">Xapian::Document</ref> &amp;</type>
+          <declname>document</declname>
+        </param>
+        <briefdescription>
+<para>Add a new document to the database. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method adds the specified document to the database, returning a newly allocated document ID. Automatically allocated document IDs come from a per-database monotonically increasing counter, so IDs from deleted documents won&apos;t be reused.</para><para>If you want to specify the document ID to be used, you should call <ref refid="classXapian_1_1WritableDatabase_123344c9000ea98b15d491fa875bd5d1e" kindref="member">replace_document()</ref> instead.</para><para>Note that changes to the database won&apos;t be immediately committed to disk; see <ref refid="classXapian_1_1WritableDatabase_1cbea2163142de795024880a7123bc693" kindref="member">commit()</ref> for more details.</para><para>As with all database modification operations, the effect is atomic: the document will either be fully added, or the document fails to be added and an exception is thrown (possibly at a later time when <ref refid="classXapian_1_1WritableDatabase_1cbea2163142de795024880a7123bc693" kindref="member">commit()</ref> is called or the database is closed).</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>document</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new document to be added.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The document ID of the newly added document.</para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classXapian_1_1DatabaseError" kindref="compound">Xapian::DatabaseError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>will be thrown if a problem occurs while writing to the database.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="classXapian_1_1DatabaseCorruptError" kindref="compound">Xapian::DatabaseCorruptError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>will be thrown if the database is in a corrupt state. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="689"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1WritableDatabase_10cfd78ba9108b9ef2cf9b4a9f545c70d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::WritableDatabase::delete_document</definition>
+        <argsstring>(Xapian::docid did)</argsstring>
+        <name>delete_document</name>
+        <param>
+          <type><ref refid="namespaceXapian_18fa9094bebe1256a7be935a5ede87a64" kindref="member">Xapian::docid</ref></type>
+          <declname>did</declname>
+        </param>
+        <briefdescription>
+<para>Delete a document from the database. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method removes the document with the specified document ID from the database.</para><para>Note that changes to the database won&apos;t be immediately committed to disk; see <ref refid="classXapian_1_1WritableDatabase_1cbea2163142de795024880a7123bc693" kindref="member">commit()</ref> for more details.</para><para>As with all database modification operations, the effect is atomic: the document will either be fully removed, or the document fails to be removed and an exception is thrown (possibly at a later time when <ref refid="classXapian_1_1WritableDatabase_1cbea2163142de795024880a7123bc693" kindref="member">commit()</ref> is called or the database is closed).</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>did</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The document ID of the document to be removed.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classXapian_1_1DatabaseError" kindref="compound">Xapian::DatabaseError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>will be thrown if a problem occurs while writing to the database.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="classXapian_1_1DatabaseCorruptError" kindref="compound">Xapian::DatabaseCorruptError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>will be thrown if the database is in a corrupt state. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="712"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1WritableDatabase_18426619892e77112e832fc4b11b8efc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::WritableDatabase::delete_document</definition>
+        <argsstring>(const std::string &amp;unique_term)</argsstring>
+        <name>delete_document</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>unique_term</declname>
+        </param>
+        <briefdescription>
+<para>Delete any documents indexed by a term from the database. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method removes any documents indexed by the specified term from the database.</para><para>A major use is for convenience when UIDs from another system are mapped to terms in <ref refid="namespaceXapian" kindref="compound">Xapian</ref>, although this method has other uses (for example, you could add a &quot;deletion date&quot; term to documents at index time and use this method to delete all documents due for deletion on a particular date).</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unique_term</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The term to remove references to.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classXapian_1_1DatabaseError" kindref="compound">Xapian::DatabaseError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>will be thrown if a problem occurs while writing to the database.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="classXapian_1_1DatabaseCorruptError" kindref="compound">Xapian::DatabaseCorruptError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>will be thrown if the database is in a corrupt state. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="733"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1WritableDatabase_123344c9000ea98b15d491fa875bd5d1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::WritableDatabase::replace_document</definition>
+        <argsstring>(Xapian::docid did, const Xapian::Document &amp;document)</argsstring>
+        <name>replace_document</name>
+        <param>
+          <type><ref refid="namespaceXapian_18fa9094bebe1256a7be935a5ede87a64" kindref="member">Xapian::docid</ref></type>
+          <declname>did</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classXapian_1_1Document" kindref="compound">Xapian::Document</ref> &amp;</type>
+          <declname>document</declname>
+        </param>
+        <briefdescription>
+<para>Replace a given document in the database. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method replaces the document with the specified document ID. If document ID <emphasis>did</emphasis> isn&apos;t currently used, the document will be added with document ID <emphasis>did</emphasis>.</para><para>The monotonic counter used for automatically allocating document IDs is increased so that the next automatically allocated document ID will be did + 1. Be aware that if you use this method to specify a high document ID for a new document, and also use <ref refid="classXapian_1_1WritableDatabase_1ecdd2e1d3a0364c4933ef4fe655f080b" kindref="member">WritableDatabase::add_document()</ref>, <ref refid="namespaceXapian" kindref="compound">Xapian</ref> may get to a state where this counter wraps around and will be unable to automatically allocate document IDs!</para><para>Note that changes to the database won&apos;t be immediately committed to disk; see <ref refid="classXapian_1_1WritableDatabase_1cbea2163142de795024880a7123bc693" kindref="member">commit()</ref> for more details.</para><para>As with all database modification operations, the effect is atomic: the document will either be fully replaced, or the document fails to be replaced and an exception is thrown (possibly at a later time when <ref refid="classXapian_1_1WritableDatabase_1cbea2163142de795024880a7123bc693" kindref="member">commit()</ref> is called or the database is closed).</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>did</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The document ID of the document to be replaced. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>document</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new document.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classXapian_1_1DatabaseError" kindref="compound">Xapian::DatabaseError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>will be thrown if a problem occurs while writing to the database.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="classXapian_1_1DatabaseCorruptError" kindref="compound">Xapian::DatabaseCorruptError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>will be thrown if the database is in a corrupt state. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="767"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1WritableDatabase_143c4630ec482508667e9ca539f19cbf0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceXapian_18fa9094bebe1256a7be935a5ede87a64" kindref="member">Xapian::docid</ref></type>
+        <definition>Xapian::docid Xapian::WritableDatabase::replace_document</definition>
+        <argsstring>(const std::string &amp;unique_term, const Xapian::Document &amp;document)</argsstring>
+        <name>replace_document</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>unique_term</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classXapian_1_1Document" kindref="compound">Xapian::Document</ref> &amp;</type>
+          <declname>document</declname>
+        </param>
+        <briefdescription>
+<para>Replace any documents matching a term. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method replaces any documents indexed by the specified term with the specified document. If any documents are indexed by the term, the lowest document ID will be used for the document, otherwise a new document ID will be generated as for add_document.</para><para>One common use is to allow UIDs from another system to easily be mapped to terms in <ref refid="namespaceXapian" kindref="compound">Xapian</ref>. Note that this method doesn&apos;t automatically add unique_term as a term, so you&apos;ll need to call document.add_term(unique_term) first when using <ref refid="classXapian_1_1WritableDatabase_123344c9000ea98b15d491fa875bd5d1e" kindref="member">replace_document()</ref> in this way.</para><para>Another possible use is to allow groups of documents to be marked for later deletion - for example, you could add a &quot;deletion date&quot; term to documents at index time and use this method to easily and efficiently delete all documents due for deletion on a particular date.</para><para>Note that changes to the database won&apos;t be immediately committed to disk; see <ref refid="classXapian_1_1WritableDatabase_1cbea2163142de795024880a7123bc693" kindref="member">commit()</ref> for more details.</para><para>As with all database modification operations, the effect is atomic: the document(s) will either be fully replaced, or the document(s) fail to be replaced and an exception is thrown (possibly at a later time when <ref refid="classXapian_1_1WritableDatabase_1cbea2163142de795024880a7123bc693" kindref="member">commit()</ref> is called or the database is closed).</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unique_term</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The &quot;unique&quot; term. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>document</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new document.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The document ID that document was given.</para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classXapian_1_1DatabaseError" kindref="compound">Xapian::DatabaseError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>will be thrown if a problem occurs while writing to the database.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="classXapian_1_1DatabaseCorruptError" kindref="compound">Xapian::DatabaseCorruptError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>will be thrown if the database is in a corrupt state. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="808"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1WritableDatabase_1d80216c23c6b0175a0e235c4dccde390" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::WritableDatabase::add_spelling</definition>
+        <argsstring>(const std::string &amp;word, Xapian::termcount freqinc=1) const </argsstring>
+        <name>add_spelling</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>word</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceXapian_172b5a76dd8cfb7b251fe7986e86390cb" kindref="member">Xapian::termcount</ref></type>
+          <declname>freqinc</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+<para>Add a word to the spelling dictionary. </para>        </briefdescription>
+        <detaileddescription>
+<para>If the word is already present, its frequency is increased.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>word</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The word to add. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>freqinc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>How much to increase its frequency by (default 1). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="818"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1WritableDatabase_11ef895fd7b1ed17bdb7036afc321cb3d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::WritableDatabase::remove_spelling</definition>
+        <argsstring>(const std::string &amp;word, Xapian::termcount freqdec=1) const </argsstring>
+        <name>remove_spelling</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>word</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceXapian_172b5a76dd8cfb7b251fe7986e86390cb" kindref="member">Xapian::termcount</ref></type>
+          <declname>freqdec</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+<para>Remove a word from the spelling dictionary. </para>        </briefdescription>
+        <detaileddescription>
+<para>The word&apos;s frequency is decreased, and if would become zero or less then the word is removed completely.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>word</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The word to remove. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>freqdec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>How much to decrease its frequency by (default 1). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="829"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1WritableDatabase_11b76ebd51f2c69898034d804de877ce6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::WritableDatabase::add_synonym</definition>
+        <argsstring>(const std::string &amp;term, const std::string &amp;synonym) const </argsstring>
+        <name>add_synonym</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>term</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>synonym</declname>
+        </param>
+        <briefdescription>
+<para>Add a synonym for a term. </para>        </briefdescription>
+        <detaileddescription>
+<para>If <emphasis>synonym</emphasis> is already a synonym for <emphasis>term</emphasis>, then no action is taken. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="837"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1WritableDatabase_10d29fb5845bcec5a8123334e654dc868" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::WritableDatabase::remove_synonym</definition>
+        <argsstring>(const std::string &amp;term, const std::string &amp;synonym) const </argsstring>
+        <name>remove_synonym</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>term</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>synonym</declname>
+        </param>
+        <briefdescription>
+<para>Remove a synonym for a term. </para>        </briefdescription>
+        <detaileddescription>
+<para>If <emphasis>synonym</emphasis> isn&apos;t a synonym for <emphasis>term</emphasis>, then no action is taken. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="844"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1WritableDatabase_12d0a6ca275afab052f675ac8a59dc2b4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::WritableDatabase::clear_synonyms</definition>
+        <argsstring>(const std::string &amp;term) const </argsstring>
+        <name>clear_synonyms</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>term</declname>
+        </param>
+        <briefdescription>
+<para>Remove all synonyms for a term. </para>        </briefdescription>
+        <detaileddescription>
+<para>If <emphasis>term</emphasis> has no synonyms, no action is taken. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="850"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1WritableDatabase_1bd9a9fde5be5614e93559810df865a98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::WritableDatabase::set_metadata</definition>
+        <argsstring>(const std::string &amp;key, const std::string &amp;value)</argsstring>
+        <name>set_metadata</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set the user-specified metadata associated with a given key. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method sets the metadata value associated with a given key. If there is already a metadata value stored in the database with the same key, the old value is replaced. If you want to delete an existing item of metadata, just set its value to the empty string.</para><para>User-specified metadata allows you to store arbitrary information in the form of (key,tag) pairs.</para><para>There&apos;s no hard limit on the number of metadata items, or the size of the metadata values. Metadata keys have a limited length, which depends on the backend. We recommend limiting them to 200 bytes. Empty keys are not valid, and specifying one will cause an exception.</para><para>Metadata modifications are committed to disk in the same way as modifications to the documents in the database are: i.e., modifications are atomic, and won&apos;t be committed to disk immediately (see <ref refid="classXapian_1_1WritableDatabase_1cbea2163142de795024880a7123bc693" kindref="member">commit()</ref> for more details). This allows metadata to be used to link databases with versioned external resources by storing the appropriate version number in a metadata item.</para><para>You can also use the metadata to store arbitrary extra information associated with terms, documents, or postings by encoding the termname and/or document id into the metadata key.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key of the metadata item to set.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value of the metadata item to set.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classXapian_1_1DatabaseError" kindref="compound">Xapian::DatabaseError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>will be thrown if a problem occurs while writing to the database.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="classXapian_1_1DatabaseCorruptError" kindref="compound">Xapian::DatabaseCorruptError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>will be thrown if the database is in a corrupt state.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="classXapian_1_1InvalidArgumentError" kindref="compound">Xapian::InvalidArgumentError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>will be thrown if the key supplied is empty.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="classXapian_1_1UnimplementedError" kindref="compound">Xapian::UnimplementedError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>will be thrown if the database backend in use doesn&apos;t support user-specified metadata. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="896"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1WritableDatabase_1714ee6f7f21fd72307329a4ba21227a0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string Xapian::WritableDatabase::get_description</definition>
+        <argsstring>() const </argsstring>
+        <name>get_description</name>
+        <reimplements refid="classXapian_1_1Database_159e5889c489ce77fb4e7ffd80b6bc52c">get_description</reimplements>
+        <briefdescription>
+<para>Return a string describing this object. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="899"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classXapian_1_1WritableDatabase_1f746042dda9a411719cef333783d6534" prot="private" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::WritableDatabase::WritableDatabase</definition>
+        <argsstring>(Database::Internal *internal)</argsstring>
+        <name>WritableDatabase</name>
+        <param>
+          <type>Database::Internal *</type>
+          <declname>internal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="514"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class provides read/write access to a database. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="783">
+        <label>Xapian::Database</label>
+        <link refid="classXapian_1_1Database"/>
+      </node>
+      <node id="782">
+        <label>Xapian::WritableDatabase</label>
+        <link refid="classXapian_1_1WritableDatabase"/>
+        <childnode refid="783" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="785">
+        <label>Xapian::Database</label>
+        <link refid="classXapian_1_1Database"/>
+      </node>
+      <node id="784">
+        <label>Xapian::WritableDatabase</label>
+        <link refid="classXapian_1_1WritableDatabase"/>
+        <childnode refid="785" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="474" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/database.h" bodystart="474" bodyend="900"/>
+    <listofallmembers>
+      <member refid="classXapian_1_1Database_12fc5aa368a7097ca787a831211a2e3bc" prot="public" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>add_database</name></member>
+      <member refid="classXapian_1_1WritableDatabase_1ecdd2e1d3a0364c4933ef4fe655f080b" prot="public" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>add_document</name></member>
+      <member refid="classXapian_1_1WritableDatabase_1d80216c23c6b0175a0e235c4dccde390" prot="public" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>add_spelling</name></member>
+      <member refid="classXapian_1_1WritableDatabase_11b76ebd51f2c69898034d804de877ce6" prot="public" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>add_synonym</name></member>
+      <member refid="classXapian_1_1Database_11bef542ac6af6749b95ba6547d5139fe" prot="public" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>allterms_begin</name></member>
+      <member refid="classXapian_1_1Database_1568341766a22f09f5a0da471ae6a3802" prot="public" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>allterms_begin</name></member>
+      <member refid="classXapian_1_1Database_103a144e5b1aa8104ea82aa5031ba2943" prot="public" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>allterms_end</name></member>
+      <member refid="classXapian_1_1Database_1ef82e0ee7ed8400c19151f4017ac333a" prot="public" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>allterms_end</name></member>
+      <member refid="classXapian_1_1WritableDatabase_11436584192e592cead34ea6a4d5af56f" prot="public" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>begin_transaction</name></member>
+      <member refid="classXapian_1_1WritableDatabase_1537b50dd4aad61020ea8536e93559a72" prot="public" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>cancel_transaction</name></member>
+      <member refid="classXapian_1_1WritableDatabase_12d0a6ca275afab052f675ac8a59dc2b4" prot="public" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>clear_synonyms</name></member>
+      <member refid="classXapian_1_1Database_159f5f8b137723dcaaabdbdccbc0cf1eb" prot="public" virt="virtual"><scope>Xapian::WritableDatabase</scope><name>close</name></member>
+      <member refid="classXapian_1_1WritableDatabase_1cbea2163142de795024880a7123bc693" prot="public" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>commit</name></member>
+      <member refid="classXapian_1_1WritableDatabase_13d330f3a27cc17d78635781c7b77280f" prot="public" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>commit_transaction</name></member>
+      <member refid="classXapian_1_1Database_124f8197f3ac8bfd8c2526e0b8dff4ff7" prot="public" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>Database</name></member>
+      <member refid="classXapian_1_1Database_1b180b01a76a9d73a9315b181514a2f25" prot="public" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>Database</name></member>
+      <member refid="classXapian_1_1Database_1aae498b70286ba1c588b7cbeb0972d38" prot="public" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>Database</name></member>
+      <member refid="classXapian_1_1WritableDatabase_10cfd78ba9108b9ef2cf9b4a9f545c70d" prot="public" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>delete_document</name></member>
+      <member refid="classXapian_1_1WritableDatabase_18426619892e77112e832fc4b11b8efc3" prot="public" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>delete_document</name></member>
+      <member refid="classXapian_1_1WritableDatabase_1e767fd6fec96a126763f818fdc0abca7" prot="public" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>flush</name></member>
+      <member refid="classXapian_1_1Database_17be264cfd482d19e6ca1c99382838032" prot="public" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>get_avlength</name></member>
+      <member refid="classXapian_1_1Database_1eb8b2a78e6a7834bf0cc9e863bcfb95b" prot="public" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>get_collection_freq</name></member>
+      <member refid="classXapian_1_1WritableDatabase_1714ee6f7f21fd72307329a4ba21227a0" prot="public" virt="virtual"><scope>Xapian::WritableDatabase</scope><name>get_description</name></member>
+      <member refid="classXapian_1_1Database_1c13c9f754b55edf7e25d754a150bd970" prot="public" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>get_doccount</name></member>
+      <member refid="classXapian_1_1Database_17aed02430626d06ab782d63e462de837" prot="public" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>get_doclength</name></member>
+      <member refid="classXapian_1_1Database_1d047fac41d0cfbfb8f6022164b1af458" prot="public" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>get_doclength_lower_bound</name></member>
+      <member refid="classXapian_1_1Database_1de55de013a35cdca12aa89f21d2a5173" prot="public" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>get_doclength_upper_bound</name></member>
+      <member refid="classXapian_1_1Database_1c36eafdcf748e11e533149674329f90b" prot="public" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>get_document</name></member>
+      <member refid="classXapian_1_1Database_10c180d6facca7ca0e8486e7b995a6747" prot="public" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>get_lastdocid</name></member>
+      <member refid="classXapian_1_1Database_1e27282ad0777daa301b0b83b410d98ba" prot="public" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>get_metadata</name></member>
+      <member refid="classXapian_1_1Database_186b944dece96d7ada2446ae8952ee3a2" prot="public" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>get_spelling_suggestion</name></member>
+      <member refid="classXapian_1_1Database_161d9b1e634aff99280a5fcdfc5087cdc" prot="public" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>get_termfreq</name></member>
+      <member refid="classXapian_1_1Database_1a7edcb2f6dd5f1df58b37026b9ecd6e4" prot="public" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>get_uuid</name></member>
+      <member refid="classXapian_1_1Database_116af5d3bdfa3c459ccc41f6dc69644e4" prot="public" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>get_value_freq</name></member>
+      <member refid="classXapian_1_1Database_190d2297437540ec733debe4a4b706c7d" prot="public" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>get_value_lower_bound</name></member>
+      <member refid="classXapian_1_1Database_145e8c383ec2a3cb547ea48ce1da7e1e1" prot="public" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>get_value_upper_bound</name></member>
+      <member refid="classXapian_1_1Database_160d00bbea2f0c15f16512f51247b5f9d" prot="public" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>get_wdf_upper_bound</name></member>
+      <member refid="classXapian_1_1Database_1e7362269bc3408d0800a36d0c2f4851d" prot="public" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>has_positions</name></member>
+      <member refid="classXapian_1_1Database_1759d1fde0d3d8a2ed74b83c0ebd10974" prot="public" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>keep_alive</name></member>
+      <member refid="classXapian_1_1Database_1f275ac0df48ddea697979d69cd60f82f" prot="public" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>metadata_keys_begin</name></member>
+      <member refid="classXapian_1_1Database_1ec2e180589fc493230054f81de823f04" prot="public" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>metadata_keys_end</name></member>
+      <member refid="classXapian_1_1WritableDatabase_1c97254827cb74c93606ae046dcdd3754" prot="public" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>operator=</name></member>
+      <member refid="classXapian_1_1Database_14e8badea7a9d7292c13f99429c6a2b79" prot="public" virt="non-virtual" ambiguityscope="Xapian::Database::"><scope>Xapian::WritableDatabase</scope><name>operator=</name></member>
+      <member refid="classXapian_1_1Database_19fb4987b5f0e13b8344a89d1898f5500" prot="public" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>positionlist_begin</name></member>
+      <member refid="classXapian_1_1Database_1ef7093cb5cfd969c4b07593e26d208e3" prot="public" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>positionlist_end</name></member>
+      <member refid="classXapian_1_1Database_1504d8e800384d12a8f9defee39362f5e" prot="public" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>postlist_begin</name></member>
+      <member refid="classXapian_1_1Database_1c1661ac2876a4a69f327907ef47a003d" prot="public" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>postlist_end</name></member>
+      <member refid="classXapian_1_1WritableDatabase_11ef895fd7b1ed17bdb7036afc321cb3d" prot="public" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>remove_spelling</name></member>
+      <member refid="classXapian_1_1WritableDatabase_10d29fb5845bcec5a8123334e654dc868" prot="public" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>remove_synonym</name></member>
+      <member refid="classXapian_1_1Database_1f316aa13ee123e2af75f4b44e1f23db9" prot="public" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>reopen</name></member>
+      <member refid="classXapian_1_1WritableDatabase_123344c9000ea98b15d491fa875bd5d1e" prot="public" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>replace_document</name></member>
+      <member refid="classXapian_1_1WritableDatabase_143c4630ec482508667e9ca539f19cbf0" prot="public" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>replace_document</name></member>
+      <member refid="classXapian_1_1WritableDatabase_1bd9a9fde5be5614e93559810df865a98" prot="public" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>set_metadata</name></member>
+      <member refid="classXapian_1_1Database_179bdfc96a112a38409a1d87c7e2f6a55" prot="public" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>spellings_begin</name></member>
+      <member refid="classXapian_1_1Database_1107327ec1bf8fb8c04345961f73d82f2" prot="public" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>spellings_end</name></member>
+      <member refid="classXapian_1_1Database_1340149d55c64d7d186948d1992ff10f2" prot="public" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>synonym_keys_begin</name></member>
+      <member refid="classXapian_1_1Database_1f24c76928481eb792486304867cc6a64" prot="public" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>synonym_keys_end</name></member>
+      <member refid="classXapian_1_1Database_174d436523335d70f665edee7730f8435" prot="public" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>synonyms_begin</name></member>
+      <member refid="classXapian_1_1Database_1f379075aa87dd844e0bf6f566a4e001d" prot="public" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>synonyms_end</name></member>
+      <member refid="classXapian_1_1Database_122509662f07387074beb1e9919e8e1e9" prot="public" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>term_exists</name></member>
+      <member refid="classXapian_1_1Database_1c26b8f8f564c37586c7a0bd35cfefe15" prot="public" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>termlist_begin</name></member>
+      <member refid="classXapian_1_1Database_1a6f20c07f93d53f35caf6c97c795a5a1" prot="public" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>termlist_end</name></member>
+      <member refid="classXapian_1_1Database_1bba5f47ae1a2895ba75a698ab70d570e" prot="public" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>valuestream_begin</name></member>
+      <member refid="classXapian_1_1Database_11955ccba82b9538e128437e031a3d0de" prot="public" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>valuestream_end</name></member>
+      <member refid="classXapian_1_1WritableDatabase_1c80ed31814feebd10c6222386e31472e" prot="public" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>WritableDatabase</name></member>
+      <member refid="classXapian_1_1WritableDatabase_12084dc5811aedc7de65d77e7979a2ec8" prot="public" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>WritableDatabase</name></member>
+      <member refid="classXapian_1_1WritableDatabase_1f746042dda9a411719cef333783d6534" prot="private" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>WritableDatabase</name></member>
+      <member refid="classXapian_1_1WritableDatabase_11529742b3f7eb92f07e75f2308bc2f3a" prot="public" virt="non-virtual"><scope>Xapian::WritableDatabase</scope><name>WritableDatabase</name></member>
+      <member refid="classXapian_1_1Database_10352b3a47dca16d57c071252e84f1043" prot="public" virt="virtual"><scope>Xapian::WritableDatabase</scope><name>~Database</name></member>
+      <member refid="classXapian_1_1WritableDatabase_198ae55d72630237f346986b60e765e36" prot="public" virt="virtual"><scope>Xapian::WritableDatabase</scope><name>~WritableDatabase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

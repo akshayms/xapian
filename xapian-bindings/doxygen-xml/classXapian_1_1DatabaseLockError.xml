@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="classXapian_1_1DatabaseLockError" kind="class" prot="public">
+    <compoundname>Xapian::DatabaseLockError</compoundname>
+    <basecompoundref refid="classXapian_1_1DatabaseError" prot="public" virt="non-virtual">Xapian::DatabaseError</basecompoundref>
+    <includes local="no">error.h</includes>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classXapian_1_1DatabaseLockError_1c4bf6a0ce0082a467f1802318fd5dbdf" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::DatabaseLockError::DatabaseLockError</definition>
+        <argsstring>(const std::string &amp;msg_, const std::string &amp;context_, const char *error_string_)</argsstring>
+        <name>DatabaseLockError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>context_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>error_string_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="397" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="396" bodyend="397"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1DatabaseLockError_1ac193f03b64974f7760782d5d870c070" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::DatabaseLockError::DatabaseLockError</definition>
+        <argsstring>(const std::string &amp;msg_, const std::string &amp;context_, const char *type_, const char *error_string_)</argsstring>
+        <name>DatabaseLockError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>context_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>type_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>error_string_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="409" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="408" bodyend="409"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1DatabaseLockError_1324c81d92221338ad54efc97e7d62f1b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::DatabaseLockError::DatabaseLockError</definition>
+        <argsstring>(const std::string &amp;msg_, const std::string &amp;context_, const char *type_, int errno_)</argsstring>
+        <name>DatabaseLockError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>context_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>type_</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>errno_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="415" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="414" bodyend="415"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classXapian_1_1DatabaseLockError_1fd829b22d3ab027cf86666d8d2560876" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::DatabaseLockError::DatabaseLockError</definition>
+        <argsstring>(const std::string &amp;msg_, const std::string &amp;context_=std::string(), int errno_=0)</argsstring>
+        <name>DatabaseLockError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>context_</declname>
+          <defval>std::string()</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>errno_</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>General purpose constructor which allows setting errno. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="400" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="399" bodyend="400"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1DatabaseLockError_17aa601f4df53f4f50dc28d9a6bcb292f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::DatabaseLockError::DatabaseLockError</definition>
+        <argsstring>(const std::string &amp;msg_, int errno_)</argsstring>
+        <name>DatabaseLockError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>errno_</declname>
+        </param>
+        <briefdescription>
+<para>Construct from message and errno value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="403" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="402" bodyend="403"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classXapian_1_1DatabaseLockError" kindref="compound">DatabaseLockError</ref> indicates failure to lock a database. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="339">
+        <label>Xapian::DatabaseError</label>
+        <link refid="classXapian_1_1DatabaseError"/>
+        <childnode refid="340" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="341">
+        <label>Xapian::Error</label>
+        <link refid="classXapian_1_1Error"/>
+      </node>
+      <node id="340">
+        <label>Xapian::RuntimeError</label>
+        <link refid="classXapian_1_1RuntimeError"/>
+        <childnode refid="341" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="338">
+        <label>Xapian::DatabaseLockError</label>
+        <link refid="classXapian_1_1DatabaseLockError"/>
+        <childnode refid="339" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="343">
+        <label>Xapian::DatabaseError</label>
+        <link refid="classXapian_1_1DatabaseError"/>
+        <childnode refid="344" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="345">
+        <label>Xapian::Error</label>
+        <link refid="classXapian_1_1Error"/>
+      </node>
+      <node id="344">
+        <label>Xapian::RuntimeError</label>
+        <link refid="classXapian_1_1RuntimeError"/>
+        <childnode refid="345" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="342">
+        <label>Xapian::DatabaseLockError</label>
+        <link refid="classXapian_1_1DatabaseLockError"/>
+        <childnode refid="343" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="389" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="389" bodyend="416"/>
+    <listofallmembers>
+      <member refid="classXapian_1_1DatabaseError_19dcfefb4abfcb9bbc1cae90d28e9e021" prot="public" virt="non-virtual"><scope>Xapian::DatabaseLockError</scope><name>DatabaseError</name></member>
+      <member refid="classXapian_1_1DatabaseError_19ec4456656d91a738c66540e3bb7f67f" prot="public" virt="non-virtual"><scope>Xapian::DatabaseLockError</scope><name>DatabaseError</name></member>
+      <member refid="classXapian_1_1DatabaseLockError_1c4bf6a0ce0082a467f1802318fd5dbdf" prot="private" virt="non-virtual"><scope>Xapian::DatabaseLockError</scope><name>DatabaseLockError</name></member>
+      <member refid="classXapian_1_1DatabaseLockError_1fd829b22d3ab027cf86666d8d2560876" prot="public" virt="non-virtual"><scope>Xapian::DatabaseLockError</scope><name>DatabaseLockError</name></member>
+      <member refid="classXapian_1_1DatabaseLockError_17aa601f4df53f4f50dc28d9a6bcb292f" prot="public" virt="non-virtual"><scope>Xapian::DatabaseLockError</scope><name>DatabaseLockError</name></member>
+      <member refid="classXapian_1_1DatabaseLockError_1ac193f03b64974f7760782d5d870c070" prot="private" virt="non-virtual"><scope>Xapian::DatabaseLockError</scope><name>DatabaseLockError</name></member>
+      <member refid="classXapian_1_1DatabaseLockError_1324c81d92221338ad54efc97e7d62f1b" prot="private" virt="non-virtual"><scope>Xapian::DatabaseLockError</scope><name>DatabaseLockError</name></member>
+      <member refid="classXapian_1_1Error_190c683965555b4bc86b08e8667170e44" prot="public" virt="non-virtual"><scope>Xapian::DatabaseLockError</scope><name>get_context</name></member>
+      <member refid="classXapian_1_1Error_1bd64e380eb6d864dc907ee62c1f58a74" prot="public" virt="non-virtual"><scope>Xapian::DatabaseLockError</scope><name>get_description</name></member>
+      <member refid="classXapian_1_1Error_16f94a579f8e176f85c6fb036592dab61" prot="public" virt="non-virtual"><scope>Xapian::DatabaseLockError</scope><name>get_error_string</name></member>
+      <member refid="classXapian_1_1Error_1ea05df48ea71dfd045da28ab984cdaa3" prot="public" virt="non-virtual"><scope>Xapian::DatabaseLockError</scope><name>get_msg</name></member>
+      <member refid="classXapian_1_1Error_1136945e703317bdf6e18d8cf511a5bfb" prot="public" virt="non-virtual"><scope>Xapian::DatabaseLockError</scope><name>get_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

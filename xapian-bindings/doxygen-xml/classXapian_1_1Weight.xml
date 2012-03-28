@@ -1,0 +1,874 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="classXapian_1_1Weight" kind="class" prot="public">
+    <compoundname>Xapian::Weight</compoundname>
+    <derivedcompoundref refid="classXapian_1_1BM25Weight" prot="public" virt="non-virtual">Xapian::BM25Weight</derivedcompoundref>
+    <derivedcompoundref refid="classXapian_1_1BoolWeight" prot="public" virt="non-virtual">Xapian::BoolWeight</derivedcompoundref>
+    <derivedcompoundref refid="classXapian_1_1TradWeight" prot="public" virt="non-virtual">Xapian::TradWeight</derivedcompoundref>
+    <includes local="no">weight.h</includes>
+      <sectiondef kind="protected-type">
+      <memberdef kind="enum" id="classXapian_1_1Weight_1e3c11f1d2d96a18e0eb9b9b31c5c5479" prot="protected" static="no">
+        <name>stat_flags</name>
+        <enumvalue id="classXapian_1_1Weight_1e3c11f1d2d96a18e0eb9b9b31c5c5479bce4fe48f6f680644bd352acc937856e" prot="protected">
+          <name>COLLECTION_SIZE</name>
+          <initializer> 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classXapian_1_1Weight_1e3c11f1d2d96a18e0eb9b9b31c5c5479632727fa617eec2dfa9ad19e6adcb926" prot="protected">
+          <name>RSET_SIZE</name>
+          <initializer> 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classXapian_1_1Weight_1e3c11f1d2d96a18e0eb9b9b31c5c54795ce8ff7822abec06e0f5ac956d7b247e" prot="protected">
+          <name>AVERAGE_LENGTH</name>
+          <initializer> 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classXapian_1_1Weight_1e3c11f1d2d96a18e0eb9b9b31c5c5479b2b087be2c0ffd8a2ea214298156f99b" prot="protected">
+          <name>TERMFREQ</name>
+          <initializer> 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classXapian_1_1Weight_1e3c11f1d2d96a18e0eb9b9b31c5c5479fd0979b74a0cf07991edc4af31ed55be" prot="protected">
+          <name>RELTERMFREQ</name>
+          <initializer> 16</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classXapian_1_1Weight_1e3c11f1d2d96a18e0eb9b9b31c5c54791a95530f6aa2ca909e4c1620aed8192b" prot="protected">
+          <name>QUERY_LENGTH</name>
+          <initializer> 32</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classXapian_1_1Weight_1e3c11f1d2d96a18e0eb9b9b31c5c5479b383711f122cf1927e418dc94e8ed1a7" prot="protected">
+          <name>WQF</name>
+          <initializer> 64</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classXapian_1_1Weight_1e3c11f1d2d96a18e0eb9b9b31c5c5479fe84a106f8ec14c79acdfc29d9378aa2" prot="protected">
+          <name>WDF</name>
+          <initializer> 128</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classXapian_1_1Weight_1e3c11f1d2d96a18e0eb9b9b31c5c547992ac55fbe32f39c3b4cdcab135ac0722" prot="protected">
+          <name>DOC_LENGTH</name>
+          <initializer> 256</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classXapian_1_1Weight_1e3c11f1d2d96a18e0eb9b9b31c5c5479c9f88f7ca707347bcce2c1ad0abdf531" prot="protected">
+          <name>DOC_LENGTH_MIN</name>
+          <initializer> 512</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classXapian_1_1Weight_1e3c11f1d2d96a18e0eb9b9b31c5c54798f07b317ab1fca84d17cab78aa412e37" prot="protected">
+          <name>DOC_LENGTH_MAX</name>
+          <initializer> 1024</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classXapian_1_1Weight_1e3c11f1d2d96a18e0eb9b9b31c5c5479be608cc5dc83deef0f35c13a69aa15dc" prot="protected">
+          <name>WDF_MAX</name>
+          <initializer> 2048</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Stats which the weighting scheme can use (see <emphasis><ref refid="classXapian_1_1Weight_177b1424d5f5a5b2d4848175979da6475" kindref="member">need_stat()</ref></emphasis>). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" line="36" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" bodystart="36" bodyend="49"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classXapian_1_1Weight_1de4a836f26a80cbf3abcc592ae9d5714" prot="private" static="no" mutable="no">
+        <type><ref refid="classXapian_1_1Weight_1e3c11f1d2d96a18e0eb9b9b31c5c5479" kindref="member">stat_flags</ref></type>
+        <definition>stat_flags Xapian::Weight::stats_needed</definition>
+        <argsstring></argsstring>
+        <name>stats_needed</name>
+        <briefdescription>
+<para>A bitmask of the statistics this weighting scheme needs. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" line="75" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classXapian_1_1Weight_14652e02f4bcf6ea881053a2c975e2db2" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceXapian_17f30aa95f0c42b117dafaf66ba24241d" kindref="member">Xapian::doccount</ref></type>
+        <definition>Xapian::doccount Xapian::Weight::collection_size_</definition>
+        <argsstring></argsstring>
+        <name>collection_size_</name>
+        <briefdescription>
+<para>The number of documents in the collection. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" line="78" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classXapian_1_1Weight_15a47613ac473c21b04c6d3236213e84c" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceXapian_17f30aa95f0c42b117dafaf66ba24241d" kindref="member">Xapian::doccount</ref></type>
+        <definition>Xapian::doccount Xapian::Weight::rset_size_</definition>
+        <argsstring></argsstring>
+        <name>rset_size_</name>
+        <briefdescription>
+<para>The number of documents marked as relevant. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" line="81" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classXapian_1_1Weight_157fd73a283d4d9e70aa1ee400821b01b" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceXapian_163b13d3a36fcab9975658e32643d86b5" kindref="member">Xapian::doclength</ref></type>
+        <definition>Xapian::doclength Xapian::Weight::average_length_</definition>
+        <argsstring></argsstring>
+        <name>average_length_</name>
+        <briefdescription>
+<para>The average length of a document in the collection. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" line="84" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classXapian_1_1Weight_17f442e50f1aafcf687ca41345dc85044" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceXapian_17f30aa95f0c42b117dafaf66ba24241d" kindref="member">Xapian::doccount</ref></type>
+        <definition>Xapian::doccount Xapian::Weight::termfreq_</definition>
+        <argsstring></argsstring>
+        <name>termfreq_</name>
+        <briefdescription>
+<para>The number of documents which this term indexes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" line="87" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classXapian_1_1Weight_160d255bd06560407113e70b915be37b0" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceXapian_17f30aa95f0c42b117dafaf66ba24241d" kindref="member">Xapian::doccount</ref></type>
+        <definition>Xapian::doccount Xapian::Weight::reltermfreq_</definition>
+        <argsstring></argsstring>
+        <name>reltermfreq_</name>
+        <briefdescription>
+<para>The number of relevant documents which this term indexes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" line="90" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classXapian_1_1Weight_14b770c5fa33877c0443c33d15516e72f" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceXapian_172b5a76dd8cfb7b251fe7986e86390cb" kindref="member">Xapian::termcount</ref></type>
+        <definition>Xapian::termcount Xapian::Weight::query_length_</definition>
+        <argsstring></argsstring>
+        <name>query_length_</name>
+        <briefdescription>
+<para>The length of the query. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" line="93" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classXapian_1_1Weight_1075243c8f9a040599b3b25879ef2a0ed" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceXapian_172b5a76dd8cfb7b251fe7986e86390cb" kindref="member">Xapian::termcount</ref></type>
+        <definition>Xapian::termcount Xapian::Weight::wqf_</definition>
+        <argsstring></argsstring>
+        <name>wqf_</name>
+        <briefdescription>
+<para>The within-query-frequency of this term. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" line="96" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classXapian_1_1Weight_1e312d8a6e246c14aa199ea23c529124f" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceXapian_172b5a76dd8cfb7b251fe7986e86390cb" kindref="member">Xapian::termcount</ref></type>
+        <definition>Xapian::termcount Xapian::Weight::doclength_lower_bound_</definition>
+        <argsstring></argsstring>
+        <name>doclength_lower_bound_</name>
+        <briefdescription>
+<para>An lower bound on the maximum length of any document in the database. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" line="99" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classXapian_1_1Weight_1584f9d92407fe33f7732264298703eda" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceXapian_172b5a76dd8cfb7b251fe7986e86390cb" kindref="member">Xapian::termcount</ref></type>
+        <definition>Xapian::termcount Xapian::Weight::doclength_upper_bound_</definition>
+        <argsstring></argsstring>
+        <name>doclength_upper_bound_</name>
+        <briefdescription>
+<para>An upper bound on the maximum length of any document in the database. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" line="102" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classXapian_1_1Weight_16437e64b16f666c899ae0cd63d6c5e1e" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceXapian_172b5a76dd8cfb7b251fe7986e86390cb" kindref="member">Xapian::termcount</ref></type>
+        <definition>Xapian::termcount Xapian::Weight::wdf_upper_bound_</definition>
+        <argsstring></argsstring>
+        <name>wdf_upper_bound_</name>
+        <briefdescription>
+<para>An upper bound on the wdf of this term. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" line="105" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classXapian_1_1Weight_177b1424d5f5a5b2d4848175979da6475" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::Weight::need_stat</definition>
+        <argsstring>(stat_flags flag)</argsstring>
+        <name>need_stat</name>
+        <param>
+          <type><ref refid="classXapian_1_1Weight_1e3c11f1d2d96a18e0eb9b9b31c5c5479" kindref="member">stat_flags</ref></type>
+          <declname>flag</declname>
+        </param>
+        <briefdescription>
+<para>Tell <ref refid="namespaceXapian" kindref="compound">Xapian</ref> that your subclass will want a particular statistic. </para>        </briefdescription>
+        <detaileddescription>
+<para>Some of the statistics can be costly to fetch or calculate, so <ref refid="namespaceXapian" kindref="compound">Xapian</ref> needs to know which are actually going to be used. You should call <ref refid="classXapian_1_1Weight_177b1424d5f5a5b2d4848175979da6475" kindref="member">need_stat()</ref> from your constructor for each such statistic.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>flag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The stat_flags value for a required statistic. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" line="60" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" bodystart="60" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Weight_171cd77c24183e837313ec13d967ddf2c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Xapian::Weight::init</definition>
+        <argsstring>(double factor)=0</argsstring>
+        <name>init</name>
+        <reimplementedby refid="classXapian_1_1TradWeight_191bd0e0acdd940c5f99dcb55e9f97a85">init</reimplementedby>
+        <reimplementedby refid="classXapian_1_1BM25Weight_1f1b28cdfada2b4c5823934ac366e76fb">init</reimplementedby>
+        <reimplementedby refid="classXapian_1_1BoolWeight_19a02f415d883ff831f30bf2a3aa8e2bc">init</reimplementedby>
+        <param>
+          <type>double</type>
+          <declname>factor</declname>
+        </param>
+        <briefdescription>
+<para>Allow the subclass to perform any initialisation it needs to. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>factor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Any scaling factor (e.g. from OP_SCALE_WEIGHT). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" line="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Weight_1a7acc105949dcb3b8b343a598dd01487" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::Weight::Weight</definition>
+        <argsstring>(const Weight &amp;)</argsstring>
+        <name>Weight</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1Weight" kindref="compound">Weight</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Don&apos;t allow copying. </para>        </briefdescription>
+        <detaileddescription>
+<para>This would ideally be private, but that causes a compilation error with GCC 4.1 (which appears to be a bug). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" line="256"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Weight_148e8f4d351f2a090bcec111513833e0f" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::Weight::Weight</definition>
+        <argsstring>()</argsstring>
+        <name>Weight</name>
+        <briefdescription>
+<para>Default constructor, needed by subclass constructors. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" line="259" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" bodystart="259" bodyend="259"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Weight_1a2e23f50f21b1bc185f90b1e9cb7a7f3" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceXapian_17f30aa95f0c42b117dafaf66ba24241d" kindref="member">Xapian::doccount</ref></type>
+        <definition>Xapian::doccount Xapian::Weight::get_collection_size</definition>
+        <argsstring>() const </argsstring>
+        <name>get_collection_size</name>
+        <briefdescription>
+<para>The number of documents in the collection. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" line="262" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" bodystart="262" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Weight_18a8cce67a8493930d450b7146ef7579d" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceXapian_17f30aa95f0c42b117dafaf66ba24241d" kindref="member">Xapian::doccount</ref></type>
+        <definition>Xapian::doccount Xapian::Weight::get_rset_size</definition>
+        <argsstring>() const </argsstring>
+        <name>get_rset_size</name>
+        <briefdescription>
+<para>The number of documents marked as relevant. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" line="265" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" bodystart="265" bodyend="265"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Weight_1918940bab1dc710ecb97da04f5fa6385" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceXapian_163b13d3a36fcab9975658e32643d86b5" kindref="member">Xapian::doclength</ref></type>
+        <definition>Xapian::doclength Xapian::Weight::get_average_length</definition>
+        <argsstring>() const </argsstring>
+        <name>get_average_length</name>
+        <briefdescription>
+<para>The average length of a document in the collection. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" line="268" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" bodystart="268" bodyend="268"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Weight_192938b9a4e06cc4064d175678cbf89db" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceXapian_17f30aa95f0c42b117dafaf66ba24241d" kindref="member">Xapian::doccount</ref></type>
+        <definition>Xapian::doccount Xapian::Weight::get_termfreq</definition>
+        <argsstring>() const </argsstring>
+        <name>get_termfreq</name>
+        <briefdescription>
+<para>The number of documents which this term indexes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" line="271" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" bodystart="271" bodyend="271"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Weight_11e6c2200a16fe2ed1631e498b0938de8" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceXapian_17f30aa95f0c42b117dafaf66ba24241d" kindref="member">Xapian::doccount</ref></type>
+        <definition>Xapian::doccount Xapian::Weight::get_reltermfreq</definition>
+        <argsstring>() const </argsstring>
+        <name>get_reltermfreq</name>
+        <briefdescription>
+<para>The number of relevant documents which this term indexes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" line="274" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" bodystart="274" bodyend="274"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Weight_1346c098a7aa0e4834a2d0289f2095bec" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceXapian_172b5a76dd8cfb7b251fe7986e86390cb" kindref="member">Xapian::termcount</ref></type>
+        <definition>Xapian::termcount Xapian::Weight::get_query_length</definition>
+        <argsstring>() const </argsstring>
+        <name>get_query_length</name>
+        <briefdescription>
+<para>The length of the query. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" line="277" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" bodystart="277" bodyend="277"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Weight_1764637daf40de00c390c2248fb0d9669" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceXapian_172b5a76dd8cfb7b251fe7986e86390cb" kindref="member">Xapian::termcount</ref></type>
+        <definition>Xapian::termcount Xapian::Weight::get_wqf</definition>
+        <argsstring>() const </argsstring>
+        <name>get_wqf</name>
+        <briefdescription>
+<para>The within-query-frequency of this term. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" line="280" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" bodystart="280" bodyend="280"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Weight_16fdebced528afecf5709eb94aae8a03b" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceXapian_172b5a76dd8cfb7b251fe7986e86390cb" kindref="member">Xapian::termcount</ref></type>
+        <definition>Xapian::termcount Xapian::Weight::get_doclength_upper_bound</definition>
+        <argsstring>() const </argsstring>
+        <name>get_doclength_upper_bound</name>
+        <briefdescription>
+<para>An lower bound on the maximum length of any document in the database. </para>        </briefdescription>
+        <detaileddescription>
+<para>This should only be used by <ref refid="classXapian_1_1Weight_1f37e797fa12bb915f73b20b953a132b7" kindref="member">get_maxpart()</ref> and <ref refid="classXapian_1_1Weight_1ca641ecc2f5645666820f864d243f46d" kindref="member">get_maxextra()</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" line="286" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" bodystart="286" bodyend="288"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Weight_1e7174b4c8b66f72f8d7a8086ca4fb476" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceXapian_172b5a76dd8cfb7b251fe7986e86390cb" kindref="member">Xapian::termcount</ref></type>
+        <definition>Xapian::termcount Xapian::Weight::get_doclength_lower_bound</definition>
+        <argsstring>() const </argsstring>
+        <name>get_doclength_lower_bound</name>
+        <briefdescription>
+<para>An upper bound on the maximum length of any document in the database. </para>        </briefdescription>
+        <detaileddescription>
+<para>This should only be used by <ref refid="classXapian_1_1Weight_1f37e797fa12bb915f73b20b953a132b7" kindref="member">get_maxpart()</ref> and <ref refid="classXapian_1_1Weight_1ca641ecc2f5645666820f864d243f46d" kindref="member">get_maxextra()</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" line="294" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" bodystart="294" bodyend="296"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Weight_1ed86f1d362deac4a1492480ca28c788f" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceXapian_172b5a76dd8cfb7b251fe7986e86390cb" kindref="member">Xapian::termcount</ref></type>
+        <definition>Xapian::termcount Xapian::Weight::get_wdf_upper_bound</definition>
+        <argsstring>() const </argsstring>
+        <name>get_wdf_upper_bound</name>
+        <briefdescription>
+<para>An upper bound on the wdf of this term. </para>        </briefdescription>
+        <detaileddescription>
+<para>This should only be used by <ref refid="classXapian_1_1Weight_1f37e797fa12bb915f73b20b953a132b7" kindref="member">get_maxpart()</ref> and <ref refid="classXapian_1_1Weight_1ca641ecc2f5645666820f864d243f46d" kindref="member">get_maxextra()</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" line="302" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" bodystart="302" bodyend="304"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classXapian_1_1Weight_13c411746358730c3c21c3a96472bce82" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::Weight::operator=</definition>
+        <argsstring>(const Weight &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1Weight" kindref="compound">Weight</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Don&apos;t allow assignment. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" line="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Weight_1f6c8efbea1cf588e52d125599de27d26" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::Weight::init_</definition>
+        <argsstring>(const Internal &amp;stats, Xapian::termcount query_len_, const std::string &amp;term, Xapian::termcount wqf_, double factor)</argsstring>
+        <name>init_</name>
+        <param>
+          <type>const Internal &amp;</type>
+          <declname>stats</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceXapian_172b5a76dd8cfb7b251fe7986e86390cb" kindref="member">Xapian::termcount</ref></type>
+          <declname>query_len_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>term</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceXapian_172b5a76dd8cfb7b251fe7986e86390cb" kindref="member">Xapian::termcount</ref></type>
+          <declname>wqf_</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>factor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" line="208"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Weight_13e515858434bb945b2649f5a9a16afd5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::Weight::init_</definition>
+        <argsstring>(const Internal &amp;stats, Xapian::termcount query_len_, double factor, Xapian::doccount termfreq, Xapian::doccount reltermfreq)</argsstring>
+        <name>init_</name>
+        <param>
+          <type>const Internal &amp;</type>
+          <declname>stats</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceXapian_172b5a76dd8cfb7b251fe7986e86390cb" kindref="member">Xapian::termcount</ref></type>
+          <declname>query_len_</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>factor</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceXapian_17f30aa95f0c42b117dafaf66ba24241d" kindref="member">Xapian::doccount</ref></type>
+          <declname>termfreq</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceXapian_17f30aa95f0c42b117dafaf66ba24241d" kindref="member">Xapian::doccount</ref></type>
+          <declname>reltermfreq</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" line="221"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Weight_10375699d25772a60b7c1581799a132b2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::Weight::init_</definition>
+        <argsstring>(const Internal &amp;stats, Xapian::termcount query_len_)</argsstring>
+        <name>init_</name>
+        <param>
+          <type>const Internal &amp;</type>
+          <declname>stats</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceXapian_172b5a76dd8cfb7b251fe7986e86390cb" kindref="member">Xapian::termcount</ref></type>
+          <declname>query_len_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" line="229"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Weight_1e11c1980b225d7596db43366525b44f7" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Xapian::Weight::get_sumpart_needs_doclength_</definition>
+        <argsstring>() const </argsstring>
+        <name>get_sumpart_needs_doclength_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" line="237" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" bodystart="237" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Weight_1a6f5992fa045672d492d7720eb25e127" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Xapian::Weight::get_sumpart_needs_wdf_</definition>
+        <argsstring>() const </argsstring>
+        <name>get_sumpart_needs_wdf_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" line="246" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" bodystart="246" bodyend="248"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classXapian_1_1Weight_1dcc0dd3e0c762597e89720043440a0bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual Xapian::Weight::~Weight</definition>
+        <argsstring>()</argsstring>
+        <name>~Weight</name>
+        <briefdescription>
+<para>Virtual destructor, because we have virtual methods. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" line="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Weight_15663bb152f93f08dcc07e0b4a39ddbc3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classXapian_1_1Weight" kindref="compound">Weight</ref> *</type>
+        <definition>virtual Weight* Xapian::Weight::clone</definition>
+        <argsstring>() const =0</argsstring>
+        <name>clone</name>
+        <reimplementedby refid="classXapian_1_1TradWeight_185727fdd8a794534c5ec2b6da6baf135">clone</reimplementedby>
+        <reimplementedby refid="classXapian_1_1BM25Weight_17b274a31997eb61c70f92418a9abc36c">clone</reimplementedby>
+        <reimplementedby refid="classXapian_1_1BoolWeight_1cf501bcf0ff0292f1a8e92f5f1f4fb1e">clone</reimplementedby>
+        <briefdescription>
+<para>Clone this object. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method allocates and returns a copy of the object it is called on.</para><para>If your subclass is called FooWeight and has parameters a and b, then you would implement FooWeight::clone() like so:</para><para>FooWeight * FooWeight::clone() const { return new FooWeight(a, b); }</para><para>Note that the returned object will be deallocated by <ref refid="namespaceXapian" kindref="compound">Xapian</ref> after use with &quot;delete&quot;. It must therefore have been allocated with &quot;new&quot;. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" line="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Weight_1afd3b445fb1955aae3d7c32aae3ba7b4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string Xapian::Weight::name</definition>
+        <argsstring>() const </argsstring>
+        <name>name</name>
+        <reimplementedby refid="classXapian_1_1TradWeight_1a34538148bb8a2771675117d7331aee1">name</reimplementedby>
+        <reimplementedby refid="classXapian_1_1BM25Weight_1943fdc83495a97f7d6af1208f5b26052">name</reimplementedby>
+        <reimplementedby refid="classXapian_1_1BoolWeight_1c91b3673317ee9574dff4321482f579d">name</reimplementedby>
+        <briefdescription>
+<para>Return the name of this weighting scheme. </para>        </briefdescription>
+        <detaileddescription>
+<para>This name is used by the remote backend. It is passed along with the serialised parameters to the remote server so that it knows which class to create.</para><para>Return the full namespace-qualified name of your class here - if your class is called FooWeight, return &quot;FooWeight&quot; from this method (<ref refid="classXapian_1_1BM25Weight" kindref="compound">Xapian::BM25Weight</ref> returns &quot;Xapian::BM25Weight&quot; here).</para><para>If you don&apos;t want to support the remote backend, you can use the default implementation which simply returns an empty string. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" line="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Weight_1cf568da52a87e6a6786400dbd0a79edf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string Xapian::Weight::serialise</definition>
+        <argsstring>() const </argsstring>
+        <name>serialise</name>
+        <reimplementedby refid="classXapian_1_1TradWeight_13cb90ec9c8ef2866dfa405d3490d4cc3">serialise</reimplementedby>
+        <reimplementedby refid="classXapian_1_1BM25Weight_12dd2eb60deb5690e471d68f4c7fc3203">serialise</reimplementedby>
+        <reimplementedby refid="classXapian_1_1BoolWeight_106e88787161cc2146511259d5742dd10">serialise</reimplementedby>
+        <briefdescription>
+<para>Return this object&apos;s parameters serialised as a single string. </para>        </briefdescription>
+        <detaileddescription>
+<para>If you don&apos;t want to support the remote backend, you can use the default implementation which simply throws <ref refid="classXapian_1_1UnimplementedError" kindref="compound">Xapian::UnimplementedError</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" line="147"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Weight_1031c3e0db3ae50e801b324e71a44c140" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classXapian_1_1Weight" kindref="compound">Weight</ref> *</type>
+        <definition>virtual Weight* Xapian::Weight::unserialise</definition>
+        <argsstring>(const std::string &amp;s) const </argsstring>
+        <name>unserialise</name>
+        <reimplementedby refid="classXapian_1_1TradWeight_1ce5aae016fc57407c7f7f5f0f3d7b5c0">unserialise</reimplementedby>
+        <reimplementedby refid="classXapian_1_1BM25Weight_18a9f0c48f4229aa0d62feff5f496dc78">unserialise</reimplementedby>
+        <reimplementedby refid="classXapian_1_1BoolWeight_1729a7656e41663f612d0ae871d02c518">unserialise</reimplementedby>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Unserialise parameters. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method unserialises parameters serialised by the <emphasis><ref refid="classXapian_1_1Weight_1cf568da52a87e6a6786400dbd0a79edf" kindref="member">serialise()</ref></emphasis> method and allocates and returns a new object initialised with them.</para><para>If you don&apos;t want to support the remote backend, you can use the default implementation which simply throws <ref refid="classXapian_1_1UnimplementedError" kindref="compound">Xapian::UnimplementedError</ref>.</para><para>Note that the returned object will be deallocated by <ref refid="namespaceXapian" kindref="compound">Xapian</ref> after use with &quot;delete&quot;. It must therefore have been allocated with &quot;new&quot;. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" line="160"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Weight_18c6beb18e2c08cbc2ae61ec9d808ed9e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="namespaceXapian_1cac12803afc9e24ee5141c119acb8884" kindref="member">Xapian::weight</ref></type>
+        <definition>virtual Xapian::weight Xapian::Weight::get_sumpart</definition>
+        <argsstring>(Xapian::termcount wdf, Xapian::termcount doclen) const =0</argsstring>
+        <name>get_sumpart</name>
+        <reimplementedby refid="classXapian_1_1TradWeight_1fd3432ac3e0adab5b7c4ad61d2ced18d">get_sumpart</reimplementedby>
+        <reimplementedby refid="classXapian_1_1BM25Weight_14fe48617e7db67232208a00b94878f54">get_sumpart</reimplementedby>
+        <reimplementedby refid="classXapian_1_1BoolWeight_19e9cac485fad3353044f4a5aa5813f6c">get_sumpart</reimplementedby>
+        <param>
+          <type><ref refid="namespaceXapian_172b5a76dd8cfb7b251fe7986e86390cb" kindref="member">Xapian::termcount</ref></type>
+          <declname>wdf</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceXapian_172b5a76dd8cfb7b251fe7986e86390cb" kindref="member">Xapian::termcount</ref></type>
+          <declname>doclen</declname>
+        </param>
+        <briefdescription>
+<para>Calculate the weight contribution for this object&apos;s term to a document. </para>        </briefdescription>
+        <detaileddescription>
+<para>The parameters give information about the document which may be used in the calculations:</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>wdf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The within document frequency of the term in the document. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>doclen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The document&apos;s length (unnormalised). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" line="171"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Weight_1f37e797fa12bb915f73b20b953a132b7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="namespaceXapian_1cac12803afc9e24ee5141c119acb8884" kindref="member">Xapian::weight</ref></type>
+        <definition>virtual Xapian::weight Xapian::Weight::get_maxpart</definition>
+        <argsstring>() const =0</argsstring>
+        <name>get_maxpart</name>
+        <reimplementedby refid="classXapian_1_1TradWeight_1bc2fd38d6abbb7ef77b14959ae3f1fc0">get_maxpart</reimplementedby>
+        <reimplementedby refid="classXapian_1_1BM25Weight_1f23907adc06e73cdf1228fc616a2fda2">get_maxpart</reimplementedby>
+        <reimplementedby refid="classXapian_1_1BoolWeight_19edd11c7c0c6d3fc72c347f1bd65bb3c">get_maxpart</reimplementedby>
+        <briefdescription>
+<para>Return an upper bound on what <ref refid="classXapian_1_1Weight_18c6beb18e2c08cbc2ae61ec9d808ed9e" kindref="member">get_sumpart()</ref> can return for any document. </para>        </briefdescription>
+        <detaileddescription>
+<para>This information is used by the matcher to perform various optimisations, so strive to make the bound as tight as possible. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" line="178"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Weight_18c29b15b875e5666ac8b94c9a39e962f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="namespaceXapian_1cac12803afc9e24ee5141c119acb8884" kindref="member">Xapian::weight</ref></type>
+        <definition>virtual Xapian::weight Xapian::Weight::get_sumextra</definition>
+        <argsstring>(Xapian::termcount doclen) const =0</argsstring>
+        <name>get_sumextra</name>
+        <reimplementedby refid="classXapian_1_1TradWeight_1c6f5746b1117b331a42e1bdc4002d65e">get_sumextra</reimplementedby>
+        <reimplementedby refid="classXapian_1_1BM25Weight_16992ef2cd23a095d607b70aa2076850b">get_sumextra</reimplementedby>
+        <reimplementedby refid="classXapian_1_1BoolWeight_144d22ac1bafc6290d2877fb972e4f5f3">get_sumextra</reimplementedby>
+        <param>
+          <type><ref refid="namespaceXapian_172b5a76dd8cfb7b251fe7986e86390cb" kindref="member">Xapian::termcount</ref></type>
+          <declname>doclen</declname>
+        </param>
+        <briefdescription>
+<para>Calculate the term-independent weight component for a document. </para>        </briefdescription>
+        <detaileddescription>
+<para>The parameter gives information about the document which may be used in the calculations:</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>doclen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The document&apos;s length (unnormalised). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" line="187"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Weight_1ca641ecc2f5645666820f864d243f46d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="namespaceXapian_1cac12803afc9e24ee5141c119acb8884" kindref="member">Xapian::weight</ref></type>
+        <definition>virtual Xapian::weight Xapian::Weight::get_maxextra</definition>
+        <argsstring>() const =0</argsstring>
+        <name>get_maxextra</name>
+        <reimplementedby refid="classXapian_1_1TradWeight_15e06ecfe3f4ad59c4e1a651f604800e2">get_maxextra</reimplementedby>
+        <reimplementedby refid="classXapian_1_1BM25Weight_17c91481891313e089eb38bf1a9a83029">get_maxextra</reimplementedby>
+        <reimplementedby refid="classXapian_1_1BoolWeight_18332b9fa9cb900d273f8077f76c94fcc">get_maxextra</reimplementedby>
+        <briefdescription>
+<para>Return an upper bound on what <ref refid="classXapian_1_1Weight_18c29b15b875e5666ac8b94c9a39e962f" kindref="member">get_sumextra()</ref> can return for any document. </para>        </briefdescription>
+        <detaileddescription>
+<para>This information is used by the matcher to perform various optimisations, so strive to make the bound as tight as possible. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" line="195"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Abstract base class for weighting schemes. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="761">
+        <label>Xapian::Weight</label>
+        <link refid="classXapian_1_1Weight"/>
+      </node>
+      <node id="764">
+        <label>Xapian::TradWeight</label>
+        <link refid="classXapian_1_1TradWeight"/>
+        <childnode refid="761" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="762">
+        <label>Xapian::BM25Weight</label>
+        <link refid="classXapian_1_1BM25Weight"/>
+        <childnode refid="761" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="763">
+        <label>Xapian::BoolWeight</label>
+        <link refid="classXapian_1_1BoolWeight"/>
+        <childnode refid="761" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" line="33" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" bodystart="33" bodyend="305"/>
+    <listofallmembers>
+      <member refid="classXapian_1_1Weight_1e3c11f1d2d96a18e0eb9b9b31c5c54795ce8ff7822abec06e0f5ac956d7b247e" prot="protected" virt="non-virtual"><scope>Xapian::Weight</scope><name>AVERAGE_LENGTH</name></member>
+      <member refid="classXapian_1_1Weight_157fd73a283d4d9e70aa1ee400821b01b" prot="private" virt="non-virtual"><scope>Xapian::Weight</scope><name>average_length_</name></member>
+      <member refid="classXapian_1_1Weight_15663bb152f93f08dcc07e0b4a39ddbc3" prot="public" virt="pure-virtual"><scope>Xapian::Weight</scope><name>clone</name></member>
+      <member refid="classXapian_1_1Weight_1e3c11f1d2d96a18e0eb9b9b31c5c5479bce4fe48f6f680644bd352acc937856e" prot="protected" virt="non-virtual"><scope>Xapian::Weight</scope><name>COLLECTION_SIZE</name></member>
+      <member refid="classXapian_1_1Weight_14652e02f4bcf6ea881053a2c975e2db2" prot="private" virt="non-virtual"><scope>Xapian::Weight</scope><name>collection_size_</name></member>
+      <member refid="classXapian_1_1Weight_1e3c11f1d2d96a18e0eb9b9b31c5c547992ac55fbe32f39c3b4cdcab135ac0722" prot="protected" virt="non-virtual"><scope>Xapian::Weight</scope><name>DOC_LENGTH</name></member>
+      <member refid="classXapian_1_1Weight_1e3c11f1d2d96a18e0eb9b9b31c5c54798f07b317ab1fca84d17cab78aa412e37" prot="protected" virt="non-virtual"><scope>Xapian::Weight</scope><name>DOC_LENGTH_MAX</name></member>
+      <member refid="classXapian_1_1Weight_1e3c11f1d2d96a18e0eb9b9b31c5c5479c9f88f7ca707347bcce2c1ad0abdf531" prot="protected" virt="non-virtual"><scope>Xapian::Weight</scope><name>DOC_LENGTH_MIN</name></member>
+      <member refid="classXapian_1_1Weight_1e312d8a6e246c14aa199ea23c529124f" prot="private" virt="non-virtual"><scope>Xapian::Weight</scope><name>doclength_lower_bound_</name></member>
+      <member refid="classXapian_1_1Weight_1584f9d92407fe33f7732264298703eda" prot="private" virt="non-virtual"><scope>Xapian::Weight</scope><name>doclength_upper_bound_</name></member>
+      <member refid="classXapian_1_1Weight_1918940bab1dc710ecb97da04f5fa6385" prot="protected" virt="non-virtual"><scope>Xapian::Weight</scope><name>get_average_length</name></member>
+      <member refid="classXapian_1_1Weight_1a2e23f50f21b1bc185f90b1e9cb7a7f3" prot="protected" virt="non-virtual"><scope>Xapian::Weight</scope><name>get_collection_size</name></member>
+      <member refid="classXapian_1_1Weight_1e7174b4c8b66f72f8d7a8086ca4fb476" prot="protected" virt="non-virtual"><scope>Xapian::Weight</scope><name>get_doclength_lower_bound</name></member>
+      <member refid="classXapian_1_1Weight_16fdebced528afecf5709eb94aae8a03b" prot="protected" virt="non-virtual"><scope>Xapian::Weight</scope><name>get_doclength_upper_bound</name></member>
+      <member refid="classXapian_1_1Weight_1ca641ecc2f5645666820f864d243f46d" prot="public" virt="pure-virtual"><scope>Xapian::Weight</scope><name>get_maxextra</name></member>
+      <member refid="classXapian_1_1Weight_1f37e797fa12bb915f73b20b953a132b7" prot="public" virt="pure-virtual"><scope>Xapian::Weight</scope><name>get_maxpart</name></member>
+      <member refid="classXapian_1_1Weight_1346c098a7aa0e4834a2d0289f2095bec" prot="protected" virt="non-virtual"><scope>Xapian::Weight</scope><name>get_query_length</name></member>
+      <member refid="classXapian_1_1Weight_11e6c2200a16fe2ed1631e498b0938de8" prot="protected" virt="non-virtual"><scope>Xapian::Weight</scope><name>get_reltermfreq</name></member>
+      <member refid="classXapian_1_1Weight_18a8cce67a8493930d450b7146ef7579d" prot="protected" virt="non-virtual"><scope>Xapian::Weight</scope><name>get_rset_size</name></member>
+      <member refid="classXapian_1_1Weight_18c29b15b875e5666ac8b94c9a39e962f" prot="public" virt="pure-virtual"><scope>Xapian::Weight</scope><name>get_sumextra</name></member>
+      <member refid="classXapian_1_1Weight_18c6beb18e2c08cbc2ae61ec9d808ed9e" prot="public" virt="pure-virtual"><scope>Xapian::Weight</scope><name>get_sumpart</name></member>
+      <member refid="classXapian_1_1Weight_1e11c1980b225d7596db43366525b44f7" prot="private" virt="non-virtual"><scope>Xapian::Weight</scope><name>get_sumpart_needs_doclength_</name></member>
+      <member refid="classXapian_1_1Weight_1a6f5992fa045672d492d7720eb25e127" prot="private" virt="non-virtual"><scope>Xapian::Weight</scope><name>get_sumpart_needs_wdf_</name></member>
+      <member refid="classXapian_1_1Weight_192938b9a4e06cc4064d175678cbf89db" prot="protected" virt="non-virtual"><scope>Xapian::Weight</scope><name>get_termfreq</name></member>
+      <member refid="classXapian_1_1Weight_1ed86f1d362deac4a1492480ca28c788f" prot="protected" virt="non-virtual"><scope>Xapian::Weight</scope><name>get_wdf_upper_bound</name></member>
+      <member refid="classXapian_1_1Weight_1764637daf40de00c390c2248fb0d9669" prot="protected" virt="non-virtual"><scope>Xapian::Weight</scope><name>get_wqf</name></member>
+      <member refid="classXapian_1_1Weight_171cd77c24183e837313ec13d967ddf2c" prot="protected" virt="pure-virtual"><scope>Xapian::Weight</scope><name>init</name></member>
+      <member refid="classXapian_1_1Weight_1f6c8efbea1cf588e52d125599de27d26" prot="private" virt="non-virtual"><scope>Xapian::Weight</scope><name>init_</name></member>
+      <member refid="classXapian_1_1Weight_13e515858434bb945b2649f5a9a16afd5" prot="private" virt="non-virtual"><scope>Xapian::Weight</scope><name>init_</name></member>
+      <member refid="classXapian_1_1Weight_10375699d25772a60b7c1581799a132b2" prot="private" virt="non-virtual"><scope>Xapian::Weight</scope><name>init_</name></member>
+      <member refid="classXapian_1_1Weight_1afd3b445fb1955aae3d7c32aae3ba7b4" prot="public" virt="virtual"><scope>Xapian::Weight</scope><name>name</name></member>
+      <member refid="classXapian_1_1Weight_177b1424d5f5a5b2d4848175979da6475" prot="protected" virt="non-virtual"><scope>Xapian::Weight</scope><name>need_stat</name></member>
+      <member refid="classXapian_1_1Weight_13c411746358730c3c21c3a96472bce82" prot="private" virt="non-virtual"><scope>Xapian::Weight</scope><name>operator=</name></member>
+      <member refid="classXapian_1_1Weight_1e3c11f1d2d96a18e0eb9b9b31c5c54791a95530f6aa2ca909e4c1620aed8192b" prot="protected" virt="non-virtual"><scope>Xapian::Weight</scope><name>QUERY_LENGTH</name></member>
+      <member refid="classXapian_1_1Weight_14b770c5fa33877c0443c33d15516e72f" prot="private" virt="non-virtual"><scope>Xapian::Weight</scope><name>query_length_</name></member>
+      <member refid="classXapian_1_1Weight_1e3c11f1d2d96a18e0eb9b9b31c5c5479fd0979b74a0cf07991edc4af31ed55be" prot="protected" virt="non-virtual"><scope>Xapian::Weight</scope><name>RELTERMFREQ</name></member>
+      <member refid="classXapian_1_1Weight_160d255bd06560407113e70b915be37b0" prot="private" virt="non-virtual"><scope>Xapian::Weight</scope><name>reltermfreq_</name></member>
+      <member refid="classXapian_1_1Weight_1e3c11f1d2d96a18e0eb9b9b31c5c5479632727fa617eec2dfa9ad19e6adcb926" prot="protected" virt="non-virtual"><scope>Xapian::Weight</scope><name>RSET_SIZE</name></member>
+      <member refid="classXapian_1_1Weight_15a47613ac473c21b04c6d3236213e84c" prot="private" virt="non-virtual"><scope>Xapian::Weight</scope><name>rset_size_</name></member>
+      <member refid="classXapian_1_1Weight_1cf568da52a87e6a6786400dbd0a79edf" prot="public" virt="virtual"><scope>Xapian::Weight</scope><name>serialise</name></member>
+      <member refid="classXapian_1_1Weight_1e3c11f1d2d96a18e0eb9b9b31c5c5479" prot="protected" virt="non-virtual"><scope>Xapian::Weight</scope><name>stat_flags</name></member>
+      <member refid="classXapian_1_1Weight_1de4a836f26a80cbf3abcc592ae9d5714" prot="private" virt="non-virtual"><scope>Xapian::Weight</scope><name>stats_needed</name></member>
+      <member refid="classXapian_1_1Weight_1e3c11f1d2d96a18e0eb9b9b31c5c5479b2b087be2c0ffd8a2ea214298156f99b" prot="protected" virt="non-virtual"><scope>Xapian::Weight</scope><name>TERMFREQ</name></member>
+      <member refid="classXapian_1_1Weight_17f442e50f1aafcf687ca41345dc85044" prot="private" virt="non-virtual"><scope>Xapian::Weight</scope><name>termfreq_</name></member>
+      <member refid="classXapian_1_1Weight_1031c3e0db3ae50e801b324e71a44c140" prot="public" virt="virtual"><scope>Xapian::Weight</scope><name>unserialise</name></member>
+      <member refid="classXapian_1_1Weight_1e3c11f1d2d96a18e0eb9b9b31c5c5479fe84a106f8ec14c79acdfc29d9378aa2" prot="protected" virt="non-virtual"><scope>Xapian::Weight</scope><name>WDF</name></member>
+      <member refid="classXapian_1_1Weight_1e3c11f1d2d96a18e0eb9b9b31c5c5479be608cc5dc83deef0f35c13a69aa15dc" prot="protected" virt="non-virtual"><scope>Xapian::Weight</scope><name>WDF_MAX</name></member>
+      <member refid="classXapian_1_1Weight_16437e64b16f666c899ae0cd63d6c5e1e" prot="private" virt="non-virtual"><scope>Xapian::Weight</scope><name>wdf_upper_bound_</name></member>
+      <member refid="classXapian_1_1Weight_1a7acc105949dcb3b8b343a598dd01487" prot="protected" virt="non-virtual"><scope>Xapian::Weight</scope><name>Weight</name></member>
+      <member refid="classXapian_1_1Weight_148e8f4d351f2a090bcec111513833e0f" prot="protected" virt="non-virtual"><scope>Xapian::Weight</scope><name>Weight</name></member>
+      <member refid="classXapian_1_1Weight_1e3c11f1d2d96a18e0eb9b9b31c5c5479b383711f122cf1927e418dc94e8ed1a7" prot="protected" virt="non-virtual"><scope>Xapian::Weight</scope><name>WQF</name></member>
+      <member refid="classXapian_1_1Weight_1075243c8f9a040599b3b25879ef2a0ed" prot="private" virt="non-virtual"><scope>Xapian::Weight</scope><name>wqf_</name></member>
+      <member refid="classXapian_1_1Weight_1dcc0dd3e0c762597e89720043440a0bd" prot="public" virt="virtual"><scope>Xapian::Weight</scope><name>~Weight</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

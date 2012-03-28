@@ -1,0 +1,22 @@
+K 10
+svn:ignore
+V 133
+runme
+*_wrap.c
+*_wrap.cxx
+*.iltmp
+*.cs
+*.dll
+*.dsw
+*.exp
+*.lib
+*.ncb
+*.opt
+*.plg
+*.suo
+*.pdb
+example-cs.csproj.user
+obj
+Release
+Debug
+END

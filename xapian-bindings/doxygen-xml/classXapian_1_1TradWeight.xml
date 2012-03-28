@@ -1,0 +1,327 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="classXapian_1_1TradWeight" kind="class" prot="public">
+    <compoundname>Xapian::TradWeight</compoundname>
+    <basecompoundref refid="classXapian_1_1Weight" prot="public" virt="non-virtual">Xapian::Weight</basecompoundref>
+    <includes local="no">weight.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classXapian_1_1TradWeight_1236e817a305421dcadb4b2c9ac8018a5" prot="private" static="no" mutable="yes">
+        <type><ref refid="namespaceXapian_163b13d3a36fcab9975658e32643d86b5" kindref="member">Xapian::doclength</ref></type>
+        <definition>Xapian::doclength Xapian::TradWeight::len_factor</definition>
+        <argsstring></argsstring>
+        <name>len_factor</name>
+        <briefdescription>
+<para>Factor to multiply the document length by. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" line="448" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" bodystart="448" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classXapian_1_1TradWeight_1388261807d54543dddb0a8ef0372e9d9" prot="private" static="no" mutable="yes">
+        <type><ref refid="namespaceXapian_1cac12803afc9e24ee5141c119acb8884" kindref="member">Xapian::weight</ref></type>
+        <definition>Xapian::weight Xapian::TradWeight::termweight</definition>
+        <argsstring></argsstring>
+        <name>termweight</name>
+        <briefdescription>
+<para>Factor combining all the document independent factors. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" line="451" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" bodystart="451" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classXapian_1_1TradWeight_19d67802c7d67ab5bb895b5ab9b0727dc" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Xapian::TradWeight::param_k</definition>
+        <argsstring></argsstring>
+        <name>param_k</name>
+        <briefdescription>
+<para>The parameter in the formula. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" line="454" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" bodystart="454" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classXapian_1_1TradWeight_185727fdd8a794534c5ec2b6da6baf135" prot="private" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classXapian_1_1TradWeight" kindref="compound">TradWeight</ref> *</type>
+        <definition>TradWeight* Xapian::TradWeight::clone</definition>
+        <argsstring>() const </argsstring>
+        <name>clone</name>
+        <reimplements refid="classXapian_1_1Weight_15663bb152f93f08dcc07e0b4a39ddbc3">clone</reimplements>
+        <briefdescription>
+<para>Clone this object. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method allocates and returns a copy of the object it is called on.</para><para>If your subclass is called FooWeight and has parameters a and b, then you would implement FooWeight::clone() like so:</para><para>FooWeight * FooWeight::clone() const { return new FooWeight(a, b); }</para><para>Note that the returned object will be deallocated by <ref refid="namespaceXapian" kindref="compound">Xapian</ref> after use with &quot;delete&quot;. It must therefore have been allocated with &quot;new&quot;. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" line="456"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1TradWeight_191bd0e0acdd940c5f99dcb55e9f97a85" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Xapian::TradWeight::init</definition>
+        <argsstring>(double factor)</argsstring>
+        <name>init</name>
+        <reimplements refid="classXapian_1_1Weight_171cd77c24183e837313ec13d967ddf2c">init</reimplements>
+        <param>
+          <type>double</type>
+          <declname>factor</declname>
+        </param>
+        <briefdescription>
+<para>Allow the subclass to perform any initialisation it needs to. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>factor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Any scaling factor (e.g. from OP_SCALE_WEIGHT). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" line="458"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classXapian_1_1TradWeight_1904914c46534a32c666a473c9ffdf77c" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::TradWeight::TradWeight</definition>
+        <argsstring>(double k=1.0)</argsstring>
+        <name>TradWeight</name>
+        <param>
+          <type>double</type>
+          <declname>k</declname>
+          <defval>1.0</defval>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="classXapian_1_1TradWeight" kindref="compound">TradWeight</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>k</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A non-negative parameter controlling how influential within-document-frequency (wdf) and document length are. k=0 means that wdf and document length don&apos;t affect the weights. The larger k1 is, the more they do. (default 1) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" line="468" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" bodystart="468" bodyend="482"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1TradWeight_1a34538148bb8a2771675117d7331aee1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string Xapian::TradWeight::name</definition>
+        <argsstring>() const </argsstring>
+        <name>name</name>
+        <reimplements refid="classXapian_1_1Weight_1afd3b445fb1955aae3d7c32aae3ba7b4">name</reimplements>
+        <briefdescription>
+<para>Return the name of this weighting scheme. </para>        </briefdescription>
+        <detaileddescription>
+<para>This name is used by the remote backend. It is passed along with the serialised parameters to the remote server so that it knows which class to create.</para><para>Return the full namespace-qualified name of your class here - if your class is called FooWeight, return &quot;FooWeight&quot; from this method (<ref refid="classXapian_1_1BM25Weight" kindref="compound">Xapian::BM25Weight</ref> returns &quot;Xapian::BM25Weight&quot; here).</para><para>If you don&apos;t want to support the remote backend, you can use the default implementation which simply returns an empty string. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" line="484"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1TradWeight_13cb90ec9c8ef2866dfa405d3490d4cc3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string Xapian::TradWeight::serialise</definition>
+        <argsstring>() const </argsstring>
+        <name>serialise</name>
+        <reimplements refid="classXapian_1_1Weight_1cf568da52a87e6a6786400dbd0a79edf">serialise</reimplements>
+        <briefdescription>
+<para>Return this object&apos;s parameters serialised as a single string. </para>        </briefdescription>
+        <detaileddescription>
+<para>If you don&apos;t want to support the remote backend, you can use the default implementation which simply throws <ref refid="classXapian_1_1UnimplementedError" kindref="compound">Xapian::UnimplementedError</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" line="486"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1TradWeight_1ce5aae016fc57407c7f7f5f0f3d7b5c0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classXapian_1_1TradWeight" kindref="compound">TradWeight</ref> *</type>
+        <definition>TradWeight* Xapian::TradWeight::unserialise</definition>
+        <argsstring>(const std::string &amp;s) const </argsstring>
+        <name>unserialise</name>
+        <reimplements refid="classXapian_1_1Weight_1031c3e0db3ae50e801b324e71a44c140">unserialise</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Unserialise parameters. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method unserialises parameters serialised by the <emphasis><ref refid="classXapian_1_1TradWeight_13cb90ec9c8ef2866dfa405d3490d4cc3" kindref="member">serialise()</ref></emphasis> method and allocates and returns a new object initialised with them.</para><para>If you don&apos;t want to support the remote backend, you can use the default implementation which simply throws <ref refid="classXapian_1_1UnimplementedError" kindref="compound">Xapian::UnimplementedError</ref>.</para><para>Note that the returned object will be deallocated by <ref refid="namespaceXapian" kindref="compound">Xapian</ref> after use with &quot;delete&quot;. It must therefore have been allocated with &quot;new&quot;. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" line="487"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1TradWeight_1fd3432ac3e0adab5b7c4ad61d2ced18d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespaceXapian_1cac12803afc9e24ee5141c119acb8884" kindref="member">Xapian::weight</ref></type>
+        <definition>Xapian::weight Xapian::TradWeight::get_sumpart</definition>
+        <argsstring>(Xapian::termcount wdf, Xapian::termcount doclen) const </argsstring>
+        <name>get_sumpart</name>
+        <reimplements refid="classXapian_1_1Weight_18c6beb18e2c08cbc2ae61ec9d808ed9e">get_sumpart</reimplements>
+        <param>
+          <type><ref refid="namespaceXapian_172b5a76dd8cfb7b251fe7986e86390cb" kindref="member">Xapian::termcount</ref></type>
+          <declname>wdf</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceXapian_172b5a76dd8cfb7b251fe7986e86390cb" kindref="member">Xapian::termcount</ref></type>
+          <declname>doclen</declname>
+        </param>
+        <briefdescription>
+<para>Calculate the weight contribution for this object&apos;s term to a document. </para>        </briefdescription>
+        <detaileddescription>
+<para>The parameters give information about the document which may be used in the calculations:</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>wdf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The within document frequency of the term in the document. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>doclen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The document&apos;s length (unnormalised). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" line="490"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1TradWeight_1bc2fd38d6abbb7ef77b14959ae3f1fc0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespaceXapian_1cac12803afc9e24ee5141c119acb8884" kindref="member">Xapian::weight</ref></type>
+        <definition>Xapian::weight Xapian::TradWeight::get_maxpart</definition>
+        <argsstring>() const </argsstring>
+        <name>get_maxpart</name>
+        <reimplements refid="classXapian_1_1Weight_1f37e797fa12bb915f73b20b953a132b7">get_maxpart</reimplements>
+        <briefdescription>
+<para>Return an upper bound on what <ref refid="classXapian_1_1TradWeight_1fd3432ac3e0adab5b7c4ad61d2ced18d" kindref="member">get_sumpart()</ref> can return for any document. </para>        </briefdescription>
+        <detaileddescription>
+<para>This information is used by the matcher to perform various optimisations, so strive to make the bound as tight as possible. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" line="491"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1TradWeight_1c6f5746b1117b331a42e1bdc4002d65e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespaceXapian_1cac12803afc9e24ee5141c119acb8884" kindref="member">Xapian::weight</ref></type>
+        <definition>Xapian::weight Xapian::TradWeight::get_sumextra</definition>
+        <argsstring>(Xapian::termcount doclen) const </argsstring>
+        <name>get_sumextra</name>
+        <reimplements refid="classXapian_1_1Weight_18c29b15b875e5666ac8b94c9a39e962f">get_sumextra</reimplements>
+        <param>
+          <type><ref refid="namespaceXapian_172b5a76dd8cfb7b251fe7986e86390cb" kindref="member">Xapian::termcount</ref></type>
+          <declname>doclen</declname>
+        </param>
+        <briefdescription>
+<para>Calculate the term-independent weight component for a document. </para>        </briefdescription>
+        <detaileddescription>
+<para>The parameter gives information about the document which may be used in the calculations:</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>doclen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The document&apos;s length (unnormalised). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" line="493"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1TradWeight_15e06ecfe3f4ad59c4e1a651f604800e2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespaceXapian_1cac12803afc9e24ee5141c119acb8884" kindref="member">Xapian::weight</ref></type>
+        <definition>Xapian::weight Xapian::TradWeight::get_maxextra</definition>
+        <argsstring>() const </argsstring>
+        <name>get_maxextra</name>
+        <reimplements refid="classXapian_1_1Weight_1ca641ecc2f5645666820f864d243f46d">get_maxextra</reimplements>
+        <briefdescription>
+<para>Return an upper bound on what <ref refid="classXapian_1_1TradWeight_1c6f5746b1117b331a42e1bdc4002d65e" kindref="member">get_sumextra()</ref> can return for any document. </para>        </briefdescription>
+        <detaileddescription>
+<para>This information is used by the matcher to perform various optimisations, so strive to make the bound as tight as possible. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" line="494"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classXapian_1_1Weight" kindref="compound">Xapian::Weight</ref> subclass implementing the traditional probabilistic formula. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class implements the &quot;traditional&quot; Probabilistic Weighting scheme, as described by the early papers on Probabilistic Retrieval. BM25 generally gives better results.</para><para>TradWeight(k) is equivalent to BM25Weight(k, 0, 0, 1, 0), except that the latter returns weights (k+1) times larger. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="703">
+        <label>Xapian::Weight</label>
+        <link refid="classXapian_1_1Weight"/>
+      </node>
+      <node id="702">
+        <label>Xapian::TradWeight</label>
+        <link refid="classXapian_1_1TradWeight"/>
+        <childnode refid="703" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="705">
+        <label>Xapian::Weight</label>
+        <link refid="classXapian_1_1Weight"/>
+      </node>
+      <node id="704">
+        <label>Xapian::TradWeight</label>
+        <link refid="classXapian_1_1TradWeight"/>
+        <childnode refid="705" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" line="446" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/weight.h" bodystart="446" bodyend="495"/>
+    <listofallmembers>
+      <member refid="classXapian_1_1Weight_1e3c11f1d2d96a18e0eb9b9b31c5c54795ce8ff7822abec06e0f5ac956d7b247e" prot="protected" virt="non-virtual"><scope>Xapian::TradWeight</scope><name>AVERAGE_LENGTH</name></member>
+      <member refid="classXapian_1_1TradWeight_185727fdd8a794534c5ec2b6da6baf135" prot="private" virt="virtual"><scope>Xapian::TradWeight</scope><name>clone</name></member>
+      <member refid="classXapian_1_1Weight_1e3c11f1d2d96a18e0eb9b9b31c5c5479bce4fe48f6f680644bd352acc937856e" prot="protected" virt="non-virtual"><scope>Xapian::TradWeight</scope><name>COLLECTION_SIZE</name></member>
+      <member refid="classXapian_1_1Weight_1e3c11f1d2d96a18e0eb9b9b31c5c547992ac55fbe32f39c3b4cdcab135ac0722" prot="protected" virt="non-virtual"><scope>Xapian::TradWeight</scope><name>DOC_LENGTH</name></member>
+      <member refid="classXapian_1_1Weight_1e3c11f1d2d96a18e0eb9b9b31c5c54798f07b317ab1fca84d17cab78aa412e37" prot="protected" virt="non-virtual"><scope>Xapian::TradWeight</scope><name>DOC_LENGTH_MAX</name></member>
+      <member refid="classXapian_1_1Weight_1e3c11f1d2d96a18e0eb9b9b31c5c5479c9f88f7ca707347bcce2c1ad0abdf531" prot="protected" virt="non-virtual"><scope>Xapian::TradWeight</scope><name>DOC_LENGTH_MIN</name></member>
+      <member refid="classXapian_1_1Weight_1918940bab1dc710ecb97da04f5fa6385" prot="protected" virt="non-virtual"><scope>Xapian::TradWeight</scope><name>get_average_length</name></member>
+      <member refid="classXapian_1_1Weight_1a2e23f50f21b1bc185f90b1e9cb7a7f3" prot="protected" virt="non-virtual"><scope>Xapian::TradWeight</scope><name>get_collection_size</name></member>
+      <member refid="classXapian_1_1Weight_1e7174b4c8b66f72f8d7a8086ca4fb476" prot="protected" virt="non-virtual"><scope>Xapian::TradWeight</scope><name>get_doclength_lower_bound</name></member>
+      <member refid="classXapian_1_1Weight_16fdebced528afecf5709eb94aae8a03b" prot="protected" virt="non-virtual"><scope>Xapian::TradWeight</scope><name>get_doclength_upper_bound</name></member>
+      <member refid="classXapian_1_1TradWeight_15e06ecfe3f4ad59c4e1a651f604800e2" prot="public" virt="virtual"><scope>Xapian::TradWeight</scope><name>get_maxextra</name></member>
+      <member refid="classXapian_1_1TradWeight_1bc2fd38d6abbb7ef77b14959ae3f1fc0" prot="public" virt="virtual"><scope>Xapian::TradWeight</scope><name>get_maxpart</name></member>
+      <member refid="classXapian_1_1Weight_1346c098a7aa0e4834a2d0289f2095bec" prot="protected" virt="non-virtual"><scope>Xapian::TradWeight</scope><name>get_query_length</name></member>
+      <member refid="classXapian_1_1Weight_11e6c2200a16fe2ed1631e498b0938de8" prot="protected" virt="non-virtual"><scope>Xapian::TradWeight</scope><name>get_reltermfreq</name></member>
+      <member refid="classXapian_1_1Weight_18a8cce67a8493930d450b7146ef7579d" prot="protected" virt="non-virtual"><scope>Xapian::TradWeight</scope><name>get_rset_size</name></member>
+      <member refid="classXapian_1_1TradWeight_1c6f5746b1117b331a42e1bdc4002d65e" prot="public" virt="virtual"><scope>Xapian::TradWeight</scope><name>get_sumextra</name></member>
+      <member refid="classXapian_1_1TradWeight_1fd3432ac3e0adab5b7c4ad61d2ced18d" prot="public" virt="virtual"><scope>Xapian::TradWeight</scope><name>get_sumpart</name></member>
+      <member refid="classXapian_1_1Weight_192938b9a4e06cc4064d175678cbf89db" prot="protected" virt="non-virtual"><scope>Xapian::TradWeight</scope><name>get_termfreq</name></member>
+      <member refid="classXapian_1_1Weight_1ed86f1d362deac4a1492480ca28c788f" prot="protected" virt="non-virtual"><scope>Xapian::TradWeight</scope><name>get_wdf_upper_bound</name></member>
+      <member refid="classXapian_1_1Weight_1764637daf40de00c390c2248fb0d9669" prot="protected" virt="non-virtual"><scope>Xapian::TradWeight</scope><name>get_wqf</name></member>
+      <member refid="classXapian_1_1TradWeight_191bd0e0acdd940c5f99dcb55e9f97a85" prot="private" virt="virtual"><scope>Xapian::TradWeight</scope><name>init</name></member>
+      <member refid="classXapian_1_1TradWeight_1236e817a305421dcadb4b2c9ac8018a5" prot="private" virt="non-virtual"><scope>Xapian::TradWeight</scope><name>len_factor</name></member>
+      <member refid="classXapian_1_1TradWeight_1a34538148bb8a2771675117d7331aee1" prot="public" virt="virtual"><scope>Xapian::TradWeight</scope><name>name</name></member>
+      <member refid="classXapian_1_1Weight_177b1424d5f5a5b2d4848175979da6475" prot="protected" virt="non-virtual"><scope>Xapian::TradWeight</scope><name>need_stat</name></member>
+      <member refid="classXapian_1_1TradWeight_19d67802c7d67ab5bb895b5ab9b0727dc" prot="private" virt="non-virtual"><scope>Xapian::TradWeight</scope><name>param_k</name></member>
+      <member refid="classXapian_1_1Weight_1e3c11f1d2d96a18e0eb9b9b31c5c54791a95530f6aa2ca909e4c1620aed8192b" prot="protected" virt="non-virtual"><scope>Xapian::TradWeight</scope><name>QUERY_LENGTH</name></member>
+      <member refid="classXapian_1_1Weight_1e3c11f1d2d96a18e0eb9b9b31c5c5479fd0979b74a0cf07991edc4af31ed55be" prot="protected" virt="non-virtual"><scope>Xapian::TradWeight</scope><name>RELTERMFREQ</name></member>
+      <member refid="classXapian_1_1Weight_1e3c11f1d2d96a18e0eb9b9b31c5c5479632727fa617eec2dfa9ad19e6adcb926" prot="protected" virt="non-virtual"><scope>Xapian::TradWeight</scope><name>RSET_SIZE</name></member>
+      <member refid="classXapian_1_1TradWeight_13cb90ec9c8ef2866dfa405d3490d4cc3" prot="public" virt="virtual"><scope>Xapian::TradWeight</scope><name>serialise</name></member>
+      <member refid="classXapian_1_1Weight_1e3c11f1d2d96a18e0eb9b9b31c5c5479" prot="protected" virt="non-virtual"><scope>Xapian::TradWeight</scope><name>stat_flags</name></member>
+      <member refid="classXapian_1_1Weight_1e3c11f1d2d96a18e0eb9b9b31c5c5479b2b087be2c0ffd8a2ea214298156f99b" prot="protected" virt="non-virtual"><scope>Xapian::TradWeight</scope><name>TERMFREQ</name></member>
+      <member refid="classXapian_1_1TradWeight_1388261807d54543dddb0a8ef0372e9d9" prot="private" virt="non-virtual"><scope>Xapian::TradWeight</scope><name>termweight</name></member>
+      <member refid="classXapian_1_1TradWeight_1904914c46534a32c666a473c9ffdf77c" prot="public" virt="non-virtual"><scope>Xapian::TradWeight</scope><name>TradWeight</name></member>
+      <member refid="classXapian_1_1TradWeight_1ce5aae016fc57407c7f7f5f0f3d7b5c0" prot="public" virt="virtual"><scope>Xapian::TradWeight</scope><name>unserialise</name></member>
+      <member refid="classXapian_1_1Weight_1e3c11f1d2d96a18e0eb9b9b31c5c5479fe84a106f8ec14c79acdfc29d9378aa2" prot="protected" virt="non-virtual"><scope>Xapian::TradWeight</scope><name>WDF</name></member>
+      <member refid="classXapian_1_1Weight_1e3c11f1d2d96a18e0eb9b9b31c5c5479be608cc5dc83deef0f35c13a69aa15dc" prot="protected" virt="non-virtual"><scope>Xapian::TradWeight</scope><name>WDF_MAX</name></member>
+      <member refid="classXapian_1_1Weight_1a7acc105949dcb3b8b343a598dd01487" prot="protected" virt="non-virtual"><scope>Xapian::TradWeight</scope><name>Weight</name></member>
+      <member refid="classXapian_1_1Weight_148e8f4d351f2a090bcec111513833e0f" prot="protected" virt="non-virtual"><scope>Xapian::TradWeight</scope><name>Weight</name></member>
+      <member refid="classXapian_1_1Weight_1e3c11f1d2d96a18e0eb9b9b31c5c5479b383711f122cf1927e418dc94e8ed1a7" prot="protected" virt="non-virtual"><scope>Xapian::TradWeight</scope><name>WQF</name></member>
+      <member refid="classXapian_1_1Weight_1dcc0dd3e0c762597e89720043440a0bd" prot="public" virt="virtual"><scope>Xapian::TradWeight</scope><name>~Weight</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

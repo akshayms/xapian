@@ -1,0 +1,200 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="classXapian_1_1StringValueRangeProcessor" kind="class" prot="public">
+    <compoundname>Xapian::StringValueRangeProcessor</compoundname>
+    <basecompoundref refid="structXapian_1_1ValueRangeProcessor" prot="public" virt="non-virtual">Xapian::ValueRangeProcessor</basecompoundref>
+    <derivedcompoundref refid="classXapian_1_1DateValueRangeProcessor" prot="public" virt="non-virtual">Xapian::DateValueRangeProcessor</derivedcompoundref>
+    <derivedcompoundref refid="classXapian_1_1NumberValueRangeProcessor" prot="public" virt="non-virtual">Xapian::NumberValueRangeProcessor</derivedcompoundref>
+    <includes local="no">queryparser.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classXapian_1_1StringValueRangeProcessor_162b1ae7a770c8fce5be0636204e7a493" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespaceXapian_194a899651fa920c72ffa9635bde630ea" kindref="member">Xapian::valueno</ref></type>
+        <definition>Xapian::valueno Xapian::StringValueRangeProcessor::valno</definition>
+        <argsstring></argsstring>
+        <name>valno</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/queryparser.h" line="105" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/queryparser.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classXapian_1_1StringValueRangeProcessor_1b4da1c8b8599b6b498987ace264af5d2" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Xapian::StringValueRangeProcessor::prefix</definition>
+        <argsstring></argsstring>
+        <name>prefix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/queryparser.h" line="108" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/queryparser.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classXapian_1_1StringValueRangeProcessor_1d0d2d28f922f003a6a6a22e15274130a" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Xapian::StringValueRangeProcessor::str</definition>
+        <argsstring></argsstring>
+        <name>str</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/queryparser.h" line="109" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/queryparser.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classXapian_1_1StringValueRangeProcessor_15601dd9129f9b21e7b973881bb4a2187" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::StringValueRangeProcessor::StringValueRangeProcessor</definition>
+        <argsstring>(Xapian::valueno slot_)</argsstring>
+        <name>StringValueRangeProcessor</name>
+        <param>
+          <type><ref refid="namespaceXapian_194a899651fa920c72ffa9635bde630ea" kindref="member">Xapian::valueno</ref></type>
+          <declname>slot_</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>slot_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value number to return from operator(). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/queryparser.h" line="117" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/queryparser.h" bodystart="116" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1StringValueRangeProcessor_1e0f051c154c1395b0fbd0834df102c4f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::StringValueRangeProcessor::StringValueRangeProcessor</definition>
+        <argsstring>(Xapian::valueno slot_, const std::string &amp;str_, bool prefix_=true)</argsstring>
+        <name>StringValueRangeProcessor</name>
+        <param>
+          <type><ref refid="namespaceXapian_194a899651fa920c72ffa9635bde630ea" kindref="member">Xapian::valueno</ref></type>
+          <declname>slot_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>str_</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>prefix_</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>slot_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value number to return from operator(). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>str_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A string to look for to recognise values as belonging to this range. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>prefix_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Flag specifying whether to check for str_ as a prefix or a suffix. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/queryparser.h" line="129" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/queryparser.h" bodystart="127" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1StringValueRangeProcessor_13001cf2c0e25875c7ffba9fe9de7f874" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespaceXapian_194a899651fa920c72ffa9635bde630ea" kindref="member">Xapian::valueno</ref></type>
+        <definition>Xapian::valueno Xapian::StringValueRangeProcessor::operator()</definition>
+        <argsstring>(std::string &amp;, std::string &amp;)</argsstring>
+        <name>operator()</name>
+        <reimplements refid="structXapian_1_1ValueRangeProcessor_1a04e11c41e40ceed5f796c94348d2ad2">operator()</reimplements>
+        <reimplementedby refid="classXapian_1_1NumberValueRangeProcessor_14a0951e57a4ea8fcdcd9bec6a8037514">operator()</reimplementedby>
+        <reimplementedby refid="classXapian_1_1DateValueRangeProcessor_129c079d9156a872f38fca82195525a92">operator()</reimplementedby>
+        <param>
+          <type>std::string &amp;</type>
+        </param>
+        <param>
+          <type>std::string &amp;</type>
+        </param>
+        <briefdescription>
+<para>Check for a valid range of this type. </para>        </briefdescription>
+        <detaileddescription>
+<para>If no prefix or suffix is specified, then this always returns the value slot specified at construction time.</para><para>If a prefix or suffix is specified, this is checked for first, and it it doesn&apos;t match, this method returns <ref refid="namespaceXapian_10a75ef120e641c77f703e60f595ffda2" kindref="member">Xapian::BAD_VALUENO</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/queryparser.h" line="139"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Handle a string range. </para>    </briefdescription>
+    <detaileddescription>
+<para>The end points can be any strings. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="695">
+        <label>Xapian::NumberValueRangeProcessor</label>
+        <link refid="classXapian_1_1NumberValueRangeProcessor"/>
+        <childnode refid="692" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="694">
+        <label>Xapian::DateValueRangeProcessor</label>
+        <link refid="classXapian_1_1DateValueRangeProcessor"/>
+        <childnode refid="692" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="693">
+        <label>Xapian::ValueRangeProcessor</label>
+        <link refid="structXapian_1_1ValueRangeProcessor"/>
+      </node>
+      <node id="692">
+        <label>Xapian::StringValueRangeProcessor</label>
+        <link refid="classXapian_1_1StringValueRangeProcessor"/>
+        <childnode refid="693" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="697">
+        <label>Xapian::ValueRangeProcessor</label>
+        <link refid="structXapian_1_1ValueRangeProcessor"/>
+      </node>
+      <node id="696">
+        <label>Xapian::StringValueRangeProcessor</label>
+        <link refid="classXapian_1_1StringValueRangeProcessor"/>
+        <childnode refid="697" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/queryparser.h" line="103" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/queryparser.h" bodystart="103" bodyend="140"/>
+    <listofallmembers>
+      <member refid="classXapian_1_1StringValueRangeProcessor_13001cf2c0e25875c7ffba9fe9de7f874" prot="public" virt="virtual"><scope>Xapian::StringValueRangeProcessor</scope><name>operator()</name></member>
+      <member refid="classXapian_1_1StringValueRangeProcessor_1b4da1c8b8599b6b498987ace264af5d2" prot="private" virt="non-virtual"><scope>Xapian::StringValueRangeProcessor</scope><name>prefix</name></member>
+      <member refid="classXapian_1_1StringValueRangeProcessor_1d0d2d28f922f003a6a6a22e15274130a" prot="private" virt="non-virtual"><scope>Xapian::StringValueRangeProcessor</scope><name>str</name></member>
+      <member refid="classXapian_1_1StringValueRangeProcessor_15601dd9129f9b21e7b973881bb4a2187" prot="public" virt="non-virtual"><scope>Xapian::StringValueRangeProcessor</scope><name>StringValueRangeProcessor</name></member>
+      <member refid="classXapian_1_1StringValueRangeProcessor_1e0f051c154c1395b0fbd0834df102c4f" prot="public" virt="non-virtual"><scope>Xapian::StringValueRangeProcessor</scope><name>StringValueRangeProcessor</name></member>
+      <member refid="classXapian_1_1StringValueRangeProcessor_162b1ae7a770c8fce5be0636204e7a493" prot="protected" virt="non-virtual"><scope>Xapian::StringValueRangeProcessor</scope><name>valno</name></member>
+      <member refid="structXapian_1_1ValueRangeProcessor_1b32baad9238adb002b47f99ec362e56e" prot="public" virt="virtual"><scope>Xapian::StringValueRangeProcessor</scope><name>~ValueRangeProcessor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

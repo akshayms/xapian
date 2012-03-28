@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="errorhandler_8h" kind="file">
+    <compoundname>errorhandler.h</compoundname>
+    <includes local="no">xapian/visibility.h</includes>
+    <includedby refid="xapian_8h" local="no">xapian.h</includedby>
+    <incdepgraph>
+      <node id="107">
+        <label>xapian/visibility.h</label>
+      </node>
+      <node id="106">
+        <label>xapian/errorhandler.h</label>
+        <link refid="errorhandler.h"/>
+        <childnode refid="107" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="108">
+        <label>xapian/errorhandler.h</label>
+        <link refid="errorhandler.h"/>
+        <childnode refid="109" relation="include">
+        </childnode>
+      </node>
+      <node id="110">
+        <label>xapian/letor.h</label>
+        <link refid="letor_8h"/>
+      </node>
+      <node id="109">
+        <label>xapian.h</label>
+        <link refid="xapian_8h"/>
+        <childnode refid="110" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classXapian_1_1ErrorHandler" prot="public">Xapian::ErrorHandler</innerclass>
+    <innernamespace refid="namespaceXapian">Xapian</innernamespace>
+    <briefdescription>
+<para>Decide if a <ref refid="classXapian_1_1Error" kindref="compound">Xapian::Error</ref> exception should be ignored. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/errorhandler.h"/>
+  </compounddef>
+</doxygen>

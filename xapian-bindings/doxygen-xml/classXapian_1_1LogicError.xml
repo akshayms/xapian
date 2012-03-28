@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="classXapian_1_1LogicError" kind="class" prot="public">
+    <compoundname>Xapian::LogicError</compoundname>
+    <basecompoundref refid="classXapian_1_1Error" prot="public" virt="non-virtual">Xapian::Error</basecompoundref>
+    <derivedcompoundref refid="classXapian_1_1AssertionError" prot="public" virt="non-virtual">Xapian::AssertionError</derivedcompoundref>
+    <derivedcompoundref refid="classXapian_1_1InvalidArgumentError" prot="public" virt="non-virtual">Xapian::InvalidArgumentError</derivedcompoundref>
+    <derivedcompoundref refid="classXapian_1_1InvalidOperationError" prot="public" virt="non-virtual">Xapian::InvalidOperationError</derivedcompoundref>
+    <derivedcompoundref refid="classXapian_1_1UnimplementedError" prot="public" virt="non-virtual">Xapian::UnimplementedError</derivedcompoundref>
+    <includes local="no">error.h</includes>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classXapian_1_1LogicError_13745817eec873ac093778c2607c7c853" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::LogicError::LogicError</definition>
+        <argsstring>(const std::string &amp;msg_, const std::string &amp;context_, const char *type_, const char *error_string_)</argsstring>
+        <name>LogicError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>context_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>type_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>error_string_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="138" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="137" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1LogicError_1d825b700b5079a81b0b9dd139b7b2a22" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::LogicError::LogicError</definition>
+        <argsstring>(const std::string &amp;msg_, const std::string &amp;context_, const char *type_, int errno_)</argsstring>
+        <name>LogicError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>context_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>type_</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>errno_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="144" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="143" bodyend="144"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The base class for exceptions indicating errors in the program logic. </para>    </briefdescription>
+    <detaileddescription>
+<para>A subclass of <ref refid="classXapian_1_1LogicError" kindref="compound">LogicError</ref> will be thrown if <ref refid="namespaceXapian" kindref="compound">Xapian</ref> detects a violation of a class invariant or a logical precondition or postcondition, etc. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="529">
+        <label>Xapian::LogicError</label>
+        <link refid="classXapian_1_1LogicError"/>
+        <childnode refid="530" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="530">
+        <label>Xapian::Error</label>
+        <link refid="classXapian_1_1Error"/>
+      </node>
+      <node id="534">
+        <label>Xapian::UnimplementedError</label>
+        <link refid="classXapian_1_1UnimplementedError"/>
+        <childnode refid="529" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="533">
+        <label>Xapian::InvalidOperationError</label>
+        <link refid="classXapian_1_1InvalidOperationError"/>
+        <childnode refid="529" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="531">
+        <label>Xapian::AssertionError</label>
+        <link refid="classXapian_1_1AssertionError"/>
+        <childnode refid="529" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="532">
+        <label>Xapian::InvalidArgumentError</label>
+        <link refid="classXapian_1_1InvalidArgumentError"/>
+        <childnode refid="529" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="535">
+        <label>Xapian::LogicError</label>
+        <link refid="classXapian_1_1LogicError"/>
+        <childnode refid="536" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="536">
+        <label>Xapian::Error</label>
+        <link refid="classXapian_1_1Error"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="132" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="132" bodyend="145"/>
+    <listofallmembers>
+      <member refid="classXapian_1_1Error_190c683965555b4bc86b08e8667170e44" prot="public" virt="non-virtual"><scope>Xapian::LogicError</scope><name>get_context</name></member>
+      <member refid="classXapian_1_1Error_1bd64e380eb6d864dc907ee62c1f58a74" prot="public" virt="non-virtual"><scope>Xapian::LogicError</scope><name>get_description</name></member>
+      <member refid="classXapian_1_1Error_16f94a579f8e176f85c6fb036592dab61" prot="public" virt="non-virtual"><scope>Xapian::LogicError</scope><name>get_error_string</name></member>
+      <member refid="classXapian_1_1Error_1ea05df48ea71dfd045da28ab984cdaa3" prot="public" virt="non-virtual"><scope>Xapian::LogicError</scope><name>get_msg</name></member>
+      <member refid="classXapian_1_1Error_1136945e703317bdf6e18d8cf511a5bfb" prot="public" virt="non-virtual"><scope>Xapian::LogicError</scope><name>get_type</name></member>
+      <member refid="classXapian_1_1LogicError_13745817eec873ac093778c2607c7c853" prot="private" virt="non-virtual"><scope>Xapian::LogicError</scope><name>LogicError</name></member>
+      <member refid="classXapian_1_1LogicError_1d825b700b5079a81b0b9dd139b7b2a22" prot="private" virt="non-virtual"><scope>Xapian::LogicError</scope><name>LogicError</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

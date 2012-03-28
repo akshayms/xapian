@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="classXapian_1_1ErrorHandler" kind="class" prot="public">
+    <compoundname>Xapian::ErrorHandler</compoundname>
+    <includes local="no">errorhandler.h</includes>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classXapian_1_1ErrorHandler_126cf40844fb3d29fd1be39ae835394fe" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::ErrorHandler::operator=</definition>
+        <argsstring>(const ErrorHandler &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1ErrorHandler" kindref="compound">ErrorHandler</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Don&apos;t allow assignment. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/errorhandler.h" line="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1ErrorHandler_1a74142702c61693a3bab97c1bf7efa37" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::ErrorHandler::ErrorHandler</definition>
+        <argsstring>(const Xapian::ErrorHandler &amp;)</argsstring>
+        <name>ErrorHandler</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1ErrorHandler" kindref="compound">Xapian::ErrorHandler</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Don&apos;t allow copying. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/errorhandler.h" line="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1ErrorHandler_11475bcd4388be30403479cd7fe76c1a4" prot="private" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool Xapian::ErrorHandler::handle_error</definition>
+        <argsstring>(Xapian::Error &amp;error)=0</argsstring>
+        <name>handle_error</name>
+        <param>
+          <type><ref refid="classXapian_1_1Error" kindref="compound">Xapian::Error</ref> &amp;</type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+<para>Perform user-specified error handling. </para>        </briefdescription>
+        <detaileddescription>
+<para>This virtual method must be defined by the APU user to specify how a <ref refid="classXapian_1_1Error" kindref="compound">Xapian::Error</ref> is to be handled.</para><para>If you want execution to continue (where possible), then return true. If you want the <ref refid="classXapian_1_1Error" kindref="compound">Error</ref> to be rethrown and propagate out of the library, then return false.</para><para>Note that it&apos;s not always possible to continue execution, so the error may be rethrown even if you return true. The <ref refid="classXapian_1_1ErrorHandler" kindref="compound">ErrorHandler</ref> is still called in this situation as you may want to log that a particular remote backend server isn&apos;t responding, and perhaps remove it from those being searched temporarily.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classXapian_1_1Error" kindref="compound">Xapian::Error</ref> object under consideration.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true to attempt to continue; false to rethrow the error. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/errorhandler.h" line="69"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classXapian_1_1ErrorHandler_12833c2fd77c9979574c63cee8db96e05" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::ErrorHandler::ErrorHandler</definition>
+        <argsstring>()</argsstring>
+        <name>ErrorHandler</name>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/errorhandler.h" line="73" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/errorhandler.h" bodystart="73" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1ErrorHandler_1f4fccfeed11d85364088e5bed7f9048b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual Xapian::ErrorHandler::~ErrorHandler</definition>
+        <argsstring>()</argsstring>
+        <name>~ErrorHandler</name>
+        <briefdescription>
+<para>We require a virtual destructor because we have virtual methods. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/errorhandler.h" line="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1ErrorHandler_1a3085bcf9a4e25bd2dd5d99710763b51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::ErrorHandler::operator()</definition>
+        <argsstring>(Xapian::Error &amp;error)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type><ref refid="classXapian_1_1Error" kindref="compound">Xapian::Error</ref> &amp;</type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+<para>Handle a <ref refid="classXapian_1_1Error" kindref="compound">Xapian::Error</ref> object. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method is called when a <ref refid="classXapian_1_1Error" kindref="compound">Xapian::Error</ref> object is thrown and caught inside <ref refid="classXapian_1_1Enquire" kindref="compound">Enquire</ref>. If this is the first <ref refid="classXapian_1_1ErrorHandler" kindref="compound">ErrorHandler</ref> that the <ref refid="classXapian_1_1Error" kindref="compound">Error</ref> has been passed to, then the handle_error() virtual method is called, which allows the API user to decide how to handle the error.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classXapian_1_1Error" kindref="compound">Xapian::Error</ref> object under consideration. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/errorhandler.h" line="88"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Decide if a <ref refid="classXapian_1_1Error" kindref="compound">Xapian::Error</ref> exception should be ignored. </para>    </briefdescription>
+    <detaileddescription>
+<para>You can create your own subclass of this class and pass in an instance of it when you construct a <ref refid="classXapian_1_1Enquire" kindref="compound">Xapian::Enquire</ref> object. <ref refid="classXapian_1_1Error" kindref="compound">Xapian::Error</ref> exceptions which happen during the match process are passed to this object and it can decide whether they should propagate or whether <ref refid="classXapian_1_1Enquire" kindref="compound">Enquire</ref> should attempt to continue.</para><para>The motivation is to allow searching over remote databases to handle a remote server which has died (both to allow results to be returned, and also so that such errors can be logged and dead servers temporarily removed from use). </para>    </detaileddescription>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/errorhandler.h" line="43" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/errorhandler.h" bodystart="43" bodyend="89"/>
+    <listofallmembers>
+      <member refid="classXapian_1_1ErrorHandler_1a74142702c61693a3bab97c1bf7efa37" prot="private" virt="non-virtual"><scope>Xapian::ErrorHandler</scope><name>ErrorHandler</name></member>
+      <member refid="classXapian_1_1ErrorHandler_12833c2fd77c9979574c63cee8db96e05" prot="public" virt="non-virtual"><scope>Xapian::ErrorHandler</scope><name>ErrorHandler</name></member>
+      <member refid="classXapian_1_1ErrorHandler_11475bcd4388be30403479cd7fe76c1a4" prot="private" virt="pure-virtual"><scope>Xapian::ErrorHandler</scope><name>handle_error</name></member>
+      <member refid="classXapian_1_1ErrorHandler_1a3085bcf9a4e25bd2dd5d99710763b51" prot="public" virt="non-virtual"><scope>Xapian::ErrorHandler</scope><name>operator()</name></member>
+      <member refid="classXapian_1_1ErrorHandler_126cf40844fb3d29fd1be39ae835394fe" prot="private" virt="non-virtual"><scope>Xapian::ErrorHandler</scope><name>operator=</name></member>
+      <member refid="classXapian_1_1ErrorHandler_1f4fccfeed11d85364088e5bed7f9048b" prot="public" virt="virtual"><scope>Xapian::ErrorHandler</scope><name>~ErrorHandler</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="classXapian_1_1ValueSetMatchDecider" kind="class" prot="public">
+    <compoundname>Xapian::ValueSetMatchDecider</compoundname>
+    <basecompoundref refid="classXapian_1_1MatchDecider" prot="public" virt="non-virtual">Xapian::MatchDecider</basecompoundref>
+    <includes local="no">valuesetmatchdecider.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classXapian_1_1ValueSetMatchDecider_179c8646b1505be5474a443d3b5b3ed2e" prot="private" static="no" mutable="no">
+        <type>std::set&lt; std::string &gt;</type>
+        <definition>std::set&lt;std::string&gt; Xapian::ValueSetMatchDecider::testset</definition>
+        <argsstring></argsstring>
+        <name>testset</name>
+        <briefdescription>
+<para>Set of values to test for. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/valuesetmatchdecider.h" line="41" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/valuesetmatchdecider.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classXapian_1_1ValueSetMatchDecider_15ca5873ca4fcc44ad74710892bebadb3" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceXapian_194a899651fa920c72ffa9635bde630ea" kindref="member">valueno</ref></type>
+        <definition>valueno Xapian::ValueSetMatchDecider::valuenum</definition>
+        <argsstring></argsstring>
+        <name>valuenum</name>
+        <briefdescription>
+<para>The value slot to look in. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/valuesetmatchdecider.h" line="44" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/valuesetmatchdecider.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classXapian_1_1ValueSetMatchDecider_1d563e964222ecc9b5b51504743d7dd9c" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Xapian::ValueSetMatchDecider::inclusive</definition>
+        <argsstring></argsstring>
+        <name>inclusive</name>
+        <briefdescription>
+<para>Whether to include or exclude documents with the specified values. </para>        </briefdescription>
+        <detaileddescription>
+<para>If true, documents with a value in the set are returned. If false, documents with a value not in the set are returned. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/valuesetmatchdecider.h" line="51" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/valuesetmatchdecider.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classXapian_1_1ValueSetMatchDecider_11f63ce5e07042150e324c754e3a98d09" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::ValueSetMatchDecider::ValueSetMatchDecider</definition>
+        <argsstring>(Xapian::valueno slot, bool inclusive_)</argsstring>
+        <name>ValueSetMatchDecider</name>
+        <param>
+          <type><ref refid="namespaceXapian_194a899651fa920c72ffa9635bde630ea" kindref="member">Xapian::valueno</ref></type>
+          <declname>slot</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>inclusive_</declname>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="classXapian_1_1ValueSetMatchDecider" kindref="compound">ValueSetMatchDecider</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>slot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value slot number to look in.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>inclusive_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true, match decider accepts documents which have a value in the specified slot which is a member of the test set; if false, match decider accepts documents which do not have a value in the specified slot. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/valuesetmatchdecider.h" line="64" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/valuesetmatchdecider.h" bodystart="63" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1ValueSetMatchDecider_1c7ea29abdfff5425ea6e75a318b1c961" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::ValueSetMatchDecider::add_value</definition>
+        <argsstring>(const std::string &amp;value)</argsstring>
+        <name>add_value</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Add a value to the test set. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value to add to the test set. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/valuesetmatchdecider.h" line="71" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/valuesetmatchdecider.h" bodystart="70" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1ValueSetMatchDecider_12ee026448fcb6501703949cf201f0487" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::ValueSetMatchDecider::remove_value</definition>
+        <argsstring>(const std::string &amp;value)</argsstring>
+        <name>remove_value</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Remove a value from the test set. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value to remove from the test set. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/valuesetmatchdecider.h" line="80" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/valuesetmatchdecider.h" bodystart="79" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1ValueSetMatchDecider_1c36090a4892dec25b5bdc1e8efaeacba" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Xapian::ValueSetMatchDecider::operator()</definition>
+        <argsstring>(const Xapian::Document &amp;doc) const </argsstring>
+        <name>operator()</name>
+        <reimplements refid="classXapian_1_1MatchDecider_11c3b5b4b318521132024cd80df0ff2c3">operator()</reimplements>
+        <param>
+          <type>const <ref refid="classXapian_1_1Document" kindref="compound">Xapian::Document</ref> &amp;</type>
+          <declname>doc</declname>
+        </param>
+        <briefdescription>
+<para>Decide whether we want this document to be in the <ref refid="classXapian_1_1MSet" kindref="compound">MSet</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>Return true if the document is acceptable, or false if the document should be excluded from the <ref refid="classXapian_1_1MSet" kindref="compound">MSet</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/valuesetmatchdecider.h" line="89"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classXapian_1_1MatchDecider" kindref="compound">MatchDecider</ref> filtering results based on whether document values are in a user-defined set. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="747">
+        <label>Xapian::MatchDecider</label>
+        <link refid="classXapian_1_1MatchDecider"/>
+      </node>
+      <node id="746">
+        <label>Xapian::ValueSetMatchDecider</label>
+        <link refid="classXapian_1_1ValueSetMatchDecider"/>
+        <childnode refid="747" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="749">
+        <label>Xapian::MatchDecider</label>
+        <link refid="classXapian_1_1MatchDecider"/>
+      </node>
+      <node id="748">
+        <label>Xapian::ValueSetMatchDecider</label>
+        <link refid="classXapian_1_1ValueSetMatchDecider"/>
+        <childnode refid="749" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/valuesetmatchdecider.h" line="39" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/valuesetmatchdecider.h" bodystart="39" bodyend="90"/>
+    <listofallmembers>
+      <member refid="classXapian_1_1ValueSetMatchDecider_1c7ea29abdfff5425ea6e75a318b1c961" prot="public" virt="non-virtual"><scope>Xapian::ValueSetMatchDecider</scope><name>add_value</name></member>
+      <member refid="classXapian_1_1ValueSetMatchDecider_1d563e964222ecc9b5b51504743d7dd9c" prot="private" virt="non-virtual"><scope>Xapian::ValueSetMatchDecider</scope><name>inclusive</name></member>
+      <member refid="classXapian_1_1ValueSetMatchDecider_1c36090a4892dec25b5bdc1e8efaeacba" prot="public" virt="virtual"><scope>Xapian::ValueSetMatchDecider</scope><name>operator()</name></member>
+      <member refid="classXapian_1_1ValueSetMatchDecider_12ee026448fcb6501703949cf201f0487" prot="public" virt="non-virtual"><scope>Xapian::ValueSetMatchDecider</scope><name>remove_value</name></member>
+      <member refid="classXapian_1_1ValueSetMatchDecider_179c8646b1505be5474a443d3b5b3ed2e" prot="private" virt="non-virtual"><scope>Xapian::ValueSetMatchDecider</scope><name>testset</name></member>
+      <member refid="classXapian_1_1ValueSetMatchDecider_15ca5873ca4fcc44ad74710892bebadb3" prot="private" virt="non-virtual"><scope>Xapian::ValueSetMatchDecider</scope><name>valuenum</name></member>
+      <member refid="classXapian_1_1ValueSetMatchDecider_11f63ce5e07042150e324c754e3a98d09" prot="public" virt="non-virtual"><scope>Xapian::ValueSetMatchDecider</scope><name>ValueSetMatchDecider</name></member>
+      <member refid="classXapian_1_1MatchDecider_1a102dbb2de58d3e96c684eb8e97520fc" prot="public" virt="virtual"><scope>Xapian::ValueSetMatchDecider</scope><name>~MatchDecider</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

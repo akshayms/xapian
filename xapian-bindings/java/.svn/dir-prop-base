@@ -1,0 +1,25 @@
+K 10
+svn:ignore
+V 192
+.*.sw?
+*.lo
+Makefile.in
+Makefile
+.deps
+.libs
+libxapian_jni.la
+SmokeTest.class
+MyMatchDecider.class
+MyExpandDecider.class
+built
+org
+xapian_wrap.cc
+xapian_wrap.d
+xapian_wrap.h
+xapian_wrap.stamp
+
+K 13
+svn:mergeinfo
+V 51
+/trunk/xapian-bindings/java:15485-15500,15865-16044
+END

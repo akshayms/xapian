@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="expanddecider_8h" kind="file">
+    <compoundname>expanddecider.h</compoundname>
+    <includes local="no">set</includes>
+    <includes local="no">string</includes>
+    <includes local="no">xapian/visibility.h</includes>
+    <includedby refid="xapian_8h" local="no">xapian.h</includedby>
+    <incdepgraph>
+      <node id="114">
+        <label>xapian/visibility.h</label>
+      </node>
+      <node id="113">
+        <label>string</label>
+      </node>
+      <node id="111">
+        <label>xapian/expanddecider.h</label>
+        <link refid="expanddecider.h"/>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+      </node>
+      <node id="112">
+        <label>set</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="117">
+        <label>xapian/letor.h</label>
+        <link refid="letor_8h"/>
+      </node>
+      <node id="115">
+        <label>xapian/expanddecider.h</label>
+        <link refid="expanddecider.h"/>
+        <childnode refid="116" relation="include">
+        </childnode>
+      </node>
+      <node id="116">
+        <label>xapian.h</label>
+        <link refid="xapian_8h"/>
+        <childnode refid="117" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classXapian_1_1ExpandDecider" prot="public">Xapian::ExpandDecider</innerclass>
+    <innerclass refid="classXapian_1_1ExpandDeciderAnd" prot="public">Xapian::ExpandDeciderAnd</innerclass>
+    <innerclass refid="classXapian_1_1ExpandDeciderFilterTerms" prot="public">Xapian::ExpandDeciderFilterTerms</innerclass>
+    <innernamespace refid="namespaceXapian">Xapian</innernamespace>
+    <briefdescription>
+<para>Allow rejection of terms during ESet generation. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/expanddecider.h"/>
+  </compounddef>
+</doxygen>

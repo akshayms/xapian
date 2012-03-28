@@ -1,0 +1,13 @@
+K 10
+svn:ignore
+V 101
+*.pyc
+changes.pck
+private_passwords.py
+xapian_head_*
+xapian_tar_*
+twistd.log
+twistd.log.*
+twistd.pid
+
+END

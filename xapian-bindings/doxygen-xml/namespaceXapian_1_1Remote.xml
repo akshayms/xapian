@@ -1,0 +1,229 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="namespaceXapian_1_1Remote" kind="namespace">
+    <compoundname>Xapian::Remote</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceXapian_1_1Remote_1ca6d4535825bbe637bc64b06ba6d0911" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classXapian_1_1Database" kindref="compound">Database</ref></type>
+        <definition>Database Xapian::Remote::open</definition>
+        <argsstring>(const std::string &amp;host, unsigned int port, useconds_t timeout=10000, useconds_t connect_timeout=10000)</argsstring>
+        <name>open</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>host</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>port</declname>
+        </param>
+        <param>
+          <type>useconds_t</type>
+          <declname>timeout</declname>
+          <defval>10000</defval>
+        </param>
+        <param>
+          <type>useconds_t</type>
+          <declname>connect_timeout</declname>
+          <defval>10000</defval>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="classXapian_1_1Database" kindref="compound">Database</ref> object for read-only access to a remote database accessed via a TCP connection. </para>        </briefdescription>
+        <detaileddescription>
+<para>Access to the remote database is via a TCP connection to the specified host and port.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>host</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>hostname to connect to. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>port number to connect to. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>timeout in milliseconds. If this timeout is exceeded for any individual operation on the remote database then <ref refid="classXapian_1_1NetworkTimeoutError" kindref="compound">Xapian::NetworkTimeoutError</ref> is thrown. A timeout of 0 means don&apos;t timeout. (Default is 10000ms, which is 10 seconds). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>connect_timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>timeout to use when connecting to the server. If this timeout is exceeded then <ref refid="classXapian_1_1NetworkTimeoutError" kindref="compound">Xapian::NetworkTimeoutError</ref> is thrown. A timeout of 0 means don&apos;t timeout. (Default is 10000ms, which is 10 seconds). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/dbfactory.h" line="180"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceXapian_1_1Remote_1aeb2ce3c98345e02a6a22ee86b47da75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classXapian_1_1WritableDatabase" kindref="compound">WritableDatabase</ref></type>
+        <definition>WritableDatabase Xapian::Remote::open_writable</definition>
+        <argsstring>(const std::string &amp;host, unsigned int port, useconds_t timeout=0, useconds_t connect_timeout=10000)</argsstring>
+        <name>open_writable</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>host</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>port</declname>
+        </param>
+        <param>
+          <type>useconds_t</type>
+          <declname>timeout</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>useconds_t</type>
+          <declname>connect_timeout</declname>
+          <defval>10000</defval>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="classXapian_1_1WritableDatabase" kindref="compound">WritableDatabase</ref> object for update access to a remote database accessed via a TCP connection. </para>        </briefdescription>
+        <detaileddescription>
+<para>Access to the remote database is via a TCP connection to the specified host and port.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>host</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>hostname to connect to. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>port number to connect to. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>timeout in milliseconds. If this timeout is exceeded for any individual operation on the remote database then <ref refid="classXapian_1_1NetworkTimeoutError" kindref="compound">Xapian::NetworkTimeoutError</ref> is thrown. (Default is 0, which means don&apos;t timeout). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>connect_timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>timeout to use when connecting to the server. If this timeout is exceeded then <ref refid="classXapian_1_1NetworkTimeoutError" kindref="compound">Xapian::NetworkTimeoutError</ref> is thrown. A timeout of 0 means don&apos;t timeout. (Default is 10000ms, which is 10 seconds). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/dbfactory.h" line="201"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceXapian_1_1Remote_111e2bf6e836693906f7137d6981f1d9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classXapian_1_1Database" kindref="compound">Database</ref></type>
+        <definition>Database Xapian::Remote::open</definition>
+        <argsstring>(const std::string &amp;program, const std::string &amp;args, useconds_t timeout=10000)</argsstring>
+        <name>open</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>program</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>args</declname>
+        </param>
+        <param>
+          <type>useconds_t</type>
+          <declname>timeout</declname>
+          <defval>10000</defval>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="classXapian_1_1Database" kindref="compound">Database</ref> object for read-only access to a remote database accessed via a program. </para>        </briefdescription>
+        <detaileddescription>
+<para>Access to the remote database is done by running an external program and communicating with it on stdin/stdout.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>program</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the external program to run. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>space-separated list of arguments to pass to program. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>timeout in milliseconds. If this timeout is exceeded for any individual operation on the remote database then <ref refid="classXapian_1_1NetworkTimeoutError" kindref="compound">Xapian::NetworkTimeoutError</ref> is thrown. A timeout of 0 means don&apos;t timeout. (Default is 10000ms, which is 10 seconds). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/dbfactory.h" line="218"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceXapian_1_1Remote_1c71848b7c59792db4e582fac952431fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classXapian_1_1WritableDatabase" kindref="compound">WritableDatabase</ref></type>
+        <definition>WritableDatabase Xapian::Remote::open_writable</definition>
+        <argsstring>(const std::string &amp;program, const std::string &amp;args, useconds_t timeout=0)</argsstring>
+        <name>open_writable</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>program</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>args</declname>
+        </param>
+        <param>
+          <type>useconds_t</type>
+          <declname>timeout</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="classXapian_1_1WritableDatabase" kindref="compound">WritableDatabase</ref> object for update access to a remote database accessed via a program. </para>        </briefdescription>
+        <detaileddescription>
+<para>Access to the remote database is done by running an external program and communicating with it on stdin/stdout.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>program</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the external program to run. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>space-separated list of arguments to pass to program. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>timeout in milliseconds. If this timeout is exceeded for any individual operation on the remote database then <ref refid="classXapian_1_1NetworkTimeoutError" kindref="compound">Xapian::NetworkTimeoutError</ref> is thrown. (Default is 0, which means don&apos;t timeout). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/dbfactory.h" line="234"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classXapian_1_1Database" kindref="compound">Database</ref> factory functions for the remote backend. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/dbfactory.h" line="158"/>
+  </compounddef>
+</doxygen>

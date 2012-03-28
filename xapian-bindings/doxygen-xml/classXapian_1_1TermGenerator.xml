@@ -1,0 +1,451 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="classXapian_1_1TermGenerator" kind="class" prot="public">
+    <compoundname>Xapian::TermGenerator</compoundname>
+    <includes local="no">termgenerator.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classXapian_1_1TermGenerator_176e983a417d996ebf729999150f45017" prot="public" static="no">
+        <name>flags</name>
+        <enumvalue id="classXapian_1_1TermGenerator_176e983a417d996ebf729999150f45017652e030497621117c43e21e6c23035d8" prot="public">
+          <name>FLAG_SPELLING</name>
+          <initializer> 128</initializer>
+          <briefdescription>
+<para>Index data required for spelling correction. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Flags to OR together and pass to <ref refid="classXapian_1_1TermGenerator_1a0d1f0ee309227852654e589ef441517" kindref="member">TermGenerator::set_flags()</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/termgenerator.h" line="83" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/termgenerator.h" bodystart="83" bodyend="86"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classXapian_1_1TermGenerator_1b9b631cfa4f03b8c2897951274958532" prot="private" static="no" mutable="no">
+        <type>Xapian::Internal::intrusive_ptr&lt; Internal &gt;</type>
+        <definition>Xapian::Internal::intrusive_ptr&lt;Internal&gt; Xapian::TermGenerator::internal</definition>
+        <argsstring></argsstring>
+        <name>internal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/termgenerator.h" line="49" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/termgenerator.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classXapian_1_1TermGenerator_1331dd5585658fc56baf91de4617f3ffd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::TermGenerator::TermGenerator</definition>
+        <argsstring>(const TermGenerator &amp;o)</argsstring>
+        <name>TermGenerator</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1TermGenerator" kindref="compound">TermGenerator</ref> &amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+<para>Copy constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/termgenerator.h" line="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1TermGenerator_1532945e0a6f0bbc98119ea5298d254de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classXapian_1_1TermGenerator" kindref="compound">TermGenerator</ref> &amp;</type>
+        <definition>TermGenerator&amp; Xapian::TermGenerator::operator=</definition>
+        <argsstring>(const TermGenerator &amp;o)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1TermGenerator" kindref="compound">TermGenerator</ref> &amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+<para>Assignment. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/termgenerator.h" line="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1TermGenerator_1bfcaae65a459d31b5497154847213bbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::TermGenerator::TermGenerator</definition>
+        <argsstring>()</argsstring>
+        <name>TermGenerator</name>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/termgenerator.h" line="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1TermGenerator_1c8f5c0681963870e37a5b0f66be32819" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::TermGenerator::~TermGenerator</definition>
+        <argsstring>()</argsstring>
+        <name>~TermGenerator</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/termgenerator.h" line="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1TermGenerator_18813a97565e16d547183337e7647b711" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::TermGenerator::set_stemmer</definition>
+        <argsstring>(const Xapian::Stem &amp;stemmer)</argsstring>
+        <name>set_stemmer</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1Stem" kindref="compound">Xapian::Stem</ref> &amp;</type>
+          <declname>stemmer</declname>
+        </param>
+        <briefdescription>
+<para>Set the <ref refid="classXapian_1_1Stem" kindref="compound">Xapian::Stem</ref> object to be used for generating stemmed terms. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/termgenerator.h" line="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1TermGenerator_18cef8e7b696129a0fc311e47baaf2120" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::TermGenerator::set_stopper</definition>
+        <argsstring>(const Xapian::Stopper *stop=NULL)</argsstring>
+        <name>set_stopper</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1Stopper" kindref="compound">Xapian::Stopper</ref> *</type>
+          <declname>stop</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+<para>Set the <ref refid="classXapian_1_1Stopper" kindref="compound">Xapian::Stopper</ref> object to be used for identifying stopwords. </para>        </briefdescription>
+        <detaileddescription>
+<para>Stemmed forms of stopwords aren&apos;t indexed, but unstemmed forms still are so that searches for phrases including stop words still work. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/termgenerator.h" line="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1TermGenerator_1f478b20d2a088697368dc2c1f1045675" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::TermGenerator::set_document</definition>
+        <argsstring>(const Xapian::Document &amp;doc)</argsstring>
+        <name>set_document</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1Document" kindref="compound">Xapian::Document</ref> &amp;</type>
+          <declname>doc</declname>
+        </param>
+        <briefdescription>
+<para>Set the current document. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/termgenerator.h" line="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1TermGenerator_1d9db48a0ef7ddc8846bf515c32d6551c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classXapian_1_1Document" kindref="compound">Xapian::Document</ref> &amp;</type>
+        <definition>const Xapian::Document&amp; Xapian::TermGenerator::get_document</definition>
+        <argsstring>() const </argsstring>
+        <name>get_document</name>
+        <briefdescription>
+<para>Get the current document. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/termgenerator.h" line="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1TermGenerator_156edabc2673241bcd87c3bd6b65e9c6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::TermGenerator::set_database</definition>
+        <argsstring>(const Xapian::WritableDatabase &amp;db)</argsstring>
+        <name>set_database</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1WritableDatabase" kindref="compound">Xapian::WritableDatabase</ref> &amp;</type>
+          <declname>db</declname>
+        </param>
+        <briefdescription>
+<para>Set the database to index spelling data to. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/termgenerator.h" line="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1TermGenerator_1a0d1f0ee309227852654e589ef441517" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classXapian_1_1TermGenerator_176e983a417d996ebf729999150f45017" kindref="member">flags</ref></type>
+        <definition>flags Xapian::TermGenerator::set_flags</definition>
+        <argsstring>(flags toggle, flags mask=flags(0))</argsstring>
+        <name>set_flags</name>
+        <param>
+          <type><ref refid="classXapian_1_1TermGenerator_176e983a417d996ebf729999150f45017" kindref="member">flags</ref></type>
+          <declname>toggle</declname>
+        </param>
+        <param>
+          <type><ref refid="classXapian_1_1TermGenerator_176e983a417d996ebf729999150f45017" kindref="member">flags</ref></type>
+          <declname>mask</declname>
+          <defval><ref refid="classXapian_1_1TermGenerator_176e983a417d996ebf729999150f45017" kindref="member">flags</ref>(0)</defval>
+        </param>
+        <briefdescription>
+<para>Set flags. </para>        </briefdescription>
+        <detaileddescription>
+<para>The new value of flags is: (flags &amp; mask) ^ toggle</para><para>To just set the flags, pass the new flags in toggle and the default value for mask.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>toggle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Flags to XOR. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mask</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Flags to AND with first.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The old flags setting. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/termgenerator.h" line="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1TermGenerator_16916b0233aa4c326711667d2195db4d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::TermGenerator::index_text</definition>
+        <argsstring>(const Xapian::Utf8Iterator &amp;itor, Xapian::termcount wdf_inc=1, const std::string &amp;prefix=std::string())</argsstring>
+        <name>index_text</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1Utf8Iterator" kindref="compound">Xapian::Utf8Iterator</ref> &amp;</type>
+          <declname>itor</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceXapian_172b5a76dd8cfb7b251fe7986e86390cb" kindref="member">Xapian::termcount</ref></type>
+          <declname>wdf_inc</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>prefix</declname>
+          <defval>std::string()</defval>
+        </param>
+        <briefdescription>
+<para>Index some text. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>wdf_inc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The wdf increment (default 1). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>prefix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The term prefix to use (default is no prefix). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/termgenerator.h" line="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1TermGenerator_15d98ef5625fe146e56b790c9c31c05f4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::TermGenerator::index_text</definition>
+        <argsstring>(const std::string &amp;text, Xapian::termcount wdf_inc=1, const std::string &amp;prefix=std::string())</argsstring>
+        <name>index_text</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceXapian_172b5a76dd8cfb7b251fe7986e86390cb" kindref="member">Xapian::termcount</ref></type>
+          <declname>wdf_inc</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>prefix</declname>
+          <defval>std::string()</defval>
+        </param>
+        <briefdescription>
+<para>Index some text in a std::string. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>wdf_inc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The wdf increment (default 1). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>prefix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The term prefix to use (default is no prefix). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/termgenerator.h" line="118" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/termgenerator.h" bodystart="116" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1TermGenerator_1a34cc9a0646793c4f5b9b56b2ec3c9a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::TermGenerator::index_text_without_positions</definition>
+        <argsstring>(const Xapian::Utf8Iterator &amp;itor, Xapian::termcount wdf_inc=1, const std::string &amp;prefix=std::string())</argsstring>
+        <name>index_text_without_positions</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1Utf8Iterator" kindref="compound">Xapian::Utf8Iterator</ref> &amp;</type>
+          <declname>itor</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceXapian_172b5a76dd8cfb7b251fe7986e86390cb" kindref="member">Xapian::termcount</ref></type>
+          <declname>wdf_inc</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>prefix</declname>
+          <defval>std::string()</defval>
+        </param>
+        <briefdescription>
+<para>Index some text without positional information. </para>        </briefdescription>
+        <detaileddescription>
+<para>Just like index_text, but no positional information is generated. This means that the database will be significantly smaller, but that phrase searching and NEAR won&apos;t be supported. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/termgenerator.h" line="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1TermGenerator_19190f956783d94c9b699a2590aaaea43" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::TermGenerator::index_text_without_positions</definition>
+        <argsstring>(const std::string &amp;text, Xapian::termcount wdf_inc=1, const std::string &amp;prefix=std::string())</argsstring>
+        <name>index_text_without_positions</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceXapian_172b5a76dd8cfb7b251fe7986e86390cb" kindref="member">Xapian::termcount</ref></type>
+          <declname>wdf_inc</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>prefix</declname>
+          <defval>std::string()</defval>
+        </param>
+        <briefdescription>
+<para>Index some text in a std::string without positional information. </para>        </briefdescription>
+        <detaileddescription>
+<para>Just like index_text, but no positional information is generated. This means that the database will be significantly smaller, but that phrase searching and NEAR won&apos;t be supported. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/termgenerator.h" line="140" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/termgenerator.h" bodystart="138" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1TermGenerator_179bd3a43ad8c9d1b711ec61ae9107e5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::TermGenerator::increase_termpos</definition>
+        <argsstring>(Xapian::termcount delta=100)</argsstring>
+        <name>increase_termpos</name>
+        <param>
+          <type><ref refid="namespaceXapian_172b5a76dd8cfb7b251fe7986e86390cb" kindref="member">Xapian::termcount</ref></type>
+          <declname>delta</declname>
+          <defval>100</defval>
+        </param>
+        <briefdescription>
+<para>Increase the termpos used by index_text by <emphasis>delta</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+<para>This can be used to prevent phrase searches from spanning two unconnected blocks of text (e.g. the title and body text). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/termgenerator.h" line="149"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1TermGenerator_10ed8b94c99912892feb4b77a53a817e9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceXapian_172b5a76dd8cfb7b251fe7986e86390cb" kindref="member">Xapian::termcount</ref></type>
+        <definition>Xapian::termcount Xapian::TermGenerator::get_termpos</definition>
+        <argsstring>() const </argsstring>
+        <name>get_termpos</name>
+        <briefdescription>
+<para>Get the current term position. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/termgenerator.h" line="152"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1TermGenerator_130b644e5568a225c7da9805774a4ebb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::TermGenerator::set_termpos</definition>
+        <argsstring>(Xapian::termcount termpos)</argsstring>
+        <name>set_termpos</name>
+        <param>
+          <type><ref refid="namespaceXapian_172b5a76dd8cfb7b251fe7986e86390cb" kindref="member">Xapian::termcount</ref></type>
+          <declname>termpos</declname>
+        </param>
+        <briefdescription>
+<para>Set the current term position. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/termgenerator.h" line="155"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1TermGenerator_161868ef6d88b24f5395401fdfd4c7ec0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Xapian::TermGenerator::get_description</definition>
+        <argsstring>() const </argsstring>
+        <name>get_description</name>
+        <briefdescription>
+<para>Return a string describing this object. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/termgenerator.h" line="158"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Parses a piece of text and generate terms. </para>    </briefdescription>
+    <detaileddescription>
+<para>This module takes a piece of text and parses it to produce words which are then used to generate suitable terms for indexing. The terms generated are suitable for use with <ref refid="classXapian_1_1Query" kindref="compound">Query</ref> objects produced by the <ref refid="classXapian_1_1QueryParser" kindref="compound">QueryParser</ref> class. </para>    </detaileddescription>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/termgenerator.h" line="44" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/termgenerator.h" bodystart="44" bodyend="159"/>
+    <listofallmembers>
+      <member refid="classXapian_1_1TermGenerator_176e983a417d996ebf729999150f45017652e030497621117c43e21e6c23035d8" prot="public" virt="non-virtual"><scope>Xapian::TermGenerator</scope><name>FLAG_SPELLING</name></member>
+      <member refid="classXapian_1_1TermGenerator_176e983a417d996ebf729999150f45017" prot="public" virt="non-virtual"><scope>Xapian::TermGenerator</scope><name>flags</name></member>
+      <member refid="classXapian_1_1TermGenerator_161868ef6d88b24f5395401fdfd4c7ec0" prot="public" virt="non-virtual"><scope>Xapian::TermGenerator</scope><name>get_description</name></member>
+      <member refid="classXapian_1_1TermGenerator_1d9db48a0ef7ddc8846bf515c32d6551c" prot="public" virt="non-virtual"><scope>Xapian::TermGenerator</scope><name>get_document</name></member>
+      <member refid="classXapian_1_1TermGenerator_10ed8b94c99912892feb4b77a53a817e9" prot="public" virt="non-virtual"><scope>Xapian::TermGenerator</scope><name>get_termpos</name></member>
+      <member refid="classXapian_1_1TermGenerator_179bd3a43ad8c9d1b711ec61ae9107e5f" prot="public" virt="non-virtual"><scope>Xapian::TermGenerator</scope><name>increase_termpos</name></member>
+      <member refid="classXapian_1_1TermGenerator_16916b0233aa4c326711667d2195db4d7" prot="public" virt="non-virtual"><scope>Xapian::TermGenerator</scope><name>index_text</name></member>
+      <member refid="classXapian_1_1TermGenerator_15d98ef5625fe146e56b790c9c31c05f4" prot="public" virt="non-virtual"><scope>Xapian::TermGenerator</scope><name>index_text</name></member>
+      <member refid="classXapian_1_1TermGenerator_1a34cc9a0646793c4f5b9b56b2ec3c9a6" prot="public" virt="non-virtual"><scope>Xapian::TermGenerator</scope><name>index_text_without_positions</name></member>
+      <member refid="classXapian_1_1TermGenerator_19190f956783d94c9b699a2590aaaea43" prot="public" virt="non-virtual"><scope>Xapian::TermGenerator</scope><name>index_text_without_positions</name></member>
+      <member refid="classXapian_1_1TermGenerator_1b9b631cfa4f03b8c2897951274958532" prot="private" virt="non-virtual"><scope>Xapian::TermGenerator</scope><name>internal</name></member>
+      <member refid="classXapian_1_1TermGenerator_1532945e0a6f0bbc98119ea5298d254de" prot="public" virt="non-virtual"><scope>Xapian::TermGenerator</scope><name>operator=</name></member>
+      <member refid="classXapian_1_1TermGenerator_156edabc2673241bcd87c3bd6b65e9c6d" prot="public" virt="non-virtual"><scope>Xapian::TermGenerator</scope><name>set_database</name></member>
+      <member refid="classXapian_1_1TermGenerator_1f478b20d2a088697368dc2c1f1045675" prot="public" virt="non-virtual"><scope>Xapian::TermGenerator</scope><name>set_document</name></member>
+      <member refid="classXapian_1_1TermGenerator_1a0d1f0ee309227852654e589ef441517" prot="public" virt="non-virtual"><scope>Xapian::TermGenerator</scope><name>set_flags</name></member>
+      <member refid="classXapian_1_1TermGenerator_18813a97565e16d547183337e7647b711" prot="public" virt="non-virtual"><scope>Xapian::TermGenerator</scope><name>set_stemmer</name></member>
+      <member refid="classXapian_1_1TermGenerator_18cef8e7b696129a0fc311e47baaf2120" prot="public" virt="non-virtual"><scope>Xapian::TermGenerator</scope><name>set_stopper</name></member>
+      <member refid="classXapian_1_1TermGenerator_130b644e5568a225c7da9805774a4ebb4" prot="public" virt="non-virtual"><scope>Xapian::TermGenerator</scope><name>set_termpos</name></member>
+      <member refid="classXapian_1_1TermGenerator_1331dd5585658fc56baf91de4617f3ffd" prot="public" virt="non-virtual"><scope>Xapian::TermGenerator</scope><name>TermGenerator</name></member>
+      <member refid="classXapian_1_1TermGenerator_1bfcaae65a459d31b5497154847213bbc" prot="public" virt="non-virtual"><scope>Xapian::TermGenerator</scope><name>TermGenerator</name></member>
+      <member refid="classXapian_1_1TermGenerator_1c8f5c0681963870e37a5b0f66be32819" prot="public" virt="non-virtual"><scope>Xapian::TermGenerator</scope><name>~TermGenerator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

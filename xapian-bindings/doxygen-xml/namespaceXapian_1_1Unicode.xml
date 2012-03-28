@@ -1,0 +1,453 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="namespaceXapian_1_1Unicode" kind="namespace">
+    <compoundname>Xapian::Unicode</compoundname>
+    <innernamespace refid="namespaceXapian_1_1Unicode_1_1Internal">Xapian::Unicode::Internal</innernamespace>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespaceXapian_1_1Unicode_126f1790c2ed8d5bdf92c886ac57a3e75" prot="public" static="no">
+        <name>category</name>
+        <enumvalue id="namespaceXapian_1_1Unicode_126f1790c2ed8d5bdf92c886ac57a3e7566697769b6e0ac01d21ba7e8e4c3c20d" prot="public">
+          <name>UNASSIGNED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceXapian_1_1Unicode_126f1790c2ed8d5bdf92c886ac57a3e75ee7dfde43243117bb3090d01b13ef751" prot="public">
+          <name>UPPERCASE_LETTER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceXapian_1_1Unicode_126f1790c2ed8d5bdf92c886ac57a3e755f3dccd684de328e262b6858492dff9e" prot="public">
+          <name>LOWERCASE_LETTER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceXapian_1_1Unicode_126f1790c2ed8d5bdf92c886ac57a3e75e906628feb721ba704c9120566945624" prot="public">
+          <name>TITLECASE_LETTER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceXapian_1_1Unicode_126f1790c2ed8d5bdf92c886ac57a3e7562449a990a8e54a946a6e11b6c598b42" prot="public">
+          <name>MODIFIER_LETTER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceXapian_1_1Unicode_126f1790c2ed8d5bdf92c886ac57a3e7576f80cf2c84f55d79aa275da65d53d9b" prot="public">
+          <name>OTHER_LETTER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceXapian_1_1Unicode_126f1790c2ed8d5bdf92c886ac57a3e75dde7810996df1a6d9315f92ee68d79c6" prot="public">
+          <name>NON_SPACING_MARK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceXapian_1_1Unicode_126f1790c2ed8d5bdf92c886ac57a3e75747e560d3277a42d823d1aa3f6a6e432" prot="public">
+          <name>ENCLOSING_MARK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceXapian_1_1Unicode_126f1790c2ed8d5bdf92c886ac57a3e75b97fbad2627b6307f052489bf2df2e54" prot="public">
+          <name>COMBINING_SPACING_MARK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceXapian_1_1Unicode_126f1790c2ed8d5bdf92c886ac57a3e758defc349abba2908c50da973c171611b" prot="public">
+          <name>DECIMAL_DIGIT_NUMBER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceXapian_1_1Unicode_126f1790c2ed8d5bdf92c886ac57a3e75eb11c9cb4994ce13ddc5d0f764ba990b" prot="public">
+          <name>LETTER_NUMBER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceXapian_1_1Unicode_126f1790c2ed8d5bdf92c886ac57a3e75e8eb6b473586fe2d4fcb89c7b7d54c7d" prot="public">
+          <name>OTHER_NUMBER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceXapian_1_1Unicode_126f1790c2ed8d5bdf92c886ac57a3e75b79e34865beb78ba2afe0a1f62a81da9" prot="public">
+          <name>SPACE_SEPARATOR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceXapian_1_1Unicode_126f1790c2ed8d5bdf92c886ac57a3e759174de91d66ca333209e227f175e487f" prot="public">
+          <name>LINE_SEPARATOR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceXapian_1_1Unicode_126f1790c2ed8d5bdf92c886ac57a3e75a1238f1e66506d6b75bd338d87d8dbd4" prot="public">
+          <name>PARAGRAPH_SEPARATOR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceXapian_1_1Unicode_126f1790c2ed8d5bdf92c886ac57a3e758f98918709da51f06abd1ec594c734e2" prot="public">
+          <name>CONTROL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceXapian_1_1Unicode_126f1790c2ed8d5bdf92c886ac57a3e751d3b072035a1a11c778600d96f911430" prot="public">
+          <name>FORMAT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceXapian_1_1Unicode_126f1790c2ed8d5bdf92c886ac57a3e754879f3318be675df3dbed8db33173ce0" prot="public">
+          <name>PRIVATE_USE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceXapian_1_1Unicode_126f1790c2ed8d5bdf92c886ac57a3e75a0341ffa1c0cecb5187051fdb15a44ea" prot="public">
+          <name>SURROGATE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceXapian_1_1Unicode_126f1790c2ed8d5bdf92c886ac57a3e75524e920467803dfbdcb5c47180e9287b" prot="public">
+          <name>CONNECTOR_PUNCTUATION</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceXapian_1_1Unicode_126f1790c2ed8d5bdf92c886ac57a3e75e3d74a4e1994ecbaa76a8d12caf76f66" prot="public">
+          <name>DASH_PUNCTUATION</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceXapian_1_1Unicode_126f1790c2ed8d5bdf92c886ac57a3e75d4f82ed04c5f098a96651a695542ce72" prot="public">
+          <name>OPEN_PUNCTUATION</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceXapian_1_1Unicode_126f1790c2ed8d5bdf92c886ac57a3e7593ae9e22f90af9ee8b8fd15b36ec6b4d" prot="public">
+          <name>CLOSE_PUNCTUATION</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceXapian_1_1Unicode_126f1790c2ed8d5bdf92c886ac57a3e754b9729e2b231bf010363550106bbf8a2" prot="public">
+          <name>INITIAL_QUOTE_PUNCTUATION</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceXapian_1_1Unicode_126f1790c2ed8d5bdf92c886ac57a3e7544ccdcc2f251e6295114da63d05fe1e1" prot="public">
+          <name>FINAL_QUOTE_PUNCTUATION</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceXapian_1_1Unicode_126f1790c2ed8d5bdf92c886ac57a3e75e69787dc13d1231a958a25aaddb3eecb" prot="public">
+          <name>OTHER_PUNCTUATION</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceXapian_1_1Unicode_126f1790c2ed8d5bdf92c886ac57a3e750271c47bade2b8ffb3fbb7c531bcf7d7" prot="public">
+          <name>MATH_SYMBOL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceXapian_1_1Unicode_126f1790c2ed8d5bdf92c886ac57a3e7565ea5964f8c57ef1cda56c5622b12733" prot="public">
+          <name>CURRENCY_SYMBOL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceXapian_1_1Unicode_126f1790c2ed8d5bdf92c886ac57a3e753ccf1966a64872615f098631de059c01" prot="public">
+          <name>MODIFIER_SYMBOL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceXapian_1_1Unicode_126f1790c2ed8d5bdf92c886ac57a3e756259db449f6ecb82c91a066fd44f8fb3" prot="public">
+          <name>OTHER_SYMBOL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Each <ref refid="namespaceXapian_1_1Unicode" kindref="compound">Unicode</ref> character is in exactly one of these categories. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" line="186" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" bodystart="186" bodyend="217"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceXapian_1_1Unicode_1e10e7195c9c7b854fbd62e6fad433ce7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Xapian::Unicode::nonascii_to_utf8</definition>
+        <argsstring>(unsigned ch, char *buf)</argsstring>
+        <name>nonascii_to_utf8</name>
+        <param>
+          <type>unsigned</type>
+          <declname>ch</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>buf</declname>
+        </param>
+        <briefdescription>
+<para>Convert a single non-ASCII <ref refid="namespaceXapian_1_1Unicode" kindref="compound">Unicode</ref> character to UTF-8. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is intended mainly as a helper method for <ref refid="namespaceXapian_1_1Unicode_110a58219f2ed79ddb1ea1d2f3fe8529d" kindref="member">to_utf8()</ref>.</para><para>The character <emphasis>ch</emphasis> (which must be &gt; 128) is written to the buffer <emphasis>buf</emphasis> and the length of the resultant UTF-8 character is returned.</para><para>NB buf must have space for (at least) 4 bytes. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" line="259"/>
+        <referencedby refid="namespaceXapian_1_1Unicode_110a58219f2ed79ddb1ea1d2f3fe8529d" compoundref="unicode_8h" startline="268" endline="274">to_utf8</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceXapian_1_1Unicode_110a58219f2ed79ddb1ea1d2f3fe8529d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Xapian::Unicode::to_utf8</definition>
+        <argsstring>(unsigned ch, char *buf)</argsstring>
+        <name>to_utf8</name>
+        <param>
+          <type>unsigned</type>
+          <declname>ch</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>buf</declname>
+        </param>
+        <briefdescription>
+<para>Convert a single <ref refid="namespaceXapian_1_1Unicode" kindref="compound">Unicode</ref> character to UTF-8. </para>        </briefdescription>
+        <detaileddescription>
+<para>The character <emphasis>ch</emphasis> is written to the buffer <emphasis>buf</emphasis> and the length of the resultant UTF-8 character is returned.</para><para>NB buf must have space for (at least) 4 bytes. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" line="268" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" bodystart="268" bodyend="274"/>
+        <references refid="namespaceXapian_1_1Unicode_1e10e7195c9c7b854fbd62e6fad433ce7">nonascii_to_utf8</references>
+        <referencedby refid="namespaceXapian_1_1Unicode_10c2b6a7eb58789472eb53420d2457168" compoundref="unicode_8h" startline="279" endline="282">append_utf8</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceXapian_1_1Unicode_10c2b6a7eb58789472eb53420d2457168" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::Unicode::append_utf8</definition>
+        <argsstring>(std::string &amp;s, unsigned ch)</argsstring>
+        <name>append_utf8</name>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>ch</declname>
+        </param>
+        <briefdescription>
+<para>Append the UTF-8 representation of a single <ref refid="namespaceXapian_1_1Unicode" kindref="compound">Unicode</ref> character to a std::string. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" line="279" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" bodystart="279" bodyend="282"/>
+        <references refid="namespaceXapian_1_1Unicode_110a58219f2ed79ddb1ea1d2f3fe8529d" compoundref="unicode_8h" startline="268" endline="274">to_utf8</references>
+        <referencedby refid="namespaceXapian_1_1Unicode_16f251b26a53a42d396f43669121d11e4" compoundref="unicode_8h" startline="344" endline="352">tolower</referencedby>
+        <referencedby refid="namespaceXapian_1_1Unicode_1bab2967ed9ef513b4a02bc2c757f3a21" compoundref="unicode_8h" startline="356" endline="364">toupper</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceXapian_1_1Unicode_1c72609880fbec74396c588b950e364d8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceXapian_1_1Unicode_126f1790c2ed8d5bdf92c886ac57a3e75" kindref="member">category</ref></type>
+        <definition>category Xapian::Unicode::get_category</definition>
+        <argsstring>(unsigned ch)</argsstring>
+        <name>get_category</name>
+        <param>
+          <type>unsigned</type>
+          <declname>ch</declname>
+        </param>
+        <briefdescription>
+<para>Return the category which a given <ref refid="namespaceXapian_1_1Unicode" kindref="compound">Unicode</ref> character falls into. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" line="285" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" bodystart="285" bodyend="289"/>
+        <referencedby refid="namespaceXapian_1_1Unicode_18b86de9fd22b27020f12f5ff778feb91" compoundref="unicode_8h" startline="320" endline="322">is_currency</referencedby>
+        <referencedby refid="namespaceXapian_1_1Unicode_1d9456f9b7d442107077a26f1ff44f938" compoundref="unicode_8h" startline="310" endline="317">is_whitespace</referencedby>
+        <referencedby refid="namespaceXapian_1_1Unicode_163b7b1eb0427b79aa5d21baad3a882f5" compoundref="unicode_8h" startline="292" endline="307">is_wordchar</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceXapian_1_1Unicode_163b7b1eb0427b79aa5d21baad3a882f5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Xapian::Unicode::is_wordchar</definition>
+        <argsstring>(unsigned ch)</argsstring>
+        <name>is_wordchar</name>
+        <param>
+          <type>unsigned</type>
+          <declname>ch</declname>
+        </param>
+        <briefdescription>
+<para>Test if a given <ref refid="namespaceXapian_1_1Unicode" kindref="compound">Unicode</ref> character is &quot;word character&quot;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" line="292" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" bodystart="292" bodyend="307"/>
+        <references refid="namespaceXapian_1_1Unicode_1c72609880fbec74396c588b950e364d8" compoundref="unicode_8h" startline="285" endline="289">get_category</references>
+      </memberdef>
+      <memberdef kind="function" id="namespaceXapian_1_1Unicode_1d9456f9b7d442107077a26f1ff44f938" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Xapian::Unicode::is_whitespace</definition>
+        <argsstring>(unsigned ch)</argsstring>
+        <name>is_whitespace</name>
+        <param>
+          <type>unsigned</type>
+          <declname>ch</declname>
+        </param>
+        <briefdescription>
+<para>Test if a given <ref refid="namespaceXapian_1_1Unicode" kindref="compound">Unicode</ref> character is a whitespace character. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" line="310" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" bodystart="310" bodyend="317"/>
+        <references refid="namespaceXapian_1_1Unicode_1c72609880fbec74396c588b950e364d8" compoundref="unicode_8h" startline="285" endline="289">get_category</references>
+      </memberdef>
+      <memberdef kind="function" id="namespaceXapian_1_1Unicode_18b86de9fd22b27020f12f5ff778feb91" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Xapian::Unicode::is_currency</definition>
+        <argsstring>(unsigned ch)</argsstring>
+        <name>is_currency</name>
+        <param>
+          <type>unsigned</type>
+          <declname>ch</declname>
+        </param>
+        <briefdescription>
+<para>Test if a given <ref refid="namespaceXapian_1_1Unicode" kindref="compound">Unicode</ref> character is a currency symbol. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" line="320" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" bodystart="320" bodyend="322"/>
+        <references refid="namespaceXapian_1_1Unicode_1c72609880fbec74396c588b950e364d8" compoundref="unicode_8h" startline="285" endline="289">get_category</references>
+      </memberdef>
+      <memberdef kind="function" id="namespaceXapian_1_1Unicode_11d21a4489d50179855542c3dce1a2f30" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Xapian::Unicode::tolower</definition>
+        <argsstring>(unsigned ch)</argsstring>
+        <name>tolower</name>
+        <param>
+          <type>unsigned</type>
+          <declname>ch</declname>
+        </param>
+        <briefdescription>
+<para>Convert a <ref refid="namespaceXapian_1_1Unicode" kindref="compound">Unicode</ref> character to lowercase. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" line="325" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" bodystart="325" bodyend="331"/>
+        <referencedby refid="namespaceXapian_1_1Unicode_16f251b26a53a42d396f43669121d11e4" compoundref="unicode_8h" startline="344" endline="352">tolower</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceXapian_1_1Unicode_1a7eceb751850e9a8225260bad5f92df8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Xapian::Unicode::toupper</definition>
+        <argsstring>(unsigned ch)</argsstring>
+        <name>toupper</name>
+        <param>
+          <type>unsigned</type>
+          <declname>ch</declname>
+        </param>
+        <briefdescription>
+<para>Convert a <ref refid="namespaceXapian_1_1Unicode" kindref="compound">Unicode</ref> character to uppercase. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" line="334" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" bodystart="334" bodyend="340"/>
+        <referencedby refid="namespaceXapian_1_1Unicode_1bab2967ed9ef513b4a02bc2c757f3a21" compoundref="unicode_8h" startline="356" endline="364">toupper</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceXapian_1_1Unicode_16f251b26a53a42d396f43669121d11e4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Xapian::Unicode::tolower</definition>
+        <argsstring>(const std::string &amp;term)</argsstring>
+        <name>tolower</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>term</declname>
+        </param>
+        <briefdescription>
+<para>Convert a UTF-8 std::string to lowercase. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" line="345" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" bodystart="344" bodyend="352"/>
+        <references refid="namespaceXapian_1_1Unicode_10c2b6a7eb58789472eb53420d2457168" compoundref="unicode_8h" startline="279" endline="282">append_utf8</references>
+        <references refid="namespaceXapian_1_1Unicode_11d21a4489d50179855542c3dce1a2f30" compoundref="unicode_8h" startline="325" endline="331">tolower</references>
+      </memberdef>
+      <memberdef kind="function" id="namespaceXapian_1_1Unicode_1bab2967ed9ef513b4a02bc2c757f3a21" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Xapian::Unicode::toupper</definition>
+        <argsstring>(const std::string &amp;term)</argsstring>
+        <name>toupper</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>term</declname>
+        </param>
+        <briefdescription>
+<para>Convert a UTF-8 std::string to uppercase. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" line="357" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" bodystart="356" bodyend="364"/>
+        <references refid="namespaceXapian_1_1Unicode_10c2b6a7eb58789472eb53420d2457168" compoundref="unicode_8h" startline="279" endline="282">append_utf8</references>
+        <references refid="namespaceXapian_1_1Unicode_1a7eceb751850e9a8225260bad5f92df8" compoundref="unicode_8h" startline="334" endline="340">toupper</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Functions associated with handling <ref refid="namespaceXapian_1_1Unicode" kindref="compound">Unicode</ref> characters. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" line="183"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,244 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="classXapian_1_1ESet" kind="class" prot="public">
+    <compoundname>Xapian::ESet</compoundname>
+    <includes local="no">enquire.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classXapian_1_1ESet_1742c7ad71b74c029a8a27428f7a0ddbb" prot="public" static="no" mutable="no">
+        <type>Xapian::Internal::intrusive_ptr&lt; Internal &gt;</type>
+        <definition>Xapian::Internal::intrusive_ptr&lt;Internal&gt; Xapian::ESet::internal</definition>
+        <argsstring></argsstring>
+        <name>internal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="423" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" bodystart="421" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classXapian_1_1ESet_1b53f2936cfa1c16c7ea4e171d7572e02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::ESet::ESet</definition>
+        <argsstring>()</argsstring>
+        <name>ESet</name>
+        <briefdescription>
+<para>Construct an empty <ref refid="classXapian_1_1ESet" kindref="compound">ESet</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="426"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1ESet_107720954f3b74b0378079eb947be7642" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::ESet::~ESet</definition>
+        <argsstring>()</argsstring>
+        <name>~ESet</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="429"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1ESet_1817bfddb94d57028fefe678b5f614c5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::ESet::ESet</definition>
+        <argsstring>(const ESet &amp;other)</argsstring>
+        <name>ESet</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1ESet" kindref="compound">ESet</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Copying is allowed (and is cheap). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="432"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1ESet_1626192324d2199ff59b2b7380371aba9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::ESet::operator=</definition>
+        <argsstring>(const ESet &amp;other)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1ESet" kindref="compound">ESet</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Assignment is allowed (and is cheap). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="435"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1ESet_12679dc65b4448d98d928daccecc2c5bd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceXapian_172b5a76dd8cfb7b251fe7986e86390cb" kindref="member">Xapian::termcount</ref></type>
+        <definition>Xapian::termcount Xapian::ESet::get_ebound</definition>
+        <argsstring>() const </argsstring>
+        <name>get_ebound</name>
+        <briefdescription>
+<para>A lower bound on the number of terms which are in the full set of results of the expand. </para>        </briefdescription>
+        <detaileddescription>
+<para>This will be greater than or equal to <ref refid="classXapian_1_1ESet_1ebe586b9f270b318589f77b03841c420" kindref="member">size()</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="441"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1ESet_1ebe586b9f270b318589f77b03841c420" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceXapian_172b5a76dd8cfb7b251fe7986e86390cb" kindref="member">Xapian::termcount</ref></type>
+        <definition>Xapian::termcount Xapian::ESet::size</definition>
+        <argsstring>() const </argsstring>
+        <name>size</name>
+        <briefdescription>
+<para>The number of terms in this E-Set. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="444"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1ESet_16e96fb499d2a2ea8e9846853f8f043e0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceXapian_172b5a76dd8cfb7b251fe7986e86390cb" kindref="member">Xapian::termcount</ref></type>
+        <definition>Xapian::termcount Xapian::ESet::max_size</definition>
+        <argsstring>() const </argsstring>
+        <name>max_size</name>
+        <briefdescription>
+<para>Required to allow use as an STL container. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="447" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" bodystart="447" bodyend="447"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1ESet_1090e0af57f0c7dc00dba7f3f86421674" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Xapian::ESet::empty</definition>
+        <argsstring>() const </argsstring>
+        <name>empty</name>
+        <briefdescription>
+<para>Test if this E-Set is empty. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="450"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1ESet_1d2c3235a5e0ac8aad189ab0ef987a049" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::ESet::swap</definition>
+        <argsstring>(ESet &amp;other)</argsstring>
+        <name>swap</name>
+        <param>
+          <type><ref refid="classXapian_1_1ESet" kindref="compound">ESet</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Swap the E-Set we point to with another. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="453"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1ESet_1b372abbea446e55668623da2640a2979" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classXapian_1_1ESetIterator" kindref="compound">ESetIterator</ref></type>
+        <definition>ESetIterator Xapian::ESet::begin</definition>
+        <argsstring>() const </argsstring>
+        <name>begin</name>
+        <briefdescription>
+<para>Iterator for the terms in this E-Set. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="456"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1ESet_1b4a4fc608e5b1e98fa7fdd9ab5e5569e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classXapian_1_1ESetIterator" kindref="compound">ESetIterator</ref></type>
+        <definition>ESetIterator Xapian::ESet::end</definition>
+        <argsstring>() const </argsstring>
+        <name>end</name>
+        <briefdescription>
+<para>End iterator corresponding to <ref refid="classXapian_1_1ESet_1b372abbea446e55668623da2640a2979" kindref="member">begin()</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="459"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1ESet_1d4ff820f027bf26c338b106ed1b46704" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classXapian_1_1ESetIterator" kindref="compound">ESetIterator</ref></type>
+        <definition>ESetIterator Xapian::ESet::back</definition>
+        <argsstring>() const </argsstring>
+        <name>back</name>
+        <briefdescription>
+<para>Iterator pointing to the last element of this E-Set. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="462"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1ESet_1774ae93e1065b7d2ccd75da52e3fd5ae" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classXapian_1_1ESetIterator" kindref="compound">ESetIterator</ref></type>
+        <definition>ESetIterator Xapian::ESet::operator[]</definition>
+        <argsstring>(Xapian::termcount i) const </argsstring>
+        <name>operator[]</name>
+        <param>
+          <type><ref refid="namespaceXapian_172b5a76dd8cfb7b251fe7986e86390cb" kindref="member">Xapian::termcount</ref></type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>This returns the term at position i in this E-Set. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="465"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1ESet_1d63a1c7299c538001212e4ecd0bb5bc1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Xapian::ESet::get_description</definition>
+        <argsstring>() const </argsstring>
+        <name>get_description</name>
+        <briefdescription>
+<para>Return a string describing this object. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="468"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class representing an ordered set of expand terms (an <ref refid="classXapian_1_1ESet" kindref="compound">ESet</ref>). </para>    </briefdescription>
+    <detaileddescription>
+<para>This set represents the results of an expand operation, which is performed by <ref refid="classXapian_1_1Enquire_1c04aa26eff82db9fd810b8125a31ee55" kindref="member">Xapian::Enquire::get_eset()</ref>. </para>    </detaileddescription>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="419" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" bodystart="419" bodyend="469"/>
+    <listofallmembers>
+      <member refid="classXapian_1_1ESet_1d4ff820f027bf26c338b106ed1b46704" prot="public" virt="non-virtual"><scope>Xapian::ESet</scope><name>back</name></member>
+      <member refid="classXapian_1_1ESet_1b372abbea446e55668623da2640a2979" prot="public" virt="non-virtual"><scope>Xapian::ESet</scope><name>begin</name></member>
+      <member refid="classXapian_1_1ESet_1090e0af57f0c7dc00dba7f3f86421674" prot="public" virt="non-virtual"><scope>Xapian::ESet</scope><name>empty</name></member>
+      <member refid="classXapian_1_1ESet_1b4a4fc608e5b1e98fa7fdd9ab5e5569e" prot="public" virt="non-virtual"><scope>Xapian::ESet</scope><name>end</name></member>
+      <member refid="classXapian_1_1ESet_1b53f2936cfa1c16c7ea4e171d7572e02" prot="public" virt="non-virtual"><scope>Xapian::ESet</scope><name>ESet</name></member>
+      <member refid="classXapian_1_1ESet_1817bfddb94d57028fefe678b5f614c5a" prot="public" virt="non-virtual"><scope>Xapian::ESet</scope><name>ESet</name></member>
+      <member refid="classXapian_1_1ESet_1d63a1c7299c538001212e4ecd0bb5bc1" prot="public" virt="non-virtual"><scope>Xapian::ESet</scope><name>get_description</name></member>
+      <member refid="classXapian_1_1ESet_12679dc65b4448d98d928daccecc2c5bd" prot="public" virt="non-virtual"><scope>Xapian::ESet</scope><name>get_ebound</name></member>
+      <member refid="classXapian_1_1ESet_1742c7ad71b74c029a8a27428f7a0ddbb" prot="public" virt="non-virtual"><scope>Xapian::ESet</scope><name>internal</name></member>
+      <member refid="classXapian_1_1ESet_16e96fb499d2a2ea8e9846853f8f043e0" prot="public" virt="non-virtual"><scope>Xapian::ESet</scope><name>max_size</name></member>
+      <member refid="classXapian_1_1ESet_1626192324d2199ff59b2b7380371aba9" prot="public" virt="non-virtual"><scope>Xapian::ESet</scope><name>operator=</name></member>
+      <member refid="classXapian_1_1ESet_1774ae93e1065b7d2ccd75da52e3fd5ae" prot="public" virt="non-virtual"><scope>Xapian::ESet</scope><name>operator[]</name></member>
+      <member refid="classXapian_1_1ESet_1ebe586b9f270b318589f77b03841c420" prot="public" virt="non-virtual"><scope>Xapian::ESet</scope><name>size</name></member>
+      <member refid="classXapian_1_1ESet_1d2c3235a5e0ac8aad189ab0ef987a049" prot="public" virt="non-virtual"><scope>Xapian::ESet</scope><name>swap</name></member>
+      <member refid="classXapian_1_1ESet_107720954f3b74b0378079eb947be7642" prot="public" virt="non-virtual"><scope>Xapian::ESet</scope><name>~ESet</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

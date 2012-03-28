@@ -1,0 +1,6 @@
+K 13
+svn:mergeinfo
+V 138
+/branches/replication_fixes/xapian-core/backends/brass/Makefile:14149-14152
+/trunk/xapian-core/backends/brass/Makefile:2-13775,15485-16044
+END

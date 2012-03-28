@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="deprecated" kind="page">
+    <compoundname>deprecated</compoundname>
+    <title>Deprecated List</title>
+    <detaileddescription>
+<para><anchor id="deprecated_1_deprecated000001"/> <variablelist>
+<varlistentry><term>Member <ref refid="namespaceXapian_1da10bc23c3467246f078179fce2d762d" kindref="member">Xapian::timeout</ref>  </term></varlistentry>
+<listitem><para>This type is deprecated as of <ref refid="namespaceXapian" kindref="compound">Xapian</ref> 1.3.0 - use the standard POSIX type useconds_t instead, which should work with older <ref refid="namespaceXapian" kindref="compound">Xapian</ref> too. </para></listitem>
+</variablelist>
+</para>    </detaileddescription>
+  </compounddef>
+</doxygen>

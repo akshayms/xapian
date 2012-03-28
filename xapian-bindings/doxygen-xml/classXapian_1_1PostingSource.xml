@@ -1,0 +1,522 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="classXapian_1_1PostingSource" kind="class" prot="public">
+    <compoundname>Xapian::PostingSource</compoundname>
+    <derivedcompoundref refid="classXapian_1_1FixedWeightPostingSource" prot="public" virt="non-virtual">Xapian::FixedWeightPostingSource</derivedcompoundref>
+    <derivedcompoundref refid="classXapian_1_1ValuePostingSource" prot="public" virt="non-virtual">Xapian::ValuePostingSource</derivedcompoundref>
+    <includes local="no">postingsource.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classXapian_1_1PostingSource_1ca3fe051411c36cf5c0adf0e919130dc" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Xapian::PostingSource::max_weight_</definition>
+        <argsstring></argsstring>
+        <name>max_weight_</name>
+        <briefdescription>
+<para>The current upper bound on what <ref refid="classXapian_1_1PostingSource_12e7637a323a90bea45f2dc68c916ea00" kindref="member">get_weight()</ref> can return. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/postingsource.h" line="44" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/postingsource.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classXapian_1_1PostingSource_10c6543b4e9ab319c2abbf9b4b3cacbce" prot="private" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* Xapian::PostingSource::matcher_</definition>
+        <argsstring></argsstring>
+        <name>matcher_</name>
+        <briefdescription>
+<para>The object to inform of maxweight changes. </para>        </briefdescription>
+        <detaileddescription>
+<para>We store this as a (void*) to avoid needing to declare an internal type in an external header. It&apos;s actually (MultiMatch *). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/postingsource.h" line="51" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/postingsource.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classXapian_1_1PostingSource_10e06bb671e3d8699b869668c6b1ef96c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::PostingSource::operator=</definition>
+        <argsstring>(const PostingSource &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1PostingSource" kindref="compound">PostingSource</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Don&apos;t allow assignment. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/postingsource.h" line="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1PostingSource_16922a6c180f0e40c66f56d6b00dfc451" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::PostingSource::PostingSource</definition>
+        <argsstring>(const PostingSource &amp;)</argsstring>
+        <name>PostingSource</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1PostingSource" kindref="compound">PostingSource</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Don&apos;t allow copying. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/postingsource.h" line="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1PostingSource_1cbb2425265e991a9bd119c4c32a1de42" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::PostingSource::register_matcher_</definition>
+        <argsstring>(void *matcher)</argsstring>
+        <name>register_matcher_</name>
+        <param>
+          <type>void *</type>
+          <declname>matcher</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/postingsource.h" line="84" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/postingsource.h" bodystart="84" bodyend="84"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classXapian_1_1PostingSource_182e85d6113d9c8e72cbbf4b3362f3fd6" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::PostingSource::PostingSource</definition>
+        <argsstring>()</argsstring>
+        <name>PostingSource</name>
+        <briefdescription>
+<para>Allow subclasses to be instantiated. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/postingsource.h" line="55" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/postingsource.h" bodystart="55" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1PostingSource_10643cf1dfb1c3ed2dd1cf5ecfe3f3a10" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::PostingSource::set_maxweight</definition>
+        <argsstring>(Xapian::weight max_weight)</argsstring>
+        <name>set_maxweight</name>
+        <param>
+          <type><ref refid="namespaceXapian_1cac12803afc9e24ee5141c119acb8884" kindref="member">Xapian::weight</ref></type>
+          <declname>max_weight</declname>
+        </param>
+        <briefdescription>
+<para>Set an upper bound on what <ref refid="classXapian_1_1PostingSource_12e7637a323a90bea45f2dc68c916ea00" kindref="member">get_weight()</ref> can return from now on. </para>        </briefdescription>
+        <detaileddescription>
+<para>This upper bound is used by the matcher to perform various optimisations, so if you can return a good bound, then matches will generally run faster.</para><para>This method should be called after calling <ref refid="classXapian_1_1PostingSource_181d793170b496022488c15c3508979b5" kindref="member">init()</ref>, and may be called during iteration if the upper bound drops.</para><para>It is valid for the posting source to have returned a higher value from <ref refid="classXapian_1_1PostingSource_12e7637a323a90bea45f2dc68c916ea00" kindref="member">get_weight()</ref> earlier in the iteration, but the posting source must not return a higher value from <ref refid="classXapian_1_1PostingSource_12e7637a323a90bea45f2dc68c916ea00" kindref="member">get_weight()</ref> than the currently set upper bound, and the upper bound must not be increased (until <ref refid="classXapian_1_1PostingSource_181d793170b496022488c15c3508979b5" kindref="member">init()</ref> has been called).</para><para>If you don&apos;t call this method, the upper bound will default to 0, for convenience when implementing &quot;weight-less&quot; <ref refid="classXapian_1_1PostingSource" kindref="compound">PostingSource</ref> subclasses. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/postingsource.h" line="75"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classXapian_1_1PostingSource_1679981b0badcc1a6308d4cbf8c5de7a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual Xapian::PostingSource::~PostingSource</definition>
+        <argsstring>()</argsstring>
+        <name>~PostingSource</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/postingsource.h" line="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1PostingSource_15ecf450314e8b266eb9c8fae78e141d3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="namespaceXapian_17f30aa95f0c42b117dafaf66ba24241d" kindref="member">Xapian::doccount</ref></type>
+        <definition>virtual Xapian::doccount Xapian::PostingSource::get_termfreq_min</definition>
+        <argsstring>() const =0</argsstring>
+        <name>get_termfreq_min</name>
+        <reimplementedby refid="classXapian_1_1FixedWeightPostingSource_142262ab06f7d9d2f3122bc3fb115b23e">get_termfreq_min</reimplementedby>
+        <reimplementedby refid="classXapian_1_1ValuePostingSource_173743991ef0f5a2818d56c94e9e019f4">get_termfreq_min</reimplementedby>
+        <briefdescription>
+<para>A lower bound on the number of documents this object can return. </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="namespaceXapian" kindref="compound">Xapian</ref> will always call <ref refid="classXapian_1_1PostingSource_181d793170b496022488c15c3508979b5" kindref="member">init()</ref> on a <ref refid="classXapian_1_1PostingSource" kindref="compound">PostingSource</ref> before calling this for the first time. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/postingsource.h" line="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1PostingSource_10d67eda5783f82951d6c56ad7ff4205b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="namespaceXapian_17f30aa95f0c42b117dafaf66ba24241d" kindref="member">Xapian::doccount</ref></type>
+        <definition>virtual Xapian::doccount Xapian::PostingSource::get_termfreq_est</definition>
+        <argsstring>() const =0</argsstring>
+        <name>get_termfreq_est</name>
+        <reimplementedby refid="classXapian_1_1FixedWeightPostingSource_13296c3490733ac9f36e2dff0719746a5">get_termfreq_est</reimplementedby>
+        <reimplementedby refid="classXapian_1_1ValuePostingSource_1dd937d003f986ff60119bffbac277d76">get_termfreq_est</reimplementedby>
+        <briefdescription>
+<para>An estimate of the number of documents this object can return. </para>        </briefdescription>
+        <detaileddescription>
+<para>It must always be true that:</para><para><ref refid="classXapian_1_1PostingSource_15ecf450314e8b266eb9c8fae78e141d3" kindref="member">get_termfreq_min()</ref> &lt;= <ref refid="classXapian_1_1PostingSource_10d67eda5783f82951d6c56ad7ff4205b" kindref="member">get_termfreq_est()</ref> &lt;= <ref refid="classXapian_1_1PostingSource_117de27c84a052c51d62ad498151a4cab" kindref="member">get_termfreq_max()</ref></para><para><ref refid="namespaceXapian" kindref="compound">Xapian</ref> will always call <ref refid="classXapian_1_1PostingSource_181d793170b496022488c15c3508979b5" kindref="member">init()</ref> on a <ref refid="classXapian_1_1PostingSource" kindref="compound">PostingSource</ref> before calling this for the first time. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/postingsource.h" line="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1PostingSource_117de27c84a052c51d62ad498151a4cab" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="namespaceXapian_17f30aa95f0c42b117dafaf66ba24241d" kindref="member">Xapian::doccount</ref></type>
+        <definition>virtual Xapian::doccount Xapian::PostingSource::get_termfreq_max</definition>
+        <argsstring>() const =0</argsstring>
+        <name>get_termfreq_max</name>
+        <reimplementedby refid="classXapian_1_1FixedWeightPostingSource_141f8f0e959f0d7daf5915b7507d4f5df">get_termfreq_max</reimplementedby>
+        <reimplementedby refid="classXapian_1_1ValuePostingSource_1c71b845c832955fe708d9ad6dbcf87e5">get_termfreq_max</reimplementedby>
+        <briefdescription>
+<para>An upper bound on the number of documents this object can return. </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="namespaceXapian" kindref="compound">Xapian</ref> will always call <ref refid="classXapian_1_1PostingSource_181d793170b496022488c15c3508979b5" kindref="member">init()</ref> on a <ref refid="classXapian_1_1PostingSource" kindref="compound">PostingSource</ref> before calling this for the first time. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/postingsource.h" line="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1PostingSource_1620fa76be33e59e0bd5fc4caa479e6ee" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceXapian_1cac12803afc9e24ee5141c119acb8884" kindref="member">Xapian::weight</ref></type>
+        <definition>Xapian::weight Xapian::PostingSource::get_maxweight</definition>
+        <argsstring>() const </argsstring>
+        <name>get_maxweight</name>
+        <briefdescription>
+<para>Return the currently set upper bound on what <ref refid="classXapian_1_1PostingSource_12e7637a323a90bea45f2dc68c916ea00" kindref="member">get_weight()</ref> can return. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/postingsource.h" line="115" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/postingsource.h" bodystart="115" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1PostingSource_12e7637a323a90bea45f2dc68c916ea00" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespaceXapian_1cac12803afc9e24ee5141c119acb8884" kindref="member">Xapian::weight</ref></type>
+        <definition>virtual Xapian::weight Xapian::PostingSource::get_weight</definition>
+        <argsstring>() const </argsstring>
+        <name>get_weight</name>
+        <reimplementedby refid="classXapian_1_1FixedWeightPostingSource_18410aea1310c2fa7e5a078fe9429e6af">get_weight</reimplementedby>
+        <reimplementedby refid="classXapian_1_1ValueMapPostingSource_196cea230e42fa66778ac109501413327">get_weight</reimplementedby>
+        <reimplementedby refid="classXapian_1_1DecreasingValueWeightPostingSource_11f302377fd46ed471987939be3f24bab">get_weight</reimplementedby>
+        <reimplementedby refid="classXapian_1_1ValueWeightPostingSource_1b9159e5e12e909272fa2b776bb95cdaa">get_weight</reimplementedby>
+        <briefdescription>
+<para>Return the weight contribution for the current document. </para>        </briefdescription>
+        <detaileddescription>
+<para>This default implementation always returns 0, for convenience when implementing &quot;weight-less&quot; <ref refid="classXapian_1_1PostingSource" kindref="compound">PostingSource</ref> subclasses.</para><para>This method may assume that it will only be called when there is a &quot;current document&quot;. In detail: <ref refid="namespaceXapian" kindref="compound">Xapian</ref> will always call <ref refid="classXapian_1_1PostingSource_181d793170b496022488c15c3508979b5" kindref="member">init()</ref> on a <ref refid="classXapian_1_1PostingSource" kindref="compound">PostingSource</ref> before calling this for the first time. It will also only call this if the <ref refid="classXapian_1_1PostingSource" kindref="compound">PostingSource</ref> reports that it is pointing to a valid document (ie, it will not call it before calling at least one of <ref refid="classXapian_1_1PostingSource_1fd0261e7b428c2a25245da07170e9635" kindref="member">next()</ref>, <ref refid="classXapian_1_1PostingSource_102e3f5e29a0605d7f9e0a09decbdd9bf" kindref="member">skip_to()</ref> or <ref refid="classXapian_1_1PostingSource_192098dee93d09781bb5ad48e86434873" kindref="member">check()</ref>, and will ensure that the <ref refid="classXapian_1_1PostingSource" kindref="compound">PostingSource</ref> is not at the end by calling <ref refid="classXapian_1_1PostingSource_198831c9fdea1599f588cd9fef51bbeb5" kindref="member">at_end()</ref>). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/postingsource.h" line="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1PostingSource_17b1bd1fcd07d69204f70155588ae544a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="namespaceXapian_18fa9094bebe1256a7be935a5ede87a64" kindref="member">Xapian::docid</ref></type>
+        <definition>virtual Xapian::docid Xapian::PostingSource::get_docid</definition>
+        <argsstring>() const =0</argsstring>
+        <name>get_docid</name>
+        <reimplementedby refid="classXapian_1_1FixedWeightPostingSource_1f565f2685bec715d5cbd489f5acc50a3">get_docid</reimplementedby>
+        <reimplementedby refid="classXapian_1_1ValuePostingSource_16507d4d1a4119058890d92dfad53f40d">get_docid</reimplementedby>
+        <briefdescription>
+<para>Return the current docid. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method may assume that it will only be called when there is a &quot;current document&quot;. See <emphasis><ref refid="classXapian_1_1PostingSource_12e7637a323a90bea45f2dc68c916ea00" kindref="member">get_weight()</ref></emphasis> for details.</para><para>Note: in the case of a multi-database search, the returned docid should be in the single subdatabase relevant to this posting source. See the <emphasis><ref refid="classXapian_1_1PostingSource_181d793170b496022488c15c3508979b5" kindref="member">init()</ref></emphasis> method for details. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/postingsource.h" line="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1PostingSource_1fd0261e7b428c2a25245da07170e9635" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Xapian::PostingSource::next</definition>
+        <argsstring>(Xapian::weight min_wt)=0</argsstring>
+        <name>next</name>
+        <reimplementedby refid="classXapian_1_1FixedWeightPostingSource_177675d1d2175f8de6b10c363f0a73143">next</reimplementedby>
+        <reimplementedby refid="classXapian_1_1DecreasingValueWeightPostingSource_1ef2944c8ef7812185907af383a3747f2">next</reimplementedby>
+        <reimplementedby refid="classXapian_1_1ValuePostingSource_187b22aac8422f80124b50a456d1d85b0">next</reimplementedby>
+        <param>
+          <type><ref refid="namespaceXapian_1cac12803afc9e24ee5141c119acb8884" kindref="member">Xapian::weight</ref></type>
+          <declname>min_wt</declname>
+        </param>
+        <briefdescription>
+<para>Advance the current position to the next matching document. </para>        </briefdescription>
+        <detaileddescription>
+<para>The <ref refid="classXapian_1_1PostingSource" kindref="compound">PostingSource</ref> starts before the first entry in the list, so <ref refid="classXapian_1_1PostingSource_1fd0261e7b428c2a25245da07170e9635" kindref="member">next()</ref> must be called before any methods which need the context of the current position.</para><para><ref refid="namespaceXapian" kindref="compound">Xapian</ref> will always call <ref refid="classXapian_1_1PostingSource_181d793170b496022488c15c3508979b5" kindref="member">init()</ref> on a <ref refid="classXapian_1_1PostingSource" kindref="compound">PostingSource</ref> before calling this for the first time.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>min_wt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The minimum weight contribution that is needed (this is just a hint which subclasses may ignore). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/postingsource.h" line="155"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1PostingSource_102e3f5e29a0605d7f9e0a09decbdd9bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Xapian::PostingSource::skip_to</definition>
+        <argsstring>(Xapian::docid did, Xapian::weight min_wt)</argsstring>
+        <name>skip_to</name>
+        <reimplementedby refid="classXapian_1_1FixedWeightPostingSource_111598d752e5a8d2d3788430b120e665f">skip_to</reimplementedby>
+        <reimplementedby refid="classXapian_1_1DecreasingValueWeightPostingSource_1e32da549e3042739f2954233c7a9bb3c">skip_to</reimplementedby>
+        <reimplementedby refid="classXapian_1_1ValuePostingSource_1f11095a4355f96d7bc12074a5a91cd93">skip_to</reimplementedby>
+        <param>
+          <type><ref refid="namespaceXapian_18fa9094bebe1256a7be935a5ede87a64" kindref="member">Xapian::docid</ref></type>
+          <declname>did</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceXapian_1cac12803afc9e24ee5141c119acb8884" kindref="member">Xapian::weight</ref></type>
+          <declname>min_wt</declname>
+        </param>
+        <briefdescription>
+<para>Advance to the specified docid. </para>        </briefdescription>
+        <detaileddescription>
+<para>If the specified docid isn&apos;t in the list, position ourselves on the first document after it (or <ref refid="classXapian_1_1PostingSource_198831c9fdea1599f588cd9fef51bbeb5" kindref="member">at_end()</ref> if no greater docids are present).</para><para>If the current position is already the specified docid, this method will leave the position unmodified.</para><para>If the specified docid is earlier than the current position, the behaviour is unspecified. A sensible behaviour would be to leave the current position unmodified, but it is also reasonable to move to the specified docid.</para><para>The default implementation calls <ref refid="classXapian_1_1PostingSource_1fd0261e7b428c2a25245da07170e9635" kindref="member">next()</ref> repeatedly, which works but <ref refid="classXapian_1_1PostingSource_102e3f5e29a0605d7f9e0a09decbdd9bf" kindref="member">skip_to()</ref> can often be implemented much more efficiently.</para><para><ref refid="namespaceXapian" kindref="compound">Xapian</ref> will always call <ref refid="classXapian_1_1PostingSource_181d793170b496022488c15c3508979b5" kindref="member">init()</ref> on a <ref refid="classXapian_1_1PostingSource" kindref="compound">PostingSource</ref> before calling this for the first time.</para><para>Note: in the case of a multi-database search, the docid specified is the docid in the single subdatabase relevant to this posting source. See the <emphasis><ref refid="classXapian_1_1PostingSource_181d793170b496022488c15c3508979b5" kindref="member">init()</ref></emphasis> method for details.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>min_wt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The minimum weight contribution that is needed (this is just a hint which subclasses may ignore). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/postingsource.h" line="183"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1PostingSource_192098dee93d09781bb5ad48e86434873" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool Xapian::PostingSource::check</definition>
+        <argsstring>(Xapian::docid did, Xapian::weight min_wt)</argsstring>
+        <name>check</name>
+        <reimplementedby refid="classXapian_1_1FixedWeightPostingSource_16b51fb24303528060e48df95ada3d989">check</reimplementedby>
+        <reimplementedby refid="classXapian_1_1DecreasingValueWeightPostingSource_13ae07f1c25d3b71f437a7cb63a342d5c">check</reimplementedby>
+        <reimplementedby refid="classXapian_1_1ValuePostingSource_171868e54627098425820f7a76e259197">check</reimplementedby>
+        <param>
+          <type><ref refid="namespaceXapian_18fa9094bebe1256a7be935a5ede87a64" kindref="member">Xapian::docid</ref></type>
+          <declname>did</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceXapian_1cac12803afc9e24ee5141c119acb8884" kindref="member">Xapian::weight</ref></type>
+          <declname>min_wt</declname>
+        </param>
+        <briefdescription>
+<para>Check if the specified docid occurs. </para>        </briefdescription>
+        <detaileddescription>
+<para>The caller is required to ensure that the specified document id <emphasis>did</emphasis> actually exists in the database. If it does, it must move to that document id, and return true. If it does not, it may either:</para><para><itemizedlist>
+<listitem><para>return true, having moved to a definite position (including &quot;at_end&quot;), which must be the same position as <ref refid="classXapian_1_1PostingSource_102e3f5e29a0605d7f9e0a09decbdd9bf" kindref="member">skip_to()</ref> would have moved to.</para></listitem></itemizedlist>
+</para><para>or</para><para><itemizedlist>
+<listitem><para>return false, having moved to an &quot;indeterminate&quot; position, such that a subsequent call to <ref refid="classXapian_1_1PostingSource_1fd0261e7b428c2a25245da07170e9635" kindref="member">next()</ref> or <ref refid="classXapian_1_1PostingSource_102e3f5e29a0605d7f9e0a09decbdd9bf" kindref="member">skip_to()</ref> will move to the next matching position after <emphasis>did</emphasis>.</para></listitem></itemizedlist>
+</para><para>Generally, this method should act like <ref refid="classXapian_1_1PostingSource_102e3f5e29a0605d7f9e0a09decbdd9bf" kindref="member">skip_to()</ref> and return true if that can be done at little extra cost.</para><para>Otherwise it should simply check if a particular docid is present, returning true if it is, and false if it isn&apos;t.</para><para>The default implementation calls <ref refid="classXapian_1_1PostingSource_102e3f5e29a0605d7f9e0a09decbdd9bf" kindref="member">skip_to()</ref> and always returns true.</para><para><ref refid="namespaceXapian" kindref="compound">Xapian</ref> will always call <ref refid="classXapian_1_1PostingSource_181d793170b496022488c15c3508979b5" kindref="member">init()</ref> on a <ref refid="classXapian_1_1PostingSource" kindref="compound">PostingSource</ref> before calling this for the first time.</para><para>Note: in the case of a multi-database search, the docid specified is the docid in the single subdatabase relevant to this posting source. See the <emphasis><ref refid="classXapian_1_1PostingSource_181d793170b496022488c15c3508979b5" kindref="member">init()</ref></emphasis> method for details. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/postingsource.h" line="216"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1PostingSource_198831c9fdea1599f588cd9fef51bbeb5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool Xapian::PostingSource::at_end</definition>
+        <argsstring>() const =0</argsstring>
+        <name>at_end</name>
+        <reimplementedby refid="classXapian_1_1FixedWeightPostingSource_1c1913462adbcea9216b04180f62f41a0">at_end</reimplementedby>
+        <reimplementedby refid="classXapian_1_1ValuePostingSource_14bb7ea314dbd569f90f89731204cdc40">at_end</reimplementedby>
+        <briefdescription>
+<para>Return true if the current position is past the last entry in this list. </para>        </briefdescription>
+        <detaileddescription>
+<para>At least one of <emphasis><ref refid="classXapian_1_1PostingSource_1fd0261e7b428c2a25245da07170e9635" kindref="member">next()</ref></emphasis>, <emphasis><ref refid="classXapian_1_1PostingSource_102e3f5e29a0605d7f9e0a09decbdd9bf" kindref="member">skip_to()</ref></emphasis> or <emphasis><ref refid="classXapian_1_1PostingSource_192098dee93d09781bb5ad48e86434873" kindref="member">check()</ref></emphasis> will be called before this method is first called. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/postingsource.h" line="223"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1PostingSource_1ecd88a39155ec5e04c752360b657f315" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classXapian_1_1PostingSource" kindref="compound">PostingSource</ref> *</type>
+        <definition>virtual PostingSource* Xapian::PostingSource::clone</definition>
+        <argsstring>() const </argsstring>
+        <name>clone</name>
+        <reimplementedby refid="classXapian_1_1FixedWeightPostingSource_1ad5669a2fa3d08bea18d0304823222d4">clone</reimplementedby>
+        <reimplementedby refid="classXapian_1_1ValueMapPostingSource_175598085ba9e49e1a2fd0e232d191461">clone</reimplementedby>
+        <reimplementedby refid="classXapian_1_1DecreasingValueWeightPostingSource_1fcaba0011386e195aeb81836fd0adc5d">clone</reimplementedby>
+        <reimplementedby refid="classXapian_1_1ValueWeightPostingSource_1a157a293a1b54a3d70d1d55f5de26895">clone</reimplementedby>
+        <briefdescription>
+<para>Clone the posting source. </para>        </briefdescription>
+        <detaileddescription>
+<para>The clone should inherit the configuration of the parent, but need not inherit the state. ie, the clone does not need to be in the same iteration position as the original: the matcher will always call <ref refid="classXapian_1_1PostingSource_181d793170b496022488c15c3508979b5" kindref="member">init()</ref> on the clone before attempting to move the iterator, or read the information about the current position of the iterator.</para><para>This may return NULL to indicate that cloning is not supported. In this case, the <ref refid="classXapian_1_1PostingSource" kindref="compound">PostingSource</ref> may only be used with a single-database search.</para><para>The default implementation returns NULL.</para><para>Note that the returned object will be deallocated by <ref refid="namespaceXapian" kindref="compound">Xapian</ref> after use with &quot;delete&quot;. It must therefore have been allocated with &quot;new&quot;. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/postingsource.h" line="242"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1PostingSource_17b5c506178f996e59ed641ad62520734" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string Xapian::PostingSource::name</definition>
+        <argsstring>() const </argsstring>
+        <name>name</name>
+        <reimplementedby refid="classXapian_1_1FixedWeightPostingSource_128fc3f906a9b56f8c4ebad2e82d3d531">name</reimplementedby>
+        <reimplementedby refid="classXapian_1_1ValueMapPostingSource_1717c8ccd76b95946b07e68e759dcca97">name</reimplementedby>
+        <reimplementedby refid="classXapian_1_1DecreasingValueWeightPostingSource_19f1d3ffcfbea32d66ebc690426d9be90">name</reimplementedby>
+        <reimplementedby refid="classXapian_1_1ValueWeightPostingSource_135d0b218fa9db907c36e62d60b900808">name</reimplementedby>
+        <briefdescription>
+<para>Name of the posting source class. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is used when serialising and unserialising posting sources; for example, for performing remote searches.</para><para>If the subclass is in a C++ namespace, the namespace should be included in the name, using &quot;::&quot; as a separator. For example, for a <ref refid="classXapian_1_1PostingSource" kindref="compound">PostingSource</ref> subclass called &quot;FooPostingSource&quot; in the &quot;Xapian&quot; namespace the result of this call should be &quot;Xapian::FooPostingSource&quot;.</para><para>This should only be implemented if <ref refid="classXapian_1_1PostingSource_16ad26dc173cf1ab175dea945ba2622e0" kindref="member">serialise()</ref> and <ref refid="classXapian_1_1PostingSource_1b3312a9172b1881c354faf3d2d9b585d" kindref="member">unserialise()</ref> are also implemented. The default implementation returns an empty string.</para><para>If this returns an empty string, <ref refid="namespaceXapian" kindref="compound">Xapian</ref> will assume that <ref refid="classXapian_1_1PostingSource_16ad26dc173cf1ab175dea945ba2622e0" kindref="member">serialise()</ref> and <ref refid="classXapian_1_1PostingSource_1b3312a9172b1881c354faf3d2d9b585d" kindref="member">unserialise()</ref> are not implemented. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/postingsource.h" line="260"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1PostingSource_16ad26dc173cf1ab175dea945ba2622e0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string Xapian::PostingSource::serialise</definition>
+        <argsstring>() const </argsstring>
+        <name>serialise</name>
+        <reimplementedby refid="classXapian_1_1FixedWeightPostingSource_1b9f650935d97b18388dd112101336355">serialise</reimplementedby>
+        <reimplementedby refid="classXapian_1_1ValueMapPostingSource_1534c78ecea04a7a649d8ba27447edee3">serialise</reimplementedby>
+        <reimplementedby refid="classXapian_1_1DecreasingValueWeightPostingSource_12d3b48128b61bfd904163706c87065a8">serialise</reimplementedby>
+        <reimplementedby refid="classXapian_1_1ValueWeightPostingSource_11bdc574c2f1c02472a4ec5fee697af87">serialise</reimplementedby>
+        <briefdescription>
+<para>Serialise object parameters into a string. </para>        </briefdescription>
+        <detaileddescription>
+<para>The serialised parameters should represent the configuration of the posting source, but need not (indeed, should not) represent the current iteration state.</para><para>If you don&apos;t want to support the remote backend, you can use the default implementation which simply throws <ref refid="classXapian_1_1UnimplementedError" kindref="compound">Xapian::UnimplementedError</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/postingsource.h" line="271"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1PostingSource_1b3312a9172b1881c354faf3d2d9b585d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classXapian_1_1PostingSource" kindref="compound">PostingSource</ref> *</type>
+        <definition>virtual PostingSource* Xapian::PostingSource::unserialise</definition>
+        <argsstring>(const std::string &amp;s) const </argsstring>
+        <name>unserialise</name>
+        <reimplementedby refid="classXapian_1_1FixedWeightPostingSource_17d70385221859891b250e526c791ce67">unserialise</reimplementedby>
+        <reimplementedby refid="classXapian_1_1ValueMapPostingSource_1b3f716ff004f91e2ecc51548119f3891">unserialise</reimplementedby>
+        <reimplementedby refid="classXapian_1_1DecreasingValueWeightPostingSource_15ef4c786055fcfe85ebc99cb98ba8409">unserialise</reimplementedby>
+        <reimplementedby refid="classXapian_1_1ValueWeightPostingSource_1ff018c57b785507a3bba82e85ec7fb63">unserialise</reimplementedby>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Create object given string serialisation returned by <ref refid="classXapian_1_1PostingSource_16ad26dc173cf1ab175dea945ba2622e0" kindref="member">serialise()</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>Note that the returned object will be deallocated by <ref refid="namespaceXapian" kindref="compound">Xapian</ref> after use with &quot;delete&quot;. It must therefore have been allocated with &quot;new&quot;.</para><para>If you don&apos;t want to support the remote backend, you can use the default implementation which simply throws <ref refid="classXapian_1_1UnimplementedError" kindref="compound">Xapian::UnimplementedError</ref>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A serialised instance of this <ref refid="classXapian_1_1PostingSource" kindref="compound">PostingSource</ref> subclass. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/postingsource.h" line="283"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1PostingSource_181d793170b496022488c15c3508979b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Xapian::PostingSource::init</definition>
+        <argsstring>(const Database &amp;db)=0</argsstring>
+        <name>init</name>
+        <reimplementedby refid="classXapian_1_1FixedWeightPostingSource_13c9698d1d0d4d47247bd19451e1e2077">init</reimplementedby>
+        <reimplementedby refid="classXapian_1_1ValueMapPostingSource_1e76de9cb534e96b7a0cc827d89eea8fc">init</reimplementedby>
+        <reimplementedby refid="classXapian_1_1DecreasingValueWeightPostingSource_1abbd9d95d77e2aa947377c44d1bb733c">init</reimplementedby>
+        <reimplementedby refid="classXapian_1_1ValueWeightPostingSource_1c3844351e28448d1de38fe089d626db4">init</reimplementedby>
+        <reimplementedby refid="classXapian_1_1ValuePostingSource_1764328b2a7085e24393a94eb1d2b91e0">init</reimplementedby>
+        <param>
+          <type>const <ref refid="classXapian_1_1Database" kindref="compound">Database</ref> &amp;</type>
+          <declname>db</declname>
+        </param>
+        <briefdescription>
+<para>Set this <ref refid="classXapian_1_1PostingSource" kindref="compound">PostingSource</ref> to the start of the list of postings. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is called automatically by the matcher prior to each query being processed.</para><para>If a <ref refid="classXapian_1_1PostingSource" kindref="compound">PostingSource</ref> is used for multiple searches, <emphasis><ref refid="classXapian_1_1PostingSource_181d793170b496022488c15c3508979b5" kindref="member">init()</ref></emphasis> will therefore be called multiple times, and must handle this by using the database passed in the most recent call.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>db</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The database which the <ref refid="classXapian_1_1PostingSource" kindref="compound">PostingSource</ref> should iterate through.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Note: the database supplied to this method must not be modified: in particular, the reopen() method should not be called on it.</para><para>Note: in the case of a multi-database search, a separate <ref refid="classXapian_1_1PostingSource" kindref="compound">PostingSource</ref> will be used for each database (the separate PostingSources will be obtained using <emphasis><ref refid="classXapian_1_1PostingSource_1ecd88a39155ec5e04c752360b657f315" kindref="member">clone()</ref></emphasis>), and each <ref refid="classXapian_1_1PostingSource" kindref="compound">PostingSource</ref> will be passed one of the sub-databases as the <emphasis>db</emphasis> parameter here. The <emphasis>db</emphasis> parameter will therefore always refer to a single database. All docids passed to, or returned from, the <ref refid="classXapian_1_1PostingSource" kindref="compound">PostingSource</ref> refer to docids in that single database, rather than in the multi-database. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/postingsource.h" line="307"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1PostingSource_147d794241880cc691df1c3a3896d1050" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string Xapian::PostingSource::get_description</definition>
+        <argsstring>() const </argsstring>
+        <name>get_description</name>
+        <reimplementedby refid="classXapian_1_1FixedWeightPostingSource_1eb48203eb1b35190d6bffe351bec38e5">get_description</reimplementedby>
+        <reimplementedby refid="classXapian_1_1ValueMapPostingSource_1e8687a2981841c33bb04f3e28d3d7892">get_description</reimplementedby>
+        <reimplementedby refid="classXapian_1_1DecreasingValueWeightPostingSource_1b9ec69881499b156c9317bc9d491ef91">get_description</reimplementedby>
+        <reimplementedby refid="classXapian_1_1ValueWeightPostingSource_1f39ca50c3edcd5b8e2cde72db07a4382">get_description</reimplementedby>
+        <briefdescription>
+<para>Return a string describing this object. </para>        </briefdescription>
+        <detaileddescription>
+<para>This default implementation returns a generic answer. This default it provided to avoid forcing those deriving their own <ref refid="classXapian_1_1PostingSource" kindref="compound">PostingSource</ref> subclass from having to implement this (they may not care what <ref refid="classXapian_1_1PostingSource_147d794241880cc691df1c3a3896d1050" kindref="member">get_description()</ref> gives for their subclass). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/postingsource.h" line="316"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base class which provides an &quot;external&quot; source of postings. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="595">
+        <label>Xapian::ValuePostingSource</label>
+        <link refid="classXapian_1_1ValuePostingSource"/>
+        <childnode refid="593" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="594">
+        <label>Xapian::FixedWeightPostingSource</label>
+        <link refid="classXapian_1_1FixedWeightPostingSource"/>
+        <childnode refid="593" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="596">
+        <label>Xapian::ValueMapPostingSource</label>
+        <link refid="classXapian_1_1ValueMapPostingSource"/>
+        <childnode refid="595" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="598">
+        <label>Xapian::DecreasingValueWeightPostingSource</label>
+        <link refid="classXapian_1_1DecreasingValueWeightPostingSource"/>
+        <childnode refid="597" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="597">
+        <label>Xapian::ValueWeightPostingSource</label>
+        <link refid="classXapian_1_1ValueWeightPostingSource"/>
+        <childnode refid="595" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="593">
+        <label>Xapian::PostingSource</label>
+        <link refid="classXapian_1_1PostingSource"/>
+      </node>
+    </inheritancegraph>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/postingsource.h" line="36" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/postingsource.h" bodystart="36" bodyend="317"/>
+    <listofallmembers>
+      <member refid="classXapian_1_1PostingSource_198831c9fdea1599f588cd9fef51bbeb5" prot="public" virt="pure-virtual"><scope>Xapian::PostingSource</scope><name>at_end</name></member>
+      <member refid="classXapian_1_1PostingSource_192098dee93d09781bb5ad48e86434873" prot="public" virt="virtual"><scope>Xapian::PostingSource</scope><name>check</name></member>
+      <member refid="classXapian_1_1PostingSource_1ecd88a39155ec5e04c752360b657f315" prot="public" virt="virtual"><scope>Xapian::PostingSource</scope><name>clone</name></member>
+      <member refid="classXapian_1_1PostingSource_147d794241880cc691df1c3a3896d1050" prot="public" virt="virtual"><scope>Xapian::PostingSource</scope><name>get_description</name></member>
+      <member refid="classXapian_1_1PostingSource_17b1bd1fcd07d69204f70155588ae544a" prot="public" virt="pure-virtual"><scope>Xapian::PostingSource</scope><name>get_docid</name></member>
+      <member refid="classXapian_1_1PostingSource_1620fa76be33e59e0bd5fc4caa479e6ee" prot="public" virt="non-virtual"><scope>Xapian::PostingSource</scope><name>get_maxweight</name></member>
+      <member refid="classXapian_1_1PostingSource_10d67eda5783f82951d6c56ad7ff4205b" prot="public" virt="pure-virtual"><scope>Xapian::PostingSource</scope><name>get_termfreq_est</name></member>
+      <member refid="classXapian_1_1PostingSource_117de27c84a052c51d62ad498151a4cab" prot="public" virt="pure-virtual"><scope>Xapian::PostingSource</scope><name>get_termfreq_max</name></member>
+      <member refid="classXapian_1_1PostingSource_15ecf450314e8b266eb9c8fae78e141d3" prot="public" virt="pure-virtual"><scope>Xapian::PostingSource</scope><name>get_termfreq_min</name></member>
+      <member refid="classXapian_1_1PostingSource_12e7637a323a90bea45f2dc68c916ea00" prot="public" virt="virtual"><scope>Xapian::PostingSource</scope><name>get_weight</name></member>
+      <member refid="classXapian_1_1PostingSource_181d793170b496022488c15c3508979b5" prot="public" virt="pure-virtual"><scope>Xapian::PostingSource</scope><name>init</name></member>
+      <member refid="classXapian_1_1PostingSource_10c6543b4e9ab319c2abbf9b4b3cacbce" prot="private" virt="non-virtual"><scope>Xapian::PostingSource</scope><name>matcher_</name></member>
+      <member refid="classXapian_1_1PostingSource_1ca3fe051411c36cf5c0adf0e919130dc" prot="private" virt="non-virtual"><scope>Xapian::PostingSource</scope><name>max_weight_</name></member>
+      <member refid="classXapian_1_1PostingSource_17b5c506178f996e59ed641ad62520734" prot="public" virt="virtual"><scope>Xapian::PostingSource</scope><name>name</name></member>
+      <member refid="classXapian_1_1PostingSource_1fd0261e7b428c2a25245da07170e9635" prot="public" virt="pure-virtual"><scope>Xapian::PostingSource</scope><name>next</name></member>
+      <member refid="classXapian_1_1PostingSource_10e06bb671e3d8699b869668c6b1ef96c" prot="private" virt="non-virtual"><scope>Xapian::PostingSource</scope><name>operator=</name></member>
+      <member refid="classXapian_1_1PostingSource_16922a6c180f0e40c66f56d6b00dfc451" prot="private" virt="non-virtual"><scope>Xapian::PostingSource</scope><name>PostingSource</name></member>
+      <member refid="classXapian_1_1PostingSource_182e85d6113d9c8e72cbbf4b3362f3fd6" prot="protected" virt="non-virtual"><scope>Xapian::PostingSource</scope><name>PostingSource</name></member>
+      <member refid="classXapian_1_1PostingSource_1cbb2425265e991a9bd119c4c32a1de42" prot="private" virt="non-virtual"><scope>Xapian::PostingSource</scope><name>register_matcher_</name></member>
+      <member refid="classXapian_1_1PostingSource_16ad26dc173cf1ab175dea945ba2622e0" prot="public" virt="virtual"><scope>Xapian::PostingSource</scope><name>serialise</name></member>
+      <member refid="classXapian_1_1PostingSource_10643cf1dfb1c3ed2dd1cf5ecfe3f3a10" prot="protected" virt="non-virtual"><scope>Xapian::PostingSource</scope><name>set_maxweight</name></member>
+      <member refid="classXapian_1_1PostingSource_102e3f5e29a0605d7f9e0a09decbdd9bf" prot="public" virt="virtual"><scope>Xapian::PostingSource</scope><name>skip_to</name></member>
+      <member refid="classXapian_1_1PostingSource_1b3312a9172b1881c354faf3d2d9b585d" prot="public" virt="virtual"><scope>Xapian::PostingSource</scope><name>unserialise</name></member>
+      <member refid="classXapian_1_1PostingSource_1679981b0badcc1a6308d4cbf8c5de7a0" prot="public" virt="virtual"><scope>Xapian::PostingSource</scope><name>~PostingSource</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

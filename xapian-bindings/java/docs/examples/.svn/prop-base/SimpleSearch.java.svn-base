@@ -1,0 +1,15 @@
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+K 13
+svn:mergeinfo
+V 279
+/branches/chert-shallower-btree/xapian-bindings/java/org/xapian/examples/SimpleSearch.java:12962
+/branches/replication_fixes/xapian-bindings/java/org/xapian/examples/SimpleSearch.java:14149-14152
+/trunk/xapian-bindings/java/docs/examples/SimpleSearch.java:15485-15500,15865-16044
+END

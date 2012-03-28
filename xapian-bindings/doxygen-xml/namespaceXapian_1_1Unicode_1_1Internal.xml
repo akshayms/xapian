@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="namespaceXapian_1_1Unicode_1_1Internal" kind="namespace">
+    <compoundname>Xapian::Unicode::Internal</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceXapian_1_1Unicode_1_1Internal_1beea2fd182aeba046bbaae3979164000" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Xapian::Unicode::Internal::get_character_info</definition>
+        <argsstring>(unsigned ch)</argsstring>
+        <name>get_character_info</name>
+        <param>
+          <type>unsigned</type>
+          <declname>ch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" line="226"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceXapian_1_1Unicode_1_1Internal_1c3569ae680562f49ae38bf73e477760e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Xapian::Unicode::Internal::get_case_type</definition>
+        <argsstring>(int info)</argsstring>
+        <name>get_case_type</name>
+        <param>
+          <type>int</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" line="231" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" bodystart="231" bodyend="231"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceXapian_1_1Unicode_1_1Internal_14ca7e7e55301f7e49a0d80ec7895a83c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceXapian_1_1Unicode_126f1790c2ed8d5bdf92c886ac57a3e75" kindref="member">category</ref></type>
+        <definition>category Xapian::Unicode::Internal::get_category</definition>
+        <argsstring>(int info)</argsstring>
+        <name>get_category</name>
+        <param>
+          <type>int</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" line="234" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" bodystart="234" bodyend="234"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceXapian_1_1Unicode_1_1Internal_1bddf7e6eba5ce92b2dfff2ec0042b5a8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Xapian::Unicode::Internal::get_delta</definition>
+        <argsstring>(int info)</argsstring>
+        <name>get_delta</name>
+        <param>
+          <type>int</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" line="239" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" bodystart="239" bodyend="246"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" line="219"/>
+  </compounddef>
+</doxygen>

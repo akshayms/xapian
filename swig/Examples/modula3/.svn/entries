@@ -1,0 +1,80 @@
+10
+
+dir
+12767
+svn://svn.tartarus.org/swig/trunk/Examples/modula3
+svn://svn.tartarus.org/swig
+
+
+
+2006-12-03T08:28:42.799406Z
+9593
+wuzzeb
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+cce2a4f7-dc27-40e0-b75d-b3f4d8458e25
+
+typemap
+dir
+
+enum
+dir
+
+class
+dir
+
+check.list
+file
+
+
+
+
+2012-03-21T13:02:55.517786Z
+db728d9046ee72a2078b0bba37bbd273
+2004-03-19T11:45:29.000000Z
+5776
+thielema
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+74
+
+simple
+dir
+
+exception
+dir
+
+reference
+dir
+

@@ -1,0 +1,12 @@
+K 10
+svn:ignore
+V 58
+*_wrap.c
+*_wrap.xml
+*.i3
+*.m3
+m3makefile
+src
+Release
+Debug
+END

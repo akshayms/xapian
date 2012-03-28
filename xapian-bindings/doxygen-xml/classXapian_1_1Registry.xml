@@ -1,0 +1,204 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="classXapian_1_1Registry" kind="class" prot="public">
+    <compoundname>Xapian::Registry</compoundname>
+    <includes local="no">registry.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classXapian_1_1Registry_18293b8c3c56c243136f01072ee856902" prot="private" static="no" mutable="no">
+        <type>Xapian::Internal::intrusive_ptr&lt; Internal &gt;</type>
+        <definition>Xapian::Internal::intrusive_ptr&lt;Internal&gt; Xapian::Registry::internal</definition>
+        <argsstring></argsstring>
+        <name>internal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/registry.h" line="49" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/registry.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classXapian_1_1Registry_135540e2b99265677d41b8170c87ad3e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::Registry::Registry</definition>
+        <argsstring>(const Registry &amp;other)</argsstring>
+        <name>Registry</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1Registry" kindref="compound">Registry</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Copy constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>The internals are reference counted, so copying is cheap. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/registry.h" line="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Registry_1d1561d14d71954ba13ea0e3267bf849d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classXapian_1_1Registry" kindref="compound">Registry</ref> &amp;</type>
+        <definition>Registry&amp; Xapian::Registry::operator=</definition>
+        <argsstring>(const Registry &amp;other)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1Registry" kindref="compound">Registry</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Assignment operator. </para>        </briefdescription>
+        <detaileddescription>
+<para>The internals are reference counted, so assignment is cheap. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/registry.h" line="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Registry_12074a878db895c3fb3eaa3c18f11244a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::Registry::Registry</definition>
+        <argsstring>()</argsstring>
+        <name>Registry</name>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>The registry will contain all standard subclasses of user-subclassable classes. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/registry.h" line="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Registry_1d09d404b74f5ef3a1a2b71ec52996aac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::Registry::~Registry</definition>
+        <argsstring>()</argsstring>
+        <name>~Registry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/registry.h" line="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Registry_180ffccf647d842bcb7fae3a5d8361d1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::Registry::register_weighting_scheme</definition>
+        <argsstring>(const Xapian::Weight &amp;wt)</argsstring>
+        <name>register_weighting_scheme</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1Weight" kindref="compound">Xapian::Weight</ref> &amp;</type>
+          <declname>wt</declname>
+        </param>
+        <briefdescription>
+<para>Register a weighting scheme. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/registry.h" line="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Registry_1f408121f5706134aeac17a1c15f69ab9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classXapian_1_1Weight" kindref="compound">Xapian::Weight</ref> *</type>
+        <definition>const Xapian::Weight* Xapian::Registry::get_weighting_scheme</definition>
+        <argsstring>(const std::string &amp;name) const </argsstring>
+        <name>get_weighting_scheme</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Get the weighting scheme given a name. </para>        </briefdescription>
+        <detaileddescription>
+<para>The returned weighting scheme is owned by the registry object.</para><para>Returns NULL if the weighting scheme could not be found. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/registry.h" line="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Registry_13a265160ac28c20f73bb3c2063cacfbb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::Registry::register_posting_source</definition>
+        <argsstring>(const Xapian::PostingSource &amp;source)</argsstring>
+        <name>register_posting_source</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1PostingSource" kindref="compound">Xapian::PostingSource</ref> &amp;</type>
+          <declname>source</declname>
+        </param>
+        <briefdescription>
+<para>Register a user-defined posting source class. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/registry.h" line="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Registry_1c5b802fb406fad542a3853443656d6ea" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classXapian_1_1PostingSource" kindref="compound">Xapian::PostingSource</ref> *</type>
+        <definition>const Xapian::PostingSource* Xapian::Registry::get_posting_source</definition>
+        <argsstring>(const std::string &amp;name) const </argsstring>
+        <name>get_posting_source</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Get a posting source given a name. </para>        </briefdescription>
+        <detaileddescription>
+<para>The returned posting source is owned by the registry object.</para><para>Returns NULL if the posting source could not be found. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/registry.h" line="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Registry_18208e2ed2f5cceef6d5fa753d97c1690" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::Registry::register_match_spy</definition>
+        <argsstring>(const Xapian::MatchSpy &amp;spy)</argsstring>
+        <name>register_match_spy</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1MatchSpy" kindref="compound">Xapian::MatchSpy</ref> &amp;</type>
+          <declname>spy</declname>
+        </param>
+        <briefdescription>
+<para>Register a user-defined match spy class. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/registry.h" line="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Registry_1f7d3a56e17d95b1310563f03f73a2c9d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classXapian_1_1MatchSpy" kindref="compound">Xapian::MatchSpy</ref> *</type>
+        <definition>const Xapian::MatchSpy* Xapian::Registry::get_match_spy</definition>
+        <argsstring>(const std::string &amp;name) const </argsstring>
+        <name>get_match_spy</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Get a match spy given a name. </para>        </briefdescription>
+        <detaileddescription>
+<para>The returned match spy is owned by the registry object.</para><para>Returns NULL if the match spy could not be found. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/registry.h" line="107"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classXapian_1_1Registry" kindref="compound">Registry</ref> for user subclasses. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class provides a way for the remote server to look up user subclasses when unserialising. </para>    </detaileddescription>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/registry.h" line="42" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/registry.h" bodystart="42" bodyend="108"/>
+    <listofallmembers>
+      <member refid="classXapian_1_1Registry_1f7d3a56e17d95b1310563f03f73a2c9d" prot="public" virt="non-virtual"><scope>Xapian::Registry</scope><name>get_match_spy</name></member>
+      <member refid="classXapian_1_1Registry_1c5b802fb406fad542a3853443656d6ea" prot="public" virt="non-virtual"><scope>Xapian::Registry</scope><name>get_posting_source</name></member>
+      <member refid="classXapian_1_1Registry_1f408121f5706134aeac17a1c15f69ab9" prot="public" virt="non-virtual"><scope>Xapian::Registry</scope><name>get_weighting_scheme</name></member>
+      <member refid="classXapian_1_1Registry_18293b8c3c56c243136f01072ee856902" prot="private" virt="non-virtual"><scope>Xapian::Registry</scope><name>internal</name></member>
+      <member refid="classXapian_1_1Registry_1d1561d14d71954ba13ea0e3267bf849d" prot="public" virt="non-virtual"><scope>Xapian::Registry</scope><name>operator=</name></member>
+      <member refid="classXapian_1_1Registry_18208e2ed2f5cceef6d5fa753d97c1690" prot="public" virt="non-virtual"><scope>Xapian::Registry</scope><name>register_match_spy</name></member>
+      <member refid="classXapian_1_1Registry_13a265160ac28c20f73bb3c2063cacfbb" prot="public" virt="non-virtual"><scope>Xapian::Registry</scope><name>register_posting_source</name></member>
+      <member refid="classXapian_1_1Registry_180ffccf647d842bcb7fae3a5d8361d1e" prot="public" virt="non-virtual"><scope>Xapian::Registry</scope><name>register_weighting_scheme</name></member>
+      <member refid="classXapian_1_1Registry_135540e2b99265677d41b8170c87ad3e6" prot="public" virt="non-virtual"><scope>Xapian::Registry</scope><name>Registry</name></member>
+      <member refid="classXapian_1_1Registry_12074a878db895c3fb3eaa3c18f11244a" prot="public" virt="non-virtual"><scope>Xapian::Registry</scope><name>Registry</name></member>
+      <member refid="classXapian_1_1Registry_1d09d404b74f5ef3a1a2b71ec52996aac" prot="public" virt="non-virtual"><scope>Xapian::Registry</scope><name>~Registry</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

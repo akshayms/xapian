@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="classXapian_1_1KeyMaker" kind="class" prot="public">
+    <compoundname>Xapian::KeyMaker</compoundname>
+    <derivedcompoundref refid="classXapian_1_1MultiValueKeyMaker" prot="public" virt="non-virtual">Xapian::MultiValueKeyMaker</derivedcompoundref>
+    <includes local="no">keymaker.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classXapian_1_1KeyMaker_1cd0a775f8546a830833357e5d792bedc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::string</type>
+        <definition>virtual std::string Xapian::KeyMaker::operator()</definition>
+        <argsstring>(const Xapian::Document &amp;doc) const =0</argsstring>
+        <name>operator()</name>
+        <reimplementedby refid="classXapian_1_1MultiValueKeyMaker_18f827517ed1ea394f99d4db362f23b31">operator()</reimplementedby>
+        <param>
+          <type>const <ref refid="classXapian_1_1Document" kindref="compound">Xapian::Document</ref> &amp;</type>
+          <declname>doc</declname>
+        </param>
+        <briefdescription>
+<para>This method takes a <ref refid="classXapian_1_1Document" kindref="compound">Document</ref> object and builds a key string from it. </para>        </briefdescription>
+        <detaileddescription>
+<para>These keys are then used for ordering or collapsing matching documents. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/keymaker.h" line="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1KeyMaker_13536ee93f8588a7af834212e9c09c5f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual Xapian::KeyMaker::~KeyMaker</definition>
+        <argsstring>()</argsstring>
+        <name>~KeyMaker</name>
+        <briefdescription>
+<para>Virtual destructor, because we have virtual methods. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/keymaker.h" line="44"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Virtual base class for key making functors. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="519">
+        <label>Xapian::MultiValueKeyMaker</label>
+        <link refid="classXapian_1_1MultiValueKeyMaker"/>
+        <childnode refid="518" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="518">
+        <label>Xapian::KeyMaker</label>
+        <link refid="classXapian_1_1KeyMaker"/>
+      </node>
+    </inheritancegraph>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/keymaker.h" line="35" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/keymaker.h" bodystart="35" bodyend="45"/>
+    <listofallmembers>
+      <member refid="classXapian_1_1KeyMaker_1cd0a775f8546a830833357e5d792bedc" prot="public" virt="pure-virtual"><scope>Xapian::KeyMaker</scope><name>operator()</name></member>
+      <member refid="classXapian_1_1KeyMaker_13536ee93f8588a7af834212e9c09c5f8" prot="public" virt="virtual"><scope>Xapian::KeyMaker</scope><name>~KeyMaker</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

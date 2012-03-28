@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="structXapian_1_1ValueCountMatchSpy_1_1Internal" kind="struct" prot="public">
+    <compoundname>Xapian::ValueCountMatchSpy::Internal</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structXapian_1_1ValueCountMatchSpy_1_1Internal_157a0f830eca8f8d8a40685f90f5b2534" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceXapian_194a899651fa920c72ffa9635bde630ea" kindref="member">Xapian::valueno</ref></type>
+        <definition>Xapian::valueno Xapian::ValueCountMatchSpy::Internal::slot</definition>
+        <argsstring></argsstring>
+        <name>slot</name>
+        <briefdescription>
+<para>The slot to count. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/matchspy.h" line="170" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/matchspy.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structXapian_1_1ValueCountMatchSpy_1_1Internal_1fd8ab55f1f65cfe98549bf6932da9f01" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceXapian_17f30aa95f0c42b117dafaf66ba24241d" kindref="member">Xapian::doccount</ref></type>
+        <definition>Xapian::doccount Xapian::ValueCountMatchSpy::Internal::total</definition>
+        <argsstring></argsstring>
+        <name>total</name>
+        <briefdescription>
+<para>Total number of documents seen by the match spy. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/matchspy.h" line="173" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/matchspy.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structXapian_1_1ValueCountMatchSpy_1_1Internal_1e248b2b5d2b61b0522cc4c98ef2ca80b" prot="public" static="no" mutable="no">
+        <type>std::map&lt; std::string, <ref refid="namespaceXapian_17f30aa95f0c42b117dafaf66ba24241d" kindref="member">Xapian::doccount</ref> &gt;</type>
+        <definition>std::map&lt;std::string, Xapian::doccount&gt; Xapian::ValueCountMatchSpy::Internal::values</definition>
+        <argsstring></argsstring>
+        <name>values</name>
+        <briefdescription>
+<para>The values seen so far, together with their frequency. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/matchspy.h" line="176" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/matchspy.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structXapian_1_1ValueCountMatchSpy_1_1Internal_1e13686db01ec69ac8e4b8ca2f0f9d8f4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::ValueCountMatchSpy::Internal::Internal</definition>
+        <argsstring>()</argsstring>
+        <name>Internal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/matchspy.h" line="178" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/matchspy.h" bodystart="178" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="structXapian_1_1ValueCountMatchSpy_1_1Internal_12a7fd69298a8c3af39b3860791169319" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::ValueCountMatchSpy::Internal::Internal</definition>
+        <argsstring>(Xapian::valueno slot_)</argsstring>
+        <name>Internal</name>
+        <param>
+          <type><ref refid="namespaceXapian_194a899651fa920c72ffa9635bde630ea" kindref="member">Xapian::valueno</ref></type>
+          <declname>slot_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/matchspy.h" line="179" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/matchspy.h" bodystart="179" bodyend="179"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/matchspy.h" line="168" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/matchspy.h" bodystart="166" bodyend="180"/>
+    <listofallmembers>
+      <member refid="structXapian_1_1ValueCountMatchSpy_1_1Internal_1e13686db01ec69ac8e4b8ca2f0f9d8f4" prot="public" virt="non-virtual"><scope>Xapian::ValueCountMatchSpy::Internal</scope><name>Internal</name></member>
+      <member refid="structXapian_1_1ValueCountMatchSpy_1_1Internal_12a7fd69298a8c3af39b3860791169319" prot="public" virt="non-virtual"><scope>Xapian::ValueCountMatchSpy::Internal</scope><name>Internal</name></member>
+      <member refid="structXapian_1_1ValueCountMatchSpy_1_1Internal_157a0f830eca8f8d8a40685f90f5b2534" prot="public" virt="non-virtual"><scope>Xapian::ValueCountMatchSpy::Internal</scope><name>slot</name></member>
+      <member refid="structXapian_1_1ValueCountMatchSpy_1_1Internal_1fd8ab55f1f65cfe98549bf6932da9f01" prot="public" virt="non-virtual"><scope>Xapian::ValueCountMatchSpy::Internal</scope><name>total</name></member>
+      <member refid="structXapian_1_1ValueCountMatchSpy_1_1Internal_1e248b2b5d2b61b0522cc4c98ef2ca80b" prot="public" virt="non-virtual"><scope>Xapian::ValueCountMatchSpy::Internal</scope><name>values</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

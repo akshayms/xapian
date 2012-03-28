@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="weight_8h" kind="file">
+    <compoundname>weight.h</compoundname>
+    <includes local="no">string</includes>
+    <includes refid="types_8h" local="no">xapian/types.h</includes>
+    <includes local="no">xapian/visibility.h</includes>
+    <includedby refid="xapian_8h" local="no">xapian.h</includedby>
+    <incdepgraph>
+      <node id="366">
+        <label>xapian/weight.h</label>
+        <link refid="weight.h"/>
+        <childnode refid="367" relation="include">
+        </childnode>
+        <childnode refid="368" relation="include">
+        </childnode>
+        <childnode refid="370" relation="include">
+        </childnode>
+      </node>
+      <node id="370">
+        <label>xapian/visibility.h</label>
+      </node>
+      <node id="367">
+        <label>string</label>
+      </node>
+      <node id="369">
+        <label>xapian/deprecated.h</label>
+      </node>
+      <node id="368">
+        <label>xapian/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="369" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="371">
+        <label>xapian/weight.h</label>
+        <link refid="weight.h"/>
+        <childnode refid="372" relation="include">
+        </childnode>
+      </node>
+      <node id="373">
+        <label>xapian/letor.h</label>
+        <link refid="letor_8h"/>
+      </node>
+      <node id="372">
+        <label>xapian.h</label>
+        <link refid="xapian_8h"/>
+        <childnode refid="373" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classXapian_1_1Weight" prot="public">Xapian::Weight</innerclass>
+    <innerclass refid="classXapian_1_1BoolWeight" prot="public">Xapian::BoolWeight</innerclass>
+    <innerclass refid="classXapian_1_1BM25Weight" prot="public">Xapian::BM25Weight</innerclass>
+    <innerclass refid="classXapian_1_1TradWeight" prot="public">Xapian::TradWeight</innerclass>
+    <innernamespace refid="namespaceXapian">Xapian</innernamespace>
+    <briefdescription>
+<para>Weighting scheme API. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/weight.h"/>
+  </compounddef>
+</doxygen>

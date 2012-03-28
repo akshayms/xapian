@@ -1,0 +1,141 @@
+10
+
+dir
+12767
+svn://svn.tartarus.org/swig/trunk/Examples/tcl
+svn://svn.tartarus.org/swig
+
+
+
+2009-08-21T00:25:11.564152Z
+11663
+wsfulton
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+cce2a4f7-dc27-40e0-b75d-b3f4d8458e25
+
+pointer
+dir
+
+java
+dir
+
+funcptr
+dir
+
+check.list
+file
+
+
+
+
+2012-03-21T13:02:49.213786Z
+4165d2a4641fd55c29d5f1fbdb08406c
+2007-10-15T02:02:47.547040Z
+9989
+olly
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+148
+
+multimap
+dir
+
+simple
+dir
+
+operator
+dir
+
+reference
+dir
+
+enum
+dir
+
+class
+dir
+
+variables
+dir
+
+import
+dir
+
+index.html
+file
+
+
+
+
+2012-03-21T13:02:49.213786Z
+0d4b20399c22ed9de0a1cb2cdebd874d
+2007-10-17T21:47:25.979598Z
+10005
+wsfulton
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2008
+
+value
+dir
+
+std_vector
+dir
+
+constants
+dir
+
+contract
+dir
+

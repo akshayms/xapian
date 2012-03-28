@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="namespaceXapian_1_1Brass" kind="namespace">
+    <compoundname>Xapian::Brass</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceXapian_1_1Brass_124145fd4d1402fbd40fb08bdca31298f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classXapian_1_1Database" kindref="compound">Database</ref></type>
+        <definition>Database Xapian::Brass::open</definition>
+        <argsstring>(const std::string &amp;dir)</argsstring>
+        <name>open</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>dir</declname>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="classXapian_1_1Database" kindref="compound">Database</ref> object for read-only access to a <ref refid="namespaceXapian_1_1Brass" kindref="compound">Brass</ref> database. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dir</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pathname of the directory containing the database. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/dbfactory.h" line="93"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceXapian_1_1Brass_13fc4e4c1ef15a005a0a77eabf55fc071" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classXapian_1_1WritableDatabase" kindref="compound">WritableDatabase</ref></type>
+        <definition>WritableDatabase Xapian::Brass::open</definition>
+        <argsstring>(const std::string &amp;dir, int action, int block_size=8192)</argsstring>
+        <name>open</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>dir</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>action</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>block_size</declname>
+          <defval>8192</defval>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="classXapian_1_1Database" kindref="compound">Database</ref> object for update access to a <ref refid="namespaceXapian_1_1Brass" kindref="compound">Brass</ref> database. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dir</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pathname of the directory containing the database. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>action</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>determines handling of existing/non-existing database:<itemizedlist>
+<listitem><para><ref refid="namespaceXapian_11236aaa6a3d7a37a4c6b95439e449f7a" kindref="member">Xapian::DB_CREATE</ref> fail if database already exist, otherwise create new database.</para></listitem><listitem><para><ref refid="namespaceXapian_13d32111900603ce02b8c8467b9c5bacb" kindref="member">Xapian::DB_CREATE_OR_OPEN</ref> open existing database, or create new database if none exists.</para></listitem><listitem><para><ref refid="namespaceXapian_1fbc13e6712a12dcfd0c048242fc313ed" kindref="member">Xapian::DB_CREATE_OR_OVERWRITE</ref> overwrite existing database, or create new database if none exists.</para></listitem><listitem><para><ref refid="namespaceXapian_154521467b649894bdc411f4c35e56ac3" kindref="member">Xapian::DB_OPEN</ref> open existing database, failing if none exists. </para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>block_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the Btree blocksize to use (in bytes), which must be a power of two between 2048 and 65536 (inclusive). The default (also used if an invalid value if passed) is 8192 bytes. This parameter is ignored when opening an existing database. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/dbfactory.h" line="115"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classXapian_1_1Database" kindref="compound">Database</ref> factory functions for the brass backend. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/dbfactory.h" line="86"/>
+  </compounddef>
+</doxygen>

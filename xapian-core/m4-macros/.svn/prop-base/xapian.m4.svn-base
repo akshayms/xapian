@@ -1,0 +1,15 @@
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+K 13
+svn:mergeinfo
+V 177
+/branches/replication_fixes/xapian-core/m4-macros/xapian-1.1.m4:14149-14152
+/trunk/xapian-core/m4-macros/xapian-1.1.m4:2-12285
+/trunk/xapian-core/m4-macros/xapian.m4:15485-16044
+END

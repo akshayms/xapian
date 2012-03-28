@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="version_8h" kind="file">
+    <compoundname>version.h</compoundname>
+    <includedby refid="dbfactory_8h" local="no">xapian/dbfactory.h</includedby>
+    <includedby refid="xapian_8h" local="no">xapian.h</includedby>
+    <invincdepgraph>
+      <node id="362">
+        <label>xapian/version.h</label>
+        <link refid="version.h"/>
+        <childnode refid="363" relation="include">
+        </childnode>
+        <childnode refid="364" relation="include">
+        </childnode>
+      </node>
+      <node id="365">
+        <label>xapian/letor.h</label>
+        <link refid="letor_8h"/>
+      </node>
+      <node id="364">
+        <label>xapian.h</label>
+        <link refid="xapian_8h"/>
+        <childnode refid="365" relation="include">
+        </childnode>
+      </node>
+      <node id="363">
+        <label>xapian/dbfactory.h</label>
+        <link refid="dbfactory_8h"/>
+        <childnode refid="364" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="version_8h_10f644486c65a4d418c51d9bed03736c1" prot="public" static="no">
+        <name>XAPIAN_ENABLE_VISIBILITY</name>
+        <briefdescription>
+<para>The library was compiled with GCC&apos;s -fvisibility=hidden option. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/version.h" line="43" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/version.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="version_8h_1935bc75275b2f5938a5ab6546c59ef09" prot="public" static="no">
+        <name>XAPIAN_VERSION</name>
+        <initializer>&quot;1.3.0&quot;</initializer>
+        <briefdescription>
+<para>The version of <ref refid="namespaceXapian" kindref="compound">Xapian</ref> as a C string literal. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/version.h" line="46" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/version.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="version_8h_16115d1204830e2412fbecdf350156db0" prot="public" static="no">
+        <name>XAPIAN_MAJOR_VERSION</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>The major component of the <ref refid="namespaceXapian" kindref="compound">Xapian</ref> version. </para>        </briefdescription>
+        <detaileddescription>
+<para>E.g. for <ref refid="namespaceXapian" kindref="compound">Xapian</ref> 1.0.14 this would be: 1 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/version.h" line="51" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/version.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="version_8h_166bfaa7fe54a17b4d54a18e4bd3a9a14" prot="public" static="no">
+        <name>XAPIAN_MINOR_VERSION</name>
+        <initializer>3</initializer>
+        <briefdescription>
+<para>The minor component of the <ref refid="namespaceXapian" kindref="compound">Xapian</ref> version. </para>        </briefdescription>
+        <detaileddescription>
+<para>E.g. for <ref refid="namespaceXapian" kindref="compound">Xapian</ref> 1.0.14 this would be: 0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/version.h" line="56" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/version.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="version_8h_168a63b70bf9601be738448a3094009c9" prot="public" static="no">
+        <name>XAPIAN_REVISION</name>
+        <initializer>0</initializer>
+        <briefdescription>
+<para>The revision component of the <ref refid="namespaceXapian" kindref="compound">Xapian</ref> version. </para>        </briefdescription>
+        <detaileddescription>
+<para>E.g. for <ref refid="namespaceXapian" kindref="compound">Xapian</ref> 1.0.14 this would be: 14 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/version.h" line="61" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/version.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="version_8h_1d2fc1ed64cd6b00885f4446a11cabbf5" prot="public" static="no">
+        <name>XAPIAN_HAS_BRASS_BACKEND</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>XAPIAN_HAS_BRASS_BACKEND Defined if the brass backend is enabled. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/version.h" line="64" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/version.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="version_8h_15ff3ffd6eb8cc926c92164b2d59a4808" prot="public" static="no">
+        <name>XAPIAN_HAS_CHERT_BACKEND</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>XAPIAN_HAS_CHERT_BACKEND Defined if the chert backend is enabled. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/version.h" line="67" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/version.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="version_8h_1a676e6c5e3af903ba1cf0a5764744d07" prot="public" static="no">
+        <name>XAPIAN_HAS_INMEMORY_BACKEND</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>XAPIAN_HAS_INMEMORY_BACKEND Defined if the inmemory backend is enabled. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/version.h" line="70" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/version.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="version_8h_1441e90afa8ecb3e4752e51234940baa5" prot="public" static="no">
+        <name>XAPIAN_HAS_REMOTE_BACKEND</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>XAPIAN_HAS_REMOTE_BACKEND Defined if the remote backend is enabled. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/version.h" line="73" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/version.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Define preprocesor symbols for the library version. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/version.h"/>
+  </compounddef>
+</doxygen>

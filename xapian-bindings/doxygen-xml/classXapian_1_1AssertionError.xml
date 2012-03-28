@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="classXapian_1_1AssertionError" kind="class" prot="public">
+    <compoundname>Xapian::AssertionError</compoundname>
+    <basecompoundref refid="classXapian_1_1LogicError" prot="public" virt="non-virtual">Xapian::LogicError</basecompoundref>
+    <includes local="no">error.h</includes>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classXapian_1_1AssertionError_1eac3529ef8ba50d56a549c047ca6e5ca" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::AssertionError::AssertionError</definition>
+        <argsstring>(const std::string &amp;msg_, const std::string &amp;context_, const char *error_string_)</argsstring>
+        <name>AssertionError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>context_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>error_string_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="185" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="184" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1AssertionError_13a70ea6329ab887f4c97c92bee5c6b9b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::AssertionError::AssertionError</definition>
+        <argsstring>(const std::string &amp;msg_, const std::string &amp;context_, const char *type_, const char *error_string_)</argsstring>
+        <name>AssertionError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>context_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>type_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>error_string_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="197" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="196" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1AssertionError_124ee5e0093cce97f1f0c387b91538861" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::AssertionError::AssertionError</definition>
+        <argsstring>(const std::string &amp;msg_, const std::string &amp;context_, const char *type_, int errno_)</argsstring>
+        <name>AssertionError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>context_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>type_</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>errno_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="203" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="202" bodyend="203"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classXapian_1_1AssertionError_1f34627d97cb4ec40b9916e39f4cc7922" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::AssertionError::AssertionError</definition>
+        <argsstring>(const std::string &amp;msg_, const std::string &amp;context_=std::string(), int errno_=0)</argsstring>
+        <name>AssertionError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>context_</declname>
+          <defval>std::string()</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>errno_</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>General purpose constructor which allows setting errno. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="188" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="187" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1AssertionError_1e2f6e4b71b4aaeb52529c89339a9f0d7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::AssertionError::AssertionError</definition>
+        <argsstring>(const std::string &amp;msg_, int errno_)</argsstring>
+        <name>AssertionError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>errno_</declname>
+        </param>
+        <briefdescription>
+<para>Construct from message and errno value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="191" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="190" bodyend="191"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classXapian_1_1AssertionError" kindref="compound">AssertionError</ref> is thrown if a logical assertion inside <ref refid="namespaceXapian" kindref="compound">Xapian</ref> fails. </para>    </briefdescription>
+    <detaileddescription>
+<para>In a debug build of <ref refid="namespaceXapian" kindref="compound">Xapian</ref>, a failed assertion in the core library code will cause <ref refid="classXapian_1_1AssertionError" kindref="compound">AssertionError</ref> to be thrown.</para><para>This represents a bug in <ref refid="namespaceXapian" kindref="compound">Xapian</ref> (either an invariant, precondition, etc has been violated, or the assertion is incorrect!) </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="216">
+        <label>Xapian::LogicError</label>
+        <link refid="classXapian_1_1LogicError"/>
+        <childnode refid="217" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="217">
+        <label>Xapian::Error</label>
+        <link refid="classXapian_1_1Error"/>
+      </node>
+      <node id="215">
+        <label>Xapian::AssertionError</label>
+        <link refid="classXapian_1_1AssertionError"/>
+        <childnode refid="216" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="219">
+        <label>Xapian::LogicError</label>
+        <link refid="classXapian_1_1LogicError"/>
+        <childnode refid="220" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="220">
+        <label>Xapian::Error</label>
+        <link refid="classXapian_1_1Error"/>
+      </node>
+      <node id="218">
+        <label>Xapian::AssertionError</label>
+        <link refid="classXapian_1_1AssertionError"/>
+        <childnode refid="219" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="177" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="177" bodyend="204"/>
+    <listofallmembers>
+      <member refid="classXapian_1_1AssertionError_1eac3529ef8ba50d56a549c047ca6e5ca" prot="private" virt="non-virtual"><scope>Xapian::AssertionError</scope><name>AssertionError</name></member>
+      <member refid="classXapian_1_1AssertionError_1f34627d97cb4ec40b9916e39f4cc7922" prot="public" virt="non-virtual"><scope>Xapian::AssertionError</scope><name>AssertionError</name></member>
+      <member refid="classXapian_1_1AssertionError_1e2f6e4b71b4aaeb52529c89339a9f0d7" prot="public" virt="non-virtual"><scope>Xapian::AssertionError</scope><name>AssertionError</name></member>
+      <member refid="classXapian_1_1AssertionError_13a70ea6329ab887f4c97c92bee5c6b9b" prot="private" virt="non-virtual"><scope>Xapian::AssertionError</scope><name>AssertionError</name></member>
+      <member refid="classXapian_1_1AssertionError_124ee5e0093cce97f1f0c387b91538861" prot="private" virt="non-virtual"><scope>Xapian::AssertionError</scope><name>AssertionError</name></member>
+      <member refid="classXapian_1_1Error_190c683965555b4bc86b08e8667170e44" prot="public" virt="non-virtual"><scope>Xapian::AssertionError</scope><name>get_context</name></member>
+      <member refid="classXapian_1_1Error_1bd64e380eb6d864dc907ee62c1f58a74" prot="public" virt="non-virtual"><scope>Xapian::AssertionError</scope><name>get_description</name></member>
+      <member refid="classXapian_1_1Error_16f94a579f8e176f85c6fb036592dab61" prot="public" virt="non-virtual"><scope>Xapian::AssertionError</scope><name>get_error_string</name></member>
+      <member refid="classXapian_1_1Error_1ea05df48ea71dfd045da28ab984cdaa3" prot="public" virt="non-virtual"><scope>Xapian::AssertionError</scope><name>get_msg</name></member>
+      <member refid="classXapian_1_1Error_1136945e703317bdf6e18d8cf511a5bfb" prot="public" virt="non-virtual"><scope>Xapian::AssertionError</scope><name>get_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

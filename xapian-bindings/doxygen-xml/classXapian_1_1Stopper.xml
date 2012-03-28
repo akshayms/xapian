@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="classXapian_1_1Stopper" kind="class" prot="public">
+    <compoundname>Xapian::Stopper</compoundname>
+    <derivedcompoundref refid="classXapian_1_1SimpleStopper" prot="public" virt="non-virtual">Xapian::SimpleStopper</derivedcompoundref>
+    <includes local="no">queryparser.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classXapian_1_1Stopper_128c9649a93987abb97d06998a146d6fe" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool Xapian::Stopper::operator()</definition>
+        <argsstring>(const std::string &amp;term) const =0</argsstring>
+        <name>operator()</name>
+        <reimplementedby refid="classXapian_1_1SimpleStopper_156543c160db0b45ab73b5789864a3cda">operator()</reimplementedby>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>term</declname>
+        </param>
+        <briefdescription>
+<para>Is term a stop-word? </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/queryparser.h" line="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Stopper_1b7ae723a6b0a1866196b7ed139184208" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual Xapian::Stopper::~Stopper</definition>
+        <argsstring>()</argsstring>
+        <name>~Stopper</name>
+        <briefdescription>
+<para>Class has virtual methods, so provide a virtual destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/queryparser.h" line="46" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/queryparser.h" bodystart="46" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Stopper_1f3bcce7e5a1c2a8d96627083939145b2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string Xapian::Stopper::get_description</definition>
+        <argsstring>() const </argsstring>
+        <name>get_description</name>
+        <reimplementedby refid="classXapian_1_1SimpleStopper_1eb0bddbf6805b12f760e707032f4cbb3">get_description</reimplementedby>
+        <briefdescription>
+<para>Return a string describing this object. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/queryparser.h" line="49"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base class for stop-word decision functor. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="686">
+        <label>Xapian::SimpleStopper</label>
+        <link refid="classXapian_1_1SimpleStopper"/>
+        <childnode refid="685" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="685">
+        <label>Xapian::Stopper</label>
+        <link refid="classXapian_1_1Stopper"/>
+      </node>
+    </inheritancegraph>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/queryparser.h" line="40" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/queryparser.h" bodystart="40" bodyend="50"/>
+    <listofallmembers>
+      <member refid="classXapian_1_1Stopper_1f3bcce7e5a1c2a8d96627083939145b2" prot="public" virt="virtual"><scope>Xapian::Stopper</scope><name>get_description</name></member>
+      <member refid="classXapian_1_1Stopper_128c9649a93987abb97d06998a146d6fe" prot="public" virt="pure-virtual"><scope>Xapian::Stopper</scope><name>operator()</name></member>
+      <member refid="classXapian_1_1Stopper_1b7ae723a6b0a1866196b7ed139184208" prot="public" virt="virtual"><scope>Xapian::Stopper</scope><name>~Stopper</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

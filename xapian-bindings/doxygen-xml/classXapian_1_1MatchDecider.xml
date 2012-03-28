@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="classXapian_1_1MatchDecider" kind="class" prot="public">
+    <compoundname>Xapian::MatchDecider</compoundname>
+    <derivedcompoundref refid="classXapian_1_1ValueSetMatchDecider" prot="public" virt="non-virtual">Xapian::ValueSetMatchDecider</derivedcompoundref>
+    <includes local="no">enquire.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classXapian_1_1MatchDecider_11c3b5b4b318521132024cd80df0ff2c3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool Xapian::MatchDecider::operator()</definition>
+        <argsstring>(const Xapian::Document &amp;doc) const =0</argsstring>
+        <name>operator()</name>
+        <reimplementedby refid="classXapian_1_1ValueSetMatchDecider_1c36090a4892dec25b5bdc1e8efaeacba">operator()</reimplementedby>
+        <param>
+          <type>const <ref refid="classXapian_1_1Document" kindref="compound">Xapian::Document</ref> &amp;</type>
+          <declname>doc</declname>
+        </param>
+        <briefdescription>
+<para>Decide whether we want this document to be in the <ref refid="classXapian_1_1MSet" kindref="compound">MSet</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>Return true if the document is acceptable, or false if the document should be excluded from the <ref refid="classXapian_1_1MSet" kindref="compound">MSet</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="620"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1MatchDecider_1a102dbb2de58d3e96c684eb8e97520fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual Xapian::MatchDecider::~MatchDecider</definition>
+        <argsstring>()</argsstring>
+        <name>~MatchDecider</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="623"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base class for matcher decision functor. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="539">
+        <label>Xapian::MatchDecider</label>
+        <link refid="classXapian_1_1MatchDecider"/>
+      </node>
+      <node id="540">
+        <label>Xapian::ValueSetMatchDecider</label>
+        <link refid="classXapian_1_1ValueSetMatchDecider"/>
+        <childnode refid="539" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="613" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" bodystart="613" bodyend="624"/>
+    <listofallmembers>
+      <member refid="classXapian_1_1MatchDecider_11c3b5b4b318521132024cd80df0ff2c3" prot="public" virt="pure-virtual"><scope>Xapian::MatchDecider</scope><name>operator()</name></member>
+      <member refid="classXapian_1_1MatchDecider_1a102dbb2de58d3e96c684eb8e97520fc" prot="public" virt="virtual"><scope>Xapian::MatchDecider</scope><name>~MatchDecider</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

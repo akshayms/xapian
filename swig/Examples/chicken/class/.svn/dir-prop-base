@@ -1,0 +1,20 @@
+K 10
+svn:ignore
+V 144
+*.dll
+*.dsw
+*.ncb
+*.opt
+*.plg
+*_wrap.c
+*_wrap.cxx
+Debug
+Release
+class
+csi.c
+example-clos.scm
+example-generic.scm
+example.scm
+oexample.c
+precsi.c
+END

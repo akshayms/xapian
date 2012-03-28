@@ -1,0 +1,214 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="types_8h" kind="file">
+    <compoundname>types.h</compoundname>
+    <includes local="no">xapian/deprecated.h</includes>
+    <includedby refid="database_8h" local="no">xapian/database.h</includedby>
+    <includedby refid="positioniterator_8h" local="no">xapian/positioniterator.h</includedby>
+    <includedby refid="postingiterator_8h" local="no">xapian/postingiterator.h</includedby>
+    <includedby refid="termiterator_8h" local="no">xapian/termiterator.h</includedby>
+    <includedby refid="valueiterator_8h" local="no">xapian/valueiterator.h</includedby>
+    <includedby refid="dbfactory_8h" local="no">xapian/dbfactory.h</includedby>
+    <includedby refid="document_8h" local="no">xapian/document.h</includedby>
+    <includedby refid="enquire_8h" local="no">xapian/enquire.h</includedby>
+    <includedby refid="keymaker_8h" local="no">xapian/keymaker.h</includedby>
+    <includedby refid="xapian_8h" local="no">xapian.h</includedby>
+    <includedby refid="termgenerator_8h" local="no">xapian/termgenerator.h</includedby>
+    <includedby refid="postingsource_8h" local="no">xapian/postingsource.h</includedby>
+    <includedby refid="query_8h" local="no">xapian/query.h</includedby>
+    <includedby refid="valuesetmatchdecider_8h" local="no">xapian/valuesetmatchdecider.h</includedby>
+    <includedby refid="weight_8h" local="no">xapian/weight.h</includedby>
+    <includedby refid="letor_8h" local="no">xapian/letor.h</includedby>
+    <incdepgraph>
+      <node id="306">
+        <label>xapian/deprecated.h</label>
+      </node>
+      <node id="305">
+        <label>xapian/types.h</label>
+        <link refid="types.h"/>
+        <childnode refid="306" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="311">
+        <label>xapian/postingsource.h</label>
+        <link refid="postingsource_8h"/>
+        <childnode refid="309" relation="include">
+        </childnode>
+      </node>
+      <node id="325">
+        <label>xapian/weight.h</label>
+        <link refid="weight_8h"/>
+        <childnode refid="309" relation="include">
+        </childnode>
+      </node>
+      <node id="320">
+        <label>xapian/queryparser.h</label>
+        <link refid="queryparser_8h"/>
+        <childnode refid="309" relation="include">
+        </childnode>
+      </node>
+      <node id="324">
+        <label>xapian/termgenerator.h</label>
+        <link refid="termgenerator_8h"/>
+        <childnode refid="309" relation="include">
+        </childnode>
+      </node>
+      <node id="317">
+        <label>xapian/valuesetmatchdecider.h</label>
+        <link refid="valuesetmatchdecider_8h"/>
+        <childnode refid="309" relation="include">
+        </childnode>
+      </node>
+      <node id="316">
+        <label>xapian/enquire.h</label>
+        <link refid="enquire_8h"/>
+        <childnode refid="309" relation="include">
+        </childnode>
+        <childnode refid="317" relation="include">
+        </childnode>
+      </node>
+      <node id="307">
+        <label>xapian/types.h</label>
+        <link refid="types.h"/>
+        <childnode refid="308" relation="include">
+        </childnode>
+        <childnode refid="312" relation="include">
+        </childnode>
+        <childnode refid="313" relation="include">
+        </childnode>
+        <childnode refid="314" relation="include">
+        </childnode>
+        <childnode refid="321" relation="include">
+        </childnode>
+        <childnode refid="322" relation="include">
+        </childnode>
+        <childnode refid="315" relation="include">
+        </childnode>
+        <childnode refid="316" relation="include">
+        </childnode>
+        <childnode refid="323" relation="include">
+        </childnode>
+        <childnode refid="309" relation="include">
+        </childnode>
+        <childnode refid="324" relation="include">
+        </childnode>
+        <childnode refid="311" relation="include">
+        </childnode>
+        <childnode refid="319" relation="include">
+        </childnode>
+        <childnode refid="317" relation="include">
+        </childnode>
+        <childnode refid="325" relation="include">
+        </childnode>
+        <childnode refid="310" relation="include">
+        </childnode>
+      </node>
+      <node id="310">
+        <label>xapian/letor.h</label>
+        <link refid="letor_8h"/>
+      </node>
+      <node id="312">
+        <label>xapian/positioniterator.h</label>
+        <link refid="positioniterator_8h"/>
+        <childnode refid="308" relation="include">
+        </childnode>
+        <childnode refid="313" relation="include">
+        </childnode>
+        <childnode refid="314" relation="include">
+        </childnode>
+        <childnode refid="309" relation="include">
+        </childnode>
+      </node>
+      <node id="321">
+        <label>xapian/valueiterator.h</label>
+        <link refid="valueiterator_8h"/>
+        <childnode refid="308" relation="include">
+        </childnode>
+        <childnode refid="315" relation="include">
+        </childnode>
+        <childnode refid="309" relation="include">
+        </childnode>
+      </node>
+      <node id="313">
+        <label>xapian/postingiterator.h</label>
+        <link refid="postingiterator_8h"/>
+        <childnode refid="308" relation="include">
+        </childnode>
+        <childnode refid="309" relation="include">
+        </childnode>
+      </node>
+      <node id="314">
+        <label>xapian/termiterator.h</label>
+        <link refid="termiterator_8h"/>
+        <childnode refid="308" relation="include">
+        </childnode>
+        <childnode refid="315" relation="include">
+        </childnode>
+        <childnode refid="316" relation="include">
+        </childnode>
+        <childnode refid="309" relation="include">
+        </childnode>
+        <childnode refid="318" relation="include">
+        </childnode>
+        <childnode refid="319" relation="include">
+        </childnode>
+        <childnode refid="320" relation="include">
+        </childnode>
+      </node>
+      <node id="315">
+        <label>xapian/document.h</label>
+        <link refid="document_8h"/>
+        <childnode refid="309" relation="include">
+        </childnode>
+      </node>
+      <node id="308">
+        <label>xapian/database.h</label>
+        <link refid="database_8h"/>
+        <childnode refid="309" relation="include">
+        </childnode>
+        <childnode refid="311" relation="include">
+        </childnode>
+      </node>
+      <node id="319">
+        <label>xapian/query.h</label>
+        <link refid="query_8h"/>
+        <childnode refid="309" relation="include">
+        </childnode>
+        <childnode refid="320" relation="include">
+        </childnode>
+      </node>
+      <node id="309">
+        <label>xapian.h</label>
+        <link refid="xapian_8h"/>
+        <childnode refid="310" relation="include">
+        </childnode>
+      </node>
+      <node id="318">
+        <label>xapian/matchspy.h</label>
+        <link refid="matchspy_8h"/>
+        <childnode refid="309" relation="include">
+        </childnode>
+      </node>
+      <node id="322">
+        <label>xapian/dbfactory.h</label>
+        <link refid="dbfactory_8h"/>
+        <childnode refid="309" relation="include">
+        </childnode>
+      </node>
+      <node id="323">
+        <label>xapian/keymaker.h</label>
+        <link refid="keymaker_8h"/>
+        <childnode refid="309" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespaceXapian">Xapian</innernamespace>
+    <briefdescription>
+<para>typedefs for <ref refid="namespaceXapian" kindref="compound">Xapian</ref> </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/types.h"/>
+  </compounddef>
+</doxygen>

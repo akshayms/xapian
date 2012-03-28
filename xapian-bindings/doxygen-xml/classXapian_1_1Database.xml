@@ -1,0 +1,1075 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="classXapian_1_1Database" kind="class" prot="public">
+    <compoundname>Xapian::Database</compoundname>
+    <derivedcompoundref refid="classXapian_1_1WritableDatabase" prot="public" virt="non-virtual">Xapian::WritableDatabase</derivedcompoundref>
+    <includes local="no">database.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classXapian_1_1Database_1a68e7c4e68a2c985944f403f09a2ca44" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; Xapian::Internal::intrusive_ptr&lt; Internal &gt; &gt;</type>
+        <definition>std::vector&lt;Xapian::Internal::intrusive_ptr&lt;Internal&gt; &gt; Xapian::Database::internal</definition>
+        <argsstring></argsstring>
+        <name>internal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="61" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/database.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classXapian_1_1Database_14c8d121ad552fae3368b9a5c3473b1b2" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* Xapian::Database::get_document_lazily_</definition>
+        <argsstring>(Xapian::docid did) const </argsstring>
+        <name>get_document_lazily_</name>
+        <param>
+          <type><ref refid="namespaceXapian_18fa9094bebe1256a7be935a5ede87a64" kindref="member">Xapian::docid</ref></type>
+          <declname>did</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Database_17d737e6a640931dcb67c3e7eb702679c" prot="private" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::Database::Database</definition>
+        <argsstring>(Internal *internal)</argsstring>
+        <name>Database</name>
+        <param>
+          <type>Internal *</type>
+          <declname>internal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="103"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classXapian_1_1Database_12fc5aa368a7097ca787a831211a2e3bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::Database::add_database</definition>
+        <argsstring>(const Database &amp;database)</argsstring>
+        <name>add_database</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1Database" kindref="compound">Database</ref> &amp;</type>
+          <declname>database</declname>
+        </param>
+        <briefdescription>
+<para>Add an existing database (or group of databases) to those accessed by this object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>database</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the database(s) to add. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Database_124f8197f3ac8bfd8c2526e0b8dff4ff7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::Database::Database</definition>
+        <argsstring>()</argsstring>
+        <name>Database</name>
+        <briefdescription>
+<para>Create a <ref refid="classXapian_1_1Database" kindref="compound">Database</ref> with no databases in. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Database_1b180b01a76a9d73a9315b181514a2f25" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::Database::Database</definition>
+        <argsstring>(const std::string &amp;path)</argsstring>
+        <name>Database</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Open a <ref refid="classXapian_1_1Database" kindref="compound">Database</ref>, automatically determining the database backend to use. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>directory that the database is stored in. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Database_10352b3a47dca16d57c071252e84f1043" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual Xapian::Database::~Database</definition>
+        <argsstring>()</argsstring>
+        <name>~Database</name>
+        <briefdescription>
+<para>Destroy this handle on the database. </para>        </briefdescription>
+        <detaileddescription>
+<para>If there are no copies of this object remaining, the database(s) will be closed. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Database_1aae498b70286ba1c588b7cbeb0972d38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::Database::Database</definition>
+        <argsstring>(const Database &amp;other)</argsstring>
+        <name>Database</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1Database" kindref="compound">Database</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Copying is allowed. </para>        </briefdescription>
+        <detaileddescription>
+<para>The internals are reference counted, so copying is cheap. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Database_14e8badea7a9d7292c13f99429c6a2b79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::Database::operator=</definition>
+        <argsstring>(const Database &amp;other)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1Database" kindref="compound">Database</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Assignment is allowed. </para>        </briefdescription>
+        <detaileddescription>
+<para>The internals are reference counted, so assignment is cheap. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Database_1f316aa13ee123e2af75f4b44e1f23db9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Xapian::Database::reopen</definition>
+        <argsstring>()</argsstring>
+        <name>reopen</name>
+        <briefdescription>
+<para>Re-open the database. </para>        </briefdescription>
+        <detaileddescription>
+<para>This re-opens the database(s) to the latest available version(s). It can be used either to make sure the latest results are returned, or to recover from a <ref refid="classXapian_1_1DatabaseModifiedError" kindref="compound">Xapian::DatabaseModifiedError</ref>.</para><para>Calling <ref refid="classXapian_1_1Database_1f316aa13ee123e2af75f4b44e1f23db9" kindref="member">reopen()</ref> on a database which has been closed (with <emphasis><ref refid="classXapian_1_1Database_159f5f8b137723dcaaabdbdccbc0cf1eb" kindref="member">close()</ref></emphasis>) will always raise a <ref refid="classXapian_1_1DatabaseError" kindref="compound">Xapian::DatabaseError</ref>.</para><para><simplesect kind="return"><para>true if the database might have been reopened (if false is returned, the database definitely hasn&apos;t been reopened, which applications may find useful when caching results, etc). In <ref refid="namespaceXapian" kindref="compound">Xapian</ref> &lt; 1.3.0, this method did not return a value. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="137"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Database_159f5f8b137723dcaaabdbdccbc0cf1eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Xapian::Database::close</definition>
+        <argsstring>()</argsstring>
+        <name>close</name>
+        <briefdescription>
+<para>Close the database. </para>        </briefdescription>
+        <detaileddescription>
+<para>This closes the database and releases all file handles held by the database.</para><para>This cannot be undone - in particular, calling <ref refid="classXapian_1_1Database_1f316aa13ee123e2af75f4b44e1f23db9" kindref="member">reopen()</ref> after closing a database will not reopen it, but will instead throw a <ref refid="classXapian_1_1DatabaseError" kindref="compound">Xapian::DatabaseError</ref> exception.</para><para>Calling <ref refid="classXapian_1_1Database_159f5f8b137723dcaaabdbdccbc0cf1eb" kindref="member">close()</ref> again on a database which has already been closed has no effect (and doesn&apos;t raise an exception).</para><para>After <ref refid="classXapian_1_1Database_159f5f8b137723dcaaabdbdccbc0cf1eb" kindref="member">close()</ref> has been called, calls to other methods of the database, and to methods of other objects associated with the database, will either:</para><para><itemizedlist>
+<listitem><para>behave exactly as they would have done if the database had not been closed (this can only happen if all the required data is cached)</para></listitem></itemizedlist>
+</para><para><itemizedlist>
+<listitem><para>raise a <ref refid="classXapian_1_1DatabaseError" kindref="compound">Xapian::DatabaseError</ref> exception indicating that the database is closed.</para></listitem></itemizedlist>
+</para><para>The reason for this behaviour is that otherwise we&apos;d have to check that the database is still open on every method call on every object associated with a <ref refid="classXapian_1_1Database" kindref="compound">Database</ref>, when in many cases they are working on data which has already been loaded and so they are able to just behave correctly. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="168"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Database_159e5889c489ce77fb4e7ffd80b6bc52c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string Xapian::Database::get_description</definition>
+        <argsstring>() const </argsstring>
+        <name>get_description</name>
+        <reimplementedby refid="classXapian_1_1WritableDatabase_1714ee6f7f21fd72307329a4ba21227a0">get_description</reimplementedby>
+        <briefdescription>
+<para>Return a string describing this object. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="171"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Database_1504d8e800384d12a8f9defee39362f5e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classXapian_1_1PostingIterator" kindref="compound">PostingIterator</ref></type>
+        <definition>PostingIterator Xapian::Database::postlist_begin</definition>
+        <argsstring>(const std::string &amp;tname) const </argsstring>
+        <name>postlist_begin</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>tname</declname>
+        </param>
+        <briefdescription>
+<para>An iterator pointing to the start of the postlist for a given term. </para>        </briefdescription>
+        <detaileddescription>
+<para>If the term name is the empty string, the iterator returned will list all the documents in the database. Such an iterator will always return a WDF value of 1, since there is no obvious meaning for this quantity in this case. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="181"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Database_1c1661ac2876a4a69f327907ef47a003d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classXapian_1_1PostingIterator" kindref="compound">PostingIterator</ref></type>
+        <definition>PostingIterator Xapian::Database::postlist_end</definition>
+        <argsstring>(const std::string &amp;) const </argsstring>
+        <name>postlist_end</name>
+        <param>
+          <type>const std::string &amp;</type>
+        </param>
+        <briefdescription>
+<para>Corresponding end iterator to <ref refid="classXapian_1_1Database_1504d8e800384d12a8f9defee39362f5e" kindref="member">postlist_begin()</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="185" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/database.h" bodystart="185" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Database_1c26b8f8f564c37586c7a0bd35cfefe15" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classXapian_1_1TermIterator" kindref="compound">TermIterator</ref></type>
+        <definition>TermIterator Xapian::Database::termlist_begin</definition>
+        <argsstring>(Xapian::docid did) const </argsstring>
+        <name>termlist_begin</name>
+        <param>
+          <type><ref refid="namespaceXapian_18fa9094bebe1256a7be935a5ede87a64" kindref="member">Xapian::docid</ref></type>
+          <declname>did</declname>
+        </param>
+        <briefdescription>
+<para>An iterator pointing to the start of the termlist for a given document. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="192"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Database_1a6f20c07f93d53f35caf6c97c795a5a1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classXapian_1_1TermIterator" kindref="compound">TermIterator</ref></type>
+        <definition>TermIterator Xapian::Database::termlist_end</definition>
+        <argsstring>(Xapian::docid) const </argsstring>
+        <name>termlist_end</name>
+        <param>
+          <type><ref refid="namespaceXapian_18fa9094bebe1256a7be935a5ede87a64" kindref="member">Xapian::docid</ref></type>
+        </param>
+        <briefdescription>
+<para>Corresponding end iterator to <ref refid="classXapian_1_1Database_1c26b8f8f564c37586c7a0bd35cfefe15" kindref="member">termlist_begin()</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="196" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/database.h" bodystart="196" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Database_1e7362269bc3408d0800a36d0c2f4851d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Xapian::Database::has_positions</definition>
+        <argsstring>() const </argsstring>
+        <name>has_positions</name>
+        <briefdescription>
+<para>Does this database have any positional information? </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="201"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Database_19fb4987b5f0e13b8344a89d1898f5500" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classXapian_1_1PositionIterator" kindref="compound">PositionIterator</ref></type>
+        <definition>PositionIterator Xapian::Database::positionlist_begin</definition>
+        <argsstring>(Xapian::docid did, const std::string &amp;tname) const </argsstring>
+        <name>positionlist_begin</name>
+        <param>
+          <type><ref refid="namespaceXapian_18fa9094bebe1256a7be935a5ede87a64" kindref="member">Xapian::docid</ref></type>
+          <declname>did</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>tname</declname>
+        </param>
+        <briefdescription>
+<para>An iterator pointing to the start of the position list for a given term in a given document. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="206"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Database_1ef7093cb5cfd969c4b07593e26d208e3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classXapian_1_1PositionIterator" kindref="compound">PositionIterator</ref></type>
+        <definition>PositionIterator Xapian::Database::positionlist_end</definition>
+        <argsstring>(Xapian::docid, const std::string &amp;) const </argsstring>
+        <name>positionlist_end</name>
+        <param>
+          <type><ref refid="namespaceXapian_18fa9094bebe1256a7be935a5ede87a64" kindref="member">Xapian::docid</ref></type>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+        </param>
+        <briefdescription>
+<para>Corresponding end iterator to <ref refid="classXapian_1_1Database_19fb4987b5f0e13b8344a89d1898f5500" kindref="member">positionlist_begin()</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="210" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/database.h" bodystart="210" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Database_11bef542ac6af6749b95ba6547d5139fe" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classXapian_1_1TermIterator" kindref="compound">TermIterator</ref></type>
+        <definition>TermIterator Xapian::Database::allterms_begin</definition>
+        <argsstring>() const </argsstring>
+        <name>allterms_begin</name>
+        <briefdescription>
+<para>An iterator which runs across all terms in the database. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="216"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Database_103a144e5b1aa8104ea82aa5031ba2943" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classXapian_1_1TermIterator" kindref="compound">TermIterator</ref></type>
+        <definition>TermIterator Xapian::Database::allterms_end</definition>
+        <argsstring>() const </argsstring>
+        <name>allterms_end</name>
+        <briefdescription>
+<para>Corresponding end iterator to <ref refid="classXapian_1_1Database_11bef542ac6af6749b95ba6547d5139fe" kindref="member">allterms_begin()</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="220" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/database.h" bodystart="220" bodyend="222"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Database_1568341766a22f09f5a0da471ae6a3802" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classXapian_1_1TermIterator" kindref="compound">TermIterator</ref></type>
+        <definition>TermIterator Xapian::Database::allterms_begin</definition>
+        <argsstring>(const std::string &amp;prefix) const </argsstring>
+        <name>allterms_begin</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>prefix</declname>
+        </param>
+        <briefdescription>
+<para>An iterator which runs across all terms with a given prefix. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is functionally similar to getting an iterator with <ref refid="classXapian_1_1Database_11bef542ac6af6749b95ba6547d5139fe" kindref="member">allterms_begin()</ref> and then calling skip_to(prefix) on that iterator to move to the start of the prefix, but is more convenient (because it detects the end of the prefixed terms), and may be more efficient than simply calling skip_to() after opening the iterator, particularly for remote databases.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>prefix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The prefix to restrict the returned terms to. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="235"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Database_1ef82e0ee7ed8400c19151f4017ac333a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classXapian_1_1TermIterator" kindref="compound">TermIterator</ref></type>
+        <definition>TermIterator Xapian::Database::allterms_end</definition>
+        <argsstring>(const std::string &amp;) const </argsstring>
+        <name>allterms_end</name>
+        <param>
+          <type>const std::string &amp;</type>
+        </param>
+        <briefdescription>
+<para>Corresponding end iterator to allterms_begin(prefix). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="239" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/database.h" bodystart="239" bodyend="241"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Database_1c13c9f754b55edf7e25d754a150bd970" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceXapian_17f30aa95f0c42b117dafaf66ba24241d" kindref="member">Xapian::doccount</ref></type>
+        <definition>Xapian::doccount Xapian::Database::get_doccount</definition>
+        <argsstring>() const </argsstring>
+        <name>get_doccount</name>
+        <briefdescription>
+<para>Get the number of documents in the database. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="244"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Database_10c180d6facca7ca0e8486e7b995a6747" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceXapian_18fa9094bebe1256a7be935a5ede87a64" kindref="member">Xapian::docid</ref></type>
+        <definition>Xapian::docid Xapian::Database::get_lastdocid</definition>
+        <argsstring>() const </argsstring>
+        <name>get_lastdocid</name>
+        <briefdescription>
+<para>Get the highest document id which has been used in the database. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="247"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Database_17be264cfd482d19e6ca1c99382838032" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceXapian_163b13d3a36fcab9975658e32643d86b5" kindref="member">Xapian::doclength</ref></type>
+        <definition>Xapian::doclength Xapian::Database::get_avlength</definition>
+        <argsstring>() const </argsstring>
+        <name>get_avlength</name>
+        <briefdescription>
+<para>Get the average length of the documents in the database. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="250"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Database_161d9b1e634aff99280a5fcdfc5087cdc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceXapian_17f30aa95f0c42b117dafaf66ba24241d" kindref="member">Xapian::doccount</ref></type>
+        <definition>Xapian::doccount Xapian::Database::get_termfreq</definition>
+        <argsstring>(const std::string &amp;tname) const </argsstring>
+        <name>get_termfreq</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>tname</declname>
+        </param>
+        <briefdescription>
+<para>Get the number of documents in the database indexed by a given term. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="253"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Database_122509662f07387074beb1e9919e8e1e9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Xapian::Database::term_exists</definition>
+        <argsstring>(const std::string &amp;tname) const </argsstring>
+        <name>term_exists</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>tname</declname>
+        </param>
+        <briefdescription>
+<para>Check if a given term exists in the database. </para>        </briefdescription>
+        <detaileddescription>
+<para>Return true if and only if the term exists in the database. This is the same as (get_termfreq(tname) != 0), but will often be more efficient. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="261"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Database_1eb8b2a78e6a7834bf0cc9e863bcfb95b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceXapian_172b5a76dd8cfb7b251fe7986e86390cb" kindref="member">Xapian::termcount</ref></type>
+        <definition>Xapian::termcount Xapian::Database::get_collection_freq</definition>
+        <argsstring>(const std::string &amp;tname) const </argsstring>
+        <name>get_collection_freq</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>tname</declname>
+        </param>
+        <briefdescription>
+<para>Return the total number of occurrences of the given term. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is the sum of the number of occurrences of the term in each document it indexes: i.e., the sum of the within document frequencies of the term.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The term whose collection frequency is being requested. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="272"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Database_116af5d3bdfa3c459ccc41f6dc69644e4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceXapian_17f30aa95f0c42b117dafaf66ba24241d" kindref="member">Xapian::doccount</ref></type>
+        <definition>Xapian::doccount Xapian::Database::get_value_freq</definition>
+        <argsstring>(Xapian::valueno slot) const </argsstring>
+        <name>get_value_freq</name>
+        <param>
+          <type><ref refid="namespaceXapian_194a899651fa920c72ffa9635bde630ea" kindref="member">Xapian::valueno</ref></type>
+          <declname>slot</declname>
+        </param>
+        <briefdescription>
+<para>Return the frequency of a given value slot. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is the number of documents which have a (non-empty) value stored in the slot.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>slot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value slot to examine.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classXapian_1_1UnimplementedError" kindref="compound">UnimplementedError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The frequency of the value isn&apos;t available for this database type. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="284"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Database_190d2297437540ec733debe4a4b706c7d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Xapian::Database::get_value_lower_bound</definition>
+        <argsstring>(Xapian::valueno slot) const </argsstring>
+        <name>get_value_lower_bound</name>
+        <param>
+          <type><ref refid="namespaceXapian_194a899651fa920c72ffa9635bde630ea" kindref="member">Xapian::valueno</ref></type>
+          <declname>slot</declname>
+        </param>
+        <briefdescription>
+<para>Get a lower bound on the values stored in the given value slot. </para>        </briefdescription>
+        <detaileddescription>
+<para>If there are no values stored in the given value slot, this will return an empty string.</para><para>If the lower bound isn&apos;t available for the given database type, this will return the lowest possible bound - the empty string.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>slot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value slot to examine. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="296"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Database_145e8c383ec2a3cb547ea48ce1da7e1e1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Xapian::Database::get_value_upper_bound</definition>
+        <argsstring>(Xapian::valueno slot) const </argsstring>
+        <name>get_value_upper_bound</name>
+        <param>
+          <type><ref refid="namespaceXapian_194a899651fa920c72ffa9635bde630ea" kindref="member">Xapian::valueno</ref></type>
+          <declname>slot</declname>
+        </param>
+        <briefdescription>
+<para>Get an upper bound on the values stored in the given value slot. </para>        </briefdescription>
+        <detaileddescription>
+<para>If there are no values stored in the given value slot, this will return an empty string.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>slot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value slot to examine.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classXapian_1_1UnimplementedError" kindref="compound">UnimplementedError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The upper bound of the values isn&apos;t available for this database type. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="308"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Database_1d047fac41d0cfbfb8f6022164b1af458" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceXapian_172b5a76dd8cfb7b251fe7986e86390cb" kindref="member">Xapian::termcount</ref></type>
+        <definition>Xapian::termcount Xapian::Database::get_doclength_lower_bound</definition>
+        <argsstring>() const </argsstring>
+        <name>get_doclength_lower_bound</name>
+        <briefdescription>
+<para>Get a lower bound on the length of a document in this DB. </para>        </briefdescription>
+        <detaileddescription>
+<para>This bound does not include any zero-length documents. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="314"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Database_1de55de013a35cdca12aa89f21d2a5173" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceXapian_172b5a76dd8cfb7b251fe7986e86390cb" kindref="member">Xapian::termcount</ref></type>
+        <definition>Xapian::termcount Xapian::Database::get_doclength_upper_bound</definition>
+        <argsstring>() const </argsstring>
+        <name>get_doclength_upper_bound</name>
+        <briefdescription>
+<para>Get an upper bound on the length of a document in this DB. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="317"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Database_160d00bbea2f0c15f16512f51247b5f9d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceXapian_172b5a76dd8cfb7b251fe7986e86390cb" kindref="member">Xapian::termcount</ref></type>
+        <definition>Xapian::termcount Xapian::Database::get_wdf_upper_bound</definition>
+        <argsstring>(const std::string &amp;term) const </argsstring>
+        <name>get_wdf_upper_bound</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>term</declname>
+        </param>
+        <briefdescription>
+<para>Get an upper bound on the wdf of term <emphasis>term</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="320"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Database_1bba5f47ae1a2895ba75a698ab70d570e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classXapian_1_1ValueIterator" kindref="compound">ValueIterator</ref></type>
+        <definition>ValueIterator Xapian::Database::valuestream_begin</definition>
+        <argsstring>(Xapian::valueno slot) const </argsstring>
+        <name>valuestream_begin</name>
+        <param>
+          <type><ref refid="namespaceXapian_194a899651fa920c72ffa9635bde630ea" kindref="member">Xapian::valueno</ref></type>
+          <declname>slot</declname>
+        </param>
+        <briefdescription>
+<para>Return an iterator over the value in slot <emphasis>slot</emphasis> for each document. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="323"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Database_11955ccba82b9538e128437e031a3d0de" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classXapian_1_1ValueIterator" kindref="compound">ValueIterator</ref></type>
+        <definition>ValueIterator Xapian::Database::valuestream_end</definition>
+        <argsstring>(Xapian::valueno) const </argsstring>
+        <name>valuestream_end</name>
+        <param>
+          <type><ref refid="namespaceXapian_194a899651fa920c72ffa9635bde630ea" kindref="member">Xapian::valueno</ref></type>
+        </param>
+        <briefdescription>
+<para>Return end iterator corresponding to <ref refid="classXapian_1_1Database_1bba5f47ae1a2895ba75a698ab70d570e" kindref="member">valuestream_begin()</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="326" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/database.h" bodystart="326" bodyend="328"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Database_17aed02430626d06ab782d63e462de837" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceXapian_172b5a76dd8cfb7b251fe7986e86390cb" kindref="member">Xapian::termcount</ref></type>
+        <definition>Xapian::termcount Xapian::Database::get_doclength</definition>
+        <argsstring>(Xapian::docid did) const </argsstring>
+        <name>get_doclength</name>
+        <param>
+          <type><ref refid="namespaceXapian_18fa9094bebe1256a7be935a5ede87a64" kindref="member">Xapian::docid</ref></type>
+          <declname>did</declname>
+        </param>
+        <briefdescription>
+<para>Get the length of a document. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="331"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Database_1759d1fde0d3d8a2ed74b83c0ebd10974" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::Database::keep_alive</definition>
+        <argsstring>()</argsstring>
+        <name>keep_alive</name>
+        <briefdescription>
+<para>Send a &quot;keep-alive&quot; to remote databases to stop them timing out. </para>        </briefdescription>
+        <detaileddescription>
+<para>Has no effect on non-remote databases. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="337"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Database_1c36eafdcf748e11e533149674329f90b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classXapian_1_1Document" kindref="compound">Xapian::Document</ref></type>
+        <definition>Xapian::Document Xapian::Database::get_document</definition>
+        <argsstring>(Xapian::docid did) const </argsstring>
+        <name>get_document</name>
+        <param>
+          <type><ref refid="namespaceXapian_18fa9094bebe1256a7be935a5ede87a64" kindref="member">Xapian::docid</ref></type>
+          <declname>did</declname>
+        </param>
+        <briefdescription>
+<para>Get a document from the database, given its document id. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns a <ref refid="classXapian_1_1Document" kindref="compound">Xapian::Document</ref> object which provides the information about a document.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>did</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The document id of the document to retrieve.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A <ref refid="classXapian_1_1Document" kindref="compound">Xapian::Document</ref> object containing the document data</para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classXapian_1_1DocNotFoundError" kindref="compound">Xapian::DocNotFoundError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The document specified could not be found in the database.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="classXapian_1_1InvalidArgumentError" kindref="compound">Xapian::InvalidArgumentError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>did was 0, which is not a valid document id. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="354"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Database_186b944dece96d7ada2446ae8952ee3a2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Xapian::Database::get_spelling_suggestion</definition>
+        <argsstring>(const std::string &amp;word, unsigned max_edit_distance=2) const </argsstring>
+        <name>get_spelling_suggestion</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>word</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>max_edit_distance</declname>
+          <defval>2</defval>
+        </param>
+        <briefdescription>
+<para>Suggest a spelling correction. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>word</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The potentially misspelled word. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_edit_distance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Only consider words which are at most <emphasis>max_edit_distance</emphasis> edits from <emphasis>word</emphasis>. An edit is a character insertion, deletion, or the transposition of two adjacent characters (default is 2). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="365"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Database_179bdfc96a112a38409a1d87c7e2f6a55" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classXapian_1_1TermIterator" kindref="compound">Xapian::TermIterator</ref></type>
+        <definition>Xapian::TermIterator Xapian::Database::spellings_begin</definition>
+        <argsstring>() const </argsstring>
+        <name>spellings_begin</name>
+        <briefdescription>
+<para>An iterator which returns all the spelling correction targets. </para>        </briefdescription>
+        <detaileddescription>
+<para>This returns all the words which are considered as targets for the spelling correction algorithm. The frequency of each word is available as the term frequency of each entry in the returned iterator. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="374"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Database_1107327ec1bf8fb8c04345961f73d82f2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classXapian_1_1TermIterator" kindref="compound">Xapian::TermIterator</ref></type>
+        <definition>Xapian::TermIterator Xapian::Database::spellings_end</definition>
+        <argsstring>() const </argsstring>
+        <name>spellings_end</name>
+        <briefdescription>
+<para>Corresponding end iterator to <ref refid="classXapian_1_1Database_179bdfc96a112a38409a1d87c7e2f6a55" kindref="member">spellings_begin()</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="377" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/database.h" bodystart="377" bodyend="379"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Database_174d436523335d70f665edee7730f8435" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classXapian_1_1TermIterator" kindref="compound">Xapian::TermIterator</ref></type>
+        <definition>Xapian::TermIterator Xapian::Database::synonyms_begin</definition>
+        <argsstring>(const std::string &amp;term) const </argsstring>
+        <name>synonyms_begin</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>term</declname>
+        </param>
+        <briefdescription>
+<para>An iterator which returns all the synonyms for a given term. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>term</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The term to return synonyms for. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="385"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Database_1f379075aa87dd844e0bf6f566a4e001d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classXapian_1_1TermIterator" kindref="compound">Xapian::TermIterator</ref></type>
+        <definition>Xapian::TermIterator Xapian::Database::synonyms_end</definition>
+        <argsstring>(const std::string &amp;) const </argsstring>
+        <name>synonyms_end</name>
+        <param>
+          <type>const std::string &amp;</type>
+        </param>
+        <briefdescription>
+<para>Corresponding end iterator to synonyms_begin(term). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="388" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/database.h" bodystart="388" bodyend="390"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Database_1340149d55c64d7d186948d1992ff10f2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classXapian_1_1TermIterator" kindref="compound">Xapian::TermIterator</ref></type>
+        <definition>Xapian::TermIterator Xapian::Database::synonym_keys_begin</definition>
+        <argsstring>(const std::string &amp;prefix=std::string()) const </argsstring>
+        <name>synonym_keys_begin</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>prefix</declname>
+          <defval>std::string()</defval>
+        </param>
+        <briefdescription>
+<para>An iterator which returns all terms which have synonyms. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>prefix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If non-empty, only terms with this prefix are returned. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="397"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Database_1f24c76928481eb792486304867cc6a64" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classXapian_1_1TermIterator" kindref="compound">Xapian::TermIterator</ref></type>
+        <definition>Xapian::TermIterator Xapian::Database::synonym_keys_end</definition>
+        <argsstring>(const std::string &amp;=std::string()) const </argsstring>
+        <name>synonym_keys_end</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <defval>std::string()</defval>
+        </param>
+        <briefdescription>
+<para>Corresponding end iterator to synonym_keys_begin(prefix). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="400" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/database.h" bodystart="400" bodyend="402"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Database_1e27282ad0777daa301b0b83b410d98ba" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Xapian::Database::get_metadata</definition>
+        <argsstring>(const std::string &amp;key) const </argsstring>
+        <name>get_metadata</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Get the user-specified metadata associated with a given key. </para>        </briefdescription>
+        <detaileddescription>
+<para>User-specified metadata allows you to store arbitrary information in the form of (key,tag) pairs. See <emphasis><ref refid="classXapian_1_1WritableDatabase_1bd9a9fde5be5614e93559810df865a98" kindref="member">WritableDatabase::set_metadata()</ref></emphasis> for more information.</para><para>When invoked on a <ref refid="classXapian_1_1Database" kindref="compound">Xapian::Database</ref> object representing multiple databases, currently only the metadata for the first is considered but this behaviour may change in the future.</para><para>If there is no piece of metadata associated with the specified key, an empty string is returned (this applies even for backends which don&apos;t support metadata).</para><para>Empty keys are not valid, and specifying one will cause an exception.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key of the metadata item to access.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The retrieved metadata item&apos;s value.</para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classXapian_1_1InvalidArgumentError" kindref="compound">Xapian::InvalidArgumentError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>will be thrown if the key supplied is empty. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="428"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Database_1f275ac0df48ddea697979d69cd60f82f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classXapian_1_1TermIterator" kindref="compound">Xapian::TermIterator</ref></type>
+        <definition>Xapian::TermIterator Xapian::Database::metadata_keys_begin</definition>
+        <argsstring>(const std::string &amp;prefix=std::string()) const </argsstring>
+        <name>metadata_keys_begin</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>prefix</declname>
+          <defval>std::string()</defval>
+        </param>
+        <briefdescription>
+<para>An iterator which returns all user-specified metadata keys. </para>        </briefdescription>
+        <detaileddescription>
+<para>When invoked on a <ref refid="classXapian_1_1Database" kindref="compound">Xapian::Database</ref> object representing multiple databases, currently only the metadata for the first is considered but this behaviour may change in the future.</para><para>If the backend doesn&apos;t support metadata, then this method returns an iterator which compares equal to that returned by <ref refid="classXapian_1_1Database_1ec2e180589fc493230054f81de823f04" kindref="member">metadata_keys_end()</ref>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>prefix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If non-empty, only keys with this prefix are returned.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classXapian_1_1UnimplementedError" kindref="compound">Xapian::UnimplementedError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>will be thrown if the backend implements user-specified metadata, but doesn&apos;t implement iterating its keys (currently this happens for the <ref refid="namespaceXapian_1_1InMemory" kindref="compound">InMemory</ref> backend). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="448"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Database_1ec2e180589fc493230054f81de823f04" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classXapian_1_1TermIterator" kindref="compound">Xapian::TermIterator</ref></type>
+        <definition>Xapian::TermIterator Xapian::Database::metadata_keys_end</definition>
+        <argsstring>(const std::string &amp;=std::string()) const </argsstring>
+        <name>metadata_keys_end</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <defval>std::string()</defval>
+        </param>
+        <briefdescription>
+<para>Corresponding end iterator to <ref refid="classXapian_1_1Database_1f275ac0df48ddea697979d69cd60f82f" kindref="member">metadata_keys_begin()</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="451" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/database.h" bodystart="451" bodyend="453"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Database_1a7edcb2f6dd5f1df58b37026b9ecd6e4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Xapian::Database::get_uuid</definition>
+        <argsstring>() const </argsstring>
+        <name>get_uuid</name>
+        <briefdescription>
+<para>Get a UUID for the database. </para>        </briefdescription>
+        <detaileddescription>
+<para>The UUID will persist for the lifetime of the database.</para><para>Replicas (eg, made with the replication protocol, or by copying all the database files) will have the same UUID. However, copies (made with copydatabase, or xapian-compact) will have different UUIDs.</para><para>If the backend does not support UUIDs or this database has no subdatabases, the UUID will be empty.</para><para>If this database has multiple sub-databases, the UUID string will contain the UUIDs of all the sub-databases. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="469"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class is used to access a database, or a group of databases. </para>    </briefdescription>
+    <detaileddescription>
+<para>For searching, this class is used in conjunction with an <ref refid="classXapian_1_1Enquire" kindref="compound">Enquire</ref> object.</para><para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classXapian_1_1InvalidArgumentError" kindref="compound">InvalidArgumentError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>will be thrown if an invalid argument is supplied, for example, an unknown database type.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="classXapian_1_1DatabaseOpeningError" kindref="compound">DatabaseOpeningError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>may be thrown if the database cannot be opened (for example, a required file cannot be found).</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="classXapian_1_1DatabaseVersionError" kindref="compound">DatabaseVersionError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>may be thrown if the database is in an unsupported format (for example, created by a newer version of <ref refid="namespaceXapian" kindref="compound">Xapian</ref> which uses an incompatible format). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="307">
+        <label>Xapian::Database</label>
+        <link refid="classXapian_1_1Database"/>
+      </node>
+      <node id="308">
+        <label>Xapian::WritableDatabase</label>
+        <link refid="classXapian_1_1WritableDatabase"/>
+        <childnode refid="307" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="57" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/database.h" bodystart="57" bodyend="470"/>
+    <listofallmembers>
+      <member refid="classXapian_1_1Database_12fc5aa368a7097ca787a831211a2e3bc" prot="public" virt="non-virtual"><scope>Xapian::Database</scope><name>add_database</name></member>
+      <member refid="classXapian_1_1Database_11bef542ac6af6749b95ba6547d5139fe" prot="public" virt="non-virtual"><scope>Xapian::Database</scope><name>allterms_begin</name></member>
+      <member refid="classXapian_1_1Database_1568341766a22f09f5a0da471ae6a3802" prot="public" virt="non-virtual"><scope>Xapian::Database</scope><name>allterms_begin</name></member>
+      <member refid="classXapian_1_1Database_103a144e5b1aa8104ea82aa5031ba2943" prot="public" virt="non-virtual"><scope>Xapian::Database</scope><name>allterms_end</name></member>
+      <member refid="classXapian_1_1Database_1ef82e0ee7ed8400c19151f4017ac333a" prot="public" virt="non-virtual"><scope>Xapian::Database</scope><name>allterms_end</name></member>
+      <member refid="classXapian_1_1Database_159f5f8b137723dcaaabdbdccbc0cf1eb" prot="public" virt="virtual"><scope>Xapian::Database</scope><name>close</name></member>
+      <member refid="classXapian_1_1Database_124f8197f3ac8bfd8c2526e0b8dff4ff7" prot="public" virt="non-virtual"><scope>Xapian::Database</scope><name>Database</name></member>
+      <member refid="classXapian_1_1Database_1b180b01a76a9d73a9315b181514a2f25" prot="public" virt="non-virtual"><scope>Xapian::Database</scope><name>Database</name></member>
+      <member refid="classXapian_1_1Database_17d737e6a640931dcb67c3e7eb702679c" prot="private" virt="non-virtual"><scope>Xapian::Database</scope><name>Database</name></member>
+      <member refid="classXapian_1_1Database_1aae498b70286ba1c588b7cbeb0972d38" prot="public" virt="non-virtual"><scope>Xapian::Database</scope><name>Database</name></member>
+      <member refid="classXapian_1_1Database_17be264cfd482d19e6ca1c99382838032" prot="public" virt="non-virtual"><scope>Xapian::Database</scope><name>get_avlength</name></member>
+      <member refid="classXapian_1_1Database_1eb8b2a78e6a7834bf0cc9e863bcfb95b" prot="public" virt="non-virtual"><scope>Xapian::Database</scope><name>get_collection_freq</name></member>
+      <member refid="classXapian_1_1Database_159e5889c489ce77fb4e7ffd80b6bc52c" prot="public" virt="virtual"><scope>Xapian::Database</scope><name>get_description</name></member>
+      <member refid="classXapian_1_1Database_1c13c9f754b55edf7e25d754a150bd970" prot="public" virt="non-virtual"><scope>Xapian::Database</scope><name>get_doccount</name></member>
+      <member refid="classXapian_1_1Database_17aed02430626d06ab782d63e462de837" prot="public" virt="non-virtual"><scope>Xapian::Database</scope><name>get_doclength</name></member>
+      <member refid="classXapian_1_1Database_1d047fac41d0cfbfb8f6022164b1af458" prot="public" virt="non-virtual"><scope>Xapian::Database</scope><name>get_doclength_lower_bound</name></member>
+      <member refid="classXapian_1_1Database_1de55de013a35cdca12aa89f21d2a5173" prot="public" virt="non-virtual"><scope>Xapian::Database</scope><name>get_doclength_upper_bound</name></member>
+      <member refid="classXapian_1_1Database_1c36eafdcf748e11e533149674329f90b" prot="public" virt="non-virtual"><scope>Xapian::Database</scope><name>get_document</name></member>
+      <member refid="classXapian_1_1Database_14c8d121ad552fae3368b9a5c3473b1b2" prot="private" virt="non-virtual"><scope>Xapian::Database</scope><name>get_document_lazily_</name></member>
+      <member refid="classXapian_1_1Database_10c180d6facca7ca0e8486e7b995a6747" prot="public" virt="non-virtual"><scope>Xapian::Database</scope><name>get_lastdocid</name></member>
+      <member refid="classXapian_1_1Database_1e27282ad0777daa301b0b83b410d98ba" prot="public" virt="non-virtual"><scope>Xapian::Database</scope><name>get_metadata</name></member>
+      <member refid="classXapian_1_1Database_186b944dece96d7ada2446ae8952ee3a2" prot="public" virt="non-virtual"><scope>Xapian::Database</scope><name>get_spelling_suggestion</name></member>
+      <member refid="classXapian_1_1Database_161d9b1e634aff99280a5fcdfc5087cdc" prot="public" virt="non-virtual"><scope>Xapian::Database</scope><name>get_termfreq</name></member>
+      <member refid="classXapian_1_1Database_1a7edcb2f6dd5f1df58b37026b9ecd6e4" prot="public" virt="non-virtual"><scope>Xapian::Database</scope><name>get_uuid</name></member>
+      <member refid="classXapian_1_1Database_116af5d3bdfa3c459ccc41f6dc69644e4" prot="public" virt="non-virtual"><scope>Xapian::Database</scope><name>get_value_freq</name></member>
+      <member refid="classXapian_1_1Database_190d2297437540ec733debe4a4b706c7d" prot="public" virt="non-virtual"><scope>Xapian::Database</scope><name>get_value_lower_bound</name></member>
+      <member refid="classXapian_1_1Database_145e8c383ec2a3cb547ea48ce1da7e1e1" prot="public" virt="non-virtual"><scope>Xapian::Database</scope><name>get_value_upper_bound</name></member>
+      <member refid="classXapian_1_1Database_160d00bbea2f0c15f16512f51247b5f9d" prot="public" virt="non-virtual"><scope>Xapian::Database</scope><name>get_wdf_upper_bound</name></member>
+      <member refid="classXapian_1_1Database_1e7362269bc3408d0800a36d0c2f4851d" prot="public" virt="non-virtual"><scope>Xapian::Database</scope><name>has_positions</name></member>
+      <member refid="classXapian_1_1Database_1a68e7c4e68a2c985944f403f09a2ca44" prot="private" virt="non-virtual"><scope>Xapian::Database</scope><name>internal</name></member>
+      <member refid="classXapian_1_1Database_1759d1fde0d3d8a2ed74b83c0ebd10974" prot="public" virt="non-virtual"><scope>Xapian::Database</scope><name>keep_alive</name></member>
+      <member refid="classXapian_1_1Database_1f275ac0df48ddea697979d69cd60f82f" prot="public" virt="non-virtual"><scope>Xapian::Database</scope><name>metadata_keys_begin</name></member>
+      <member refid="classXapian_1_1Database_1ec2e180589fc493230054f81de823f04" prot="public" virt="non-virtual"><scope>Xapian::Database</scope><name>metadata_keys_end</name></member>
+      <member refid="classXapian_1_1Database_14e8badea7a9d7292c13f99429c6a2b79" prot="public" virt="non-virtual"><scope>Xapian::Database</scope><name>operator=</name></member>
+      <member refid="classXapian_1_1Database_19fb4987b5f0e13b8344a89d1898f5500" prot="public" virt="non-virtual"><scope>Xapian::Database</scope><name>positionlist_begin</name></member>
+      <member refid="classXapian_1_1Database_1ef7093cb5cfd969c4b07593e26d208e3" prot="public" virt="non-virtual"><scope>Xapian::Database</scope><name>positionlist_end</name></member>
+      <member refid="classXapian_1_1Database_1504d8e800384d12a8f9defee39362f5e" prot="public" virt="non-virtual"><scope>Xapian::Database</scope><name>postlist_begin</name></member>
+      <member refid="classXapian_1_1Database_1c1661ac2876a4a69f327907ef47a003d" prot="public" virt="non-virtual"><scope>Xapian::Database</scope><name>postlist_end</name></member>
+      <member refid="classXapian_1_1Database_1f316aa13ee123e2af75f4b44e1f23db9" prot="public" virt="non-virtual"><scope>Xapian::Database</scope><name>reopen</name></member>
+      <member refid="classXapian_1_1Database_179bdfc96a112a38409a1d87c7e2f6a55" prot="public" virt="non-virtual"><scope>Xapian::Database</scope><name>spellings_begin</name></member>
+      <member refid="classXapian_1_1Database_1107327ec1bf8fb8c04345961f73d82f2" prot="public" virt="non-virtual"><scope>Xapian::Database</scope><name>spellings_end</name></member>
+      <member refid="classXapian_1_1Database_1340149d55c64d7d186948d1992ff10f2" prot="public" virt="non-virtual"><scope>Xapian::Database</scope><name>synonym_keys_begin</name></member>
+      <member refid="classXapian_1_1Database_1f24c76928481eb792486304867cc6a64" prot="public" virt="non-virtual"><scope>Xapian::Database</scope><name>synonym_keys_end</name></member>
+      <member refid="classXapian_1_1Database_174d436523335d70f665edee7730f8435" prot="public" virt="non-virtual"><scope>Xapian::Database</scope><name>synonyms_begin</name></member>
+      <member refid="classXapian_1_1Database_1f379075aa87dd844e0bf6f566a4e001d" prot="public" virt="non-virtual"><scope>Xapian::Database</scope><name>synonyms_end</name></member>
+      <member refid="classXapian_1_1Database_122509662f07387074beb1e9919e8e1e9" prot="public" virt="non-virtual"><scope>Xapian::Database</scope><name>term_exists</name></member>
+      <member refid="classXapian_1_1Database_1c26b8f8f564c37586c7a0bd35cfefe15" prot="public" virt="non-virtual"><scope>Xapian::Database</scope><name>termlist_begin</name></member>
+      <member refid="classXapian_1_1Database_1a6f20c07f93d53f35caf6c97c795a5a1" prot="public" virt="non-virtual"><scope>Xapian::Database</scope><name>termlist_end</name></member>
+      <member refid="classXapian_1_1Database_1bba5f47ae1a2895ba75a698ab70d570e" prot="public" virt="non-virtual"><scope>Xapian::Database</scope><name>valuestream_begin</name></member>
+      <member refid="classXapian_1_1Database_11955ccba82b9538e128437e031a3d0de" prot="public" virt="non-virtual"><scope>Xapian::Database</scope><name>valuestream_end</name></member>
+      <member refid="classXapian_1_1Database_10352b3a47dca16d57c071252e84f1043" prot="public" virt="virtual"><scope>Xapian::Database</scope><name>~Database</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

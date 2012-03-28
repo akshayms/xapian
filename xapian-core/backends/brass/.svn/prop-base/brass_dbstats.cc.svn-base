@@ -1,0 +1,6 @@
+K 13
+svn:mergeinfo
+V 154
+/branches/replication_fixes/xapian-core/backends/brass/brass_dbstats.cc:14149-14152
+/trunk/xapian-core/backends/brass/brass_dbstats.cc:2-13775,15485-16044
+END

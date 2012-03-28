@@ -1,0 +1,10 @@
+K 13
+svn:eol-style
+V 6
+native
+K 13
+svn:mergeinfo
+V 164
+/branches/replication_fixes/xapian-core/tests/harness/backendmanager_brass.h:14149-14152
+/trunk/xapian-core/tests/harness/backendmanager_brass.h:2-13775,15485-16044
+END

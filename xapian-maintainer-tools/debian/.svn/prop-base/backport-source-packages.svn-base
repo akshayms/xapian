@@ -1,0 +1,9 @@
+K 14
+svn:executable
+V 1
+*
+K 13
+svn:mergeinfo
+V 74
+/trunk/xapian-maintainer-tools/debian/backport-source-packages:15485-16044
+END

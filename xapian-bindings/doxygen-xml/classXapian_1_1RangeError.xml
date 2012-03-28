@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="classXapian_1_1RangeError" kind="class" prot="public">
+    <compoundname>Xapian::RangeError</compoundname>
+    <basecompoundref refid="classXapian_1_1RuntimeError" prot="public" virt="non-virtual">Xapian::RuntimeError</basecompoundref>
+    <includes local="no">error.h</includes>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classXapian_1_1RangeError_17d61700fb886cd606e8ede0446440862" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::RangeError::RangeError</definition>
+        <argsstring>(const std::string &amp;msg_, const std::string &amp;context_, const char *error_string_)</argsstring>
+        <name>RangeError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>context_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>error_string_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="747" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="746" bodyend="747"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1RangeError_11c96ee58586f3f6f57b68bf3fdaab927" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::RangeError::RangeError</definition>
+        <argsstring>(const std::string &amp;msg_, const std::string &amp;context_, const char *type_, const char *error_string_)</argsstring>
+        <name>RangeError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>context_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>type_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>error_string_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="759" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="758" bodyend="759"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1RangeError_18d6f35b0b87564a3f3ad92df2950e4d9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::RangeError::RangeError</definition>
+        <argsstring>(const std::string &amp;msg_, const std::string &amp;context_, const char *type_, int errno_)</argsstring>
+        <name>RangeError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>context_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>type_</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>errno_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="765" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="764" bodyend="765"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classXapian_1_1RangeError_15d691385da426b630a5dcba842f02b1d" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::RangeError::RangeError</definition>
+        <argsstring>(const std::string &amp;msg_, const std::string &amp;context_=std::string(), int errno_=0)</argsstring>
+        <name>RangeError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>context_</declname>
+          <defval>std::string()</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>errno_</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>General purpose constructor which allows setting errno. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="750" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="749" bodyend="750"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1RangeError_1dd7312d23022b6a86a979e83ca5285aa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::RangeError::RangeError</definition>
+        <argsstring>(const std::string &amp;msg_, int errno_)</argsstring>
+        <name>RangeError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>errno_</declname>
+        </param>
+        <briefdescription>
+<para>Construct from message and errno value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="753" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="752" bodyend="753"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classXapian_1_1RangeError" kindref="compound">RangeError</ref> indicates an attempt to access outside the bounds of a container. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="618">
+        <label>Xapian::Error</label>
+        <link refid="classXapian_1_1Error"/>
+      </node>
+      <node id="617">
+        <label>Xapian::RuntimeError</label>
+        <link refid="classXapian_1_1RuntimeError"/>
+        <childnode refid="618" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="616">
+        <label>Xapian::RangeError</label>
+        <link refid="classXapian_1_1RangeError"/>
+        <childnode refid="617" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="621">
+        <label>Xapian::Error</label>
+        <link refid="classXapian_1_1Error"/>
+      </node>
+      <node id="620">
+        <label>Xapian::RuntimeError</label>
+        <link refid="classXapian_1_1RuntimeError"/>
+        <childnode refid="621" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="619">
+        <label>Xapian::RangeError</label>
+        <link refid="classXapian_1_1RangeError"/>
+        <childnode refid="620" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="739" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="739" bodyend="766"/>
+    <listofallmembers>
+      <member refid="classXapian_1_1Error_190c683965555b4bc86b08e8667170e44" prot="public" virt="non-virtual"><scope>Xapian::RangeError</scope><name>get_context</name></member>
+      <member refid="classXapian_1_1Error_1bd64e380eb6d864dc907ee62c1f58a74" prot="public" virt="non-virtual"><scope>Xapian::RangeError</scope><name>get_description</name></member>
+      <member refid="classXapian_1_1Error_16f94a579f8e176f85c6fb036592dab61" prot="public" virt="non-virtual"><scope>Xapian::RangeError</scope><name>get_error_string</name></member>
+      <member refid="classXapian_1_1Error_1ea05df48ea71dfd045da28ab984cdaa3" prot="public" virt="non-virtual"><scope>Xapian::RangeError</scope><name>get_msg</name></member>
+      <member refid="classXapian_1_1Error_1136945e703317bdf6e18d8cf511a5bfb" prot="public" virt="non-virtual"><scope>Xapian::RangeError</scope><name>get_type</name></member>
+      <member refid="classXapian_1_1RangeError_17d61700fb886cd606e8ede0446440862" prot="private" virt="non-virtual"><scope>Xapian::RangeError</scope><name>RangeError</name></member>
+      <member refid="classXapian_1_1RangeError_15d691385da426b630a5dcba842f02b1d" prot="public" virt="non-virtual"><scope>Xapian::RangeError</scope><name>RangeError</name></member>
+      <member refid="classXapian_1_1RangeError_1dd7312d23022b6a86a979e83ca5285aa" prot="public" virt="non-virtual"><scope>Xapian::RangeError</scope><name>RangeError</name></member>
+      <member refid="classXapian_1_1RangeError_11c96ee58586f3f6f57b68bf3fdaab927" prot="private" virt="non-virtual"><scope>Xapian::RangeError</scope><name>RangeError</name></member>
+      <member refid="classXapian_1_1RangeError_18d6f35b0b87564a3f3ad92df2950e4d9" prot="private" virt="non-virtual"><scope>Xapian::RangeError</scope><name>RangeError</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,9 @@
+K 10
+svn:ignore
+V 92
+HTMLDocSettings.book
+SWIGDocumentation.html
+SWIGDocumentation.pdf
+swightml.book
+swigpdf.book
+END

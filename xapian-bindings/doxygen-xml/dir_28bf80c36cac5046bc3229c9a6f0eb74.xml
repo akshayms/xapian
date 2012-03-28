@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="dir_28bf80c36cac5046bc3229c9a6f0eb74" kind="dir">
+    <compoundname>xapian/</compoundname>
+    <innerfile refid="compactor_8h">compactor.h</innerfile>
+    <innerfile refid="database_8h">database.h</innerfile>
+    <innerfile refid="dbfactory_8h">dbfactory.h</innerfile>
+    <innerfile refid="document_8h">document.h</innerfile>
+    <innerfile refid="enquire_8h">enquire.h</innerfile>
+    <innerfile refid="error_8h">error.h</innerfile>
+    <innerfile refid="errorhandler_8h">errorhandler.h</innerfile>
+    <innerfile refid="expanddecider_8h">expanddecider.h</innerfile>
+    <innerfile refid="keymaker_8h">keymaker.h</innerfile>
+    <innerfile refid="letor_8h">letor.h</innerfile>
+    <innerfile refid="matchspy_8h">matchspy.h</innerfile>
+    <innerfile refid="positioniterator_8h">positioniterator.h</innerfile>
+    <innerfile refid="postingiterator_8h">postingiterator.h</innerfile>
+    <innerfile refid="postingsource_8h">postingsource.h</innerfile>
+    <innerfile refid="query_8h">query.h</innerfile>
+    <innerfile refid="queryparser_8h">queryparser.h</innerfile>
+    <innerfile refid="registry_8h">registry.h</innerfile>
+    <innerfile refid="stem_8h">stem.h</innerfile>
+    <innerfile refid="termgenerator_8h">termgenerator.h</innerfile>
+    <innerfile refid="termiterator_8h">termiterator.h</innerfile>
+    <innerfile refid="types_8h">types.h</innerfile>
+    <innerfile refid="unicode_8h">unicode.h</innerfile>
+    <innerfile refid="valueiterator_8h">valueiterator.h</innerfile>
+    <innerfile refid="valuesetmatchdecider_8h">valuesetmatchdecider.h</innerfile>
+    <innerfile refid="version_8h">version.h</innerfile>
+    <innerfile refid="weight_8h">weight.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/"/>
+  </compounddef>
+</doxygen>

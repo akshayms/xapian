@@ -1,0 +1,17 @@
+K 10
+svn:ignore
+V 92
+example.go
+example_gc.c
+example_wrap.h
+runme
+*_wrap.c
+*_wrap.cxx
+*.so
+*.dll
+*.a
+*.o
+*.6
+*.8
+
+END

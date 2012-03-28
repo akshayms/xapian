@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="error_8h" kind="file">
+    <compoundname>error.h</compoundname>
+    <includes local="no">string</includes>
+    <includes local="no">xapian/visibility.h</includes>
+    <includedby refid="xapian_8h" local="no">xapian.h</includedby>
+    <incdepgraph>
+      <node id="102">
+        <label>xapian/visibility.h</label>
+      </node>
+      <node id="101">
+        <label>string</label>
+      </node>
+      <node id="100">
+        <label>xapian/error.h</label>
+        <link refid="error.h"/>
+        <childnode refid="101" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="105">
+        <label>xapian/letor.h</label>
+        <link refid="letor_8h"/>
+      </node>
+      <node id="103">
+        <label>xapian/error.h</label>
+        <link refid="error.h"/>
+        <childnode refid="104" relation="include">
+        </childnode>
+      </node>
+      <node id="104">
+        <label>xapian.h</label>
+        <link refid="xapian_8h"/>
+        <childnode refid="105" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classXapian_1_1Error" prot="public">Xapian::Error</innerclass>
+    <innerclass refid="classXapian_1_1LogicError" prot="public">Xapian::LogicError</innerclass>
+    <innerclass refid="classXapian_1_1RuntimeError" prot="public">Xapian::RuntimeError</innerclass>
+    <innerclass refid="classXapian_1_1AssertionError" prot="public">Xapian::AssertionError</innerclass>
+    <innerclass refid="classXapian_1_1InvalidArgumentError" prot="public">Xapian::InvalidArgumentError</innerclass>
+    <innerclass refid="classXapian_1_1InvalidOperationError" prot="public">Xapian::InvalidOperationError</innerclass>
+    <innerclass refid="classXapian_1_1UnimplementedError" prot="public">Xapian::UnimplementedError</innerclass>
+    <innerclass refid="classXapian_1_1DatabaseError" prot="public">Xapian::DatabaseError</innerclass>
+    <innerclass refid="classXapian_1_1DatabaseCorruptError" prot="public">Xapian::DatabaseCorruptError</innerclass>
+    <innerclass refid="classXapian_1_1DatabaseCreateError" prot="public">Xapian::DatabaseCreateError</innerclass>
+    <innerclass refid="classXapian_1_1DatabaseLockError" prot="public">Xapian::DatabaseLockError</innerclass>
+    <innerclass refid="classXapian_1_1DatabaseModifiedError" prot="public">Xapian::DatabaseModifiedError</innerclass>
+    <innerclass refid="classXapian_1_1DatabaseOpeningError" prot="public">Xapian::DatabaseOpeningError</innerclass>
+    <innerclass refid="classXapian_1_1DatabaseVersionError" prot="public">Xapian::DatabaseVersionError</innerclass>
+    <innerclass refid="classXapian_1_1DocNotFoundError" prot="public">Xapian::DocNotFoundError</innerclass>
+    <innerclass refid="classXapian_1_1FeatureUnavailableError" prot="public">Xapian::FeatureUnavailableError</innerclass>
+    <innerclass refid="classXapian_1_1InternalError" prot="public">Xapian::InternalError</innerclass>
+    <innerclass refid="classXapian_1_1NetworkError" prot="public">Xapian::NetworkError</innerclass>
+    <innerclass refid="classXapian_1_1NetworkTimeoutError" prot="public">Xapian::NetworkTimeoutError</innerclass>
+    <innerclass refid="classXapian_1_1QueryParserError" prot="public">Xapian::QueryParserError</innerclass>
+    <innerclass refid="classXapian_1_1SerialisationError" prot="public">Xapian::SerialisationError</innerclass>
+    <innerclass refid="classXapian_1_1RangeError" prot="public">Xapian::RangeError</innerclass>
+    <innernamespace refid="namespaceXapian">Xapian</innernamespace>
+    <briefdescription>
+<para>Hierarchy of classes which <ref refid="namespaceXapian" kindref="compound">Xapian</ref> can throw as exceptions. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h"/>
+  </compounddef>
+</doxygen>

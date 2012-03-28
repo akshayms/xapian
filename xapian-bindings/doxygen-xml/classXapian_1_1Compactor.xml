@@ -1,0 +1,270 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="classXapian_1_1Compactor" kind="class" prot="public">
+    <compoundname>Xapian::Compactor</compoundname>
+    <includes local="no">compactor.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classXapian_1_1Compactor_14b90abf7e889f29c0ab31904598d7276" prot="public" static="no">
+        <name>compaction_level</name>
+        <enumvalue id="classXapian_1_1Compactor_14b90abf7e889f29c0ab31904598d7276f46264e20be7a1d98fd1dfab2cba8a14" prot="public">
+          <name>STANDARD</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classXapian_1_1Compactor_14b90abf7e889f29c0ab31904598d727615494f71d5fdcd952b64e70d5097129a" prot="public">
+          <name>FULL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classXapian_1_1Compactor_14b90abf7e889f29c0ab31904598d72768e232f214096b41c10bd6eddfe01bb34" prot="public">
+          <name>FULLER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/compactor.h" line="39" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/compactor.h" bodystart="39" bodyend="39"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classXapian_1_1Compactor_1f0bb2acd944b8f18e677b9c0bc3cf83b" prot="private" static="no" mutable="no">
+        <type>Xapian::Internal::intrusive_ptr&lt; Internal &gt;</type>
+        <definition>Xapian::Internal::intrusive_ptr&lt;Internal&gt; Xapian::Compactor::internal</definition>
+        <argsstring></argsstring>
+        <name>internal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/compactor.h" line="43" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/compactor.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classXapian_1_1Compactor_1f40ec52002bc010281cea92076d6dadd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::Compactor::Compactor</definition>
+        <argsstring>()</argsstring>
+        <name>Compactor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/compactor.h" line="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Compactor_1a64570399a9e7b40883d0e417b7cd5ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual Xapian::Compactor::~Compactor</definition>
+        <argsstring>()</argsstring>
+        <name>~Compactor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/compactor.h" line="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Compactor_1a61179ae14a0241d05a1e04d78af2f6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::Compactor::set_block_size</definition>
+        <argsstring>(size_t block_size)</argsstring>
+        <name>set_block_size</name>
+        <param>
+          <type>size_t</type>
+          <declname>block_size</declname>
+        </param>
+        <briefdescription>
+<para>Set the block size to use for tables in the output database. </para>        </briefdescription>
+        <detaileddescription>
+<para>Valid block sizes are currently powers of two between 2048 and 65536, with the default being 8192, but the valid sizes and default may change in the future. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/compactor.h" line="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Compactor_1e9dfc11596ccdcb45f432065f5e6777f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::Compactor::set_renumber</definition>
+        <argsstring>(bool renumber)</argsstring>
+        <name>set_renumber</name>
+        <param>
+          <type>bool</type>
+          <declname>renumber</declname>
+        </param>
+        <briefdescription>
+<para>Set whether to preserve existing document id values. </para>        </briefdescription>
+        <detaileddescription>
+<para>The default is true, which means that document ids will be renumbered - currently by applying the same offset to all the document ids in a particular source database.</para><para>If false, then the document ids must be unique over all source databases. Currently the ranges of document ids in each source must not overlap either, though this restriction may be removed in the future. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/compactor.h" line="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Compactor_1c2296e5ff042177ffa3dbe475b5d6031" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::Compactor::set_multipass</definition>
+        <argsstring>(bool multipass)</argsstring>
+        <name>set_multipass</name>
+        <param>
+          <type>bool</type>
+          <declname>multipass</declname>
+        </param>
+        <briefdescription>
+<para>Set whether to merge postlists in multiple passes. </para>        </briefdescription>
+        <detaileddescription>
+<para>Default is false. If set to true and merging more than 3 databases, merge the postlists in multiple passes, which is generally faster but requires more disk space for temporary files. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/compactor.h" line="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Compactor_178962dc950472dfd237220cc8c2408bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::Compactor::set_compaction_level</definition>
+        <argsstring>(compaction_level compaction)</argsstring>
+        <name>set_compaction_level</name>
+        <param>
+          <type>compaction_level</type>
+          <declname>compaction</declname>
+        </param>
+        <briefdescription>
+<para>Set the compaction level. </para>        </briefdescription>
+        <detaileddescription>
+<para>Values are:<itemizedlist>
+<listitem><para>Xapian::Compactor::STANDARD - Don&apos;t split items unnecessarily.</para></listitem><listitem><para>Xapian::Compactor::FULL - Split items whenever it saves space (the default).</para></listitem><listitem><para>Xapian::Compactor::FULLER - Allow oversize items to save more space.</para></listitem></itemizedlist>
+</para><para>FULLER isn&apos;t recommended if you ever plan to update the compacted database. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/compactor.h" line="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Compactor_1409fcee34cbd2a284b4ae19564de39a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::Compactor::set_destdir</definition>
+        <argsstring>(const std::string &amp;destdir)</argsstring>
+        <name>set_destdir</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>destdir</declname>
+        </param>
+        <briefdescription>
+<para>Set where to write the output. </para>        </briefdescription>
+        <detaileddescription>
+<para>This can be the same as an input if that input is a stub database (in which case it will be updated atomically). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/compactor.h" line="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Compactor_1cc6b30b8bb89baa73bedaa062c510e84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::Compactor::add_source</definition>
+        <argsstring>(const std::string &amp;srcdir)</argsstring>
+        <name>add_source</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>srcdir</declname>
+        </param>
+        <briefdescription>
+<para>Add a source database. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/compactor.h" line="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Compactor_13b8aa178bbe37edaccf5345189d3e170" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::Compactor::compact</definition>
+        <argsstring>()</argsstring>
+        <name>compact</name>
+        <briefdescription>
+<para>Perform the actual compaction/merging operation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/compactor.h" line="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Compactor_1ccf46f29ec8aaa2991ed1babb8716d91" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Xapian::Compactor::set_status</definition>
+        <argsstring>(const std::string &amp;table, const std::string &amp;status)</argsstring>
+        <name>set_status</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>table</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+<para>Update progress. </para>        </briefdescription>
+        <detaileddescription>
+<para>Subclass this method if you want to get progress updates during compaction. This is called for each table first with empty status, And then one or more times with non-empty status.</para><para>The default implementation does nothing. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/compactor.h" line="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Compactor_1bcd5be85dd80118a2bd5f429b54addde" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string Xapian::Compactor::resolve_duplicate_metadata</definition>
+        <argsstring>(const std::string &amp;key, size_t num_tags, const std::string tags[])</argsstring>
+        <name>resolve_duplicate_metadata</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>num_tags</declname>
+        </param>
+        <param>
+          <type>const std::string</type>
+          <declname>tags</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+<para>Resolve multiple user metadata entries with the same key. </para>        </briefdescription>
+        <detaileddescription>
+<para>When merging, if the same user metadata key is set in more than one input, then this method is called to allow this to be resolving in an appropriate way.</para><para>The default implementation just returns tags[0].</para><para>For multipass this will currently get called multiple times for the same key if there are duplicates to resolve in each pass, but this may change in the future. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/compactor.h" line="131"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Compact a database, or merge and compact several. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/compactor.h" line="34" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/compactor.h" bodystart="34" bodyend="132"/>
+    <listofallmembers>
+      <member refid="classXapian_1_1Compactor_1cc6b30b8bb89baa73bedaa062c510e84" prot="public" virt="non-virtual"><scope>Xapian::Compactor</scope><name>add_source</name></member>
+      <member refid="classXapian_1_1Compactor_13b8aa178bbe37edaccf5345189d3e170" prot="public" virt="non-virtual"><scope>Xapian::Compactor</scope><name>compact</name></member>
+      <member refid="classXapian_1_1Compactor_14b90abf7e889f29c0ab31904598d7276" prot="public" virt="non-virtual"><scope>Xapian::Compactor</scope><name>compaction_level</name></member>
+      <member refid="classXapian_1_1Compactor_1f40ec52002bc010281cea92076d6dadd" prot="public" virt="non-virtual"><scope>Xapian::Compactor</scope><name>Compactor</name></member>
+      <member refid="classXapian_1_1Compactor_14b90abf7e889f29c0ab31904598d727615494f71d5fdcd952b64e70d5097129a" prot="public" virt="non-virtual"><scope>Xapian::Compactor</scope><name>FULL</name></member>
+      <member refid="classXapian_1_1Compactor_14b90abf7e889f29c0ab31904598d72768e232f214096b41c10bd6eddfe01bb34" prot="public" virt="non-virtual"><scope>Xapian::Compactor</scope><name>FULLER</name></member>
+      <member refid="classXapian_1_1Compactor_1f0bb2acd944b8f18e677b9c0bc3cf83b" prot="private" virt="non-virtual"><scope>Xapian::Compactor</scope><name>internal</name></member>
+      <member refid="classXapian_1_1Compactor_1bcd5be85dd80118a2bd5f429b54addde" prot="public" virt="virtual"><scope>Xapian::Compactor</scope><name>resolve_duplicate_metadata</name></member>
+      <member refid="classXapian_1_1Compactor_1a61179ae14a0241d05a1e04d78af2f6e" prot="public" virt="non-virtual"><scope>Xapian::Compactor</scope><name>set_block_size</name></member>
+      <member refid="classXapian_1_1Compactor_178962dc950472dfd237220cc8c2408bb" prot="public" virt="non-virtual"><scope>Xapian::Compactor</scope><name>set_compaction_level</name></member>
+      <member refid="classXapian_1_1Compactor_1409fcee34cbd2a284b4ae19564de39a2" prot="public" virt="non-virtual"><scope>Xapian::Compactor</scope><name>set_destdir</name></member>
+      <member refid="classXapian_1_1Compactor_1c2296e5ff042177ffa3dbe475b5d6031" prot="public" virt="non-virtual"><scope>Xapian::Compactor</scope><name>set_multipass</name></member>
+      <member refid="classXapian_1_1Compactor_1e9dfc11596ccdcb45f432065f5e6777f" prot="public" virt="non-virtual"><scope>Xapian::Compactor</scope><name>set_renumber</name></member>
+      <member refid="classXapian_1_1Compactor_1ccf46f29ec8aaa2991ed1babb8716d91" prot="public" virt="virtual"><scope>Xapian::Compactor</scope><name>set_status</name></member>
+      <member refid="classXapian_1_1Compactor_14b90abf7e889f29c0ab31904598d7276f46264e20be7a1d98fd1dfab2cba8a14" prot="public" virt="non-virtual"><scope>Xapian::Compactor</scope><name>STANDARD</name></member>
+      <member refid="classXapian_1_1Compactor_1a64570399a9e7b40883d0e417b7cd5ac" prot="public" virt="virtual"><scope>Xapian::Compactor</scope><name>~Compactor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

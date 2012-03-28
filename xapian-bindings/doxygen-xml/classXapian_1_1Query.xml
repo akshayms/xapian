@@ -1,0 +1,792 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="classXapian_1_1Query" kind="class" prot="public">
+    <compoundname>Xapian::Query</compoundname>
+    <includes local="no">query.h</includes>
+    <innerclass refid="classXapian_1_1Query_1_1Internal" prot="private">Xapian::Query::Internal</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classXapian_1_1Query_17e7b6b8ad0c915c2364578dfaaf6100b" prot="public" static="no">
+        <name>op</name>
+        <enumvalue id="classXapian_1_1Query_17e7b6b8ad0c915c2364578dfaaf6100bb99aad2dfc85eccc56163bc65eb0fdda" prot="public">
+          <name>OP_AND</name>
+          <briefdescription>
+<para>Return iff both subqueries are satisfied. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classXapian_1_1Query_17e7b6b8ad0c915c2364578dfaaf6100bc50e54f3dd9dc59dab7daa2c50cf631b" prot="public">
+          <name>OP_OR</name>
+          <briefdescription>
+<para>Return if either subquery is satisfied. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classXapian_1_1Query_17e7b6b8ad0c915c2364578dfaaf6100bda56688a72af48cc1cee70a5b36f2a94" prot="public">
+          <name>OP_AND_NOT</name>
+          <briefdescription>
+<para>Return if left but not right satisfied. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classXapian_1_1Query_17e7b6b8ad0c915c2364578dfaaf6100b3f186e28a8cc2a5c4cb99745dda5cedf" prot="public">
+          <name>OP_XOR</name>
+          <briefdescription>
+<para>Return if one query satisfied, but not both. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classXapian_1_1Query_17e7b6b8ad0c915c2364578dfaaf6100b5990dfefc0a0a63861630b743f507356" prot="public">
+          <name>OP_AND_MAYBE</name>
+          <briefdescription>
+<para>Return iff left satisfied, but use weights from both. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classXapian_1_1Query_17e7b6b8ad0c915c2364578dfaaf6100bc657f344bf26128ab7bf8fe25410b102" prot="public">
+          <name>OP_FILTER</name>
+          <briefdescription>
+<para>As AND, but use only weights from left subquery. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classXapian_1_1Query_17e7b6b8ad0c915c2364578dfaaf6100b7a78c8353d5d06d3a38c1899ae762b21" prot="public">
+          <name>OP_NEAR</name>
+          <briefdescription>
+<para>Find occurrences of a list of terms with all the terms occurring within a specified window of positions. </para>          </briefdescription>
+          <detaileddescription>
+<para>Each occurrence of a term must be at a different position, but the order they appear in is irrelevant.</para><para>The window parameter should be specified for this operation, but will default to the number of terms in the list. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classXapian_1_1Query_17e7b6b8ad0c915c2364578dfaaf6100bce19bf1e7b2d8aa393aabdd061a0866e" prot="public">
+          <name>OP_PHRASE</name>
+          <briefdescription>
+<para>Find occurrences of a list of terms with all the terms occurring within a specified window of positions, and all the terms appearing in the order specified. </para>          </briefdescription>
+          <detaileddescription>
+<para>Each occurrence of a term must be at a different position.</para><para>The window parameter should be specified for this operation, but will default to the number of terms in the list. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classXapian_1_1Query_17e7b6b8ad0c915c2364578dfaaf6100b25ad30ce2b6661570ffacd8f910b6d34" prot="public">
+          <name>OP_VALUE_RANGE</name>
+          <briefdescription>
+<para>Filter by a range test on a document value. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classXapian_1_1Query_17e7b6b8ad0c915c2364578dfaaf6100b0fecaeeb3caa94b1a578fd7953cc60ee" prot="public">
+          <name>OP_SCALE_WEIGHT</name>
+          <briefdescription>
+<para>Scale the weight of a subquery by the specified factor. </para>          </briefdescription>
+          <detaileddescription>
+<para>A factor of 0 means this subquery will contribute no weight to the query - it will act as a purely boolean subquery.</para><para>If the factor is negative, <ref refid="classXapian_1_1InvalidArgumentError" kindref="compound">Xapian::InvalidArgumentError</ref> will be thrown. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classXapian_1_1Query_17e7b6b8ad0c915c2364578dfaaf6100b9a010fd66a56d9242d6dfae2bae0850b" prot="public">
+          <name>OP_ELITE_SET</name>
+          <briefdescription>
+<para>Select an elite set from the subqueries, and perform a query with these combined as an OR query. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classXapian_1_1Query_17e7b6b8ad0c915c2364578dfaaf6100bf914b109cfe787be77e7c92c99626f01" prot="public">
+          <name>OP_VALUE_GE</name>
+          <briefdescription>
+<para>Filter by a greater-than-or-equal test on a document value. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classXapian_1_1Query_17e7b6b8ad0c915c2364578dfaaf6100bd6cede66b463ceb5f689979e1b6a8a55" prot="public">
+          <name>OP_VALUE_LE</name>
+          <briefdescription>
+<para>Filter by a less-than-or-equal test on a document value. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classXapian_1_1Query_17e7b6b8ad0c915c2364578dfaaf6100bd8456bafb560c984aff9b4d90a00d36e" prot="public">
+          <name>OP_SYNONYM</name>
+          <briefdescription>
+<para>Treat a set of queries as synonyms. </para>          </briefdescription>
+          <detaileddescription>
+<para>This returns all results which match at least one of the queries, but weighting as if all the sub-queries are instances of the same term: so multiple matching terms for a document increase the wdf value used, and the term frequency is based on the number of documents which would match an OR of all the subqueries.</para><para>The term frequency used will usually be an approximation, because calculating the precise combined term frequency would be overly expensive.</para><para>Identical to OP_OR, except for the weightings returned. </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enum of possible query operations. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="61" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/query.h" bodystart="61" bodyend="142"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classXapian_1_1Query_1e8d7cc11fff6ad700c7c351e32e2cdeb" prot="private" static="no" mutable="no">
+        <type>Xapian::Internal::intrusive_ptr&lt; Internal &gt;</type>
+        <definition>Xapian::Internal::intrusive_ptr&lt;Internal&gt; Xapian::Query::internal</definition>
+        <argsstring></argsstring>
+        <name>internal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="58" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/query.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classXapian_1_1Query_19e30b80314359e5ddd7ca4ffa84b6edd" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classXapian_1_1Query" kindref="compound">Xapian::Query</ref></type>
+        <definition>const Xapian::Query Xapian::Query::MatchAll</definition>
+        <argsstring></argsstring>
+        <name>MatchAll</name>
+        <briefdescription>
+<para>A query which matches all documents in the database. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="248" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/query.h" bodystart="248" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classXapian_1_1Query_15d2584f441d85a126004699479df0350" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classXapian_1_1Query" kindref="compound">Xapian::Query</ref></type>
+        <definition>const Xapian::Query Xapian::Query::MatchNothing</definition>
+        <argsstring></argsstring>
+        <name>MatchNothing</name>
+        <briefdescription>
+<para>A query which matches no documents. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="251" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/query.h" bodystart="251" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classXapian_1_1Query_1a95690337034e432c8e5e82bdfff80ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::Query::Query</definition>
+        <argsstring>(const Query &amp;copyme)</argsstring>
+        <name>Query</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1Query" kindref="compound">Query</ref> &amp;</type>
+          <declname>copyme</declname>
+        </param>
+        <briefdescription>
+<para>Copy constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="145"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Query_1edfe00f53f010c76c290a0a14873c7a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classXapian_1_1Query" kindref="compound">Query</ref> &amp;</type>
+        <definition>Query&amp; Xapian::Query::operator=</definition>
+        <argsstring>(const Query &amp;copyme)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1Query" kindref="compound">Query</ref> &amp;</type>
+          <declname>copyme</declname>
+        </param>
+        <briefdescription>
+<para>Assignment. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Query_1836b588120b705758f2e25b67c781b4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::Query::Query</definition>
+        <argsstring>()</argsstring>
+        <name>Query</name>
+        <briefdescription>
+<para>Default constructor: makes an empty query which matches no documents. </para>        </briefdescription>
+        <detaileddescription>
+<para>Also useful for defining a <ref refid="classXapian_1_1Query" kindref="compound">Query</ref> object to be assigned to later.</para><para>An exception will be thrown if an attempt is made to use an undefined query when building up a composite query. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="158"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Query_1420644d38cde25cef056d18ce7fe1c31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::Query::~Query</definition>
+        <argsstring>()</argsstring>
+        <name>~Query</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="161"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Query_1f396e213df0d8bcffa473a75ebf228d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::Query::Query</definition>
+        <argsstring>(const std::string &amp;tname_, Xapian::termcount wqf_=1, Xapian::termpos pos_=0)</argsstring>
+        <name>Query</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>tname_</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceXapian_172b5a76dd8cfb7b251fe7986e86390cb" kindref="member">Xapian::termcount</ref></type>
+          <declname>wqf_</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type><ref refid="namespaceXapian_1e5a16f073d0c8ed54085a9de07248d45" kindref="member">Xapian::termpos</ref></type>
+          <declname>pos_</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>A query consisting of a single term. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="165"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Query_1cd51f1304501311c8dde31dc54c36048" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::Query::Query</definition>
+        <argsstring>(Query::op op_, const Query &amp;left, const Query &amp;right)</argsstring>
+        <name>Query</name>
+        <param>
+          <type><ref refid="classXapian_1_1Query_17e7b6b8ad0c915c2364578dfaaf6100b" kindref="member">Query::op</ref></type>
+          <declname>op_</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classXapian_1_1Query" kindref="compound">Query</ref> &amp;</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classXapian_1_1Query" kindref="compound">Query</ref> &amp;</type>
+          <declname>right</declname>
+        </param>
+        <briefdescription>
+<para>A query consisting of two subqueries, opp-ed together. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="168"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Query_11e5e506b8659c9c1be88837dcf643163" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::Query::Query</definition>
+        <argsstring>(Query::op op_, const std::string &amp;left, const std::string &amp;right)</argsstring>
+        <name>Query</name>
+        <param>
+          <type><ref refid="classXapian_1_1Query_17e7b6b8ad0c915c2364578dfaaf6100b" kindref="member">Query::op</ref></type>
+          <declname>op_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>right</declname>
+        </param>
+        <briefdescription>
+<para>A query consisting of two termnames opp-ed together. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="172"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Query_1a2edfc5e6ae285afb9fde26d096c5ed8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Iterator</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>Xapian::Query::Query</definition>
+        <argsstring>(Query::op op_, Iterator qbegin, Iterator qend, Xapian::termcount parameter=0)</argsstring>
+        <name>Query</name>
+        <param>
+          <type><ref refid="classXapian_1_1Query_17e7b6b8ad0c915c2364578dfaaf6100b" kindref="member">Query::op</ref></type>
+          <declname>op_</declname>
+        </param>
+        <param>
+          <type>Iterator</type>
+          <declname>qbegin</declname>
+        </param>
+        <param>
+          <type>Iterator</type>
+          <declname>qend</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceXapian_172b5a76dd8cfb7b251fe7986e86390cb" kindref="member">Xapian::termcount</ref></type>
+          <declname>parameter</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Combine a number of <ref refid="classXapian_1_1Query" kindref="compound">Xapian::Query</ref>-s with the specified operator. </para>        </briefdescription>
+        <detaileddescription>
+<para>The <ref refid="classXapian_1_1Query" kindref="compound">Xapian::Query</ref> objects are specified with begin and end iterators.</para><para>AND, OR, SYNONYM, NEAR and PHRASE can take any number of subqueries. Other operators take exactly two subqueries.</para><para>The iterators may be to <ref refid="classXapian_1_1Query" kindref="compound">Xapian::Query</ref> objects, pointers to <ref refid="classXapian_1_1Query" kindref="compound">Xapian::Query</ref> objects, or termnames (std::string-s).</para><para>For NEAR and PHRASE, a window size can be specified in parameter.</para><para>For ELITE_SET, the elite set size can be specified in parameter. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="191" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/query.h" bodystart="322" bodyend="339"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Query_14004922547fec06087dc8a63ac484f9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::Query::Query</definition>
+        <argsstring>(Query::op op_, Xapian::Query q, double parameter)</argsstring>
+        <name>Query</name>
+        <param>
+          <type><ref refid="classXapian_1_1Query_17e7b6b8ad0c915c2364578dfaaf6100b" kindref="member">Query::op</ref></type>
+          <declname>op_</declname>
+        </param>
+        <param>
+          <type><ref refid="classXapian_1_1Query" kindref="compound">Xapian::Query</ref></type>
+          <declname>q</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>parameter</declname>
+        </param>
+        <briefdescription>
+<para>Apply the specified operator to a single <ref refid="classXapian_1_1Query" kindref="compound">Xapian::Query</ref> object, with a double parameter. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="204"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Query_127acaeb8ab8a0c111805a0139e3dc35b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::Query::Query</definition>
+        <argsstring>(Query::op op_, Xapian::valueno slot, const std::string &amp;begin, const std::string &amp;end)</argsstring>
+        <name>Query</name>
+        <param>
+          <type><ref refid="classXapian_1_1Query_17e7b6b8ad0c915c2364578dfaaf6100b" kindref="member">Query::op</ref></type>
+          <declname>op_</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceXapian_194a899651fa920c72ffa9635bde630ea" kindref="member">Xapian::valueno</ref></type>
+          <declname>slot</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>begin</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+<para>Construct a value range query on a document value. </para>        </briefdescription>
+        <detaileddescription>
+<para>A value range query matches those documents which have a value stored in the slot given by <emphasis>slot</emphasis> which is in the range specified by <emphasis>begin</emphasis> and <emphasis>end</emphasis> (in lexicographical order), including the endpoints.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>op_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The operator to use for the query. Currently, must be OP_VALUE_RANGE. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>slot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The slot number to get the value from. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>begin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The start of the range. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The end of the range. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="220"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Query_115e26a7bf7de2699377cad9e9448a482" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::Query::Query</definition>
+        <argsstring>(Query::op op_, Xapian::valueno slot, const std::string &amp;value)</argsstring>
+        <name>Query</name>
+        <param>
+          <type><ref refid="classXapian_1_1Query_17e7b6b8ad0c915c2364578dfaaf6100b" kindref="member">Query::op</ref></type>
+          <declname>op_</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceXapian_194a899651fa920c72ffa9635bde630ea" kindref="member">Xapian::valueno</ref></type>
+          <declname>slot</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Construct a value comparison query on a document value. </para>        </briefdescription>
+        <detaileddescription>
+<para>This query matches those documents which have a value stored in the slot given by <emphasis>slot</emphasis> which compares, as specified by the operator, to <emphasis>value</emphasis>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>op_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The operator to use for the query. Currently, must be OP_VALUE_GE or OP_VALUE_LE. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>slot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The slot number to get the value from. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value to compare. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="233"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Query_1670caefccf000a24078c05c39959e5e1" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::Query::Query</definition>
+        <argsstring>(Xapian::PostingSource *external_source)</argsstring>
+        <name>Query</name>
+        <param>
+          <type><ref refid="classXapian_1_1PostingSource" kindref="compound">Xapian::PostingSource</ref> *</type>
+          <declname>external_source</declname>
+        </param>
+        <briefdescription>
+<para>Construct an external source query. </para>        </briefdescription>
+        <detaileddescription>
+<para>An attempt to clone the posting source will be made immediately, so if the posting source supports clone(), the source supplied may be safely deallocated after this call. If the source does not support clone(), the caller must ensure that the posting source remains valid until the <ref refid="classXapian_1_1Query" kindref="compound">Query</ref> is deallocated.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>external_source</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source to use in the query. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="245"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Query_1de144c7f420490da9b48373e80e2c604" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceXapian_172b5a76dd8cfb7b251fe7986e86390cb" kindref="member">Xapian::termcount</ref></type>
+        <definition>Xapian::termcount Xapian::Query::get_length</definition>
+        <argsstring>() const </argsstring>
+        <name>get_length</name>
+        <briefdescription>
+<para>Get the length of the query, used by some ranking formulae. </para>        </briefdescription>
+        <detaileddescription>
+<para>This value is calculated automatically - if you want to override it you can pass a different value to <ref refid="classXapian_1_1Enquire_11148d960120662e5543e2a2b12620318" kindref="member">Enquire::set_query()</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="257"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Query_1e290b52f21e5652067b202b78f8c03db" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classXapian_1_1TermIterator" kindref="compound">TermIterator</ref></type>
+        <definition>TermIterator Xapian::Query::get_terms_begin</definition>
+        <argsstring>() const </argsstring>
+        <name>get_terms_begin</name>
+        <briefdescription>
+<para>Return a <ref refid="classXapian_1_1TermIterator" kindref="compound">Xapian::TermIterator</ref> returning all the terms in the query, in order of termpos. </para>        </briefdescription>
+        <detaileddescription>
+<para>If multiple terms have the same term position, their order is unspecified. Duplicates (same term and termpos) will be removed. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="264"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Query_1c31fa68e27c1dcd54a4bd7b637fec062" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classXapian_1_1TermIterator" kindref="compound">TermIterator</ref></type>
+        <definition>TermIterator Xapian::Query::get_terms_end</definition>
+        <argsstring>() const </argsstring>
+        <name>get_terms_end</name>
+        <briefdescription>
+<para>Return a <ref refid="classXapian_1_1TermIterator" kindref="compound">Xapian::TermIterator</ref> to the end of the list of terms in the query. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="269" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/query.h" bodystart="269" bodyend="271"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Query_17c8bd61280be052e5fabc552d2b20f8c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Xapian::Query::empty</definition>
+        <argsstring>() const </argsstring>
+        <name>empty</name>
+        <briefdescription>
+<para>Test if the query is empty (i.e. </para>        </briefdescription>
+        <detaileddescription>
+<para>was constructed using the default ctor or with an empty iterator ctor). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="276"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Query_1700503062c18424e606d7f906cc7cd12" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Xapian::Query::serialise</definition>
+        <argsstring>() const </argsstring>
+        <name>serialise</name>
+        <briefdescription>
+<para>Serialise query into a string. </para>        </briefdescription>
+        <detaileddescription>
+<para>The query representation may change between <ref refid="namespaceXapian" kindref="compound">Xapian</ref> releases: even between minor versions. However, it is guaranteed not to change unless the remote database protocol has also changed between releases. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="285"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Query_1c9d1e428cdddcf5250f10b814eb4bb30" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Xapian::Query::get_description</definition>
+        <argsstring>() const </argsstring>
+        <name>get_description</name>
+        <briefdescription>
+<para>Return a string describing this object. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="310"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classXapian_1_1Query_16475f2f7396c2fb64fb38929a359b6d4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classXapian_1_1Query" kindref="compound">Query</ref></type>
+        <definition>static Query Xapian::Query::unserialise</definition>
+        <argsstring>(const std::string &amp;s)</argsstring>
+        <name>unserialise</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Unserialise a query from a string produced by <ref refid="classXapian_1_1Query_1700503062c18424e606d7f906cc7cd12" kindref="member">serialise()</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method will fail if the query contains any external <ref refid="classXapian_1_1PostingSource" kindref="compound">PostingSource</ref> leaf nodes.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The string representing the serialised query. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="294"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Query_1d582d5cd0bfd2719097708ed374b41f9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classXapian_1_1Query" kindref="compound">Query</ref></type>
+        <definition>static Query Xapian::Query::unserialise</definition>
+        <argsstring>(const std::string &amp;s, const Registry &amp;registry)</argsstring>
+        <name>unserialise</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classXapian_1_1Registry" kindref="compound">Registry</ref> &amp;</type>
+          <declname>registry</declname>
+        </param>
+        <briefdescription>
+<para>Unserialise a query from a string produced by <ref refid="classXapian_1_1Query_1700503062c18424e606d7f906cc7cd12" kindref="member">serialise()</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>The supplied registry will be used to attempt to unserialise any external <ref refid="classXapian_1_1PostingSource" kindref="compound">PostingSource</ref> leaf nodes. This method will fail if the query contains any external <ref refid="classXapian_1_1PostingSource" kindref="compound">PostingSource</ref> leaf nodes which are not registered in the registry.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The string representing the serialised query. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>registry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classXapian_1_1Registry" kindref="compound">Xapian::Registry</ref> to use. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="307"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classXapian_1_1Query_1a8f706f8c2301d317700ca3d7ce916b7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::Query::add_subquery</definition>
+        <argsstring>(const Query &amp;subq)</argsstring>
+        <name>add_subquery</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1Query" kindref="compound">Query</ref> &amp;</type>
+          <declname>subq</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="313"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Query_12bbf00cbe4845b9ad841cefa437ea2e4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::Query::add_subquery</definition>
+        <argsstring>(const Query *subq)</argsstring>
+        <name>add_subquery</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1Query" kindref="compound">Query</ref> *</type>
+          <declname>subq</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="314"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Query_1760279c24238c5fb88f6415700cc9238" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::Query::add_subquery</definition>
+        <argsstring>(const std::string &amp;tname)</argsstring>
+        <name>add_subquery</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>tname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="315"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Query_1758ffbb0a293baf0762c8257390d157f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::Query::start_construction</definition>
+        <argsstring>(Query::op op_, Xapian::termcount parameter)</argsstring>
+        <name>start_construction</name>
+        <param>
+          <type><ref refid="classXapian_1_1Query_17e7b6b8ad0c915c2364578dfaaf6100b" kindref="member">Query::op</ref></type>
+          <declname>op_</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceXapian_172b5a76dd8cfb7b251fe7986e86390cb" kindref="member">Xapian::termcount</ref></type>
+          <declname>parameter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="316"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Query_149f5754eca202d31cdc0a759309f510a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::Query::end_construction</definition>
+        <argsstring>()</argsstring>
+        <name>end_construction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="317"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Query_1fb8ec1ae83bbeac68d1d0d2fb4a03c42" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::Query::abort_construction</definition>
+        <argsstring>()</argsstring>
+        <name>abort_construction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="318"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class representing a query. </para>    </briefdescription>
+    <detaileddescription>
+<para>Queries are represented as a tree of objects. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="603">
+        <label>Xapian::Query</label>
+        <link refid="classXapian_1_1Query"/>
+        <childnode refid="603" relation="usage">
+          <edgelabel>MatchNothing</edgelabel>
+          <edgelabel>MatchAll</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="53" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/query.h" bodystart="53" bodyend="319"/>
+    <listofallmembers>
+      <member refid="classXapian_1_1Query_1fb8ec1ae83bbeac68d1d0d2fb4a03c42" prot="private" virt="non-virtual"><scope>Xapian::Query</scope><name>abort_construction</name></member>
+      <member refid="classXapian_1_1Query_1a8f706f8c2301d317700ca3d7ce916b7" prot="private" virt="non-virtual"><scope>Xapian::Query</scope><name>add_subquery</name></member>
+      <member refid="classXapian_1_1Query_12bbf00cbe4845b9ad841cefa437ea2e4" prot="private" virt="non-virtual"><scope>Xapian::Query</scope><name>add_subquery</name></member>
+      <member refid="classXapian_1_1Query_1760279c24238c5fb88f6415700cc9238" prot="private" virt="non-virtual"><scope>Xapian::Query</scope><name>add_subquery</name></member>
+      <member refid="classXapian_1_1Query_17c8bd61280be052e5fabc552d2b20f8c" prot="public" virt="non-virtual"><scope>Xapian::Query</scope><name>empty</name></member>
+      <member refid="classXapian_1_1Query_149f5754eca202d31cdc0a759309f510a" prot="private" virt="non-virtual"><scope>Xapian::Query</scope><name>end_construction</name></member>
+      <member refid="classXapian_1_1Query_1c9d1e428cdddcf5250f10b814eb4bb30" prot="public" virt="non-virtual"><scope>Xapian::Query</scope><name>get_description</name></member>
+      <member refid="classXapian_1_1Query_1de144c7f420490da9b48373e80e2c604" prot="public" virt="non-virtual"><scope>Xapian::Query</scope><name>get_length</name></member>
+      <member refid="classXapian_1_1Query_1e290b52f21e5652067b202b78f8c03db" prot="public" virt="non-virtual"><scope>Xapian::Query</scope><name>get_terms_begin</name></member>
+      <member refid="classXapian_1_1Query_1c31fa68e27c1dcd54a4bd7b637fec062" prot="public" virt="non-virtual"><scope>Xapian::Query</scope><name>get_terms_end</name></member>
+      <member refid="classXapian_1_1Query_1e8d7cc11fff6ad700c7c351e32e2cdeb" prot="private" virt="non-virtual"><scope>Xapian::Query</scope><name>internal</name></member>
+      <member refid="classXapian_1_1Query_19e30b80314359e5ddd7ca4ffa84b6edd" prot="public" virt="non-virtual"><scope>Xapian::Query</scope><name>MatchAll</name></member>
+      <member refid="classXapian_1_1Query_15d2584f441d85a126004699479df0350" prot="public" virt="non-virtual"><scope>Xapian::Query</scope><name>MatchNothing</name></member>
+      <member refid="classXapian_1_1Query_17e7b6b8ad0c915c2364578dfaaf6100b" prot="public" virt="non-virtual"><scope>Xapian::Query</scope><name>op</name></member>
+      <member refid="classXapian_1_1Query_17e7b6b8ad0c915c2364578dfaaf6100bb99aad2dfc85eccc56163bc65eb0fdda" prot="public" virt="non-virtual"><scope>Xapian::Query</scope><name>OP_AND</name></member>
+      <member refid="classXapian_1_1Query_17e7b6b8ad0c915c2364578dfaaf6100b5990dfefc0a0a63861630b743f507356" prot="public" virt="non-virtual"><scope>Xapian::Query</scope><name>OP_AND_MAYBE</name></member>
+      <member refid="classXapian_1_1Query_17e7b6b8ad0c915c2364578dfaaf6100bda56688a72af48cc1cee70a5b36f2a94" prot="public" virt="non-virtual"><scope>Xapian::Query</scope><name>OP_AND_NOT</name></member>
+      <member refid="classXapian_1_1Query_17e7b6b8ad0c915c2364578dfaaf6100b9a010fd66a56d9242d6dfae2bae0850b" prot="public" virt="non-virtual"><scope>Xapian::Query</scope><name>OP_ELITE_SET</name></member>
+      <member refid="classXapian_1_1Query_17e7b6b8ad0c915c2364578dfaaf6100bc657f344bf26128ab7bf8fe25410b102" prot="public" virt="non-virtual"><scope>Xapian::Query</scope><name>OP_FILTER</name></member>
+      <member refid="classXapian_1_1Query_17e7b6b8ad0c915c2364578dfaaf6100b7a78c8353d5d06d3a38c1899ae762b21" prot="public" virt="non-virtual"><scope>Xapian::Query</scope><name>OP_NEAR</name></member>
+      <member refid="classXapian_1_1Query_17e7b6b8ad0c915c2364578dfaaf6100bc50e54f3dd9dc59dab7daa2c50cf631b" prot="public" virt="non-virtual"><scope>Xapian::Query</scope><name>OP_OR</name></member>
+      <member refid="classXapian_1_1Query_17e7b6b8ad0c915c2364578dfaaf6100bce19bf1e7b2d8aa393aabdd061a0866e" prot="public" virt="non-virtual"><scope>Xapian::Query</scope><name>OP_PHRASE</name></member>
+      <member refid="classXapian_1_1Query_17e7b6b8ad0c915c2364578dfaaf6100b0fecaeeb3caa94b1a578fd7953cc60ee" prot="public" virt="non-virtual"><scope>Xapian::Query</scope><name>OP_SCALE_WEIGHT</name></member>
+      <member refid="classXapian_1_1Query_17e7b6b8ad0c915c2364578dfaaf6100bd8456bafb560c984aff9b4d90a00d36e" prot="public" virt="non-virtual"><scope>Xapian::Query</scope><name>OP_SYNONYM</name></member>
+      <member refid="classXapian_1_1Query_17e7b6b8ad0c915c2364578dfaaf6100bf914b109cfe787be77e7c92c99626f01" prot="public" virt="non-virtual"><scope>Xapian::Query</scope><name>OP_VALUE_GE</name></member>
+      <member refid="classXapian_1_1Query_17e7b6b8ad0c915c2364578dfaaf6100bd6cede66b463ceb5f689979e1b6a8a55" prot="public" virt="non-virtual"><scope>Xapian::Query</scope><name>OP_VALUE_LE</name></member>
+      <member refid="classXapian_1_1Query_17e7b6b8ad0c915c2364578dfaaf6100b25ad30ce2b6661570ffacd8f910b6d34" prot="public" virt="non-virtual"><scope>Xapian::Query</scope><name>OP_VALUE_RANGE</name></member>
+      <member refid="classXapian_1_1Query_17e7b6b8ad0c915c2364578dfaaf6100b3f186e28a8cc2a5c4cb99745dda5cedf" prot="public" virt="non-virtual"><scope>Xapian::Query</scope><name>OP_XOR</name></member>
+      <member refid="classXapian_1_1Query_1edfe00f53f010c76c290a0a14873c7a9" prot="public" virt="non-virtual"><scope>Xapian::Query</scope><name>operator=</name></member>
+      <member refid="classXapian_1_1Query_1a95690337034e432c8e5e82bdfff80ea" prot="public" virt="non-virtual"><scope>Xapian::Query</scope><name>Query</name></member>
+      <member refid="classXapian_1_1Query_1836b588120b705758f2e25b67c781b4c" prot="public" virt="non-virtual"><scope>Xapian::Query</scope><name>Query</name></member>
+      <member refid="classXapian_1_1Query_1f396e213df0d8bcffa473a75ebf228d6" prot="public" virt="non-virtual"><scope>Xapian::Query</scope><name>Query</name></member>
+      <member refid="classXapian_1_1Query_1cd51f1304501311c8dde31dc54c36048" prot="public" virt="non-virtual"><scope>Xapian::Query</scope><name>Query</name></member>
+      <member refid="classXapian_1_1Query_11e5e506b8659c9c1be88837dcf643163" prot="public" virt="non-virtual"><scope>Xapian::Query</scope><name>Query</name></member>
+      <member refid="classXapian_1_1Query_1a2edfc5e6ae285afb9fde26d096c5ed8" prot="public" virt="non-virtual"><scope>Xapian::Query</scope><name>Query</name></member>
+      <member refid="classXapian_1_1Query_14004922547fec06087dc8a63ac484f9b" prot="public" virt="non-virtual"><scope>Xapian::Query</scope><name>Query</name></member>
+      <member refid="classXapian_1_1Query_127acaeb8ab8a0c111805a0139e3dc35b" prot="public" virt="non-virtual"><scope>Xapian::Query</scope><name>Query</name></member>
+      <member refid="classXapian_1_1Query_115e26a7bf7de2699377cad9e9448a482" prot="public" virt="non-virtual"><scope>Xapian::Query</scope><name>Query</name></member>
+      <member refid="classXapian_1_1Query_1670caefccf000a24078c05c39959e5e1" prot="public" virt="non-virtual"><scope>Xapian::Query</scope><name>Query</name></member>
+      <member refid="classXapian_1_1Query_1700503062c18424e606d7f906cc7cd12" prot="public" virt="non-virtual"><scope>Xapian::Query</scope><name>serialise</name></member>
+      <member refid="classXapian_1_1Query_1758ffbb0a293baf0762c8257390d157f" prot="private" virt="non-virtual"><scope>Xapian::Query</scope><name>start_construction</name></member>
+      <member refid="classXapian_1_1Query_16475f2f7396c2fb64fb38929a359b6d4" prot="public" virt="non-virtual"><scope>Xapian::Query</scope><name>unserialise</name></member>
+      <member refid="classXapian_1_1Query_1d582d5cd0bfd2719097708ed374b41f9" prot="public" virt="non-virtual"><scope>Xapian::Query</scope><name>unserialise</name></member>
+      <member refid="classXapian_1_1Query_1420644d38cde25cef056d18ce7fe1c31" prot="public" virt="non-virtual"><scope>Xapian::Query</scope><name>~Query</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

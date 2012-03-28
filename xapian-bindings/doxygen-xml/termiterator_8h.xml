@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="termiterator_8h" kind="file">
+    <compoundname>termiterator.h</compoundname>
+    <includes local="no">iterator</includes>
+    <includes local="no">string</includes>
+    <includes local="no">xapian/derefwrapper.h</includes>
+    <includes refid="positioniterator_8h" local="no">xapian/positioniterator.h</includes>
+    <includes refid="types_8h" local="no">xapian/types.h</includes>
+    <includes local="no">xapian/visibility.h</includes>
+    <includedby refid="database_8h" local="no">xapian/database.h</includedby>
+    <includedby refid="document_8h" local="no">xapian/document.h</includedby>
+    <includedby refid="enquire_8h" local="no">xapian/enquire.h</includedby>
+    <includedby refid="xapian_8h" local="no">xapian.h</includedby>
+    <includedby refid="matchspy_8h" local="no">xapian/matchspy.h</includedby>
+    <includedby refid="query_8h" local="no">xapian/query.h</includedby>
+    <includedby refid="queryparser_8h" local="no">xapian/queryparser.h</includedby>
+    <incdepgraph>
+      <node id="287">
+        <label>iterator</label>
+      </node>
+      <node id="289">
+        <label>xapian/derefwrapper.h</label>
+      </node>
+      <node id="293">
+        <label>xapian/visibility.h</label>
+      </node>
+      <node id="288">
+        <label>string</label>
+      </node>
+      <node id="292">
+        <label>xapian/deprecated.h</label>
+      </node>
+      <node id="291">
+        <label>xapian/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="292" relation="include">
+        </childnode>
+      </node>
+      <node id="290">
+        <label>xapian/positioniterator.h</label>
+        <link refid="positioniterator_8h"/>
+        <childnode refid="287" relation="include">
+        </childnode>
+        <childnode refid="288" relation="include">
+        </childnode>
+        <childnode refid="289" relation="include">
+        </childnode>
+        <childnode refid="291" relation="include">
+        </childnode>
+        <childnode refid="293" relation="include">
+        </childnode>
+      </node>
+      <node id="286">
+        <label>xapian/termiterator.h</label>
+        <link refid="termiterator.h"/>
+        <childnode refid="287" relation="include">
+        </childnode>
+        <childnode refid="288" relation="include">
+        </childnode>
+        <childnode refid="289" relation="include">
+        </childnode>
+        <childnode refid="290" relation="include">
+        </childnode>
+        <childnode refid="291" relation="include">
+        </childnode>
+        <childnode refid="293" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="298">
+        <label>xapian/postingsource.h</label>
+        <link refid="postingsource_8h"/>
+        <childnode refid="296" relation="include">
+        </childnode>
+      </node>
+      <node id="304">
+        <label>xapian/queryparser.h</label>
+        <link refid="queryparser_8h"/>
+        <childnode refid="296" relation="include">
+        </childnode>
+      </node>
+      <node id="301">
+        <label>xapian/valuesetmatchdecider.h</label>
+        <link refid="valuesetmatchdecider_8h"/>
+        <childnode refid="296" relation="include">
+        </childnode>
+      </node>
+      <node id="300">
+        <label>xapian/enquire.h</label>
+        <link refid="enquire_8h"/>
+        <childnode refid="296" relation="include">
+        </childnode>
+        <childnode refid="301" relation="include">
+        </childnode>
+      </node>
+      <node id="297">
+        <label>xapian/letor.h</label>
+        <link refid="letor_8h"/>
+      </node>
+      <node id="294">
+        <label>xapian/termiterator.h</label>
+        <link refid="termiterator.h"/>
+        <childnode refid="295" relation="include">
+        </childnode>
+        <childnode refid="299" relation="include">
+        </childnode>
+        <childnode refid="300" relation="include">
+        </childnode>
+        <childnode refid="296" relation="include">
+        </childnode>
+        <childnode refid="302" relation="include">
+        </childnode>
+        <childnode refid="303" relation="include">
+        </childnode>
+        <childnode refid="304" relation="include">
+        </childnode>
+      </node>
+      <node id="299">
+        <label>xapian/document.h</label>
+        <link refid="document_8h"/>
+        <childnode refid="296" relation="include">
+        </childnode>
+      </node>
+      <node id="295">
+        <label>xapian/database.h</label>
+        <link refid="database_8h"/>
+        <childnode refid="296" relation="include">
+        </childnode>
+        <childnode refid="298" relation="include">
+        </childnode>
+      </node>
+      <node id="303">
+        <label>xapian/query.h</label>
+        <link refid="query_8h"/>
+        <childnode refid="296" relation="include">
+        </childnode>
+        <childnode refid="304" relation="include">
+        </childnode>
+      </node>
+      <node id="296">
+        <label>xapian.h</label>
+        <link refid="xapian_8h"/>
+        <childnode refid="297" relation="include">
+        </childnode>
+      </node>
+      <node id="302">
+        <label>xapian/matchspy.h</label>
+        <link refid="matchspy_8h"/>
+        <childnode refid="296" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classXapian_1_1TermIterator" prot="public">Xapian::TermIterator</innerclass>
+    <innernamespace refid="namespaceXapian">Xapian</innernamespace>
+    <briefdescription>
+<para>Class for iterating over a list of terms. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/termiterator.h"/>
+  </compounddef>
+</doxygen>

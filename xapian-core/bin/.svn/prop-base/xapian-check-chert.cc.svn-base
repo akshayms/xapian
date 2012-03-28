@@ -1,0 +1,14 @@
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+K 13
+svn:mergeinfo
+V 142
+/branches/replication_fixes/xapian-core/bin/xapian-check-chert.cc:14149-14152
+/trunk/xapian-core/bin/xapian-check-chert.cc:2-13779,15485-16044
+END

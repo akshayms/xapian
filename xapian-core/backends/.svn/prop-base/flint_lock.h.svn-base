@@ -1,0 +1,6 @@
+K 13
+svn:mergeinfo
+V 134
+/branches/replication_fixes/xapian-core/backends/flint_lock.h:14149-14152
+/trunk/xapian-core/backends/flint_lock.h:2-13703,15485-16044
+END

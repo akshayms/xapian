@@ -1,0 +1,11 @@
+K 13
+svn:externals
+V 1
+
+
+K 13
+svn:mergeinfo
+V 103
+/branches/gsoc2009-kosei/xapian-maintainer-tools:12854-14941
+/trunk/xapian-maintainer-tools:15485-16044
+END

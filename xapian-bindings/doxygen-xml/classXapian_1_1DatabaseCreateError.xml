@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="classXapian_1_1DatabaseCreateError" kind="class" prot="public">
+    <compoundname>Xapian::DatabaseCreateError</compoundname>
+    <basecompoundref refid="classXapian_1_1DatabaseError" prot="public" virt="non-virtual">Xapian::DatabaseError</basecompoundref>
+    <includes local="no">error.h</includes>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classXapian_1_1DatabaseCreateError_1f07efe1c9c4daef726d5ea27ee3e54e7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::DatabaseCreateError::DatabaseCreateError</definition>
+        <argsstring>(const std::string &amp;msg_, const std::string &amp;context_, const char *error_string_)</argsstring>
+        <name>DatabaseCreateError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>context_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>error_string_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="367" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="366" bodyend="367"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1DatabaseCreateError_17838f217735caf59cfb1446a7aeab381" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::DatabaseCreateError::DatabaseCreateError</definition>
+        <argsstring>(const std::string &amp;msg_, const std::string &amp;context_, const char *type_, const char *error_string_)</argsstring>
+        <name>DatabaseCreateError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>context_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>type_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>error_string_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="379" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="378" bodyend="379"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1DatabaseCreateError_10c6b2333564192a6b206599af02ce2e8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::DatabaseCreateError::DatabaseCreateError</definition>
+        <argsstring>(const std::string &amp;msg_, const std::string &amp;context_, const char *type_, int errno_)</argsstring>
+        <name>DatabaseCreateError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>context_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>type_</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>errno_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="385" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="384" bodyend="385"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classXapian_1_1DatabaseCreateError_1193cdef32461edb1b6f320c7284b5ae3" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::DatabaseCreateError::DatabaseCreateError</definition>
+        <argsstring>(const std::string &amp;msg_, const std::string &amp;context_=std::string(), int errno_=0)</argsstring>
+        <name>DatabaseCreateError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>context_</declname>
+          <defval>std::string()</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>errno_</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>General purpose constructor which allows setting errno. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="370" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="369" bodyend="370"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1DatabaseCreateError_1867149fefbac0ed4fff595834acd9dda" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::DatabaseCreateError::DatabaseCreateError</definition>
+        <argsstring>(const std::string &amp;msg_, int errno_)</argsstring>
+        <name>DatabaseCreateError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>errno_</declname>
+        </param>
+        <briefdescription>
+<para>Construct from message and errno value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="373" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="372" bodyend="373"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classXapian_1_1DatabaseCreateError" kindref="compound">DatabaseCreateError</ref> indicates a failure to create a database. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="319">
+        <label>Xapian::DatabaseError</label>
+        <link refid="classXapian_1_1DatabaseError"/>
+        <childnode refid="320" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="321">
+        <label>Xapian::Error</label>
+        <link refid="classXapian_1_1Error"/>
+      </node>
+      <node id="318">
+        <label>Xapian::DatabaseCreateError</label>
+        <link refid="classXapian_1_1DatabaseCreateError"/>
+        <childnode refid="319" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="320">
+        <label>Xapian::RuntimeError</label>
+        <link refid="classXapian_1_1RuntimeError"/>
+        <childnode refid="321" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="323">
+        <label>Xapian::DatabaseError</label>
+        <link refid="classXapian_1_1DatabaseError"/>
+        <childnode refid="324" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="325">
+        <label>Xapian::Error</label>
+        <link refid="classXapian_1_1Error"/>
+      </node>
+      <node id="322">
+        <label>Xapian::DatabaseCreateError</label>
+        <link refid="classXapian_1_1DatabaseCreateError"/>
+        <childnode refid="323" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="324">
+        <label>Xapian::RuntimeError</label>
+        <link refid="classXapian_1_1RuntimeError"/>
+        <childnode refid="325" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="359" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="359" bodyend="386"/>
+    <listofallmembers>
+      <member refid="classXapian_1_1DatabaseCreateError_1f07efe1c9c4daef726d5ea27ee3e54e7" prot="private" virt="non-virtual"><scope>Xapian::DatabaseCreateError</scope><name>DatabaseCreateError</name></member>
+      <member refid="classXapian_1_1DatabaseCreateError_1193cdef32461edb1b6f320c7284b5ae3" prot="public" virt="non-virtual"><scope>Xapian::DatabaseCreateError</scope><name>DatabaseCreateError</name></member>
+      <member refid="classXapian_1_1DatabaseCreateError_1867149fefbac0ed4fff595834acd9dda" prot="public" virt="non-virtual"><scope>Xapian::DatabaseCreateError</scope><name>DatabaseCreateError</name></member>
+      <member refid="classXapian_1_1DatabaseCreateError_17838f217735caf59cfb1446a7aeab381" prot="private" virt="non-virtual"><scope>Xapian::DatabaseCreateError</scope><name>DatabaseCreateError</name></member>
+      <member refid="classXapian_1_1DatabaseCreateError_10c6b2333564192a6b206599af02ce2e8" prot="private" virt="non-virtual"><scope>Xapian::DatabaseCreateError</scope><name>DatabaseCreateError</name></member>
+      <member refid="classXapian_1_1DatabaseError_19dcfefb4abfcb9bbc1cae90d28e9e021" prot="public" virt="non-virtual"><scope>Xapian::DatabaseCreateError</scope><name>DatabaseError</name></member>
+      <member refid="classXapian_1_1DatabaseError_19ec4456656d91a738c66540e3bb7f67f" prot="public" virt="non-virtual"><scope>Xapian::DatabaseCreateError</scope><name>DatabaseError</name></member>
+      <member refid="classXapian_1_1Error_190c683965555b4bc86b08e8667170e44" prot="public" virt="non-virtual"><scope>Xapian::DatabaseCreateError</scope><name>get_context</name></member>
+      <member refid="classXapian_1_1Error_1bd64e380eb6d864dc907ee62c1f58a74" prot="public" virt="non-virtual"><scope>Xapian::DatabaseCreateError</scope><name>get_description</name></member>
+      <member refid="classXapian_1_1Error_16f94a579f8e176f85c6fb036592dab61" prot="public" virt="non-virtual"><scope>Xapian::DatabaseCreateError</scope><name>get_error_string</name></member>
+      <member refid="classXapian_1_1Error_1ea05df48ea71dfd045da28ab984cdaa3" prot="public" virt="non-virtual"><scope>Xapian::DatabaseCreateError</scope><name>get_msg</name></member>
+      <member refid="classXapian_1_1Error_1136945e703317bdf6e18d8cf511a5bfb" prot="public" virt="non-virtual"><scope>Xapian::DatabaseCreateError</scope><name>get_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

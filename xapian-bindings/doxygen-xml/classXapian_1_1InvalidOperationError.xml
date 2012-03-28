@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="classXapian_1_1InvalidOperationError" kind="class" prot="public">
+    <compoundname>Xapian::InvalidOperationError</compoundname>
+    <basecompoundref refid="classXapian_1_1LogicError" prot="public" virt="non-virtual">Xapian::LogicError</basecompoundref>
+    <includes local="no">error.h</includes>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classXapian_1_1InvalidOperationError_132aa486bd00353b2d9912d959f215f0a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::InvalidOperationError::InvalidOperationError</definition>
+        <argsstring>(const std::string &amp;msg_, const std::string &amp;context_, const char *error_string_)</argsstring>
+        <name>InvalidOperationError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>context_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>error_string_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="247" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="246" bodyend="247"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1InvalidOperationError_1170ef1ebb856e80a266337f91ce6c452" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::InvalidOperationError::InvalidOperationError</definition>
+        <argsstring>(const std::string &amp;msg_, const std::string &amp;context_, const char *type_, const char *error_string_)</argsstring>
+        <name>InvalidOperationError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>context_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>type_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>error_string_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="259" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="258" bodyend="259"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1InvalidOperationError_1d1afcb1378f1573588b74b8a50bbceb9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::InvalidOperationError::InvalidOperationError</definition>
+        <argsstring>(const std::string &amp;msg_, const std::string &amp;context_, const char *type_, int errno_)</argsstring>
+        <name>InvalidOperationError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>context_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>type_</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>errno_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="265" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="264" bodyend="265"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classXapian_1_1InvalidOperationError_14a7863e1cdcd90e3045e9d6711a911e1" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::InvalidOperationError::InvalidOperationError</definition>
+        <argsstring>(const std::string &amp;msg_, const std::string &amp;context_=std::string(), int errno_=0)</argsstring>
+        <name>InvalidOperationError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>context_</declname>
+          <defval>std::string()</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>errno_</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>General purpose constructor which allows setting errno. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="250" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="249" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1InvalidOperationError_1232750e076f1e96a2a02d29fc3d906f2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::InvalidOperationError::InvalidOperationError</definition>
+        <argsstring>(const std::string &amp;msg_, int errno_)</argsstring>
+        <name>InvalidOperationError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>errno_</declname>
+        </param>
+        <briefdescription>
+<para>Construct from message and errno value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="253" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="252" bodyend="253"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classXapian_1_1InvalidOperationError" kindref="compound">InvalidOperationError</ref> indicates the API was used in an invalid way. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="485">
+        <label>Xapian::LogicError</label>
+        <link refid="classXapian_1_1LogicError"/>
+        <childnode refid="486" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="486">
+        <label>Xapian::Error</label>
+        <link refid="classXapian_1_1Error"/>
+      </node>
+      <node id="484">
+        <label>Xapian::InvalidOperationError</label>
+        <link refid="classXapian_1_1InvalidOperationError"/>
+        <childnode refid="485" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="488">
+        <label>Xapian::LogicError</label>
+        <link refid="classXapian_1_1LogicError"/>
+        <childnode refid="489" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="489">
+        <label>Xapian::Error</label>
+        <link refid="classXapian_1_1Error"/>
+      </node>
+      <node id="487">
+        <label>Xapian::InvalidOperationError</label>
+        <link refid="classXapian_1_1InvalidOperationError"/>
+        <childnode refid="488" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="239" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="239" bodyend="266"/>
+    <listofallmembers>
+      <member refid="classXapian_1_1Error_190c683965555b4bc86b08e8667170e44" prot="public" virt="non-virtual"><scope>Xapian::InvalidOperationError</scope><name>get_context</name></member>
+      <member refid="classXapian_1_1Error_1bd64e380eb6d864dc907ee62c1f58a74" prot="public" virt="non-virtual"><scope>Xapian::InvalidOperationError</scope><name>get_description</name></member>
+      <member refid="classXapian_1_1Error_16f94a579f8e176f85c6fb036592dab61" prot="public" virt="non-virtual"><scope>Xapian::InvalidOperationError</scope><name>get_error_string</name></member>
+      <member refid="classXapian_1_1Error_1ea05df48ea71dfd045da28ab984cdaa3" prot="public" virt="non-virtual"><scope>Xapian::InvalidOperationError</scope><name>get_msg</name></member>
+      <member refid="classXapian_1_1Error_1136945e703317bdf6e18d8cf511a5bfb" prot="public" virt="non-virtual"><scope>Xapian::InvalidOperationError</scope><name>get_type</name></member>
+      <member refid="classXapian_1_1InvalidOperationError_132aa486bd00353b2d9912d959f215f0a" prot="private" virt="non-virtual"><scope>Xapian::InvalidOperationError</scope><name>InvalidOperationError</name></member>
+      <member refid="classXapian_1_1InvalidOperationError_14a7863e1cdcd90e3045e9d6711a911e1" prot="public" virt="non-virtual"><scope>Xapian::InvalidOperationError</scope><name>InvalidOperationError</name></member>
+      <member refid="classXapian_1_1InvalidOperationError_1232750e076f1e96a2a02d29fc3d906f2" prot="public" virt="non-virtual"><scope>Xapian::InvalidOperationError</scope><name>InvalidOperationError</name></member>
+      <member refid="classXapian_1_1InvalidOperationError_1170ef1ebb856e80a266337f91ce6c452" prot="private" virt="non-virtual"><scope>Xapian::InvalidOperationError</scope><name>InvalidOperationError</name></member>
+      <member refid="classXapian_1_1InvalidOperationError_1d1afcb1378f1573588b74b8a50bbceb9" prot="private" virt="non-virtual"><scope>Xapian::InvalidOperationError</scope><name>InvalidOperationError</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

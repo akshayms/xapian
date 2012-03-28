@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="classXapian_1_1ExpandDeciderFilterTerms" kind="class" prot="public">
+    <compoundname>Xapian::ExpandDeciderFilterTerms</compoundname>
+    <basecompoundref refid="classXapian_1_1ExpandDecider" prot="public" virt="non-virtual">Xapian::ExpandDecider</basecompoundref>
+    <includes local="no">expanddecider.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classXapian_1_1ExpandDeciderFilterTerms_1a123097f2d608aba5c2d21225a8ca7c3" prot="private" static="no" mutable="no">
+        <type>std::set&lt; std::string &gt;</type>
+        <definition>std::set&lt;std::string&gt; Xapian::ExpandDeciderFilterTerms::rejects</definition>
+        <argsstring></argsstring>
+        <name>rejects</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/expanddecider.h" line="71" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/expanddecider.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classXapian_1_1ExpandDeciderFilterTerms_1bd6e245dbfd62f3f6f0594c47e19806b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Iterator</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>Xapian::ExpandDeciderFilterTerms::ExpandDeciderFilterTerms</definition>
+        <argsstring>(Iterator reject_begin, Iterator reject_end)</argsstring>
+        <name>ExpandDeciderFilterTerms</name>
+        <param>
+          <type>Iterator</type>
+          <declname>reject_begin</declname>
+        </param>
+        <param>
+          <type>Iterator</type>
+          <declname>reject_end</declname>
+        </param>
+        <briefdescription>
+<para>The two iterators specify a list of terms to be rejected. </para>        </briefdescription>
+        <detaileddescription>
+<para><emphasis>reject_begin</emphasis> and <emphasis>reject_end</emphasis> can be any input_iterator type which returns std::string or char * (e.g. <ref refid="classXapian_1_1TermIterator" kindref="compound">TermIterator</ref> or char **). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/expanddecider.h" line="81" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/expanddecider.h" bodystart="80" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1ExpandDeciderFilterTerms_1afc04e9e1692a3985834ef5b9b37f436" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool Xapian::ExpandDeciderFilterTerms::operator()</definition>
+        <argsstring>(const std::string &amp;term) const </argsstring>
+        <name>operator()</name>
+        <reimplements refid="classXapian_1_1ExpandDecider_16ee544877bb51b85da4536eb8abd1cf8">operator()</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>term</declname>
+        </param>
+        <briefdescription>
+<para>Do we want this term in the <ref refid="classXapian_1_1ESet" kindref="compound">ESet</ref>? </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/expanddecider.h" line="83"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classXapian_1_1ExpandDecider" kindref="compound">ExpandDecider</ref> subclass which rejects terms in a specified list. </para>    </briefdescription>
+    <detaileddescription>
+<para><ref refid="classXapian_1_1ExpandDeciderFilterTerms" kindref="compound">ExpandDeciderFilterTerms</ref> provides an easy way to filter out terms from a fixed list when generating an <ref refid="classXapian_1_1ESet" kindref="compound">ESet</ref>. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="444">
+        <label>Xapian::ExpandDecider</label>
+        <link refid="classXapian_1_1ExpandDecider"/>
+      </node>
+      <node id="443">
+        <label>Xapian::ExpandDeciderFilterTerms</label>
+        <link refid="classXapian_1_1ExpandDeciderFilterTerms"/>
+        <childnode refid="444" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="446">
+        <label>Xapian::ExpandDecider</label>
+        <link refid="classXapian_1_1ExpandDecider"/>
+      </node>
+      <node id="445">
+        <label>Xapian::ExpandDeciderFilterTerms</label>
+        <link refid="classXapian_1_1ExpandDeciderFilterTerms"/>
+        <childnode refid="446" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/expanddecider.h" line="70" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/expanddecider.h" bodystart="70" bodyend="84"/>
+    <listofallmembers>
+      <member refid="classXapian_1_1ExpandDeciderFilterTerms_1bd6e245dbfd62f3f6f0594c47e19806b" prot="public" virt="non-virtual"><scope>Xapian::ExpandDeciderFilterTerms</scope><name>ExpandDeciderFilterTerms</name></member>
+      <member refid="classXapian_1_1ExpandDeciderFilterTerms_1afc04e9e1692a3985834ef5b9b37f436" prot="public" virt="virtual"><scope>Xapian::ExpandDeciderFilterTerms</scope><name>operator()</name></member>
+      <member refid="classXapian_1_1ExpandDeciderFilterTerms_1a123097f2d608aba5c2d21225a8ca7c3" prot="private" virt="non-virtual"><scope>Xapian::ExpandDeciderFilterTerms</scope><name>rejects</name></member>
+      <member refid="classXapian_1_1ExpandDecider_1c0a1002daa165553770b71abf23348be" prot="public" virt="virtual"><scope>Xapian::ExpandDeciderFilterTerms</scope><name>~ExpandDecider</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

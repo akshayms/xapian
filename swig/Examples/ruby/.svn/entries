@@ -1,0 +1,165 @@
+10
+
+dir
+12767
+svn://svn.tartarus.org/swig/trunk/Examples/ruby
+svn://svn.tartarus.org/swig
+
+
+
+2010-02-13T17:12:15.030835Z
+11863
+wsfulton
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+cce2a4f7-dc27-40e0-b75d-b3f4d8458e25
+
+functor
+dir
+
+pointer
+dir
+
+java
+dir
+
+funcptr
+dir
+
+exception_class
+dir
+
+free_function
+dir
+
+check.list
+file
+
+
+
+
+2012-03-21T13:02:41.453786Z
+329080b3c8bb12276f9fa81eace31f5c
+2007-08-09T23:47:13.829830Z
+9887
+wsfulton
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+230
+
+multimap
+dir
+
+simple
+dir
+
+operator
+dir
+
+reference
+dir
+
+mark_function
+dir
+
+hashargs
+dir
+
+funcptr2
+dir
+
+enum
+dir
+
+import_template
+dir
+
+class
+dir
+
+variables
+dir
+
+overloading
+dir
+
+import
+dir
+
+index.html
+file
+
+
+
+
+2012-03-21T13:02:41.453786Z
+1be53227317a2386bde41187fa4b0c59
+2007-10-17T21:54:31.905388Z
+10006
+wsfulton
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2515
+
+template
+dir
+
+constants
+dir
+
+std_vector
+dir
+
+value
+dir
+

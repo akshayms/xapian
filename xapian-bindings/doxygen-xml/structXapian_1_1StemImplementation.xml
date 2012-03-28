@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="structXapian_1_1StemImplementation" kind="struct" prot="public">
+    <compoundname>Xapian::StemImplementation</compoundname>
+    <includes local="no">stem.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structXapian_1_1StemImplementation_1afe96075d1fcff69fdc8f987cd24be23" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual Xapian::StemImplementation::~StemImplementation</definition>
+        <argsstring>()</argsstring>
+        <name>~StemImplementation</name>
+        <briefdescription>
+<para>Virtual destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/stem.h" line="37"/>
+      </memberdef>
+      <memberdef kind="function" id="structXapian_1_1StemImplementation_1de7e15c8638753eec954744bc333881f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::string</type>
+        <definition>virtual std::string Xapian::StemImplementation::operator()</definition>
+        <argsstring>(const std::string &amp;word)=0</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>word</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="classXapian_1_1Stem" kindref="compound">Stem</ref> the specified word. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/stem.h" line="40"/>
+      </memberdef>
+      <memberdef kind="function" id="structXapian_1_1StemImplementation_1b92efc6802df1e022eebd967e2fb71fe" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::string</type>
+        <definition>virtual std::string Xapian::StemImplementation::get_description</definition>
+        <argsstring>() const =0</argsstring>
+        <name>get_description</name>
+        <briefdescription>
+<para>Return a string describing this object. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/stem.h" line="43"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class representing a stemming algorithm implementation. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/stem.h" line="35" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/stem.h" bodystart="33" bodyend="44"/>
+    <listofallmembers>
+      <member refid="structXapian_1_1StemImplementation_1b92efc6802df1e022eebd967e2fb71fe" prot="public" virt="pure-virtual"><scope>Xapian::StemImplementation</scope><name>get_description</name></member>
+      <member refid="structXapian_1_1StemImplementation_1de7e15c8638753eec954744bc333881f" prot="public" virt="pure-virtual"><scope>Xapian::StemImplementation</scope><name>operator()</name></member>
+      <member refid="structXapian_1_1StemImplementation_1afe96075d1fcff69fdc8f987cd24be23" prot="public" virt="virtual"><scope>Xapian::StemImplementation</scope><name>~StemImplementation</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

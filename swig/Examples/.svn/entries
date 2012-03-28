@@ -1,0 +1,196 @@
+10
+
+dir
+12767
+svn://svn.tartarus.org/swig/trunk/Examples
+svn://svn.tartarus.org/swig
+
+
+
+2011-07-28T06:29:20.366489Z
+12765
+wsfulton
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+cce2a4f7-dc27-40e0-b75d-b3f4d8458e25
+
+csharp
+dir
+
+octave
+dir
+
+lua
+dir
+
+java
+dir
+
+python
+dir
+
+ruby
+dir
+
+tcl
+dir
+
+Makefile.in
+file
+
+
+
+
+2012-03-21T13:04:27.605789Z
+0bbf3dfb50921caf9f652b6b30489e86
+2011-03-07T23:01:26.554123Z
+12522
+olly
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+49815
+
+d
+dir
+
+perl5
+dir
+
+php
+dir
+
+pike
+dir
+
+ocaml
+dir
+
+s-exp
+dir
+
+README
+file
+
+
+
+
+2012-03-21T13:04:27.605789Z
+580af468bab50416d49f4d9f253ad892
+2010-02-28T00:16:39.905759Z
+11878
+wsfulton
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1812
+
+xml
+dir
+
+r
+dir
+
+modula3
+dir
+
+chicken
+dir
+
+guile
+dir
+
+go
+dir
+
+test-suite
+dir
+
+index.html
+file
+
+
+
+
+2012-03-21T13:04:27.605789Z
+48d68af2996d5f7a925c65cf63e16d50
+2010-02-28T00:16:39.905759Z
+11878
+wsfulton
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1482
+
+mzscheme
+dir
+
+contract
+dir
+

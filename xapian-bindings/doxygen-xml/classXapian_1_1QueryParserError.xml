@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="classXapian_1_1QueryParserError" kind="class" prot="public">
+    <compoundname>Xapian::QueryParserError</compoundname>
+    <basecompoundref refid="classXapian_1_1RuntimeError" prot="public" virt="non-virtual">Xapian::RuntimeError</basecompoundref>
+    <includes local="no">error.h</includes>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classXapian_1_1QueryParserError_1068e4fe30b7039f84e276917baac541e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::QueryParserError::QueryParserError</definition>
+        <argsstring>(const std::string &amp;msg_, const std::string &amp;context_, const char *error_string_)</argsstring>
+        <name>QueryParserError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>context_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>error_string_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="686" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="685" bodyend="686"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1QueryParserError_1696f2cd1ff15684caefb7b1f77a801fa" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::QueryParserError::QueryParserError</definition>
+        <argsstring>(const std::string &amp;msg_, const std::string &amp;context_, const char *type_, const char *error_string_)</argsstring>
+        <name>QueryParserError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>context_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>type_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>error_string_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="698" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="697" bodyend="698"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1QueryParserError_135f23c4b8852965f5b5cdb6a37d1c724" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::QueryParserError::QueryParserError</definition>
+        <argsstring>(const std::string &amp;msg_, const std::string &amp;context_, const char *type_, int errno_)</argsstring>
+        <name>QueryParserError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>context_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>type_</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>errno_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="704" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="703" bodyend="704"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classXapian_1_1QueryParserError_1a7b994af9e4a4e03b60e9cc9b2351cb3" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::QueryParserError::QueryParserError</definition>
+        <argsstring>(const std::string &amp;msg_, const std::string &amp;context_=std::string(), int errno_=0)</argsstring>
+        <name>QueryParserError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>context_</declname>
+          <defval>std::string()</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>errno_</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>General purpose constructor which allows setting errno. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="689" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="688" bodyend="689"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1QueryParserError_15510229e5366fa53f9c333497af04868" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::QueryParserError::QueryParserError</definition>
+        <argsstring>(const std::string &amp;msg_, int errno_)</argsstring>
+        <name>QueryParserError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>errno_</declname>
+        </param>
+        <briefdescription>
+<para>Construct from message and errno value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="692" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="691" bodyend="692"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Indicates a query string can&apos;t be parsed. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="608">
+        <label>Xapian::Error</label>
+        <link refid="classXapian_1_1Error"/>
+      </node>
+      <node id="607">
+        <label>Xapian::RuntimeError</label>
+        <link refid="classXapian_1_1RuntimeError"/>
+        <childnode refid="608" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="606">
+        <label>Xapian::QueryParserError</label>
+        <link refid="classXapian_1_1QueryParserError"/>
+        <childnode refid="607" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="611">
+        <label>Xapian::Error</label>
+        <link refid="classXapian_1_1Error"/>
+      </node>
+      <node id="610">
+        <label>Xapian::RuntimeError</label>
+        <link refid="classXapian_1_1RuntimeError"/>
+        <childnode refid="611" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="609">
+        <label>Xapian::QueryParserError</label>
+        <link refid="classXapian_1_1QueryParserError"/>
+        <childnode refid="610" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="678" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="678" bodyend="705"/>
+    <listofallmembers>
+      <member refid="classXapian_1_1Error_190c683965555b4bc86b08e8667170e44" prot="public" virt="non-virtual"><scope>Xapian::QueryParserError</scope><name>get_context</name></member>
+      <member refid="classXapian_1_1Error_1bd64e380eb6d864dc907ee62c1f58a74" prot="public" virt="non-virtual"><scope>Xapian::QueryParserError</scope><name>get_description</name></member>
+      <member refid="classXapian_1_1Error_16f94a579f8e176f85c6fb036592dab61" prot="public" virt="non-virtual"><scope>Xapian::QueryParserError</scope><name>get_error_string</name></member>
+      <member refid="classXapian_1_1Error_1ea05df48ea71dfd045da28ab984cdaa3" prot="public" virt="non-virtual"><scope>Xapian::QueryParserError</scope><name>get_msg</name></member>
+      <member refid="classXapian_1_1Error_1136945e703317bdf6e18d8cf511a5bfb" prot="public" virt="non-virtual"><scope>Xapian::QueryParserError</scope><name>get_type</name></member>
+      <member refid="classXapian_1_1QueryParserError_1068e4fe30b7039f84e276917baac541e" prot="private" virt="non-virtual"><scope>Xapian::QueryParserError</scope><name>QueryParserError</name></member>
+      <member refid="classXapian_1_1QueryParserError_1a7b994af9e4a4e03b60e9cc9b2351cb3" prot="public" virt="non-virtual"><scope>Xapian::QueryParserError</scope><name>QueryParserError</name></member>
+      <member refid="classXapian_1_1QueryParserError_15510229e5366fa53f9c333497af04868" prot="public" virt="non-virtual"><scope>Xapian::QueryParserError</scope><name>QueryParserError</name></member>
+      <member refid="classXapian_1_1QueryParserError_1696f2cd1ff15684caefb7b1f77a801fa" prot="private" virt="non-virtual"><scope>Xapian::QueryParserError</scope><name>QueryParserError</name></member>
+      <member refid="classXapian_1_1QueryParserError_135f23c4b8852965f5b5cdb6a37d1c724" prot="private" virt="non-virtual"><scope>Xapian::QueryParserError</scope><name>QueryParserError</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

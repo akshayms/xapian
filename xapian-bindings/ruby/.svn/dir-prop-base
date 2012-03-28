@@ -1,0 +1,17 @@
+K 10
+svn:ignore
+V 116
+.*.sw?
+*.lo
+Makefile.in
+Makefile
+.deps
+.libs
+rubyio.h
+xapian_wrap.cc
+xapian_wrap.h
+xapian_wrap.d
+_xapian.la
+*.stamp
+
+END

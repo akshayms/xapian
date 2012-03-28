@@ -1,0 +1,19 @@
+K 10
+svn:ignore
+V 136
+baseclass.pm
+foo.pm
+bar.pm
+spam.pm
+bar.plg
+*_wrap.c
+*_wrap.cxx
+*.dll
+*.exp
+example.dsw
+example.ncb
+example.opt
+example.plg
+Release
+Debug
+END

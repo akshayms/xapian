@@ -1,0 +1,11 @@
+K 14
+svn:executable
+V 1
+*
+K 13
+svn:mergeinfo
+V 206
+/branches/replication_fixes/xapian-bindings/ruby/docs/generate-rdoc-stubs:14149-14152
+/trunk/xapian-bindings/ruby/docs/generate-rdoc-stubs:2-13783
+/trunk/xapian-bindings/ruby/generate-rdoc-stubs:15485-16044
+END

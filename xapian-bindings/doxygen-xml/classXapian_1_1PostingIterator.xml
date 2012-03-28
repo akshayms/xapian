@@ -1,0 +1,353 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="classXapian_1_1PostingIterator" kind="class" prot="public">
+    <compoundname>Xapian::PostingIterator</compoundname>
+    <includes local="no">postingiterator.h</includes>
+      <sectiondef kind="user-defined">
+      <memberdef kind="typedef" id="classXapian_1_1PostingIterator_1340c72921b18f4ea5c15b077f14e61ce" prot="private" static="no">
+        <type>std::input_iterator_tag</type>
+        <definition>typedef std::input_iterator_tag Xapian::PostingIterator::iterator_category</definition>
+        <argsstring></argsstring>
+        <name>iterator_category</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/postingiterator.h" line="118" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/postingiterator.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classXapian_1_1PostingIterator_1405384ad29c3ff95658372329a9bcd58" prot="private" static="no">
+        <type><ref refid="namespaceXapian_18fa9094bebe1256a7be935a5ede87a64" kindref="member">Xapian::docid</ref></type>
+        <definition>typedef Xapian::docid Xapian::PostingIterator::value_type</definition>
+        <argsstring></argsstring>
+        <name>value_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/postingiterator.h" line="120" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/postingiterator.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classXapian_1_1PostingIterator_1a95ef4f8e09c54c347f863cd2814de11" prot="private" static="no">
+        <type><ref refid="namespaceXapian_1958ff32fd7a85f2b8a4784ac18397f2b" kindref="member">Xapian::doccount_diff</ref></type>
+        <definition>typedef Xapian::doccount_diff Xapian::PostingIterator::difference_type</definition>
+        <argsstring></argsstring>
+        <name>difference_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/postingiterator.h" line="122" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/postingiterator.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classXapian_1_1PostingIterator_1c8aba644bb6ace6a773eff34a1587853" prot="private" static="no">
+        <type><ref refid="namespaceXapian_18fa9094bebe1256a7be935a5ede87a64" kindref="member">Xapian::docid</ref> *</type>
+        <definition>typedef Xapian::docid* Xapian::PostingIterator::pointer</definition>
+        <argsstring></argsstring>
+        <name>pointer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/postingiterator.h" line="124" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/postingiterator.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classXapian_1_1PostingIterator_1eaa71e8d29d4cbe492be8a8e5cff512c" prot="private" static="no">
+        <type><ref refid="namespaceXapian_18fa9094bebe1256a7be935a5ede87a64" kindref="member">Xapian::docid</ref> &amp;</type>
+        <definition>typedef Xapian::docid&amp; Xapian::PostingIterator::reference</definition>
+        <argsstring></argsstring>
+        <name>reference</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/postingiterator.h" line="126" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/postingiterator.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classXapian_1_1PostingIterator_1bf058cf213580b5202d30915791836bb" prot="private" static="no" mutable="no">
+        <type>Internal *</type>
+        <definition>Internal* Xapian::PostingIterator::internal</definition>
+        <argsstring></argsstring>
+        <name>internal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/postingiterator.h" line="41" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/postingiterator.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classXapian_1_1PostingIterator_11d6ce374348d8f18edfe9270c0d4e260" prot="private" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::PostingIterator::PostingIterator</definition>
+        <argsstring>(Internal *internal_)</argsstring>
+        <name>PostingIterator</name>
+        <param>
+          <type>Internal *</type>
+          <declname>internal_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/postingiterator.h" line="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1PostingIterator_17290a0b435631a2c33d4d09be0b30224" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::PostingIterator::decref</definition>
+        <argsstring>()</argsstring>
+        <name>decref</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/postingiterator.h" line="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1PostingIterator_1a64249676cb93b6a0b9ba949335fb6c8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::PostingIterator::post_advance</definition>
+        <argsstring>(Internal *res)</argsstring>
+        <name>post_advance</name>
+        <param>
+          <type>Internal *</type>
+          <declname>res</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/postingiterator.h" line="132"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classXapian_1_1PostingIterator_14e69d97d1caba7ad9f2cbf90d056209b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::PostingIterator::PostingIterator</definition>
+        <argsstring>(const PostingIterator &amp;o)</argsstring>
+        <name>PostingIterator</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1PostingIterator" kindref="compound">PostingIterator</ref> &amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+<para>Copy constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/postingiterator.h" line="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1PostingIterator_19364662d3523b5f72ed820ee6f38091d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classXapian_1_1PostingIterator" kindref="compound">PostingIterator</ref> &amp;</type>
+        <definition>PostingIterator&amp; Xapian::PostingIterator::operator=</definition>
+        <argsstring>(const PostingIterator &amp;o)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1PostingIterator" kindref="compound">PostingIterator</ref> &amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+<para>Assignment. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/postingiterator.h" line="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1PostingIterator_1e75789243bba29a7911173979aadca43" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::PostingIterator::PostingIterator</definition>
+        <argsstring>()</argsstring>
+        <name>PostingIterator</name>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Creates an uninitialised iterator, which can&apos;t be used before being assigned to, but is sometimes syntactically convenient. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/postingiterator.h" line="57" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/postingiterator.h" bodystart="57" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1PostingIterator_1688eb4778f5dafb7d1a589010216dbe4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::PostingIterator::~PostingIterator</definition>
+        <argsstring>()</argsstring>
+        <name>~PostingIterator</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/postingiterator.h" line="60" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/postingiterator.h" bodystart="60" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1PostingIterator_1f2525c396fe296173322e679ddb02a3c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceXapian_18fa9094bebe1256a7be935a5ede87a64" kindref="member">Xapian::docid</ref></type>
+        <definition>Xapian::docid Xapian::PostingIterator::operator*</definition>
+        <argsstring>() const </argsstring>
+        <name>operator*</name>
+        <briefdescription>
+<para>Return the document id at the current position. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/postingiterator.h" line="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1PostingIterator_1c05e628e438614e20a4b1292cb982b87" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceXapian_172b5a76dd8cfb7b251fe7986e86390cb" kindref="member">Xapian::termcount</ref></type>
+        <definition>Xapian::termcount Xapian::PostingIterator::get_wdf</definition>
+        <argsstring>() const </argsstring>
+        <name>get_wdf</name>
+        <briefdescription>
+<para>Return the wdf for the document at the current position. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/postingiterator.h" line="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1PostingIterator_114d4c5cc78dcb149b04c30a280e2751f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceXapian_172b5a76dd8cfb7b251fe7986e86390cb" kindref="member">Xapian::termcount</ref></type>
+        <definition>Xapian::termcount Xapian::PostingIterator::get_doclength</definition>
+        <argsstring>() const </argsstring>
+        <name>get_doclength</name>
+        <briefdescription>
+<para>Return the length of the document at the current position. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/postingiterator.h" line="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1PostingIterator_194935d23e4806725737426ee298322c3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classXapian_1_1PositionIterator" kindref="compound">PositionIterator</ref></type>
+        <definition>PositionIterator Xapian::PostingIterator::positionlist_begin</definition>
+        <argsstring>() const </argsstring>
+        <name>positionlist_begin</name>
+        <briefdescription>
+<para>Return a <ref refid="classXapian_1_1PositionIterator" kindref="compound">PositionIterator</ref> for the current document. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/postingiterator.h" line="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1PostingIterator_1618c4e850550b870cbddc640e0f8a489" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classXapian_1_1PositionIterator" kindref="compound">PositionIterator</ref></type>
+        <definition>PositionIterator Xapian::PostingIterator::positionlist_end</definition>
+        <argsstring>() const </argsstring>
+        <name>positionlist_end</name>
+        <briefdescription>
+<para>Return an end <ref refid="classXapian_1_1PositionIterator" kindref="compound">PositionIterator</ref> for the current document. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/postingiterator.h" line="82" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/postingiterator.h" bodystart="82" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1PostingIterator_112252ab2accdd682265c58eef1871d13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classXapian_1_1PostingIterator" kindref="compound">PostingIterator</ref> &amp;</type>
+        <definition>PostingIterator&amp; Xapian::PostingIterator::operator++</definition>
+        <argsstring>()</argsstring>
+        <name>operator++</name>
+        <briefdescription>
+<para>Advance the iterator to the next position. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/postingiterator.h" line="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1PostingIterator_19182a0c6740d214e0eb462395c4c4493" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>DerefWrapper_&lt; <ref refid="namespaceXapian_18fa9094bebe1256a7be935a5ede87a64" kindref="member">Xapian::docid</ref> &gt;</type>
+        <definition>DerefWrapper_&lt;Xapian::docid&gt; Xapian::PostingIterator::operator++</definition>
+        <argsstring>(int)</argsstring>
+        <name>operator++</name>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+<para>Advance the iterator to the next position (postfix version). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/postingiterator.h" line="90" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/postingiterator.h" bodystart="90" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1PostingIterator_1665a45d91c6c7ea010b4c9f3b2efbe9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::PostingIterator::skip_to</definition>
+        <argsstring>(Xapian::docid did)</argsstring>
+        <name>skip_to</name>
+        <param>
+          <type><ref refid="namespaceXapian_18fa9094bebe1256a7be935a5ede87a64" kindref="member">Xapian::docid</ref></type>
+          <declname>did</declname>
+        </param>
+        <briefdescription>
+<para>Advance the iterator to document <emphasis>did</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+<para>If the specified document id isn&apos;t in the stream being iterated, then the iterator is moved to the next document id after <emphasis>did</emphasis>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/postingiterator.h" line="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1PostingIterator_18e4a19ca6b9fb16ad3e266ed7a676e3a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Xapian::PostingIterator::get_description</definition>
+        <argsstring>() const </argsstring>
+        <name>get_description</name>
+        <briefdescription>
+<para>Return a string describing this object. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/postingiterator.h" line="104"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class for iterating over a list of terms. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/postingiterator.h" line="36" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/postingiterator.h" bodystart="36" bodyend="133"/>
+    <listofallmembers>
+      <member refid="classXapian_1_1PostingIterator_17290a0b435631a2c33d4d09be0b30224" prot="private" virt="non-virtual"><scope>Xapian::PostingIterator</scope><name>decref</name></member>
+      <member refid="classXapian_1_1PostingIterator_1a95ef4f8e09c54c347f863cd2814de11" prot="private" virt="non-virtual"><scope>Xapian::PostingIterator</scope><name>difference_type</name></member>
+      <member refid="classXapian_1_1PostingIterator_18e4a19ca6b9fb16ad3e266ed7a676e3a" prot="public" virt="non-virtual"><scope>Xapian::PostingIterator</scope><name>get_description</name></member>
+      <member refid="classXapian_1_1PostingIterator_114d4c5cc78dcb149b04c30a280e2751f" prot="public" virt="non-virtual"><scope>Xapian::PostingIterator</scope><name>get_doclength</name></member>
+      <member refid="classXapian_1_1PostingIterator_1c05e628e438614e20a4b1292cb982b87" prot="public" virt="non-virtual"><scope>Xapian::PostingIterator</scope><name>get_wdf</name></member>
+      <member refid="classXapian_1_1PostingIterator_1bf058cf213580b5202d30915791836bb" prot="private" virt="non-virtual"><scope>Xapian::PostingIterator</scope><name>internal</name></member>
+      <member refid="classXapian_1_1PostingIterator_1340c72921b18f4ea5c15b077f14e61ce" prot="private" virt="non-virtual"><scope>Xapian::PostingIterator</scope><name>iterator_category</name></member>
+      <member refid="classXapian_1_1PostingIterator_1f2525c396fe296173322e679ddb02a3c" prot="public" virt="non-virtual"><scope>Xapian::PostingIterator</scope><name>operator*</name></member>
+      <member refid="classXapian_1_1PostingIterator_112252ab2accdd682265c58eef1871d13" prot="public" virt="non-virtual"><scope>Xapian::PostingIterator</scope><name>operator++</name></member>
+      <member refid="classXapian_1_1PostingIterator_19182a0c6740d214e0eb462395c4c4493" prot="public" virt="non-virtual"><scope>Xapian::PostingIterator</scope><name>operator++</name></member>
+      <member refid="classXapian_1_1PostingIterator_19364662d3523b5f72ed820ee6f38091d" prot="public" virt="non-virtual"><scope>Xapian::PostingIterator</scope><name>operator=</name></member>
+      <member refid="classXapian_1_1PostingIterator_1c8aba644bb6ace6a773eff34a1587853" prot="private" virt="non-virtual"><scope>Xapian::PostingIterator</scope><name>pointer</name></member>
+      <member refid="classXapian_1_1PostingIterator_194935d23e4806725737426ee298322c3" prot="public" virt="non-virtual"><scope>Xapian::PostingIterator</scope><name>positionlist_begin</name></member>
+      <member refid="classXapian_1_1PostingIterator_1618c4e850550b870cbddc640e0f8a489" prot="public" virt="non-virtual"><scope>Xapian::PostingIterator</scope><name>positionlist_end</name></member>
+      <member refid="classXapian_1_1PostingIterator_1a64249676cb93b6a0b9ba949335fb6c8" prot="private" virt="non-virtual"><scope>Xapian::PostingIterator</scope><name>post_advance</name></member>
+      <member refid="classXapian_1_1PostingIterator_11d6ce374348d8f18edfe9270c0d4e260" prot="private" virt="non-virtual"><scope>Xapian::PostingIterator</scope><name>PostingIterator</name></member>
+      <member refid="classXapian_1_1PostingIterator_14e69d97d1caba7ad9f2cbf90d056209b" prot="public" virt="non-virtual"><scope>Xapian::PostingIterator</scope><name>PostingIterator</name></member>
+      <member refid="classXapian_1_1PostingIterator_1e75789243bba29a7911173979aadca43" prot="public" virt="non-virtual"><scope>Xapian::PostingIterator</scope><name>PostingIterator</name></member>
+      <member refid="classXapian_1_1PostingIterator_1eaa71e8d29d4cbe492be8a8e5cff512c" prot="private" virt="non-virtual"><scope>Xapian::PostingIterator</scope><name>reference</name></member>
+      <member refid="classXapian_1_1PostingIterator_1665a45d91c6c7ea010b4c9f3b2efbe9e" prot="public" virt="non-virtual"><scope>Xapian::PostingIterator</scope><name>skip_to</name></member>
+      <member refid="classXapian_1_1PostingIterator_1405384ad29c3ff95658372329a9bcd58" prot="private" virt="non-virtual"><scope>Xapian::PostingIterator</scope><name>value_type</name></member>
+      <member refid="classXapian_1_1PostingIterator_1688eb4778f5dafb7d1a589010216dbe4" prot="public" virt="non-virtual"><scope>Xapian::PostingIterator</scope><name>~PostingIterator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

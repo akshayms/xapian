@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="classXapian_1_1UnimplementedError" kind="class" prot="public">
+    <compoundname>Xapian::UnimplementedError</compoundname>
+    <basecompoundref refid="classXapian_1_1LogicError" prot="public" virt="non-virtual">Xapian::LogicError</basecompoundref>
+    <includes local="no">error.h</includes>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classXapian_1_1UnimplementedError_17a014de1b7a1e96aaf00e6e16feef9de" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::UnimplementedError::UnimplementedError</definition>
+        <argsstring>(const std::string &amp;msg_, const std::string &amp;context_, const char *error_string_)</argsstring>
+        <name>UnimplementedError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>context_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>error_string_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="277" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="276" bodyend="277"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1UnimplementedError_18b57d7d68a1ba137c1a5d1428f163dbc" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::UnimplementedError::UnimplementedError</definition>
+        <argsstring>(const std::string &amp;msg_, const std::string &amp;context_, const char *type_, const char *error_string_)</argsstring>
+        <name>UnimplementedError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>context_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>type_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>error_string_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="289" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="288" bodyend="289"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1UnimplementedError_1e129475fb4c2fe6f05835275e05a5990" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::UnimplementedError::UnimplementedError</definition>
+        <argsstring>(const std::string &amp;msg_, const std::string &amp;context_, const char *type_, int errno_)</argsstring>
+        <name>UnimplementedError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>context_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>type_</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>errno_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="295" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="294" bodyend="295"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classXapian_1_1UnimplementedError_107264ff5488cca70fbf073cfc340190b" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::UnimplementedError::UnimplementedError</definition>
+        <argsstring>(const std::string &amp;msg_, const std::string &amp;context_=std::string(), int errno_=0)</argsstring>
+        <name>UnimplementedError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>context_</declname>
+          <defval>std::string()</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>errno_</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>General purpose constructor which allows setting errno. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="280" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="279" bodyend="280"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1UnimplementedError_1025c7f29d76bd5b9c0fc875d82f4554d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::UnimplementedError::UnimplementedError</definition>
+        <argsstring>(const std::string &amp;msg_, int errno_)</argsstring>
+        <name>UnimplementedError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>errno_</declname>
+        </param>
+        <briefdescription>
+<para>Construct from message and errno value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="283" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="282" bodyend="283"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classXapian_1_1UnimplementedError" kindref="compound">UnimplementedError</ref> indicates an attempt to use an unimplemented feature. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="709">
+        <label>Xapian::LogicError</label>
+        <link refid="classXapian_1_1LogicError"/>
+        <childnode refid="710" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="710">
+        <label>Xapian::Error</label>
+        <link refid="classXapian_1_1Error"/>
+      </node>
+      <node id="708">
+        <label>Xapian::UnimplementedError</label>
+        <link refid="classXapian_1_1UnimplementedError"/>
+        <childnode refid="709" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="712">
+        <label>Xapian::LogicError</label>
+        <link refid="classXapian_1_1LogicError"/>
+        <childnode refid="713" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="713">
+        <label>Xapian::Error</label>
+        <link refid="classXapian_1_1Error"/>
+      </node>
+      <node id="711">
+        <label>Xapian::UnimplementedError</label>
+        <link refid="classXapian_1_1UnimplementedError"/>
+        <childnode refid="712" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="269" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="269" bodyend="296"/>
+    <listofallmembers>
+      <member refid="classXapian_1_1Error_190c683965555b4bc86b08e8667170e44" prot="public" virt="non-virtual"><scope>Xapian::UnimplementedError</scope><name>get_context</name></member>
+      <member refid="classXapian_1_1Error_1bd64e380eb6d864dc907ee62c1f58a74" prot="public" virt="non-virtual"><scope>Xapian::UnimplementedError</scope><name>get_description</name></member>
+      <member refid="classXapian_1_1Error_16f94a579f8e176f85c6fb036592dab61" prot="public" virt="non-virtual"><scope>Xapian::UnimplementedError</scope><name>get_error_string</name></member>
+      <member refid="classXapian_1_1Error_1ea05df48ea71dfd045da28ab984cdaa3" prot="public" virt="non-virtual"><scope>Xapian::UnimplementedError</scope><name>get_msg</name></member>
+      <member refid="classXapian_1_1Error_1136945e703317bdf6e18d8cf511a5bfb" prot="public" virt="non-virtual"><scope>Xapian::UnimplementedError</scope><name>get_type</name></member>
+      <member refid="classXapian_1_1UnimplementedError_17a014de1b7a1e96aaf00e6e16feef9de" prot="private" virt="non-virtual"><scope>Xapian::UnimplementedError</scope><name>UnimplementedError</name></member>
+      <member refid="classXapian_1_1UnimplementedError_107264ff5488cca70fbf073cfc340190b" prot="public" virt="non-virtual"><scope>Xapian::UnimplementedError</scope><name>UnimplementedError</name></member>
+      <member refid="classXapian_1_1UnimplementedError_1025c7f29d76bd5b9c0fc875d82f4554d" prot="public" virt="non-virtual"><scope>Xapian::UnimplementedError</scope><name>UnimplementedError</name></member>
+      <member refid="classXapian_1_1UnimplementedError_18b57d7d68a1ba137c1a5d1428f163dbc" prot="private" virt="non-virtual"><scope>Xapian::UnimplementedError</scope><name>UnimplementedError</name></member>
+      <member refid="classXapian_1_1UnimplementedError_1e129475fb4c2fe6f05835275e05a5990" prot="private" virt="non-virtual"><scope>Xapian::UnimplementedError</scope><name>UnimplementedError</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

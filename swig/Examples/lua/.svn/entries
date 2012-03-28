@@ -1,0 +1,178 @@
+10
+
+dir
+12767
+svn://svn.tartarus.org/swig/trunk/Examples/lua
+svn://svn.tartarus.org/swig
+
+
+
+2010-02-27T23:26:02.646913Z
+11874
+wsfulton
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+cce2a4f7-dc27-40e0-b75d-b3f4d8458e25
+
+functor
+dir
+
+pointer
+dir
+
+dual
+dir
+
+check.list
+file
+
+
+
+
+2012-03-21T13:02:47.153786Z
+6af8d80cf64b3bdc0c5a49b3f3ab6f66
+2008-04-30T00:17:53.948392Z
+10402
+mgossage
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+150
+
+simple
+dir
+
+owner
+dir
+
+import.lua
+file
+
+
+
+
+2012-03-21T13:02:47.153786Z
+8bb107e93b97dbd58d0ccb85ec9692ed
+2005-09-20T20:00:56.000000Z
+7471
+wsfulton
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1248
+
+functest
+dir
+
+exception
+dir
+
+embed2
+dir
+
+embed3
+dir
+
+arrays
+dir
+
+lua.c
+file
+
+
+
+
+2012-03-21T13:02:47.153786Z
+0f8e5c22a378034c6f9641b4f49b450f
+2010-02-27T23:26:02.646913Z
+11874
+wsfulton
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+9965
+
+funcptr3
+dir
+
+class
+dir
+
+variables
+dir
+
+import
+dir
+
+embed
+dir
+
+constants
+dir
+

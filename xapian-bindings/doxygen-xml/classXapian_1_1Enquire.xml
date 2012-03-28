@@ -1,0 +1,1206 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="classXapian_1_1Enquire" kind="class" prot="public">
+    <compoundname>Xapian::Enquire</compoundname>
+    <includes local="no">enquire.h</includes>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classXapian_1_1Enquire_1edb5fb761acc0bb2249bec375883a093" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classXapian_1_1MSet" kindref="compound">MSet</ref></type>
+        <definition>MSet Xapian::Enquire::get_mset</definition>
+        <argsstring>(Xapian::doccount first, Xapian::doccount maxitems, Xapian::doccount checkatleast=0, const RSet *omrset=0, const MatchDecider *mdecider=0) const </argsstring>
+        <name>get_mset</name>
+        <param>
+          <type><ref refid="namespaceXapian_17f30aa95f0c42b117dafaf66ba24241d" kindref="member">Xapian::doccount</ref></type>
+          <declname>first</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceXapian_17f30aa95f0c42b117dafaf66ba24241d" kindref="member">Xapian::doccount</ref></type>
+          <declname>maxitems</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceXapian_17f30aa95f0c42b117dafaf66ba24241d" kindref="member">Xapian::doccount</ref></type>
+          <declname>checkatleast</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>const <ref refid="classXapian_1_1RSet" kindref="compound">RSet</ref> *</type>
+          <declname>omrset</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>const <ref refid="classXapian_1_1MatchDecider" kindref="compound">MatchDecider</ref> *</type>
+          <declname>mdecider</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Get (a portion of) the match set for the current query. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>first</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the first item in the result set to return. A value of zero corresponds to the first item returned being that with the highest score. A value of 10 corresponds to the first 10 items being ignored, and the returned items starting at the eleventh. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maxitems</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the maximum number of items to return. If you want all matches, then you can pass the result of calling get_doccount() on the <ref refid="classXapian_1_1Database" kindref="compound">Database</ref> object (though if you are doing this so you can filter results, you are likely to get much better performance by using Xapian&apos;s match-time filtering features instead). You can pass 0 for maxitems which will give you an empty <ref refid="classXapian_1_1MSet" kindref="compound">MSet</ref> with valid statistics (such as get_matches_estimated()) calculated without looking at any postings, which is very quick, but means the estimates may be more approximate and the bounds may be much looser. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>checkatleast</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the minimum number of items to check. Because the matcher optimises, it won&apos;t consider every document which might match, so the total number of matches is estimated. Setting checkatleast forces it to consider at least this many matches and so allows for reliable paging links. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>omrset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the relevance set to use when performing the query. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mdecider</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a decision functor to use to decide whether a given document should be put in the <ref refid="classXapian_1_1MSet" kindref="compound">MSet</ref>.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A <ref refid="classXapian_1_1MSet" kindref="compound">Xapian::MSet</ref> object containing the results of the query.</para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classXapian_1_1InvalidArgumentError" kindref="compound">Xapian::InvalidArgumentError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>See class documentation. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="950"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Enquire_1d53aba9cb5b62d14dce5395f568c050f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classXapian_1_1MSet" kindref="compound">MSet</ref></type>
+        <definition>MSet Xapian::Enquire::get_mset</definition>
+        <argsstring>(Xapian::doccount first, Xapian::doccount maxitems, const RSet *omrset, const MatchDecider *mdecider=0) const </argsstring>
+        <name>get_mset</name>
+        <param>
+          <type><ref refid="namespaceXapian_17f30aa95f0c42b117dafaf66ba24241d" kindref="member">Xapian::doccount</ref></type>
+          <declname>first</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceXapian_17f30aa95f0c42b117dafaf66ba24241d" kindref="member">Xapian::doccount</ref></type>
+          <declname>maxitems</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classXapian_1_1RSet" kindref="compound">RSet</ref> *</type>
+          <declname>omrset</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classXapian_1_1MatchDecider" kindref="compound">MatchDecider</ref> *</type>
+          <declname>mdecider</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Get (a portion of) the match set for the current query. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>first</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the first item in the result set to return. A value of zero corresponds to the first item returned being that with the highest score. A value of 10 corresponds to the first 10 items being ignored, and the returned items starting at the eleventh. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maxitems</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the maximum number of items to return. If you want all matches, then you can pass the result of calling get_doccount() on the <ref refid="classXapian_1_1Database" kindref="compound">Database</ref> object (though if you are doing this so you can filter results, you are likely to get much better performance by using Xapian&apos;s match-time filtering features instead). You can pass 0 for maxitems which will give you an empty <ref refid="classXapian_1_1MSet" kindref="compound">MSet</ref> with valid statistics (such as get_matches_estimated()) calculated without looking at any postings, which is very quick, but means the estimates may be more approximate and the bounds may be much looser. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>checkatleast</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the minimum number of items to check. Because the matcher optimises, it won&apos;t consider every document which might match, so the total number of matches is estimated. Setting checkatleast forces it to consider at least this many matches and so allows for reliable paging links. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>omrset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the relevance set to use when performing the query. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mdecider</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a decision functor to use to decide whether a given document should be put in the <ref refid="classXapian_1_1MSet" kindref="compound">MSet</ref>.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A <ref refid="classXapian_1_1MSet" kindref="compound">Xapian::MSet</ref> object containing the results of the query.</para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classXapian_1_1InvalidArgumentError" kindref="compound">Xapian::InvalidArgumentError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>See class documentation. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="953" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" bodystart="951" bodyend="955"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classXapian_1_1Enquire_1d87c8d66b4646c6a9b19f4e88fb4296b" prot="public" static="no">
+        <name>docid_order</name>
+        <enumvalue id="classXapian_1_1Enquire_1d87c8d66b4646c6a9b19f4e88fb4296b5a930d75a962b5d9c08f59920db4aa8a" prot="public">
+          <name>ASCENDING</name>
+          <initializer> 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classXapian_1_1Enquire_1d87c8d66b4646c6a9b19f4e88fb4296b0cf8b75c1fcd0ab6dbc3af0635a0b104" prot="public">
+          <name>DESCENDING</name>
+          <initializer> 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classXapian_1_1Enquire_1d87c8d66b4646c6a9b19f4e88fb4296bccadd30465837795cd7cf9b679df162e" prot="public">
+          <name>DONT_CARE</name>
+          <initializer> 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="762" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" bodystart="762" bodyend="766"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classXapian_1_1Enquire_19f75fc1194872a3efbaaf742b6a2efcf" prot="public" static="no" mutable="no">
+        <type>Xapian::Internal::intrusive_ptr&lt; Internal &gt;</type>
+        <definition>Xapian::Internal::intrusive_ptr&lt;Internal&gt; Xapian::Enquire::internal</definition>
+        <argsstring></argsstring>
+        <name>internal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="646" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" bodystart="644" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classXapian_1_1Enquire_1f28f6824ccaf5b4045da9684e9eecb82" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int Xapian::Enquire::INCLUDE_QUERY_TERMS</definition>
+        <argsstring></argsstring>
+        <name>INCLUDE_QUERY_TERMS</name>
+        <initializer> 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="958" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" bodystart="958" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classXapian_1_1Enquire_108ae037a8d477d8018d23203cb179914" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int Xapian::Enquire::USE_EXACT_TERMFREQ</definition>
+        <argsstring></argsstring>
+        <name>USE_EXACT_TERMFREQ</name>
+        <initializer> 2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="959" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" bodystart="959" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classXapian_1_1Enquire_1c451dc68045ec4b0d26f5b2a42eae2a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::Enquire::Enquire</definition>
+        <argsstring>(const Enquire &amp;other)</argsstring>
+        <name>Enquire</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1Enquire" kindref="compound">Enquire</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Copying is allowed (and is cheap). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="639"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Enquire_10c067ef5b6397ab064d09884efc06cbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::Enquire::operator=</definition>
+        <argsstring>(const Enquire &amp;other)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1Enquire" kindref="compound">Enquire</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Assignment is allowed (and is cheap). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="642"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Enquire_1f9dcba0c6d10dd8dd6ae59e087f84799" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::Enquire::Enquire</definition>
+        <argsstring>(const Database &amp;database, ErrorHandler *errorhandler_=0)</argsstring>
+        <name>Enquire</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1Database" kindref="compound">Database</ref> &amp;</type>
+          <declname>database</declname>
+        </param>
+        <param>
+          <type><ref refid="classXapian_1_1ErrorHandler" kindref="compound">ErrorHandler</ref> *</type>
+          <declname>errorhandler_</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Create a <ref refid="classXapian_1_1Enquire" kindref="compound">Xapian::Enquire</ref> object. </para>        </briefdescription>
+        <detaileddescription>
+<para>This specification cannot be changed once the <ref refid="classXapian_1_1Enquire" kindref="compound">Xapian::Enquire</ref> is opened: you must create a new <ref refid="classXapian_1_1Enquire" kindref="compound">Xapian::Enquire</ref> object to access a different database, or set of databases.</para><para>The database supplied must have been initialised (ie, must not be the result of calling the <ref refid="classXapian_1_1Database_124f8197f3ac8bfd8c2526e0b8dff4ff7" kindref="member">Database::Database()</ref> constructor). If you need to handle a situation where you have no index gracefully, a database created with <ref refid="namespaceXapian_1_1InMemory_1b4b5fcea687b7b2eb81c5ecc58673d72" kindref="member">InMemory::open()</ref> can be passed here, which represents a completely empty database.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>database</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specification of the database or databases to use. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>errorhandler_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the error handler to use. Ownership of the object pointed to is not assumed by the <ref refid="classXapian_1_1Enquire" kindref="compound">Xapian::Enquire</ref> object - the user should delete the <ref refid="classXapian_1_1ErrorHandler" kindref="compound">Xapian::ErrorHandler</ref> object after the <ref refid="classXapian_1_1Enquire" kindref="compound">Xapian::Enquire</ref> object is deleted. To use no error handler, this parameter should be 0.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classXapian_1_1InvalidArgumentError" kindref="compound">Xapian::InvalidArgumentError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>will be thrown if an empty <ref refid="classXapian_1_1Database" kindref="compound">Database</ref> object is supplied. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="672"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Enquire_1808479faae76453f34a24881805e75b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::Enquire::~Enquire</definition>
+        <argsstring>()</argsstring>
+        <name>~Enquire</name>
+        <briefdescription>
+<para>Close the <ref refid="classXapian_1_1Enquire" kindref="compound">Xapian::Enquire</ref> object. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="676"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Enquire_11148d960120662e5543e2a2b12620318" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::Enquire::set_query</definition>
+        <argsstring>(const Xapian::Query &amp;query, Xapian::termcount qlen=0)</argsstring>
+        <name>set_query</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1Query" kindref="compound">Xapian::Query</ref> &amp;</type>
+          <declname>query</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceXapian_172b5a76dd8cfb7b251fe7986e86390cb" kindref="member">Xapian::termcount</ref></type>
+          <declname>qlen</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Set the query to run. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>query</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the new query to run. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>qlen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the query length to use in weight calculations - by default the sum of the wqf of all terms is used. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="684"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Enquire_1dd445bf19315638cccbb6418e2ae0d42" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classXapian_1_1Query" kindref="compound">Xapian::Query</ref> &amp;</type>
+        <definition>const Xapian::Query&amp; Xapian::Enquire::get_query</definition>
+        <argsstring>() const </argsstring>
+        <name>get_query</name>
+        <briefdescription>
+<para>Get the query which has been set. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is only valid after <ref refid="classXapian_1_1Enquire_11148d960120662e5543e2a2b12620318" kindref="member">set_query()</ref> has been called.</para><para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classXapian_1_1InvalidArgumentError" kindref="compound">Xapian::InvalidArgumentError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>will be thrown if query has not yet been set. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="692"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Enquire_143b54489c53d26a98d3fde3f1d3aa14f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::Enquire::add_matchspy</definition>
+        <argsstring>(MatchSpy *spy)</argsstring>
+        <name>add_matchspy</name>
+        <param>
+          <type><ref refid="classXapian_1_1MatchSpy" kindref="compound">MatchSpy</ref> *</type>
+          <declname>spy</declname>
+        </param>
+        <briefdescription>
+<para>Add a matchspy. </para>        </briefdescription>
+        <detaileddescription>
+<para>This matchspy will be called with some of the documents which match the query, during the match process. Exactly which of the matching documents are passed to it depends on exactly when certain optimisations occur during the match process, but it can be controlled to some extent by setting the <emphasis>checkatleast</emphasis> parameter to <emphasis><ref refid="classXapian_1_1Enquire_1edb5fb761acc0bb2249bec375883a093" kindref="member">get_mset()</ref></emphasis>.</para><para>In particular, if there are enough matching documents, at least the number specified by <emphasis>checkatleast</emphasis> will be passed to the matchspy. This means that you can force the matchspy to be shown all matching documents by setting <emphasis>checkatleast</emphasis> to the number of documents in the database.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>spy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classXapian_1_1MatchSpy" kindref="compound">MatchSpy</ref> subclass to add. The caller must ensure that this remains valid while the <ref refid="classXapian_1_1Enquire" kindref="compound">Enquire</ref> object remains active, or until <emphasis><ref refid="classXapian_1_1Enquire_11bb73406e3e7749a9e66ebc96ebd13f3" kindref="member">clear_matchspies()</ref></emphasis> is called. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="714"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Enquire_11bb73406e3e7749a9e66ebc96ebd13f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::Enquire::clear_matchspies</definition>
+        <argsstring>()</argsstring>
+        <name>clear_matchspies</name>
+        <briefdescription>
+<para>Remove all the matchspies. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="718"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Enquire_1d5c72e6f34c5c2da5f0b8c79736704ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::Enquire::set_weighting_scheme</definition>
+        <argsstring>(const Weight &amp;weight_)</argsstring>
+        <name>set_weighting_scheme</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1Weight" kindref="compound">Weight</ref> &amp;</type>
+          <declname>weight_</declname>
+        </param>
+        <briefdescription>
+<para>Set the weighting scheme to use for queries. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>weight_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the new weighting scheme. If no weighting scheme is specified, the default is BM25 with the default parameters. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="726"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Enquire_1117ee547f5908e952e2e72d5a986d3bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::Enquire::set_collapse_key</definition>
+        <argsstring>(Xapian::valueno collapse_key, Xapian::doccount collapse_max=1)</argsstring>
+        <name>set_collapse_key</name>
+        <param>
+          <type><ref refid="namespaceXapian_194a899651fa920c72ffa9635bde630ea" kindref="member">Xapian::valueno</ref></type>
+          <declname>collapse_key</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceXapian_17f30aa95f0c42b117dafaf66ba24241d" kindref="member">Xapian::doccount</ref></type>
+          <declname>collapse_max</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+<para>Set the collapse key to use for queries. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>collapse_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value number to collapse on - at most one <ref refid="classXapian_1_1MSet" kindref="compound">MSet</ref> entry with each particular value will be returned (default is <ref refid="namespaceXapian_10a75ef120e641c77f703e60f595ffda2" kindref="member">Xapian::BAD_VALUENO</ref> which means no collapsing).</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>collapse_max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Max number of items with the same key to leave after collapsing (default 1).</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+The <ref refid="classXapian_1_1MSet" kindref="compound">MSet</ref> returned by <ref refid="classXapian_1_1Enquire_1edb5fb761acc0bb2249bec375883a093" kindref="member">get_mset()</ref> will have only the &quot;best&quot; (at most) <emphasis>collapse_max</emphasis> entries with each particular value of <emphasis>collapse_key</emphasis> (&quot;best&quot; being highest ranked - i.e. highest weight or highest sorting key).</para><para>An example use might be to create a value for each document containing an MD5 hash of the document contents. Then duplicate documents from different sources can be eliminated at search time by collapsing with <emphasis>collapse_max</emphasis> = 1 (it&apos;s better to eliminate duplicates at index time, but this may not be always be possible - for example the search may be over more than one <ref refid="namespaceXapian" kindref="compound">Xapian</ref> database).</para><para>Another use is to group matches in a particular category (e.g. you might collapse a mailing list search on the Subject: so that there&apos;s only one result per discussion thread). In this case you can use get_collapse_count() to give the user some idea how many other results there are. And if you index the Subject: as a boolean term as well as putting it in a value, you can offer a link to a non-collapsed search restricted to that thread using a boolean filter. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="760"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Enquire_1bbf7ff734ff6adcb301e493f6eed803b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::Enquire::set_docid_order</definition>
+        <argsstring>(docid_order order)</argsstring>
+        <name>set_docid_order</name>
+        <param>
+          <type>docid_order</type>
+          <declname>order</declname>
+        </param>
+        <briefdescription>
+<para>Set the direction in which documents are ordered by document id in the returned <ref refid="classXapian_1_1MSet" kindref="compound">MSet</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>This order only has an effect on documents which would otherwise have equal rank. For a weighted probabilistic match with no sort value, this means documents with equal weight. For a boolean match, with no sort value, this means all documents. And if a sort value is used, this means documents with equal sort value (and also equal weight if ordering on relevance after the sort).</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>order</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This can be:<itemizedlist>
+<listitem><para>Xapian::Enquire::ASCENDING docids sort in ascending order (default)</para></listitem><listitem><para>Xapian::Enquire::DESCENDING docids sort in descending order</para></listitem><listitem><para>Xapian::Enquire::DONT_CARE docids sort in whatever order is most efficient for the backend</para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Note: If you add documents in strict date order, then a boolean search - i.e. set_weighting_scheme(Xapian::BoolWeight()) - with set_docid_order(Xapian::Enquire::DESCENDING) is a very efficient way to perform &quot;sort by date, newest first&quot;. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="791"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Enquire_1dadaa8401e40ab4cec090bc1541a11b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::Enquire::set_cutoff</definition>
+        <argsstring>(Xapian::percent percent_cutoff, Xapian::weight weight_cutoff=0)</argsstring>
+        <name>set_cutoff</name>
+        <param>
+          <type><ref refid="namespaceXapian_122ea0a80c58a2047dd929621b75ed9a2" kindref="member">Xapian::percent</ref></type>
+          <declname>percent_cutoff</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceXapian_1cac12803afc9e24ee5141c119acb8884" kindref="member">Xapian::weight</ref></type>
+          <declname>weight_cutoff</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Set the percentage and/or weight cutoffs. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>percent_cutoff</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Minimum percentage score for returned documents. If a document has a lower percentage score than this, it will not appear in the <ref refid="classXapian_1_1MSet" kindref="compound">MSet</ref>. If your intention is to return only matches which contain all the terms in the query, then it&apos;s more efficient to use <ref refid="classXapian_1_1Query_17e7b6b8ad0c915c2364578dfaaf6100bb99aad2dfc85eccc56163bc65eb0fdda" kindref="member">Xapian::Query::OP_AND</ref> instead of <ref refid="classXapian_1_1Query_17e7b6b8ad0c915c2364578dfaaf6100bc50e54f3dd9dc59dab7daa2c50cf631b" kindref="member">Xapian::Query::OP_OR</ref> in the query than to use set_cutoff(100). (default 0 =&gt; no percentage cut-off). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>weight_cutoff</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Minimum weight for a document to be returned. If a document has a lower score that this, it will not appear in the <ref refid="classXapian_1_1MSet" kindref="compound">MSet</ref>. It is usually only possible to choose an appropriate weight for cutoff based on the results of a previous run of the same query; this is thus mainly useful for alerting operations. The other potential use is with a user specified weighting scheme. (default 0 =&gt; no weight cut-off). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="811"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Enquire_180a33a28791c05167204706c1a9d986b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::Enquire::set_sort_by_relevance</definition>
+        <argsstring>()</argsstring>
+        <name>set_sort_by_relevance</name>
+        <briefdescription>
+<para>Set the sorting to be by relevance only. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is the default. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="817"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Enquire_1b10384fabd51eebd8174f916563e3f7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::Enquire::set_sort_by_value</definition>
+        <argsstring>(Xapian::valueno sort_key, bool reverse)</argsstring>
+        <name>set_sort_by_value</name>
+        <param>
+          <type><ref refid="namespaceXapian_194a899651fa920c72ffa9635bde630ea" kindref="member">Xapian::valueno</ref></type>
+          <declname>sort_key</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>reverse</declname>
+        </param>
+        <briefdescription>
+<para>Set the sorting to be by value only. </para>        </briefdescription>
+        <detaileddescription>
+<para>Note that sorting by values uses a string comparison, so to use this to sort by a numeric value you&apos;ll need to store the numeric values in a manner which sorts appropriately. For example, you could use <ref refid="namespaceXapian_129a741b4cda98e10ed5f2fc784039065" kindref="member">Xapian::sortable_serialise()</ref> (which works for floating point numbers as well as integers), or store numbers padded with leading zeros or spaces, or with the number of digits prepended.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sort_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value number to sort on.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>reverse</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true, reverses the sort order. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="832"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Enquire_10bcb7086d8633fc035c6e5d094e45d39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::Enquire::set_sort_by_key</definition>
+        <argsstring>(Xapian::KeyMaker *sorter, bool reverse)</argsstring>
+        <name>set_sort_by_key</name>
+        <param>
+          <type><ref refid="classXapian_1_1KeyMaker" kindref="compound">Xapian::KeyMaker</ref> *</type>
+          <declname>sorter</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>reverse</declname>
+        </param>
+        <briefdescription>
+<para>Set the sorting to be by key generated from values only. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sorter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The functor to use for generating keys.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>reverse</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true, reverses the sort order. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="840"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Enquire_1a921b3c9386fbe2ddfd7dbbf130f9391" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::Enquire::set_sort_by_value_then_relevance</definition>
+        <argsstring>(Xapian::valueno sort_key, bool reverse)</argsstring>
+        <name>set_sort_by_value_then_relevance</name>
+        <param>
+          <type><ref refid="namespaceXapian_194a899651fa920c72ffa9635bde630ea" kindref="member">Xapian::valueno</ref></type>
+          <declname>sort_key</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>reverse</declname>
+        </param>
+        <briefdescription>
+<para>Set the sorting to be by value, then by relevance for documents with the same value. </para>        </briefdescription>
+        <detaileddescription>
+<para>Note that sorting by values uses a string comparison, so to use this to sort by a numeric value you&apos;ll need to store the numeric values in a manner which sorts appropriately. For example, you could use <ref refid="namespaceXapian_129a741b4cda98e10ed5f2fc784039065" kindref="member">Xapian::sortable_serialise()</ref> (which works for floating point numbers as well as integers), or store numbers padded with leading zeros or spaces, or with the number of digits prepended.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sort_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value number to sort on.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>reverse</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true, reverses the sort order. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="857"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Enquire_1562beac4843f310dbdc61fdd33209be4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::Enquire::set_sort_by_key_then_relevance</definition>
+        <argsstring>(Xapian::KeyMaker *sorter, bool reverse)</argsstring>
+        <name>set_sort_by_key_then_relevance</name>
+        <param>
+          <type><ref refid="classXapian_1_1KeyMaker" kindref="compound">Xapian::KeyMaker</ref> *</type>
+          <declname>sorter</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>reverse</declname>
+        </param>
+        <briefdescription>
+<para>Set the sorting to be by keys generated from values, then by relevance for documents with identical keys. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sorter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The functor to use for generating keys.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>reverse</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true, reverses the sort order. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="867"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Enquire_15a495760d5edc479385b14b463affbff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::Enquire::set_sort_by_relevance_then_value</definition>
+        <argsstring>(Xapian::valueno sort_key, bool reverse)</argsstring>
+        <name>set_sort_by_relevance_then_value</name>
+        <param>
+          <type><ref refid="namespaceXapian_194a899651fa920c72ffa9635bde630ea" kindref="member">Xapian::valueno</ref></type>
+          <declname>sort_key</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>reverse</declname>
+        </param>
+        <briefdescription>
+<para>Set the sorting to be by relevance then value. </para>        </briefdescription>
+        <detaileddescription>
+<para>Note that sorting by values uses a string comparison, so to use this to sort by a numeric value you&apos;ll need to store the numeric values in a manner which sorts appropriately. For example, you could use <ref refid="namespaceXapian_129a741b4cda98e10ed5f2fc784039065" kindref="member">Xapian::sortable_serialise()</ref> (which works for floating point numbers as well as integers), or store numbers padded with leading zeros or spaces, or with the number of digits prepended.</para><para>Note that with the default BM25 weighting scheme parameters, non-identical documents will rarely have the same weight, so this setting will give very similar results to <ref refid="classXapian_1_1Enquire_180a33a28791c05167204706c1a9d986b" kindref="member">set_sort_by_relevance()</ref>. It becomes more useful with particular BM25 parameter settings (e.g. BM25Weight(1,0,1,0,0)) or custom weighting schemes.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sort_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value number to sort on.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>reverse</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true, reverses the sort order. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="890"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Enquire_1c64b07e06a24519baf1c495d0edcd0c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::Enquire::set_sort_by_relevance_then_key</definition>
+        <argsstring>(Xapian::KeyMaker *sorter, bool reverse)</argsstring>
+        <name>set_sort_by_relevance_then_key</name>
+        <param>
+          <type><ref refid="classXapian_1_1KeyMaker" kindref="compound">Xapian::KeyMaker</ref> *</type>
+          <declname>sorter</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>reverse</declname>
+        </param>
+        <briefdescription>
+<para>Set the sorting to be by relevance, then by keys generated from values. </para>        </briefdescription>
+        <detaileddescription>
+<para>Note that with the default BM25 weighting scheme parameters, non-identical documents will rarely have the same weight, so this setting will give very similar results to <ref refid="classXapian_1_1Enquire_180a33a28791c05167204706c1a9d986b" kindref="member">set_sort_by_relevance()</ref>. It becomes more useful with particular BM25 parameter settings (e.g. BM25Weight(1,0,1,0,0)) or custom weighting schemes.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sorter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The functor to use for generating keys.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>reverse</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true, reverses the sort order. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="907"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Enquire_1c04aa26eff82db9fd810b8125a31ee55" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classXapian_1_1ESet" kindref="compound">ESet</ref></type>
+        <definition>ESet Xapian::Enquire::get_eset</definition>
+        <argsstring>(Xapian::termcount maxitems, const RSet &amp;omrset, int flags=0, double k=1.0, const Xapian::ExpandDecider *edecider=0) const </argsstring>
+        <name>get_eset</name>
+        <param>
+          <type><ref refid="namespaceXapian_172b5a76dd8cfb7b251fe7986e86390cb" kindref="member">Xapian::termcount</ref></type>
+          <declname>maxitems</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classXapian_1_1RSet" kindref="compound">RSet</ref> &amp;</type>
+          <declname>omrset</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>k</declname>
+          <defval>1.0</defval>
+        </param>
+        <param>
+          <type>const <ref refid="classXapian_1_1ExpandDecider" kindref="compound">Xapian::ExpandDecider</ref> *</type>
+          <declname>edecider</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Get the expand set for the given rset. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>maxitems</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the maximum number of items to return. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>omrset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the relevance set to use when performing the expand operation. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>zero or more of these values |-ed together:<itemizedlist>
+<listitem><para>Xapian::Enquire::INCLUDE_QUERY_TERMS query terms may be returned from expand</para></listitem><listitem><para>Xapian::Enquire::USE_EXACT_TERMFREQ for multi dbs, calculate the exact termfreq; otherwise an approximation is used which can greatly improve efficiency, but still returns good results. </para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>k</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the parameter k in the query expansion algorithm (default is 1.0) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>edecider</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a decision functor to use to decide whether a given term should be put in the <ref refid="classXapian_1_1ESet" kindref="compound">ESet</ref></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>min_wt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the minimum weight for included terms</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An <ref refid="classXapian_1_1ESet" kindref="compound">ESet</ref> object containing the results of the expand.</para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classXapian_1_1InvalidArgumentError" kindref="compound">Xapian::InvalidArgumentError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>See class documentation. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="989"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Enquire_1f73e3672a3f1077309fbc99ef2db5412" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classXapian_1_1ESet" kindref="compound">ESet</ref></type>
+        <definition>ESet Xapian::Enquire::get_eset</definition>
+        <argsstring>(Xapian::termcount maxitems, const RSet &amp;omrset, const Xapian::ExpandDecider *edecider) const </argsstring>
+        <name>get_eset</name>
+        <param>
+          <type><ref refid="namespaceXapian_172b5a76dd8cfb7b251fe7986e86390cb" kindref="member">Xapian::termcount</ref></type>
+          <declname>maxitems</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classXapian_1_1RSet" kindref="compound">RSet</ref> &amp;</type>
+          <declname>omrset</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classXapian_1_1ExpandDecider" kindref="compound">Xapian::ExpandDecider</ref> *</type>
+          <declname>edecider</declname>
+        </param>
+        <briefdescription>
+<para>Get the expand set for the given rset. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>maxitems</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the maximum number of items to return. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>omrset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the relevance set to use when performing the expand operation. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>edecider</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a decision functor to use to decide whether a given term should be put in the <ref refid="classXapian_1_1ESet" kindref="compound">ESet</ref></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An <ref refid="classXapian_1_1ESet" kindref="compound">ESet</ref> object containing the results of the expand.</para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classXapian_1_1InvalidArgumentError" kindref="compound">Xapian::InvalidArgumentError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>See class documentation. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="1005" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" bodystart="1004" bodyend="1007"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Enquire_1a0b50863720f25f8a026bee73913798b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classXapian_1_1ESet" kindref="compound">ESet</ref></type>
+        <definition>ESet Xapian::Enquire::get_eset</definition>
+        <argsstring>(Xapian::termcount maxitems, const RSet &amp;omrset, int flags, double k, const Xapian::ExpandDecider *edecider, Xapian::weight min_wt) const </argsstring>
+        <name>get_eset</name>
+        <param>
+          <type><ref refid="namespaceXapian_172b5a76dd8cfb7b251fe7986e86390cb" kindref="member">Xapian::termcount</ref></type>
+          <declname>maxitems</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classXapian_1_1RSet" kindref="compound">RSet</ref> &amp;</type>
+          <declname>omrset</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classXapian_1_1ExpandDecider" kindref="compound">Xapian::ExpandDecider</ref> *</type>
+          <declname>edecider</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceXapian_1cac12803afc9e24ee5141c119acb8884" kindref="member">Xapian::weight</ref></type>
+          <declname>min_wt</declname>
+        </param>
+        <briefdescription>
+<para>Get the expand set for the given rset. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>maxitems</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the maximum number of items to return. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>omrset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the relevance set to use when performing the expand operation. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>zero or more of these values |-ed together:<itemizedlist>
+<listitem><para>Xapian::Enquire::INCLUDE_QUERY_TERMS query terms may be returned from expand</para></listitem><listitem><para>Xapian::Enquire::USE_EXACT_TERMFREQ for multi dbs, calculate the exact termfreq; otherwise an approximation is used which can greatly improve efficiency, but still returns good results. </para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>k</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the parameter k in the query expansion algorithm (default is 1.0) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>edecider</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a decision functor to use to decide whether a given term should be put in the <ref refid="classXapian_1_1ESet" kindref="compound">ESet</ref></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>min_wt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the minimum weight for included terms</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An <ref refid="classXapian_1_1ESet" kindref="compound">ESet</ref> object containing the results of the expand.</para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classXapian_1_1InvalidArgumentError" kindref="compound">Xapian::InvalidArgumentError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>See class documentation. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="1038"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Enquire_1dda4181ccd15beb52c39f5e24adbb25b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classXapian_1_1TermIterator" kindref="compound">TermIterator</ref></type>
+        <definition>TermIterator Xapian::Enquire::get_matching_terms_begin</definition>
+        <argsstring>(Xapian::docid did) const </argsstring>
+        <name>get_matching_terms_begin</name>
+        <param>
+          <type><ref refid="namespaceXapian_18fa9094bebe1256a7be935a5ede87a64" kindref="member">Xapian::docid</ref></type>
+          <declname>did</declname>
+        </param>
+        <briefdescription>
+<para>Get terms which match a given document, by document id. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns the terms in the current query which match the given document.</para><para>It is possible for the document to have been removed from the database between the time it is returned in an <ref refid="classXapian_1_1MSet" kindref="compound">MSet</ref>, and the time that this call is made. If possible, you should specify an <ref refid="classXapian_1_1MSetIterator" kindref="compound">MSetIterator</ref> instead of a <ref refid="namespaceXapian_18fa9094bebe1256a7be935a5ede87a64" kindref="member">Xapian::docid</ref>, since this will enable database backends with suitable support to prevent this occurring.</para><para>Note that a query does not need to have been run in order to make this call.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>did</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The document id for which to retrieve the matching terms.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An iterator returning the terms which match the document. The terms will be returned (as far as this makes any sense) in the same order as the terms in the query. Terms will not occur more than once, even if they do in the query.</para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classXapian_1_1InvalidArgumentError" kindref="compound">Xapian::InvalidArgumentError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>See class documentation. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="classXapian_1_1DocNotFoundError" kindref="compound">Xapian::DocNotFoundError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The document specified could not be found in the database. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="1068"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Enquire_16a27b926405ef71ab138fa656dab0bd4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classXapian_1_1TermIterator" kindref="compound">TermIterator</ref></type>
+        <definition>TermIterator Xapian::Enquire::get_matching_terms_end</definition>
+        <argsstring>(Xapian::docid) const </argsstring>
+        <name>get_matching_terms_end</name>
+        <param>
+          <type><ref refid="namespaceXapian_18fa9094bebe1256a7be935a5ede87a64" kindref="member">Xapian::docid</ref></type>
+        </param>
+        <briefdescription>
+<para>End iterator corresponding to <ref refid="classXapian_1_1Enquire_1dda4181ccd15beb52c39f5e24adbb25b" kindref="member">get_matching_terms_begin()</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="1071" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" bodystart="1071" bodyend="1073"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Enquire_14d531a494be857ae09c831480ff651d7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classXapian_1_1TermIterator" kindref="compound">TermIterator</ref></type>
+        <definition>TermIterator Xapian::Enquire::get_matching_terms_begin</definition>
+        <argsstring>(const MSetIterator &amp;it) const </argsstring>
+        <name>get_matching_terms_begin</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1MSetIterator" kindref="compound">MSetIterator</ref> &amp;</type>
+          <declname>it</declname>
+        </param>
+        <briefdescription>
+<para>Get terms which match a given document, by match set item. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns the terms in the current query which match the given document.</para><para>If the underlying database has suitable support, using this call (rather than passing a <ref refid="namespaceXapian_18fa9094bebe1256a7be935a5ede87a64" kindref="member">Xapian::docid</ref>) will enable the system to ensure that the correct data is returned, and that the document has not been deleted or changed since the query was performed.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>it</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The iterator for which to retrieve the matching terms.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An iterator returning the terms which match the document. The terms will be returned (as far as this makes any sense) in the same order as the terms in the query. Terms will not occur more than once, even if they do in the query.</para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classXapian_1_1InvalidArgumentError" kindref="compound">Xapian::InvalidArgumentError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>See class documentation. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="classXapian_1_1DocNotFoundError" kindref="compound">Xapian::DocNotFoundError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The document specified could not be found in the database. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="1097"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Enquire_1619e5a4f3597ed800e8f11190a5b7fe0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classXapian_1_1TermIterator" kindref="compound">TermIterator</ref></type>
+        <definition>TermIterator Xapian::Enquire::get_matching_terms_end</definition>
+        <argsstring>(const MSetIterator &amp;) const </argsstring>
+        <name>get_matching_terms_end</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1MSetIterator" kindref="compound">MSetIterator</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>End iterator corresponding to <ref refid="classXapian_1_1Enquire_1dda4181ccd15beb52c39f5e24adbb25b" kindref="member">get_matching_terms_begin()</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="1100" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" bodystart="1100" bodyend="1102"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Enquire_14a980eb2599afdf52ae78788849c9921" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Xapian::Enquire::get_description</definition>
+        <argsstring>() const </argsstring>
+        <name>get_description</name>
+        <briefdescription>
+<para>Return a string describing this object. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="1105"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class provides an interface to the information retrieval system for the purpose of searching. </para>    </briefdescription>
+    <detaileddescription>
+<para>Databases are usually opened lazily, so exceptions may not be thrown where you would expect them to be. You should catch <ref refid="classXapian_1_1Error" kindref="compound">Xapian::Error</ref> exceptions when calling any method in <ref refid="classXapian_1_1Enquire" kindref="compound">Xapian::Enquire</ref>.</para><para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classXapian_1_1InvalidArgumentError" kindref="compound">Xapian::InvalidArgumentError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>will be thrown if an invalid argument is supplied, for example, an unknown database type. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>    </detaileddescription>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="636" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" bodystart="636" bodyend="1106"/>
+    <listofallmembers>
+      <member refid="classXapian_1_1Enquire_143b54489c53d26a98d3fde3f1d3aa14f" prot="public" virt="non-virtual"><scope>Xapian::Enquire</scope><name>add_matchspy</name></member>
+      <member refid="classXapian_1_1Enquire_1d87c8d66b4646c6a9b19f4e88fb4296b5a930d75a962b5d9c08f59920db4aa8a" prot="public" virt="non-virtual"><scope>Xapian::Enquire</scope><name>ASCENDING</name></member>
+      <member refid="classXapian_1_1Enquire_11bb73406e3e7749a9e66ebc96ebd13f3" prot="public" virt="non-virtual"><scope>Xapian::Enquire</scope><name>clear_matchspies</name></member>
+      <member refid="classXapian_1_1Enquire_1d87c8d66b4646c6a9b19f4e88fb4296b0cf8b75c1fcd0ab6dbc3af0635a0b104" prot="public" virt="non-virtual"><scope>Xapian::Enquire</scope><name>DESCENDING</name></member>
+      <member refid="classXapian_1_1Enquire_1d87c8d66b4646c6a9b19f4e88fb4296b" prot="public" virt="non-virtual"><scope>Xapian::Enquire</scope><name>docid_order</name></member>
+      <member refid="classXapian_1_1Enquire_1d87c8d66b4646c6a9b19f4e88fb4296bccadd30465837795cd7cf9b679df162e" prot="public" virt="non-virtual"><scope>Xapian::Enquire</scope><name>DONT_CARE</name></member>
+      <member refid="classXapian_1_1Enquire_1c451dc68045ec4b0d26f5b2a42eae2a9" prot="public" virt="non-virtual"><scope>Xapian::Enquire</scope><name>Enquire</name></member>
+      <member refid="classXapian_1_1Enquire_1f9dcba0c6d10dd8dd6ae59e087f84799" prot="public" virt="non-virtual"><scope>Xapian::Enquire</scope><name>Enquire</name></member>
+      <member refid="classXapian_1_1Enquire_14a980eb2599afdf52ae78788849c9921" prot="public" virt="non-virtual"><scope>Xapian::Enquire</scope><name>get_description</name></member>
+      <member refid="classXapian_1_1Enquire_1c04aa26eff82db9fd810b8125a31ee55" prot="public" virt="non-virtual"><scope>Xapian::Enquire</scope><name>get_eset</name></member>
+      <member refid="classXapian_1_1Enquire_1f73e3672a3f1077309fbc99ef2db5412" prot="public" virt="non-virtual"><scope>Xapian::Enquire</scope><name>get_eset</name></member>
+      <member refid="classXapian_1_1Enquire_1a0b50863720f25f8a026bee73913798b" prot="public" virt="non-virtual"><scope>Xapian::Enquire</scope><name>get_eset</name></member>
+      <member refid="classXapian_1_1Enquire_1dda4181ccd15beb52c39f5e24adbb25b" prot="public" virt="non-virtual"><scope>Xapian::Enquire</scope><name>get_matching_terms_begin</name></member>
+      <member refid="classXapian_1_1Enquire_14d531a494be857ae09c831480ff651d7" prot="public" virt="non-virtual"><scope>Xapian::Enquire</scope><name>get_matching_terms_begin</name></member>
+      <member refid="classXapian_1_1Enquire_16a27b926405ef71ab138fa656dab0bd4" prot="public" virt="non-virtual"><scope>Xapian::Enquire</scope><name>get_matching_terms_end</name></member>
+      <member refid="classXapian_1_1Enquire_1619e5a4f3597ed800e8f11190a5b7fe0" prot="public" virt="non-virtual"><scope>Xapian::Enquire</scope><name>get_matching_terms_end</name></member>
+      <member refid="classXapian_1_1Enquire_1edb5fb761acc0bb2249bec375883a093" prot="public" virt="non-virtual"><scope>Xapian::Enquire</scope><name>get_mset</name></member>
+      <member refid="classXapian_1_1Enquire_1d53aba9cb5b62d14dce5395f568c050f" prot="public" virt="non-virtual"><scope>Xapian::Enquire</scope><name>get_mset</name></member>
+      <member refid="classXapian_1_1Enquire_1dd445bf19315638cccbb6418e2ae0d42" prot="public" virt="non-virtual"><scope>Xapian::Enquire</scope><name>get_query</name></member>
+      <member refid="classXapian_1_1Enquire_1f28f6824ccaf5b4045da9684e9eecb82" prot="public" virt="non-virtual"><scope>Xapian::Enquire</scope><name>INCLUDE_QUERY_TERMS</name></member>
+      <member refid="classXapian_1_1Enquire_19f75fc1194872a3efbaaf742b6a2efcf" prot="public" virt="non-virtual"><scope>Xapian::Enquire</scope><name>internal</name></member>
+      <member refid="classXapian_1_1Enquire_10c067ef5b6397ab064d09884efc06cbe" prot="public" virt="non-virtual"><scope>Xapian::Enquire</scope><name>operator=</name></member>
+      <member refid="classXapian_1_1Enquire_1117ee547f5908e952e2e72d5a986d3bb" prot="public" virt="non-virtual"><scope>Xapian::Enquire</scope><name>set_collapse_key</name></member>
+      <member refid="classXapian_1_1Enquire_1dadaa8401e40ab4cec090bc1541a11b7" prot="public" virt="non-virtual"><scope>Xapian::Enquire</scope><name>set_cutoff</name></member>
+      <member refid="classXapian_1_1Enquire_1bbf7ff734ff6adcb301e493f6eed803b" prot="public" virt="non-virtual"><scope>Xapian::Enquire</scope><name>set_docid_order</name></member>
+      <member refid="classXapian_1_1Enquire_11148d960120662e5543e2a2b12620318" prot="public" virt="non-virtual"><scope>Xapian::Enquire</scope><name>set_query</name></member>
+      <member refid="classXapian_1_1Enquire_10bcb7086d8633fc035c6e5d094e45d39" prot="public" virt="non-virtual"><scope>Xapian::Enquire</scope><name>set_sort_by_key</name></member>
+      <member refid="classXapian_1_1Enquire_1562beac4843f310dbdc61fdd33209be4" prot="public" virt="non-virtual"><scope>Xapian::Enquire</scope><name>set_sort_by_key_then_relevance</name></member>
+      <member refid="classXapian_1_1Enquire_180a33a28791c05167204706c1a9d986b" prot="public" virt="non-virtual"><scope>Xapian::Enquire</scope><name>set_sort_by_relevance</name></member>
+      <member refid="classXapian_1_1Enquire_1c64b07e06a24519baf1c495d0edcd0c3" prot="public" virt="non-virtual"><scope>Xapian::Enquire</scope><name>set_sort_by_relevance_then_key</name></member>
+      <member refid="classXapian_1_1Enquire_15a495760d5edc479385b14b463affbff" prot="public" virt="non-virtual"><scope>Xapian::Enquire</scope><name>set_sort_by_relevance_then_value</name></member>
+      <member refid="classXapian_1_1Enquire_1b10384fabd51eebd8174f916563e3f7a" prot="public" virt="non-virtual"><scope>Xapian::Enquire</scope><name>set_sort_by_value</name></member>
+      <member refid="classXapian_1_1Enquire_1a921b3c9386fbe2ddfd7dbbf130f9391" prot="public" virt="non-virtual"><scope>Xapian::Enquire</scope><name>set_sort_by_value_then_relevance</name></member>
+      <member refid="classXapian_1_1Enquire_1d5c72e6f34c5c2da5f0b8c79736704ab" prot="public" virt="non-virtual"><scope>Xapian::Enquire</scope><name>set_weighting_scheme</name></member>
+      <member refid="classXapian_1_1Enquire_108ae037a8d477d8018d23203cb179914" prot="public" virt="non-virtual"><scope>Xapian::Enquire</scope><name>USE_EXACT_TERMFREQ</name></member>
+      <member refid="classXapian_1_1Enquire_1808479faae76453f34a24881805e75b9" prot="public" virt="non-virtual"><scope>Xapian::Enquire</scope><name>~Enquire</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

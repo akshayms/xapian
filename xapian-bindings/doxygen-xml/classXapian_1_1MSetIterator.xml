@@ -1,0 +1,447 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="classXapian_1_1MSetIterator" kind="class" prot="public">
+    <compoundname>Xapian::MSetIterator</compoundname>
+    <includes local="no">enquire.h</includes>
+      <sectiondef kind="user-defined">
+      <memberdef kind="typedef" id="classXapian_1_1MSetIterator_15e6296943b75d873cc6e21cb04a7bf44" prot="public" static="no">
+        <type>std::bidirectional_iterator_tag</type>
+        <definition>typedef std::bidirectional_iterator_tag Xapian::MSetIterator::iterator_category</definition>
+        <argsstring></argsstring>
+        <name>iterator_category</name>
+        <briefdescription>
+<para>Allow use as an STL iterator. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="393" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" bodystart="393" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classXapian_1_1MSetIterator_120dc0a349ee3a6c13e88b3930be2d1e3" prot="public" static="no">
+        <type><ref refid="namespaceXapian_18fa9094bebe1256a7be935a5ede87a64" kindref="member">Xapian::docid</ref></type>
+        <definition>typedef Xapian::docid Xapian::MSetIterator::value_type</definition>
+        <argsstring></argsstring>
+        <name>value_type</name>
+        <briefdescription>
+<para>Allow use as an STL iterator. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="394" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" bodystart="394" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classXapian_1_1MSetIterator_199f8773f332ef160d17056ee47f665a7" prot="public" static="no">
+        <type><ref refid="namespaceXapian_1958ff32fd7a85f2b8a4784ac18397f2b" kindref="member">Xapian::doccount_diff</ref></type>
+        <definition>typedef Xapian::doccount_diff Xapian::MSetIterator::difference_type</definition>
+        <argsstring></argsstring>
+        <name>difference_type</name>
+        <briefdescription>
+<para>Allow use as an STL iterator. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="395" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" bodystart="395" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classXapian_1_1MSetIterator_1b82ce0bb3c82847d99e4ea81d51d02c5" prot="public" static="no">
+        <type><ref refid="namespaceXapian_18fa9094bebe1256a7be935a5ede87a64" kindref="member">Xapian::docid</ref> *</type>
+        <definition>typedef Xapian::docid* Xapian::MSetIterator::pointer</definition>
+        <argsstring></argsstring>
+        <name>pointer</name>
+        <briefdescription>
+<para>Allow use as an STL iterator. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="396" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" bodystart="396" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classXapian_1_1MSetIterator_153ca63620c8714a477ae2d930b84012a" prot="public" static="no">
+        <type><ref refid="namespaceXapian_18fa9094bebe1256a7be935a5ede87a64" kindref="member">Xapian::docid</ref> &amp;</type>
+        <definition>typedef Xapian::docid&amp; Xapian::MSetIterator::reference</definition>
+        <argsstring></argsstring>
+        <name>reference</name>
+        <briefdescription>
+<para>Allow use as an STL iterator. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="397" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" bodystart="397" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classXapian_1_1MSetIterator_120e87aae0635cec1454b45a069151671" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class MSet</definition>
+        <argsstring></argsstring>
+        <name>MSet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="261" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" bodystart="261" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classXapian_1_1MSetIterator_14107b130f6713cad73255369d6b43f91" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend bool</type>
+        <definition>bool operator==</definition>
+        <argsstring>(const MSetIterator &amp;a, const MSetIterator &amp;b)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1MSetIterator" kindref="compound">MSetIterator</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classXapian_1_1MSetIterator" kindref="compound">MSetIterator</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>Equality test for <ref refid="classXapian_1_1MSetIterator" kindref="compound">MSetIterator</ref> objects. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="262" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" bodystart="402" bodyend="405"/>
+      </memberdef>
+      <memberdef kind="friend" id="classXapian_1_1MSetIterator_144de20741fa12cd650ee986e57a51161" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend bool</type>
+        <definition>bool operator!=</definition>
+        <argsstring>(const MSetIterator &amp;a, const MSetIterator &amp;b)</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1MSetIterator" kindref="compound">MSetIterator</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classXapian_1_1MSetIterator" kindref="compound">MSetIterator</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>Inequality test for <ref refid="classXapian_1_1MSetIterator" kindref="compound">MSetIterator</ref> objects. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="263" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" bodystart="408" bodyend="411"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classXapian_1_1MSetIterator_1c194d388ef18882bfc4c301939fc9752" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceXapian_17f30aa95f0c42b117dafaf66ba24241d" kindref="member">Xapian::doccount</ref></type>
+        <definition>Xapian::doccount Xapian::MSetIterator::index</definition>
+        <argsstring></argsstring>
+        <name>index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="268" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" bodystart="268" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classXapian_1_1MSetIterator_1b0e2bc3f10f5f57583f7457407e51682" prot="private" static="no" mutable="no">
+        <type><ref refid="classXapian_1_1MSet" kindref="compound">MSet</ref></type>
+        <definition>MSet Xapian::MSetIterator::mset</definition>
+        <argsstring></argsstring>
+        <name>mset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="269" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" bodystart="269" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classXapian_1_1MSetIterator_1dbf3aa9954af18b2ce80d5ebc4b68a16" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::MSetIterator::MSetIterator</definition>
+        <argsstring>(Xapian::doccount index_, const MSet &amp;mset_)</argsstring>
+        <name>MSetIterator</name>
+        <param>
+          <type><ref refid="namespaceXapian_17f30aa95f0c42b117dafaf66ba24241d" kindref="member">Xapian::doccount</ref></type>
+          <declname>index_</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classXapian_1_1MSet" kindref="compound">MSet</ref> &amp;</type>
+          <declname>mset_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="266" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" bodystart="265" bodyend="266"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classXapian_1_1MSetIterator_124089616ca88737d235d50fe39c10a5b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::MSetIterator::MSetIterator</definition>
+        <argsstring>()</argsstring>
+        <name>MSetIterator</name>
+        <briefdescription>
+<para>Create an uninitialised iterator; this cannot be used, but is convenient syntactically. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="275" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" bodystart="275" bodyend="275"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1MSetIterator_165b8ccf4acd764feb8c29afc0f25e5ac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::MSetIterator::MSetIterator</definition>
+        <argsstring>(const MSetIterator &amp;other)</argsstring>
+        <name>MSetIterator</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1MSetIterator" kindref="compound">MSetIterator</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Copying is allowed (and is cheap). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="278" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" bodystart="278" bodyend="281"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1MSetIterator_1109ec6c9a89d390ac82479905ae2b5e1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::MSetIterator::operator=</definition>
+        <argsstring>(const MSetIterator &amp;other)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1MSetIterator" kindref="compound">MSetIterator</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Assignment is allowed (and is cheap). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="284" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" bodystart="284" bodyend="287"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1MSetIterator_1d4ac6e0c3cac3be285be16b1bf5bf490" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classXapian_1_1MSetIterator" kindref="compound">MSetIterator</ref> &amp;</type>
+        <definition>MSetIterator&amp; Xapian::MSetIterator::operator++</definition>
+        <argsstring>()</argsstring>
+        <name>operator++</name>
+        <briefdescription>
+<para>Advance the iterator. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="290" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" bodystart="290" bodyend="293"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1MSetIterator_1fa449795683d7ffe7387db58373d6fee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classXapian_1_1MSetIterator" kindref="compound">MSetIterator</ref></type>
+        <definition>MSetIterator Xapian::MSetIterator::operator++</definition>
+        <argsstring>(int)</argsstring>
+        <name>operator++</name>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+<para>Advance the iterator (postfix variant). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="296" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" bodystart="296" bodyend="300"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1MSetIterator_14b904a30ffcd05700a908ee7e9645a61" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classXapian_1_1MSetIterator" kindref="compound">MSetIterator</ref> &amp;</type>
+        <definition>MSetIterator&amp; Xapian::MSetIterator::operator--</definition>
+        <argsstring>()</argsstring>
+        <name>operator--</name>
+        <briefdescription>
+<para>Decrement the iterator. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="303" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" bodystart="303" bodyend="306"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1MSetIterator_1dadef547ef6a82c35d6a78b2187a56c4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classXapian_1_1MSetIterator" kindref="compound">MSetIterator</ref></type>
+        <definition>MSetIterator Xapian::MSetIterator::operator--</definition>
+        <argsstring>(int)</argsstring>
+        <name>operator--</name>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+<para>Decrement the iterator (postfix variant). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="309" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" bodystart="309" bodyend="313"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1MSetIterator_16adc92605d7218bdd11db5fb19e68f7e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceXapian_18fa9094bebe1256a7be935a5ede87a64" kindref="member">Xapian::docid</ref></type>
+        <definition>Xapian::docid Xapian::MSetIterator::operator*</definition>
+        <argsstring>() const </argsstring>
+        <name>operator*</name>
+        <briefdescription>
+<para>Get the document ID for the current position. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="316"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1MSetIterator_1b3cd71bd6aa3b5677eacf99f369e482c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classXapian_1_1Document" kindref="compound">Xapian::Document</ref></type>
+        <definition>Xapian::Document Xapian::MSetIterator::get_document</definition>
+        <argsstring>() const </argsstring>
+        <name>get_document</name>
+        <briefdescription>
+<para>Get a <ref refid="classXapian_1_1Document" kindref="compound">Xapian::Document</ref> object for the current position. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns a <ref refid="classXapian_1_1Document" kindref="compound">Xapian::Document</ref> object which provides the information about the document pointed to by the <ref refid="classXapian_1_1MSetIterator" kindref="compound">MSetIterator</ref>.</para><para>If the underlying database has suitable support, using this call (rather than asking the database for a document based on its document ID) will enable the system to ensure that the correct data is returned, and that the document has not been deleted or changed since the query was performed.</para><para><simplesect kind="return"><para>A <ref refid="classXapian_1_1Document" kindref="compound">Xapian::Document</ref> object containing the document data.</para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classXapian_1_1DocNotFoundError" kindref="compound">Xapian::DocNotFoundError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The document specified could not be found in the database. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="334"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1MSetIterator_17921b513e0e0b055134c8c1c8264a149" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceXapian_17f30aa95f0c42b117dafaf66ba24241d" kindref="member">Xapian::doccount</ref></type>
+        <definition>Xapian::doccount Xapian::MSetIterator::get_rank</definition>
+        <argsstring>() const </argsstring>
+        <name>get_rank</name>
+        <briefdescription>
+<para>Get the rank of the document at the current position. </para>        </briefdescription>
+        <detaileddescription>
+<para>The rank is the position that this document is at in the ordered list of results of the query. The result is 0-based - i.e. the top-ranked document has a rank of 0. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="342" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" bodystart="342" bodyend="344"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1MSetIterator_1b0cdaf0f122fb363b2bbff50ec8d1a00" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceXapian_1cac12803afc9e24ee5141c119acb8884" kindref="member">Xapian::weight</ref></type>
+        <definition>Xapian::weight Xapian::MSetIterator::get_weight</definition>
+        <argsstring>() const </argsstring>
+        <name>get_weight</name>
+        <briefdescription>
+<para>Get the weight of the document at the current position. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="347"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1MSetIterator_15a0c5216cb505912318e6a552725e3af" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Xapian::MSetIterator::get_collapse_key</definition>
+        <argsstring>() const </argsstring>
+        <name>get_collapse_key</name>
+        <briefdescription>
+<para>Get the collapse key for this document. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="351"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1MSetIterator_14d2d8fae854bc997dd417234061a3fe2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceXapian_17f30aa95f0c42b117dafaf66ba24241d" kindref="member">Xapian::doccount</ref></type>
+        <definition>Xapian::doccount Xapian::MSetIterator::get_collapse_count</definition>
+        <argsstring>() const </argsstring>
+        <name>get_collapse_count</name>
+        <briefdescription>
+<para>Get an estimate of the number of documents that have been collapsed into this one. </para>        </briefdescription>
+        <detaileddescription>
+<para>The estimate will always be less than or equal to the actual number of other documents satisfying the match criteria with the same collapse key as this document.</para><para>This method may return 0 even though there are other documents with the same collapse key which satisfying the match criteria. However if this method returns non-zero, there definitely are other such documents. So this method may be used to inform the user that there are &quot;at least N other matches in this group&quot;, or to control whether to offer a &quot;show other documents in this group&quot; feature (but note that it may not offer it in every case where it would show other documents). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="369"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1MSetIterator_199514c11a9291175d20fafa73a0839fd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceXapian_122ea0a80c58a2047dd929621b75ed9a2" kindref="member">Xapian::percent</ref></type>
+        <definition>Xapian::percent Xapian::MSetIterator::get_percent</definition>
+        <argsstring>() const </argsstring>
+        <name>get_percent</name>
+        <briefdescription>
+<para>This returns the weight of the document as a percentage score. </para>        </briefdescription>
+        <detaileddescription>
+<para>The return value will be an integer in the range 0 to 100: 0 meaning that the item did not match the query at all.</para><para>The intention is that the highest weighted document will get 100 if it matches all the weight-contributing terms in the query. However, currently it may get a lower percentage score if you use a <ref refid="classXapian_1_1MatchDecider" kindref="compound">MatchDecider</ref> and the sorting is primarily by value. In this case, the percentage for a particular document may vary depending on the first, max_size, and checkatleast parameters passed to <ref refid="classXapian_1_1Enquire_1edb5fb761acc0bb2249bec375883a093" kindref="member">Enquire::get_mset()</ref> (this bug is hard to fix without having to apply the <ref refid="classXapian_1_1MatchDecider" kindref="compound">MatchDecider</ref> to potentially many more documents, which is potentially costly). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="386"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1MSetIterator_195d1c5a337e5f128e58bf68745b036c2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Xapian::MSetIterator::get_description</definition>
+        <argsstring>() const </argsstring>
+        <name>get_description</name>
+        <briefdescription>
+<para>Return a string describing this object. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="389"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An iterator pointing to items in an <ref refid="classXapian_1_1MSet" kindref="compound">MSet</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para>This is used for access to individual results of a match. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="548">
+        <label>Xapian::MSetIterator</label>
+        <link refid="classXapian_1_1MSetIterator"/>
+        <childnode refid="549" relation="usage">
+          <edgelabel>mset</edgelabel>
+        </childnode>
+      </node>
+      <node id="549">
+        <label>Xapian::MSet</label>
+        <link refid="classXapian_1_1MSet"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="259" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" bodystart="259" bodyend="399"/>
+    <listofallmembers>
+      <member refid="classXapian_1_1MSetIterator_199f8773f332ef160d17056ee47f665a7" prot="public" virt="non-virtual"><scope>Xapian::MSetIterator</scope><name>difference_type</name></member>
+      <member refid="classXapian_1_1MSetIterator_14d2d8fae854bc997dd417234061a3fe2" prot="public" virt="non-virtual"><scope>Xapian::MSetIterator</scope><name>get_collapse_count</name></member>
+      <member refid="classXapian_1_1MSetIterator_15a0c5216cb505912318e6a552725e3af" prot="public" virt="non-virtual"><scope>Xapian::MSetIterator</scope><name>get_collapse_key</name></member>
+      <member refid="classXapian_1_1MSetIterator_195d1c5a337e5f128e58bf68745b036c2" prot="public" virt="non-virtual"><scope>Xapian::MSetIterator</scope><name>get_description</name></member>
+      <member refid="classXapian_1_1MSetIterator_1b3cd71bd6aa3b5677eacf99f369e482c" prot="public" virt="non-virtual"><scope>Xapian::MSetIterator</scope><name>get_document</name></member>
+      <member refid="classXapian_1_1MSetIterator_199514c11a9291175d20fafa73a0839fd" prot="public" virt="non-virtual"><scope>Xapian::MSetIterator</scope><name>get_percent</name></member>
+      <member refid="classXapian_1_1MSetIterator_17921b513e0e0b055134c8c1c8264a149" prot="public" virt="non-virtual"><scope>Xapian::MSetIterator</scope><name>get_rank</name></member>
+      <member refid="classXapian_1_1MSetIterator_1b0cdaf0f122fb363b2bbff50ec8d1a00" prot="public" virt="non-virtual"><scope>Xapian::MSetIterator</scope><name>get_weight</name></member>
+      <member refid="classXapian_1_1MSetIterator_1c194d388ef18882bfc4c301939fc9752" prot="private" virt="non-virtual"><scope>Xapian::MSetIterator</scope><name>index</name></member>
+      <member refid="classXapian_1_1MSetIterator_15e6296943b75d873cc6e21cb04a7bf44" prot="public" virt="non-virtual"><scope>Xapian::MSetIterator</scope><name>iterator_category</name></member>
+      <member refid="classXapian_1_1MSetIterator_1b0e2bc3f10f5f57583f7457407e51682" prot="private" virt="non-virtual"><scope>Xapian::MSetIterator</scope><name>mset</name></member>
+      <member refid="classXapian_1_1MSetIterator_1dbf3aa9954af18b2ce80d5ebc4b68a16" prot="private" virt="non-virtual"><scope>Xapian::MSetIterator</scope><name>MSetIterator</name></member>
+      <member refid="classXapian_1_1MSetIterator_124089616ca88737d235d50fe39c10a5b" prot="public" virt="non-virtual"><scope>Xapian::MSetIterator</scope><name>MSetIterator</name></member>
+      <member refid="classXapian_1_1MSetIterator_165b8ccf4acd764feb8c29afc0f25e5ac" prot="public" virt="non-virtual"><scope>Xapian::MSetIterator</scope><name>MSetIterator</name></member>
+      <member refid="classXapian_1_1MSetIterator_144de20741fa12cd650ee986e57a51161" prot="private" virt="non-virtual"><scope>Xapian::MSetIterator</scope><name>operator!=</name></member>
+      <member refid="classXapian_1_1MSetIterator_16adc92605d7218bdd11db5fb19e68f7e" prot="public" virt="non-virtual"><scope>Xapian::MSetIterator</scope><name>operator*</name></member>
+      <member refid="classXapian_1_1MSetIterator_1d4ac6e0c3cac3be285be16b1bf5bf490" prot="public" virt="non-virtual"><scope>Xapian::MSetIterator</scope><name>operator++</name></member>
+      <member refid="classXapian_1_1MSetIterator_1fa449795683d7ffe7387db58373d6fee" prot="public" virt="non-virtual"><scope>Xapian::MSetIterator</scope><name>operator++</name></member>
+      <member refid="classXapian_1_1MSetIterator_14b904a30ffcd05700a908ee7e9645a61" prot="public" virt="non-virtual"><scope>Xapian::MSetIterator</scope><name>operator--</name></member>
+      <member refid="classXapian_1_1MSetIterator_1dadef547ef6a82c35d6a78b2187a56c4" prot="public" virt="non-virtual"><scope>Xapian::MSetIterator</scope><name>operator--</name></member>
+      <member refid="classXapian_1_1MSetIterator_1109ec6c9a89d390ac82479905ae2b5e1" prot="public" virt="non-virtual"><scope>Xapian::MSetIterator</scope><name>operator=</name></member>
+      <member refid="classXapian_1_1MSetIterator_14107b130f6713cad73255369d6b43f91" prot="private" virt="non-virtual"><scope>Xapian::MSetIterator</scope><name>operator==</name></member>
+      <member refid="classXapian_1_1MSetIterator_1b82ce0bb3c82847d99e4ea81d51d02c5" prot="public" virt="non-virtual"><scope>Xapian::MSetIterator</scope><name>pointer</name></member>
+      <member refid="classXapian_1_1MSetIterator_153ca63620c8714a477ae2d930b84012a" prot="public" virt="non-virtual"><scope>Xapian::MSetIterator</scope><name>reference</name></member>
+      <member refid="classXapian_1_1MSetIterator_120dc0a349ee3a6c13e88b3930be2d1e3" prot="public" virt="non-virtual"><scope>Xapian::MSetIterator</scope><name>value_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

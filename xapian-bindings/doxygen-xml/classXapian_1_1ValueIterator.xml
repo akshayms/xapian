@@ -1,0 +1,325 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="classXapian_1_1ValueIterator" kind="class" prot="public">
+    <compoundname>Xapian::ValueIterator</compoundname>
+    <includes local="no">valueiterator.h</includes>
+      <sectiondef kind="user-defined">
+      <memberdef kind="typedef" id="classXapian_1_1ValueIterator_11da37a84f67fd8d7d3e08888832cf377" prot="private" static="no">
+        <type>std::input_iterator_tag</type>
+        <definition>typedef std::input_iterator_tag Xapian::ValueIterator::iterator_category</definition>
+        <argsstring></argsstring>
+        <name>iterator_category</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/valueiterator.h" line="150" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/valueiterator.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classXapian_1_1ValueIterator_1536aa2f1f0f23f92f6142657eee46a54" prot="private" static="no">
+        <type>std::string</type>
+        <definition>typedef std::string Xapian::ValueIterator::value_type</definition>
+        <argsstring></argsstring>
+        <name>value_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/valueiterator.h" line="152" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/valueiterator.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classXapian_1_1ValueIterator_1341a2ec8a17b972afc032c8a9e99c80e" prot="private" static="no">
+        <type><ref refid="namespaceXapian_1958ff32fd7a85f2b8a4784ac18397f2b" kindref="member">Xapian::doccount_diff</ref></type>
+        <definition>typedef Xapian::doccount_diff Xapian::ValueIterator::difference_type</definition>
+        <argsstring></argsstring>
+        <name>difference_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/valueiterator.h" line="154" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/valueiterator.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classXapian_1_1ValueIterator_1db40fe08d83bdc1d65fe519fe35fa1ab" prot="private" static="no">
+        <type>std::string *</type>
+        <definition>typedef std::string* Xapian::ValueIterator::pointer</definition>
+        <argsstring></argsstring>
+        <name>pointer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/valueiterator.h" line="156" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/valueiterator.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classXapian_1_1ValueIterator_190768af03030ce243f4b8a12b367e08c" prot="private" static="no">
+        <type>std::string &amp;</type>
+        <definition>typedef std::string&amp; Xapian::ValueIterator::reference</definition>
+        <argsstring></argsstring>
+        <name>reference</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/valueiterator.h" line="158" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/valueiterator.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classXapian_1_1ValueIterator_1bf638807fd11fd1e47b8d2f257c1a21f" prot="private" static="no" mutable="no">
+        <type>Internal *</type>
+        <definition>Internal* Xapian::ValueIterator::internal</definition>
+        <argsstring></argsstring>
+        <name>internal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/valueiterator.h" line="42" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/valueiterator.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classXapian_1_1ValueIterator_14abbd17b6bd10f986898ff8e1e324441" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::ValueIterator::decref</definition>
+        <argsstring>()</argsstring>
+        <name>decref</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/valueiterator.h" line="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1ValueIterator_15fcf37024fa6c4b22556f238b7a49643" prot="private" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::ValueIterator::ValueIterator</definition>
+        <argsstring>(Internal *internal_)</argsstring>
+        <name>ValueIterator</name>
+        <param>
+          <type>Internal *</type>
+          <declname>internal_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/valueiterator.h" line="45"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classXapian_1_1ValueIterator_1e8f251e2647b9b73b1b516c8bc2a15e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::ValueIterator::ValueIterator</definition>
+        <argsstring>(const ValueIterator &amp;o)</argsstring>
+        <name>ValueIterator</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1ValueIterator" kindref="compound">ValueIterator</ref> &amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+<para>Copy constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/valueiterator.h" line="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1ValueIterator_11dcd37a282ae544724ffd37dca408406" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classXapian_1_1ValueIterator" kindref="compound">ValueIterator</ref> &amp;</type>
+        <definition>ValueIterator&amp; Xapian::ValueIterator::operator=</definition>
+        <argsstring>(const ValueIterator &amp;o)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1ValueIterator" kindref="compound">ValueIterator</ref> &amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+<para>Assignment. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/valueiterator.h" line="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1ValueIterator_14084631b78f8c9f95b3bc1f5546549dc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::ValueIterator::ValueIterator</definition>
+        <argsstring>()</argsstring>
+        <name>ValueIterator</name>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Creates an uninitialised iterator, which can&apos;t be used before being assigned to, but is sometimes syntactically convenient. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/valueiterator.h" line="58" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/valueiterator.h" bodystart="58" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1ValueIterator_15a3c9c62e2667580261ef312758942ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::ValueIterator::~ValueIterator</definition>
+        <argsstring>()</argsstring>
+        <name>~ValueIterator</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/valueiterator.h" line="61" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/valueiterator.h" bodystart="61" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1ValueIterator_1ebc5e56d09b4c49770e8fb19f600a288" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Xapian::ValueIterator::operator*</definition>
+        <argsstring>() const </argsstring>
+        <name>operator*</name>
+        <briefdescription>
+<para>Return the value at the current position. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/valueiterator.h" line="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1ValueIterator_1e76c157616ca36ce63409846649fc666" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classXapian_1_1ValueIterator" kindref="compound">ValueIterator</ref> &amp;</type>
+        <definition>ValueIterator&amp; Xapian::ValueIterator::operator++</definition>
+        <argsstring>()</argsstring>
+        <name>operator++</name>
+        <briefdescription>
+<para>Advance the iterator to the next position. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/valueiterator.h" line="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1ValueIterator_1a101b6f08ac0cbd9ec306ecf154892d4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>DerefWrapper_&lt; std::string &gt;</type>
+        <definition>DerefWrapper_&lt;std::string&gt; Xapian::ValueIterator::operator++</definition>
+        <argsstring>(int)</argsstring>
+        <name>operator++</name>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+<para>Advance the iterator to the next position (postfix version). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/valueiterator.h" line="72" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/valueiterator.h" bodystart="72" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1ValueIterator_15abfc1ae8f35819b3b71f502092646a8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceXapian_18fa9094bebe1256a7be935a5ede87a64" kindref="member">Xapian::docid</ref></type>
+        <definition>Xapian::docid Xapian::ValueIterator::get_docid</definition>
+        <argsstring>() const </argsstring>
+        <name>get_docid</name>
+        <briefdescription>
+<para>Return the docid at the current position. </para>        </briefdescription>
+        <detaileddescription>
+<para>If we&apos;re iterating over values of a document, this method will throw <ref refid="classXapian_1_1InvalidOperationError" kindref="compound">Xapian::InvalidOperationError</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/valueiterator.h" line="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1ValueIterator_17ad3cc981f6563e8d2d2d875bcee78a5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceXapian_194a899651fa920c72ffa9635bde630ea" kindref="member">Xapian::valueno</ref></type>
+        <definition>Xapian::valueno Xapian::ValueIterator::get_valueno</definition>
+        <argsstring>() const </argsstring>
+        <name>get_valueno</name>
+        <briefdescription>
+<para>Return the value slot number for the current position. </para>        </briefdescription>
+        <detaileddescription>
+<para>If the iterator is over all values in a slot, this returns that slot&apos;s number. If the iterator is over the values in a particular document, it returns the number of each slot in turn. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/valueiterator.h" line="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1ValueIterator_1ecff65bcb208c551bfee41fec244fbbf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::ValueIterator::skip_to</definition>
+        <argsstring>(Xapian::docid docid_or_slot)</argsstring>
+        <name>skip_to</name>
+        <param>
+          <type><ref refid="namespaceXapian_18fa9094bebe1256a7be935a5ede87a64" kindref="member">Xapian::docid</ref></type>
+          <declname>docid_or_slot</declname>
+        </param>
+        <briefdescription>
+<para>Advance the iterator to document id or value slot <emphasis>docid_or_slot</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+<para>If this iterator is over values in a document, then this method advances the iterator to value slot <emphasis>docid_or_slot</emphasis>, or the first slot after it if there is no value in slot <emphasis>slot</emphasis>.</para><para>If this iterator is over values in a particular slot, then this method advances the iterator to document id <emphasis>docid_or_slot</emphasis>, or the first document id after it if there is no value in the slot we&apos;re iterating over for document <emphasis>docid_or_slot</emphasis>.</para><para>Note: The &quot;two-faced&quot; nature of this method is due to how C++ overloading works. <ref refid="namespaceXapian_18fa9094bebe1256a7be935a5ede87a64" kindref="member">Xapian::docid</ref> and <ref refid="namespaceXapian_194a899651fa920c72ffa9635bde630ea" kindref="member">Xapian::valueno</ref> are both typedefs for the same unsigned integer type, so overloading can&apos;t distinguish them. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/valueiterator.h" line="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1ValueIterator_1e41c268fb5e79b1e4f8cd90a62ec92dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Xapian::ValueIterator::check</definition>
+        <argsstring>(Xapian::docid docid)</argsstring>
+        <name>check</name>
+        <param>
+          <type><ref refid="namespaceXapian_18fa9094bebe1256a7be935a5ede87a64" kindref="member">Xapian::docid</ref></type>
+          <declname>docid</declname>
+        </param>
+        <briefdescription>
+<para>Check if the specified docid occurs. </para>        </briefdescription>
+        <detaileddescription>
+<para>The caller is required to ensure that the specified document id <emphasis>did</emphasis> actually exists in the database.</para><para>This method acts like <ref refid="classXapian_1_1ValueIterator_1ecff65bcb208c551bfee41fec244fbbf" kindref="member">skip_to()</ref> if that can be done at little extra cost, in which case it then returns true. This is how brass and chert databases behave because they store values in streams which allow for an efficient implementation of <ref refid="classXapian_1_1ValueIterator_1ecff65bcb208c551bfee41fec244fbbf" kindref="member">skip_to()</ref>.</para><para>Otherwise it simply checks if a particular docid is present. If it is, it returns true. If it isn&apos;t, it returns false, and leaves the position unspecified (and hence the result of calling methods which depends on the current position, such as <ref refid="classXapian_1_1ValueIterator_15abfc1ae8f35819b3b71f502092646a8" kindref="member">get_docid()</ref>, are also unspecified). In this state, next() will advance to the first matching position after document <emphasis>did</emphasis>, and <ref refid="classXapian_1_1ValueIterator_1ecff65bcb208c551bfee41fec244fbbf" kindref="member">skip_to()</ref> will act as it would if the position was the first matching position after document <emphasis>did</emphasis>.</para><para>Currently the inmemory and remote backends behave in the latter way because they don&apos;t support streamed values and so <ref refid="classXapian_1_1ValueIterator_1ecff65bcb208c551bfee41fec244fbbf" kindref="member">skip_to()</ref> must check each document it skips over which is significantly slower. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/valueiterator.h" line="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1ValueIterator_174bed1979654824aa8186c3708cfd921" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Xapian::ValueIterator::get_description</definition>
+        <argsstring>() const </argsstring>
+        <name>get_description</name>
+        <briefdescription>
+<para>Return a string describing this object. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/valueiterator.h" line="136"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class for iterating over document values. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/valueiterator.h" line="35" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/valueiterator.h" bodystart="35" bodyend="160"/>
+    <listofallmembers>
+      <member refid="classXapian_1_1ValueIterator_1e41c268fb5e79b1e4f8cd90a62ec92dd" prot="public" virt="non-virtual"><scope>Xapian::ValueIterator</scope><name>check</name></member>
+      <member refid="classXapian_1_1ValueIterator_14abbd17b6bd10f986898ff8e1e324441" prot="private" virt="non-virtual"><scope>Xapian::ValueIterator</scope><name>decref</name></member>
+      <member refid="classXapian_1_1ValueIterator_1341a2ec8a17b972afc032c8a9e99c80e" prot="private" virt="non-virtual"><scope>Xapian::ValueIterator</scope><name>difference_type</name></member>
+      <member refid="classXapian_1_1ValueIterator_174bed1979654824aa8186c3708cfd921" prot="public" virt="non-virtual"><scope>Xapian::ValueIterator</scope><name>get_description</name></member>
+      <member refid="classXapian_1_1ValueIterator_15abfc1ae8f35819b3b71f502092646a8" prot="public" virt="non-virtual"><scope>Xapian::ValueIterator</scope><name>get_docid</name></member>
+      <member refid="classXapian_1_1ValueIterator_17ad3cc981f6563e8d2d2d875bcee78a5" prot="public" virt="non-virtual"><scope>Xapian::ValueIterator</scope><name>get_valueno</name></member>
+      <member refid="classXapian_1_1ValueIterator_1bf638807fd11fd1e47b8d2f257c1a21f" prot="private" virt="non-virtual"><scope>Xapian::ValueIterator</scope><name>internal</name></member>
+      <member refid="classXapian_1_1ValueIterator_11da37a84f67fd8d7d3e08888832cf377" prot="private" virt="non-virtual"><scope>Xapian::ValueIterator</scope><name>iterator_category</name></member>
+      <member refid="classXapian_1_1ValueIterator_1ebc5e56d09b4c49770e8fb19f600a288" prot="public" virt="non-virtual"><scope>Xapian::ValueIterator</scope><name>operator*</name></member>
+      <member refid="classXapian_1_1ValueIterator_1e76c157616ca36ce63409846649fc666" prot="public" virt="non-virtual"><scope>Xapian::ValueIterator</scope><name>operator++</name></member>
+      <member refid="classXapian_1_1ValueIterator_1a101b6f08ac0cbd9ec306ecf154892d4" prot="public" virt="non-virtual"><scope>Xapian::ValueIterator</scope><name>operator++</name></member>
+      <member refid="classXapian_1_1ValueIterator_11dcd37a282ae544724ffd37dca408406" prot="public" virt="non-virtual"><scope>Xapian::ValueIterator</scope><name>operator=</name></member>
+      <member refid="classXapian_1_1ValueIterator_1db40fe08d83bdc1d65fe519fe35fa1ab" prot="private" virt="non-virtual"><scope>Xapian::ValueIterator</scope><name>pointer</name></member>
+      <member refid="classXapian_1_1ValueIterator_190768af03030ce243f4b8a12b367e08c" prot="private" virt="non-virtual"><scope>Xapian::ValueIterator</scope><name>reference</name></member>
+      <member refid="classXapian_1_1ValueIterator_1ecff65bcb208c551bfee41fec244fbbf" prot="public" virt="non-virtual"><scope>Xapian::ValueIterator</scope><name>skip_to</name></member>
+      <member refid="classXapian_1_1ValueIterator_1536aa2f1f0f23f92f6142657eee46a54" prot="private" virt="non-virtual"><scope>Xapian::ValueIterator</scope><name>value_type</name></member>
+      <member refid="classXapian_1_1ValueIterator_15fcf37024fa6c4b22556f238b7a49643" prot="private" virt="non-virtual"><scope>Xapian::ValueIterator</scope><name>ValueIterator</name></member>
+      <member refid="classXapian_1_1ValueIterator_1e8f251e2647b9b73b1b516c8bc2a15e4" prot="public" virt="non-virtual"><scope>Xapian::ValueIterator</scope><name>ValueIterator</name></member>
+      <member refid="classXapian_1_1ValueIterator_14084631b78f8c9f95b3bc1f5546549dc" prot="public" virt="non-virtual"><scope>Xapian::ValueIterator</scope><name>ValueIterator</name></member>
+      <member refid="classXapian_1_1ValueIterator_15a3c9c62e2667580261ef312758942ae" prot="public" virt="non-virtual"><scope>Xapian::ValueIterator</scope><name>~ValueIterator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="classXapian_1_1ExpandDecider" kind="class" prot="public">
+    <compoundname>Xapian::ExpandDecider</compoundname>
+    <derivedcompoundref refid="classXapian_1_1ExpandDeciderAnd" prot="public" virt="non-virtual">Xapian::ExpandDeciderAnd</derivedcompoundref>
+    <derivedcompoundref refid="classXapian_1_1ExpandDeciderFilterTerms" prot="public" virt="non-virtual">Xapian::ExpandDeciderFilterTerms</derivedcompoundref>
+    <includes local="no">expanddecider.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classXapian_1_1ExpandDecider_16ee544877bb51b85da4536eb8abd1cf8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool Xapian::ExpandDecider::operator()</definition>
+        <argsstring>(const std::string &amp;term) const =0</argsstring>
+        <name>operator()</name>
+        <reimplementedby refid="classXapian_1_1ExpandDeciderFilterTerms_1afc04e9e1692a3985834ef5b9b37f436">operator()</reimplementedby>
+        <reimplementedby refid="classXapian_1_1ExpandDeciderAnd_1c10c6b84ff534553b3b9e520f6c0ea29">operator()</reimplementedby>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>term</declname>
+        </param>
+        <briefdescription>
+<para>Do we want this term in the <ref refid="classXapian_1_1ESet" kindref="compound">ESet</ref>? </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/expanddecider.h" line="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1ExpandDecider_1c0a1002daa165553770b71abf23348be" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual Xapian::ExpandDecider::~ExpandDecider</definition>
+        <argsstring>()</argsstring>
+        <name>~ExpandDecider</name>
+        <briefdescription>
+<para>Virtual destructor, because we have virtual methods. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/expanddecider.h" line="38"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Virtual base class for expand decider functor. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="435">
+        <label>Xapian::ExpandDecider</label>
+        <link refid="classXapian_1_1ExpandDecider"/>
+      </node>
+      <node id="437">
+        <label>Xapian::ExpandDeciderFilterTerms</label>
+        <link refid="classXapian_1_1ExpandDeciderFilterTerms"/>
+        <childnode refid="435" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="436">
+        <label>Xapian::ExpandDeciderAnd</label>
+        <link refid="classXapian_1_1ExpandDeciderAnd"/>
+        <childnode refid="435" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/expanddecider.h" line="32" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/expanddecider.h" bodystart="32" bodyend="39"/>
+    <listofallmembers>
+      <member refid="classXapian_1_1ExpandDecider_16ee544877bb51b85da4536eb8abd1cf8" prot="public" virt="pure-virtual"><scope>Xapian::ExpandDecider</scope><name>operator()</name></member>
+      <member refid="classXapian_1_1ExpandDecider_1c0a1002daa165553770b71abf23348be" prot="public" virt="virtual"><scope>Xapian::ExpandDecider</scope><name>~ExpandDecider</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,107 @@
+10
+
+dir
+12767
+svn://svn.tartarus.org/swig/trunk/Examples/octave
+svn://svn.tartarus.org/swig
+
+
+
+2008-04-29T18:01:45.390353Z
+10398
+wsfulton
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+cce2a4f7-dc27-40e0-b75d-b3f4d8458e25
+
+pointer
+dir
+
+functor
+dir
+
+funcptr
+dir
+
+extend
+dir
+
+check.list
+file
+
+
+
+
+2012-03-21T13:02:47.845786Z
+d5744dbd1411b05eec7d123b698204aa
+2008-03-01T23:35:44.328114Z
+10290
+xavier98
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+152
+
+simple
+dir
+
+operator
+dir
+
+callback
+dir
+
+reference
+dir
+
+funcptr2
+dir
+
+enum
+dir
+
+class
+dir
+
+variables
+dir
+
+template
+dir
+
+constants
+dir
+
+contract
+dir
+

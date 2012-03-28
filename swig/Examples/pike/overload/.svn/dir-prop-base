@@ -1,0 +1,8 @@
+K 10
+svn:ignore
+V 52
+example.o
+example.so
+example_wrap.cxx
+example_wrap.o
+END

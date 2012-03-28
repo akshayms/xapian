@@ -1,0 +1,6 @@
+K 13
+svn:mergeinfo
+V 142
+/branches/replication_fixes/xapian-core/include/xapian/keymaker.h:14149-14152
+/trunk/xapian-core/include/xapian/keymaker.h:2-13515,15485-16044
+END

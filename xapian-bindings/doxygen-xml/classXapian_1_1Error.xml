@@ -1,0 +1,401 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="classXapian_1_1Error" kind="class" prot="public">
+    <compoundname>Xapian::Error</compoundname>
+    <derivedcompoundref refid="classXapian_1_1LogicError" prot="public" virt="non-virtual">Xapian::LogicError</derivedcompoundref>
+    <derivedcompoundref refid="classXapian_1_1RuntimeError" prot="public" virt="non-virtual">Xapian::RuntimeError</derivedcompoundref>
+    <includes local="no">error.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classXapian_1_1Error_1bd52e76045a491c2a2c48c29f77ff701" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class ErrorHandler</definition>
+        <argsstring></argsstring>
+        <name>ErrorHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="40" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classXapian_1_1Error_163bf96fc7f4181f77ad140b2d0268065" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Xapian::Error::msg</definition>
+        <argsstring></argsstring>
+        <name>msg</name>
+        <briefdescription>
+<para>Message giving details of the error, intended for human consumption. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="43" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classXapian_1_1Error_1112d6d1f293119dc3d670d4b95ba55ac" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Xapian::Error::context</definition>
+        <argsstring></argsstring>
+        <name>context</name>
+        <briefdescription>
+<para>Optional context information. </para>        </briefdescription>
+        <detaileddescription>
+<para>This context is intended for use by <ref refid="classXapian_1_1ErrorHandler" kindref="compound">Xapian::ErrorHandler</ref> (for example so it can know which remote server is unreliable and report the problem and remove that server from those being searched). But it&apos;s typically a plain-text string, and so also fit for human consumption. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="52" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classXapian_1_1Error_14949650d50f48f2dcd3927590049d6b1" prot="private" static="no" mutable="yes">
+        <type>std::string</type>
+        <definition>std::string Xapian::Error::error_string</definition>
+        <argsstring></argsstring>
+        <name>error_string</name>
+        <briefdescription>
+<para>The error string derived from my_errno. </para>        </briefdescription>
+        <detaileddescription>
+<para>This string is generated from my_errno lazily. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="58" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classXapian_1_1Error_17c16ba698c2803260a8b784f2e577906" prot="private" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* Xapian::Error::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+<para>The type of this error (e.g. <ref refid="classXapian_1_1DocNotFoundError" kindref="compound">DocNotFoundError</ref>.). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="61" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classXapian_1_1Error_11c57caf08995f6ecf7aea0249cc0c2b6" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Xapian::Error::my_errno</definition>
+        <argsstring></argsstring>
+        <name>my_errno</name>
+        <briefdescription>
+<para>Optional value of &apos;errno&apos; associated with this error. </para>        </briefdescription>
+        <detaileddescription>
+<para>If no value is associated, this member variable will be 0.</para><para>On UNIX, if this value is &lt; 0, it&apos;s a negated h_errno value (giving an error from gethostbyname() or similar).</para><para>On Windows, if this value is &lt; 0, it&apos;s a negated Windows error code (as given by GetLastError() or WSAGetLastError()).</para><para>NB We don&apos;t just call this member &quot;errno&quot; to avoid problems on platforms where errno is a preprocessor macro. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="76" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classXapian_1_1Error_114bbf37f0c2157403bdeed124a46730c" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Xapian::Error::already_handled</definition>
+        <argsstring></argsstring>
+        <name>already_handled</name>
+        <briefdescription>
+<para>True if this error has already been passed to an <ref refid="classXapian_1_1ErrorHandler" kindref="compound">ErrorHandler</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="79" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classXapian_1_1Error_1cd17897a0257d9134527428a58503ca0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::Error::operator=</definition>
+        <argsstring>(const Error &amp;o)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1Error" kindref="compound">Error</ref> &amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+<para>Don&apos;t allow assignment of the base class. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Error_1c52f5b3b3b285d5e12c239f6317ff76c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::Error::Error</definition>
+        <argsstring>(const std::string &amp;msg_, const std::string &amp;context_, const char *type_, const char *error_string_)</argsstring>
+        <name>Error</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>context_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>type_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>error_string_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Error_1402595630e3a937fa9c25f42a285428a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::Error::Error</definition>
+        <argsstring>(const std::string &amp;msg_, const std::string &amp;context_, const char *type_, int errno_)</argsstring>
+        <name>Error</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>context_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>type_</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>errno_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="97" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="94" bodyend="97"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classXapian_1_1Error_1136945e703317bdf6e18d8cf511a5bfb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* Xapian::Error::get_type</definition>
+        <argsstring>() const </argsstring>
+        <name>get_type</name>
+        <briefdescription>
+<para>The type of this error (e.g. &quot;DocNotFoundError&quot;.). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="101" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="101" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Error_1ea05df48ea71dfd045da28ab984cdaa3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string&amp; Xapian::Error::get_msg</definition>
+        <argsstring>() const </argsstring>
+        <name>get_msg</name>
+        <briefdescription>
+<para>Message giving details of the error, intended for human consumption. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="104" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="104" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Error_190c683965555b4bc86b08e8667170e44" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string&amp; Xapian::Error::get_context</definition>
+        <argsstring>() const </argsstring>
+        <name>get_context</name>
+        <briefdescription>
+<para>Optional context information. </para>        </briefdescription>
+        <detaileddescription>
+<para>This context is intended for use by <ref refid="classXapian_1_1ErrorHandler" kindref="compound">Xapian::ErrorHandler</ref> (for example so it can know which remote server is unreliable and report the problem and remove that server from those being searched). But it&apos;s typically a plain-text string, and so also fit for human consumption. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="113" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="113" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Error_16f94a579f8e176f85c6fb036592dab61" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* Xapian::Error::get_error_string</definition>
+        <argsstring>() const </argsstring>
+        <name>get_error_string</name>
+        <briefdescription>
+<para>Returns any system error string associated with this exception. </para>        </briefdescription>
+        <detaileddescription>
+<para>The system error string may come from errno, h_errno (on UNIX), or GetLastError() (on MS Windows). If there is no associated system error string, NULL is returned. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Error_1bd64e380eb6d864dc907ee62c1f58a74" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Xapian::Error::get_description</definition>
+        <argsstring>() const </argsstring>
+        <name>get_description</name>
+        <briefdescription>
+<para>Return a string describing this object. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="124"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>All exceptions thrown by <ref refid="namespaceXapian" kindref="compound">Xapian</ref> are subclasses of <ref refid="classXapian_1_1Error" kindref="compound">Xapian::Error</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class can not be instantiated directly - instead a subclass should be used. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="410">
+        <label>Xapian::DatabaseError</label>
+        <link refid="classXapian_1_1DatabaseError"/>
+        <childnode refid="409" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="420">
+        <label>Xapian::NetworkError</label>
+        <link refid="classXapian_1_1NetworkError"/>
+        <childnode refid="409" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="404">
+        <label>Xapian::LogicError</label>
+        <link refid="classXapian_1_1LogicError"/>
+        <childnode refid="403" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="403">
+        <label>Xapian::Error</label>
+        <link refid="classXapian_1_1Error"/>
+      </node>
+      <node id="412">
+        <label>Xapian::DatabaseCreateError</label>
+        <link refid="classXapian_1_1DatabaseCreateError"/>
+        <childnode refid="410" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="409">
+        <label>Xapian::RuntimeError</label>
+        <link refid="classXapian_1_1RuntimeError"/>
+        <childnode refid="403" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="408">
+        <label>Xapian::UnimplementedError</label>
+        <link refid="classXapian_1_1UnimplementedError"/>
+        <childnode refid="404" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="418">
+        <label>Xapian::FeatureUnavailableError</label>
+        <link refid="classXapian_1_1FeatureUnavailableError"/>
+        <childnode refid="409" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="411">
+        <label>Xapian::DatabaseCorruptError</label>
+        <link refid="classXapian_1_1DatabaseCorruptError"/>
+        <childnode refid="410" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="407">
+        <label>Xapian::InvalidOperationError</label>
+        <link refid="classXapian_1_1InvalidOperationError"/>
+        <childnode refid="404" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="405">
+        <label>Xapian::AssertionError</label>
+        <link refid="classXapian_1_1AssertionError"/>
+        <childnode refid="404" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="416">
+        <label>Xapian::DatabaseVersionError</label>
+        <link refid="classXapian_1_1DatabaseVersionError"/>
+        <childnode refid="415" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="415">
+        <label>Xapian::DatabaseOpeningError</label>
+        <link refid="classXapian_1_1DatabaseOpeningError"/>
+        <childnode refid="410" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="406">
+        <label>Xapian::InvalidArgumentError</label>
+        <link refid="classXapian_1_1InvalidArgumentError"/>
+        <childnode refid="404" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="414">
+        <label>Xapian::DatabaseModifiedError</label>
+        <link refid="classXapian_1_1DatabaseModifiedError"/>
+        <childnode refid="410" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="424">
+        <label>Xapian::SerialisationError</label>
+        <link refid="classXapian_1_1SerialisationError"/>
+        <childnode refid="409" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="413">
+        <label>Xapian::DatabaseLockError</label>
+        <link refid="classXapian_1_1DatabaseLockError"/>
+        <childnode refid="410" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="423">
+        <label>Xapian::RangeError</label>
+        <link refid="classXapian_1_1RangeError"/>
+        <childnode refid="409" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="419">
+        <label>Xapian::InternalError</label>
+        <link refid="classXapian_1_1InternalError"/>
+        <childnode refid="409" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="421">
+        <label>Xapian::NetworkTimeoutError</label>
+        <link refid="classXapian_1_1NetworkTimeoutError"/>
+        <childnode refid="420" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="417">
+        <label>Xapian::DocNotFoundError</label>
+        <link refid="classXapian_1_1DocNotFoundError"/>
+        <childnode refid="409" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="422">
+        <label>Xapian::QueryParserError</label>
+        <link refid="classXapian_1_1QueryParserError"/>
+        <childnode refid="409" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="38" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="38" bodyend="125"/>
+    <listofallmembers>
+      <member refid="classXapian_1_1Error_114bbf37f0c2157403bdeed124a46730c" prot="private" virt="non-virtual"><scope>Xapian::Error</scope><name>already_handled</name></member>
+      <member refid="classXapian_1_1Error_1112d6d1f293119dc3d670d4b95ba55ac" prot="private" virt="non-virtual"><scope>Xapian::Error</scope><name>context</name></member>
+      <member refid="classXapian_1_1Error_1c52f5b3b3b285d5e12c239f6317ff76c" prot="private" virt="non-virtual"><scope>Xapian::Error</scope><name>Error</name></member>
+      <member refid="classXapian_1_1Error_1402595630e3a937fa9c25f42a285428a" prot="private" virt="non-virtual"><scope>Xapian::Error</scope><name>Error</name></member>
+      <member refid="classXapian_1_1Error_14949650d50f48f2dcd3927590049d6b1" prot="private" virt="non-virtual"><scope>Xapian::Error</scope><name>error_string</name></member>
+      <member refid="classXapian_1_1Error_190c683965555b4bc86b08e8667170e44" prot="public" virt="non-virtual"><scope>Xapian::Error</scope><name>get_context</name></member>
+      <member refid="classXapian_1_1Error_1bd64e380eb6d864dc907ee62c1f58a74" prot="public" virt="non-virtual"><scope>Xapian::Error</scope><name>get_description</name></member>
+      <member refid="classXapian_1_1Error_16f94a579f8e176f85c6fb036592dab61" prot="public" virt="non-virtual"><scope>Xapian::Error</scope><name>get_error_string</name></member>
+      <member refid="classXapian_1_1Error_1ea05df48ea71dfd045da28ab984cdaa3" prot="public" virt="non-virtual"><scope>Xapian::Error</scope><name>get_msg</name></member>
+      <member refid="classXapian_1_1Error_1136945e703317bdf6e18d8cf511a5bfb" prot="public" virt="non-virtual"><scope>Xapian::Error</scope><name>get_type</name></member>
+      <member refid="classXapian_1_1Error_163bf96fc7f4181f77ad140b2d0268065" prot="private" virt="non-virtual"><scope>Xapian::Error</scope><name>msg</name></member>
+      <member refid="classXapian_1_1Error_11c57caf08995f6ecf7aea0249cc0c2b6" prot="private" virt="non-virtual"><scope>Xapian::Error</scope><name>my_errno</name></member>
+      <member refid="classXapian_1_1Error_1cd17897a0257d9134527428a58503ca0" prot="private" virt="non-virtual"><scope>Xapian::Error</scope><name>operator=</name></member>
+      <member refid="classXapian_1_1Error_17c16ba698c2803260a8b784f2e577906" prot="private" virt="non-virtual"><scope>Xapian::Error</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

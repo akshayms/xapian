@@ -1,0 +1,16 @@
+K 10
+svn:ignore
+V 128
+example.pm
+*_wrap.c
+*_wrap.cxx
+example.dll
+example.dsw
+example.ncb
+example.opt
+example.plg
+Release
+Debug
+Example.class
+Example.h
+END

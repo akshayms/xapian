@@ -1,0 +1,435 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="letor_8h" kind="file">
+    <compoundname>letor.h</compoundname>
+    <includes refid="xapian_8h" local="no">xapian.h</includes>
+    <includes local="no">xapian/base.h</includes>
+    <includes refid="types_8h" local="no">xapian/types.h</includes>
+    <includes refid="unicode_8h" local="no">xapian/unicode.h</includes>
+    <includes local="no">xapian/visibility.h</includes>
+    <includes local="no">string</includes>
+    <includes local="no">map</includes>
+    <incdepgraph>
+      <node id="156">
+        <label>xapian/postingsource.h</label>
+        <link refid="postingsource_8h"/>
+        <childnode refid="136" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="155" relation="include">
+        </childnode>
+      </node>
+      <node id="140">
+        <label>iterator</label>
+      </node>
+      <node id="141">
+        <label>xapian/derefwrapper.h</label>
+      </node>
+      <node id="160">
+        <label>xapian/weight.h</label>
+        <link refid="weight_8h"/>
+        <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+      </node>
+      <node id="134">
+        <label>xapian/visibility.h</label>
+      </node>
+      <node id="164">
+        <label>xapian/base.h</label>
+      </node>
+      <node id="129">
+        <label>xapian/version.h</label>
+        <link refid="version_8h"/>
+      </node>
+      <node id="161">
+        <label>xapian/stem.h</label>
+        <link refid="stem_8h"/>
+        <childnode refid="138" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+      </node>
+      <node id="158">
+        <label>xapian/queryparser.h</label>
+        <link refid="queryparser_8h"/>
+        <childnode refid="138" relation="include">
+        </childnode>
+        <childnode refid="157" relation="include">
+        </childnode>
+        <childnode refid="143" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+        <childnode refid="152" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+      </node>
+      <node id="133">
+        <label>string</label>
+      </node>
+      <node id="148">
+        <label>xapian/termgenerator.h</label>
+        <link refid="termgenerator_8h"/>
+        <childnode refid="138" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+        <childnode refid="149" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+      </node>
+      <node id="155">
+        <label>map</label>
+      </node>
+      <node id="159">
+        <label>xapian/valuesetmatchdecider.h</label>
+        <link refid="valuesetmatchdecider_8h"/>
+        <childnode refid="150" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="152" relation="include">
+        </childnode>
+      </node>
+      <node id="150">
+        <label>xapian/enquire.h</label>
+        <link refid="enquire_8h"/>
+        <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="138" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+        <childnode refid="143" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+      </node>
+      <node id="131">
+        <label>xapian/deprecated.h</label>
+      </node>
+      <node id="130">
+        <label>xapian/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="131" relation="include">
+        </childnode>
+      </node>
+      <node id="149">
+        <label>xapian/unicode.h</label>
+        <link refid="unicode_8h"/>
+        <childnode refid="134" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+      </node>
+      <node id="135">
+        <label>xapian/errorhandler.h</label>
+        <link refid="errorhandler_8h"/>
+        <childnode refid="134" relation="include">
+        </childnode>
+      </node>
+      <node id="146">
+        <label>sys/types.h</label>
+      </node>
+      <node id="127">
+        <label>xapian/letor.h</label>
+        <link refid="letor.h"/>
+        <childnode refid="128" relation="include">
+        </childnode>
+        <childnode refid="164" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+        <childnode refid="149" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="155" relation="include">
+        </childnode>
+      </node>
+      <node id="151">
+        <label>xapian/expanddecider.h</label>
+        <link refid="expanddecider_8h"/>
+        <childnode refid="152" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+      </node>
+      <node id="162">
+        <label>xapian/registry.h</label>
+        <link refid="registry_8h"/>
+        <childnode refid="138" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+      </node>
+      <node id="139">
+        <label>xapian/positioniterator.h</label>
+        <link refid="positioniterator_8h"/>
+        <childnode refid="140" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="141" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+      </node>
+      <node id="137">
+        <label>vector</label>
+      </node>
+      <node id="163">
+        <label>xapian/compactor.h</label>
+        <link refid="compactor_8h"/>
+        <childnode refid="138" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+      </node>
+      <node id="132">
+        <label>xapian/error.h</label>
+        <link refid="error_8h"/>
+        <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+      </node>
+      <node id="144">
+        <label>xapian/valueiterator.h</label>
+        <link refid="valueiterator_8h"/>
+        <childnode refid="140" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="141" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+      </node>
+      <node id="142">
+        <label>xapian/postingiterator.h</label>
+        <link refid="postingiterator_8h"/>
+        <childnode refid="140" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="141" relation="include">
+        </childnode>
+        <childnode refid="139" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+      </node>
+      <node id="143">
+        <label>xapian/termiterator.h</label>
+        <link refid="termiterator_8h"/>
+        <childnode refid="140" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="141" relation="include">
+        </childnode>
+        <childnode refid="139" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+      </node>
+      <node id="147">
+        <label>xapian/document.h</label>
+        <link refid="document_8h"/>
+        <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="138" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+        <childnode refid="143" relation="include">
+        </childnode>
+        <childnode refid="144" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+      </node>
+      <node id="136">
+        <label>xapian/database.h</label>
+        <link refid="database_8h"/>
+        <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="137" relation="include">
+        </childnode>
+        <childnode refid="138" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+        <childnode refid="139" relation="include">
+        </childnode>
+        <childnode refid="142" relation="include">
+        </childnode>
+        <childnode refid="143" relation="include">
+        </childnode>
+        <childnode refid="144" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+      </node>
+      <node id="157">
+        <label>xapian/query.h</label>
+        <link refid="query_8h"/>
+        <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="137" relation="include">
+        </childnode>
+        <childnode refid="138" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+        <childnode refid="143" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+      </node>
+      <node id="128">
+        <label>xapian.h</label>
+        <link refid="xapian_8h"/>
+        <childnode refid="129" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+        <childnode refid="132" relation="include">
+        </childnode>
+        <childnode refid="135" relation="include">
+        </childnode>
+        <childnode refid="136" relation="include">
+        </childnode>
+        <childnode refid="145" relation="include">
+        </childnode>
+        <childnode refid="147" relation="include">
+        </childnode>
+        <childnode refid="139" relation="include">
+        </childnode>
+        <childnode refid="142" relation="include">
+        </childnode>
+        <childnode refid="143" relation="include">
+        </childnode>
+        <childnode refid="144" relation="include">
+        </childnode>
+        <childnode refid="148" relation="include">
+        </childnode>
+        <childnode refid="150" relation="include">
+        </childnode>
+        <childnode refid="151" relation="include">
+        </childnode>
+        <childnode refid="153" relation="include">
+        </childnode>
+        <childnode refid="154" relation="include">
+        </childnode>
+        <childnode refid="156" relation="include">
+        </childnode>
+        <childnode refid="157" relation="include">
+        </childnode>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="159" relation="include">
+        </childnode>
+        <childnode refid="160" relation="include">
+        </childnode>
+        <childnode refid="161" relation="include">
+        </childnode>
+        <childnode refid="162" relation="include">
+        </childnode>
+        <childnode refid="149" relation="include">
+        </childnode>
+        <childnode refid="163" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+      </node>
+      <node id="138">
+        <label>xapian/intrusive_ptr.h</label>
+      </node>
+      <node id="152">
+        <label>set</label>
+      </node>
+      <node id="154">
+        <label>xapian/matchspy.h</label>
+        <link refid="matchspy_8h"/>
+        <childnode refid="138" relation="include">
+        </childnode>
+        <childnode refid="143" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="155" relation="include">
+        </childnode>
+      </node>
+      <node id="145">
+        <label>xapian/dbfactory.h</label>
+        <link refid="dbfactory_8h"/>
+        <childnode refid="146" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+        <childnode refid="129" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+      </node>
+      <node id="153">
+        <label>xapian/keymaker.h</label>
+        <link refid="keymaker_8h"/>
+        <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="137" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classXapian_1_1Letor" prot="public">Xapian::Letor</innerclass>
+    <innernamespace refid="namespaceXapian">Xapian</innernamespace>
+    <briefdescription>
+<para>weighting scheme based on Learning to Rank. </para>    </briefdescription>
+    <detaileddescription>
+<para>Note: <ref refid="letor_8h" kindref="compound">letor.h</ref> is not a part of official stable Xapain API. </para>    </detaileddescription>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/letor.h"/>
+  </compounddef>
+</doxygen>

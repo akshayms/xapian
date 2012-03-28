@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="classXapian_1_1NetworkTimeoutError" kind="class" prot="public">
+    <compoundname>Xapian::NetworkTimeoutError</compoundname>
+    <basecompoundref refid="classXapian_1_1NetworkError" prot="public" virt="non-virtual">Xapian::NetworkError</basecompoundref>
+    <includes local="no">error.h</includes>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classXapian_1_1NetworkTimeoutError_15dfd12b6279789e7e95292bf91aa9914" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::NetworkTimeoutError::NetworkTimeoutError</definition>
+        <argsstring>(const std::string &amp;msg_, const std::string &amp;context_, const char *error_string_)</argsstring>
+        <name>NetworkTimeoutError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>context_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>error_string_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="656" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="655" bodyend="656"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1NetworkTimeoutError_15e850aa133b9e01c6a47eb72a2932011" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::NetworkTimeoutError::NetworkTimeoutError</definition>
+        <argsstring>(const std::string &amp;msg_, const std::string &amp;context_, const char *type_, const char *error_string_)</argsstring>
+        <name>NetworkTimeoutError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>context_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>type_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>error_string_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="668" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="667" bodyend="668"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1NetworkTimeoutError_15dba3f95eff3833fbf045d7f831c43a9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::NetworkTimeoutError::NetworkTimeoutError</definition>
+        <argsstring>(const std::string &amp;msg_, const std::string &amp;context_, const char *type_, int errno_)</argsstring>
+        <name>NetworkTimeoutError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>context_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>type_</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>errno_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="674" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="673" bodyend="674"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classXapian_1_1NetworkTimeoutError_12eeb4843a8343bafc1776db2921990c7" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::NetworkTimeoutError::NetworkTimeoutError</definition>
+        <argsstring>(const std::string &amp;msg_, const std::string &amp;context_=std::string(), int errno_=0)</argsstring>
+        <name>NetworkTimeoutError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>context_</declname>
+          <defval>std::string()</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>errno_</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>General purpose constructor which allows setting errno. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="659" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="658" bodyend="659"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1NetworkTimeoutError_1793b3f277daa73fc20b34a1a883378e9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::NetworkTimeoutError::NetworkTimeoutError</definition>
+        <argsstring>(const std::string &amp;msg_, int errno_)</argsstring>
+        <name>NetworkTimeoutError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>errno_</declname>
+        </param>
+        <briefdescription>
+<para>Construct from message and errno value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="662" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="661" bodyend="662"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Indicates a timeout expired while communicating with a remote database. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="566">
+        <label>Xapian::NetworkError</label>
+        <link refid="classXapian_1_1NetworkError"/>
+        <childnode refid="567" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="568">
+        <label>Xapian::Error</label>
+        <link refid="classXapian_1_1Error"/>
+      </node>
+      <node id="567">
+        <label>Xapian::RuntimeError</label>
+        <link refid="classXapian_1_1RuntimeError"/>
+        <childnode refid="568" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="565">
+        <label>Xapian::NetworkTimeoutError</label>
+        <link refid="classXapian_1_1NetworkTimeoutError"/>
+        <childnode refid="566" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="570">
+        <label>Xapian::NetworkError</label>
+        <link refid="classXapian_1_1NetworkError"/>
+        <childnode refid="571" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="572">
+        <label>Xapian::Error</label>
+        <link refid="classXapian_1_1Error"/>
+      </node>
+      <node id="571">
+        <label>Xapian::RuntimeError</label>
+        <link refid="classXapian_1_1RuntimeError"/>
+        <childnode refid="572" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="569">
+        <label>Xapian::NetworkTimeoutError</label>
+        <link refid="classXapian_1_1NetworkTimeoutError"/>
+        <childnode refid="570" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="648" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="648" bodyend="675"/>
+    <listofallmembers>
+      <member refid="classXapian_1_1Error_190c683965555b4bc86b08e8667170e44" prot="public" virt="non-virtual"><scope>Xapian::NetworkTimeoutError</scope><name>get_context</name></member>
+      <member refid="classXapian_1_1Error_1bd64e380eb6d864dc907ee62c1f58a74" prot="public" virt="non-virtual"><scope>Xapian::NetworkTimeoutError</scope><name>get_description</name></member>
+      <member refid="classXapian_1_1Error_16f94a579f8e176f85c6fb036592dab61" prot="public" virt="non-virtual"><scope>Xapian::NetworkTimeoutError</scope><name>get_error_string</name></member>
+      <member refid="classXapian_1_1Error_1ea05df48ea71dfd045da28ab984cdaa3" prot="public" virt="non-virtual"><scope>Xapian::NetworkTimeoutError</scope><name>get_msg</name></member>
+      <member refid="classXapian_1_1Error_1136945e703317bdf6e18d8cf511a5bfb" prot="public" virt="non-virtual"><scope>Xapian::NetworkTimeoutError</scope><name>get_type</name></member>
+      <member refid="classXapian_1_1NetworkError_1ab9b4247f2d2c7a46cb9032c0f7d84d5" prot="public" virt="non-virtual"><scope>Xapian::NetworkTimeoutError</scope><name>NetworkError</name></member>
+      <member refid="classXapian_1_1NetworkError_16faac0d2f394064467199fb906892557" prot="public" virt="non-virtual"><scope>Xapian::NetworkTimeoutError</scope><name>NetworkError</name></member>
+      <member refid="classXapian_1_1NetworkTimeoutError_15dfd12b6279789e7e95292bf91aa9914" prot="private" virt="non-virtual"><scope>Xapian::NetworkTimeoutError</scope><name>NetworkTimeoutError</name></member>
+      <member refid="classXapian_1_1NetworkTimeoutError_12eeb4843a8343bafc1776db2921990c7" prot="public" virt="non-virtual"><scope>Xapian::NetworkTimeoutError</scope><name>NetworkTimeoutError</name></member>
+      <member refid="classXapian_1_1NetworkTimeoutError_1793b3f277daa73fc20b34a1a883378e9" prot="public" virt="non-virtual"><scope>Xapian::NetworkTimeoutError</scope><name>NetworkTimeoutError</name></member>
+      <member refid="classXapian_1_1NetworkTimeoutError_15e850aa133b9e01c6a47eb72a2932011" prot="private" virt="non-virtual"><scope>Xapian::NetworkTimeoutError</scope><name>NetworkTimeoutError</name></member>
+      <member refid="classXapian_1_1NetworkTimeoutError_15dba3f95eff3833fbf045d7f831c43a9" prot="private" virt="non-virtual"><scope>Xapian::NetworkTimeoutError</scope><name>NetworkTimeoutError</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

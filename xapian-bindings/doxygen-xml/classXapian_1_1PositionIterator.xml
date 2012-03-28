@@ -1,0 +1,279 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="classXapian_1_1PositionIterator" kind="class" prot="public">
+    <compoundname>Xapian::PositionIterator</compoundname>
+    <includes local="no">positioniterator.h</includes>
+      <sectiondef kind="user-defined">
+      <memberdef kind="typedef" id="classXapian_1_1PositionIterator_1dded3bc4a76ffedeb7609564463035fe" prot="private" static="no">
+        <type>std::input_iterator_tag</type>
+        <definition>typedef std::input_iterator_tag Xapian::PositionIterator::iterator_category</definition>
+        <argsstring></argsstring>
+        <name>iterator_category</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/positioniterator.h" line="100" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/positioniterator.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classXapian_1_1PositionIterator_1c4741dab3be0505772a23b74b9779be1" prot="private" static="no">
+        <type><ref refid="namespaceXapian_1e5a16f073d0c8ed54085a9de07248d45" kindref="member">Xapian::termpos</ref></type>
+        <definition>typedef Xapian::termpos Xapian::PositionIterator::value_type</definition>
+        <argsstring></argsstring>
+        <name>value_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/positioniterator.h" line="102" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/positioniterator.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classXapian_1_1PositionIterator_115d4f82622935bd22e4f8a00eb5441e3" prot="private" static="no">
+        <type><ref refid="namespaceXapian_1bc9d5170114fede39c85ee03086e373b" kindref="member">Xapian::termpos_diff</ref></type>
+        <definition>typedef Xapian::termpos_diff Xapian::PositionIterator::difference_type</definition>
+        <argsstring></argsstring>
+        <name>difference_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/positioniterator.h" line="104" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/positioniterator.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classXapian_1_1PositionIterator_1f54eec4f7538018aa15e429717a9a776" prot="private" static="no">
+        <type><ref refid="namespaceXapian_1e5a16f073d0c8ed54085a9de07248d45" kindref="member">Xapian::termpos</ref> *</type>
+        <definition>typedef Xapian::termpos* Xapian::PositionIterator::pointer</definition>
+        <argsstring></argsstring>
+        <name>pointer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/positioniterator.h" line="106" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/positioniterator.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classXapian_1_1PositionIterator_178150a5bac9b31089d075e8b93404a2d" prot="private" static="no">
+        <type><ref refid="namespaceXapian_1e5a16f073d0c8ed54085a9de07248d45" kindref="member">Xapian::termpos</ref> &amp;</type>
+        <definition>typedef Xapian::termpos&amp; Xapian::PositionIterator::reference</definition>
+        <argsstring></argsstring>
+        <name>reference</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/positioniterator.h" line="108" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/positioniterator.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classXapian_1_1PositionIterator_1a78d75f69767ca32b094ed99993b0fc2" prot="private" static="no" mutable="no">
+        <type>Internal *</type>
+        <definition>Internal* Xapian::PositionIterator::internal</definition>
+        <argsstring></argsstring>
+        <name>internal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/positioniterator.h" line="42" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/positioniterator.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classXapian_1_1PositionIterator_147d183c8cd96c158c6dab51b2cac7dd3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::PositionIterator::decref</definition>
+        <argsstring>()</argsstring>
+        <name>decref</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/positioniterator.h" line="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1PositionIterator_182bc13d20ec51af3016607d2efc2e9a9" prot="private" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::PositionIterator::PositionIterator</definition>
+        <argsstring>(Internal *internal_)</argsstring>
+        <name>PositionIterator</name>
+        <param>
+          <type>Internal *</type>
+          <declname>internal_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/positioniterator.h" line="45"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classXapian_1_1PositionIterator_18b9d10db35fa9e2944012ea57a0b9d23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::PositionIterator::PositionIterator</definition>
+        <argsstring>(const PositionIterator &amp;o)</argsstring>
+        <name>PositionIterator</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1PositionIterator" kindref="compound">PositionIterator</ref> &amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+<para>Copy constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/positioniterator.h" line="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1PositionIterator_13b50777c71a775f068d9572ced22e73c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classXapian_1_1PositionIterator" kindref="compound">PositionIterator</ref> &amp;</type>
+        <definition>PositionIterator&amp; Xapian::PositionIterator::operator=</definition>
+        <argsstring>(const PositionIterator &amp;o)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1PositionIterator" kindref="compound">PositionIterator</ref> &amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+<para>Assignment. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/positioniterator.h" line="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1PositionIterator_1475e11e82d8268d23b750c787531ab9a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::PositionIterator::PositionIterator</definition>
+        <argsstring>()</argsstring>
+        <name>PositionIterator</name>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Creates an uninitialised iterator, which can&apos;t be used before being assigned to, but is sometimes syntactically convenient. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/positioniterator.h" line="58" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/positioniterator.h" bodystart="58" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1PositionIterator_19a84f5de9867d1413c0dacb704d63c04" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::PositionIterator::~PositionIterator</definition>
+        <argsstring>()</argsstring>
+        <name>~PositionIterator</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/positioniterator.h" line="61" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/positioniterator.h" bodystart="61" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1PositionIterator_1e673659cdc4225d2b2eb7922fac95449" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceXapian_1e5a16f073d0c8ed54085a9de07248d45" kindref="member">Xapian::termpos</ref></type>
+        <definition>Xapian::termpos Xapian::PositionIterator::operator*</definition>
+        <argsstring>() const </argsstring>
+        <name>operator*</name>
+        <briefdescription>
+<para>Return the term position at the current iterator position. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/positioniterator.h" line="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1PositionIterator_1f4a068fa03b75f797ab4cae83fc0810f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classXapian_1_1PositionIterator" kindref="compound">PositionIterator</ref> &amp;</type>
+        <definition>PositionIterator&amp; Xapian::PositionIterator::operator++</definition>
+        <argsstring>()</argsstring>
+        <name>operator++</name>
+        <briefdescription>
+<para>Advance the iterator to the next position. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/positioniterator.h" line="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1PositionIterator_1068c64a6932041e7cbe6e2a37cbc7512" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>DerefWrapper_&lt; <ref refid="namespaceXapian_1e5a16f073d0c8ed54085a9de07248d45" kindref="member">Xapian::termpos</ref> &gt;</type>
+        <definition>DerefWrapper_&lt;Xapian::termpos&gt; Xapian::PositionIterator::operator++</definition>
+        <argsstring>(int)</argsstring>
+        <name>operator++</name>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+<para>Advance the iterator to the next position (postfix version). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/positioniterator.h" line="72" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/positioniterator.h" bodystart="72" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1PositionIterator_123ffca163d3be13e8e2ad0bb5a996198" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::PositionIterator::skip_to</definition>
+        <argsstring>(Xapian::termpos termpos)</argsstring>
+        <name>skip_to</name>
+        <param>
+          <type><ref refid="namespaceXapian_1e5a16f073d0c8ed54085a9de07248d45" kindref="member">Xapian::termpos</ref></type>
+          <declname>termpos</declname>
+        </param>
+        <briefdescription>
+<para>Advance the iterator to term position <emphasis>termpos</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+<para>If the specified position isn&apos;t in the stream being iterated, then the iterator is moved to the next term position after <emphasis>termpos</emphasis>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/positioniterator.h" line="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1PositionIterator_1ae9e6e3e7481bd22f228de4c2deb03eb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Xapian::PositionIterator::get_description</definition>
+        <argsstring>() const </argsstring>
+        <name>get_description</name>
+        <briefdescription>
+<para>Return a string describing this object. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/positioniterator.h" line="86"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class for iterating over term positions. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/positioniterator.h" line="35" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/positioniterator.h" bodystart="35" bodyend="110"/>
+    <listofallmembers>
+      <member refid="classXapian_1_1PositionIterator_147d183c8cd96c158c6dab51b2cac7dd3" prot="private" virt="non-virtual"><scope>Xapian::PositionIterator</scope><name>decref</name></member>
+      <member refid="classXapian_1_1PositionIterator_115d4f82622935bd22e4f8a00eb5441e3" prot="private" virt="non-virtual"><scope>Xapian::PositionIterator</scope><name>difference_type</name></member>
+      <member refid="classXapian_1_1PositionIterator_1ae9e6e3e7481bd22f228de4c2deb03eb" prot="public" virt="non-virtual"><scope>Xapian::PositionIterator</scope><name>get_description</name></member>
+      <member refid="classXapian_1_1PositionIterator_1a78d75f69767ca32b094ed99993b0fc2" prot="private" virt="non-virtual"><scope>Xapian::PositionIterator</scope><name>internal</name></member>
+      <member refid="classXapian_1_1PositionIterator_1dded3bc4a76ffedeb7609564463035fe" prot="private" virt="non-virtual"><scope>Xapian::PositionIterator</scope><name>iterator_category</name></member>
+      <member refid="classXapian_1_1PositionIterator_1e673659cdc4225d2b2eb7922fac95449" prot="public" virt="non-virtual"><scope>Xapian::PositionIterator</scope><name>operator*</name></member>
+      <member refid="classXapian_1_1PositionIterator_1f4a068fa03b75f797ab4cae83fc0810f" prot="public" virt="non-virtual"><scope>Xapian::PositionIterator</scope><name>operator++</name></member>
+      <member refid="classXapian_1_1PositionIterator_1068c64a6932041e7cbe6e2a37cbc7512" prot="public" virt="non-virtual"><scope>Xapian::PositionIterator</scope><name>operator++</name></member>
+      <member refid="classXapian_1_1PositionIterator_13b50777c71a775f068d9572ced22e73c" prot="public" virt="non-virtual"><scope>Xapian::PositionIterator</scope><name>operator=</name></member>
+      <member refid="classXapian_1_1PositionIterator_1f54eec4f7538018aa15e429717a9a776" prot="private" virt="non-virtual"><scope>Xapian::PositionIterator</scope><name>pointer</name></member>
+      <member refid="classXapian_1_1PositionIterator_182bc13d20ec51af3016607d2efc2e9a9" prot="private" virt="non-virtual"><scope>Xapian::PositionIterator</scope><name>PositionIterator</name></member>
+      <member refid="classXapian_1_1PositionIterator_18b9d10db35fa9e2944012ea57a0b9d23" prot="public" virt="non-virtual"><scope>Xapian::PositionIterator</scope><name>PositionIterator</name></member>
+      <member refid="classXapian_1_1PositionIterator_1475e11e82d8268d23b750c787531ab9a" prot="public" virt="non-virtual"><scope>Xapian::PositionIterator</scope><name>PositionIterator</name></member>
+      <member refid="classXapian_1_1PositionIterator_178150a5bac9b31089d075e8b93404a2d" prot="private" virt="non-virtual"><scope>Xapian::PositionIterator</scope><name>reference</name></member>
+      <member refid="classXapian_1_1PositionIterator_123ffca163d3be13e8e2ad0bb5a996198" prot="public" virt="non-virtual"><scope>Xapian::PositionIterator</scope><name>skip_to</name></member>
+      <member refid="classXapian_1_1PositionIterator_1c4741dab3be0505772a23b74b9779be1" prot="private" virt="non-virtual"><scope>Xapian::PositionIterator</scope><name>value_type</name></member>
+      <member refid="classXapian_1_1PositionIterator_19a84f5de9867d1413c0dacb704d63c04" prot="public" virt="non-virtual"><scope>Xapian::PositionIterator</scope><name>~PositionIterator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

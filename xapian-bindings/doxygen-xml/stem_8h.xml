@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="stem_8h" kind="file">
+    <compoundname>stem.h</compoundname>
+    <includes local="no">xapian/intrusive_ptr.h</includes>
+    <includes local="no">xapian/visibility.h</includes>
+    <includes local="no">string</includes>
+    <includedby refid="xapian_8h" local="no">xapian.h</includedby>
+    <incdepgraph>
+      <node id="271">
+        <label>xapian/visibility.h</label>
+      </node>
+      <node id="269">
+        <label>xapian/stem.h</label>
+        <link refid="stem.h"/>
+        <childnode refid="270" relation="include">
+        </childnode>
+        <childnode refid="271" relation="include">
+        </childnode>
+        <childnode refid="272" relation="include">
+        </childnode>
+      </node>
+      <node id="272">
+        <label>string</label>
+      </node>
+      <node id="270">
+        <label>xapian/intrusive_ptr.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="273">
+        <label>xapian/stem.h</label>
+        <link refid="stem.h"/>
+        <childnode refid="274" relation="include">
+        </childnode>
+      </node>
+      <node id="275">
+        <label>xapian/letor.h</label>
+        <link refid="letor_8h"/>
+      </node>
+      <node id="274">
+        <label>xapian.h</label>
+        <link refid="xapian_8h"/>
+        <childnode refid="275" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structXapian_1_1StemImplementation" prot="public">Xapian::StemImplementation</innerclass>
+    <innerclass refid="classXapian_1_1Stem" prot="public">Xapian::Stem</innerclass>
+    <innernamespace refid="namespaceXapian">Xapian</innernamespace>
+    <briefdescription>
+<para>stemming algorithms </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/stem.h"/>
+  </compounddef>
+</doxygen>

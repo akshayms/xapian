@@ -1,0 +1,1512 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.5.9">
+  <compound refid="classstd_1_1allocator" kind="class"><name>std::allocator</name>
+    <member refid="classstd_1_1allocator_155f88dab1194d6b8a34e46017c4dfd79" kind="variable"><name>elements</name></member>
+  </compound>
+  <compound refid="classXapian_1_1AssertionError" kind="class"><name>Xapian::AssertionError</name>
+    <member refid="classXapian_1_1AssertionError_1eac3529ef8ba50d56a549c047ca6e5ca" kind="function"><name>AssertionError</name></member>
+    <member refid="classXapian_1_1AssertionError_13a70ea6329ab887f4c97c92bee5c6b9b" kind="function"><name>AssertionError</name></member>
+    <member refid="classXapian_1_1AssertionError_124ee5e0093cce97f1f0c387b91538861" kind="function"><name>AssertionError</name></member>
+    <member refid="classXapian_1_1AssertionError_1f34627d97cb4ec40b9916e39f4cc7922" kind="function"><name>AssertionError</name></member>
+    <member refid="classXapian_1_1AssertionError_1e2f6e4b71b4aaeb52529c89339a9f0d7" kind="function"><name>AssertionError</name></member>
+  </compound>
+  <compound refid="classstd_1_1auto__ptr" kind="class"><name>std::auto_ptr</name>
+    <member refid="classstd_1_1auto__ptr_1076c936287003dc557981f9ccec1d841" kind="variable"><name>ptr</name></member>
+  </compound>
+  <compound refid="classstd_1_1bad__alloc" kind="class"><name>std::bad_alloc</name>
+  </compound>
+  <compound refid="classstd_1_1bad__cast" kind="class"><name>std::bad_cast</name>
+  </compound>
+  <compound refid="classstd_1_1bad__exception" kind="class"><name>std::bad_exception</name>
+  </compound>
+  <compound refid="classstd_1_1bad__typeid" kind="class"><name>std::bad_typeid</name>
+  </compound>
+  <compound refid="classstd_1_1basic__fstream" kind="class"><name>std::basic_fstream</name>
+  </compound>
+  <compound refid="classstd_1_1basic__ifstream" kind="class"><name>std::basic_ifstream</name>
+  </compound>
+  <compound refid="classstd_1_1basic__ios" kind="class"><name>std::basic_ios</name>
+  </compound>
+  <compound refid="classstd_1_1basic__iostream" kind="class"><name>std::basic_iostream</name>
+  </compound>
+  <compound refid="classstd_1_1basic__istream" kind="class"><name>std::basic_istream</name>
+  </compound>
+  <compound refid="classstd_1_1basic__istringstream" kind="class"><name>std::basic_istringstream</name>
+  </compound>
+  <compound refid="classstd_1_1basic__ofstream" kind="class"><name>std::basic_ofstream</name>
+  </compound>
+  <compound refid="classstd_1_1basic__ostream" kind="class"><name>std::basic_ostream</name>
+  </compound>
+  <compound refid="classstd_1_1basic__ostringstream" kind="class"><name>std::basic_ostringstream</name>
+  </compound>
+  <compound refid="classstd_1_1basic__string" kind="class"><name>std::basic_string</name>
+  </compound>
+  <compound refid="classstd_1_1basic__stringstream" kind="class"><name>std::basic_stringstream</name>
+  </compound>
+  <compound refid="classstd_1_1bitset" kind="class"><name>std::bitset</name>
+  </compound>
+  <compound refid="classXapian_1_1BM25Weight" kind="class"><name>Xapian::BM25Weight</name>
+    <member refid="classXapian_1_1BM25Weight_16c28ab2da62f268c4dbdbda51fe56c87" kind="variable"><name>len_factor</name></member>
+    <member refid="classXapian_1_1BM25Weight_12ad6bde5056beaef80f4d0cc6e051f22" kind="variable"><name>termweight</name></member>
+    <member refid="classXapian_1_1BM25Weight_14fd2dd01dfa06a41cc573e95fb218daa" kind="variable"><name>param_k1</name></member>
+    <member refid="classXapian_1_1BM25Weight_10ab01a232a35e8b7e82e7b334c8961e6" kind="variable"><name>param_k2</name></member>
+    <member refid="classXapian_1_1BM25Weight_1b3108d5923acb291bab73b3506790fcc" kind="variable"><name>param_k3</name></member>
+    <member refid="classXapian_1_1BM25Weight_1fc3394c2faaeeec5b9dc5e99bdacca6f" kind="variable"><name>param_b</name></member>
+    <member refid="classXapian_1_1BM25Weight_11cfe47a59dfbeb252f9a8a903d78f7b2" kind="variable"><name>param_min_normlen</name></member>
+    <member refid="classXapian_1_1BM25Weight_17b274a31997eb61c70f92418a9abc36c" kind="function"><name>clone</name></member>
+    <member refid="classXapian_1_1BM25Weight_1f1b28cdfada2b4c5823934ac366e76fb" kind="function"><name>init</name></member>
+    <member refid="classXapian_1_1BM25Weight_140ccbf44b5aabe58c1258eb4abcd4df1" kind="function"><name>BM25Weight</name></member>
+    <member refid="classXapian_1_1BM25Weight_140cb18a8b404de6da561f69c76f45786" kind="function"><name>BM25Weight</name></member>
+    <member refid="classXapian_1_1BM25Weight_1943fdc83495a97f7d6af1208f5b26052" kind="function"><name>name</name></member>
+    <member refid="classXapian_1_1BM25Weight_12dd2eb60deb5690e471d68f4c7fc3203" kind="function"><name>serialise</name></member>
+    <member refid="classXapian_1_1BM25Weight_18a9f0c48f4229aa0d62feff5f496dc78" kind="function"><name>unserialise</name></member>
+    <member refid="classXapian_1_1BM25Weight_14fe48617e7db67232208a00b94878f54" kind="function"><name>get_sumpart</name></member>
+    <member refid="classXapian_1_1BM25Weight_1f23907adc06e73cdf1228fc616a2fda2" kind="function"><name>get_maxpart</name></member>
+    <member refid="classXapian_1_1BM25Weight_16992ef2cd23a095d607b70aa2076850b" kind="function"><name>get_sumextra</name></member>
+    <member refid="classXapian_1_1BM25Weight_17c91481891313e089eb38bf1a9a83029" kind="function"><name>get_maxextra</name></member>
+  </compound>
+  <compound refid="classXapian_1_1BoolWeight" kind="class"><name>Xapian::BoolWeight</name>
+    <member refid="classXapian_1_1BoolWeight_1cf501bcf0ff0292f1a8e92f5f1f4fb1e" kind="function"><name>clone</name></member>
+    <member refid="classXapian_1_1BoolWeight_19a02f415d883ff831f30bf2a3aa8e2bc" kind="function"><name>init</name></member>
+    <member refid="classXapian_1_1BoolWeight_19b6aa83a43515dc68dc726fcd40913ef" kind="function"><name>BoolWeight</name></member>
+    <member refid="classXapian_1_1BoolWeight_1c91b3673317ee9574dff4321482f579d" kind="function"><name>name</name></member>
+    <member refid="classXapian_1_1BoolWeight_106e88787161cc2146511259d5742dd10" kind="function"><name>serialise</name></member>
+    <member refid="classXapian_1_1BoolWeight_1729a7656e41663f612d0ae871d02c518" kind="function"><name>unserialise</name></member>
+    <member refid="classXapian_1_1BoolWeight_19e9cac485fad3353044f4a5aa5813f6c" kind="function"><name>get_sumpart</name></member>
+    <member refid="classXapian_1_1BoolWeight_19edd11c7c0c6d3fc72c347f1bd65bb3c" kind="function"><name>get_maxpart</name></member>
+    <member refid="classXapian_1_1BoolWeight_144d22ac1bafc6290d2877fb972e4f5f3" kind="function"><name>get_sumextra</name></member>
+    <member refid="classXapian_1_1BoolWeight_18332b9fa9cb900d273f8077f76c94fcc" kind="function"><name>get_maxextra</name></member>
+  </compound>
+  <compound refid="classXapian_1_1Compactor" kind="class"><name>Xapian::Compactor</name>
+    <member refid="classXapian_1_1Compactor_14b90abf7e889f29c0ab31904598d7276" kind="enum"><name>compaction_level</name></member>
+    <member refid="classXapian_1_1Compactor_14b90abf7e889f29c0ab31904598d7276f46264e20be7a1d98fd1dfab2cba8a14" kind="enumvalue"><name>STANDARD</name></member>
+    <member refid="classXapian_1_1Compactor_14b90abf7e889f29c0ab31904598d727615494f71d5fdcd952b64e70d5097129a" kind="enumvalue"><name>FULL</name></member>
+    <member refid="classXapian_1_1Compactor_14b90abf7e889f29c0ab31904598d72768e232f214096b41c10bd6eddfe01bb34" kind="enumvalue"><name>FULLER</name></member>
+    <member refid="classXapian_1_1Compactor_1f0bb2acd944b8f18e677b9c0bc3cf83b" kind="variable"><name>internal</name></member>
+    <member refid="classXapian_1_1Compactor_1f40ec52002bc010281cea92076d6dadd" kind="function"><name>Compactor</name></member>
+    <member refid="classXapian_1_1Compactor_1a64570399a9e7b40883d0e417b7cd5ac" kind="function"><name>~Compactor</name></member>
+    <member refid="classXapian_1_1Compactor_1a61179ae14a0241d05a1e04d78af2f6e" kind="function"><name>set_block_size</name></member>
+    <member refid="classXapian_1_1Compactor_1e9dfc11596ccdcb45f432065f5e6777f" kind="function"><name>set_renumber</name></member>
+    <member refid="classXapian_1_1Compactor_1c2296e5ff042177ffa3dbe475b5d6031" kind="function"><name>set_multipass</name></member>
+    <member refid="classXapian_1_1Compactor_178962dc950472dfd237220cc8c2408bb" kind="function"><name>set_compaction_level</name></member>
+    <member refid="classXapian_1_1Compactor_1409fcee34cbd2a284b4ae19564de39a2" kind="function"><name>set_destdir</name></member>
+    <member refid="classXapian_1_1Compactor_1cc6b30b8bb89baa73bedaa062c510e84" kind="function"><name>add_source</name></member>
+    <member refid="classXapian_1_1Compactor_13b8aa178bbe37edaccf5345189d3e170" kind="function"><name>compact</name></member>
+    <member refid="classXapian_1_1Compactor_1ccf46f29ec8aaa2991ed1babb8716d91" kind="function"><name>set_status</name></member>
+    <member refid="classXapian_1_1Compactor_1bcd5be85dd80118a2bd5f429b54addde" kind="function"><name>resolve_duplicate_metadata</name></member>
+  </compound>
+  <compound refid="classstd_1_1complex" kind="class"><name>std::complex</name>
+  </compound>
+  <compound refid="classstd_1_1list_1_1const__iterator" kind="class"><name>std::list::const_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1map_1_1const__iterator" kind="class"><name>std::map::const_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1multimap_1_1const__iterator" kind="class"><name>std::multimap::const_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1set_1_1const__iterator" kind="class"><name>std::set::const_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1multiset_1_1const__iterator" kind="class"><name>std::multiset::const_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1vector_1_1const__iterator" kind="class"><name>std::vector::const_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1basic__string_1_1const__iterator" kind="class"><name>std::basic_string::const_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1string_1_1const__iterator" kind="class"><name>std::string::const_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1wstring_1_1const__iterator" kind="class"><name>std::wstring::const_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1deque_1_1const__iterator" kind="class"><name>std::deque::const_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1list_1_1const__reverse__iterator" kind="class"><name>std::list::const_reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1map_1_1const__reverse__iterator" kind="class"><name>std::map::const_reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1multimap_1_1const__reverse__iterator" kind="class"><name>std::multimap::const_reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1set_1_1const__reverse__iterator" kind="class"><name>std::set::const_reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1multiset_1_1const__reverse__iterator" kind="class"><name>std::multiset::const_reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1vector_1_1const__reverse__iterator" kind="class"><name>std::vector::const_reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1basic__string_1_1const__reverse__iterator" kind="class"><name>std::basic_string::const_reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1string_1_1const__reverse__iterator" kind="class"><name>std::string::const_reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1wstring_1_1const__reverse__iterator" kind="class"><name>std::wstring::const_reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1deque_1_1const__reverse__iterator" kind="class"><name>std::deque::const_reverse_iterator</name>
+  </compound>
+  <compound refid="classXapian_1_1Database" kind="class"><name>Xapian::Database</name>
+    <member refid="classXapian_1_1Database_1a68e7c4e68a2c985944f403f09a2ca44" kind="variable"><name>internal</name></member>
+    <member refid="classXapian_1_1Database_14c8d121ad552fae3368b9a5c3473b1b2" kind="function"><name>get_document_lazily_</name></member>
+    <member refid="classXapian_1_1Database_17d737e6a640931dcb67c3e7eb702679c" kind="function"><name>Database</name></member>
+    <member refid="classXapian_1_1Database_12fc5aa368a7097ca787a831211a2e3bc" kind="function"><name>add_database</name></member>
+    <member refid="classXapian_1_1Database_124f8197f3ac8bfd8c2526e0b8dff4ff7" kind="function"><name>Database</name></member>
+    <member refid="classXapian_1_1Database_1b180b01a76a9d73a9315b181514a2f25" kind="function"><name>Database</name></member>
+    <member refid="classXapian_1_1Database_10352b3a47dca16d57c071252e84f1043" kind="function"><name>~Database</name></member>
+    <member refid="classXapian_1_1Database_1aae498b70286ba1c588b7cbeb0972d38" kind="function"><name>Database</name></member>
+    <member refid="classXapian_1_1Database_14e8badea7a9d7292c13f99429c6a2b79" kind="function"><name>operator=</name></member>
+    <member refid="classXapian_1_1Database_1f316aa13ee123e2af75f4b44e1f23db9" kind="function"><name>reopen</name></member>
+    <member refid="classXapian_1_1Database_159f5f8b137723dcaaabdbdccbc0cf1eb" kind="function"><name>close</name></member>
+    <member refid="classXapian_1_1Database_159e5889c489ce77fb4e7ffd80b6bc52c" kind="function"><name>get_description</name></member>
+    <member refid="classXapian_1_1Database_1504d8e800384d12a8f9defee39362f5e" kind="function"><name>postlist_begin</name></member>
+    <member refid="classXapian_1_1Database_1c1661ac2876a4a69f327907ef47a003d" kind="function"><name>postlist_end</name></member>
+    <member refid="classXapian_1_1Database_1c26b8f8f564c37586c7a0bd35cfefe15" kind="function"><name>termlist_begin</name></member>
+    <member refid="classXapian_1_1Database_1a6f20c07f93d53f35caf6c97c795a5a1" kind="function"><name>termlist_end</name></member>
+    <member refid="classXapian_1_1Database_1e7362269bc3408d0800a36d0c2f4851d" kind="function"><name>has_positions</name></member>
+    <member refid="classXapian_1_1Database_19fb4987b5f0e13b8344a89d1898f5500" kind="function"><name>positionlist_begin</name></member>
+    <member refid="classXapian_1_1Database_1ef7093cb5cfd969c4b07593e26d208e3" kind="function"><name>positionlist_end</name></member>
+    <member refid="classXapian_1_1Database_11bef542ac6af6749b95ba6547d5139fe" kind="function"><name>allterms_begin</name></member>
+    <member refid="classXapian_1_1Database_103a144e5b1aa8104ea82aa5031ba2943" kind="function"><name>allterms_end</name></member>
+    <member refid="classXapian_1_1Database_1568341766a22f09f5a0da471ae6a3802" kind="function"><name>allterms_begin</name></member>
+    <member refid="classXapian_1_1Database_1ef82e0ee7ed8400c19151f4017ac333a" kind="function"><name>allterms_end</name></member>
+    <member refid="classXapian_1_1Database_1c13c9f754b55edf7e25d754a150bd970" kind="function"><name>get_doccount</name></member>
+    <member refid="classXapian_1_1Database_10c180d6facca7ca0e8486e7b995a6747" kind="function"><name>get_lastdocid</name></member>
+    <member refid="classXapian_1_1Database_17be264cfd482d19e6ca1c99382838032" kind="function"><name>get_avlength</name></member>
+    <member refid="classXapian_1_1Database_161d9b1e634aff99280a5fcdfc5087cdc" kind="function"><name>get_termfreq</name></member>
+    <member refid="classXapian_1_1Database_122509662f07387074beb1e9919e8e1e9" kind="function"><name>term_exists</name></member>
+    <member refid="classXapian_1_1Database_1eb8b2a78e6a7834bf0cc9e863bcfb95b" kind="function"><name>get_collection_freq</name></member>
+    <member refid="classXapian_1_1Database_116af5d3bdfa3c459ccc41f6dc69644e4" kind="function"><name>get_value_freq</name></member>
+    <member refid="classXapian_1_1Database_190d2297437540ec733debe4a4b706c7d" kind="function"><name>get_value_lower_bound</name></member>
+    <member refid="classXapian_1_1Database_145e8c383ec2a3cb547ea48ce1da7e1e1" kind="function"><name>get_value_upper_bound</name></member>
+    <member refid="classXapian_1_1Database_1d047fac41d0cfbfb8f6022164b1af458" kind="function"><name>get_doclength_lower_bound</name></member>
+    <member refid="classXapian_1_1Database_1de55de013a35cdca12aa89f21d2a5173" kind="function"><name>get_doclength_upper_bound</name></member>
+    <member refid="classXapian_1_1Database_160d00bbea2f0c15f16512f51247b5f9d" kind="function"><name>get_wdf_upper_bound</name></member>
+    <member refid="classXapian_1_1Database_1bba5f47ae1a2895ba75a698ab70d570e" kind="function"><name>valuestream_begin</name></member>
+    <member refid="classXapian_1_1Database_11955ccba82b9538e128437e031a3d0de" kind="function"><name>valuestream_end</name></member>
+    <member refid="classXapian_1_1Database_17aed02430626d06ab782d63e462de837" kind="function"><name>get_doclength</name></member>
+    <member refid="classXapian_1_1Database_1759d1fde0d3d8a2ed74b83c0ebd10974" kind="function"><name>keep_alive</name></member>
+    <member refid="classXapian_1_1Database_1c36eafdcf748e11e533149674329f90b" kind="function"><name>get_document</name></member>
+    <member refid="classXapian_1_1Database_186b944dece96d7ada2446ae8952ee3a2" kind="function"><name>get_spelling_suggestion</name></member>
+    <member refid="classXapian_1_1Database_179bdfc96a112a38409a1d87c7e2f6a55" kind="function"><name>spellings_begin</name></member>
+    <member refid="classXapian_1_1Database_1107327ec1bf8fb8c04345961f73d82f2" kind="function"><name>spellings_end</name></member>
+    <member refid="classXapian_1_1Database_174d436523335d70f665edee7730f8435" kind="function"><name>synonyms_begin</name></member>
+    <member refid="classXapian_1_1Database_1f379075aa87dd844e0bf6f566a4e001d" kind="function"><name>synonyms_end</name></member>
+    <member refid="classXapian_1_1Database_1340149d55c64d7d186948d1992ff10f2" kind="function"><name>synonym_keys_begin</name></member>
+    <member refid="classXapian_1_1Database_1f24c76928481eb792486304867cc6a64" kind="function"><name>synonym_keys_end</name></member>
+    <member refid="classXapian_1_1Database_1e27282ad0777daa301b0b83b410d98ba" kind="function"><name>get_metadata</name></member>
+    <member refid="classXapian_1_1Database_1f275ac0df48ddea697979d69cd60f82f" kind="function"><name>metadata_keys_begin</name></member>
+    <member refid="classXapian_1_1Database_1ec2e180589fc493230054f81de823f04" kind="function"><name>metadata_keys_end</name></member>
+    <member refid="classXapian_1_1Database_1a7edcb2f6dd5f1df58b37026b9ecd6e4" kind="function"><name>get_uuid</name></member>
+  </compound>
+  <compound refid="classXapian_1_1DatabaseCorruptError" kind="class"><name>Xapian::DatabaseCorruptError</name>
+    <member refid="classXapian_1_1DatabaseCorruptError_18b28566ce212dbd5e6365ecdf6014bca" kind="function"><name>DatabaseCorruptError</name></member>
+    <member refid="classXapian_1_1DatabaseCorruptError_1fa8ec43d504c42940a0e036be1fbd95d" kind="function"><name>DatabaseCorruptError</name></member>
+    <member refid="classXapian_1_1DatabaseCorruptError_194aa1f376c6560b13fe2b8db45340113" kind="function"><name>DatabaseCorruptError</name></member>
+    <member refid="classXapian_1_1DatabaseCorruptError_1a30107521e790a2076702c01a63a011a" kind="function"><name>DatabaseCorruptError</name></member>
+    <member refid="classXapian_1_1DatabaseCorruptError_149ed32a48b1c22aa53d87b588d40266d" kind="function"><name>DatabaseCorruptError</name></member>
+  </compound>
+  <compound refid="classXapian_1_1DatabaseCreateError" kind="class"><name>Xapian::DatabaseCreateError</name>
+    <member refid="classXapian_1_1DatabaseCreateError_1f07efe1c9c4daef726d5ea27ee3e54e7" kind="function"><name>DatabaseCreateError</name></member>
+    <member refid="classXapian_1_1DatabaseCreateError_17838f217735caf59cfb1446a7aeab381" kind="function"><name>DatabaseCreateError</name></member>
+    <member refid="classXapian_1_1DatabaseCreateError_10c6b2333564192a6b206599af02ce2e8" kind="function"><name>DatabaseCreateError</name></member>
+    <member refid="classXapian_1_1DatabaseCreateError_1193cdef32461edb1b6f320c7284b5ae3" kind="function"><name>DatabaseCreateError</name></member>
+    <member refid="classXapian_1_1DatabaseCreateError_1867149fefbac0ed4fff595834acd9dda" kind="function"><name>DatabaseCreateError</name></member>
+  </compound>
+  <compound refid="classXapian_1_1DatabaseError" kind="class"><name>Xapian::DatabaseError</name>
+    <member refid="classXapian_1_1DatabaseError_1bf72eff08da5ded08826168d7c2ba5a8" kind="function"><name>DatabaseError</name></member>
+    <member refid="classXapian_1_1DatabaseError_19718cb374d15774482c7e150caa9d9e8" kind="function"><name>DatabaseError</name></member>
+    <member refid="classXapian_1_1DatabaseError_155b0d36be0b97efd01752a57c02325cf" kind="function"><name>DatabaseError</name></member>
+    <member refid="classXapian_1_1DatabaseError_19dcfefb4abfcb9bbc1cae90d28e9e021" kind="function"><name>DatabaseError</name></member>
+    <member refid="classXapian_1_1DatabaseError_19ec4456656d91a738c66540e3bb7f67f" kind="function"><name>DatabaseError</name></member>
+  </compound>
+  <compound refid="classXapian_1_1DatabaseLockError" kind="class"><name>Xapian::DatabaseLockError</name>
+    <member refid="classXapian_1_1DatabaseLockError_1c4bf6a0ce0082a467f1802318fd5dbdf" kind="function"><name>DatabaseLockError</name></member>
+    <member refid="classXapian_1_1DatabaseLockError_1ac193f03b64974f7760782d5d870c070" kind="function"><name>DatabaseLockError</name></member>
+    <member refid="classXapian_1_1DatabaseLockError_1324c81d92221338ad54efc97e7d62f1b" kind="function"><name>DatabaseLockError</name></member>
+    <member refid="classXapian_1_1DatabaseLockError_1fd829b22d3ab027cf86666d8d2560876" kind="function"><name>DatabaseLockError</name></member>
+    <member refid="classXapian_1_1DatabaseLockError_17aa601f4df53f4f50dc28d9a6bcb292f" kind="function"><name>DatabaseLockError</name></member>
+  </compound>
+  <compound refid="classXapian_1_1DatabaseModifiedError" kind="class"><name>Xapian::DatabaseModifiedError</name>
+    <member refid="classXapian_1_1DatabaseModifiedError_160342de1e2002ba800b4ea626d5f24a2" kind="function"><name>DatabaseModifiedError</name></member>
+    <member refid="classXapian_1_1DatabaseModifiedError_1364c4151a63cf75904f0283d0675d483" kind="function"><name>DatabaseModifiedError</name></member>
+    <member refid="classXapian_1_1DatabaseModifiedError_1178773760019a6387102d28668544165" kind="function"><name>DatabaseModifiedError</name></member>
+    <member refid="classXapian_1_1DatabaseModifiedError_131e20e49ef29dc3191678df4baaa44c3" kind="function"><name>DatabaseModifiedError</name></member>
+    <member refid="classXapian_1_1DatabaseModifiedError_199af30b8e22f7d46dd37011ce419cbad" kind="function"><name>DatabaseModifiedError</name></member>
+  </compound>
+  <compound refid="classXapian_1_1DatabaseOpeningError" kind="class"><name>Xapian::DatabaseOpeningError</name>
+    <member refid="classXapian_1_1DatabaseOpeningError_1a1cf03ba09bd9e1d5cce7b5143ee8bdc" kind="function"><name>DatabaseOpeningError</name></member>
+    <member refid="classXapian_1_1DatabaseOpeningError_13162286f945d72bc4b3cbe042e643e3a" kind="function"><name>DatabaseOpeningError</name></member>
+    <member refid="classXapian_1_1DatabaseOpeningError_14ef2ceef9ec950e91e54a75d4d8ece1c" kind="function"><name>DatabaseOpeningError</name></member>
+    <member refid="classXapian_1_1DatabaseOpeningError_1437e5e3e5c9674e8fd090892718f859a" kind="function"><name>DatabaseOpeningError</name></member>
+    <member refid="classXapian_1_1DatabaseOpeningError_1ba35c72731ebf822697b7ca86f2191d6" kind="function"><name>DatabaseOpeningError</name></member>
+  </compound>
+  <compound refid="classXapian_1_1DatabaseVersionError" kind="class"><name>Xapian::DatabaseVersionError</name>
+    <member refid="classXapian_1_1DatabaseVersionError_1d800acb0d9e342711442b2d8e597abee" kind="function"><name>DatabaseVersionError</name></member>
+    <member refid="classXapian_1_1DatabaseVersionError_1d92eb7103606b5cdb9fb308d76ab221d" kind="function"><name>DatabaseVersionError</name></member>
+    <member refid="classXapian_1_1DatabaseVersionError_1492f4b4d924a7578a86bdc168797ce6d" kind="function"><name>DatabaseVersionError</name></member>
+    <member refid="classXapian_1_1DatabaseVersionError_17f2453fbb50afe85547c61de7ebc4f84" kind="function"><name>DatabaseVersionError</name></member>
+    <member refid="classXapian_1_1DatabaseVersionError_15382c59e0f2cda1b0f7a7839142bbc27" kind="function"><name>DatabaseVersionError</name></member>
+  </compound>
+  <compound refid="classXapian_1_1DateValueRangeProcessor" kind="class"><name>Xapian::DateValueRangeProcessor</name>
+    <member refid="classXapian_1_1DateValueRangeProcessor_11718083ff97bc81772230a455c04fd94" kind="variable"><name>prefer_mdy</name></member>
+    <member refid="classXapian_1_1DateValueRangeProcessor_16a4e6481c7b2d0cf6c35f0b2a3d54172" kind="variable"><name>epoch_year</name></member>
+    <member refid="classXapian_1_1DateValueRangeProcessor_1dfec2564921b21c35bd72c63d1793745" kind="function"><name>DateValueRangeProcessor</name></member>
+    <member refid="classXapian_1_1DateValueRangeProcessor_1ca14923c4886029ac19f96ea145ede38" kind="function"><name>DateValueRangeProcessor</name></member>
+    <member refid="classXapian_1_1DateValueRangeProcessor_129c079d9156a872f38fca82195525a92" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="classXapian_1_1DecreasingValueWeightPostingSource" kind="class"><name>Xapian::DecreasingValueWeightPostingSource</name>
+    <member refid="classXapian_1_1DecreasingValueWeightPostingSource_186d90356842563df89ce42a41010950e" kind="variable"><name>range_start</name></member>
+    <member refid="classXapian_1_1DecreasingValueWeightPostingSource_115eb4d5291afa98461547144716f8433" kind="variable"><name>range_end</name></member>
+    <member refid="classXapian_1_1DecreasingValueWeightPostingSource_13e2c0b38718e09e9dee9b7147d83ed54" kind="variable"><name>curr_weight</name></member>
+    <member refid="classXapian_1_1DecreasingValueWeightPostingSource_194b692c8c86de5dc9e5e697bbd74a01a" kind="variable"><name>items_at_end</name></member>
+    <member refid="classXapian_1_1DecreasingValueWeightPostingSource_1677cd90111fc4a5c8d6f8c8187afb9c4" kind="function"><name>skip_if_in_range</name></member>
+    <member refid="classXapian_1_1DecreasingValueWeightPostingSource_12d4fbee2505ed641f4e4b7b2adbce007" kind="function"><name>DecreasingValueWeightPostingSource</name></member>
+    <member refid="classXapian_1_1DecreasingValueWeightPostingSource_11f302377fd46ed471987939be3f24bab" kind="function"><name>get_weight</name></member>
+    <member refid="classXapian_1_1DecreasingValueWeightPostingSource_1fcaba0011386e195aeb81836fd0adc5d" kind="function"><name>clone</name></member>
+    <member refid="classXapian_1_1DecreasingValueWeightPostingSource_19f1d3ffcfbea32d66ebc690426d9be90" kind="function"><name>name</name></member>
+    <member refid="classXapian_1_1DecreasingValueWeightPostingSource_12d3b48128b61bfd904163706c87065a8" kind="function"><name>serialise</name></member>
+    <member refid="classXapian_1_1DecreasingValueWeightPostingSource_15ef4c786055fcfe85ebc99cb98ba8409" kind="function"><name>unserialise</name></member>
+    <member refid="classXapian_1_1DecreasingValueWeightPostingSource_1abbd9d95d77e2aa947377c44d1bb733c" kind="function"><name>init</name></member>
+    <member refid="classXapian_1_1DecreasingValueWeightPostingSource_1ef2944c8ef7812185907af383a3747f2" kind="function"><name>next</name></member>
+    <member refid="classXapian_1_1DecreasingValueWeightPostingSource_1e32da549e3042739f2954233c7a9bb3c" kind="function"><name>skip_to</name></member>
+    <member refid="classXapian_1_1DecreasingValueWeightPostingSource_13ae07f1c25d3b71f437a7cb63a342d5c" kind="function"><name>check</name></member>
+    <member refid="classXapian_1_1DecreasingValueWeightPostingSource_1b9ec69881499b156c9317bc9d491ef91" kind="function"><name>get_description</name></member>
+  </compound>
+  <compound refid="classstd_1_1deque" kind="class"><name>std::deque</name>
+    <member refid="classstd_1_1deque_1090b92581de438d2e14bedc190f0b0f9" kind="variable"><name>elements</name></member>
+  </compound>
+  <compound refid="classXapian_1_1DocNotFoundError" kind="class"><name>Xapian::DocNotFoundError</name>
+    <member refid="classXapian_1_1DocNotFoundError_1586cfaffe6c1c366d49d6b96f41183c3" kind="function"><name>DocNotFoundError</name></member>
+    <member refid="classXapian_1_1DocNotFoundError_1c0306adf0074cbfec349bf813bce6592" kind="function"><name>DocNotFoundError</name></member>
+    <member refid="classXapian_1_1DocNotFoundError_1f6d0f2e7547371d9457db08868b082a6" kind="function"><name>DocNotFoundError</name></member>
+    <member refid="classXapian_1_1DocNotFoundError_1b3ffee7d93c12197e98944922cb99f6a" kind="function"><name>DocNotFoundError</name></member>
+    <member refid="classXapian_1_1DocNotFoundError_1cd940ce536bc0a27bb3ba1f6ceff7356" kind="function"><name>DocNotFoundError</name></member>
+  </compound>
+  <compound refid="classXapian_1_1Document" kind="class"><name>Xapian::Document</name>
+    <member refid="classXapian_1_1Document_191ab95125fce434b2539661f22b4522c" kind="variable"><name>internal</name></member>
+    <member refid="classXapian_1_1Document_1aed3fcea3e5ab0bf9fc3d5b31fc0af52" kind="function"><name>Document</name></member>
+    <member refid="classXapian_1_1Document_127316171adc74325e42d5e88b004e189" kind="function"><name>Document</name></member>
+    <member refid="classXapian_1_1Document_1470144b154e9a7ec40b0875a8d636b9b" kind="function"><name>operator=</name></member>
+    <member refid="classXapian_1_1Document_1e75d6c6a48b1cfed5b85189cb766531b" kind="function"><name>Document</name></member>
+    <member refid="classXapian_1_1Document_1943a905545bd862dbc7281e6d66e5ee4" kind="function"><name>~Document</name></member>
+    <member refid="classXapian_1_1Document_11d8567908657c0d60a47c7ca30a08ebc" kind="function"><name>get_value</name></member>
+    <member refid="classXapian_1_1Document_112857fccd3448ec1db91311c16d67f6c" kind="function"><name>add_value</name></member>
+    <member refid="classXapian_1_1Document_16ffd0e3d1beb8f047b3158a5e5aa41d4" kind="function"><name>remove_value</name></member>
+    <member refid="classXapian_1_1Document_199f8cb1deeab46df42fed52ea4f55eb9" kind="function"><name>clear_values</name></member>
+    <member refid="classXapian_1_1Document_1767026a91f3a1421f3d23f7a170509d4" kind="function"><name>get_data</name></member>
+    <member refid="classXapian_1_1Document_1b1b0da2e7c76acd754f29a52e14f89ae" kind="function"><name>set_data</name></member>
+    <member refid="classXapian_1_1Document_1161943bb133fea0da4a21fa37621764b" kind="function"><name>add_posting</name></member>
+    <member refid="classXapian_1_1Document_1730bb59dda98f19c61fe67360f0adb3a" kind="function"><name>add_term</name></member>
+    <member refid="classXapian_1_1Document_15dcc3df00ccb9ab3a8dee594f603d299" kind="function"><name>add_boolean_term</name></member>
+    <member refid="classXapian_1_1Document_111eec629737e496a7077b87f763967a5" kind="function"><name>remove_posting</name></member>
+    <member refid="classXapian_1_1Document_101e5b7bf54fdee77a978c3b5f1b007ba" kind="function"><name>remove_term</name></member>
+    <member refid="classXapian_1_1Document_1a0bd9e001ffd29b0678938522d4e37e5" kind="function"><name>clear_terms</name></member>
+    <member refid="classXapian_1_1Document_10249ddf18171ed53d851f9d82290eb62" kind="function"><name>termlist_count</name></member>
+    <member refid="classXapian_1_1Document_1591cc11740bd0b293eaa77f117b7f0d6" kind="function"><name>termlist_begin</name></member>
+    <member refid="classXapian_1_1Document_1b4ba488b850b48b4972bb4e5f8ccf241" kind="function"><name>termlist_end</name></member>
+    <member refid="classXapian_1_1Document_1139251ac7b57e67703f797b06793d21c" kind="function"><name>values_count</name></member>
+    <member refid="classXapian_1_1Document_11ed6315d39adbc6f3e19d7bcc95ad3fe" kind="function"><name>values_begin</name></member>
+    <member refid="classXapian_1_1Document_10f8166c5d6feab897cafd0ab6e6dfaeb" kind="function"><name>values_end</name></member>
+    <member refid="classXapian_1_1Document_103ff36283ac7d14a1a3b1c9fb26eff61" kind="function"><name>get_docid</name></member>
+    <member refid="classXapian_1_1Document_1d6a7536cd6ed7c5b3fe4c9f1d14d6faf" kind="function"><name>serialise</name></member>
+    <member refid="classXapian_1_1Document_1eb93627c7cb0556c0935d5c2bb4f0847" kind="function"><name>get_description</name></member>
+    <member refid="classXapian_1_1Document_13d7618710ea495101e4799fbe1952a41" kind="function"><name>unserialise</name></member>
+  </compound>
+  <compound refid="classstd_1_1domain__error" kind="class"><name>std::domain_error</name>
+  </compound>
+  <compound refid="classXapian_1_1Enquire" kind="class"><name>Xapian::Enquire</name>
+    <member refid="classXapian_1_1Enquire_1edb5fb761acc0bb2249bec375883a093" kind="function"><name>get_mset</name></member>
+    <member refid="classXapian_1_1Enquire_1d53aba9cb5b62d14dce5395f568c050f" kind="function"><name>get_mset</name></member>
+    <member refid="classXapian_1_1Enquire_1d87c8d66b4646c6a9b19f4e88fb4296b" kind="enum"><name>docid_order</name></member>
+    <member refid="classXapian_1_1Enquire_1d87c8d66b4646c6a9b19f4e88fb4296b5a930d75a962b5d9c08f59920db4aa8a" kind="enumvalue"><name>ASCENDING</name></member>
+    <member refid="classXapian_1_1Enquire_1d87c8d66b4646c6a9b19f4e88fb4296b0cf8b75c1fcd0ab6dbc3af0635a0b104" kind="enumvalue"><name>DESCENDING</name></member>
+    <member refid="classXapian_1_1Enquire_1d87c8d66b4646c6a9b19f4e88fb4296bccadd30465837795cd7cf9b679df162e" kind="enumvalue"><name>DONT_CARE</name></member>
+    <member refid="classXapian_1_1Enquire_19f75fc1194872a3efbaaf742b6a2efcf" kind="variable"><name>internal</name></member>
+    <member refid="classXapian_1_1Enquire_1f28f6824ccaf5b4045da9684e9eecb82" kind="variable"><name>INCLUDE_QUERY_TERMS</name></member>
+    <member refid="classXapian_1_1Enquire_108ae037a8d477d8018d23203cb179914" kind="variable"><name>USE_EXACT_TERMFREQ</name></member>
+    <member refid="classXapian_1_1Enquire_1c451dc68045ec4b0d26f5b2a42eae2a9" kind="function"><name>Enquire</name></member>
+    <member refid="classXapian_1_1Enquire_10c067ef5b6397ab064d09884efc06cbe" kind="function"><name>operator=</name></member>
+    <member refid="classXapian_1_1Enquire_1f9dcba0c6d10dd8dd6ae59e087f84799" kind="function"><name>Enquire</name></member>
+    <member refid="classXapian_1_1Enquire_1808479faae76453f34a24881805e75b9" kind="function"><name>~Enquire</name></member>
+    <member refid="classXapian_1_1Enquire_11148d960120662e5543e2a2b12620318" kind="function"><name>set_query</name></member>
+    <member refid="classXapian_1_1Enquire_1dd445bf19315638cccbb6418e2ae0d42" kind="function"><name>get_query</name></member>
+    <member refid="classXapian_1_1Enquire_143b54489c53d26a98d3fde3f1d3aa14f" kind="function"><name>add_matchspy</name></member>
+    <member refid="classXapian_1_1Enquire_11bb73406e3e7749a9e66ebc96ebd13f3" kind="function"><name>clear_matchspies</name></member>
+    <member refid="classXapian_1_1Enquire_1d5c72e6f34c5c2da5f0b8c79736704ab" kind="function"><name>set_weighting_scheme</name></member>
+    <member refid="classXapian_1_1Enquire_1117ee547f5908e952e2e72d5a986d3bb" kind="function"><name>set_collapse_key</name></member>
+    <member refid="classXapian_1_1Enquire_1bbf7ff734ff6adcb301e493f6eed803b" kind="function"><name>set_docid_order</name></member>
+    <member refid="classXapian_1_1Enquire_1dadaa8401e40ab4cec090bc1541a11b7" kind="function"><name>set_cutoff</name></member>
+    <member refid="classXapian_1_1Enquire_180a33a28791c05167204706c1a9d986b" kind="function"><name>set_sort_by_relevance</name></member>
+    <member refid="classXapian_1_1Enquire_1b10384fabd51eebd8174f916563e3f7a" kind="function"><name>set_sort_by_value</name></member>
+    <member refid="classXapian_1_1Enquire_10bcb7086d8633fc035c6e5d094e45d39" kind="function"><name>set_sort_by_key</name></member>
+    <member refid="classXapian_1_1Enquire_1a921b3c9386fbe2ddfd7dbbf130f9391" kind="function"><name>set_sort_by_value_then_relevance</name></member>
+    <member refid="classXapian_1_1Enquire_1562beac4843f310dbdc61fdd33209be4" kind="function"><name>set_sort_by_key_then_relevance</name></member>
+    <member refid="classXapian_1_1Enquire_15a495760d5edc479385b14b463affbff" kind="function"><name>set_sort_by_relevance_then_value</name></member>
+    <member refid="classXapian_1_1Enquire_1c64b07e06a24519baf1c495d0edcd0c3" kind="function"><name>set_sort_by_relevance_then_key</name></member>
+    <member refid="classXapian_1_1Enquire_1c04aa26eff82db9fd810b8125a31ee55" kind="function"><name>get_eset</name></member>
+    <member refid="classXapian_1_1Enquire_1f73e3672a3f1077309fbc99ef2db5412" kind="function"><name>get_eset</name></member>
+    <member refid="classXapian_1_1Enquire_1a0b50863720f25f8a026bee73913798b" kind="function"><name>get_eset</name></member>
+    <member refid="classXapian_1_1Enquire_1dda4181ccd15beb52c39f5e24adbb25b" kind="function"><name>get_matching_terms_begin</name></member>
+    <member refid="classXapian_1_1Enquire_16a27b926405ef71ab138fa656dab0bd4" kind="function"><name>get_matching_terms_end</name></member>
+    <member refid="classXapian_1_1Enquire_14d531a494be857ae09c831480ff651d7" kind="function"><name>get_matching_terms_begin</name></member>
+    <member refid="classXapian_1_1Enquire_1619e5a4f3597ed800e8f11190a5b7fe0" kind="function"><name>get_matching_terms_end</name></member>
+    <member refid="classXapian_1_1Enquire_14a980eb2599afdf52ae78788849c9921" kind="function"><name>get_description</name></member>
+  </compound>
+  <compound refid="classXapian_1_1Error" kind="class"><name>Xapian::Error</name>
+    <member refid="classXapian_1_1Error_1bd52e76045a491c2a2c48c29f77ff701" kind="friend"><name>ErrorHandler</name></member>
+    <member refid="classXapian_1_1Error_163bf96fc7f4181f77ad140b2d0268065" kind="variable"><name>msg</name></member>
+    <member refid="classXapian_1_1Error_1112d6d1f293119dc3d670d4b95ba55ac" kind="variable"><name>context</name></member>
+    <member refid="classXapian_1_1Error_14949650d50f48f2dcd3927590049d6b1" kind="variable"><name>error_string</name></member>
+    <member refid="classXapian_1_1Error_17c16ba698c2803260a8b784f2e577906" kind="variable"><name>type</name></member>
+    <member refid="classXapian_1_1Error_11c57caf08995f6ecf7aea0249cc0c2b6" kind="variable"><name>my_errno</name></member>
+    <member refid="classXapian_1_1Error_114bbf37f0c2157403bdeed124a46730c" kind="variable"><name>already_handled</name></member>
+    <member refid="classXapian_1_1Error_1cd17897a0257d9134527428a58503ca0" kind="function"><name>operator=</name></member>
+    <member refid="classXapian_1_1Error_1c52f5b3b3b285d5e12c239f6317ff76c" kind="function"><name>Error</name></member>
+    <member refid="classXapian_1_1Error_1402595630e3a937fa9c25f42a285428a" kind="function"><name>Error</name></member>
+    <member refid="classXapian_1_1Error_1136945e703317bdf6e18d8cf511a5bfb" kind="function"><name>get_type</name></member>
+    <member refid="classXapian_1_1Error_1ea05df48ea71dfd045da28ab984cdaa3" kind="function"><name>get_msg</name></member>
+    <member refid="classXapian_1_1Error_190c683965555b4bc86b08e8667170e44" kind="function"><name>get_context</name></member>
+    <member refid="classXapian_1_1Error_16f94a579f8e176f85c6fb036592dab61" kind="function"><name>get_error_string</name></member>
+    <member refid="classXapian_1_1Error_1bd64e380eb6d864dc907ee62c1f58a74" kind="function"><name>get_description</name></member>
+  </compound>
+  <compound refid="classXapian_1_1ErrorHandler" kind="class"><name>Xapian::ErrorHandler</name>
+    <member refid="classXapian_1_1ErrorHandler_126cf40844fb3d29fd1be39ae835394fe" kind="function"><name>operator=</name></member>
+    <member refid="classXapian_1_1ErrorHandler_1a74142702c61693a3bab97c1bf7efa37" kind="function"><name>ErrorHandler</name></member>
+    <member refid="classXapian_1_1ErrorHandler_11475bcd4388be30403479cd7fe76c1a4" kind="function"><name>handle_error</name></member>
+    <member refid="classXapian_1_1ErrorHandler_12833c2fd77c9979574c63cee8db96e05" kind="function"><name>ErrorHandler</name></member>
+    <member refid="classXapian_1_1ErrorHandler_1f4fccfeed11d85364088e5bed7f9048b" kind="function"><name>~ErrorHandler</name></member>
+    <member refid="classXapian_1_1ErrorHandler_1a3085bcf9a4e25bd2dd5d99710763b51" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="classXapian_1_1ESet" kind="class"><name>Xapian::ESet</name>
+    <member refid="classXapian_1_1ESet_1742c7ad71b74c029a8a27428f7a0ddbb" kind="variable"><name>internal</name></member>
+    <member refid="classXapian_1_1ESet_1b53f2936cfa1c16c7ea4e171d7572e02" kind="function"><name>ESet</name></member>
+    <member refid="classXapian_1_1ESet_107720954f3b74b0378079eb947be7642" kind="function"><name>~ESet</name></member>
+    <member refid="classXapian_1_1ESet_1817bfddb94d57028fefe678b5f614c5a" kind="function"><name>ESet</name></member>
+    <member refid="classXapian_1_1ESet_1626192324d2199ff59b2b7380371aba9" kind="function"><name>operator=</name></member>
+    <member refid="classXapian_1_1ESet_12679dc65b4448d98d928daccecc2c5bd" kind="function"><name>get_ebound</name></member>
+    <member refid="classXapian_1_1ESet_1ebe586b9f270b318589f77b03841c420" kind="function"><name>size</name></member>
+    <member refid="classXapian_1_1ESet_16e96fb499d2a2ea8e9846853f8f043e0" kind="function"><name>max_size</name></member>
+    <member refid="classXapian_1_1ESet_1090e0af57f0c7dc00dba7f3f86421674" kind="function"><name>empty</name></member>
+    <member refid="classXapian_1_1ESet_1d2c3235a5e0ac8aad189ab0ef987a049" kind="function"><name>swap</name></member>
+    <member refid="classXapian_1_1ESet_1b372abbea446e55668623da2640a2979" kind="function"><name>begin</name></member>
+    <member refid="classXapian_1_1ESet_1b4a4fc608e5b1e98fa7fdd9ab5e5569e" kind="function"><name>end</name></member>
+    <member refid="classXapian_1_1ESet_1d4ff820f027bf26c338b106ed1b46704" kind="function"><name>back</name></member>
+    <member refid="classXapian_1_1ESet_1774ae93e1065b7d2ccd75da52e3fd5ae" kind="function"><name>operator[]</name></member>
+    <member refid="classXapian_1_1ESet_1d63a1c7299c538001212e4ecd0bb5bc1" kind="function"><name>get_description</name></member>
+  </compound>
+  <compound refid="classXapian_1_1ESetIterator" kind="class"><name>Xapian::ESetIterator</name>
+    <member refid="classXapian_1_1ESetIterator_18b9d7694b4030e995c921050855fdd5c" kind="typedef"><name>iterator_category</name></member>
+    <member refid="classXapian_1_1ESetIterator_1e8f83b2d74b7d6df225200d4f5535457" kind="typedef"><name>value_type</name></member>
+    <member refid="classXapian_1_1ESetIterator_12f7a416cb1933a156e7a451c0ce24862" kind="typedef"><name>difference_type</name></member>
+    <member refid="classXapian_1_1ESetIterator_1d3dd2f7ac77acea71189c6b2f92660d3" kind="typedef"><name>pointer</name></member>
+    <member refid="classXapian_1_1ESetIterator_1a3a9801bb57c8d49be13633904951d29" kind="typedef"><name>reference</name></member>
+    <member refid="classXapian_1_1ESetIterator_1ba9dec9958ccfbd1de1215f521afe2b0" kind="friend"><name>ESet</name></member>
+    <member refid="classXapian_1_1ESetIterator_12ca621ecf6f96ce65281a2b03eb70c7d" kind="friend"><name>operator==</name></member>
+    <member refid="classXapian_1_1ESetIterator_19bdc971a181b8bfb8d920f01df389715" kind="friend"><name>operator!=</name></member>
+    <member refid="classXapian_1_1ESetIterator_15f242b00cd4b99399cd7e758de59a0aa" kind="variable"><name>index</name></member>
+    <member refid="classXapian_1_1ESetIterator_10bcc9f03d7699b6407e2d1400bfdc148" kind="variable"><name>eset</name></member>
+    <member refid="classXapian_1_1ESetIterator_18f23eac9c64db859e43bdfa45b2b2f7c" kind="function"><name>ESetIterator</name></member>
+    <member refid="classXapian_1_1ESetIterator_1c61be6aa36fc2f6ebe5c4cc4865de473" kind="function"><name>ESetIterator</name></member>
+    <member refid="classXapian_1_1ESetIterator_12e9da71f680547c22406d2268b5ff1fe" kind="function"><name>ESetIterator</name></member>
+    <member refid="classXapian_1_1ESetIterator_148dab179f2b57c1b5e25f83598588331" kind="function"><name>operator=</name></member>
+    <member refid="classXapian_1_1ESetIterator_114d2d57a48f2e7aed1580a6f782bed41" kind="function"><name>operator++</name></member>
+    <member refid="classXapian_1_1ESetIterator_1dad0209772938f1d5c495ad722fb0dad" kind="function"><name>operator++</name></member>
+    <member refid="classXapian_1_1ESetIterator_1e1e2d498af7508403153a45ba813e439" kind="function"><name>operator--</name></member>
+    <member refid="classXapian_1_1ESetIterator_13a11724a059a1590e45c3a3b38cb43dc" kind="function"><name>operator--</name></member>
+    <member refid="classXapian_1_1ESetIterator_1ca6b55e068f22f1d4c5066f5087eb858" kind="function"><name>operator*</name></member>
+    <member refid="classXapian_1_1ESetIterator_17c3294162c194e248b4a5346414b7a6c" kind="function"><name>get_weight</name></member>
+    <member refid="classXapian_1_1ESetIterator_16c2c1af1820e488bd2f8f53b67ad2dec" kind="function"><name>get_description</name></member>
+  </compound>
+  <compound refid="classstd_1_1exception" kind="class"><name>std::exception</name>
+  </compound>
+  <compound refid="classXapian_1_1ExpandDecider" kind="class"><name>Xapian::ExpandDecider</name>
+    <member refid="classXapian_1_1ExpandDecider_16ee544877bb51b85da4536eb8abd1cf8" kind="function"><name>operator()</name></member>
+    <member refid="classXapian_1_1ExpandDecider_1c0a1002daa165553770b71abf23348be" kind="function"><name>~ExpandDecider</name></member>
+  </compound>
+  <compound refid="classXapian_1_1ExpandDeciderAnd" kind="class"><name>Xapian::ExpandDeciderAnd</name>
+    <member refid="classXapian_1_1ExpandDeciderAnd_17ea527d305a30c68b2531cfc9d2aad29" kind="variable"><name>first</name></member>
+    <member refid="classXapian_1_1ExpandDeciderAnd_14cdf42f59914151d557c59037a9ad3d6" kind="variable"><name>second</name></member>
+    <member refid="classXapian_1_1ExpandDeciderAnd_19d63accdfda0448b2c2cb6bd1d3de433" kind="function"><name>ExpandDeciderAnd</name></member>
+    <member refid="classXapian_1_1ExpandDeciderAnd_15c54b7d99e1e31528eae8054d94df43b" kind="function"><name>ExpandDeciderAnd</name></member>
+    <member refid="classXapian_1_1ExpandDeciderAnd_1c10c6b84ff534553b3b9e520f6c0ea29" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="classXapian_1_1ExpandDeciderFilterTerms" kind="class"><name>Xapian::ExpandDeciderFilterTerms</name>
+    <member refid="classXapian_1_1ExpandDeciderFilterTerms_1a123097f2d608aba5c2d21225a8ca7c3" kind="variable"><name>rejects</name></member>
+    <member refid="classXapian_1_1ExpandDeciderFilterTerms_1bd6e245dbfd62f3f6f0594c47e19806b" kind="function"><name>ExpandDeciderFilterTerms</name></member>
+    <member refid="classXapian_1_1ExpandDeciderFilterTerms_1afc04e9e1692a3985834ef5b9b37f436" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="classstd_1_1ios__base_1_1failure" kind="class"><name>std::ios_base::failure</name>
+  </compound>
+  <compound refid="classXapian_1_1FeatureUnavailableError" kind="class"><name>Xapian::FeatureUnavailableError</name>
+    <member refid="classXapian_1_1FeatureUnavailableError_1d72f69e75aaa6362f8f38bf30e588c87" kind="function"><name>FeatureUnavailableError</name></member>
+    <member refid="classXapian_1_1FeatureUnavailableError_1bac686b11a1ec4208798c902f1d0bfd2" kind="function"><name>FeatureUnavailableError</name></member>
+    <member refid="classXapian_1_1FeatureUnavailableError_1feda693e930f99e98a32d054376cc5d3" kind="function"><name>FeatureUnavailableError</name></member>
+    <member refid="classXapian_1_1FeatureUnavailableError_1a0c0377fd357fc7aa026aa3637e3714a" kind="function"><name>FeatureUnavailableError</name></member>
+    <member refid="classXapian_1_1FeatureUnavailableError_17c8440e4252839a4b24a8fb4ded15cd3" kind="function"><name>FeatureUnavailableError</name></member>
+  </compound>
+  <compound refid="classXapian_1_1FixedWeightPostingSource" kind="class"><name>Xapian::FixedWeightPostingSource</name>
+    <member refid="classXapian_1_1FixedWeightPostingSource_1f4bc6b19f4d717fa1f34b8fb7d01f241" kind="variable"><name>db</name></member>
+    <member refid="classXapian_1_1FixedWeightPostingSource_1cccc5a45afd0115647ddc96193bff225" kind="variable"><name>termfreq</name></member>
+    <member refid="classXapian_1_1FixedWeightPostingSource_10e6ae9d378caac41e347c5d1c08a7867" kind="variable"><name>it</name></member>
+    <member refid="classXapian_1_1FixedWeightPostingSource_1932b6c2771ea023a26d671c5ea623ff8" kind="variable"><name>started</name></member>
+    <member refid="classXapian_1_1FixedWeightPostingSource_1b26915856a255989b862c497e3f5113b" kind="variable"><name>check_docid</name></member>
+    <member refid="classXapian_1_1FixedWeightPostingSource_1f946b00ce498fa513a1f1a6781d70a61" kind="function"><name>FixedWeightPostingSource</name></member>
+    <member refid="classXapian_1_1FixedWeightPostingSource_142262ab06f7d9d2f3122bc3fb115b23e" kind="function"><name>get_termfreq_min</name></member>
+    <member refid="classXapian_1_1FixedWeightPostingSource_13296c3490733ac9f36e2dff0719746a5" kind="function"><name>get_termfreq_est</name></member>
+    <member refid="classXapian_1_1FixedWeightPostingSource_141f8f0e959f0d7daf5915b7507d4f5df" kind="function"><name>get_termfreq_max</name></member>
+    <member refid="classXapian_1_1FixedWeightPostingSource_18410aea1310c2fa7e5a078fe9429e6af" kind="function"><name>get_weight</name></member>
+    <member refid="classXapian_1_1FixedWeightPostingSource_177675d1d2175f8de6b10c363f0a73143" kind="function"><name>next</name></member>
+    <member refid="classXapian_1_1FixedWeightPostingSource_111598d752e5a8d2d3788430b120e665f" kind="function"><name>skip_to</name></member>
+    <member refid="classXapian_1_1FixedWeightPostingSource_16b51fb24303528060e48df95ada3d989" kind="function"><name>check</name></member>
+    <member refid="classXapian_1_1FixedWeightPostingSource_1c1913462adbcea9216b04180f62f41a0" kind="function"><name>at_end</name></member>
+    <member refid="classXapian_1_1FixedWeightPostingSource_1f565f2685bec715d5cbd489f5acc50a3" kind="function"><name>get_docid</name></member>
+    <member refid="classXapian_1_1FixedWeightPostingSource_1ad5669a2fa3d08bea18d0304823222d4" kind="function"><name>clone</name></member>
+    <member refid="classXapian_1_1FixedWeightPostingSource_128fc3f906a9b56f8c4ebad2e82d3d531" kind="function"><name>name</name></member>
+    <member refid="classXapian_1_1FixedWeightPostingSource_1b9f650935d97b18388dd112101336355" kind="function"><name>serialise</name></member>
+    <member refid="classXapian_1_1FixedWeightPostingSource_17d70385221859891b250e526c791ce67" kind="function"><name>unserialise</name></member>
+    <member refid="classXapian_1_1FixedWeightPostingSource_13c9698d1d0d4d47247bd19451e1e2077" kind="function"><name>init</name></member>
+    <member refid="classXapian_1_1FixedWeightPostingSource_1eb48203eb1b35190d6bffe351bec38e5" kind="function"><name>get_description</name></member>
+  </compound>
+  <compound refid="classstd_1_1fstream" kind="class"><name>std::fstream</name>
+  </compound>
+  <compound refid="classstd_1_1ifstream" kind="class"><name>std::ifstream</name>
+  </compound>
+  <compound refid="structXapian_1_1ValueCountMatchSpy_1_1Internal" kind="struct"><name>Xapian::ValueCountMatchSpy::Internal</name>
+    <member refid="structXapian_1_1ValueCountMatchSpy_1_1Internal_157a0f830eca8f8d8a40685f90f5b2534" kind="variable"><name>slot</name></member>
+    <member refid="structXapian_1_1ValueCountMatchSpy_1_1Internal_1fd8ab55f1f65cfe98549bf6932da9f01" kind="variable"><name>total</name></member>
+    <member refid="structXapian_1_1ValueCountMatchSpy_1_1Internal_1e248b2b5d2b61b0522cc4c98ef2ca80b" kind="variable"><name>values</name></member>
+    <member refid="structXapian_1_1ValueCountMatchSpy_1_1Internal_1e13686db01ec69ac8e4b8ca2f0f9d8f4" kind="function"><name>Internal</name></member>
+    <member refid="structXapian_1_1ValueCountMatchSpy_1_1Internal_12a7fd69298a8c3af39b3860791169319" kind="function"><name>Internal</name></member>
+  </compound>
+  <compound refid="classXapian_1_1Query_1_1Internal" kind="class"><name>Xapian::Query::Internal</name>
+    <member refid="classXapian_1_1Query_1_1Internal_1f7e4d5308cb364ef7086b08b55ae6a80" kind="typedef"><name>subquery_list</name></member>
+    <member refid="classXapian_1_1Query_1_1Internal_1be7aaa167e80b8a67d46b217111aa00c" kind="typedef"><name>op_t</name></member>
+    <member refid="classXapian_1_1Query_1_1Internal_12d9713d751597c0911b20d45da4c567d" kind="friend"><name>::LocalSubMatch</name></member>
+    <member refid="classXapian_1_1Query_1_1Internal_180f6aa41afbddd72641267163501959d" kind="friend"><name>::MultiMatch</name></member>
+    <member refid="classXapian_1_1Query_1_1Internal_1f2fee27a80b109feb17c4b4b7f5f1ee3" kind="friend"><name>::QueryOptimiser</name></member>
+    <member refid="classXapian_1_1Query_1_1Internal_12ada6effcda38d02a27e0f179c79091d" kind="friend"><name>::SortPosName</name></member>
+    <member refid="classXapian_1_1Query_1_1Internal_10de80064a367adf51ab09f7a9b6de05a" kind="friend"><name>Query</name></member>
+    <member refid="classXapian_1_1Query_1_1Internal_111bde67da53d81bc140d5d7d098badab" kind="variable"><name>OP_LEAF</name></member>
+    <member refid="classXapian_1_1Query_1_1Internal_1df435f5d9826f5f103aad13ceaa7e692" kind="variable"><name>OP_EXTERNAL_SOURCE</name></member>
+    <member refid="classXapian_1_1Query_1_1Internal_1d5e6c05a6e5be88b73eea0c9051f509d" kind="variable"><name>op</name></member>
+    <member refid="classXapian_1_1Query_1_1Internal_18a90d60f1605b2599ae37be2478a246a" kind="variable"><name>subqs</name></member>
+    <member refid="classXapian_1_1Query_1_1Internal_11636edda65bda9af3cac16831f152463" kind="variable"><name>parameter</name></member>
+    <member refid="classXapian_1_1Query_1_1Internal_1b37a044e0e1454342cf1d6faf92d6c96" kind="variable"><name>tname</name></member>
+    <member refid="classXapian_1_1Query_1_1Internal_16b4832f5ecd57b178db9304963ba2fb6" kind="variable"><name>str_parameter</name></member>
+    <member refid="classXapian_1_1Query_1_1Internal_1b0b0fdcb5feb1e3d3c7997c56d475436" kind="variable"><name>term_pos</name></member>
+    <member refid="classXapian_1_1Query_1_1Internal_17f492949ff4d51b647302c1033be2c5d" kind="variable"><name>external_source</name></member>
+    <member refid="classXapian_1_1Query_1_1Internal_1b9f93573f615f382a81a6bd530d22e1a" kind="variable"><name>external_source_owned</name></member>
+    <member refid="classXapian_1_1Query_1_1Internal_14364b3c76628605b4813351b4ab24ae7" kind="function"><name>initialise_from_copy</name></member>
+    <member refid="classXapian_1_1Query_1_1Internal_1bf87cdb766d0ace2e05aed835c8d421d" kind="function"><name>accumulate_terms</name></member>
+    <member refid="classXapian_1_1Query_1_1Internal_15f8c57f8d2216a7df85207d1249a9dd8" kind="function"><name>simplify_query</name></member>
+    <member refid="classXapian_1_1Query_1_1Internal_1177065e254ef2019e7020f49ace4f427" kind="function"><name>validate_query</name></member>
+    <member refid="classXapian_1_1Query_1_1Internal_14b101ba893b5855f610b01091b2fbbce" kind="function"><name>simplify_matchnothing</name></member>
+    <member refid="classXapian_1_1Query_1_1Internal_1b42d80a4f07c1a3787be5783b617292f" kind="function"><name>collapse_subqs</name></member>
+    <member refid="classXapian_1_1Query_1_1Internal_1f17148c03500efb0c13fb5aed9c4f18d" kind="function"><name>flatten_subqs</name></member>
+    <member refid="classXapian_1_1Query_1_1Internal_140c8488eed08150f6406f90b115dd893" kind="function"><name>serialise</name></member>
+    <member refid="classXapian_1_1Query_1_1Internal_179057edd73885d77057e1e46e3c6fe6f" kind="function"><name>get_op_name</name></member>
+    <member refid="classXapian_1_1Query_1_1Internal_169ca3b1a7e907efb7b2bb58a41ab705c" kind="function"><name>Internal</name></member>
+    <member refid="classXapian_1_1Query_1_1Internal_11b405afffb95f52318f6851dd735b568" kind="function"><name>operator=</name></member>
+    <member refid="classXapian_1_1Query_1_1Internal_1b800d03b72f5afcf0af3c68f1358a317" kind="function"><name>Internal</name></member>
+    <member refid="classXapian_1_1Query_1_1Internal_1917488751d31a94c15e94a32e357feff" kind="function"><name>Internal</name></member>
+    <member refid="classXapian_1_1Query_1_1Internal_18187a05f7a07f4701825ef0c8299d4d5" kind="function"><name>Internal</name></member>
+    <member refid="classXapian_1_1Query_1_1Internal_10bbc2299d18dd59dbda8639f8f0d66ad" kind="function"><name>Internal</name></member>
+    <member refid="classXapian_1_1Query_1_1Internal_186281d61ae057bc8d25e9d69d2bcc53c" kind="function"><name>Internal</name></member>
+    <member refid="classXapian_1_1Query_1_1Internal_141296408302c5092dc7d51f1308c8cd2" kind="function"><name>~Internal</name></member>
+    <member refid="classXapian_1_1Query_1_1Internal_13f39e94c808fcfc9da90af7e05815fcd" kind="function"><name>add_subquery</name></member>
+    <member refid="classXapian_1_1Query_1_1Internal_149ae93a89f27bed6fb64d6861f8b596e" kind="function"><name>add_subquery_nocopy</name></member>
+    <member refid="classXapian_1_1Query_1_1Internal_1aab3063a8eb54dba2d8c6071deb37bf0" kind="function"><name>set_dbl_parameter</name></member>
+    <member refid="classXapian_1_1Query_1_1Internal_1a14813593115bb8b4fe9c0b84413a4bf" kind="function"><name>get_dbl_parameter</name></member>
+    <member refid="classXapian_1_1Query_1_1Internal_160de9d108d3849d7040446beac4be61c" kind="function"><name>end_construction</name></member>
+    <member refid="classXapian_1_1Query_1_1Internal_1d83a99a9fe162e045c4b71f915b60acb" kind="function"><name>serialise</name></member>
+    <member refid="classXapian_1_1Query_1_1Internal_1f534381e6fe27dd3027cb0a5057cf7fc" kind="function"><name>get_description</name></member>
+    <member refid="classXapian_1_1Query_1_1Internal_159a3b140a0b00c79c8b987a45e77c5a9" kind="function"><name>get_parameter</name></member>
+    <member refid="classXapian_1_1Query_1_1Internal_1a51bfb1bbfe249fd9f77f5b8ab7524ef" kind="function"><name>get_wqf</name></member>
+    <member refid="classXapian_1_1Query_1_1Internal_1eb335239123c1de8be23e828dccfe699" kind="function"><name>get_length</name></member>
+    <member refid="classXapian_1_1Query_1_1Internal_16ea4240bf167d9abf20754aeed184994" kind="function"><name>get_terms</name></member>
+    <member refid="classXapian_1_1Query_1_1Internal_1ecfcc2fe11d66ae7e7116c9586c6d9c2" kind="function"><name>unserialise</name></member>
+  </compound>
+  <compound refid="classXapian_1_1InternalError" kind="class"><name>Xapian::InternalError</name>
+    <member refid="classXapian_1_1InternalError_1216cfab6a10b16d85c2c02f2027b3785" kind="function"><name>InternalError</name></member>
+    <member refid="classXapian_1_1InternalError_10a01bbcf79cca44b0651c56db64647ac" kind="function"><name>InternalError</name></member>
+    <member refid="classXapian_1_1InternalError_13cb0aa9cc9085c2796935b84b97641d5" kind="function"><name>InternalError</name></member>
+    <member refid="classXapian_1_1InternalError_1aff4cb9b106c6cac8d30ff67fdebcd14" kind="function"><name>InternalError</name></member>
+    <member refid="classXapian_1_1InternalError_1f499bef4f396056a01957f717a93c597" kind="function"><name>InternalError</name></member>
+  </compound>
+  <compound refid="classstd_1_1invalid__argument" kind="class"><name>std::invalid_argument</name>
+  </compound>
+  <compound refid="classXapian_1_1InvalidArgumentError" kind="class"><name>Xapian::InvalidArgumentError</name>
+    <member refid="classXapian_1_1InvalidArgumentError_10ddac57dda693dfbc355dcde1460c896" kind="function"><name>InvalidArgumentError</name></member>
+    <member refid="classXapian_1_1InvalidArgumentError_161380c4dbe5de9f99666cd8dbe938673" kind="function"><name>InvalidArgumentError</name></member>
+    <member refid="classXapian_1_1InvalidArgumentError_1109ce412ba2f44def86f6b22b93892a2" kind="function"><name>InvalidArgumentError</name></member>
+    <member refid="classXapian_1_1InvalidArgumentError_156266fec6752c8da67ffc3099aca3be6" kind="function"><name>InvalidArgumentError</name></member>
+    <member refid="classXapian_1_1InvalidArgumentError_111f271531d8f1fdf93883dbad1ad3d5f" kind="function"><name>InvalidArgumentError</name></member>
+  </compound>
+  <compound refid="classXapian_1_1InvalidOperationError" kind="class"><name>Xapian::InvalidOperationError</name>
+    <member refid="classXapian_1_1InvalidOperationError_132aa486bd00353b2d9912d959f215f0a" kind="function"><name>InvalidOperationError</name></member>
+    <member refid="classXapian_1_1InvalidOperationError_1170ef1ebb856e80a266337f91ce6c452" kind="function"><name>InvalidOperationError</name></member>
+    <member refid="classXapian_1_1InvalidOperationError_1d1afcb1378f1573588b74b8a50bbceb9" kind="function"><name>InvalidOperationError</name></member>
+    <member refid="classXapian_1_1InvalidOperationError_14a7863e1cdcd90e3045e9d6711a911e1" kind="function"><name>InvalidOperationError</name></member>
+    <member refid="classXapian_1_1InvalidOperationError_1232750e076f1e96a2a02d29fc3d906f2" kind="function"><name>InvalidOperationError</name></member>
+  </compound>
+  <compound refid="classstd_1_1ios" kind="class"><name>std::ios</name>
+  </compound>
+  <compound refid="classstd_1_1ios__base" kind="class"><name>std::ios_base</name>
+  </compound>
+  <compound refid="classstd_1_1istream" kind="class"><name>std::istream</name>
+  </compound>
+  <compound refid="classstd_1_1istringstream" kind="class"><name>std::istringstream</name>
+  </compound>
+  <compound refid="classstd_1_1map_1_1iterator" kind="class"><name>std::map::iterator</name>
+  </compound>
+  <compound refid="classstd_1_1multimap_1_1iterator" kind="class"><name>std::multimap::iterator</name>
+  </compound>
+  <compound refid="classstd_1_1set_1_1iterator" kind="class"><name>std::set::iterator</name>
+  </compound>
+  <compound refid="classstd_1_1multiset_1_1iterator" kind="class"><name>std::multiset::iterator</name>
+  </compound>
+  <compound refid="classstd_1_1vector_1_1iterator" kind="class"><name>std::vector::iterator</name>
+  </compound>
+  <compound refid="classstd_1_1basic__string_1_1iterator" kind="class"><name>std::basic_string::iterator</name>
+  </compound>
+  <compound refid="classstd_1_1string_1_1iterator" kind="class"><name>std::string::iterator</name>
+  </compound>
+  <compound refid="classstd_1_1wstring_1_1iterator" kind="class"><name>std::wstring::iterator</name>
+  </compound>
+  <compound refid="classstd_1_1deque_1_1iterator" kind="class"><name>std::deque::iterator</name>
+  </compound>
+  <compound refid="classstd_1_1list_1_1iterator" kind="class"><name>std::list::iterator</name>
+  </compound>
+  <compound refid="classXapian_1_1KeyMaker" kind="class"><name>Xapian::KeyMaker</name>
+    <member refid="classXapian_1_1KeyMaker_1cd0a775f8546a830833357e5d792bedc" kind="function"><name>operator()</name></member>
+    <member refid="classXapian_1_1KeyMaker_13536ee93f8588a7af834212e9c09c5f8" kind="function"><name>~KeyMaker</name></member>
+  </compound>
+  <compound refid="classstd_1_1length__error" kind="class"><name>std::length_error</name>
+  </compound>
+  <compound refid="classXapian_1_1Letor" kind="class"><name>Xapian::Letor</name>
+    <member refid="classXapian_1_1Letor_12684b258a0f5d7dda9d8cf3e51b7688c" kind="variable"><name>internal</name></member>
+    <member refid="classXapian_1_1Letor_1a8df8e286218401f9b43892d89403eb0" kind="function"><name>Letor</name></member>
+    <member refid="classXapian_1_1Letor_121319d313996f78b115510bebbfabadb" kind="function"><name>operator=</name></member>
+    <member refid="classXapian_1_1Letor_1006bf58b147928cece0214c48e28afe6" kind="function"><name>Letor</name></member>
+    <member refid="classXapian_1_1Letor_19ab92e64a61ae6ecc1002e40669797a9" kind="function"><name>~Letor</name></member>
+    <member refid="classXapian_1_1Letor_1485121f9c4f38944b58899ecdd5ea92f" kind="function"><name>set_database</name></member>
+    <member refid="classXapian_1_1Letor_137dc4c4baf9ceddad3452b5706adb078" kind="function"><name>set_query</name></member>
+    <member refid="classXapian_1_1Letor_1c193902a10942caf9c3f3c5820598fc0" kind="function"><name>termfreq</name></member>
+    <member refid="classXapian_1_1Letor_1a1804b6fbb5bd984d718b11d80cf49a2" kind="function"><name>inverse_doc_freq</name></member>
+    <member refid="classXapian_1_1Letor_1df36584ff19f0b05d1aa79eb42734178" kind="function"><name>doc_length</name></member>
+    <member refid="classXapian_1_1Letor_1cb2850045d7759143d899e0ee421c7a8" kind="function"><name>collection_length</name></member>
+    <member refid="classXapian_1_1Letor_189c2be1d2d717ad23f2833aa5b3c40e5" kind="function"><name>collection_termfreq</name></member>
+    <member refid="classXapian_1_1Letor_1c5db58ab6abfab6a3b85f7d5761aae2d" kind="function"><name>calculate_f1</name></member>
+    <member refid="classXapian_1_1Letor_10306e015158589c10c1b5de934c3dd26" kind="function"><name>calculate_f2</name></member>
+    <member refid="classXapian_1_1Letor_1fac4bc851b43336b15d36662701aea22" kind="function"><name>calculate_f3</name></member>
+    <member refid="classXapian_1_1Letor_15779259e364bb2f26d32ddccbe8518d8" kind="function"><name>calculate_f4</name></member>
+    <member refid="classXapian_1_1Letor_140c2fc0eb3c0a96ee51ec8c2e7dc4b9e" kind="function"><name>calculate_f5</name></member>
+    <member refid="classXapian_1_1Letor_18668099f76de366a50519081b655c53e" kind="function"><name>calculate_f6</name></member>
+    <member refid="classXapian_1_1Letor_14c1a03ac092c937c9f460ecf83c7639d" kind="function"><name>letor_score</name></member>
+    <member refid="classXapian_1_1Letor_1f586ed725529a9db2e15ab8e12b33aed" kind="function"><name>letor_learn_model</name></member>
+    <member refid="classXapian_1_1Letor_1a6fa5bfecf2e32d4c284c21d00c7dd8f" kind="function"><name>prepare_training_file</name></member>
+  </compound>
+  <compound refid="classstd_1_1list" kind="class"><name>std::list</name>
+    <member refid="classstd_1_1list_1682e5c7c91eb377d0cb4f019b2b81a5d" kind="variable"><name>elements</name></member>
+  </compound>
+  <compound refid="classstd_1_1logic__error" kind="class"><name>std::logic_error</name>
+  </compound>
+  <compound refid="classXapian_1_1LogicError" kind="class"><name>Xapian::LogicError</name>
+    <member refid="classXapian_1_1LogicError_13745817eec873ac093778c2607c7c853" kind="function"><name>LogicError</name></member>
+    <member refid="classXapian_1_1LogicError_1d825b700b5079a81b0b9dd139b7b2a22" kind="function"><name>LogicError</name></member>
+  </compound>
+  <compound refid="classstd_1_1map" kind="class"><name>std::map</name>
+    <member refid="classstd_1_1map_18dc2b3ed44acf51fb2bd3eb30b237269" kind="variable"><name>keys</name></member>
+    <member refid="classstd_1_1map_1c69fe575e214b796b8d9457b0c22469a" kind="variable"><name>elements</name></member>
+  </compound>
+  <compound refid="classXapian_1_1MatchDecider" kind="class"><name>Xapian::MatchDecider</name>
+    <member refid="classXapian_1_1MatchDecider_11c3b5b4b318521132024cd80df0ff2c3" kind="function"><name>operator()</name></member>
+    <member refid="classXapian_1_1MatchDecider_1a102dbb2de58d3e96c684eb8e97520fc" kind="function"><name>~MatchDecider</name></member>
+  </compound>
+  <compound refid="classXapian_1_1MatchSpy" kind="class"><name>Xapian::MatchSpy</name>
+    <member refid="classXapian_1_1MatchSpy_1d7ff8547927c2c984aa99f980747e69a" kind="function"><name>operator=</name></member>
+    <member refid="classXapian_1_1MatchSpy_16669be9ee67e00be748f4f1e17d63a89" kind="function"><name>MatchSpy</name></member>
+    <member refid="classXapian_1_1MatchSpy_16f1b24d1ef113cf625ce75b6320212ed" kind="function"><name>MatchSpy</name></member>
+    <member refid="classXapian_1_1MatchSpy_133eef1126286858ed6c9908028dcae5b" kind="function"><name>~MatchSpy</name></member>
+    <member refid="classXapian_1_1MatchSpy_11d4a22970c8042a0bd697b473625f9bf" kind="function"><name>operator()</name></member>
+    <member refid="classXapian_1_1MatchSpy_1d172b16efde32cf0dcbb0fb6fb43dc33" kind="function"><name>clone</name></member>
+    <member refid="classXapian_1_1MatchSpy_14f7e79243aed9b81fba8a6c7f9500f0f" kind="function"><name>name</name></member>
+    <member refid="classXapian_1_1MatchSpy_159b3e4c181f9dc78e78609949ffe6ec7" kind="function"><name>serialise</name></member>
+    <member refid="classXapian_1_1MatchSpy_18ddda381134be9b9d973e746753ad3e2" kind="function"><name>unserialise</name></member>
+    <member refid="classXapian_1_1MatchSpy_13892fcdd67c425ff1ba493e2ac397ce9" kind="function"><name>serialise_results</name></member>
+    <member refid="classXapian_1_1MatchSpy_1921014b484002f909cd9649477e25c81" kind="function"><name>merge_results</name></member>
+    <member refid="classXapian_1_1MatchSpy_1b12e942f6657c86938cb83a55febc4e2" kind="function"><name>get_description</name></member>
+  </compound>
+  <compound refid="classXapian_1_1MSet" kind="class"><name>Xapian::MSet</name>
+    <member refid="classXapian_1_1MSet_14231ddc9c8db70ecdd93c321a92e22bd" kind="typedef"><name>value_type</name></member>
+    <member refid="classXapian_1_1MSet_1d42cc068683f5617a17c2389aa69e24d" kind="typedef"><name>iterator</name></member>
+    <member refid="classXapian_1_1MSet_13e1cf112c2a7f10a3e296d880fc7305d" kind="typedef"><name>const_iterator</name></member>
+    <member refid="classXapian_1_1MSet_196269c51f568b512f75427fbb4adfca1" kind="typedef"><name>reference</name></member>
+    <member refid="classXapian_1_1MSet_13f9841ca77ac0b6dbe082a4761e06cc8" kind="typedef"><name>const_reference</name></member>
+    <member refid="classXapian_1_1MSet_1152550c0053b1bf0c94c575dfc210a60" kind="typedef"><name>pointer</name></member>
+    <member refid="classXapian_1_1MSet_11ea96beb6135d960f9c4ff1320116508" kind="typedef"><name>difference_type</name></member>
+    <member refid="classXapian_1_1MSet_1425525da26231b848a8845c39fdc22af" kind="typedef"><name>size_type</name></member>
+    <member refid="classXapian_1_1MSet_177bb4f7edff227072c624631a98f0e18" kind="variable"><name>internal</name></member>
+    <member refid="classXapian_1_1MSet_125c2e0b21d7c61da7f4dc61a9fc4f183" kind="function"><name>MSet</name></member>
+    <member refid="classXapian_1_1MSet_12731b94a40e99a83c3e5d516809dc2e3" kind="function"><name>MSet</name></member>
+    <member refid="classXapian_1_1MSet_184b1c1a6db62dee0ca1aefadf4ef2d18" kind="function"><name>~MSet</name></member>
+    <member refid="classXapian_1_1MSet_1f94806ac9be50ee0a13d291070645eed" kind="function"><name>MSet</name></member>
+    <member refid="classXapian_1_1MSet_19f4ba7407c17baa32ce9b3a7cd7d3f05" kind="function"><name>operator=</name></member>
+    <member refid="classXapian_1_1MSet_152d96c2df7e63c3fd674e234c0a7c009" kind="function"><name>fetch</name></member>
+    <member refid="classXapian_1_1MSet_1367ce5b6d717042d9baf3c4285272add" kind="function"><name>fetch</name></member>
+    <member refid="classXapian_1_1MSet_1fd639440abc4d569a48b8ff2a88c6e6a" kind="function"><name>fetch</name></member>
+    <member refid="classXapian_1_1MSet_12211a081b75ebb0c0bd99346a01cb255" kind="function"><name>convert_to_percent</name></member>
+    <member refid="classXapian_1_1MSet_10c64c6427f73afc9bc3d9ae6d40a4e19" kind="function"><name>convert_to_percent</name></member>
+    <member refid="classXapian_1_1MSet_18b53e97c924c671052f14f690061d0ea" kind="function"><name>get_termfreq</name></member>
+    <member refid="classXapian_1_1MSet_1ab7d3fbad74151431e99659b4cd0a016" kind="function"><name>get_termweight</name></member>
+    <member refid="classXapian_1_1MSet_1a347db8d918c7e3b1f2f9e256807229f" kind="function"><name>get_firstitem</name></member>
+    <member refid="classXapian_1_1MSet_150eda0fe21978d088b66e63cfb074814" kind="function"><name>get_matches_lower_bound</name></member>
+    <member refid="classXapian_1_1MSet_1eab0a82126d9f2cf0ef5321549ea9775" kind="function"><name>get_matches_estimated</name></member>
+    <member refid="classXapian_1_1MSet_1b7c924c5f2b7e8dee83e533f7a9a7308" kind="function"><name>get_matches_upper_bound</name></member>
+    <member refid="classXapian_1_1MSet_1c5c23a4046e1f61302eb141d5445a32d" kind="function"><name>get_uncollapsed_matches_lower_bound</name></member>
+    <member refid="classXapian_1_1MSet_1eb5ac3c2c021a508e99a589f118ba9e5" kind="function"><name>get_uncollapsed_matches_estimated</name></member>
+    <member refid="classXapian_1_1MSet_13fe64a64d9d01c5eb046ba22f4a1991c" kind="function"><name>get_uncollapsed_matches_upper_bound</name></member>
+    <member refid="classXapian_1_1MSet_18317991625dc79949cd6ae52b6dcc920" kind="function"><name>get_max_possible</name></member>
+    <member refid="classXapian_1_1MSet_18964042d7eeb9e908edd160d07768531" kind="function"><name>get_max_attained</name></member>
+    <member refid="classXapian_1_1MSet_13b050b4734ab96ea08b4f4b396b03ff9" kind="function"><name>size</name></member>
+    <member refid="classXapian_1_1MSet_144c58632455ae84fb0464eb8c1bd3682" kind="function"><name>max_size</name></member>
+    <member refid="classXapian_1_1MSet_1fdd5c88361d0b83fc007a0aef92363b9" kind="function"><name>empty</name></member>
+    <member refid="classXapian_1_1MSet_18fa74c8d41283fae491f46c690a455cf" kind="function"><name>swap</name></member>
+    <member refid="classXapian_1_1MSet_14c5ef6da9fd73cede679081be26df41e" kind="function"><name>begin</name></member>
+    <member refid="classXapian_1_1MSet_18fbd9cc68354f519f8773b35d121144b" kind="function"><name>end</name></member>
+    <member refid="classXapian_1_1MSet_128f44ecf0fbfe729d73e9841fe0172e0" kind="function"><name>back</name></member>
+    <member refid="classXapian_1_1MSet_1e2da2d1b79ed814652b7c3b3781c2249" kind="function"><name>operator[]</name></member>
+    <member refid="classXapian_1_1MSet_178297ec3345af21e915eb061cddca80c" kind="function"><name>get_description</name></member>
+  </compound>
+  <compound refid="classXapian_1_1MSetIterator" kind="class"><name>Xapian::MSetIterator</name>
+    <member refid="classXapian_1_1MSetIterator_15e6296943b75d873cc6e21cb04a7bf44" kind="typedef"><name>iterator_category</name></member>
+    <member refid="classXapian_1_1MSetIterator_120dc0a349ee3a6c13e88b3930be2d1e3" kind="typedef"><name>value_type</name></member>
+    <member refid="classXapian_1_1MSetIterator_199f8773f332ef160d17056ee47f665a7" kind="typedef"><name>difference_type</name></member>
+    <member refid="classXapian_1_1MSetIterator_1b82ce0bb3c82847d99e4ea81d51d02c5" kind="typedef"><name>pointer</name></member>
+    <member refid="classXapian_1_1MSetIterator_153ca63620c8714a477ae2d930b84012a" kind="typedef"><name>reference</name></member>
+    <member refid="classXapian_1_1MSetIterator_120e87aae0635cec1454b45a069151671" kind="friend"><name>MSet</name></member>
+    <member refid="classXapian_1_1MSetIterator_14107b130f6713cad73255369d6b43f91" kind="friend"><name>operator==</name></member>
+    <member refid="classXapian_1_1MSetIterator_144de20741fa12cd650ee986e57a51161" kind="friend"><name>operator!=</name></member>
+    <member refid="classXapian_1_1MSetIterator_1c194d388ef18882bfc4c301939fc9752" kind="variable"><name>index</name></member>
+    <member refid="classXapian_1_1MSetIterator_1b0e2bc3f10f5f57583f7457407e51682" kind="variable"><name>mset</name></member>
+    <member refid="classXapian_1_1MSetIterator_1dbf3aa9954af18b2ce80d5ebc4b68a16" kind="function"><name>MSetIterator</name></member>
+    <member refid="classXapian_1_1MSetIterator_124089616ca88737d235d50fe39c10a5b" kind="function"><name>MSetIterator</name></member>
+    <member refid="classXapian_1_1MSetIterator_165b8ccf4acd764feb8c29afc0f25e5ac" kind="function"><name>MSetIterator</name></member>
+    <member refid="classXapian_1_1MSetIterator_1109ec6c9a89d390ac82479905ae2b5e1" kind="function"><name>operator=</name></member>
+    <member refid="classXapian_1_1MSetIterator_1d4ac6e0c3cac3be285be16b1bf5bf490" kind="function"><name>operator++</name></member>
+    <member refid="classXapian_1_1MSetIterator_1fa449795683d7ffe7387db58373d6fee" kind="function"><name>operator++</name></member>
+    <member refid="classXapian_1_1MSetIterator_14b904a30ffcd05700a908ee7e9645a61" kind="function"><name>operator--</name></member>
+    <member refid="classXapian_1_1MSetIterator_1dadef547ef6a82c35d6a78b2187a56c4" kind="function"><name>operator--</name></member>
+    <member refid="classXapian_1_1MSetIterator_16adc92605d7218bdd11db5fb19e68f7e" kind="function"><name>operator*</name></member>
+    <member refid="classXapian_1_1MSetIterator_1b3cd71bd6aa3b5677eacf99f369e482c" kind="function"><name>get_document</name></member>
+    <member refid="classXapian_1_1MSetIterator_17921b513e0e0b055134c8c1c8264a149" kind="function"><name>get_rank</name></member>
+    <member refid="classXapian_1_1MSetIterator_1b0cdaf0f122fb363b2bbff50ec8d1a00" kind="function"><name>get_weight</name></member>
+    <member refid="classXapian_1_1MSetIterator_15a0c5216cb505912318e6a552725e3af" kind="function"><name>get_collapse_key</name></member>
+    <member refid="classXapian_1_1MSetIterator_14d2d8fae854bc997dd417234061a3fe2" kind="function"><name>get_collapse_count</name></member>
+    <member refid="classXapian_1_1MSetIterator_199514c11a9291175d20fafa73a0839fd" kind="function"><name>get_percent</name></member>
+    <member refid="classXapian_1_1MSetIterator_195d1c5a337e5f128e58bf68745b036c2" kind="function"><name>get_description</name></member>
+  </compound>
+  <compound refid="classstd_1_1multimap" kind="class"><name>std::multimap</name>
+    <member refid="classstd_1_1multimap_14e7d19eda5925ebfcf1e3dcba085cce5" kind="variable"><name>keys</name></member>
+    <member refid="classstd_1_1multimap_1bb7a4781b562bae0a54baeb5726ac28d" kind="variable"><name>elements</name></member>
+  </compound>
+  <compound refid="classstd_1_1multiset" kind="class"><name>std::multiset</name>
+    <member refid="classstd_1_1multiset_193eb79091066c87f6dfb9d07c6c7cbcd" kind="variable"><name>keys</name></member>
+  </compound>
+  <compound refid="classXapian_1_1MultiValueKeyMaker" kind="class"><name>Xapian::MultiValueKeyMaker</name>
+    <member refid="classXapian_1_1MultiValueKeyMaker_121d6deced9136908a80aa1c193267d3e" kind="variable"><name>slots</name></member>
+    <member refid="classXapian_1_1MultiValueKeyMaker_17ca768113d096bfe870454e21001c467" kind="function"><name>MultiValueKeyMaker</name></member>
+    <member refid="classXapian_1_1MultiValueKeyMaker_16490761d35a931b87f67bdd64b4ed016" kind="function"><name>MultiValueKeyMaker</name></member>
+    <member refid="classXapian_1_1MultiValueKeyMaker_18f827517ed1ea394f99d4db362f23b31" kind="function"><name>operator()</name></member>
+    <member refid="classXapian_1_1MultiValueKeyMaker_154731b30311580f47f4abad69641229e" kind="function"><name>add_value</name></member>
+  </compound>
+  <compound refid="classXapian_1_1NetworkError" kind="class"><name>Xapian::NetworkError</name>
+    <member refid="classXapian_1_1NetworkError_1617755014f14e71a2085a9cd65c97e32" kind="function"><name>NetworkError</name></member>
+    <member refid="classXapian_1_1NetworkError_119f8cf9b5207e777e6d3b6dab0cdabca" kind="function"><name>NetworkError</name></member>
+    <member refid="classXapian_1_1NetworkError_1724f27808299d5a8fc731ba327c38419" kind="function"><name>NetworkError</name></member>
+    <member refid="classXapian_1_1NetworkError_1ab9b4247f2d2c7a46cb9032c0f7d84d5" kind="function"><name>NetworkError</name></member>
+    <member refid="classXapian_1_1NetworkError_16faac0d2f394064467199fb906892557" kind="function"><name>NetworkError</name></member>
+  </compound>
+  <compound refid="classXapian_1_1NetworkTimeoutError" kind="class"><name>Xapian::NetworkTimeoutError</name>
+    <member refid="classXapian_1_1NetworkTimeoutError_15dfd12b6279789e7e95292bf91aa9914" kind="function"><name>NetworkTimeoutError</name></member>
+    <member refid="classXapian_1_1NetworkTimeoutError_15e850aa133b9e01c6a47eb72a2932011" kind="function"><name>NetworkTimeoutError</name></member>
+    <member refid="classXapian_1_1NetworkTimeoutError_15dba3f95eff3833fbf045d7f831c43a9" kind="function"><name>NetworkTimeoutError</name></member>
+    <member refid="classXapian_1_1NetworkTimeoutError_12eeb4843a8343bafc1776db2921990c7" kind="function"><name>NetworkTimeoutError</name></member>
+    <member refid="classXapian_1_1NetworkTimeoutError_1793b3f277daa73fc20b34a1a883378e9" kind="function"><name>NetworkTimeoutError</name></member>
+  </compound>
+  <compound refid="classXapian_1_1NumberValueRangeProcessor" kind="class"><name>Xapian::NumberValueRangeProcessor</name>
+    <member refid="classXapian_1_1NumberValueRangeProcessor_1ca8725af59b1c7711aaf48d1f2f3add7" kind="function"><name>NumberValueRangeProcessor</name></member>
+    <member refid="classXapian_1_1NumberValueRangeProcessor_193b0a5e26ad49f7d4ab0b04c50a46ec6" kind="function"><name>NumberValueRangeProcessor</name></member>
+    <member refid="classXapian_1_1NumberValueRangeProcessor_14a0951e57a4ea8fcdcd9bec6a8037514" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="classstd_1_1ofstream" kind="class"><name>std::ofstream</name>
+  </compound>
+  <compound refid="classstd_1_1ostream" kind="class"><name>std::ostream</name>
+  </compound>
+  <compound refid="classstd_1_1ostringstream" kind="class"><name>std::ostringstream</name>
+  </compound>
+  <compound refid="classstd_1_1out__of__range" kind="class"><name>std::out_of_range</name>
+  </compound>
+  <compound refid="classstd_1_1overflow__error" kind="class"><name>std::overflow_error</name>
+  </compound>
+  <compound refid="classXapian_1_1PositionIterator" kind="class"><name>Xapian::PositionIterator</name>
+    <member refid="classXapian_1_1PositionIterator_1dded3bc4a76ffedeb7609564463035fe" kind="typedef"><name>iterator_category</name></member>
+    <member refid="classXapian_1_1PositionIterator_1c4741dab3be0505772a23b74b9779be1" kind="typedef"><name>value_type</name></member>
+    <member refid="classXapian_1_1PositionIterator_115d4f82622935bd22e4f8a00eb5441e3" kind="typedef"><name>difference_type</name></member>
+    <member refid="classXapian_1_1PositionIterator_1f54eec4f7538018aa15e429717a9a776" kind="typedef"><name>pointer</name></member>
+    <member refid="classXapian_1_1PositionIterator_178150a5bac9b31089d075e8b93404a2d" kind="typedef"><name>reference</name></member>
+    <member refid="classXapian_1_1PositionIterator_1a78d75f69767ca32b094ed99993b0fc2" kind="variable"><name>internal</name></member>
+    <member refid="classXapian_1_1PositionIterator_147d183c8cd96c158c6dab51b2cac7dd3" kind="function"><name>decref</name></member>
+    <member refid="classXapian_1_1PositionIterator_182bc13d20ec51af3016607d2efc2e9a9" kind="function"><name>PositionIterator</name></member>
+    <member refid="classXapian_1_1PositionIterator_18b9d10db35fa9e2944012ea57a0b9d23" kind="function"><name>PositionIterator</name></member>
+    <member refid="classXapian_1_1PositionIterator_13b50777c71a775f068d9572ced22e73c" kind="function"><name>operator=</name></member>
+    <member refid="classXapian_1_1PositionIterator_1475e11e82d8268d23b750c787531ab9a" kind="function"><name>PositionIterator</name></member>
+    <member refid="classXapian_1_1PositionIterator_19a84f5de9867d1413c0dacb704d63c04" kind="function"><name>~PositionIterator</name></member>
+    <member refid="classXapian_1_1PositionIterator_1e673659cdc4225d2b2eb7922fac95449" kind="function"><name>operator*</name></member>
+    <member refid="classXapian_1_1PositionIterator_1f4a068fa03b75f797ab4cae83fc0810f" kind="function"><name>operator++</name></member>
+    <member refid="classXapian_1_1PositionIterator_1068c64a6932041e7cbe6e2a37cbc7512" kind="function"><name>operator++</name></member>
+    <member refid="classXapian_1_1PositionIterator_123ffca163d3be13e8e2ad0bb5a996198" kind="function"><name>skip_to</name></member>
+    <member refid="classXapian_1_1PositionIterator_1ae9e6e3e7481bd22f228de4c2deb03eb" kind="function"><name>get_description</name></member>
+  </compound>
+  <compound refid="classXapian_1_1PostingIterator" kind="class"><name>Xapian::PostingIterator</name>
+    <member refid="classXapian_1_1PostingIterator_1340c72921b18f4ea5c15b077f14e61ce" kind="typedef"><name>iterator_category</name></member>
+    <member refid="classXapian_1_1PostingIterator_1405384ad29c3ff95658372329a9bcd58" kind="typedef"><name>value_type</name></member>
+    <member refid="classXapian_1_1PostingIterator_1a95ef4f8e09c54c347f863cd2814de11" kind="typedef"><name>difference_type</name></member>
+    <member refid="classXapian_1_1PostingIterator_1c8aba644bb6ace6a773eff34a1587853" kind="typedef"><name>pointer</name></member>
+    <member refid="classXapian_1_1PostingIterator_1eaa71e8d29d4cbe492be8a8e5cff512c" kind="typedef"><name>reference</name></member>
+    <member refid="classXapian_1_1PostingIterator_1bf058cf213580b5202d30915791836bb" kind="variable"><name>internal</name></member>
+    <member refid="classXapian_1_1PostingIterator_11d6ce374348d8f18edfe9270c0d4e260" kind="function"><name>PostingIterator</name></member>
+    <member refid="classXapian_1_1PostingIterator_17290a0b435631a2c33d4d09be0b30224" kind="function"><name>decref</name></member>
+    <member refid="classXapian_1_1PostingIterator_1a64249676cb93b6a0b9ba949335fb6c8" kind="function"><name>post_advance</name></member>
+    <member refid="classXapian_1_1PostingIterator_14e69d97d1caba7ad9f2cbf90d056209b" kind="function"><name>PostingIterator</name></member>
+    <member refid="classXapian_1_1PostingIterator_19364662d3523b5f72ed820ee6f38091d" kind="function"><name>operator=</name></member>
+    <member refid="classXapian_1_1PostingIterator_1e75789243bba29a7911173979aadca43" kind="function"><name>PostingIterator</name></member>
+    <member refid="classXapian_1_1PostingIterator_1688eb4778f5dafb7d1a589010216dbe4" kind="function"><name>~PostingIterator</name></member>
+    <member refid="classXapian_1_1PostingIterator_1f2525c396fe296173322e679ddb02a3c" kind="function"><name>operator*</name></member>
+    <member refid="classXapian_1_1PostingIterator_1c05e628e438614e20a4b1292cb982b87" kind="function"><name>get_wdf</name></member>
+    <member refid="classXapian_1_1PostingIterator_114d4c5cc78dcb149b04c30a280e2751f" kind="function"><name>get_doclength</name></member>
+    <member refid="classXapian_1_1PostingIterator_194935d23e4806725737426ee298322c3" kind="function"><name>positionlist_begin</name></member>
+    <member refid="classXapian_1_1PostingIterator_1618c4e850550b870cbddc640e0f8a489" kind="function"><name>positionlist_end</name></member>
+    <member refid="classXapian_1_1PostingIterator_112252ab2accdd682265c58eef1871d13" kind="function"><name>operator++</name></member>
+    <member refid="classXapian_1_1PostingIterator_19182a0c6740d214e0eb462395c4c4493" kind="function"><name>operator++</name></member>
+    <member refid="classXapian_1_1PostingIterator_1665a45d91c6c7ea010b4c9f3b2efbe9e" kind="function"><name>skip_to</name></member>
+    <member refid="classXapian_1_1PostingIterator_18e4a19ca6b9fb16ad3e266ed7a676e3a" kind="function"><name>get_description</name></member>
+  </compound>
+  <compound refid="classXapian_1_1PostingSource" kind="class"><name>Xapian::PostingSource</name>
+    <member refid="classXapian_1_1PostingSource_1ca3fe051411c36cf5c0adf0e919130dc" kind="variable"><name>max_weight_</name></member>
+    <member refid="classXapian_1_1PostingSource_10c6543b4e9ab319c2abbf9b4b3cacbce" kind="variable"><name>matcher_</name></member>
+    <member refid="classXapian_1_1PostingSource_10e06bb671e3d8699b869668c6b1ef96c" kind="function"><name>operator=</name></member>
+    <member refid="classXapian_1_1PostingSource_16922a6c180f0e40c66f56d6b00dfc451" kind="function"><name>PostingSource</name></member>
+    <member refid="classXapian_1_1PostingSource_1cbb2425265e991a9bd119c4c32a1de42" kind="function"><name>register_matcher_</name></member>
+    <member refid="classXapian_1_1PostingSource_182e85d6113d9c8e72cbbf4b3362f3fd6" kind="function"><name>PostingSource</name></member>
+    <member refid="classXapian_1_1PostingSource_10643cf1dfb1c3ed2dd1cf5ecfe3f3a10" kind="function"><name>set_maxweight</name></member>
+    <member refid="classXapian_1_1PostingSource_1679981b0badcc1a6308d4cbf8c5de7a0" kind="function"><name>~PostingSource</name></member>
+    <member refid="classXapian_1_1PostingSource_15ecf450314e8b266eb9c8fae78e141d3" kind="function"><name>get_termfreq_min</name></member>
+    <member refid="classXapian_1_1PostingSource_10d67eda5783f82951d6c56ad7ff4205b" kind="function"><name>get_termfreq_est</name></member>
+    <member refid="classXapian_1_1PostingSource_117de27c84a052c51d62ad498151a4cab" kind="function"><name>get_termfreq_max</name></member>
+    <member refid="classXapian_1_1PostingSource_1620fa76be33e59e0bd5fc4caa479e6ee" kind="function"><name>get_maxweight</name></member>
+    <member refid="classXapian_1_1PostingSource_12e7637a323a90bea45f2dc68c916ea00" kind="function"><name>get_weight</name></member>
+    <member refid="classXapian_1_1PostingSource_17b1bd1fcd07d69204f70155588ae544a" kind="function"><name>get_docid</name></member>
+    <member refid="classXapian_1_1PostingSource_1fd0261e7b428c2a25245da07170e9635" kind="function"><name>next</name></member>
+    <member refid="classXapian_1_1PostingSource_102e3f5e29a0605d7f9e0a09decbdd9bf" kind="function"><name>skip_to</name></member>
+    <member refid="classXapian_1_1PostingSource_192098dee93d09781bb5ad48e86434873" kind="function"><name>check</name></member>
+    <member refid="classXapian_1_1PostingSource_198831c9fdea1599f588cd9fef51bbeb5" kind="function"><name>at_end</name></member>
+    <member refid="classXapian_1_1PostingSource_1ecd88a39155ec5e04c752360b657f315" kind="function"><name>clone</name></member>
+    <member refid="classXapian_1_1PostingSource_17b5c506178f996e59ed641ad62520734" kind="function"><name>name</name></member>
+    <member refid="classXapian_1_1PostingSource_16ad26dc173cf1ab175dea945ba2622e0" kind="function"><name>serialise</name></member>
+    <member refid="classXapian_1_1PostingSource_1b3312a9172b1881c354faf3d2d9b585d" kind="function"><name>unserialise</name></member>
+    <member refid="classXapian_1_1PostingSource_181d793170b496022488c15c3508979b5" kind="function"><name>init</name></member>
+    <member refid="classXapian_1_1PostingSource_147d794241880cc691df1c3a3896d1050" kind="function"><name>get_description</name></member>
+  </compound>
+  <compound refid="classstd_1_1priority__queue" kind="class"><name>std::priority_queue</name>
+    <member refid="classstd_1_1priority__queue_14df2ae826d2b2caf4a6755adbd34a836" kind="variable"><name>elements</name></member>
+  </compound>
+  <compound refid="classXapian_1_1Query" kind="class"><name>Xapian::Query</name>
+    <member refid="classXapian_1_1Query_17e7b6b8ad0c915c2364578dfaaf6100b" kind="enum"><name>op</name></member>
+    <member refid="classXapian_1_1Query_17e7b6b8ad0c915c2364578dfaaf6100bb99aad2dfc85eccc56163bc65eb0fdda" kind="enumvalue"><name>OP_AND</name></member>
+    <member refid="classXapian_1_1Query_17e7b6b8ad0c915c2364578dfaaf6100bc50e54f3dd9dc59dab7daa2c50cf631b" kind="enumvalue"><name>OP_OR</name></member>
+    <member refid="classXapian_1_1Query_17e7b6b8ad0c915c2364578dfaaf6100bda56688a72af48cc1cee70a5b36f2a94" kind="enumvalue"><name>OP_AND_NOT</name></member>
+    <member refid="classXapian_1_1Query_17e7b6b8ad0c915c2364578dfaaf6100b3f186e28a8cc2a5c4cb99745dda5cedf" kind="enumvalue"><name>OP_XOR</name></member>
+    <member refid="classXapian_1_1Query_17e7b6b8ad0c915c2364578dfaaf6100b5990dfefc0a0a63861630b743f507356" kind="enumvalue"><name>OP_AND_MAYBE</name></member>
+    <member refid="classXapian_1_1Query_17e7b6b8ad0c915c2364578dfaaf6100bc657f344bf26128ab7bf8fe25410b102" kind="enumvalue"><name>OP_FILTER</name></member>
+    <member refid="classXapian_1_1Query_17e7b6b8ad0c915c2364578dfaaf6100b7a78c8353d5d06d3a38c1899ae762b21" kind="enumvalue"><name>OP_NEAR</name></member>
+    <member refid="classXapian_1_1Query_17e7b6b8ad0c915c2364578dfaaf6100bce19bf1e7b2d8aa393aabdd061a0866e" kind="enumvalue"><name>OP_PHRASE</name></member>
+    <member refid="classXapian_1_1Query_17e7b6b8ad0c915c2364578dfaaf6100b25ad30ce2b6661570ffacd8f910b6d34" kind="enumvalue"><name>OP_VALUE_RANGE</name></member>
+    <member refid="classXapian_1_1Query_17e7b6b8ad0c915c2364578dfaaf6100b0fecaeeb3caa94b1a578fd7953cc60ee" kind="enumvalue"><name>OP_SCALE_WEIGHT</name></member>
+    <member refid="classXapian_1_1Query_17e7b6b8ad0c915c2364578dfaaf6100b9a010fd66a56d9242d6dfae2bae0850b" kind="enumvalue"><name>OP_ELITE_SET</name></member>
+    <member refid="classXapian_1_1Query_17e7b6b8ad0c915c2364578dfaaf6100bf914b109cfe787be77e7c92c99626f01" kind="enumvalue"><name>OP_VALUE_GE</name></member>
+    <member refid="classXapian_1_1Query_17e7b6b8ad0c915c2364578dfaaf6100bd6cede66b463ceb5f689979e1b6a8a55" kind="enumvalue"><name>OP_VALUE_LE</name></member>
+    <member refid="classXapian_1_1Query_17e7b6b8ad0c915c2364578dfaaf6100bd8456bafb560c984aff9b4d90a00d36e" kind="enumvalue"><name>OP_SYNONYM</name></member>
+    <member refid="classXapian_1_1Query_1e8d7cc11fff6ad700c7c351e32e2cdeb" kind="variable"><name>internal</name></member>
+    <member refid="classXapian_1_1Query_19e30b80314359e5ddd7ca4ffa84b6edd" kind="variable"><name>MatchAll</name></member>
+    <member refid="classXapian_1_1Query_15d2584f441d85a126004699479df0350" kind="variable"><name>MatchNothing</name></member>
+    <member refid="classXapian_1_1Query_1a95690337034e432c8e5e82bdfff80ea" kind="function"><name>Query</name></member>
+    <member refid="classXapian_1_1Query_1edfe00f53f010c76c290a0a14873c7a9" kind="function"><name>operator=</name></member>
+    <member refid="classXapian_1_1Query_1836b588120b705758f2e25b67c781b4c" kind="function"><name>Query</name></member>
+    <member refid="classXapian_1_1Query_1420644d38cde25cef056d18ce7fe1c31" kind="function"><name>~Query</name></member>
+    <member refid="classXapian_1_1Query_1f396e213df0d8bcffa473a75ebf228d6" kind="function"><name>Query</name></member>
+    <member refid="classXapian_1_1Query_1cd51f1304501311c8dde31dc54c36048" kind="function"><name>Query</name></member>
+    <member refid="classXapian_1_1Query_11e5e506b8659c9c1be88837dcf643163" kind="function"><name>Query</name></member>
+    <member refid="classXapian_1_1Query_1a2edfc5e6ae285afb9fde26d096c5ed8" kind="function"><name>Query</name></member>
+    <member refid="classXapian_1_1Query_14004922547fec06087dc8a63ac484f9b" kind="function"><name>Query</name></member>
+    <member refid="classXapian_1_1Query_127acaeb8ab8a0c111805a0139e3dc35b" kind="function"><name>Query</name></member>
+    <member refid="classXapian_1_1Query_115e26a7bf7de2699377cad9e9448a482" kind="function"><name>Query</name></member>
+    <member refid="classXapian_1_1Query_1670caefccf000a24078c05c39959e5e1" kind="function"><name>Query</name></member>
+    <member refid="classXapian_1_1Query_1de144c7f420490da9b48373e80e2c604" kind="function"><name>get_length</name></member>
+    <member refid="classXapian_1_1Query_1e290b52f21e5652067b202b78f8c03db" kind="function"><name>get_terms_begin</name></member>
+    <member refid="classXapian_1_1Query_1c31fa68e27c1dcd54a4bd7b637fec062" kind="function"><name>get_terms_end</name></member>
+    <member refid="classXapian_1_1Query_17c8bd61280be052e5fabc552d2b20f8c" kind="function"><name>empty</name></member>
+    <member refid="classXapian_1_1Query_1700503062c18424e606d7f906cc7cd12" kind="function"><name>serialise</name></member>
+    <member refid="classXapian_1_1Query_1c9d1e428cdddcf5250f10b814eb4bb30" kind="function"><name>get_description</name></member>
+    <member refid="classXapian_1_1Query_16475f2f7396c2fb64fb38929a359b6d4" kind="function"><name>unserialise</name></member>
+    <member refid="classXapian_1_1Query_1d582d5cd0bfd2719097708ed374b41f9" kind="function"><name>unserialise</name></member>
+    <member refid="classXapian_1_1Query_1a8f706f8c2301d317700ca3d7ce916b7" kind="function"><name>add_subquery</name></member>
+    <member refid="classXapian_1_1Query_12bbf00cbe4845b9ad841cefa437ea2e4" kind="function"><name>add_subquery</name></member>
+    <member refid="classXapian_1_1Query_1760279c24238c5fb88f6415700cc9238" kind="function"><name>add_subquery</name></member>
+    <member refid="classXapian_1_1Query_1758ffbb0a293baf0762c8257390d157f" kind="function"><name>start_construction</name></member>
+    <member refid="classXapian_1_1Query_149f5754eca202d31cdc0a759309f510a" kind="function"><name>end_construction</name></member>
+    <member refid="classXapian_1_1Query_1fb8ec1ae83bbeac68d1d0d2fb4a03c42" kind="function"><name>abort_construction</name></member>
+  </compound>
+  <compound refid="classXapian_1_1QueryParser" kind="class"><name>Xapian::QueryParser</name>
+    <member refid="classXapian_1_1QueryParser_1e96a58a8de9d219ca3214a5a66e0407e" kind="enum"><name>feature_flag</name></member>
+    <member refid="classXapian_1_1QueryParser_1e96a58a8de9d219ca3214a5a66e0407effc56acef4c5b0da425d4ea74b7affde" kind="enumvalue"><name>FLAG_BOOLEAN</name></member>
+    <member refid="classXapian_1_1QueryParser_1e96a58a8de9d219ca3214a5a66e0407ed7e3ef99f48e26f40836a2e98ac86e6b" kind="enumvalue"><name>FLAG_PHRASE</name></member>
+    <member refid="classXapian_1_1QueryParser_1e96a58a8de9d219ca3214a5a66e0407e0c7c618a79df1201ef342951450447cd" kind="enumvalue"><name>FLAG_LOVEHATE</name></member>
+    <member refid="classXapian_1_1QueryParser_1e96a58a8de9d219ca3214a5a66e0407e9046353051e08dd0149b4fced176ed3d" kind="enumvalue"><name>FLAG_BOOLEAN_ANY_CASE</name></member>
+    <member refid="classXapian_1_1QueryParser_1e96a58a8de9d219ca3214a5a66e0407e99e75d48aca2ebbf477572d855c82e36" kind="enumvalue"><name>FLAG_WILDCARD</name></member>
+    <member refid="classXapian_1_1QueryParser_1e96a58a8de9d219ca3214a5a66e0407ecafc7c8cf7c90adac0fc07d02125aed0" kind="enumvalue"><name>FLAG_PURE_NOT</name></member>
+    <member refid="classXapian_1_1QueryParser_1e96a58a8de9d219ca3214a5a66e0407ee0b632c2f797fc7ae53c444f104072c7" kind="enumvalue"><name>FLAG_PARTIAL</name></member>
+    <member refid="classXapian_1_1QueryParser_1e96a58a8de9d219ca3214a5a66e0407eacef09c368bdafe64debabe112f1024c" kind="enumvalue"><name>FLAG_SPELLING_CORRECTION</name></member>
+    <member refid="classXapian_1_1QueryParser_1e96a58a8de9d219ca3214a5a66e0407ea139c20751d70cc6d19d7541160d7d3f" kind="enumvalue"><name>FLAG_SYNONYM</name></member>
+    <member refid="classXapian_1_1QueryParser_1e96a58a8de9d219ca3214a5a66e0407e15716c0dcfe839e7d9a8e8337bbed16b" kind="enumvalue"><name>FLAG_AUTO_SYNONYMS</name></member>
+    <member refid="classXapian_1_1QueryParser_1e96a58a8de9d219ca3214a5a66e0407e175afae857d6aa6a4aecccfe8793be1b" kind="enumvalue"><name>FLAG_AUTO_MULTIWORD_SYNONYMS</name></member>
+    <member refid="classXapian_1_1QueryParser_1e96a58a8de9d219ca3214a5a66e0407e4e4a5c38e629300d01219456add0ea4a" kind="enumvalue"><name>FLAG_DEFAULT</name></member>
+    <member refid="classXapian_1_1QueryParser_1e2959f7a1c5680f3fd1421d92445e220" kind="enum"><name>stem_strategy</name></member>
+    <member refid="classXapian_1_1QueryParser_1e2959f7a1c5680f3fd1421d92445e22073ce06172b5c8b04f7ff1dbe3a43a1ad" kind="enumvalue"><name>STEM_NONE</name></member>
+    <member refid="classXapian_1_1QueryParser_1e2959f7a1c5680f3fd1421d92445e220b910f459d42169047fc3f08c7a2b3d6f" kind="enumvalue"><name>STEM_SOME</name></member>
+    <member refid="classXapian_1_1QueryParser_1e2959f7a1c5680f3fd1421d92445e22014ec4113efeb5512e92d346e523a3fa1" kind="enumvalue"><name>STEM_ALL</name></member>
+    <member refid="classXapian_1_1QueryParser_1b64f159d902c1a5179261e16d075a5f7" kind="variable"><name>internal</name></member>
+    <member refid="classXapian_1_1QueryParser_100d9afcf20b20cd9c8b3d22dd1bc82b7" kind="function"><name>QueryParser</name></member>
+    <member refid="classXapian_1_1QueryParser_118adb637032c2149a0457f2f79f332a5" kind="function"><name>operator=</name></member>
+    <member refid="classXapian_1_1QueryParser_1724f1e26b785516c4c8cde78455f9cd5" kind="function"><name>QueryParser</name></member>
+    <member refid="classXapian_1_1QueryParser_169d48b819b0c6d6a29f86a756f91d047" kind="function"><name>~QueryParser</name></member>
+    <member refid="classXapian_1_1QueryParser_12312c9865a58cc1149fe7cda9f0c2585" kind="function"><name>set_stemmer</name></member>
+    <member refid="classXapian_1_1QueryParser_1c7dc3b55b6083bd3ff98fc8b2726c8fd" kind="function"><name>set_stemming_strategy</name></member>
+    <member refid="classXapian_1_1QueryParser_1b1046610676f72ba564108f0df5d77ab" kind="function"><name>set_stopper</name></member>
+    <member refid="classXapian_1_1QueryParser_12efe48be88c4872afec4bc963f417ea5" kind="function"><name>set_default_op</name></member>
+    <member refid="classXapian_1_1QueryParser_14a6323a8aea7734e447de1ba7eab31c1" kind="function"><name>get_default_op</name></member>
+    <member refid="classXapian_1_1QueryParser_1576d221ba746506e51d9ea596ecb2cf6" kind="function"><name>set_database</name></member>
+    <member refid="classXapian_1_1QueryParser_17651d48cdc661c0605c475925170cc71" kind="function"><name>set_max_wildcard_expansion</name></member>
+    <member refid="classXapian_1_1QueryParser_173d32cc7f862ab2e3fdd7da61f352fb2" kind="function"><name>parse_query</name></member>
+    <member refid="classXapian_1_1QueryParser_1d4829ddcaa0582ff94d1066870a18c97" kind="function"><name>add_prefix</name></member>
+    <member refid="classXapian_1_1QueryParser_169547207acb0cf6f3eebbad1d7dcdba4" kind="function"><name>add_boolean_prefix</name></member>
+    <member refid="classXapian_1_1QueryParser_157ff03cd3fe1fa2b6e07fc347bee3590" kind="function"><name>stoplist_begin</name></member>
+    <member refid="classXapian_1_1QueryParser_14dfe8c1ad3ac73c6e69abe14d2394648" kind="function"><name>stoplist_end</name></member>
+    <member refid="classXapian_1_1QueryParser_1a2088e54f557e2d608247c5237a1bc3b" kind="function"><name>unstem_begin</name></member>
+    <member refid="classXapian_1_1QueryParser_1197b4afa39a4b667399178432cd5ab88" kind="function"><name>unstem_end</name></member>
+    <member refid="classXapian_1_1QueryParser_18f8583a9f044f2eb33859b442a8aea76" kind="function"><name>add_valuerangeprocessor</name></member>
+    <member refid="classXapian_1_1QueryParser_10e59c760a0a4edacb437621ac66be25a" kind="function"><name>get_corrected_query_string</name></member>
+    <member refid="classXapian_1_1QueryParser_189f9d15f38538a07497fdfc8658852b2" kind="function"><name>get_description</name></member>
+  </compound>
+  <compound refid="classXapian_1_1QueryParserError" kind="class"><name>Xapian::QueryParserError</name>
+    <member refid="classXapian_1_1QueryParserError_1068e4fe30b7039f84e276917baac541e" kind="function"><name>QueryParserError</name></member>
+    <member refid="classXapian_1_1QueryParserError_1696f2cd1ff15684caefb7b1f77a801fa" kind="function"><name>QueryParserError</name></member>
+    <member refid="classXapian_1_1QueryParserError_135f23c4b8852965f5b5cdb6a37d1c724" kind="function"><name>QueryParserError</name></member>
+    <member refid="classXapian_1_1QueryParserError_1a7b994af9e4a4e03b60e9cc9b2351cb3" kind="function"><name>QueryParserError</name></member>
+    <member refid="classXapian_1_1QueryParserError_15510229e5366fa53f9c333497af04868" kind="function"><name>QueryParserError</name></member>
+  </compound>
+  <compound refid="classstd_1_1queue" kind="class"><name>std::queue</name>
+    <member refid="classstd_1_1queue_1ebacc4dcb935c5e54144e881eb41e356" kind="variable"><name>elements</name></member>
+  </compound>
+  <compound refid="classstd_1_1range__error" kind="class"><name>std::range_error</name>
+  </compound>
+  <compound refid="classXapian_1_1RangeError" kind="class"><name>Xapian::RangeError</name>
+    <member refid="classXapian_1_1RangeError_17d61700fb886cd606e8ede0446440862" kind="function"><name>RangeError</name></member>
+    <member refid="classXapian_1_1RangeError_11c96ee58586f3f6f57b68bf3fdaab927" kind="function"><name>RangeError</name></member>
+    <member refid="classXapian_1_1RangeError_18d6f35b0b87564a3f3ad92df2950e4d9" kind="function"><name>RangeError</name></member>
+    <member refid="classXapian_1_1RangeError_15d691385da426b630a5dcba842f02b1d" kind="function"><name>RangeError</name></member>
+    <member refid="classXapian_1_1RangeError_1dd7312d23022b6a86a979e83ca5285aa" kind="function"><name>RangeError</name></member>
+  </compound>
+  <compound refid="classXapian_1_1Registry" kind="class"><name>Xapian::Registry</name>
+    <member refid="classXapian_1_1Registry_18293b8c3c56c243136f01072ee856902" kind="variable"><name>internal</name></member>
+    <member refid="classXapian_1_1Registry_135540e2b99265677d41b8170c87ad3e6" kind="function"><name>Registry</name></member>
+    <member refid="classXapian_1_1Registry_1d1561d14d71954ba13ea0e3267bf849d" kind="function"><name>operator=</name></member>
+    <member refid="classXapian_1_1Registry_12074a878db895c3fb3eaa3c18f11244a" kind="function"><name>Registry</name></member>
+    <member refid="classXapian_1_1Registry_1d09d404b74f5ef3a1a2b71ec52996aac" kind="function"><name>~Registry</name></member>
+    <member refid="classXapian_1_1Registry_180ffccf647d842bcb7fae3a5d8361d1e" kind="function"><name>register_weighting_scheme</name></member>
+    <member refid="classXapian_1_1Registry_1f408121f5706134aeac17a1c15f69ab9" kind="function"><name>get_weighting_scheme</name></member>
+    <member refid="classXapian_1_1Registry_13a265160ac28c20f73bb3c2063cacfbb" kind="function"><name>register_posting_source</name></member>
+    <member refid="classXapian_1_1Registry_1c5b802fb406fad542a3853443656d6ea" kind="function"><name>get_posting_source</name></member>
+    <member refid="classXapian_1_1Registry_18208e2ed2f5cceef6d5fa753d97c1690" kind="function"><name>register_match_spy</name></member>
+    <member refid="classXapian_1_1Registry_1f7d3a56e17d95b1310563f03f73a2c9d" kind="function"><name>get_match_spy</name></member>
+  </compound>
+  <compound refid="classstd_1_1list_1_1reverse__iterator" kind="class"><name>std::list::reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1vector_1_1reverse__iterator" kind="class"><name>std::vector::reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1map_1_1reverse__iterator" kind="class"><name>std::map::reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1set_1_1reverse__iterator" kind="class"><name>std::set::reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1multiset_1_1reverse__iterator" kind="class"><name>std::multiset::reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1deque_1_1reverse__iterator" kind="class"><name>std::deque::reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1basic__string_1_1reverse__iterator" kind="class"><name>std::basic_string::reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1multimap_1_1reverse__iterator" kind="class"><name>std::multimap::reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1string_1_1reverse__iterator" kind="class"><name>std::string::reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1wstring_1_1reverse__iterator" kind="class"><name>std::wstring::reverse_iterator</name>
+  </compound>
+  <compound refid="classXapian_1_1RSet" kind="class"><name>Xapian::RSet</name>
+    <member refid="classXapian_1_1RSet_14ed370d3d5df25f58599b22d3a824467" kind="variable"><name>internal</name></member>
+    <member refid="classXapian_1_1RSet_150ed96a2396032db1297bdb3bef3fbc5" kind="function"><name>RSet</name></member>
+    <member refid="classXapian_1_1RSet_1105bf6917dffc68fb551e775fd67202a" kind="function"><name>operator=</name></member>
+    <member refid="classXapian_1_1RSet_1142298edba05bbdc1d1dd11fdbc88020" kind="function"><name>RSet</name></member>
+    <member refid="classXapian_1_1RSet_15571c4c3bbeeca8e051f36037c62b70f" kind="function"><name>~RSet</name></member>
+    <member refid="classXapian_1_1RSet_13db90f712138087c56a026c51a3c5124" kind="function"><name>size</name></member>
+    <member refid="classXapian_1_1RSet_155cb1a5a9d7410e4dcc2a786934df505" kind="function"><name>empty</name></member>
+    <member refid="classXapian_1_1RSet_14eec40ff21b85b939ebab9a710df747f" kind="function"><name>add_document</name></member>
+    <member refid="classXapian_1_1RSet_1adc23b11f6ca60415a3fa595325af5eb" kind="function"><name>add_document</name></member>
+    <member refid="classXapian_1_1RSet_158ae59e71967d119296231c6ac905dbb" kind="function"><name>remove_document</name></member>
+    <member refid="classXapian_1_1RSet_1459ec695ed5ab2e10b56aa56c2e453be" kind="function"><name>remove_document</name></member>
+    <member refid="classXapian_1_1RSet_124efe6d2b88a8f799be5078994e49098" kind="function"><name>contains</name></member>
+    <member refid="classXapian_1_1RSet_1d05be25606bc278d55ecefa5c7e7254c" kind="function"><name>contains</name></member>
+    <member refid="classXapian_1_1RSet_1636afe3253b0f8922dffc3a47808b1a1" kind="function"><name>get_description</name></member>
+  </compound>
+  <compound refid="classstd_1_1runtime__error" kind="class"><name>std::runtime_error</name>
+  </compound>
+  <compound refid="classXapian_1_1RuntimeError" kind="class"><name>Xapian::RuntimeError</name>
+    <member refid="classXapian_1_1RuntimeError_1338dd180ce754f54a65aa4b067d70578" kind="function"><name>RuntimeError</name></member>
+    <member refid="classXapian_1_1RuntimeError_1494b34f5ac03d9f927e4d4002d0a9a97" kind="function"><name>RuntimeError</name></member>
+  </compound>
+  <compound refid="classXapian_1_1SerialisationError" kind="class"><name>Xapian::SerialisationError</name>
+    <member refid="classXapian_1_1SerialisationError_1912c8ce7daadf5a303935180c5d8b288" kind="function"><name>SerialisationError</name></member>
+    <member refid="classXapian_1_1SerialisationError_10bba69ed115e85e96a986bcdf598aa71" kind="function"><name>SerialisationError</name></member>
+    <member refid="classXapian_1_1SerialisationError_1dd3dc28532d4f68c0df2df0da3fb475a" kind="function"><name>SerialisationError</name></member>
+    <member refid="classXapian_1_1SerialisationError_145df3b6b7c12c1f8baa52de2da3f35a0" kind="function"><name>SerialisationError</name></member>
+    <member refid="classXapian_1_1SerialisationError_12a903f6ade8bb8a7e4ad16a4830aa9e0" kind="function"><name>SerialisationError</name></member>
+  </compound>
+  <compound refid="classstd_1_1set" kind="class"><name>std::set</name>
+    <member refid="classstd_1_1set_17f92ca6d6e5216b9c4be631bd87f1df4" kind="variable"><name>keys</name></member>
+  </compound>
+  <compound refid="classXapian_1_1SimpleStopper" kind="class"><name>Xapian::SimpleStopper</name>
+    <member refid="classXapian_1_1SimpleStopper_11af70d8b3a64870db3430ef92cb7c0b0" kind="variable"><name>stop_words</name></member>
+    <member refid="classXapian_1_1SimpleStopper_1524d06efe68acee3358809108b5ad22e" kind="function"><name>SimpleStopper</name></member>
+    <member refid="classXapian_1_1SimpleStopper_1a11bad1a50af1488a138fac82613e2c7" kind="function"><name>SimpleStopper</name></member>
+    <member refid="classXapian_1_1SimpleStopper_148b8ce2de81a61460911adc065ba8afb" kind="function"><name>add</name></member>
+    <member refid="classXapian_1_1SimpleStopper_156543c160db0b45ab73b5789864a3cda" kind="function"><name>operator()</name></member>
+    <member refid="classXapian_1_1SimpleStopper_1eb0bddbf6805b12f760e707032f4cbb3" kind="function"><name>get_description</name></member>
+  </compound>
+  <compound refid="classstd_1_1stack" kind="class"><name>std::stack</name>
+    <member refid="classstd_1_1stack_1020dde37186e898d2aacda2c136aef0f" kind="variable"><name>elements</name></member>
+  </compound>
+  <compound refid="classXapian_1_1Stem" kind="class"><name>Xapian::Stem</name>
+    <member refid="classXapian_1_1Stem_152b651bf16d9c492da32bef91f30e1ff" kind="variable"><name>internal</name></member>
+    <member refid="classXapian_1_1Stem_1960dac1047a3cfe21ff3d013df1d41dd" kind="function"><name>Stem</name></member>
+    <member refid="classXapian_1_1Stem_1c9e8f12c49c8b3f62de1b8465298cf8c" kind="function"><name>operator=</name></member>
+    <member refid="classXapian_1_1Stem_10119ddb5f571853900db97689bf9122d" kind="function"><name>Stem</name></member>
+    <member refid="classXapian_1_1Stem_16c46cedf2047b159a7e4c9d4468242b1" kind="function"><name>Stem</name></member>
+    <member refid="classXapian_1_1Stem_1bae2c707ea039fc519103ed75c7429fb" kind="function"><name>Stem</name></member>
+    <member refid="classXapian_1_1Stem_1c4e246e78c5c947537e11c3f7e718eca" kind="function"><name>~Stem</name></member>
+    <member refid="classXapian_1_1Stem_17b2b85d741051a6f291834cca1eac20a" kind="function"><name>operator()</name></member>
+    <member refid="classXapian_1_1Stem_1a4fc423b2a8119c4b810654f1ae8da0a" kind="function"><name>get_description</name></member>
+    <member refid="classXapian_1_1Stem_10f8f250587dfef35d47f13f0ec0028fb" kind="function"><name>get_available_languages</name></member>
+  </compound>
+  <compound refid="structXapian_1_1StemImplementation" kind="struct"><name>Xapian::StemImplementation</name>
+    <member refid="structXapian_1_1StemImplementation_1afe96075d1fcff69fdc8f987cd24be23" kind="function"><name>~StemImplementation</name></member>
+    <member refid="structXapian_1_1StemImplementation_1de7e15c8638753eec954744bc333881f" kind="function"><name>operator()</name></member>
+    <member refid="structXapian_1_1StemImplementation_1b92efc6802df1e022eebd967e2fb71fe" kind="function"><name>get_description</name></member>
+  </compound>
+  <compound refid="classXapian_1_1Stopper" kind="class"><name>Xapian::Stopper</name>
+    <member refid="classXapian_1_1Stopper_128c9649a93987abb97d06998a146d6fe" kind="function"><name>operator()</name></member>
+    <member refid="classXapian_1_1Stopper_1b7ae723a6b0a1866196b7ed139184208" kind="function"><name>~Stopper</name></member>
+    <member refid="classXapian_1_1Stopper_1f3bcce7e5a1c2a8d96627083939145b2" kind="function"><name>get_description</name></member>
+  </compound>
+  <compound refid="classstd_1_1string" kind="class"><name>std::string</name>
+  </compound>
+  <compound refid="classstd_1_1stringstream" kind="class"><name>std::stringstream</name>
+  </compound>
+  <compound refid="classXapian_1_1StringValueRangeProcessor" kind="class"><name>Xapian::StringValueRangeProcessor</name>
+    <member refid="classXapian_1_1StringValueRangeProcessor_162b1ae7a770c8fce5be0636204e7a493" kind="variable"><name>valno</name></member>
+    <member refid="classXapian_1_1StringValueRangeProcessor_1b4da1c8b8599b6b498987ace264af5d2" kind="variable"><name>prefix</name></member>
+    <member refid="classXapian_1_1StringValueRangeProcessor_1d0d2d28f922f003a6a6a22e15274130a" kind="variable"><name>str</name></member>
+    <member refid="classXapian_1_1StringValueRangeProcessor_15601dd9129f9b21e7b973881bb4a2187" kind="function"><name>StringValueRangeProcessor</name></member>
+    <member refid="classXapian_1_1StringValueRangeProcessor_1e0f051c154c1395b0fbd0834df102c4f" kind="function"><name>StringValueRangeProcessor</name></member>
+    <member refid="classXapian_1_1StringValueRangeProcessor_13001cf2c0e25875c7ffba9fe9de7f874" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="classXapian_1_1TermGenerator" kind="class"><name>Xapian::TermGenerator</name>
+    <member refid="classXapian_1_1TermGenerator_176e983a417d996ebf729999150f45017" kind="enum"><name>flags</name></member>
+    <member refid="classXapian_1_1TermGenerator_176e983a417d996ebf729999150f45017652e030497621117c43e21e6c23035d8" kind="enumvalue"><name>FLAG_SPELLING</name></member>
+    <member refid="classXapian_1_1TermGenerator_1b9b631cfa4f03b8c2897951274958532" kind="variable"><name>internal</name></member>
+    <member refid="classXapian_1_1TermGenerator_1331dd5585658fc56baf91de4617f3ffd" kind="function"><name>TermGenerator</name></member>
+    <member refid="classXapian_1_1TermGenerator_1532945e0a6f0bbc98119ea5298d254de" kind="function"><name>operator=</name></member>
+    <member refid="classXapian_1_1TermGenerator_1bfcaae65a459d31b5497154847213bbc" kind="function"><name>TermGenerator</name></member>
+    <member refid="classXapian_1_1TermGenerator_1c8f5c0681963870e37a5b0f66be32819" kind="function"><name>~TermGenerator</name></member>
+    <member refid="classXapian_1_1TermGenerator_18813a97565e16d547183337e7647b711" kind="function"><name>set_stemmer</name></member>
+    <member refid="classXapian_1_1TermGenerator_18cef8e7b696129a0fc311e47baaf2120" kind="function"><name>set_stopper</name></member>
+    <member refid="classXapian_1_1TermGenerator_1f478b20d2a088697368dc2c1f1045675" kind="function"><name>set_document</name></member>
+    <member refid="classXapian_1_1TermGenerator_1d9db48a0ef7ddc8846bf515c32d6551c" kind="function"><name>get_document</name></member>
+    <member refid="classXapian_1_1TermGenerator_156edabc2673241bcd87c3bd6b65e9c6d" kind="function"><name>set_database</name></member>
+    <member refid="classXapian_1_1TermGenerator_1a0d1f0ee309227852654e589ef441517" kind="function"><name>set_flags</name></member>
+    <member refid="classXapian_1_1TermGenerator_16916b0233aa4c326711667d2195db4d7" kind="function"><name>index_text</name></member>
+    <member refid="classXapian_1_1TermGenerator_15d98ef5625fe146e56b790c9c31c05f4" kind="function"><name>index_text</name></member>
+    <member refid="classXapian_1_1TermGenerator_1a34cc9a0646793c4f5b9b56b2ec3c9a6" kind="function"><name>index_text_without_positions</name></member>
+    <member refid="classXapian_1_1TermGenerator_19190f956783d94c9b699a2590aaaea43" kind="function"><name>index_text_without_positions</name></member>
+    <member refid="classXapian_1_1TermGenerator_179bd3a43ad8c9d1b711ec61ae9107e5f" kind="function"><name>increase_termpos</name></member>
+    <member refid="classXapian_1_1TermGenerator_10ed8b94c99912892feb4b77a53a817e9" kind="function"><name>get_termpos</name></member>
+    <member refid="classXapian_1_1TermGenerator_130b644e5568a225c7da9805774a4ebb4" kind="function"><name>set_termpos</name></member>
+    <member refid="classXapian_1_1TermGenerator_161868ef6d88b24f5395401fdfd4c7ec0" kind="function"><name>get_description</name></member>
+  </compound>
+  <compound refid="classXapian_1_1TermIterator" kind="class"><name>Xapian::TermIterator</name>
+    <member refid="classXapian_1_1TermIterator_1feab33f745f72c8e9c24a58fe1e25800" kind="typedef"><name>iterator_category</name></member>
+    <member refid="classXapian_1_1TermIterator_11f80825c29a2d6e16f3d4008cedb7833" kind="typedef"><name>value_type</name></member>
+    <member refid="classXapian_1_1TermIterator_12caca0d976af5309003b95e66cbebe73" kind="typedef"><name>difference_type</name></member>
+    <member refid="classXapian_1_1TermIterator_1c674b6f574ee46bb6725c0fd41d06fc2" kind="typedef"><name>pointer</name></member>
+    <member refid="classXapian_1_1TermIterator_132f947d758ed204f39f099487412a878" kind="typedef"><name>reference</name></member>
+    <member refid="classXapian_1_1TermIterator_1c7b2ac3c52e0ef9a33567ff7a99a3115" kind="variable"><name>internal</name></member>
+    <member refid="classXapian_1_1TermIterator_1cab902a436d816b02ac90f79ef783022" kind="function"><name>TermIterator</name></member>
+    <member refid="classXapian_1_1TermIterator_141cf4f55a73b5cc7a6a912b83323d8a3" kind="function"><name>decref</name></member>
+    <member refid="classXapian_1_1TermIterator_19951b96522bf72eaaa211304d8db0a40" kind="function"><name>post_advance</name></member>
+    <member refid="classXapian_1_1TermIterator_103e04a51d4aeaa108cdd1f988de4b259" kind="function"><name>TermIterator</name></member>
+    <member refid="classXapian_1_1TermIterator_159097c3c1098630a1095218b1ed7da71" kind="function"><name>operator=</name></member>
+    <member refid="classXapian_1_1TermIterator_1fd50fb35c84e433fc3762447e28b4bab" kind="function"><name>TermIterator</name></member>
+    <member refid="classXapian_1_1TermIterator_1914de6019011c9c25b00e84f556af681" kind="function"><name>~TermIterator</name></member>
+    <member refid="classXapian_1_1TermIterator_1dd766c721040fbca391aa13506be9e31" kind="function"><name>operator*</name></member>
+    <member refid="classXapian_1_1TermIterator_1aad6e6fcfc9ffb513cef923b65adf6e8" kind="function"><name>get_wdf</name></member>
+    <member refid="classXapian_1_1TermIterator_168adffacecf143bdafafdb35ecac8511" kind="function"><name>get_termfreq</name></member>
+    <member refid="classXapian_1_1TermIterator_16ecd77a64b324ddffaa25e9901e362be" kind="function"><name>positionlist_count</name></member>
+    <member refid="classXapian_1_1TermIterator_1c5cae68c58a8f405721732529d2144d6" kind="function"><name>positionlist_begin</name></member>
+    <member refid="classXapian_1_1TermIterator_168a6157a501e51b7043ba86676be026f" kind="function"><name>positionlist_end</name></member>
+    <member refid="classXapian_1_1TermIterator_104d4db66b44b0e948f8cd925130aacb0" kind="function"><name>operator++</name></member>
+    <member refid="classXapian_1_1TermIterator_12a425243a43291345eef2659fb1d085f" kind="function"><name>operator++</name></member>
+    <member refid="classXapian_1_1TermIterator_17b1993d2587d6d9acc7c63212c4b56ae" kind="function"><name>skip_to</name></member>
+    <member refid="classXapian_1_1TermIterator_19a7aeca02e3c4dc43d7553f6a0c19abf" kind="function"><name>get_description</name></member>
+  </compound>
+  <compound refid="classXapian_1_1TradWeight" kind="class"><name>Xapian::TradWeight</name>
+    <member refid="classXapian_1_1TradWeight_1236e817a305421dcadb4b2c9ac8018a5" kind="variable"><name>len_factor</name></member>
+    <member refid="classXapian_1_1TradWeight_1388261807d54543dddb0a8ef0372e9d9" kind="variable"><name>termweight</name></member>
+    <member refid="classXapian_1_1TradWeight_19d67802c7d67ab5bb895b5ab9b0727dc" kind="variable"><name>param_k</name></member>
+    <member refid="classXapian_1_1TradWeight_185727fdd8a794534c5ec2b6da6baf135" kind="function"><name>clone</name></member>
+    <member refid="classXapian_1_1TradWeight_191bd0e0acdd940c5f99dcb55e9f97a85" kind="function"><name>init</name></member>
+    <member refid="classXapian_1_1TradWeight_1904914c46534a32c666a473c9ffdf77c" kind="function"><name>TradWeight</name></member>
+    <member refid="classXapian_1_1TradWeight_1a34538148bb8a2771675117d7331aee1" kind="function"><name>name</name></member>
+    <member refid="classXapian_1_1TradWeight_13cb90ec9c8ef2866dfa405d3490d4cc3" kind="function"><name>serialise</name></member>
+    <member refid="classXapian_1_1TradWeight_1ce5aae016fc57407c7f7f5f0f3d7b5c0" kind="function"><name>unserialise</name></member>
+    <member refid="classXapian_1_1TradWeight_1fd3432ac3e0adab5b7c4ad61d2ced18d" kind="function"><name>get_sumpart</name></member>
+    <member refid="classXapian_1_1TradWeight_1bc2fd38d6abbb7ef77b14959ae3f1fc0" kind="function"><name>get_maxpart</name></member>
+    <member refid="classXapian_1_1TradWeight_1c6f5746b1117b331a42e1bdc4002d65e" kind="function"><name>get_sumextra</name></member>
+    <member refid="classXapian_1_1TradWeight_15e06ecfe3f4ad59c4e1a651f604800e2" kind="function"><name>get_maxextra</name></member>
+  </compound>
+  <compound refid="classstd_1_1underflow__error" kind="class"><name>std::underflow_error</name>
+  </compound>
+  <compound refid="classXapian_1_1UnimplementedError" kind="class"><name>Xapian::UnimplementedError</name>
+    <member refid="classXapian_1_1UnimplementedError_17a014de1b7a1e96aaf00e6e16feef9de" kind="function"><name>UnimplementedError</name></member>
+    <member refid="classXapian_1_1UnimplementedError_18b57d7d68a1ba137c1a5d1428f163dbc" kind="function"><name>UnimplementedError</name></member>
+    <member refid="classXapian_1_1UnimplementedError_1e129475fb4c2fe6f05835275e05a5990" kind="function"><name>UnimplementedError</name></member>
+    <member refid="classXapian_1_1UnimplementedError_107264ff5488cca70fbf073cfc340190b" kind="function"><name>UnimplementedError</name></member>
+    <member refid="classXapian_1_1UnimplementedError_1025c7f29d76bd5b9c0fc875d82f4554d" kind="function"><name>UnimplementedError</name></member>
+  </compound>
+  <compound refid="classXapian_1_1Utf8Iterator" kind="class"><name>Xapian::Utf8Iterator</name>
+    <member refid="classXapian_1_1Utf8Iterator_127b2ddc86e0ffa2e5238108af8db86c0" kind="typedef"><name>iterator_category</name></member>
+    <member refid="classXapian_1_1Utf8Iterator_186058d0f4d10857af59328157387fd50" kind="typedef"><name>value_type</name></member>
+    <member refid="classXapian_1_1Utf8Iterator_180a0468ad034f3d6012072a16a3308b2" kind="typedef"><name>difference_type</name></member>
+    <member refid="classXapian_1_1Utf8Iterator_14e6c3ab8d6ddfc36c1f2c7d4c1fc550f" kind="typedef"><name>pointer</name></member>
+    <member refid="classXapian_1_1Utf8Iterator_19eb042f54713d460111b3655f1d187a3" kind="typedef"><name>reference</name></member>
+    <member refid="classXapian_1_1Utf8Iterator_17945a46a289214279469061e2401d8f9" kind="variable"><name>p</name></member>
+    <member refid="classXapian_1_1Utf8Iterator_11373db572813da69c9e74a514995dbe7" kind="variable"><name>end</name></member>
+    <member refid="classXapian_1_1Utf8Iterator_11e97c7d16afc788ef63dde9707bee2ab" kind="variable"><name>seqlen</name></member>
+    <member refid="classXapian_1_1Utf8Iterator_1f72b1d2953c3d6f63ce5fbd96d07543a" kind="function"><name>calculate_sequence_length</name></member>
+    <member refid="classXapian_1_1Utf8Iterator_11736304c8732d17f380e81b795da5e39" kind="function"><name>get_char</name></member>
+    <member refid="classXapian_1_1Utf8Iterator_1ea2a71887b80955863709a74c6f52f31" kind="function"><name>Utf8Iterator</name></member>
+    <member refid="classXapian_1_1Utf8Iterator_17bcb77724d73583f5b71138294df2cf3" kind="function"><name>raw</name></member>
+    <member refid="classXapian_1_1Utf8Iterator_1af034edbf2d998513ad0299ae7dd34a5" kind="function"><name>left</name></member>
+    <member refid="classXapian_1_1Utf8Iterator_129608f4bbfdae0e6da41ed9f7879c410" kind="function"><name>assign</name></member>
+    <member refid="classXapian_1_1Utf8Iterator_15e9337753766c9a3a0202e86a0016293" kind="function"><name>assign</name></member>
+    <member refid="classXapian_1_1Utf8Iterator_12bde57da5096615033f2d4e36043ce26" kind="function"><name>Utf8Iterator</name></member>
+    <member refid="classXapian_1_1Utf8Iterator_1686c7e0883132abe1992904c89d2a51c" kind="function"><name>Utf8Iterator</name></member>
+    <member refid="classXapian_1_1Utf8Iterator_118743b895d83019d549b7c032499465f" kind="function"><name>Utf8Iterator</name></member>
+    <member refid="classXapian_1_1Utf8Iterator_1d02aaed2afa0cf3d41878590faf1175e" kind="function"><name>Utf8Iterator</name></member>
+    <member refid="classXapian_1_1Utf8Iterator_10827cbc34100cdbda280bd86cd2c0554" kind="function"><name>operator*</name></member>
+    <member refid="classXapian_1_1Utf8Iterator_125aaaef59d9e273af9a4372c2e1e7e65" kind="function"><name>operator++</name></member>
+    <member refid="classXapian_1_1Utf8Iterator_116609767544759ce576c651869193aaf" kind="function"><name>operator++</name></member>
+    <member refid="classXapian_1_1Utf8Iterator_1b11f801988488e2bc60d0f5fef4ae9d4" kind="function"><name>operator==</name></member>
+    <member refid="classXapian_1_1Utf8Iterator_1d9aa7675fa604dd2843f423ed0c6a9a9" kind="function"><name>operator!=</name></member>
+  </compound>
+  <compound refid="classstd_1_1valarray" kind="class"><name>std::valarray</name>
+    <member refid="classstd_1_1valarray_1dce3a23af4e9d36342f49f58300d8568" kind="variable"><name>elements</name></member>
+  </compound>
+  <compound refid="classXapian_1_1ValueCountMatchSpy" kind="class"><name>Xapian::ValueCountMatchSpy</name>
+    <member refid="classXapian_1_1ValueCountMatchSpy_183738c5d0701502e6452c71c77487eb6" kind="variable"><name>internal</name></member>
+    <member refid="classXapian_1_1ValueCountMatchSpy_1be9390bb136f7c380126dc89c463795d" kind="function"><name>ValueCountMatchSpy</name></member>
+    <member refid="classXapian_1_1ValueCountMatchSpy_1d1cb660b864dfa6d72cffbe587f5a8b6" kind="function"><name>ValueCountMatchSpy</name></member>
+    <member refid="classXapian_1_1ValueCountMatchSpy_1842576241bf5d4e38c84b8ac5272d3da" kind="function"><name>get_total</name></member>
+    <member refid="classXapian_1_1ValueCountMatchSpy_191db513ea45da7adf5ff25c4706ab9b0" kind="function"><name>values_begin</name></member>
+    <member refid="classXapian_1_1ValueCountMatchSpy_134a09b5055c1953f28f6426769d0de2c" kind="function"><name>values_end</name></member>
+    <member refid="classXapian_1_1ValueCountMatchSpy_12d433c9f883bdfa98fd1d56b7a972a3f" kind="function"><name>top_values_begin</name></member>
+    <member refid="classXapian_1_1ValueCountMatchSpy_12722e0f8735f696bd130f18069b394b6" kind="function"><name>top_values_end</name></member>
+    <member refid="classXapian_1_1ValueCountMatchSpy_1ba74fcbd87fa4a173d7cc6b7a26567d4" kind="function"><name>operator()</name></member>
+    <member refid="classXapian_1_1ValueCountMatchSpy_12f3f76f7a269b15b22e5f266a166ed00" kind="function"><name>clone</name></member>
+    <member refid="classXapian_1_1ValueCountMatchSpy_10156235fbae335975efe173cad85ea0a" kind="function"><name>name</name></member>
+    <member refid="classXapian_1_1ValueCountMatchSpy_14b0b12f88a83fa854160d62d3f0b1a66" kind="function"><name>serialise</name></member>
+    <member refid="classXapian_1_1ValueCountMatchSpy_100c8fb9751f52c6f4a6610e23b130690" kind="function"><name>unserialise</name></member>
+    <member refid="classXapian_1_1ValueCountMatchSpy_1bf75525e101f358d07750abc466115da" kind="function"><name>serialise_results</name></member>
+    <member refid="classXapian_1_1ValueCountMatchSpy_1cc26d27271e945dc555c8f981b4fe775" kind="function"><name>merge_results</name></member>
+    <member refid="classXapian_1_1ValueCountMatchSpy_1350eb6f93aa5e01845a56f2fd30391f8" kind="function"><name>get_description</name></member>
+  </compound>
+  <compound refid="classXapian_1_1ValueIterator" kind="class"><name>Xapian::ValueIterator</name>
+    <member refid="classXapian_1_1ValueIterator_11da37a84f67fd8d7d3e08888832cf377" kind="typedef"><name>iterator_category</name></member>
+    <member refid="classXapian_1_1ValueIterator_1536aa2f1f0f23f92f6142657eee46a54" kind="typedef"><name>value_type</name></member>
+    <member refid="classXapian_1_1ValueIterator_1341a2ec8a17b972afc032c8a9e99c80e" kind="typedef"><name>difference_type</name></member>
+    <member refid="classXapian_1_1ValueIterator_1db40fe08d83bdc1d65fe519fe35fa1ab" kind="typedef"><name>pointer</name></member>
+    <member refid="classXapian_1_1ValueIterator_190768af03030ce243f4b8a12b367e08c" kind="typedef"><name>reference</name></member>
+    <member refid="classXapian_1_1ValueIterator_1bf638807fd11fd1e47b8d2f257c1a21f" kind="variable"><name>internal</name></member>
+    <member refid="classXapian_1_1ValueIterator_14abbd17b6bd10f986898ff8e1e324441" kind="function"><name>decref</name></member>
+    <member refid="classXapian_1_1ValueIterator_15fcf37024fa6c4b22556f238b7a49643" kind="function"><name>ValueIterator</name></member>
+    <member refid="classXapian_1_1ValueIterator_1e8f251e2647b9b73b1b516c8bc2a15e4" kind="function"><name>ValueIterator</name></member>
+    <member refid="classXapian_1_1ValueIterator_11dcd37a282ae544724ffd37dca408406" kind="function"><name>operator=</name></member>
+    <member refid="classXapian_1_1ValueIterator_14084631b78f8c9f95b3bc1f5546549dc" kind="function"><name>ValueIterator</name></member>
+    <member refid="classXapian_1_1ValueIterator_15a3c9c62e2667580261ef312758942ae" kind="function"><name>~ValueIterator</name></member>
+    <member refid="classXapian_1_1ValueIterator_1ebc5e56d09b4c49770e8fb19f600a288" kind="function"><name>operator*</name></member>
+    <member refid="classXapian_1_1ValueIterator_1e76c157616ca36ce63409846649fc666" kind="function"><name>operator++</name></member>
+    <member refid="classXapian_1_1ValueIterator_1a101b6f08ac0cbd9ec306ecf154892d4" kind="function"><name>operator++</name></member>
+    <member refid="classXapian_1_1ValueIterator_15abfc1ae8f35819b3b71f502092646a8" kind="function"><name>get_docid</name></member>
+    <member refid="classXapian_1_1ValueIterator_17ad3cc981f6563e8d2d2d875bcee78a5" kind="function"><name>get_valueno</name></member>
+    <member refid="classXapian_1_1ValueIterator_1ecff65bcb208c551bfee41fec244fbbf" kind="function"><name>skip_to</name></member>
+    <member refid="classXapian_1_1ValueIterator_1e41c268fb5e79b1e4f8cd90a62ec92dd" kind="function"><name>check</name></member>
+    <member refid="classXapian_1_1ValueIterator_174bed1979654824aa8186c3708cfd921" kind="function"><name>get_description</name></member>
+  </compound>
+  <compound refid="classXapian_1_1ValueMapPostingSource" kind="class"><name>Xapian::ValueMapPostingSource</name>
+    <member refid="classXapian_1_1ValueMapPostingSource_1d4f6b6782529e222bcbaefaec9690e12" kind="variable"><name>default_weight</name></member>
+    <member refid="classXapian_1_1ValueMapPostingSource_14ccad7c8b7ab1261b49fc1899ca53e44" kind="variable"><name>max_weight_in_map</name></member>
+    <member refid="classXapian_1_1ValueMapPostingSource_141a51ab1654a4e21e00f5e84c19d5002" kind="variable"><name>weight_map</name></member>
+    <member refid="classXapian_1_1ValueMapPostingSource_1ef9518eab055c5f1d3bea3fb8df4368f" kind="function"><name>ValueMapPostingSource</name></member>
+    <member refid="classXapian_1_1ValueMapPostingSource_1126c88575ad8f06c850826ac7cd2a591" kind="function"><name>add_mapping</name></member>
+    <member refid="classXapian_1_1ValueMapPostingSource_14f41218d580d29681e748a7d25aad8aa" kind="function"><name>clear_mappings</name></member>
+    <member refid="classXapian_1_1ValueMapPostingSource_1895c2f710b42bf93f71d0321225dc38f" kind="function"><name>set_default_weight</name></member>
+    <member refid="classXapian_1_1ValueMapPostingSource_196cea230e42fa66778ac109501413327" kind="function"><name>get_weight</name></member>
+    <member refid="classXapian_1_1ValueMapPostingSource_175598085ba9e49e1a2fd0e232d191461" kind="function"><name>clone</name></member>
+    <member refid="classXapian_1_1ValueMapPostingSource_1717c8ccd76b95946b07e68e759dcca97" kind="function"><name>name</name></member>
+    <member refid="classXapian_1_1ValueMapPostingSource_1534c78ecea04a7a649d8ba27447edee3" kind="function"><name>serialise</name></member>
+    <member refid="classXapian_1_1ValueMapPostingSource_1b3f716ff004f91e2ecc51548119f3891" kind="function"><name>unserialise</name></member>
+    <member refid="classXapian_1_1ValueMapPostingSource_1e76de9cb534e96b7a0cc827d89eea8fc" kind="function"><name>init</name></member>
+    <member refid="classXapian_1_1ValueMapPostingSource_1e8687a2981841c33bb04f3e28d3d7892" kind="function"><name>get_description</name></member>
+  </compound>
+  <compound refid="classXapian_1_1ValuePostingSource" kind="class"><name>Xapian::ValuePostingSource</name>
+    <member refid="classXapian_1_1ValuePostingSource_124ed690d4249ce0929a1a1ff236124f1" kind="variable"><name>db</name></member>
+    <member refid="classXapian_1_1ValuePostingSource_1efd7cda358e1dc81ccd72bfe7b0f940c" kind="variable"><name>slot</name></member>
+    <member refid="classXapian_1_1ValuePostingSource_1ddc0e75dc4ad4cfcf1f2d807bc3b32c4" kind="variable"><name>value_it</name></member>
+    <member refid="classXapian_1_1ValuePostingSource_1f961be7d3dcc2eb8b9e70744ce2c7597" kind="variable"><name>started</name></member>
+    <member refid="classXapian_1_1ValuePostingSource_130f64f26a6faddc3f24b8c00e2ba5d0b" kind="variable"><name>termfreq_min</name></member>
+    <member refid="classXapian_1_1ValuePostingSource_1b9b4cc08e1ba2da73f059b2312ae3986" kind="variable"><name>termfreq_est</name></member>
+    <member refid="classXapian_1_1ValuePostingSource_13a7be278e6615876d57a254a60826c2f" kind="variable"><name>termfreq_max</name></member>
+    <member refid="classXapian_1_1ValuePostingSource_1ccbffc6b7f573e9a41fc234a410a1ec3" kind="function"><name>ValuePostingSource</name></member>
+    <member refid="classXapian_1_1ValuePostingSource_173743991ef0f5a2818d56c94e9e019f4" kind="function"><name>get_termfreq_min</name></member>
+    <member refid="classXapian_1_1ValuePostingSource_1dd937d003f986ff60119bffbac277d76" kind="function"><name>get_termfreq_est</name></member>
+    <member refid="classXapian_1_1ValuePostingSource_1c71b845c832955fe708d9ad6dbcf87e5" kind="function"><name>get_termfreq_max</name></member>
+    <member refid="classXapian_1_1ValuePostingSource_187b22aac8422f80124b50a456d1d85b0" kind="function"><name>next</name></member>
+    <member refid="classXapian_1_1ValuePostingSource_1f11095a4355f96d7bc12074a5a91cd93" kind="function"><name>skip_to</name></member>
+    <member refid="classXapian_1_1ValuePostingSource_171868e54627098425820f7a76e259197" kind="function"><name>check</name></member>
+    <member refid="classXapian_1_1ValuePostingSource_14bb7ea314dbd569f90f89731204cdc40" kind="function"><name>at_end</name></member>
+    <member refid="classXapian_1_1ValuePostingSource_16507d4d1a4119058890d92dfad53f40d" kind="function"><name>get_docid</name></member>
+    <member refid="classXapian_1_1ValuePostingSource_1764328b2a7085e24393a94eb1d2b91e0" kind="function"><name>init</name></member>
+  </compound>
+  <compound refid="structXapian_1_1ValueRangeProcessor" kind="struct"><name>Xapian::ValueRangeProcessor</name>
+    <member refid="structXapian_1_1ValueRangeProcessor_1b32baad9238adb002b47f99ec362e56e" kind="function"><name>~ValueRangeProcessor</name></member>
+    <member refid="structXapian_1_1ValueRangeProcessor_1a04e11c41e40ceed5f796c94348d2ad2" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="classXapian_1_1ValueSetMatchDecider" kind="class"><name>Xapian::ValueSetMatchDecider</name>
+    <member refid="classXapian_1_1ValueSetMatchDecider_179c8646b1505be5474a443d3b5b3ed2e" kind="variable"><name>testset</name></member>
+    <member refid="classXapian_1_1ValueSetMatchDecider_15ca5873ca4fcc44ad74710892bebadb3" kind="variable"><name>valuenum</name></member>
+    <member refid="classXapian_1_1ValueSetMatchDecider_1d563e964222ecc9b5b51504743d7dd9c" kind="variable"><name>inclusive</name></member>
+    <member refid="classXapian_1_1ValueSetMatchDecider_11f63ce5e07042150e324c754e3a98d09" kind="function"><name>ValueSetMatchDecider</name></member>
+    <member refid="classXapian_1_1ValueSetMatchDecider_1c7ea29abdfff5425ea6e75a318b1c961" kind="function"><name>add_value</name></member>
+    <member refid="classXapian_1_1ValueSetMatchDecider_12ee026448fcb6501703949cf201f0487" kind="function"><name>remove_value</name></member>
+    <member refid="classXapian_1_1ValueSetMatchDecider_1c36090a4892dec25b5bdc1e8efaeacba" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="classXapian_1_1ValueWeightPostingSource" kind="class"><name>Xapian::ValueWeightPostingSource</name>
+    <member refid="classXapian_1_1ValueWeightPostingSource_153b029396164d214d54eb3b3c8640243" kind="function"><name>ValueWeightPostingSource</name></member>
+    <member refid="classXapian_1_1ValueWeightPostingSource_1b9159e5e12e909272fa2b776bb95cdaa" kind="function"><name>get_weight</name></member>
+    <member refid="classXapian_1_1ValueWeightPostingSource_1a157a293a1b54a3d70d1d55f5de26895" kind="function"><name>clone</name></member>
+    <member refid="classXapian_1_1ValueWeightPostingSource_135d0b218fa9db907c36e62d60b900808" kind="function"><name>name</name></member>
+    <member refid="classXapian_1_1ValueWeightPostingSource_11bdc574c2f1c02472a4ec5fee697af87" kind="function"><name>serialise</name></member>
+    <member refid="classXapian_1_1ValueWeightPostingSource_1ff018c57b785507a3bba82e85ec7fb63" kind="function"><name>unserialise</name></member>
+    <member refid="classXapian_1_1ValueWeightPostingSource_1c3844351e28448d1de38fe089d626db4" kind="function"><name>init</name></member>
+    <member refid="classXapian_1_1ValueWeightPostingSource_1f39ca50c3edcd5b8e2cde72db07a4382" kind="function"><name>get_description</name></member>
+  </compound>
+  <compound refid="classstd_1_1vector" kind="class"><name>std::vector</name>
+    <member refid="classstd_1_1vector_12396209900e8f592db1f0b2467f7d899" kind="variable"><name>elements</name></member>
+  </compound>
+  <compound refid="classXapian_1_1Weight" kind="class"><name>Xapian::Weight</name>
+    <member refid="classXapian_1_1Weight_1e3c11f1d2d96a18e0eb9b9b31c5c5479" kind="enum"><name>stat_flags</name></member>
+    <member refid="classXapian_1_1Weight_1e3c11f1d2d96a18e0eb9b9b31c5c5479bce4fe48f6f680644bd352acc937856e" kind="enumvalue"><name>COLLECTION_SIZE</name></member>
+    <member refid="classXapian_1_1Weight_1e3c11f1d2d96a18e0eb9b9b31c5c5479632727fa617eec2dfa9ad19e6adcb926" kind="enumvalue"><name>RSET_SIZE</name></member>
+    <member refid="classXapian_1_1Weight_1e3c11f1d2d96a18e0eb9b9b31c5c54795ce8ff7822abec06e0f5ac956d7b247e" kind="enumvalue"><name>AVERAGE_LENGTH</name></member>
+    <member refid="classXapian_1_1Weight_1e3c11f1d2d96a18e0eb9b9b31c5c5479b2b087be2c0ffd8a2ea214298156f99b" kind="enumvalue"><name>TERMFREQ</name></member>
+    <member refid="classXapian_1_1Weight_1e3c11f1d2d96a18e0eb9b9b31c5c5479fd0979b74a0cf07991edc4af31ed55be" kind="enumvalue"><name>RELTERMFREQ</name></member>
+    <member refid="classXapian_1_1Weight_1e3c11f1d2d96a18e0eb9b9b31c5c54791a95530f6aa2ca909e4c1620aed8192b" kind="enumvalue"><name>QUERY_LENGTH</name></member>
+    <member refid="classXapian_1_1Weight_1e3c11f1d2d96a18e0eb9b9b31c5c5479b383711f122cf1927e418dc94e8ed1a7" kind="enumvalue"><name>WQF</name></member>
+    <member refid="classXapian_1_1Weight_1e3c11f1d2d96a18e0eb9b9b31c5c5479fe84a106f8ec14c79acdfc29d9378aa2" kind="enumvalue"><name>WDF</name></member>
+    <member refid="classXapian_1_1Weight_1e3c11f1d2d96a18e0eb9b9b31c5c547992ac55fbe32f39c3b4cdcab135ac0722" kind="enumvalue"><name>DOC_LENGTH</name></member>
+    <member refid="classXapian_1_1Weight_1e3c11f1d2d96a18e0eb9b9b31c5c5479c9f88f7ca707347bcce2c1ad0abdf531" kind="enumvalue"><name>DOC_LENGTH_MIN</name></member>
+    <member refid="classXapian_1_1Weight_1e3c11f1d2d96a18e0eb9b9b31c5c54798f07b317ab1fca84d17cab78aa412e37" kind="enumvalue"><name>DOC_LENGTH_MAX</name></member>
+    <member refid="classXapian_1_1Weight_1e3c11f1d2d96a18e0eb9b9b31c5c5479be608cc5dc83deef0f35c13a69aa15dc" kind="enumvalue"><name>WDF_MAX</name></member>
+    <member refid="classXapian_1_1Weight_1de4a836f26a80cbf3abcc592ae9d5714" kind="variable"><name>stats_needed</name></member>
+    <member refid="classXapian_1_1Weight_14652e02f4bcf6ea881053a2c975e2db2" kind="variable"><name>collection_size_</name></member>
+    <member refid="classXapian_1_1Weight_15a47613ac473c21b04c6d3236213e84c" kind="variable"><name>rset_size_</name></member>
+    <member refid="classXapian_1_1Weight_157fd73a283d4d9e70aa1ee400821b01b" kind="variable"><name>average_length_</name></member>
+    <member refid="classXapian_1_1Weight_17f442e50f1aafcf687ca41345dc85044" kind="variable"><name>termfreq_</name></member>
+    <member refid="classXapian_1_1Weight_160d255bd06560407113e70b915be37b0" kind="variable"><name>reltermfreq_</name></member>
+    <member refid="classXapian_1_1Weight_14b770c5fa33877c0443c33d15516e72f" kind="variable"><name>query_length_</name></member>
+    <member refid="classXapian_1_1Weight_1075243c8f9a040599b3b25879ef2a0ed" kind="variable"><name>wqf_</name></member>
+    <member refid="classXapian_1_1Weight_1e312d8a6e246c14aa199ea23c529124f" kind="variable"><name>doclength_lower_bound_</name></member>
+    <member refid="classXapian_1_1Weight_1584f9d92407fe33f7732264298703eda" kind="variable"><name>doclength_upper_bound_</name></member>
+    <member refid="classXapian_1_1Weight_16437e64b16f666c899ae0cd63d6c5e1e" kind="variable"><name>wdf_upper_bound_</name></member>
+    <member refid="classXapian_1_1Weight_177b1424d5f5a5b2d4848175979da6475" kind="function"><name>need_stat</name></member>
+    <member refid="classXapian_1_1Weight_171cd77c24183e837313ec13d967ddf2c" kind="function"><name>init</name></member>
+    <member refid="classXapian_1_1Weight_1a7acc105949dcb3b8b343a598dd01487" kind="function"><name>Weight</name></member>
+    <member refid="classXapian_1_1Weight_148e8f4d351f2a090bcec111513833e0f" kind="function"><name>Weight</name></member>
+    <member refid="classXapian_1_1Weight_1a2e23f50f21b1bc185f90b1e9cb7a7f3" kind="function"><name>get_collection_size</name></member>
+    <member refid="classXapian_1_1Weight_18a8cce67a8493930d450b7146ef7579d" kind="function"><name>get_rset_size</name></member>
+    <member refid="classXapian_1_1Weight_1918940bab1dc710ecb97da04f5fa6385" kind="function"><name>get_average_length</name></member>
+    <member refid="classXapian_1_1Weight_192938b9a4e06cc4064d175678cbf89db" kind="function"><name>get_termfreq</name></member>
+    <member refid="classXapian_1_1Weight_11e6c2200a16fe2ed1631e498b0938de8" kind="function"><name>get_reltermfreq</name></member>
+    <member refid="classXapian_1_1Weight_1346c098a7aa0e4834a2d0289f2095bec" kind="function"><name>get_query_length</name></member>
+    <member refid="classXapian_1_1Weight_1764637daf40de00c390c2248fb0d9669" kind="function"><name>get_wqf</name></member>
+    <member refid="classXapian_1_1Weight_16fdebced528afecf5709eb94aae8a03b" kind="function"><name>get_doclength_upper_bound</name></member>
+    <member refid="classXapian_1_1Weight_1e7174b4c8b66f72f8d7a8086ca4fb476" kind="function"><name>get_doclength_lower_bound</name></member>
+    <member refid="classXapian_1_1Weight_1ed86f1d362deac4a1492480ca28c788f" kind="function"><name>get_wdf_upper_bound</name></member>
+    <member refid="classXapian_1_1Weight_13c411746358730c3c21c3a96472bce82" kind="function"><name>operator=</name></member>
+    <member refid="classXapian_1_1Weight_1f6c8efbea1cf588e52d125599de27d26" kind="function"><name>init_</name></member>
+    <member refid="classXapian_1_1Weight_13e515858434bb945b2649f5a9a16afd5" kind="function"><name>init_</name></member>
+    <member refid="classXapian_1_1Weight_10375699d25772a60b7c1581799a132b2" kind="function"><name>init_</name></member>
+    <member refid="classXapian_1_1Weight_1e11c1980b225d7596db43366525b44f7" kind="function"><name>get_sumpart_needs_doclength_</name></member>
+    <member refid="classXapian_1_1Weight_1a6f5992fa045672d492d7720eb25e127" kind="function"><name>get_sumpart_needs_wdf_</name></member>
+    <member refid="classXapian_1_1Weight_1dcc0dd3e0c762597e89720043440a0bd" kind="function"><name>~Weight</name></member>
+    <member refid="classXapian_1_1Weight_15663bb152f93f08dcc07e0b4a39ddbc3" kind="function"><name>clone</name></member>
+    <member refid="classXapian_1_1Weight_1afd3b445fb1955aae3d7c32aae3ba7b4" kind="function"><name>name</name></member>
+    <member refid="classXapian_1_1Weight_1cf568da52a87e6a6786400dbd0a79edf" kind="function"><name>serialise</name></member>
+    <member refid="classXapian_1_1Weight_1031c3e0db3ae50e801b324e71a44c140" kind="function"><name>unserialise</name></member>
+    <member refid="classXapian_1_1Weight_18c6beb18e2c08cbc2ae61ec9d808ed9e" kind="function"><name>get_sumpart</name></member>
+    <member refid="classXapian_1_1Weight_1f37e797fa12bb915f73b20b953a132b7" kind="function"><name>get_maxpart</name></member>
+    <member refid="classXapian_1_1Weight_18c29b15b875e5666ac8b94c9a39e962f" kind="function"><name>get_sumextra</name></member>
+    <member refid="classXapian_1_1Weight_1ca641ecc2f5645666820f864d243f46d" kind="function"><name>get_maxextra</name></member>
+  </compound>
+  <compound refid="classstd_1_1wfstream" kind="class"><name>std::wfstream</name>
+  </compound>
+  <compound refid="classstd_1_1wifstream" kind="class"><name>std::wifstream</name>
+  </compound>
+  <compound refid="classstd_1_1wios" kind="class"><name>std::wios</name>
+  </compound>
+  <compound refid="classstd_1_1wistream" kind="class"><name>std::wistream</name>
+  </compound>
+  <compound refid="classstd_1_1wistringstream" kind="class"><name>std::wistringstream</name>
+  </compound>
+  <compound refid="classstd_1_1wofstream" kind="class"><name>std::wofstream</name>
+  </compound>
+  <compound refid="classstd_1_1wostream" kind="class"><name>std::wostream</name>
+  </compound>
+  <compound refid="classstd_1_1wostringstream" kind="class"><name>std::wostringstream</name>
+  </compound>
+  <compound refid="classXapian_1_1WritableDatabase" kind="class"><name>Xapian::WritableDatabase</name>
+    <member refid="classXapian_1_1WritableDatabase_198ae55d72630237f346986b60e765e36" kind="function"><name>~WritableDatabase</name></member>
+    <member refid="classXapian_1_1WritableDatabase_1c80ed31814feebd10c6222386e31472e" kind="function"><name>WritableDatabase</name></member>
+    <member refid="classXapian_1_1WritableDatabase_12084dc5811aedc7de65d77e7979a2ec8" kind="function"><name>WritableDatabase</name></member>
+    <member refid="classXapian_1_1WritableDatabase_11529742b3f7eb92f07e75f2308bc2f3a" kind="function"><name>WritableDatabase</name></member>
+    <member refid="classXapian_1_1WritableDatabase_1c97254827cb74c93606ae046dcdd3754" kind="function"><name>operator=</name></member>
+    <member refid="classXapian_1_1WritableDatabase_1cbea2163142de795024880a7123bc693" kind="function"><name>commit</name></member>
+    <member refid="classXapian_1_1WritableDatabase_1e767fd6fec96a126763f818fdc0abca7" kind="function"><name>flush</name></member>
+    <member refid="classXapian_1_1WritableDatabase_11436584192e592cead34ea6a4d5af56f" kind="function"><name>begin_transaction</name></member>
+    <member refid="classXapian_1_1WritableDatabase_13d330f3a27cc17d78635781c7b77280f" kind="function"><name>commit_transaction</name></member>
+    <member refid="classXapian_1_1WritableDatabase_1537b50dd4aad61020ea8536e93559a72" kind="function"><name>cancel_transaction</name></member>
+    <member refid="classXapian_1_1WritableDatabase_1ecdd2e1d3a0364c4933ef4fe655f080b" kind="function"><name>add_document</name></member>
+    <member refid="classXapian_1_1WritableDatabase_10cfd78ba9108b9ef2cf9b4a9f545c70d" kind="function"><name>delete_document</name></member>
+    <member refid="classXapian_1_1WritableDatabase_18426619892e77112e832fc4b11b8efc3" kind="function"><name>delete_document</name></member>
+    <member refid="classXapian_1_1WritableDatabase_123344c9000ea98b15d491fa875bd5d1e" kind="function"><name>replace_document</name></member>
+    <member refid="classXapian_1_1WritableDatabase_143c4630ec482508667e9ca539f19cbf0" kind="function"><name>replace_document</name></member>
+    <member refid="classXapian_1_1WritableDatabase_1d80216c23c6b0175a0e235c4dccde390" kind="function"><name>add_spelling</name></member>
+    <member refid="classXapian_1_1WritableDatabase_11ef895fd7b1ed17bdb7036afc321cb3d" kind="function"><name>remove_spelling</name></member>
+    <member refid="classXapian_1_1WritableDatabase_11b76ebd51f2c69898034d804de877ce6" kind="function"><name>add_synonym</name></member>
+    <member refid="classXapian_1_1WritableDatabase_10d29fb5845bcec5a8123334e654dc868" kind="function"><name>remove_synonym</name></member>
+    <member refid="classXapian_1_1WritableDatabase_12d0a6ca275afab052f675ac8a59dc2b4" kind="function"><name>clear_synonyms</name></member>
+    <member refid="classXapian_1_1WritableDatabase_1bd9a9fde5be5614e93559810df865a98" kind="function"><name>set_metadata</name></member>
+    <member refid="classXapian_1_1WritableDatabase_1714ee6f7f21fd72307329a4ba21227a0" kind="function"><name>get_description</name></member>
+    <member refid="classXapian_1_1WritableDatabase_1f746042dda9a411719cef333783d6534" kind="function"><name>WritableDatabase</name></member>
+  </compound>
+  <compound refid="classstd_1_1wstring" kind="class"><name>std::wstring</name>
+  </compound>
+  <compound refid="classstd_1_1wstringstream" kind="class"><name>std::wstringstream</name>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="namespaceXapian" kind="namespace"><name>Xapian</name>
+    <member refid="namespaceXapian_17f30aa95f0c42b117dafaf66ba24241d" kind="typedef"><name>doccount</name></member>
+    <member refid="namespaceXapian_1958ff32fd7a85f2b8a4784ac18397f2b" kind="typedef"><name>doccount_diff</name></member>
+    <member refid="namespaceXapian_18fa9094bebe1256a7be935a5ede87a64" kind="typedef"><name>docid</name></member>
+    <member refid="namespaceXapian_163b13d3a36fcab9975658e32643d86b5" kind="typedef"><name>doclength</name></member>
+    <member refid="namespaceXapian_122ea0a80c58a2047dd929621b75ed9a2" kind="typedef"><name>percent</name></member>
+    <member refid="namespaceXapian_172b5a76dd8cfb7b251fe7986e86390cb" kind="typedef"><name>termcount</name></member>
+    <member refid="namespaceXapian_1886bd8fd46134d4b488091cfd8a658ed" kind="typedef"><name>termcount_diff</name></member>
+    <member refid="namespaceXapian_1e5a16f073d0c8ed54085a9de07248d45" kind="typedef"><name>termpos</name></member>
+    <member refid="namespaceXapian_1bc9d5170114fede39c85ee03086e373b" kind="typedef"><name>termpos_diff</name></member>
+    <member refid="namespaceXapian_1da10bc23c3467246f078179fce2d762d" kind="typedef"><name>timeout</name></member>
+    <member refid="namespaceXapian_194a899651fa920c72ffa9635bde630ea" kind="typedef"><name>valueno</name></member>
+    <member refid="namespaceXapian_1dd1b3ce8b08d23e4665b097f785c6a96" kind="typedef"><name>valueno_diff</name></member>
+    <member refid="namespaceXapian_1cac12803afc9e24ee5141c119acb8884" kind="typedef"><name>weight</name></member>
+    <member refid="namespaceXapian_13d32111900603ce02b8c8467b9c5bacb" kind="variable"><name>DB_CREATE_OR_OPEN</name></member>
+    <member refid="namespaceXapian_11236aaa6a3d7a37a4c6b95439e449f7a" kind="variable"><name>DB_CREATE</name></member>
+    <member refid="namespaceXapian_1fbc13e6712a12dcfd0c048242fc313ed" kind="variable"><name>DB_CREATE_OR_OVERWRITE</name></member>
+    <member refid="namespaceXapian_154521467b649894bdc411f4c35e56ac3" kind="variable"><name>DB_OPEN</name></member>
+    <member refid="namespaceXapian_10a75ef120e641c77f703e60f595ffda2" kind="variable"><name>BAD_VALUENO</name></member>
+    <member refid="namespaceXapian_15d6ed5a88ec3d4471e45b1598691dab4" kind="function"><name>operator==</name></member>
+    <member refid="namespaceXapian_1245fbc9f00ff6dac8724c65926495585" kind="function"><name>operator!=</name></member>
+    <member refid="namespaceXapian_1bb14b86f144db20662592575911ca308" kind="function"><name>operator==</name></member>
+    <member refid="namespaceXapian_1c2c2c0ec620503d10c024f076db2bde4" kind="function"><name>operator!=</name></member>
+    <member refid="namespaceXapian_1cd6a36fe0327deef4f720416036d48cc" kind="function"><name>operator==</name></member>
+    <member refid="namespaceXapian_184bfb06d1ced43e6602f81c17d5e8e77" kind="function"><name>operator!=</name></member>
+    <member refid="namespaceXapian_1b36ad8f69a1e7884ee9a8c171df440f7" kind="function"><name>operator==</name></member>
+    <member refid="namespaceXapian_1cdbc3d8d04f687c094a693e3f2133985" kind="function"><name>operator!=</name></member>
+    <member refid="namespaceXapian_129a741b4cda98e10ed5f2fc784039065" kind="function"><name>sortable_serialise</name></member>
+    <member refid="namespaceXapian_1326fe2d6b0ee59ac9536f3960e8fd99b" kind="function"><name>sortable_unserialise</name></member>
+    <member refid="namespaceXapian_1e6d2676890d652fd785d729d4a8da565" kind="function"><name>operator==</name></member>
+    <member refid="namespaceXapian_13ecb406384b5cd18232f1a64008658ed" kind="function"><name>operator!=</name></member>
+    <member refid="namespaceXapian_1407d9c7248816d5ccb9678c4c32066de" kind="function"><name>operator==</name></member>
+    <member refid="namespaceXapian_153593fdefa90aa979a236020328990da" kind="function"><name>operator!=</name></member>
+    <member refid="namespaceXapian_1adb3ea72641cec03826dcd4215f02d55" kind="function"><name>version_string</name></member>
+    <member refid="namespaceXapian_1170fe705bd7a4b465791e76312072046" kind="function"><name>major_version</name></member>
+    <member refid="namespaceXapian_1d995af7e143deb0eb7f9a1e03f477b47" kind="function"><name>minor_version</name></member>
+    <member refid="namespaceXapian_121cc6b665ac32a43724d9f20673dfc45" kind="function"><name>revision</name></member>
+  </compound>
+  <compound refid="namespaceXapian_1_1Auto" kind="namespace"><name>Xapian::Auto</name>
+    <member refid="namespaceXapian_1_1Auto_1061dd41e3c877bf094251d25975fe3ee" kind="function"><name>open_stub</name></member>
+    <member refid="namespaceXapian_1_1Auto_1299894005d7f0996d113d87da285ea8c" kind="function"><name>open_stub</name></member>
+  </compound>
+  <compound refid="namespaceXapian_1_1Brass" kind="namespace"><name>Xapian::Brass</name>
+    <member refid="namespaceXapian_1_1Brass_124145fd4d1402fbd40fb08bdca31298f" kind="function"><name>open</name></member>
+    <member refid="namespaceXapian_1_1Brass_13fc4e4c1ef15a005a0a77eabf55fc071" kind="function"><name>open</name></member>
+  </compound>
+  <compound refid="namespaceXapian_1_1Chert" kind="namespace"><name>Xapian::Chert</name>
+    <member refid="namespaceXapian_1_1Chert_1d38a58329e60fcddf57e1c2ebf33696e" kind="function"><name>open</name></member>
+    <member refid="namespaceXapian_1_1Chert_12cc11895168ff1f1fe0a4f1699972901" kind="function"><name>open</name></member>
+  </compound>
+  <compound refid="namespaceXapian_1_1InMemory" kind="namespace"><name>Xapian::InMemory</name>
+    <member refid="namespaceXapian_1_1InMemory_1b4b5fcea687b7b2eb81c5ecc58673d72" kind="function"><name>open</name></member>
+  </compound>
+  <compound refid="namespaceXapian_1_1Remote" kind="namespace"><name>Xapian::Remote</name>
+    <member refid="namespaceXapian_1_1Remote_1ca6d4535825bbe637bc64b06ba6d0911" kind="function"><name>open</name></member>
+    <member refid="namespaceXapian_1_1Remote_1aeb2ce3c98345e02a6a22ee86b47da75" kind="function"><name>open_writable</name></member>
+    <member refid="namespaceXapian_1_1Remote_111e2bf6e836693906f7137d6981f1d9d" kind="function"><name>open</name></member>
+    <member refid="namespaceXapian_1_1Remote_1c71848b7c59792db4e582fac952431fc" kind="function"><name>open_writable</name></member>
+  </compound>
+  <compound refid="namespaceXapian_1_1Unicode" kind="namespace"><name>Xapian::Unicode</name>
+    <member refid="namespaceXapian_1_1Unicode_126f1790c2ed8d5bdf92c886ac57a3e75" kind="enum"><name>category</name></member>
+    <member refid="namespaceXapian_1_1Unicode_126f1790c2ed8d5bdf92c886ac57a3e7566697769b6e0ac01d21ba7e8e4c3c20d" kind="enumvalue"><name>UNASSIGNED</name></member>
+    <member refid="namespaceXapian_1_1Unicode_126f1790c2ed8d5bdf92c886ac57a3e75ee7dfde43243117bb3090d01b13ef751" kind="enumvalue"><name>UPPERCASE_LETTER</name></member>
+    <member refid="namespaceXapian_1_1Unicode_126f1790c2ed8d5bdf92c886ac57a3e755f3dccd684de328e262b6858492dff9e" kind="enumvalue"><name>LOWERCASE_LETTER</name></member>
+    <member refid="namespaceXapian_1_1Unicode_126f1790c2ed8d5bdf92c886ac57a3e75e906628feb721ba704c9120566945624" kind="enumvalue"><name>TITLECASE_LETTER</name></member>
+    <member refid="namespaceXapian_1_1Unicode_126f1790c2ed8d5bdf92c886ac57a3e7562449a990a8e54a946a6e11b6c598b42" kind="enumvalue"><name>MODIFIER_LETTER</name></member>
+    <member refid="namespaceXapian_1_1Unicode_126f1790c2ed8d5bdf92c886ac57a3e7576f80cf2c84f55d79aa275da65d53d9b" kind="enumvalue"><name>OTHER_LETTER</name></member>
+    <member refid="namespaceXapian_1_1Unicode_126f1790c2ed8d5bdf92c886ac57a3e75dde7810996df1a6d9315f92ee68d79c6" kind="enumvalue"><name>NON_SPACING_MARK</name></member>
+    <member refid="namespaceXapian_1_1Unicode_126f1790c2ed8d5bdf92c886ac57a3e75747e560d3277a42d823d1aa3f6a6e432" kind="enumvalue"><name>ENCLOSING_MARK</name></member>
+    <member refid="namespaceXapian_1_1Unicode_126f1790c2ed8d5bdf92c886ac57a3e75b97fbad2627b6307f052489bf2df2e54" kind="enumvalue"><name>COMBINING_SPACING_MARK</name></member>
+    <member refid="namespaceXapian_1_1Unicode_126f1790c2ed8d5bdf92c886ac57a3e758defc349abba2908c50da973c171611b" kind="enumvalue"><name>DECIMAL_DIGIT_NUMBER</name></member>
+    <member refid="namespaceXapian_1_1Unicode_126f1790c2ed8d5bdf92c886ac57a3e75eb11c9cb4994ce13ddc5d0f764ba990b" kind="enumvalue"><name>LETTER_NUMBER</name></member>
+    <member refid="namespaceXapian_1_1Unicode_126f1790c2ed8d5bdf92c886ac57a3e75e8eb6b473586fe2d4fcb89c7b7d54c7d" kind="enumvalue"><name>OTHER_NUMBER</name></member>
+    <member refid="namespaceXapian_1_1Unicode_126f1790c2ed8d5bdf92c886ac57a3e75b79e34865beb78ba2afe0a1f62a81da9" kind="enumvalue"><name>SPACE_SEPARATOR</name></member>
+    <member refid="namespaceXapian_1_1Unicode_126f1790c2ed8d5bdf92c886ac57a3e759174de91d66ca333209e227f175e487f" kind="enumvalue"><name>LINE_SEPARATOR</name></member>
+    <member refid="namespaceXapian_1_1Unicode_126f1790c2ed8d5bdf92c886ac57a3e75a1238f1e66506d6b75bd338d87d8dbd4" kind="enumvalue"><name>PARAGRAPH_SEPARATOR</name></member>
+    <member refid="namespaceXapian_1_1Unicode_126f1790c2ed8d5bdf92c886ac57a3e758f98918709da51f06abd1ec594c734e2" kind="enumvalue"><name>CONTROL</name></member>
+    <member refid="namespaceXapian_1_1Unicode_126f1790c2ed8d5bdf92c886ac57a3e751d3b072035a1a11c778600d96f911430" kind="enumvalue"><name>FORMAT</name></member>
+    <member refid="namespaceXapian_1_1Unicode_126f1790c2ed8d5bdf92c886ac57a3e754879f3318be675df3dbed8db33173ce0" kind="enumvalue"><name>PRIVATE_USE</name></member>
+    <member refid="namespaceXapian_1_1Unicode_126f1790c2ed8d5bdf92c886ac57a3e75a0341ffa1c0cecb5187051fdb15a44ea" kind="enumvalue"><name>SURROGATE</name></member>
+    <member refid="namespaceXapian_1_1Unicode_126f1790c2ed8d5bdf92c886ac57a3e75524e920467803dfbdcb5c47180e9287b" kind="enumvalue"><name>CONNECTOR_PUNCTUATION</name></member>
+    <member refid="namespaceXapian_1_1Unicode_126f1790c2ed8d5bdf92c886ac57a3e75e3d74a4e1994ecbaa76a8d12caf76f66" kind="enumvalue"><name>DASH_PUNCTUATION</name></member>
+    <member refid="namespaceXapian_1_1Unicode_126f1790c2ed8d5bdf92c886ac57a3e75d4f82ed04c5f098a96651a695542ce72" kind="enumvalue"><name>OPEN_PUNCTUATION</name></member>
+    <member refid="namespaceXapian_1_1Unicode_126f1790c2ed8d5bdf92c886ac57a3e7593ae9e22f90af9ee8b8fd15b36ec6b4d" kind="enumvalue"><name>CLOSE_PUNCTUATION</name></member>
+    <member refid="namespaceXapian_1_1Unicode_126f1790c2ed8d5bdf92c886ac57a3e754b9729e2b231bf010363550106bbf8a2" kind="enumvalue"><name>INITIAL_QUOTE_PUNCTUATION</name></member>
+    <member refid="namespaceXapian_1_1Unicode_126f1790c2ed8d5bdf92c886ac57a3e7544ccdcc2f251e6295114da63d05fe1e1" kind="enumvalue"><name>FINAL_QUOTE_PUNCTUATION</name></member>
+    <member refid="namespaceXapian_1_1Unicode_126f1790c2ed8d5bdf92c886ac57a3e75e69787dc13d1231a958a25aaddb3eecb" kind="enumvalue"><name>OTHER_PUNCTUATION</name></member>
+    <member refid="namespaceXapian_1_1Unicode_126f1790c2ed8d5bdf92c886ac57a3e750271c47bade2b8ffb3fbb7c531bcf7d7" kind="enumvalue"><name>MATH_SYMBOL</name></member>
+    <member refid="namespaceXapian_1_1Unicode_126f1790c2ed8d5bdf92c886ac57a3e7565ea5964f8c57ef1cda56c5622b12733" kind="enumvalue"><name>CURRENCY_SYMBOL</name></member>
+    <member refid="namespaceXapian_1_1Unicode_126f1790c2ed8d5bdf92c886ac57a3e753ccf1966a64872615f098631de059c01" kind="enumvalue"><name>MODIFIER_SYMBOL</name></member>
+    <member refid="namespaceXapian_1_1Unicode_126f1790c2ed8d5bdf92c886ac57a3e756259db449f6ecb82c91a066fd44f8fb3" kind="enumvalue"><name>OTHER_SYMBOL</name></member>
+    <member refid="namespaceXapian_1_1Unicode_1e10e7195c9c7b854fbd62e6fad433ce7" kind="function"><name>nonascii_to_utf8</name></member>
+    <member refid="namespaceXapian_1_1Unicode_110a58219f2ed79ddb1ea1d2f3fe8529d" kind="function"><name>to_utf8</name></member>
+    <member refid="namespaceXapian_1_1Unicode_10c2b6a7eb58789472eb53420d2457168" kind="function"><name>append_utf8</name></member>
+    <member refid="namespaceXapian_1_1Unicode_1c72609880fbec74396c588b950e364d8" kind="function"><name>get_category</name></member>
+    <member refid="namespaceXapian_1_1Unicode_163b7b1eb0427b79aa5d21baad3a882f5" kind="function"><name>is_wordchar</name></member>
+    <member refid="namespaceXapian_1_1Unicode_1d9456f9b7d442107077a26f1ff44f938" kind="function"><name>is_whitespace</name></member>
+    <member refid="namespaceXapian_1_1Unicode_18b86de9fd22b27020f12f5ff778feb91" kind="function"><name>is_currency</name></member>
+    <member refid="namespaceXapian_1_1Unicode_11d21a4489d50179855542c3dce1a2f30" kind="function"><name>tolower</name></member>
+    <member refid="namespaceXapian_1_1Unicode_1a7eceb751850e9a8225260bad5f92df8" kind="function"><name>toupper</name></member>
+    <member refid="namespaceXapian_1_1Unicode_16f251b26a53a42d396f43669121d11e4" kind="function"><name>tolower</name></member>
+    <member refid="namespaceXapian_1_1Unicode_1bab2967ed9ef513b4a02bc2c757f3a21" kind="function"><name>toupper</name></member>
+  </compound>
+  <compound refid="namespaceXapian_1_1Unicode_1_1Internal" kind="namespace"><name>Xapian::Unicode::Internal</name>
+    <member refid="namespaceXapian_1_1Unicode_1_1Internal_1beea2fd182aeba046bbaae3979164000" kind="function"><name>get_character_info</name></member>
+    <member refid="namespaceXapian_1_1Unicode_1_1Internal_1c3569ae680562f49ae38bf73e477760e" kind="function"><name>get_case_type</name></member>
+    <member refid="namespaceXapian_1_1Unicode_1_1Internal_14ca7e7e55301f7e49a0d80ec7895a83c" kind="function"><name>get_category</name></member>
+    <member refid="namespaceXapian_1_1Unicode_1_1Internal_1bddf7e6eba5ce92b2dfff2ec0042b5a8" kind="function"><name>get_delta</name></member>
+  </compound>
+  <compound refid="xapian_8h" kind="file"><name>xapian.h</name>
+  </compound>
+  <compound refid="compactor_8h" kind="file"><name>compactor.h</name>
+  </compound>
+  <compound refid="database_8h" kind="file"><name>database.h</name>
+  </compound>
+  <compound refid="dbfactory_8h" kind="file"><name>dbfactory.h</name>
+  </compound>
+  <compound refid="document_8h" kind="file"><name>document.h</name>
+  </compound>
+  <compound refid="enquire_8h" kind="file"><name>enquire.h</name>
+  </compound>
+  <compound refid="error_8h" kind="file"><name>error.h</name>
+  </compound>
+  <compound refid="errorhandler_8h" kind="file"><name>errorhandler.h</name>
+  </compound>
+  <compound refid="expanddecider_8h" kind="file"><name>expanddecider.h</name>
+  </compound>
+  <compound refid="keymaker_8h" kind="file"><name>keymaker.h</name>
+  </compound>
+  <compound refid="letor_8h" kind="file"><name>letor.h</name>
+  </compound>
+  <compound refid="matchspy_8h" kind="file"><name>matchspy.h</name>
+  </compound>
+  <compound refid="positioniterator_8h" kind="file"><name>positioniterator.h</name>
+  </compound>
+  <compound refid="postingiterator_8h" kind="file"><name>postingiterator.h</name>
+  </compound>
+  <compound refid="postingsource_8h" kind="file"><name>postingsource.h</name>
+  </compound>
+  <compound refid="query_8h" kind="file"><name>query.h</name>
+  </compound>
+  <compound refid="queryparser_8h" kind="file"><name>queryparser.h</name>
+  </compound>
+  <compound refid="registry_8h" kind="file"><name>registry.h</name>
+  </compound>
+  <compound refid="stem_8h" kind="file"><name>stem.h</name>
+  </compound>
+  <compound refid="termgenerator_8h" kind="file"><name>termgenerator.h</name>
+  </compound>
+  <compound refid="termiterator_8h" kind="file"><name>termiterator.h</name>
+  </compound>
+  <compound refid="types_8h" kind="file"><name>types.h</name>
+  </compound>
+  <compound refid="unicode_8h" kind="file"><name>unicode.h</name>
+  </compound>
+  <compound refid="valueiterator_8h" kind="file"><name>valueiterator.h</name>
+  </compound>
+  <compound refid="valuesetmatchdecider_8h" kind="file"><name>valuesetmatchdecider.h</name>
+  </compound>
+  <compound refid="version_8h" kind="file"><name>version.h</name>
+    <member refid="version_8h_10f644486c65a4d418c51d9bed03736c1" kind="define"><name>XAPIAN_ENABLE_VISIBILITY</name></member>
+    <member refid="version_8h_1935bc75275b2f5938a5ab6546c59ef09" kind="define"><name>XAPIAN_VERSION</name></member>
+    <member refid="version_8h_16115d1204830e2412fbecdf350156db0" kind="define"><name>XAPIAN_MAJOR_VERSION</name></member>
+    <member refid="version_8h_166bfaa7fe54a17b4d54a18e4bd3a9a14" kind="define"><name>XAPIAN_MINOR_VERSION</name></member>
+    <member refid="version_8h_168a63b70bf9601be738448a3094009c9" kind="define"><name>XAPIAN_REVISION</name></member>
+    <member refid="version_8h_1d2fc1ed64cd6b00885f4446a11cabbf5" kind="define"><name>XAPIAN_HAS_BRASS_BACKEND</name></member>
+    <member refid="version_8h_15ff3ffd6eb8cc926c92164b2d59a4808" kind="define"><name>XAPIAN_HAS_CHERT_BACKEND</name></member>
+    <member refid="version_8h_1a676e6c5e3af903ba1cf0a5764744d07" kind="define"><name>XAPIAN_HAS_INMEMORY_BACKEND</name></member>
+    <member refid="version_8h_1441e90afa8ecb3e4752e51234940baa5" kind="define"><name>XAPIAN_HAS_REMOTE_BACKEND</name></member>
+  </compound>
+  <compound refid="weight_8h" kind="file"><name>weight.h</name>
+  </compound>
+  <compound refid="deprecated" kind="page"><name>deprecated</name>
+  </compound>
+  <compound refid="dir_28bf80c36cac5046bc3229c9a6f0eb74" kind="dir"><name>xapian/</name>
+  </compound>
+</doxygenindex>

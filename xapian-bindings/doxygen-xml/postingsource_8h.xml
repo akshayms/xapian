@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="postingsource_8h" kind="file">
+    <compoundname>postingsource.h</compoundname>
+    <includes refid="database_8h" local="no">xapian/database.h</includes>
+    <includes refid="types_8h" local="no">xapian/types.h</includes>
+    <includes local="no">xapian/visibility.h</includes>
+    <includes local="no">string</includes>
+    <includes local="no">map</includes>
+    <includedby refid="xapian_8h" local="no">xapian.h</includedby>
+    <incdepgraph>
+      <node id="213">
+        <label>xapian/postingsource.h</label>
+        <link refid="postingsource.h"/>
+        <childnode refid="214" relation="include">
+        </childnode>
+        <childnode refid="218" relation="include">
+        </childnode>
+        <childnode refid="223" relation="include">
+        </childnode>
+        <childnode refid="215" relation="include">
+        </childnode>
+        <childnode refid="227" relation="include">
+        </childnode>
+      </node>
+      <node id="221">
+        <label>iterator</label>
+      </node>
+      <node id="222">
+        <label>xapian/derefwrapper.h</label>
+      </node>
+      <node id="223">
+        <label>xapian/visibility.h</label>
+      </node>
+      <node id="215">
+        <label>string</label>
+      </node>
+      <node id="227">
+        <label>map</label>
+      </node>
+      <node id="219">
+        <label>xapian/deprecated.h</label>
+      </node>
+      <node id="218">
+        <label>xapian/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="219" relation="include">
+        </childnode>
+      </node>
+      <node id="220">
+        <label>xapian/positioniterator.h</label>
+        <link refid="positioniterator_8h"/>
+        <childnode refid="221" relation="include">
+        </childnode>
+        <childnode refid="215" relation="include">
+        </childnode>
+        <childnode refid="222" relation="include">
+        </childnode>
+        <childnode refid="218" relation="include">
+        </childnode>
+        <childnode refid="223" relation="include">
+        </childnode>
+      </node>
+      <node id="216">
+        <label>vector</label>
+      </node>
+      <node id="226">
+        <label>xapian/valueiterator.h</label>
+        <link refid="valueiterator_8h"/>
+        <childnode refid="221" relation="include">
+        </childnode>
+        <childnode refid="215" relation="include">
+        </childnode>
+        <childnode refid="222" relation="include">
+        </childnode>
+        <childnode refid="218" relation="include">
+        </childnode>
+        <childnode refid="223" relation="include">
+        </childnode>
+      </node>
+      <node id="224">
+        <label>xapian/postingiterator.h</label>
+        <link refid="postingiterator_8h"/>
+        <childnode refid="221" relation="include">
+        </childnode>
+        <childnode refid="215" relation="include">
+        </childnode>
+        <childnode refid="222" relation="include">
+        </childnode>
+        <childnode refid="220" relation="include">
+        </childnode>
+        <childnode refid="218" relation="include">
+        </childnode>
+        <childnode refid="223" relation="include">
+        </childnode>
+      </node>
+      <node id="225">
+        <label>xapian/termiterator.h</label>
+        <link refid="termiterator_8h"/>
+        <childnode refid="221" relation="include">
+        </childnode>
+        <childnode refid="215" relation="include">
+        </childnode>
+        <childnode refid="222" relation="include">
+        </childnode>
+        <childnode refid="220" relation="include">
+        </childnode>
+        <childnode refid="218" relation="include">
+        </childnode>
+        <childnode refid="223" relation="include">
+        </childnode>
+      </node>
+      <node id="214">
+        <label>xapian/database.h</label>
+        <link refid="database_8h"/>
+        <childnode refid="215" relation="include">
+        </childnode>
+        <childnode refid="216" relation="include">
+        </childnode>
+        <childnode refid="217" relation="include">
+        </childnode>
+        <childnode refid="218" relation="include">
+        </childnode>
+        <childnode refid="220" relation="include">
+        </childnode>
+        <childnode refid="224" relation="include">
+        </childnode>
+        <childnode refid="225" relation="include">
+        </childnode>
+        <childnode refid="226" relation="include">
+        </childnode>
+        <childnode refid="223" relation="include">
+        </childnode>
+      </node>
+      <node id="217">
+        <label>xapian/intrusive_ptr.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="228">
+        <label>xapian/postingsource.h</label>
+        <link refid="postingsource.h"/>
+        <childnode refid="229" relation="include">
+        </childnode>
+      </node>
+      <node id="230">
+        <label>xapian/letor.h</label>
+        <link refid="letor_8h"/>
+      </node>
+      <node id="229">
+        <label>xapian.h</label>
+        <link refid="xapian_8h"/>
+        <childnode refid="230" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classXapian_1_1PostingSource" prot="public">Xapian::PostingSource</innerclass>
+    <innerclass refid="classXapian_1_1ValuePostingSource" prot="public">Xapian::ValuePostingSource</innerclass>
+    <innerclass refid="classXapian_1_1ValueWeightPostingSource" prot="public">Xapian::ValueWeightPostingSource</innerclass>
+    <innerclass refid="classXapian_1_1DecreasingValueWeightPostingSource" prot="public">Xapian::DecreasingValueWeightPostingSource</innerclass>
+    <innerclass refid="classXapian_1_1ValueMapPostingSource" prot="public">Xapian::ValueMapPostingSource</innerclass>
+    <innerclass refid="classXapian_1_1FixedWeightPostingSource" prot="public">Xapian::FixedWeightPostingSource</innerclass>
+    <innernamespace refid="namespaceXapian">Xapian</innernamespace>
+    <briefdescription>
+<para>External sources of posting information. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/postingsource.h"/>
+  </compounddef>
+</doxygen>

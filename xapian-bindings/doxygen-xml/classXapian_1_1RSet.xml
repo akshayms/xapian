@@ -1,0 +1,252 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="classXapian_1_1RSet" kind="class" prot="public">
+    <compoundname>Xapian::RSet</compoundname>
+    <includes local="no">enquire.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classXapian_1_1RSet_14ed370d3d5df25f58599b22d3a824467" prot="public" static="no" mutable="no">
+        <type>Xapian::Internal::intrusive_ptr&lt; Internal &gt;</type>
+        <definition>Xapian::Internal::intrusive_ptr&lt;Internal&gt; Xapian::RSet::internal</definition>
+        <argsstring></argsstring>
+        <name>internal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="569" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" bodystart="566" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classXapian_1_1RSet_150ed96a2396032db1297bdb3bef3fbc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::RSet::RSet</definition>
+        <argsstring>(const RSet &amp;rset)</argsstring>
+        <name>RSet</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1RSet" kindref="compound">RSet</ref> &amp;</type>
+          <declname>rset</declname>
+        </param>
+        <briefdescription>
+<para>Copy constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="572"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1RSet_1105bf6917dffc68fb551e775fd67202a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::RSet::operator=</definition>
+        <argsstring>(const RSet &amp;rset)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1RSet" kindref="compound">RSet</ref> &amp;</type>
+          <declname>rset</declname>
+        </param>
+        <briefdescription>
+<para>Assignment operator. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="575"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1RSet_1142298edba05bbdc1d1dd11fdbc88020" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::RSet::RSet</definition>
+        <argsstring>()</argsstring>
+        <name>RSet</name>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="578"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1RSet_15571c4c3bbeeca8e051f36037c62b70f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::RSet::~RSet</definition>
+        <argsstring>()</argsstring>
+        <name>~RSet</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="581"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1RSet_13db90f712138087c56a026c51a3c5124" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceXapian_17f30aa95f0c42b117dafaf66ba24241d" kindref="member">Xapian::doccount</ref></type>
+        <definition>Xapian::doccount Xapian::RSet::size</definition>
+        <argsstring>() const </argsstring>
+        <name>size</name>
+        <briefdescription>
+<para>The number of documents in this R-Set. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="584"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1RSet_155cb1a5a9d7410e4dcc2a786934df505" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Xapian::RSet::empty</definition>
+        <argsstring>() const </argsstring>
+        <name>empty</name>
+        <briefdescription>
+<para>Test if this R-Set is empty. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="587"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1RSet_14eec40ff21b85b939ebab9a710df747f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::RSet::add_document</definition>
+        <argsstring>(Xapian::docid did)</argsstring>
+        <name>add_document</name>
+        <param>
+          <type><ref refid="namespaceXapian_18fa9094bebe1256a7be935a5ede87a64" kindref="member">Xapian::docid</ref></type>
+          <declname>did</declname>
+        </param>
+        <briefdescription>
+<para>Add a document to the relevance set. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="590"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1RSet_1adc23b11f6ca60415a3fa595325af5eb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::RSet::add_document</definition>
+        <argsstring>(const Xapian::MSetIterator &amp;i)</argsstring>
+        <name>add_document</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1MSetIterator" kindref="compound">Xapian::MSetIterator</ref> &amp;</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Add a document to the relevance set. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="593" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" bodystart="593" bodyend="593"/>
+        <references refid="classXapian_1_1RSet_1adc23b11f6ca60415a3fa595325af5eb" compoundref="enquire_8h" startline="593" endline="593">add_document</references>
+        <referencedby refid="classXapian_1_1RSet_1adc23b11f6ca60415a3fa595325af5eb" compoundref="enquire_8h" startline="593" endline="593">add_document</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1RSet_158ae59e71967d119296231c6ac905dbb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::RSet::remove_document</definition>
+        <argsstring>(Xapian::docid did)</argsstring>
+        <name>remove_document</name>
+        <param>
+          <type><ref refid="namespaceXapian_18fa9094bebe1256a7be935a5ede87a64" kindref="member">Xapian::docid</ref></type>
+          <declname>did</declname>
+        </param>
+        <briefdescription>
+<para>Remove a document from the relevance set. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="596"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1RSet_1459ec695ed5ab2e10b56aa56c2e453be" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::RSet::remove_document</definition>
+        <argsstring>(const Xapian::MSetIterator &amp;i)</argsstring>
+        <name>remove_document</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1MSetIterator" kindref="compound">Xapian::MSetIterator</ref> &amp;</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Remove a document from the relevance set. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="599" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" bodystart="599" bodyend="599"/>
+        <references refid="classXapian_1_1RSet_1459ec695ed5ab2e10b56aa56c2e453be" compoundref="enquire_8h" startline="599" endline="599">remove_document</references>
+        <referencedby refid="classXapian_1_1RSet_1459ec695ed5ab2e10b56aa56c2e453be" compoundref="enquire_8h" startline="599" endline="599">remove_document</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1RSet_124efe6d2b88a8f799be5078994e49098" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Xapian::RSet::contains</definition>
+        <argsstring>(Xapian::docid did) const </argsstring>
+        <name>contains</name>
+        <param>
+          <type><ref refid="namespaceXapian_18fa9094bebe1256a7be935a5ede87a64" kindref="member">Xapian::docid</ref></type>
+          <declname>did</declname>
+        </param>
+        <briefdescription>
+<para>Test if a given document in the relevance set. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="602"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1RSet_1d05be25606bc278d55ecefa5c7e7254c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Xapian::RSet::contains</definition>
+        <argsstring>(const Xapian::MSetIterator &amp;i) const </argsstring>
+        <name>contains</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1MSetIterator" kindref="compound">Xapian::MSetIterator</ref> &amp;</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Test if a given document in the relevance set. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="605" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" bodystart="605" bodyend="605"/>
+        <references refid="classXapian_1_1RSet_1d05be25606bc278d55ecefa5c7e7254c" compoundref="enquire_8h" startline="605" endline="605">contains</references>
+        <referencedby refid="classXapian_1_1RSet_1d05be25606bc278d55ecefa5c7e7254c" compoundref="enquire_8h" startline="605" endline="605">contains</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1RSet_1636afe3253b0f8922dffc3a47808b1a1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Xapian::RSet::get_description</definition>
+        <argsstring>() const </argsstring>
+        <name>get_description</name>
+        <briefdescription>
+<para>Return a string describing this object. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="608"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A relevance set (R-Set). </para>    </briefdescription>
+    <detaileddescription>
+<para>This is the set of documents which are marked as relevant, for use in modifying the term weights, and in performing query expansion. </para>    </detaileddescription>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="563" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" bodystart="563" bodyend="609"/>
+    <listofallmembers>
+      <member refid="classXapian_1_1RSet_14eec40ff21b85b939ebab9a710df747f" prot="public" virt="non-virtual"><scope>Xapian::RSet</scope><name>add_document</name></member>
+      <member refid="classXapian_1_1RSet_1adc23b11f6ca60415a3fa595325af5eb" prot="public" virt="non-virtual"><scope>Xapian::RSet</scope><name>add_document</name></member>
+      <member refid="classXapian_1_1RSet_124efe6d2b88a8f799be5078994e49098" prot="public" virt="non-virtual"><scope>Xapian::RSet</scope><name>contains</name></member>
+      <member refid="classXapian_1_1RSet_1d05be25606bc278d55ecefa5c7e7254c" prot="public" virt="non-virtual"><scope>Xapian::RSet</scope><name>contains</name></member>
+      <member refid="classXapian_1_1RSet_155cb1a5a9d7410e4dcc2a786934df505" prot="public" virt="non-virtual"><scope>Xapian::RSet</scope><name>empty</name></member>
+      <member refid="classXapian_1_1RSet_1636afe3253b0f8922dffc3a47808b1a1" prot="public" virt="non-virtual"><scope>Xapian::RSet</scope><name>get_description</name></member>
+      <member refid="classXapian_1_1RSet_14ed370d3d5df25f58599b22d3a824467" prot="public" virt="non-virtual"><scope>Xapian::RSet</scope><name>internal</name></member>
+      <member refid="classXapian_1_1RSet_1105bf6917dffc68fb551e775fd67202a" prot="public" virt="non-virtual"><scope>Xapian::RSet</scope><name>operator=</name></member>
+      <member refid="classXapian_1_1RSet_158ae59e71967d119296231c6ac905dbb" prot="public" virt="non-virtual"><scope>Xapian::RSet</scope><name>remove_document</name></member>
+      <member refid="classXapian_1_1RSet_1459ec695ed5ab2e10b56aa56c2e453be" prot="public" virt="non-virtual"><scope>Xapian::RSet</scope><name>remove_document</name></member>
+      <member refid="classXapian_1_1RSet_150ed96a2396032db1297bdb3bef3fbc5" prot="public" virt="non-virtual"><scope>Xapian::RSet</scope><name>RSet</name></member>
+      <member refid="classXapian_1_1RSet_1142298edba05bbdc1d1dd11fdbc88020" prot="public" virt="non-virtual"><scope>Xapian::RSet</scope><name>RSet</name></member>
+      <member refid="classXapian_1_1RSet_13db90f712138087c56a026c51a3c5124" prot="public" virt="non-virtual"><scope>Xapian::RSet</scope><name>size</name></member>
+      <member refid="classXapian_1_1RSet_15571c4c3bbeeca8e051f36037c62b70f" prot="public" virt="non-virtual"><scope>Xapian::RSet</scope><name>~RSet</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

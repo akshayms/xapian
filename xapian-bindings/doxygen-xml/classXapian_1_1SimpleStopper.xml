@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="classXapian_1_1SimpleStopper" kind="class" prot="public">
+    <compoundname>Xapian::SimpleStopper</compoundname>
+    <basecompoundref refid="classXapian_1_1Stopper" prot="public" virt="non-virtual">Xapian::Stopper</basecompoundref>
+    <includes local="no">queryparser.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classXapian_1_1SimpleStopper_11af70d8b3a64870db3430ef92cb7c0b0" prot="private" static="no" mutable="no">
+        <type>std::set&lt; std::string &gt;</type>
+        <definition>std::set&lt;std::string&gt; Xapian::SimpleStopper::stop_words</definition>
+        <argsstring></argsstring>
+        <name>stop_words</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/queryparser.h" line="54" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/queryparser.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classXapian_1_1SimpleStopper_1524d06efe68acee3358809108b5ad22e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::SimpleStopper::SimpleStopper</definition>
+        <argsstring>()</argsstring>
+        <name>SimpleStopper</name>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/queryparser.h" line="58" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/queryparser.h" bodystart="58" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1SimpleStopper_1a11bad1a50af1488a138fac82613e2c7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Iterator</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>Xapian::SimpleStopper::SimpleStopper</definition>
+        <argsstring>(Iterator begin, Iterator end)</argsstring>
+        <name>SimpleStopper</name>
+        <param>
+          <type>Iterator</type>
+          <declname>begin</declname>
+        </param>
+        <param>
+          <type>Iterator</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+<para>Initialise from a pair of iterators. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/queryparser.h" line="63" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/queryparser.h" bodystart="63" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1SimpleStopper_148b8ce2de81a61460911adc065ba8afb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::SimpleStopper::add</definition>
+        <argsstring>(const std::string &amp;word)</argsstring>
+        <name>add</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>word</declname>
+        </param>
+        <briefdescription>
+<para>Add a single stop word. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/queryparser.h" line="74" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/queryparser.h" bodystart="74" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1SimpleStopper_156543c160db0b45ab73b5789864a3cda" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool Xapian::SimpleStopper::operator()</definition>
+        <argsstring>(const std::string &amp;term) const </argsstring>
+        <name>operator()</name>
+        <reimplements refid="classXapian_1_1Stopper_128c9649a93987abb97d06998a146d6fe">operator()</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>term</declname>
+        </param>
+        <briefdescription>
+<para>Is term a stop-word? </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/queryparser.h" line="77" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/queryparser.h" bodystart="77" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1SimpleStopper_1eb0bddbf6805b12f760e707032f4cbb3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string Xapian::SimpleStopper::get_description</definition>
+        <argsstring>() const </argsstring>
+        <name>get_description</name>
+        <reimplements refid="classXapian_1_1Stopper_1f3bcce7e5a1c2a8d96627083939145b2">get_description</reimplements>
+        <briefdescription>
+<para>Return a string describing this object. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/queryparser.h" line="82"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Simple implementation of <ref refid="classXapian_1_1Stopper" kindref="compound">Stopper</ref> class - this will suit most users. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="675">
+        <label>Xapian::SimpleStopper</label>
+        <link refid="classXapian_1_1SimpleStopper"/>
+        <childnode refid="676" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="676">
+        <label>Xapian::Stopper</label>
+        <link refid="classXapian_1_1Stopper"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="677">
+        <label>Xapian::SimpleStopper</label>
+        <link refid="classXapian_1_1SimpleStopper"/>
+        <childnode refid="678" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="678">
+        <label>Xapian::Stopper</label>
+        <link refid="classXapian_1_1Stopper"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/queryparser.h" line="53" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/queryparser.h" bodystart="53" bodyend="83"/>
+    <listofallmembers>
+      <member refid="classXapian_1_1SimpleStopper_148b8ce2de81a61460911adc065ba8afb" prot="public" virt="non-virtual"><scope>Xapian::SimpleStopper</scope><name>add</name></member>
+      <member refid="classXapian_1_1SimpleStopper_1eb0bddbf6805b12f760e707032f4cbb3" prot="public" virt="virtual"><scope>Xapian::SimpleStopper</scope><name>get_description</name></member>
+      <member refid="classXapian_1_1SimpleStopper_156543c160db0b45ab73b5789864a3cda" prot="public" virt="virtual"><scope>Xapian::SimpleStopper</scope><name>operator()</name></member>
+      <member refid="classXapian_1_1SimpleStopper_1524d06efe68acee3358809108b5ad22e" prot="public" virt="non-virtual"><scope>Xapian::SimpleStopper</scope><name>SimpleStopper</name></member>
+      <member refid="classXapian_1_1SimpleStopper_1a11bad1a50af1488a138fac82613e2c7" prot="public" virt="non-virtual"><scope>Xapian::SimpleStopper</scope><name>SimpleStopper</name></member>
+      <member refid="classXapian_1_1SimpleStopper_11af70d8b3a64870db3430ef92cb7c0b0" prot="private" virt="non-virtual"><scope>Xapian::SimpleStopper</scope><name>stop_words</name></member>
+      <member refid="classXapian_1_1Stopper_1b7ae723a6b0a1866196b7ed139184208" prot="public" virt="virtual"><scope>Xapian::SimpleStopper</scope><name>~Stopper</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

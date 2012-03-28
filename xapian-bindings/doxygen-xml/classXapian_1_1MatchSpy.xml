@@ -1,0 +1,250 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="classXapian_1_1MatchSpy" kind="class" prot="public">
+    <compoundname>Xapian::MatchSpy</compoundname>
+    <derivedcompoundref refid="classXapian_1_1ValueCountMatchSpy" prot="public" virt="non-virtual">Xapian::ValueCountMatchSpy</derivedcompoundref>
+    <includes local="no">matchspy.h</includes>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classXapian_1_1MatchSpy_1d7ff8547927c2c984aa99f980747e69a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::MatchSpy::operator=</definition>
+        <argsstring>(const MatchSpy &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1MatchSpy" kindref="compound">MatchSpy</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Don&apos;t allow assignment. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/matchspy.h" line="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1MatchSpy_16669be9ee67e00be748f4f1e17d63a89" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::MatchSpy::MatchSpy</definition>
+        <argsstring>(const MatchSpy &amp;)</argsstring>
+        <name>MatchSpy</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1MatchSpy" kindref="compound">MatchSpy</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Don&apos;t allow copying. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/matchspy.h" line="50"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classXapian_1_1MatchSpy_16f1b24d1ef113cf625ce75b6320212ed" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::MatchSpy::MatchSpy</definition>
+        <argsstring>()</argsstring>
+        <name>MatchSpy</name>
+        <briefdescription>
+<para>Default constructor, needed by subclass constructors. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/matchspy.h" line="54" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/matchspy.h" bodystart="54" bodyend="54"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classXapian_1_1MatchSpy_133eef1126286858ed6c9908028dcae5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual Xapian::MatchSpy::~MatchSpy</definition>
+        <argsstring>()</argsstring>
+        <name>~MatchSpy</name>
+        <briefdescription>
+<para>Virtual destructor, because we have virtual methods. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/matchspy.h" line="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1MatchSpy_11d4a22970c8042a0bd697b473625f9bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Xapian::MatchSpy::operator()</definition>
+        <argsstring>(const Xapian::Document &amp;doc, Xapian::weight wt)=0</argsstring>
+        <name>operator()</name>
+        <reimplementedby refid="classXapian_1_1ValueCountMatchSpy_1ba74fcbd87fa4a173d7cc6b7a26567d4">operator()</reimplementedby>
+        <param>
+          <type>const <ref refid="classXapian_1_1Document" kindref="compound">Xapian::Document</ref> &amp;</type>
+          <declname>doc</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceXapian_1cac12803afc9e24ee5141c119acb8884" kindref="member">Xapian::weight</ref></type>
+          <declname>wt</declname>
+        </param>
+        <briefdescription>
+<para>Register a document with the match spy. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is called by the matcher once with each document seen by the matcher during the match process. Note that the matcher will often not see all the documents which match the query, due to optimisations which allow low-weighted documents to be skipped, and allow the match process to be terminated early.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>doc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The document seen by the match spy. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>wt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The weight of the document. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/matchspy.h" line="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1MatchSpy_1d172b16efde32cf0dcbb0fb6fb43dc33" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classXapian_1_1MatchSpy" kindref="compound">MatchSpy</ref> *</type>
+        <definition>virtual MatchSpy* Xapian::MatchSpy::clone</definition>
+        <argsstring>() const </argsstring>
+        <name>clone</name>
+        <reimplementedby refid="classXapian_1_1ValueCountMatchSpy_12f3f76f7a269b15b22e5f266a166ed00">clone</reimplementedby>
+        <briefdescription>
+<para>Clone the match spy. </para>        </briefdescription>
+        <detaileddescription>
+<para>The clone should inherit the configuration of the parent, but need not inherit the state. ie, the clone does not need to be passed information about the results seen by the parent.</para><para>If you don&apos;t want to support the remote backend in your match spy, you can use the default implementation which simply throws <ref refid="classXapian_1_1UnimplementedError" kindref="compound">Xapian::UnimplementedError</ref>.</para><para>Note that the returned object will be deallocated by <ref refid="namespaceXapian" kindref="compound">Xapian</ref> after use with &quot;delete&quot;. It must therefore have been allocated with &quot;new&quot;. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/matchspy.h" line="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1MatchSpy_14f7e79243aed9b81fba8a6c7f9500f0f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string Xapian::MatchSpy::name</definition>
+        <argsstring>() const </argsstring>
+        <name>name</name>
+        <reimplementedby refid="classXapian_1_1ValueCountMatchSpy_10156235fbae335975efe173cad85ea0a">name</reimplementedby>
+        <briefdescription>
+<para>Return the name of this match spy. </para>        </briefdescription>
+        <detaileddescription>
+<para>This name is used by the remote backend. It is passed with the serialised parameters to the remote server so that it knows which class to create.</para><para>Return the full namespace-qualified name of your class here - if your class is called MyApp::FooMatchSpy, return &quot;MyApp::FooMatchSpy&quot; from this method.</para><para>If you don&apos;t want to support the remote backend in your match spy, you can use the default implementation which simply throws <ref refid="classXapian_1_1UnimplementedError" kindref="compound">Xapian::UnimplementedError</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/matchspy.h" line="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1MatchSpy_159b3e4c181f9dc78e78609949ffe6ec7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string Xapian::MatchSpy::serialise</definition>
+        <argsstring>() const </argsstring>
+        <name>serialise</name>
+        <reimplementedby refid="classXapian_1_1ValueCountMatchSpy_14b0b12f88a83fa854160d62d3f0b1a66">serialise</reimplementedby>
+        <briefdescription>
+<para>Return this object&apos;s parameters serialised as a single string. </para>        </briefdescription>
+        <detaileddescription>
+<para>If you don&apos;t want to support the remote backend in your match spy, you can use the default implementation which simply throws <ref refid="classXapian_1_1UnimplementedError" kindref="compound">Xapian::UnimplementedError</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/matchspy.h" line="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1MatchSpy_18ddda381134be9b9d973e746753ad3e2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classXapian_1_1MatchSpy" kindref="compound">MatchSpy</ref> *</type>
+        <definition>virtual MatchSpy* Xapian::MatchSpy::unserialise</definition>
+        <argsstring>(const std::string &amp;s, const Registry &amp;context) const </argsstring>
+        <name>unserialise</name>
+        <reimplementedby refid="classXapian_1_1ValueCountMatchSpy_100c8fb9751f52c6f4a6610e23b130690">unserialise</reimplementedby>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classXapian_1_1Registry" kindref="compound">Registry</ref> &amp;</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Unserialise parameters. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method unserialises parameters serialised by the <emphasis><ref refid="classXapian_1_1MatchSpy_159b3e4c181f9dc78e78609949ffe6ec7" kindref="member">serialise()</ref></emphasis> method and allocates and returns a new object initialised with them.</para><para>If you don&apos;t want to support the remote backend in your match spy, you can use the default implementation which simply throws <ref refid="classXapian_1_1UnimplementedError" kindref="compound">Xapian::UnimplementedError</ref>.</para><para>Note that the returned object will be deallocated by <ref refid="namespaceXapian" kindref="compound">Xapian</ref> after use with &quot;delete&quot;. It must therefore have been allocated with &quot;new&quot;. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/matchspy.h" line="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1MatchSpy_13892fcdd67c425ff1ba493e2ac397ce9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string Xapian::MatchSpy::serialise_results</definition>
+        <argsstring>() const </argsstring>
+        <name>serialise_results</name>
+        <reimplementedby refid="classXapian_1_1ValueCountMatchSpy_1bf75525e101f358d07750abc466115da">serialise_results</reimplementedby>
+        <briefdescription>
+<para>Serialise the results of this match spy. </para>        </briefdescription>
+        <detaileddescription>
+<para>If you don&apos;t want to support the remote backend in your match spy, you can use the default implementation which simply throws <ref refid="classXapian_1_1UnimplementedError" kindref="compound">Xapian::UnimplementedError</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/matchspy.h" line="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1MatchSpy_1921014b484002f909cd9649477e25c81" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Xapian::MatchSpy::merge_results</definition>
+        <argsstring>(const std::string &amp;s)</argsstring>
+        <name>merge_results</name>
+        <reimplementedby refid="classXapian_1_1ValueCountMatchSpy_1cc26d27271e945dc555c8f981b4fe775">merge_results</reimplementedby>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Unserialise some results, and merge them into this matchspy. </para>        </briefdescription>
+        <detaileddescription>
+<para>The order in which results are merged should not be significant, since this order is not specified (and will vary depending on the speed of the search in each sub-database).</para><para>If you don&apos;t want to support the remote backend in your match spy, you can use the default implementation which simply throws <ref refid="classXapian_1_1UnimplementedError" kindref="compound">Xapian::UnimplementedError</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/matchspy.h" line="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1MatchSpy_1b12e942f6657c86938cb83a55febc4e2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string Xapian::MatchSpy::get_description</definition>
+        <argsstring>() const </argsstring>
+        <name>get_description</name>
+        <reimplementedby refid="classXapian_1_1ValueCountMatchSpy_1350eb6f93aa5e01845a56f2fd30391f8">get_description</reimplementedby>
+        <briefdescription>
+<para>Return a string describing this object. </para>        </briefdescription>
+        <detaileddescription>
+<para>This default implementation returns a generic answer, to avoid forcing those deriving their own <ref refid="classXapian_1_1MatchSpy" kindref="compound">MatchSpy</ref> subclasses from having to implement this (they may not care what <ref refid="classXapian_1_1MatchSpy_1b12e942f6657c86938cb83a55febc4e2" kindref="member">get_description()</ref> gives for their subclass). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/matchspy.h" line="155"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Abstract base class for match spies. </para>    </briefdescription>
+    <detaileddescription>
+<para>The subclasses will generally accumulate information seen during the match, to calculate aggregate functions, or other profiles of the matching documents. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="543">
+        <label>Xapian::ValueCountMatchSpy</label>
+        <link refid="classXapian_1_1ValueCountMatchSpy"/>
+        <childnode refid="542" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="542">
+        <label>Xapian::MatchSpy</label>
+        <link refid="classXapian_1_1MatchSpy"/>
+      </node>
+    </inheritancegraph>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/matchspy.h" line="44" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/matchspy.h" bodystart="44" bodyend="156"/>
+    <listofallmembers>
+      <member refid="classXapian_1_1MatchSpy_1d172b16efde32cf0dcbb0fb6fb43dc33" prot="public" virt="virtual"><scope>Xapian::MatchSpy</scope><name>clone</name></member>
+      <member refid="classXapian_1_1MatchSpy_1b12e942f6657c86938cb83a55febc4e2" prot="public" virt="virtual"><scope>Xapian::MatchSpy</scope><name>get_description</name></member>
+      <member refid="classXapian_1_1MatchSpy_16669be9ee67e00be748f4f1e17d63a89" prot="private" virt="non-virtual"><scope>Xapian::MatchSpy</scope><name>MatchSpy</name></member>
+      <member refid="classXapian_1_1MatchSpy_16f1b24d1ef113cf625ce75b6320212ed" prot="protected" virt="non-virtual"><scope>Xapian::MatchSpy</scope><name>MatchSpy</name></member>
+      <member refid="classXapian_1_1MatchSpy_1921014b484002f909cd9649477e25c81" prot="public" virt="virtual"><scope>Xapian::MatchSpy</scope><name>merge_results</name></member>
+      <member refid="classXapian_1_1MatchSpy_14f7e79243aed9b81fba8a6c7f9500f0f" prot="public" virt="virtual"><scope>Xapian::MatchSpy</scope><name>name</name></member>
+      <member refid="classXapian_1_1MatchSpy_11d4a22970c8042a0bd697b473625f9bf" prot="public" virt="pure-virtual"><scope>Xapian::MatchSpy</scope><name>operator()</name></member>
+      <member refid="classXapian_1_1MatchSpy_1d7ff8547927c2c984aa99f980747e69a" prot="private" virt="non-virtual"><scope>Xapian::MatchSpy</scope><name>operator=</name></member>
+      <member refid="classXapian_1_1MatchSpy_159b3e4c181f9dc78e78609949ffe6ec7" prot="public" virt="virtual"><scope>Xapian::MatchSpy</scope><name>serialise</name></member>
+      <member refid="classXapian_1_1MatchSpy_13892fcdd67c425ff1ba493e2ac397ce9" prot="public" virt="virtual"><scope>Xapian::MatchSpy</scope><name>serialise_results</name></member>
+      <member refid="classXapian_1_1MatchSpy_18ddda381134be9b9d973e746753ad3e2" prot="public" virt="virtual"><scope>Xapian::MatchSpy</scope><name>unserialise</name></member>
+      <member refid="classXapian_1_1MatchSpy_133eef1126286858ed6c9908028dcae5b" prot="public" virt="virtual"><scope>Xapian::MatchSpy</scope><name>~MatchSpy</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

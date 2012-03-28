@@ -1,0 +1,138 @@
+10
+
+dir
+12767
+svn://svn.tartarus.org/swig/trunk/Examples/java
+svn://svn.tartarus.org/swig
+
+
+
+2009-08-21T00:25:11.564152Z
+11663
+wsfulton
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+cce2a4f7-dc27-40e0-b75d-b3f4d8458e25
+
+typemap
+dir
+
+pointer
+dir
+
+funcptr
+dir
+
+native
+dir
+
+check.list
+file
+
+
+
+
+2012-03-21T13:02:45.789786Z
+16eb9696897270871e7a2c6b1e0f1d38
+2007-08-09T23:47:13.829830Z
+9887
+wsfulton
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+141
+
+extend
+dir
+
+multimap
+dir
+
+simple
+dir
+
+callback
+dir
+
+reference
+dir
+
+enum
+dir
+
+class
+dir
+
+variables
+dir
+
+index.html
+file
+
+
+
+
+2012-03-21T13:02:45.789786Z
+9aeb62e4bbb420a2c0b15cb04bee562b
+2008-11-17T22:47:55.231510Z
+10932
+wsfulton
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2557
+
+template
+dir
+
+constants
+dir
+

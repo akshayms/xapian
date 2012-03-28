@@ -1,0 +1,14 @@
+K 13
+svn:eol-style
+V 6
+native
+K 12
+svn:keywords
+V 23
+Author Date Id Revision
+K 13
+svn:mergeinfo
+V 148
+/branches/replication_fixes/xapian-core/backends/brass/brass_table.h:14149-14152
+/trunk/xapian-core/backends/brass/brass_table.h:2-13775,15485-16044
+END

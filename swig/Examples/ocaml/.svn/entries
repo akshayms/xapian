@@ -1,0 +1,92 @@
+10
+
+dir
+12767
+svn://svn.tartarus.org/swig/trunk/Examples/ocaml
+svn://svn.tartarus.org/swig
+
+
+
+2011-02-14T07:22:06.122187Z
+12460
+wsfulton
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+cce2a4f7-dc27-40e0-b75d-b3f4d8458e25
+
+std_string
+dir
+
+scoped_enum
+dir
+
+stl
+dir
+
+shapes
+dir
+
+check.list
+file
+
+
+
+
+2012-03-21T13:02:53.789786Z
+c09c2d7f5d5d4fd20e0d5c74d691af6b
+2003-12-05T22:59:42.000000Z
+5490
+arty
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+116
+
+strings_test
+dir
+
+simple
+dir
+
+std_vector
+dir
+
+argout_ref
+dir
+
+contract
+dir
+
+string_from_ptr
+dir
+

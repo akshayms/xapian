@@ -1,0 +1,183 @@
+10
+
+dir
+12767
+svn://svn.tartarus.org/swig/trunk/Examples/python
+svn://svn.tartarus.org/swig
+
+
+
+2011-04-07T21:20:10.376142Z
+12615
+szager
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+cce2a4f7-dc27-40e0-b75d-b3f4d8458e25
+
+pointer
+dir
+
+funcptr
+dir
+
+multimap
+dir
+
+simple
+dir
+
+exception
+dir
+
+varargs
+dir
+
+variables
+dir
+
+std_vector
+dir
+
+contract
+dir
+
+docstrings
+dir
+
+functor
+dir
+
+java
+dir
+
+check.list
+file
+
+
+
+
+2012-03-21T13:02:44.169786Z
+afd1c666418ff8a673adba054a11c51c
+2008-05-01T21:42:38.061648Z
+10410
+wsfulton
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+274
+
+std_map
+dir
+
+extend
+dir
+
+exceptproxy
+dir
+
+operator
+dir
+
+libffi
+dir
+
+callback
+dir
+
+swigrun
+dir
+
+reference
+dir
+
+performance
+dir
+
+funcptr2
+dir
+
+enum
+dir
+
+class
+dir
+
+import_template
+dir
+
+index.html
+file
+
+
+
+
+2012-03-21T13:02:44.173786Z
+040f204328b68b543041c32f6714cf72
+2007-10-17T21:47:25.979598Z
+10005
+wsfulton
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3439
+
+import
+dir
+
+template
+dir
+
+smartptr
+dir
+
+constants
+dir
+

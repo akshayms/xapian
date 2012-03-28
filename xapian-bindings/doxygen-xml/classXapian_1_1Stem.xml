@@ -1,0 +1,207 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="classXapian_1_1Stem" kind="class" prot="public">
+    <compoundname>Xapian::Stem</compoundname>
+    <includes local="no">stem.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classXapian_1_1Stem_152b651bf16d9c492da32bef91f30e1ff" prot="private" static="no" mutable="no">
+        <type>Xapian::Internal::intrusive_ptr&lt; <ref refid="structXapian_1_1StemImplementation" kindref="compound">StemImplementation</ref> &gt;</type>
+        <definition>Xapian::Internal::intrusive_ptr&lt;StemImplementation&gt; Xapian::Stem::internal</definition>
+        <argsstring></argsstring>
+        <name>internal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/stem.h" line="50" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/stem.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classXapian_1_1Stem_1960dac1047a3cfe21ff3d013df1d41dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::Stem::Stem</definition>
+        <argsstring>(const Stem &amp;o)</argsstring>
+        <name>Stem</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1Stem" kindref="compound">Stem</ref> &amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+<para>Copy constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/stem.h" line="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Stem_1c9e8f12c49c8b3f62de1b8465298cf8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classXapian_1_1Stem" kindref="compound">Stem</ref> &amp;</type>
+        <definition>Stem&amp; Xapian::Stem::operator=</definition>
+        <argsstring>(const Stem &amp;o)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1Stem" kindref="compound">Stem</ref> &amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+<para>Assignment. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/stem.h" line="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Stem_10119ddb5f571853900db97689bf9122d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::Stem::Stem</definition>
+        <argsstring>()</argsstring>
+        <name>Stem</name>
+        <briefdescription>
+<para>Construct a <ref refid="classXapian_1_1Stem" kindref="compound">Xapian::Stem</ref> object which doesn&apos;t change terms. </para>        </briefdescription>
+        <detaileddescription>
+<para>Equivalent to <ref refid="classXapian_1_1Stem" kindref="compound">Stem</ref>(&quot;none&quot;). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/stem.h" line="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Stem_16c46cedf2047b159a7e4c9d4468242b1" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::Stem::Stem</definition>
+        <argsstring>(const std::string &amp;language)</argsstring>
+        <name>Stem</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>language</declname>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="classXapian_1_1Stem" kindref="compound">Xapian::Stem</ref> object for a particular language. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>language</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Either the English name for the language or the two letter ISO639 code.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+The following language names are understood (aliases follow the name):</para><para><itemizedlist>
+<listitem><para>none - don&apos;t stem terms</para></listitem><listitem><para>armenian (hy)</para></listitem><listitem><para>basque (eu)</para></listitem><listitem><para>catalan (ca)</para></listitem><listitem><para>danish (da)</para></listitem><listitem><para>dutch (nl)</para></listitem><listitem><para>english (en) - Martin Porter&apos;s 2002 revision of his stemmer</para></listitem><listitem><para>english_lovins (lovins) - Lovin&apos;s stemmer</para></listitem><listitem><para>english_porter (porter) - Porter&apos;s stemmer as described in his 1980 paper</para></listitem><listitem><para>finnish (fi)</para></listitem><listitem><para>french (fr)</para></listitem><listitem><para>german (de)</para></listitem><listitem><para>german2 - Normalises umlauts and <szlig/></para></listitem><listitem><para>hungarian (hu)</para></listitem><listitem><para>italian (it)</para></listitem><listitem><para>kraaij_pohlmann - A different Dutch stemmer</para></listitem><listitem><para>norwegian (nb, nn, no)</para></listitem><listitem><para>portuguese (pt)</para></listitem><listitem><para>romanian (ro)</para></listitem><listitem><para>russian (ru)</para></listitem><listitem><para>spanish (es)</para></listitem><listitem><para>swedish (sv)</para></listitem><listitem><para>turkish (tr)</para></listitem></itemizedlist>
+</para><para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classXapian_1_1InvalidArgumentError" kindref="compound">Xapian::InvalidArgumentError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is thrown if language isn&apos;t recognised. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/stem.h" line="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Stem_1bae2c707ea039fc519103ed75c7429fb" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::Stem::Stem</definition>
+        <argsstring>(StemImplementation *p)</argsstring>
+        <name>Stem</name>
+        <param>
+          <type><ref refid="structXapian_1_1StemImplementation" kindref="compound">StemImplementation</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="classXapian_1_1Stem" kindref="compound">Xapian::Stem</ref> object with a user-provided stemming algorithm. </para>        </briefdescription>
+        <detaileddescription>
+<para>You can subclass <ref refid="structXapian_1_1StemImplementation" kindref="compound">Xapian::StemImplementation</ref> to implement your own stemming algorithm (or to wrap a third-party algorithm) and then wrap your implementation in a <ref refid="classXapian_1_1Stem" kindref="compound">Xapian::Stem</ref> object to pass to the <ref refid="namespaceXapian" kindref="compound">Xapian</ref> API.</para><para>The <ref refid="structXapian_1_1StemImplementation" kindref="compound">StemImplementation</ref> object is reference counted, and so will be automatically deleted by the <ref refid="classXapian_1_1Stem" kindref="compound">Xapian::Stem</ref> wrapper when no longer required. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/stem.h" line="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Stem_1c4e246e78c5c947537e11c3f7e718eca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::Stem::~Stem</definition>
+        <argsstring>()</argsstring>
+        <name>~Stem</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/stem.h" line="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Stem_17b2b85d741051a6f291834cca1eac20a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Xapian::Stem::operator()</definition>
+        <argsstring>(const std::string &amp;word) const </argsstring>
+        <name>operator()</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>word</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="classXapian_1_1Stem" kindref="compound">Stem</ref> a word. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>word</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a word to stem. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the stem </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/stem.h" line="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Stem_1a4fc423b2a8119c4b810654f1ae8da0a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Xapian::Stem::get_description</definition>
+        <argsstring>() const </argsstring>
+        <name>get_description</name>
+        <briefdescription>
+<para>Return a string describing this object. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/stem.h" line="125"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classXapian_1_1Stem_10f8f250587dfef35d47f13f0ec0028fb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string Xapian::Stem::get_available_languages</definition>
+        <argsstring>()</argsstring>
+        <name>get_available_languages</name>
+        <briefdescription>
+<para>Return a list of available languages. </para>        </briefdescription>
+        <detaileddescription>
+<para>Each stemmer is only included once in the list (not once for each alias). The name included is the English name of the language.</para><para>The list is returned as a string, with language names separated by spaces. This is a static method, so a <ref refid="classXapian_1_1Stem" kindref="compound">Xapian::Stem</ref> object is not required for this operation. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/stem.h" line="137"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class representing a stemming algorithm. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/stem.h" line="47" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/stem.h" bodystart="47" bodyend="138"/>
+    <listofallmembers>
+      <member refid="classXapian_1_1Stem_10f8f250587dfef35d47f13f0ec0028fb" prot="public" virt="non-virtual"><scope>Xapian::Stem</scope><name>get_available_languages</name></member>
+      <member refid="classXapian_1_1Stem_1a4fc423b2a8119c4b810654f1ae8da0a" prot="public" virt="non-virtual"><scope>Xapian::Stem</scope><name>get_description</name></member>
+      <member refid="classXapian_1_1Stem_152b651bf16d9c492da32bef91f30e1ff" prot="private" virt="non-virtual"><scope>Xapian::Stem</scope><name>internal</name></member>
+      <member refid="classXapian_1_1Stem_17b2b85d741051a6f291834cca1eac20a" prot="public" virt="non-virtual"><scope>Xapian::Stem</scope><name>operator()</name></member>
+      <member refid="classXapian_1_1Stem_1c9e8f12c49c8b3f62de1b8465298cf8c" prot="public" virt="non-virtual"><scope>Xapian::Stem</scope><name>operator=</name></member>
+      <member refid="classXapian_1_1Stem_1960dac1047a3cfe21ff3d013df1d41dd" prot="public" virt="non-virtual"><scope>Xapian::Stem</scope><name>Stem</name></member>
+      <member refid="classXapian_1_1Stem_10119ddb5f571853900db97689bf9122d" prot="public" virt="non-virtual"><scope>Xapian::Stem</scope><name>Stem</name></member>
+      <member refid="classXapian_1_1Stem_16c46cedf2047b159a7e4c9d4468242b1" prot="public" virt="non-virtual"><scope>Xapian::Stem</scope><name>Stem</name></member>
+      <member refid="classXapian_1_1Stem_1bae2c707ea039fc519103ed75c7429fb" prot="public" virt="non-virtual"><scope>Xapian::Stem</scope><name>Stem</name></member>
+      <member refid="classXapian_1_1Stem_1c4e246e78c5c947537e11c3f7e718eca" prot="public" virt="non-virtual"><scope>Xapian::Stem</scope><name>~Stem</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

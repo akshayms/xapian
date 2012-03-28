@@ -1,0 +1,113 @@
+10
+
+dir
+12767
+svn://svn.tartarus.org/swig/trunk/Examples/php
+svn://svn.tartarus.org/swig
+
+
+
+2011-04-03T08:33:41.384460Z
+12596
+szager
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+cce2a4f7-dc27-40e0-b75d-b3f4d8458e25
+
+pointer
+dir
+
+proxy
+dir
+
+funcptr
+dir
+
+cpointer
+dir
+
+extend
+dir
+
+check.list
+file
+
+
+
+
+2012-03-21T13:02:50.917786Z
+0d165c5c000b542a4682e06ed92cc760
+2009-08-17T01:41:16.306430Z
+11607
+olly
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+204
+
+simple
+dir
+
+pragmas
+dir
+
+callback
+dir
+
+reference
+dir
+
+disown
+dir
+
+enum
+dir
+
+class
+dir
+
+variables
+dir
+
+overloading
+dir
+
+sync
+dir
+
+constants
+dir
+
+value
+dir
+

@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="classXapian_1_1InternalError" kind="class" prot="public">
+    <compoundname>Xapian::InternalError</compoundname>
+    <basecompoundref refid="classXapian_1_1RuntimeError" prot="public" virt="non-virtual">Xapian::RuntimeError</basecompoundref>
+    <includes local="no">error.h</includes>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classXapian_1_1InternalError_1216cfab6a10b16d85c2c02f2027b3785" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::InternalError::InternalError</definition>
+        <argsstring>(const std::string &amp;msg_, const std::string &amp;context_, const char *error_string_)</argsstring>
+        <name>InternalError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>context_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>error_string_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="596" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="595" bodyend="596"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1InternalError_10a01bbcf79cca44b0651c56db64647ac" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::InternalError::InternalError</definition>
+        <argsstring>(const std::string &amp;msg_, const std::string &amp;context_, const char *type_, const char *error_string_)</argsstring>
+        <name>InternalError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>context_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>type_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>error_string_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="608" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="607" bodyend="608"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1InternalError_13cb0aa9cc9085c2796935b84b97641d5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::InternalError::InternalError</definition>
+        <argsstring>(const std::string &amp;msg_, const std::string &amp;context_, const char *type_, int errno_)</argsstring>
+        <name>InternalError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>context_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>type_</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>errno_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="614" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="613" bodyend="614"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classXapian_1_1InternalError_1aff4cb9b106c6cac8d30ff67fdebcd14" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::InternalError::InternalError</definition>
+        <argsstring>(const std::string &amp;msg_, const std::string &amp;context_=std::string(), int errno_=0)</argsstring>
+        <name>InternalError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>context_</declname>
+          <defval>std::string()</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>errno_</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>General purpose constructor which allows setting errno. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="599" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="598" bodyend="599"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1InternalError_1f499bef4f396056a01957f717a93c597" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::InternalError::InternalError</definition>
+        <argsstring>(const std::string &amp;msg_, int errno_)</argsstring>
+        <name>InternalError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>errno_</declname>
+        </param>
+        <briefdescription>
+<para>Construct from message and errno value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="602" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="601" bodyend="602"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classXapian_1_1InternalError" kindref="compound">InternalError</ref> indicates a runtime problem of some sort. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="472">
+        <label>Xapian::Error</label>
+        <link refid="classXapian_1_1Error"/>
+      </node>
+      <node id="471">
+        <label>Xapian::RuntimeError</label>
+        <link refid="classXapian_1_1RuntimeError"/>
+        <childnode refid="472" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="470">
+        <label>Xapian::InternalError</label>
+        <link refid="classXapian_1_1InternalError"/>
+        <childnode refid="471" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="475">
+        <label>Xapian::Error</label>
+        <link refid="classXapian_1_1Error"/>
+      </node>
+      <node id="474">
+        <label>Xapian::RuntimeError</label>
+        <link refid="classXapian_1_1RuntimeError"/>
+        <childnode refid="475" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="473">
+        <label>Xapian::InternalError</label>
+        <link refid="classXapian_1_1InternalError"/>
+        <childnode refid="474" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="588" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="588" bodyend="615"/>
+    <listofallmembers>
+      <member refid="classXapian_1_1Error_190c683965555b4bc86b08e8667170e44" prot="public" virt="non-virtual"><scope>Xapian::InternalError</scope><name>get_context</name></member>
+      <member refid="classXapian_1_1Error_1bd64e380eb6d864dc907ee62c1f58a74" prot="public" virt="non-virtual"><scope>Xapian::InternalError</scope><name>get_description</name></member>
+      <member refid="classXapian_1_1Error_16f94a579f8e176f85c6fb036592dab61" prot="public" virt="non-virtual"><scope>Xapian::InternalError</scope><name>get_error_string</name></member>
+      <member refid="classXapian_1_1Error_1ea05df48ea71dfd045da28ab984cdaa3" prot="public" virt="non-virtual"><scope>Xapian::InternalError</scope><name>get_msg</name></member>
+      <member refid="classXapian_1_1Error_1136945e703317bdf6e18d8cf511a5bfb" prot="public" virt="non-virtual"><scope>Xapian::InternalError</scope><name>get_type</name></member>
+      <member refid="classXapian_1_1InternalError_1216cfab6a10b16d85c2c02f2027b3785" prot="private" virt="non-virtual"><scope>Xapian::InternalError</scope><name>InternalError</name></member>
+      <member refid="classXapian_1_1InternalError_1aff4cb9b106c6cac8d30ff67fdebcd14" prot="public" virt="non-virtual"><scope>Xapian::InternalError</scope><name>InternalError</name></member>
+      <member refid="classXapian_1_1InternalError_1f499bef4f396056a01957f717a93c597" prot="public" virt="non-virtual"><scope>Xapian::InternalError</scope><name>InternalError</name></member>
+      <member refid="classXapian_1_1InternalError_10a01bbcf79cca44b0651c56db64647ac" prot="private" virt="non-virtual"><scope>Xapian::InternalError</scope><name>InternalError</name></member>
+      <member refid="classXapian_1_1InternalError_13cb0aa9cc9085c2796935b84b97641d5" prot="private" virt="non-virtual"><scope>Xapian::InternalError</scope><name>InternalError</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="classXapian_1_1FeatureUnavailableError" kind="class" prot="public">
+    <compoundname>Xapian::FeatureUnavailableError</compoundname>
+    <basecompoundref refid="classXapian_1_1RuntimeError" prot="public" virt="non-virtual">Xapian::RuntimeError</basecompoundref>
+    <includes local="no">error.h</includes>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classXapian_1_1FeatureUnavailableError_1d72f69e75aaa6362f8f38bf30e588c87" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::FeatureUnavailableError::FeatureUnavailableError</definition>
+        <argsstring>(const std::string &amp;msg_, const std::string &amp;context_, const char *error_string_)</argsstring>
+        <name>FeatureUnavailableError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>context_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>error_string_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="566" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="565" bodyend="566"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1FeatureUnavailableError_1bac686b11a1ec4208798c902f1d0bfd2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::FeatureUnavailableError::FeatureUnavailableError</definition>
+        <argsstring>(const std::string &amp;msg_, const std::string &amp;context_, const char *type_, const char *error_string_)</argsstring>
+        <name>FeatureUnavailableError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>context_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>type_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>error_string_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="578" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="577" bodyend="578"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1FeatureUnavailableError_1feda693e930f99e98a32d054376cc5d3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::FeatureUnavailableError::FeatureUnavailableError</definition>
+        <argsstring>(const std::string &amp;msg_, const std::string &amp;context_, const char *type_, int errno_)</argsstring>
+        <name>FeatureUnavailableError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>context_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>type_</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>errno_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="584" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="583" bodyend="584"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classXapian_1_1FeatureUnavailableError_1a0c0377fd357fc7aa026aa3637e3714a" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::FeatureUnavailableError::FeatureUnavailableError</definition>
+        <argsstring>(const std::string &amp;msg_, const std::string &amp;context_=std::string(), int errno_=0)</argsstring>
+        <name>FeatureUnavailableError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>context_</declname>
+          <defval>std::string()</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>errno_</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>General purpose constructor which allows setting errno. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="569" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="568" bodyend="569"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1FeatureUnavailableError_17c8440e4252839a4b24a8fb4ded15cd3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::FeatureUnavailableError::FeatureUnavailableError</definition>
+        <argsstring>(const std::string &amp;msg_, int errno_)</argsstring>
+        <name>FeatureUnavailableError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>errno_</declname>
+        </param>
+        <briefdescription>
+<para>Construct from message and errno value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="572" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="571" bodyend="572"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Indicates an attempt to use a feature which is unavailable. </para>    </briefdescription>
+    <detaileddescription>
+<para>Typically a feature is unavailable because it wasn&apos;t compiled in, or because it requires other software or facilities which aren&apos;t available. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="451">
+        <label>Xapian::Error</label>
+        <link refid="classXapian_1_1Error"/>
+      </node>
+      <node id="450">
+        <label>Xapian::RuntimeError</label>
+        <link refid="classXapian_1_1RuntimeError"/>
+        <childnode refid="451" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="449">
+        <label>Xapian::FeatureUnavailableError</label>
+        <link refid="classXapian_1_1FeatureUnavailableError"/>
+        <childnode refid="450" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="454">
+        <label>Xapian::Error</label>
+        <link refid="classXapian_1_1Error"/>
+      </node>
+      <node id="453">
+        <label>Xapian::RuntimeError</label>
+        <link refid="classXapian_1_1RuntimeError"/>
+        <childnode refid="454" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="452">
+        <label>Xapian::FeatureUnavailableError</label>
+        <link refid="classXapian_1_1FeatureUnavailableError"/>
+        <childnode refid="453" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="558" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="558" bodyend="585"/>
+    <listofallmembers>
+      <member refid="classXapian_1_1FeatureUnavailableError_1d72f69e75aaa6362f8f38bf30e588c87" prot="private" virt="non-virtual"><scope>Xapian::FeatureUnavailableError</scope><name>FeatureUnavailableError</name></member>
+      <member refid="classXapian_1_1FeatureUnavailableError_1a0c0377fd357fc7aa026aa3637e3714a" prot="public" virt="non-virtual"><scope>Xapian::FeatureUnavailableError</scope><name>FeatureUnavailableError</name></member>
+      <member refid="classXapian_1_1FeatureUnavailableError_17c8440e4252839a4b24a8fb4ded15cd3" prot="public" virt="non-virtual"><scope>Xapian::FeatureUnavailableError</scope><name>FeatureUnavailableError</name></member>
+      <member refid="classXapian_1_1FeatureUnavailableError_1bac686b11a1ec4208798c902f1d0bfd2" prot="private" virt="non-virtual"><scope>Xapian::FeatureUnavailableError</scope><name>FeatureUnavailableError</name></member>
+      <member refid="classXapian_1_1FeatureUnavailableError_1feda693e930f99e98a32d054376cc5d3" prot="private" virt="non-virtual"><scope>Xapian::FeatureUnavailableError</scope><name>FeatureUnavailableError</name></member>
+      <member refid="classXapian_1_1Error_190c683965555b4bc86b08e8667170e44" prot="public" virt="non-virtual"><scope>Xapian::FeatureUnavailableError</scope><name>get_context</name></member>
+      <member refid="classXapian_1_1Error_1bd64e380eb6d864dc907ee62c1f58a74" prot="public" virt="non-virtual"><scope>Xapian::FeatureUnavailableError</scope><name>get_description</name></member>
+      <member refid="classXapian_1_1Error_16f94a579f8e176f85c6fb036592dab61" prot="public" virt="non-virtual"><scope>Xapian::FeatureUnavailableError</scope><name>get_error_string</name></member>
+      <member refid="classXapian_1_1Error_1ea05df48ea71dfd045da28ab984cdaa3" prot="public" virt="non-virtual"><scope>Xapian::FeatureUnavailableError</scope><name>get_msg</name></member>
+      <member refid="classXapian_1_1Error_1136945e703317bdf6e18d8cf511a5bfb" prot="public" virt="non-virtual"><scope>Xapian::FeatureUnavailableError</scope><name>get_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

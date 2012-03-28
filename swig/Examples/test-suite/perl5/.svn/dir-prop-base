@@ -1,0 +1,11 @@
+K 10
+svn:ignore
+V 43
+*wrap*
+*.pm
+*.so
+*.dll
+*.exp
+*.lib
+Makefile
+END

@@ -1,0 +1,92 @@
+10
+
+dir
+12767
+svn://svn.tartarus.org/swig/trunk/Examples/csharp
+svn://svn.tartarus.org/swig
+
+
+
+2009-01-08T19:12:24.747424Z
+11040
+wsfulton
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+cce2a4f7-dc27-40e0-b75d-b3f4d8458e25
+
+arrays
+dir
+
+funcptr
+dir
+
+enum
+dir
+
+class
+dir
+
+extend
+dir
+
+check.list
+file
+
+
+
+
+2012-03-21T13:02:38.713786Z
+e1494e3e8fd06fd449505323e899a8ad
+2008-09-18T20:32:28.447658Z
+10872
+wsfulton
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+106
+
+variables
+dir
+
+simple
+dir
+
+template
+dir
+
+callback
+dir
+
+reference
+dir
+

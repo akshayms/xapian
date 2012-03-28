@@ -1,0 +1,784 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="classXapian_1_1Query_1_1Internal" kind="class" prot="private">
+    <compoundname>Xapian::Query::Internal</compoundname>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classXapian_1_1Query_1_1Internal_1f7e4d5308cb364ef7086b08b55ae6a80" prot="public" static="no">
+        <type>std::vector&lt; Internal * &gt;</type>
+        <definition>typedef std::vector&lt;Internal *&gt; Xapian::Query::Internal::subquery_list</definition>
+        <argsstring></argsstring>
+        <name>subquery_list</name>
+        <briefdescription>
+<para>The container type for storing pointers to subqueries. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="355" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/query.h" bodystart="355" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classXapian_1_1Query_1_1Internal_1be7aaa167e80b8a67d46b217111aa00c" prot="public" static="no">
+        <type>int</type>
+        <definition>typedef int Xapian::Query::Internal::op_t</definition>
+        <argsstring></argsstring>
+        <name>op_t</name>
+        <briefdescription>
+<para>Type storing the operation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="358" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/query.h" bodystart="358" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classXapian_1_1Query_1_1Internal_12d9713d751597c0911b20d45da4c567d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class ::LocalSubMatch</definition>
+        <argsstring></argsstring>
+        <name>::LocalSubMatch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="345" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/query.h" bodystart="345" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classXapian_1_1Query_1_1Internal_180f6aa41afbddd72641267163501959d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class ::MultiMatch</definition>
+        <argsstring></argsstring>
+        <name>::MultiMatch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="346" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/query.h" bodystart="346" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classXapian_1_1Query_1_1Internal_1f2fee27a80b109feb17c4b4b7f5f1ee3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class ::QueryOptimiser</definition>
+        <argsstring></argsstring>
+        <name>::QueryOptimiser</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="347" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/query.h" bodystart="347" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classXapian_1_1Query_1_1Internal_12ada6effcda38d02a27e0f179c79091d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend struct</type>
+        <definition>friend struct ::SortPosName</definition>
+        <argsstring></argsstring>
+        <name>::SortPosName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="348" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/query.h" bodystart="348" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classXapian_1_1Query_1_1Internal_10de80064a367adf51ab09f7a9b6de05a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Query</definition>
+        <argsstring></argsstring>
+        <name>Query</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="349" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/query.h" bodystart="349" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classXapian_1_1Query_1_1Internal_111bde67da53d81bc140d5d7d098badab" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int Xapian::Query::Internal::OP_LEAF</definition>
+        <argsstring></argsstring>
+        <name>OP_LEAF</name>
+        <initializer> -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="351" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/query.h" bodystart="351" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classXapian_1_1Query_1_1Internal_1df435f5d9826f5f103aad13ceaa7e692" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int Xapian::Query::Internal::OP_EXTERNAL_SOURCE</definition>
+        <argsstring></argsstring>
+        <name>OP_EXTERNAL_SOURCE</name>
+        <initializer> -2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="352" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/query.h" bodystart="352" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classXapian_1_1Query_1_1Internal_1d5e6c05a6e5be88b73eea0c9051f509d" prot="private" static="no" mutable="no">
+        <type>Xapian::Query::Internal::op_t</type>
+        <definition>Xapian::Query::Internal::op_t Xapian::Query::Internal::op</definition>
+        <argsstring></argsstring>
+        <name>op</name>
+        <briefdescription>
+<para>Operation to be performed at this node. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="362" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/query.h" bodystart="362" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classXapian_1_1Query_1_1Internal_18a90d60f1605b2599ae37be2478a246a" prot="private" static="no" mutable="no">
+        <type>subquery_list</type>
+        <definition>subquery_list Xapian::Query::Internal::subqs</definition>
+        <argsstring></argsstring>
+        <name>subqs</name>
+        <briefdescription>
+<para>Sub queries on which to perform operation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="365" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/query.h" bodystart="365" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classXapian_1_1Query_1_1Internal_11636edda65bda9af3cac16831f152463" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceXapian_172b5a76dd8cfb7b251fe7986e86390cb" kindref="member">Xapian::termcount</ref></type>
+        <definition>Xapian::termcount Xapian::Query::Internal::parameter</definition>
+        <argsstring></argsstring>
+        <name>parameter</name>
+        <briefdescription>
+<para>For NEAR or PHRASE, how close terms must be to match: all terms within the operation must occur in a window of this size. </para>        </briefdescription>
+        <detaileddescription>
+<para>For ELITE_SET, the number of terms to select from those specified.</para><para>For RANGE, the value number to apply the range test to.</para><para>For a leaf node, this is the within query frequency of the term. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="376" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/query.h" bodystart="376" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classXapian_1_1Query_1_1Internal_1b37a044e0e1454342cf1d6faf92d6c96" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Xapian::Query::Internal::tname</definition>
+        <argsstring></argsstring>
+        <name>tname</name>
+        <briefdescription>
+<para>Term that this node represents, or start of a range query. </para>        </briefdescription>
+        <detaileddescription>
+<para>For a leaf node, this holds the term name. For an OP_VALUE_RANGE query this holds the start of the range. For an OP_VALUE_GE or OP_VALUE_LE query this holds the value to compare against. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="384" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/query.h" bodystart="384" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classXapian_1_1Query_1_1Internal_16b4832f5ecd57b178db9304963ba2fb6" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Xapian::Query::Internal::str_parameter</definition>
+        <argsstring></argsstring>
+        <name>str_parameter</name>
+        <briefdescription>
+<para>Used to store the end of a range query. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="387" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/query.h" bodystart="387" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classXapian_1_1Query_1_1Internal_1b0b0fdcb5feb1e3d3c7997c56d475436" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceXapian_1e5a16f073d0c8ed54085a9de07248d45" kindref="member">Xapian::termpos</ref></type>
+        <definition>Xapian::termpos Xapian::Query::Internal::term_pos</definition>
+        <argsstring></argsstring>
+        <name>term_pos</name>
+        <briefdescription>
+<para>Position in query of this term - leaf node only. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="390" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/query.h" bodystart="390" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classXapian_1_1Query_1_1Internal_17f492949ff4d51b647302c1033be2c5d" prot="private" static="no" mutable="no">
+        <type><ref refid="classXapian_1_1PostingSource" kindref="compound">Xapian::PostingSource</ref> *</type>
+        <definition>Xapian::PostingSource* Xapian::Query::Internal::external_source</definition>
+        <argsstring></argsstring>
+        <name>external_source</name>
+        <briefdescription>
+<para>External posting source. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="393" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/query.h" bodystart="393" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classXapian_1_1Query_1_1Internal_1b9f93573f615f382a81a6bd530d22e1a" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Xapian::Query::Internal::external_source_owned</definition>
+        <argsstring></argsstring>
+        <name>external_source_owned</name>
+        <briefdescription>
+<para>Flag, indicating whether the external source is owned by the query. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="396" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/query.h" bodystart="396" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classXapian_1_1Query_1_1Internal_14364b3c76628605b4813351b4ab24ae7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::Query::Internal::initialise_from_copy</definition>
+        <argsstring>(const Query::Internal &amp;copyme)</argsstring>
+        <name>initialise_from_copy</name>
+        <param>
+          <type>const Query::Internal &amp;</type>
+          <declname>copyme</declname>
+        </param>
+        <briefdescription>
+<para>Copy another Xapian::Query::Internal into self. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="399"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Query_1_1Internal_1bf87cdb766d0ace2e05aed835c8d421d" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::Query::Internal::accumulate_terms</definition>
+        <argsstring>(std::vector&lt; std::pair&lt; std::string, Xapian::termpos &gt; &gt; &amp;terms) const </argsstring>
+        <name>accumulate_terms</name>
+        <param>
+          <type>std::vector&lt; std::pair&lt; std::string, <ref refid="namespaceXapian_1e5a16f073d0c8ed54085a9de07248d45" kindref="member">Xapian::termpos</ref> &gt; &gt; &amp;</type>
+          <declname>terms</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="402"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Query_1_1Internal_15f8c57f8d2216a7df85207d1249a9dd8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Internal *</type>
+        <definition>Internal* Xapian::Query::Internal::simplify_query</definition>
+        <argsstring>()</argsstring>
+        <name>simplify_query</name>
+        <briefdescription>
+<para>Simplify the query. </para>        </briefdescription>
+        <detaileddescription>
+<para>For example, an AND query with only one subquery would become the subquery itself. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="408"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Query_1_1Internal_1177065e254ef2019e7020f49ace4f427" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::Query::Internal::validate_query</definition>
+        <argsstring>() const </argsstring>
+        <name>validate_query</name>
+        <briefdescription>
+<para>Perform checks that query is valid. </para>        </briefdescription>
+        <detaileddescription>
+<para>(e.g., has correct number of sub queries.) Throw an exception if not. This is initially called on the query before any simplifications have been made, and after simplifications. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="415"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Query_1_1Internal_14b101ba893b5855f610b01091b2fbbce" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Xapian::Query::Internal::simplify_matchnothing</definition>
+        <argsstring>()</argsstring>
+        <name>simplify_matchnothing</name>
+        <briefdescription>
+<para>Simplify any matchnothing subqueries, either eliminating them, or setting this query to matchnothing, depending on the query operator. </para>        </briefdescription>
+        <detaileddescription>
+<para>Returns true if simplification resulted in a matchnothing query. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="422"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Query_1_1Internal_1b42d80a4f07c1a3787be5783b617292f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::Query::Internal::collapse_subqs</definition>
+        <argsstring>()</argsstring>
+        <name>collapse_subqs</name>
+        <briefdescription>
+<para>Collapse the subqueries together if appropriate. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="430"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Query_1_1Internal_1f17148c03500efb0c13fb5aed9c4f18d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Xapian::Query::Internal *</type>
+        <definition>Xapian::Query::Internal* Xapian::Query::Internal::flatten_subqs</definition>
+        <argsstring>()</argsstring>
+        <name>flatten_subqs</name>
+        <briefdescription>
+<para>Flatten a query structure, by changing, for example, &quot;A NEAR (B AND C)&quot; to &quot;(A NEAR B) AND (A NEAR C)&quot;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="435"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Query_1_1Internal_140c8488eed08150f6406f90b115dd893" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Xapian::Query::Internal::serialise</definition>
+        <argsstring>(Xapian::termpos &amp;curpos) const </argsstring>
+        <name>serialise</name>
+        <param>
+          <type><ref refid="namespaceXapian_1e5a16f073d0c8ed54085a9de07248d45" kindref="member">Xapian::termpos</ref> &amp;</type>
+          <declname>curpos</declname>
+        </param>
+        <briefdescription>
+<para>Implementation of serialisation; called recursively. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="439"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classXapian_1_1Query_1_1Internal_179057edd73885d77057e1e46e3c6fe6f" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string Xapian::Query::Internal::get_op_name</definition>
+        <argsstring>(Xapian::Query::Internal::op_t op)</argsstring>
+        <name>get_op_name</name>
+        <param>
+          <type>Xapian::Query::Internal::op_t</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+<para>Get a string describing the given query type. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="426"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classXapian_1_1Query_1_1Internal_169ca3b1a7e907efb7b2bb58a41ab705c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::Query::Internal::Internal</definition>
+        <argsstring>(const Query::Internal &amp;copyme)</argsstring>
+        <name>Internal</name>
+        <param>
+          <type>const Query::Internal &amp;</type>
+          <declname>copyme</declname>
+        </param>
+        <briefdescription>
+<para>Copy constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="443"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Query_1_1Internal_11b405afffb95f52318f6851dd735b568" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::Query::Internal::operator=</definition>
+        <argsstring>(const Query::Internal &amp;copyme)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const Query::Internal &amp;</type>
+          <declname>copyme</declname>
+        </param>
+        <briefdescription>
+<para>Assignment. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="446"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Query_1_1Internal_1b800d03b72f5afcf0af3c68f1358a317" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::Query::Internal::Internal</definition>
+        <argsstring>(const std::string &amp;tname_, Xapian::termcount wqf_=1, Xapian::termpos term_pos_=0)</argsstring>
+        <name>Internal</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>tname_</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceXapian_172b5a76dd8cfb7b251fe7986e86390cb" kindref="member">Xapian::termcount</ref></type>
+          <declname>wqf_</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type><ref refid="namespaceXapian_1e5a16f073d0c8ed54085a9de07248d45" kindref="member">Xapian::termpos</ref></type>
+          <declname>term_pos_</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>A query consisting of a single term. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="450"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Query_1_1Internal_1917488751d31a94c15e94a32e357feff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::Query::Internal::Internal</definition>
+        <argsstring>(op_t op_, Xapian::termcount parameter)</argsstring>
+        <name>Internal</name>
+        <param>
+          <type>op_t</type>
+          <declname>op_</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceXapian_172b5a76dd8cfb7b251fe7986e86390cb" kindref="member">Xapian::termcount</ref></type>
+          <declname>parameter</declname>
+        </param>
+        <briefdescription>
+<para>Create internals given only the operator and a parameter. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="453"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Query_1_1Internal_18187a05f7a07f4701825ef0c8299d4d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::Query::Internal::Internal</definition>
+        <argsstring>(op_t op_, Xapian::valueno slot, const std::string &amp;begin, const std::string &amp;end)</argsstring>
+        <name>Internal</name>
+        <param>
+          <type>op_t</type>
+          <declname>op_</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceXapian_194a899651fa920c72ffa9635bde630ea" kindref="member">Xapian::valueno</ref></type>
+          <declname>slot</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>begin</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+<para>Construct a range query on a document value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="457"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Query_1_1Internal_10bbc2299d18dd59dbda8639f8f0d66ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::Query::Internal::Internal</definition>
+        <argsstring>(op_t op_, Xapian::valueno slot, const std::string &amp;value)</argsstring>
+        <name>Internal</name>
+        <param>
+          <type>op_t</type>
+          <declname>op_</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceXapian_194a899651fa920c72ffa9635bde630ea" kindref="member">Xapian::valueno</ref></type>
+          <declname>slot</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Construct a value greater-than-or-equal query on a document value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="461"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Query_1_1Internal_186281d61ae057bc8d25e9d69d2bcc53c" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::Query::Internal::Internal</definition>
+        <argsstring>(Xapian::PostingSource *external_source_, bool owned)</argsstring>
+        <name>Internal</name>
+        <param>
+          <type><ref refid="classXapian_1_1PostingSource" kindref="compound">Xapian::PostingSource</ref> *</type>
+          <declname>external_source_</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>owned</declname>
+        </param>
+        <briefdescription>
+<para>Construct an external source query. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="464"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Query_1_1Internal_141296408302c5092dc7d51f1308c8cd2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::Query::Internal::~Internal</definition>
+        <argsstring>()</argsstring>
+        <name>~Internal</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="467"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Query_1_1Internal_13f39e94c808fcfc9da90af7e05815fcd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::Query::Internal::add_subquery</definition>
+        <argsstring>(const Query::Internal *subq)</argsstring>
+        <name>add_subquery</name>
+        <param>
+          <type>const Query::Internal *</type>
+          <declname>subq</declname>
+        </param>
+        <briefdescription>
+<para>Add a subquery. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="473"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Query_1_1Internal_149ae93a89f27bed6fb64d6861f8b596e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::Query::Internal::add_subquery_nocopy</definition>
+        <argsstring>(Query::Internal *subq)</argsstring>
+        <name>add_subquery_nocopy</name>
+        <param>
+          <type>Query::Internal *</type>
+          <declname>subq</declname>
+        </param>
+        <briefdescription>
+<para>Add a subquery without copying it. </para>        </briefdescription>
+        <detaileddescription>
+<para>subq is owned by the object this is called on after the call. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="479"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Query_1_1Internal_1aab3063a8eb54dba2d8c6071deb37bf0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::Query::Internal::set_dbl_parameter</definition>
+        <argsstring>(double dbl_parameter_)</argsstring>
+        <name>set_dbl_parameter</name>
+        <param>
+          <type>double</type>
+          <declname>dbl_parameter_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="481"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Query_1_1Internal_1a14813593115bb8b4fe9c0b84413a4bf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Xapian::Query::Internal::get_dbl_parameter</definition>
+        <argsstring>() const </argsstring>
+        <name>get_dbl_parameter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="483"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Query_1_1Internal_160de9d108d3849d7040446beac4be61c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Query::Internal *</type>
+        <definition>Query::Internal* Xapian::Query::Internal::end_construction</definition>
+        <argsstring>()</argsstring>
+        <name>end_construction</name>
+        <briefdescription>
+<para>Finish off the construction. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="487"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Query_1_1Internal_1d83a99a9fe162e045c4b71f915b60acb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Xapian::Query::Internal::serialise</definition>
+        <argsstring>() const </argsstring>
+        <name>serialise</name>
+        <briefdescription>
+<para>Return a string in an easily parsed form which contains all the information in a query. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="492" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/query.h" bodystart="492" bodyend="495"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Query_1_1Internal_1f534381e6fe27dd3027cb0a5057cf7fc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Xapian::Query::Internal::get_description</definition>
+        <argsstring>() const </argsstring>
+        <name>get_description</name>
+        <briefdescription>
+<para>Return a string describing this object. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="498"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Query_1_1Internal_159a3b140a0b00c79c8b987a45e77c5a9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceXapian_172b5a76dd8cfb7b251fe7986e86390cb" kindref="member">Xapian::termcount</ref></type>
+        <definition>Xapian::termcount Xapian::Query::Internal::get_parameter</definition>
+        <argsstring>() const </argsstring>
+        <name>get_parameter</name>
+        <briefdescription>
+<para>Get the numeric parameter used in this query. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is used by the <ref refid="classXapian_1_1QueryParser" kindref="compound">QueryParser</ref> to get the value number for VALUE_RANGE queries. It should be replaced by a public method on the <ref refid="classXapian_1_1Query" kindref="compound">Query</ref> class at some point, but the API which should be used for that is unclear, so this is a temporary workaround. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="507" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/query.h" bodystart="507" bodyend="507"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Query_1_1Internal_1a51bfb1bbfe249fd9f77f5b8ab7524ef" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceXapian_172b5a76dd8cfb7b251fe7986e86390cb" kindref="member">Xapian::termcount</ref></type>
+        <definition>Xapian::termcount Xapian::Query::Internal::get_wqf</definition>
+        <argsstring>() const </argsstring>
+        <name>get_wqf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="509" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/query.h" bodystart="509" bodyend="509"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Query_1_1Internal_1eb335239123c1de8be23e828dccfe699" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceXapian_172b5a76dd8cfb7b251fe7986e86390cb" kindref="member">Xapian::termcount</ref></type>
+        <definition>Xapian::termcount Xapian::Query::Internal::get_length</definition>
+        <argsstring>() const </argsstring>
+        <name>get_length</name>
+        <briefdescription>
+<para>Get the length of the query, used by some ranking formulae. </para>        </briefdescription>
+        <detaileddescription>
+<para>This value is calculated automatically - if you want to override it you can pass a different value to <ref refid="classXapian_1_1Enquire_11148d960120662e5543e2a2b12620318" kindref="member">Enquire::set_query()</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="515"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Query_1_1Internal_16ea4240bf167d9abf20754aeed184994" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classXapian_1_1TermIterator" kindref="compound">TermIterator</ref></type>
+        <definition>TermIterator Xapian::Query::Internal::get_terms</definition>
+        <argsstring>() const </argsstring>
+        <name>get_terms</name>
+        <briefdescription>
+<para>Return an iterator over all the terms in the query, in order of termpos. </para>        </briefdescription>
+        <detaileddescription>
+<para>If multiple terms have the same term position, their order is unspecified. Duplicates (same term and termpos) will be removed. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="522"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classXapian_1_1Query_1_1Internal_1ecfcc2fe11d66ae7e7116c9586c6d9c2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Xapian::Query::Internal *</type>
+        <definition>static Xapian::Query::Internal* Xapian::Query::Internal::unserialise</definition>
+        <argsstring>(const std::string &amp;s, const Registry &amp;registry)</argsstring>
+        <name>unserialise</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classXapian_1_1Registry" kindref="compound">Registry</ref> &amp;</type>
+          <declname>registry</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="470"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="468">
+        <label>Xapian::Query::Internal</label>
+        <childnode refid="469" relation="usage">
+          <edgelabel>external_source</edgelabel>
+        </childnode>
+      </node>
+      <node id="469">
+        <label>Xapian::PostingSource</label>
+        <link refid="classXapian_1_1PostingSource"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/query.h" line="344" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/query.h" bodystart="344" bodyend="523"/>
+    <listofallmembers>
+      <member refid="classXapian_1_1Query_1_1Internal_1bf87cdb766d0ace2e05aed835c8d421d" prot="private" virt="non-virtual"><scope>Xapian::Query::Internal</scope><name>accumulate_terms</name></member>
+      <member refid="classXapian_1_1Query_1_1Internal_13f39e94c808fcfc9da90af7e05815fcd" prot="public" virt="non-virtual"><scope>Xapian::Query::Internal</scope><name>add_subquery</name></member>
+      <member refid="classXapian_1_1Query_1_1Internal_149ae93a89f27bed6fb64d6861f8b596e" prot="public" virt="non-virtual"><scope>Xapian::Query::Internal</scope><name>add_subquery_nocopy</name></member>
+      <member refid="classXapian_1_1Query_1_1Internal_1b42d80a4f07c1a3787be5783b617292f" prot="private" virt="non-virtual"><scope>Xapian::Query::Internal</scope><name>collapse_subqs</name></member>
+      <member refid="classXapian_1_1Query_1_1Internal_160de9d108d3849d7040446beac4be61c" prot="public" virt="non-virtual"><scope>Xapian::Query::Internal</scope><name>end_construction</name></member>
+      <member refid="classXapian_1_1Query_1_1Internal_17f492949ff4d51b647302c1033be2c5d" prot="private" virt="non-virtual"><scope>Xapian::Query::Internal</scope><name>external_source</name></member>
+      <member refid="classXapian_1_1Query_1_1Internal_1b9f93573f615f382a81a6bd530d22e1a" prot="private" virt="non-virtual"><scope>Xapian::Query::Internal</scope><name>external_source_owned</name></member>
+      <member refid="classXapian_1_1Query_1_1Internal_1f17148c03500efb0c13fb5aed9c4f18d" prot="private" virt="non-virtual"><scope>Xapian::Query::Internal</scope><name>flatten_subqs</name></member>
+      <member refid="classXapian_1_1Query_1_1Internal_1a14813593115bb8b4fe9c0b84413a4bf" prot="public" virt="non-virtual"><scope>Xapian::Query::Internal</scope><name>get_dbl_parameter</name></member>
+      <member refid="classXapian_1_1Query_1_1Internal_1f534381e6fe27dd3027cb0a5057cf7fc" prot="public" virt="non-virtual"><scope>Xapian::Query::Internal</scope><name>get_description</name></member>
+      <member refid="classXapian_1_1Query_1_1Internal_1eb335239123c1de8be23e828dccfe699" prot="public" virt="non-virtual"><scope>Xapian::Query::Internal</scope><name>get_length</name></member>
+      <member refid="classXapian_1_1Query_1_1Internal_179057edd73885d77057e1e46e3c6fe6f" prot="private" virt="non-virtual"><scope>Xapian::Query::Internal</scope><name>get_op_name</name></member>
+      <member refid="classXapian_1_1Query_1_1Internal_159a3b140a0b00c79c8b987a45e77c5a9" prot="public" virt="non-virtual"><scope>Xapian::Query::Internal</scope><name>get_parameter</name></member>
+      <member refid="classXapian_1_1Query_1_1Internal_16ea4240bf167d9abf20754aeed184994" prot="public" virt="non-virtual"><scope>Xapian::Query::Internal</scope><name>get_terms</name></member>
+      <member refid="classXapian_1_1Query_1_1Internal_1a51bfb1bbfe249fd9f77f5b8ab7524ef" prot="public" virt="non-virtual"><scope>Xapian::Query::Internal</scope><name>get_wqf</name></member>
+      <member refid="classXapian_1_1Query_1_1Internal_14364b3c76628605b4813351b4ab24ae7" prot="private" virt="non-virtual"><scope>Xapian::Query::Internal</scope><name>initialise_from_copy</name></member>
+      <member refid="classXapian_1_1Query_1_1Internal_169ca3b1a7e907efb7b2bb58a41ab705c" prot="public" virt="non-virtual"><scope>Xapian::Query::Internal</scope><name>Internal</name></member>
+      <member refid="classXapian_1_1Query_1_1Internal_1b800d03b72f5afcf0af3c68f1358a317" prot="public" virt="non-virtual"><scope>Xapian::Query::Internal</scope><name>Internal</name></member>
+      <member refid="classXapian_1_1Query_1_1Internal_1917488751d31a94c15e94a32e357feff" prot="public" virt="non-virtual"><scope>Xapian::Query::Internal</scope><name>Internal</name></member>
+      <member refid="classXapian_1_1Query_1_1Internal_18187a05f7a07f4701825ef0c8299d4d5" prot="public" virt="non-virtual"><scope>Xapian::Query::Internal</scope><name>Internal</name></member>
+      <member refid="classXapian_1_1Query_1_1Internal_10bbc2299d18dd59dbda8639f8f0d66ad" prot="public" virt="non-virtual"><scope>Xapian::Query::Internal</scope><name>Internal</name></member>
+      <member refid="classXapian_1_1Query_1_1Internal_186281d61ae057bc8d25e9d69d2bcc53c" prot="public" virt="non-virtual"><scope>Xapian::Query::Internal</scope><name>Internal</name></member>
+      <member refid="classXapian_1_1Query_1_1Internal_1d5e6c05a6e5be88b73eea0c9051f509d" prot="private" virt="non-virtual"><scope>Xapian::Query::Internal</scope><name>op</name></member>
+      <member refid="classXapian_1_1Query_1_1Internal_1df435f5d9826f5f103aad13ceaa7e692" prot="public" virt="non-virtual"><scope>Xapian::Query::Internal</scope><name>OP_EXTERNAL_SOURCE</name></member>
+      <member refid="classXapian_1_1Query_1_1Internal_111bde67da53d81bc140d5d7d098badab" prot="public" virt="non-virtual"><scope>Xapian::Query::Internal</scope><name>OP_LEAF</name></member>
+      <member refid="classXapian_1_1Query_1_1Internal_1be7aaa167e80b8a67d46b217111aa00c" prot="public" virt="non-virtual"><scope>Xapian::Query::Internal</scope><name>op_t</name></member>
+      <member refid="classXapian_1_1Query_1_1Internal_11b405afffb95f52318f6851dd735b568" prot="public" virt="non-virtual"><scope>Xapian::Query::Internal</scope><name>operator=</name></member>
+      <member refid="classXapian_1_1Query_1_1Internal_11636edda65bda9af3cac16831f152463" prot="private" virt="non-virtual"><scope>Xapian::Query::Internal</scope><name>parameter</name></member>
+      <member refid="classXapian_1_1Query_1_1Internal_140c8488eed08150f6406f90b115dd893" prot="private" virt="non-virtual"><scope>Xapian::Query::Internal</scope><name>serialise</name></member>
+      <member refid="classXapian_1_1Query_1_1Internal_1d83a99a9fe162e045c4b71f915b60acb" prot="public" virt="non-virtual"><scope>Xapian::Query::Internal</scope><name>serialise</name></member>
+      <member refid="classXapian_1_1Query_1_1Internal_1aab3063a8eb54dba2d8c6071deb37bf0" prot="public" virt="non-virtual"><scope>Xapian::Query::Internal</scope><name>set_dbl_parameter</name></member>
+      <member refid="classXapian_1_1Query_1_1Internal_14b101ba893b5855f610b01091b2fbbce" prot="private" virt="non-virtual"><scope>Xapian::Query::Internal</scope><name>simplify_matchnothing</name></member>
+      <member refid="classXapian_1_1Query_1_1Internal_15f8c57f8d2216a7df85207d1249a9dd8" prot="private" virt="non-virtual"><scope>Xapian::Query::Internal</scope><name>simplify_query</name></member>
+      <member refid="classXapian_1_1Query_1_1Internal_16b4832f5ecd57b178db9304963ba2fb6" prot="private" virt="non-virtual"><scope>Xapian::Query::Internal</scope><name>str_parameter</name></member>
+      <member refid="classXapian_1_1Query_1_1Internal_18a90d60f1605b2599ae37be2478a246a" prot="private" virt="non-virtual"><scope>Xapian::Query::Internal</scope><name>subqs</name></member>
+      <member refid="classXapian_1_1Query_1_1Internal_1f7e4d5308cb364ef7086b08b55ae6a80" prot="public" virt="non-virtual"><scope>Xapian::Query::Internal</scope><name>subquery_list</name></member>
+      <member refid="classXapian_1_1Query_1_1Internal_1b0b0fdcb5feb1e3d3c7997c56d475436" prot="private" virt="non-virtual"><scope>Xapian::Query::Internal</scope><name>term_pos</name></member>
+      <member refid="classXapian_1_1Query_1_1Internal_1b37a044e0e1454342cf1d6faf92d6c96" prot="private" virt="non-virtual"><scope>Xapian::Query::Internal</scope><name>tname</name></member>
+      <member refid="classXapian_1_1Query_1_1Internal_1ecfcc2fe11d66ae7e7116c9586c6d9c2" prot="public" virt="non-virtual"><scope>Xapian::Query::Internal</scope><name>unserialise</name></member>
+      <member refid="classXapian_1_1Query_1_1Internal_1177065e254ef2019e7020f49ace4f427" prot="private" virt="non-virtual"><scope>Xapian::Query::Internal</scope><name>validate_query</name></member>
+      <member refid="classXapian_1_1Query_1_1Internal_141296408302c5092dc7d51f1308c8cd2" prot="public" virt="non-virtual"><scope>Xapian::Query::Internal</scope><name>~Internal</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

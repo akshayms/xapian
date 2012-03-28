@@ -1,0 +1,122 @@
+10
+
+dir
+16436
+svn://svn.xapian.org/xapian/branches/gsoc2011-parth/xapian-data/stemming
+svn://svn.xapian.org/xapian
+
+
+
+2011-07-23T12:05:20.104594Z
+15909
+olly
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6b2f1b92-a4f3-0310-943f-de3cbe41748b
+
+basque
+dir
+
+italian
+dir
+
+russian
+dir
+
+norwegian
+dir
+
+english
+dir
+
+turkish
+dir
+
+german2
+dir
+
+kraaij_pohlmann
+dir
+
+README
+file
+
+
+
+
+2012-03-21T13:01:24.833783Z
+bfeecbae0a4ceab7439995531a97bb32
+2008-09-02T04:19:26.296121Z
+11141
+olly
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+732
+
+finnish
+dir
+
+portuguese
+dir
+
+romanian
+dir
+
+french
+dir
+
+spanish
+dir
+
+danish
+dir
+
+swedish
+dir
+
+dutch
+dir
+
+german
+dir
+
+lovins
+dir
+
+porter
+dir
+
+hungarian
+dir
+

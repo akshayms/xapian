@@ -1,0 +1,670 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="namespaceXapian" kind="namespace">
+    <compoundname>Xapian</compoundname>
+    <innerclass refid="classXapian_1_1Compactor" prot="public">Xapian::Compactor</innerclass>
+    <innerclass refid="classXapian_1_1Database" prot="public">Xapian::Database</innerclass>
+    <innerclass refid="classXapian_1_1WritableDatabase" prot="public">Xapian::WritableDatabase</innerclass>
+    <innerclass refid="classXapian_1_1Document" prot="public">Xapian::Document</innerclass>
+    <innerclass refid="classXapian_1_1MSet" prot="public">Xapian::MSet</innerclass>
+    <innerclass refid="classXapian_1_1MSetIterator" prot="public">Xapian::MSetIterator</innerclass>
+    <innerclass refid="classXapian_1_1ESet" prot="public">Xapian::ESet</innerclass>
+    <innerclass refid="classXapian_1_1ESetIterator" prot="public">Xapian::ESetIterator</innerclass>
+    <innerclass refid="classXapian_1_1RSet" prot="public">Xapian::RSet</innerclass>
+    <innerclass refid="classXapian_1_1MatchDecider" prot="public">Xapian::MatchDecider</innerclass>
+    <innerclass refid="classXapian_1_1Enquire" prot="public">Xapian::Enquire</innerclass>
+    <innerclass refid="classXapian_1_1Error" prot="public">Xapian::Error</innerclass>
+    <innerclass refid="classXapian_1_1LogicError" prot="public">Xapian::LogicError</innerclass>
+    <innerclass refid="classXapian_1_1RuntimeError" prot="public">Xapian::RuntimeError</innerclass>
+    <innerclass refid="classXapian_1_1AssertionError" prot="public">Xapian::AssertionError</innerclass>
+    <innerclass refid="classXapian_1_1InvalidArgumentError" prot="public">Xapian::InvalidArgumentError</innerclass>
+    <innerclass refid="classXapian_1_1InvalidOperationError" prot="public">Xapian::InvalidOperationError</innerclass>
+    <innerclass refid="classXapian_1_1UnimplementedError" prot="public">Xapian::UnimplementedError</innerclass>
+    <innerclass refid="classXapian_1_1DatabaseError" prot="public">Xapian::DatabaseError</innerclass>
+    <innerclass refid="classXapian_1_1DatabaseCorruptError" prot="public">Xapian::DatabaseCorruptError</innerclass>
+    <innerclass refid="classXapian_1_1DatabaseCreateError" prot="public">Xapian::DatabaseCreateError</innerclass>
+    <innerclass refid="classXapian_1_1DatabaseLockError" prot="public">Xapian::DatabaseLockError</innerclass>
+    <innerclass refid="classXapian_1_1DatabaseModifiedError" prot="public">Xapian::DatabaseModifiedError</innerclass>
+    <innerclass refid="classXapian_1_1DatabaseOpeningError" prot="public">Xapian::DatabaseOpeningError</innerclass>
+    <innerclass refid="classXapian_1_1DatabaseVersionError" prot="public">Xapian::DatabaseVersionError</innerclass>
+    <innerclass refid="classXapian_1_1DocNotFoundError" prot="public">Xapian::DocNotFoundError</innerclass>
+    <innerclass refid="classXapian_1_1FeatureUnavailableError" prot="public">Xapian::FeatureUnavailableError</innerclass>
+    <innerclass refid="classXapian_1_1InternalError" prot="public">Xapian::InternalError</innerclass>
+    <innerclass refid="classXapian_1_1NetworkError" prot="public">Xapian::NetworkError</innerclass>
+    <innerclass refid="classXapian_1_1NetworkTimeoutError" prot="public">Xapian::NetworkTimeoutError</innerclass>
+    <innerclass refid="classXapian_1_1QueryParserError" prot="public">Xapian::QueryParserError</innerclass>
+    <innerclass refid="classXapian_1_1SerialisationError" prot="public">Xapian::SerialisationError</innerclass>
+    <innerclass refid="classXapian_1_1RangeError" prot="public">Xapian::RangeError</innerclass>
+    <innerclass refid="classXapian_1_1ErrorHandler" prot="public">Xapian::ErrorHandler</innerclass>
+    <innerclass refid="classXapian_1_1ExpandDecider" prot="public">Xapian::ExpandDecider</innerclass>
+    <innerclass refid="classXapian_1_1ExpandDeciderAnd" prot="public">Xapian::ExpandDeciderAnd</innerclass>
+    <innerclass refid="classXapian_1_1ExpandDeciderFilterTerms" prot="public">Xapian::ExpandDeciderFilterTerms</innerclass>
+    <innerclass refid="classXapian_1_1KeyMaker" prot="public">Xapian::KeyMaker</innerclass>
+    <innerclass refid="classXapian_1_1MultiValueKeyMaker" prot="public">Xapian::MultiValueKeyMaker</innerclass>
+    <innerclass refid="classXapian_1_1Letor" prot="public">Xapian::Letor</innerclass>
+    <innerclass refid="classXapian_1_1MatchSpy" prot="public">Xapian::MatchSpy</innerclass>
+    <innerclass refid="classXapian_1_1ValueCountMatchSpy" prot="public">Xapian::ValueCountMatchSpy</innerclass>
+    <innerclass refid="classXapian_1_1PositionIterator" prot="public">Xapian::PositionIterator</innerclass>
+    <innerclass refid="classXapian_1_1PostingIterator" prot="public">Xapian::PostingIterator</innerclass>
+    <innerclass refid="classXapian_1_1PostingSource" prot="public">Xapian::PostingSource</innerclass>
+    <innerclass refid="classXapian_1_1ValuePostingSource" prot="public">Xapian::ValuePostingSource</innerclass>
+    <innerclass refid="classXapian_1_1ValueWeightPostingSource" prot="public">Xapian::ValueWeightPostingSource</innerclass>
+    <innerclass refid="classXapian_1_1DecreasingValueWeightPostingSource" prot="public">Xapian::DecreasingValueWeightPostingSource</innerclass>
+    <innerclass refid="classXapian_1_1ValueMapPostingSource" prot="public">Xapian::ValueMapPostingSource</innerclass>
+    <innerclass refid="classXapian_1_1FixedWeightPostingSource" prot="public">Xapian::FixedWeightPostingSource</innerclass>
+    <innerclass refid="classXapian_1_1Query" prot="public">Xapian::Query</innerclass>
+    <innerclass refid="classXapian_1_1Stopper" prot="public">Xapian::Stopper</innerclass>
+    <innerclass refid="classXapian_1_1SimpleStopper" prot="public">Xapian::SimpleStopper</innerclass>
+    <innerclass refid="structXapian_1_1ValueRangeProcessor" prot="public">Xapian::ValueRangeProcessor</innerclass>
+    <innerclass refid="classXapian_1_1StringValueRangeProcessor" prot="public">Xapian::StringValueRangeProcessor</innerclass>
+    <innerclass refid="classXapian_1_1DateValueRangeProcessor" prot="public">Xapian::DateValueRangeProcessor</innerclass>
+    <innerclass refid="classXapian_1_1NumberValueRangeProcessor" prot="public">Xapian::NumberValueRangeProcessor</innerclass>
+    <innerclass refid="classXapian_1_1QueryParser" prot="public">Xapian::QueryParser</innerclass>
+    <innerclass refid="classXapian_1_1Registry" prot="public">Xapian::Registry</innerclass>
+    <innerclass refid="structXapian_1_1StemImplementation" prot="public">Xapian::StemImplementation</innerclass>
+    <innerclass refid="classXapian_1_1Stem" prot="public">Xapian::Stem</innerclass>
+    <innerclass refid="classXapian_1_1TermGenerator" prot="public">Xapian::TermGenerator</innerclass>
+    <innerclass refid="classXapian_1_1TermIterator" prot="public">Xapian::TermIterator</innerclass>
+    <innerclass refid="classXapian_1_1Utf8Iterator" prot="public">Xapian::Utf8Iterator</innerclass>
+    <innerclass refid="classXapian_1_1ValueIterator" prot="public">Xapian::ValueIterator</innerclass>
+    <innerclass refid="classXapian_1_1ValueSetMatchDecider" prot="public">Xapian::ValueSetMatchDecider</innerclass>
+    <innerclass refid="classXapian_1_1Weight" prot="public">Xapian::Weight</innerclass>
+    <innerclass refid="classXapian_1_1BoolWeight" prot="public">Xapian::BoolWeight</innerclass>
+    <innerclass refid="classXapian_1_1BM25Weight" prot="public">Xapian::BM25Weight</innerclass>
+    <innerclass refid="classXapian_1_1TradWeight" prot="public">Xapian::TradWeight</innerclass>
+    <innernamespace refid="namespaceXapian_1_1Auto">Xapian::Auto</innernamespace>
+    <innernamespace refid="namespaceXapian_1_1Brass">Xapian::Brass</innernamespace>
+    <innernamespace refid="namespaceXapian_1_1Chert">Xapian::Chert</innernamespace>
+    <innernamespace refid="namespaceXapian_1_1InMemory">Xapian::InMemory</innernamespace>
+    <innernamespace refid="namespaceXapian_1_1Remote">Xapian::Remote</innernamespace>
+    <innernamespace refid="namespaceXapian_1_1Unicode">Xapian::Unicode</innernamespace>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespaceXapian_17f30aa95f0c42b117dafaf66ba24241d" prot="public" static="no">
+        <type>unsigned</type>
+        <definition>typedef unsigned Xapian::doccount</definition>
+        <argsstring></argsstring>
+        <name>doccount</name>
+        <briefdescription>
+<para>A count of documents. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is used to hold values such as the number of documents in a database and the frequency of a term in the database. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/types.h" line="33" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/types.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceXapian_1958ff32fd7a85f2b8a4784ac18397f2b" prot="public" static="no">
+        <type>int</type>
+        <definition>typedef int Xapian::doccount_diff</definition>
+        <argsstring></argsstring>
+        <name>doccount_diff</name>
+        <briefdescription>
+<para>A signed difference between two counts of documents. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is used by the <ref refid="namespaceXapian" kindref="compound">Xapian</ref> classes which are STL containers of documents for &quot;difference_type&quot;. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/types.h" line="40" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/types.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceXapian_18fa9094bebe1256a7be935a5ede87a64" prot="public" static="no">
+        <type>unsigned</type>
+        <definition>typedef unsigned Xapian::docid</definition>
+        <argsstring></argsstring>
+        <name>docid</name>
+        <briefdescription>
+<para>A unique identifier for a document. </para>        </briefdescription>
+        <detaileddescription>
+<para>Docid 0 is invalid, providing an &quot;out of range&quot; value which can be used to mean &quot;not a valid document&quot;. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/types.h" line="47" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/types.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceXapian_163b13d3a36fcab9975658e32643d86b5" prot="public" static="no">
+        <type>double</type>
+        <definition>typedef double Xapian::doclength</definition>
+        <argsstring></argsstring>
+        <name>doclength</name>
+        <briefdescription>
+<para>A normalised document length. </para>        </briefdescription>
+        <detaileddescription>
+<para>The normalised document length is the document length divided by the average document length in the database. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/types.h" line="54" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/types.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceXapian_122ea0a80c58a2047dd929621b75ed9a2" prot="public" static="no">
+        <type>int</type>
+        <definition>typedef int Xapian::percent</definition>
+        <argsstring></argsstring>
+        <name>percent</name>
+        <briefdescription>
+<para>The percentage score for a document in an <ref refid="classXapian_1_1MSet" kindref="compound">MSet</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/types.h" line="57" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/types.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceXapian_172b5a76dd8cfb7b251fe7986e86390cb" prot="public" static="no">
+        <type>unsigned</type>
+        <definition>typedef unsigned Xapian::termcount</definition>
+        <argsstring></argsstring>
+        <name>termcount</name>
+        <briefdescription>
+<para>A counts of terms. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is used to hold values such as the Within <ref refid="classXapian_1_1Document" kindref="compound">Document</ref> Frequency (wdf). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/types.h" line="63" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/types.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceXapian_1886bd8fd46134d4b488091cfd8a658ed" prot="public" static="no">
+        <type>int</type>
+        <definition>typedef int Xapian::termcount_diff</definition>
+        <argsstring></argsstring>
+        <name>termcount_diff</name>
+        <briefdescription>
+<para>A signed difference between two counts of terms. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is used by the <ref refid="namespaceXapian" kindref="compound">Xapian</ref> classes which are STL containers of terms for &quot;difference_type&quot;. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/types.h" line="70" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/types.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceXapian_1e5a16f073d0c8ed54085a9de07248d45" prot="public" static="no">
+        <type>unsigned</type>
+        <definition>typedef unsigned Xapian::termpos</definition>
+        <argsstring></argsstring>
+        <name>termpos</name>
+        <briefdescription>
+<para>A term position within a document or query. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/types.h" line="74" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/types.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceXapian_1bc9d5170114fede39c85ee03086e373b" prot="public" static="no">
+        <type>int</type>
+        <definition>typedef int Xapian::termpos_diff</definition>
+        <argsstring></argsstring>
+        <name>termpos_diff</name>
+        <briefdescription>
+<para>A signed difference between two term positions. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is used by the <ref refid="namespaceXapian" kindref="compound">Xapian</ref> classes which are STL containers of positions for &quot;difference_type&quot;. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/types.h" line="81" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/types.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceXapian_1da10bc23c3467246f078179fce2d762d" prot="public" static="no">
+        <type>unsigned</type>
+        <definition>typedef unsigned Xapian::timeout</definition>
+        <argsstring></argsstring>
+        <name>timeout</name>
+        <briefdescription>
+<para>A timeout value in milliseconds. </para>        </briefdescription>
+        <detaileddescription>
+<para>There are 1000 milliseconds in a second, so for example, to set a timeout of 5 seconds use 5000.</para><para><xrefsect id="deprecated_1_deprecated000001"><xreftitle>Deprecated</xreftitle><xrefdescription><para>This type is deprecated as of <ref refid="namespaceXapian" kindref="compound">Xapian</ref> 1.3.0 - use the standard POSIX type useconds_t instead, which should work with older <ref refid="namespaceXapian" kindref="compound">Xapian</ref> too. </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/types.h" line="91" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/types.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceXapian_194a899651fa920c72ffa9635bde630ea" prot="public" static="no">
+        <type>unsigned</type>
+        <definition>typedef unsigned Xapian::valueno</definition>
+        <argsstring></argsstring>
+        <name>valueno</name>
+        <briefdescription>
+<para>The number for a value slot in a document. </para>        </briefdescription>
+        <detaileddescription>
+<para>Any value slot number except <ref refid="namespaceXapian_10a75ef120e641c77f703e60f595ffda2" kindref="member">Xapian::BAD_VALUENO</ref> is valid. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/types.h" line="97" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/types.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceXapian_1dd1b3ce8b08d23e4665b097f785c6a96" prot="public" static="no">
+        <type>int</type>
+        <definition>typedef int Xapian::valueno_diff</definition>
+        <argsstring></argsstring>
+        <name>valueno_diff</name>
+        <briefdescription>
+<para>A signed difference between two value slot numbers. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is used by the <ref refid="namespaceXapian" kindref="compound">Xapian</ref> classes which are STL containers of values for &quot;difference_type&quot;. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/types.h" line="104" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/types.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceXapian_1cac12803afc9e24ee5141c119acb8884" prot="public" static="no">
+        <type>double</type>
+        <definition>typedef double Xapian::weight</definition>
+        <argsstring></argsstring>
+        <name>weight</name>
+        <briefdescription>
+<para>The weight of a document or term. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/types.h" line="107" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/types.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespaceXapian_13d32111900603ce02b8c8467b9c5bacb" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int Xapian::DB_CREATE_OR_OPEN</definition>
+        <argsstring></argsstring>
+        <name>DB_CREATE_OR_OPEN</name>
+        <initializer> 1</initializer>
+        <briefdescription>
+<para>Open for read/write; create if no db exists. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="903" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/database.h" bodystart="903" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceXapian_11236aaa6a3d7a37a4c6b95439e449f7a" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int Xapian::DB_CREATE</definition>
+        <argsstring></argsstring>
+        <name>DB_CREATE</name>
+        <initializer> 2</initializer>
+        <briefdescription>
+<para>Create a new database; fail if db exists. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="905" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/database.h" bodystart="905" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceXapian_1fbc13e6712a12dcfd0c048242fc313ed" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int Xapian::DB_CREATE_OR_OVERWRITE</definition>
+        <argsstring></argsstring>
+        <name>DB_CREATE_OR_OVERWRITE</name>
+        <initializer> 3</initializer>
+        <briefdescription>
+<para>Overwrite existing db; create if none exists. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="907" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/database.h" bodystart="907" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceXapian_154521467b649894bdc411f4c35e56ac3" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int Xapian::DB_OPEN</definition>
+        <argsstring></argsstring>
+        <name>DB_OPEN</name>
+        <initializer> 4</initializer>
+        <briefdescription>
+<para>Open for read/write; fail if no db exists. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/database.h" line="909" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/database.h" bodystart="909" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceXapian_10a75ef120e641c77f703e60f595ffda2" prot="public" static="no" mutable="no">
+        <type>const <ref refid="namespaceXapian_194a899651fa920c72ffa9635bde630ea" kindref="member">valueno</ref></type>
+        <definition>const valueno Xapian::BAD_VALUENO</definition>
+        <argsstring></argsstring>
+        <name>BAD_VALUENO</name>
+        <initializer> static_cast&lt;<ref refid="namespaceXapian_194a899651fa920c72ffa9635bde630ea" kindref="member">valueno</ref>&gt;(-1)</initializer>
+        <briefdescription>
+<para>Reserved value to indicate &quot;no valueno&quot;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/types.h" line="110" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/types.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceXapian_15d6ed5a88ec3d4471e45b1598691dab4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Xapian::operator==</definition>
+        <argsstring>(const MSetIterator &amp;a, const MSetIterator &amp;b)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1MSetIterator" kindref="compound">MSetIterator</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classXapian_1_1MSetIterator" kindref="compound">MSetIterator</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>Equality test for <ref refid="classXapian_1_1MSetIterator" kindref="compound">MSetIterator</ref> objects. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="403" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" bodystart="402" bodyend="405"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceXapian_1245fbc9f00ff6dac8724c65926495585" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Xapian::operator!=</definition>
+        <argsstring>(const MSetIterator &amp;a, const MSetIterator &amp;b)</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1MSetIterator" kindref="compound">MSetIterator</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classXapian_1_1MSetIterator" kindref="compound">MSetIterator</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>Inequality test for <ref refid="classXapian_1_1MSetIterator" kindref="compound">MSetIterator</ref> objects. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="409" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" bodystart="408" bodyend="411"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceXapian_1bb14b86f144db20662592575911ca308" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Xapian::operator==</definition>
+        <argsstring>(const ESetIterator &amp;a, const ESetIterator &amp;b)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1ESetIterator" kindref="compound">ESetIterator</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classXapian_1_1ESetIterator" kindref="compound">ESetIterator</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>Equality test for <ref refid="classXapian_1_1ESetIterator" kindref="compound">ESetIterator</ref> objects. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="549" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" bodystart="548" bodyend="551"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceXapian_1c2c2c0ec620503d10c024f076db2bde4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Xapian::operator!=</definition>
+        <argsstring>(const ESetIterator &amp;a, const ESetIterator &amp;b)</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1ESetIterator" kindref="compound">ESetIterator</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classXapian_1_1ESetIterator" kindref="compound">ESetIterator</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>Inequality test for <ref refid="classXapian_1_1ESetIterator" kindref="compound">ESetIterator</ref> objects. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="555" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" bodystart="554" bodyend="557"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceXapian_1cd6a36fe0327deef4f720416036d48cc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Xapian::operator==</definition>
+        <argsstring>(const PositionIterator &amp;a, const PositionIterator &amp;b)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1PositionIterator" kindref="compound">PositionIterator</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classXapian_1_1PositionIterator" kindref="compound">PositionIterator</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>Equality test for <ref refid="classXapian_1_1PositionIterator" kindref="compound">PositionIterator</ref> objects. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/positioniterator.h" line="115" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/positioniterator.h" bodystart="114" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceXapian_184bfb06d1ced43e6602f81c17d5e8e77" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Xapian::operator!=</definition>
+        <argsstring>(const PositionIterator &amp;a, const PositionIterator &amp;b)</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1PositionIterator" kindref="compound">PositionIterator</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classXapian_1_1PositionIterator" kindref="compound">PositionIterator</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>Inequality test for <ref refid="classXapian_1_1PositionIterator" kindref="compound">PositionIterator</ref> objects. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/positioniterator.h" line="124" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/positioniterator.h" bodystart="123" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceXapian_1b36ad8f69a1e7884ee9a8c171df440f7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Xapian::operator==</definition>
+        <argsstring>(const PostingIterator &amp;a, const PostingIterator &amp;b)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1PostingIterator" kindref="compound">PostingIterator</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classXapian_1_1PostingIterator" kindref="compound">PostingIterator</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>Equality test for <ref refid="classXapian_1_1PostingIterator" kindref="compound">PostingIterator</ref> objects. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/postingiterator.h" line="138" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/postingiterator.h" bodystart="137" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceXapian_1cdbc3d8d04f687c094a693e3f2133985" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Xapian::operator!=</definition>
+        <argsstring>(const PostingIterator &amp;a, const PostingIterator &amp;b)</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1PostingIterator" kindref="compound">PostingIterator</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classXapian_1_1PostingIterator" kindref="compound">PostingIterator</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>Inequality test for <ref refid="classXapian_1_1PostingIterator" kindref="compound">PostingIterator</ref> objects. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/postingiterator.h" line="147" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/postingiterator.h" bodystart="146" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceXapian_129a741b4cda98e10ed5f2fc784039065" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Xapian::sortable_serialise</definition>
+        <argsstring>(double value)</argsstring>
+        <name>sortable_serialise</name>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Convert a floating point number to a string, preserving sort order. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method converts a floating point number to a string, suitable for using as a value for numeric range restriction, or for use as a sort key.</para><para>The conversion is platform independent.</para><para>The conversion attempts to ensure that, for any pair of values supplied to the conversion algorithm, the result of comparing the original values (with a numeric comparison operator) will be the same as the result of comparing the resulting values (with a string comparison operator). On platforms which represent doubles with the precisions specified by IEEE_754, this will be the case: if the representation of doubles is more precise, it is possible that two very close doubles will be mapped to the same string, so will compare equal.</para><para>Note also that both zero and -zero will be converted to the same representation: since these compare equal, this satisfies the comparison constraint, but it&apos;s worth knowing this if you wish to use the encoding in some situation where this distinction matters.</para><para>Handling of NaN isn&apos;t (currently) guaranteed to be sensible. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/queryparser.h" line="635"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceXapian_1326fe2d6b0ee59ac9536f3960e8fd99b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Xapian::sortable_unserialise</definition>
+        <argsstring>(const std::string &amp;value)</argsstring>
+        <name>sortable_unserialise</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Convert a string encoded using <emphasis>sortable_serialise</emphasis> back to a floating point number. </para>        </briefdescription>
+        <detaileddescription>
+<para>This expects the input to be a string produced by <emphasis><ref refid="namespaceXapian_129a741b4cda98e10ed5f2fc784039065" kindref="member">sortable_serialise()</ref></emphasis>. If the input is not such a string, the value returned is undefined (but no error will be thrown).</para><para>The result of the conversion will be exactly the value which was supplied to <emphasis><ref refid="namespaceXapian_129a741b4cda98e10ed5f2fc784039065" kindref="member">sortable_serialise()</ref></emphasis> when making the string on platforms which represent doubles with the precisions specified by IEEE_754, but may be a different (nearby) value on other platforms. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/queryparser.h" line="650"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceXapian_1e6d2676890d652fd785d729d4a8da565" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Xapian::operator==</definition>
+        <argsstring>(const TermIterator &amp;a, const TermIterator &amp;b)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1TermIterator" kindref="compound">TermIterator</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classXapian_1_1TermIterator" kindref="compound">TermIterator</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>Equality test for <ref refid="classXapian_1_1TermIterator" kindref="compound">TermIterator</ref> objects. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/termiterator.h" line="139" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/termiterator.h" bodystart="138" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceXapian_13ecb406384b5cd18232f1a64008658ed" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Xapian::operator!=</definition>
+        <argsstring>(const TermIterator &amp;a, const TermIterator &amp;b)</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1TermIterator" kindref="compound">TermIterator</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classXapian_1_1TermIterator" kindref="compound">TermIterator</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>Inequality test for <ref refid="classXapian_1_1TermIterator" kindref="compound">TermIterator</ref> objects. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/termiterator.h" line="148" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/termiterator.h" bodystart="147" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceXapian_1407d9c7248816d5ccb9678c4c32066de" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Xapian::operator==</definition>
+        <argsstring>(const ValueIterator &amp;a, const ValueIterator &amp;b)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1ValueIterator" kindref="compound">ValueIterator</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classXapian_1_1ValueIterator" kindref="compound">ValueIterator</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>Equality test for <ref refid="classXapian_1_1ValueIterator" kindref="compound">ValueIterator</ref> objects. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/valueiterator.h" line="165" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/valueiterator.h" bodystart="164" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceXapian_153593fdefa90aa979a236020328990da" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Xapian::operator!=</definition>
+        <argsstring>(const ValueIterator &amp;a, const ValueIterator &amp;b)</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1ValueIterator" kindref="compound">ValueIterator</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classXapian_1_1ValueIterator" kindref="compound">ValueIterator</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>Inequality test for <ref refid="classXapian_1_1ValueIterator" kindref="compound">ValueIterator</ref> objects. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/valueiterator.h" line="174" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/valueiterator.h" bodystart="173" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceXapian_1adb3ea72641cec03826dcd4215f02d55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* Xapian::version_string</definition>
+        <argsstring>()</argsstring>
+        <name>version_string</name>
+        <briefdescription>
+<para>Report the version string of the library which the program is linked with. </para>        </briefdescription>
+        <detaileddescription>
+<para>This may be different to the version compiled against (given by XAPIAN_VERSION) if shared libraries are being used. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian.h" line="82"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceXapian_1170fe705bd7a4b465791e76312072046" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Xapian::major_version</definition>
+        <argsstring>()</argsstring>
+        <name>major_version</name>
+        <briefdescription>
+<para>Report the major version of the library which the program is linked with. </para>        </briefdescription>
+        <detaileddescription>
+<para>This may be different to the version compiled against (given by XAPIAN_MAJOR_VERSION) if shared libraries are being used. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian.h" line="90"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceXapian_1d995af7e143deb0eb7f9a1e03f477b47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Xapian::minor_version</definition>
+        <argsstring>()</argsstring>
+        <name>minor_version</name>
+        <briefdescription>
+<para>Report the minor version of the library which the program is linked with. </para>        </briefdescription>
+        <detaileddescription>
+<para>This may be different to the version compiled against (given by XAPIAN_MINOR_VERSION) if shared libraries are being used. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian.h" line="98"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceXapian_121cc6b665ac32a43724d9f20673dfc45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Xapian::revision</definition>
+        <argsstring>()</argsstring>
+        <name>revision</name>
+        <briefdescription>
+<para>Report the revision of the library which the program is linked with. </para>        </briefdescription>
+        <detaileddescription>
+<para>This may be different to the version compiled against (given by XAPIAN_REVISION) if shared libraries are being used. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian.h" line="106"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The <ref refid="namespaceXapian" kindref="compound">Xapian</ref> namespace contains public interfaces for the <ref refid="namespaceXapian" kindref="compound">Xapian</ref> library. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/compactor.h" line="30"/>
+  </compounddef>
+</doxygen>

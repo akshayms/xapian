@@ -1,0 +1,30 @@
+K 10
+svn:ignore
+V 125
+aclocal.m4
+config.*
+libtool
+Makefile
+swig
+swig.exe
+swig.spec
+*.tar.gz
+configure
+autom4te.cache
+.gdbinit
+mkmf.log
+preinst-swig
+K 13
+svn:mergeinfo
+V 86
+/branches/swig-2.0:11085-11086,11088-11089
+/branches/szager-python-builtin:12331-12595
+K 16
+svnmerge-blocked
+V 30
+/branches/swig-2.0:11084,11087
+K 19
+svnmerge-integrated
+V 81
+/branches/gsoc2008-bhy:1-10819 /branches/swig-2.0:1-11081,11085-11086,11088-11089
+END

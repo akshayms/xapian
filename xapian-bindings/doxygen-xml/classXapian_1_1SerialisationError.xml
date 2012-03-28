@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="classXapian_1_1SerialisationError" kind="class" prot="public">
+    <compoundname>Xapian::SerialisationError</compoundname>
+    <basecompoundref refid="classXapian_1_1RuntimeError" prot="public" virt="non-virtual">Xapian::RuntimeError</basecompoundref>
+    <includes local="no">error.h</includes>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classXapian_1_1SerialisationError_1912c8ce7daadf5a303935180c5d8b288" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::SerialisationError::SerialisationError</definition>
+        <argsstring>(const std::string &amp;msg_, const std::string &amp;context_, const char *error_string_)</argsstring>
+        <name>SerialisationError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>context_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>error_string_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="716" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="715" bodyend="716"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1SerialisationError_10bba69ed115e85e96a986bcdf598aa71" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::SerialisationError::SerialisationError</definition>
+        <argsstring>(const std::string &amp;msg_, const std::string &amp;context_, const char *type_, const char *error_string_)</argsstring>
+        <name>SerialisationError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>context_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>type_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>error_string_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="728" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="727" bodyend="728"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1SerialisationError_1dd3dc28532d4f68c0df2df0da3fb475a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::SerialisationError::SerialisationError</definition>
+        <argsstring>(const std::string &amp;msg_, const std::string &amp;context_, const char *type_, int errno_)</argsstring>
+        <name>SerialisationError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>context_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>type_</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>errno_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="734" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="733" bodyend="734"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classXapian_1_1SerialisationError_145df3b6b7c12c1f8baa52de2da3f35a0" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::SerialisationError::SerialisationError</definition>
+        <argsstring>(const std::string &amp;msg_, const std::string &amp;context_=std::string(), int errno_=0)</argsstring>
+        <name>SerialisationError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>context_</declname>
+          <defval>std::string()</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>errno_</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>General purpose constructor which allows setting errno. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="719" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="718" bodyend="719"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1SerialisationError_12a903f6ade8bb8a7e4ad16a4830aa9e0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::SerialisationError::SerialisationError</definition>
+        <argsstring>(const std::string &amp;msg_, int errno_)</argsstring>
+        <name>SerialisationError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>errno_</declname>
+        </param>
+        <briefdescription>
+<para>Construct from message and errno value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="722" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="721" bodyend="722"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Indicates an error in the std::string serialisation of an object. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="669">
+        <label>Xapian::Error</label>
+        <link refid="classXapian_1_1Error"/>
+      </node>
+      <node id="668">
+        <label>Xapian::RuntimeError</label>
+        <link refid="classXapian_1_1RuntimeError"/>
+        <childnode refid="669" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="667">
+        <label>Xapian::SerialisationError</label>
+        <link refid="classXapian_1_1SerialisationError"/>
+        <childnode refid="668" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="672">
+        <label>Xapian::Error</label>
+        <link refid="classXapian_1_1Error"/>
+      </node>
+      <node id="671">
+        <label>Xapian::RuntimeError</label>
+        <link refid="classXapian_1_1RuntimeError"/>
+        <childnode refid="672" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="670">
+        <label>Xapian::SerialisationError</label>
+        <link refid="classXapian_1_1SerialisationError"/>
+        <childnode refid="671" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="708" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="708" bodyend="735"/>
+    <listofallmembers>
+      <member refid="classXapian_1_1Error_190c683965555b4bc86b08e8667170e44" prot="public" virt="non-virtual"><scope>Xapian::SerialisationError</scope><name>get_context</name></member>
+      <member refid="classXapian_1_1Error_1bd64e380eb6d864dc907ee62c1f58a74" prot="public" virt="non-virtual"><scope>Xapian::SerialisationError</scope><name>get_description</name></member>
+      <member refid="classXapian_1_1Error_16f94a579f8e176f85c6fb036592dab61" prot="public" virt="non-virtual"><scope>Xapian::SerialisationError</scope><name>get_error_string</name></member>
+      <member refid="classXapian_1_1Error_1ea05df48ea71dfd045da28ab984cdaa3" prot="public" virt="non-virtual"><scope>Xapian::SerialisationError</scope><name>get_msg</name></member>
+      <member refid="classXapian_1_1Error_1136945e703317bdf6e18d8cf511a5bfb" prot="public" virt="non-virtual"><scope>Xapian::SerialisationError</scope><name>get_type</name></member>
+      <member refid="classXapian_1_1SerialisationError_1912c8ce7daadf5a303935180c5d8b288" prot="private" virt="non-virtual"><scope>Xapian::SerialisationError</scope><name>SerialisationError</name></member>
+      <member refid="classXapian_1_1SerialisationError_145df3b6b7c12c1f8baa52de2da3f35a0" prot="public" virt="non-virtual"><scope>Xapian::SerialisationError</scope><name>SerialisationError</name></member>
+      <member refid="classXapian_1_1SerialisationError_12a903f6ade8bb8a7e4ad16a4830aa9e0" prot="public" virt="non-virtual"><scope>Xapian::SerialisationError</scope><name>SerialisationError</name></member>
+      <member refid="classXapian_1_1SerialisationError_10bba69ed115e85e96a986bcdf598aa71" prot="private" virt="non-virtual"><scope>Xapian::SerialisationError</scope><name>SerialisationError</name></member>
+      <member refid="classXapian_1_1SerialisationError_1dd3dc28532d4f68c0df2df0da3fb475a" prot="private" virt="non-virtual"><scope>Xapian::SerialisationError</scope><name>SerialisationError</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

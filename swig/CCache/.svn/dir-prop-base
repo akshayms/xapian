@@ -1,0 +1,19 @@
+K 10
+svn:ignore
+V 163
+Makefile
+autom4te.cache
+ccache-swig
+ccache-swig.1
+ccache-swig.exe
+ccache_swig_config.h
+*gz
+configure
+config.h
+config.h.in
+config.log
+config.status
+tca.log
+tca.map
+
+END

@@ -1,0 +1,10 @@
+K 10
+svn:ignore
+V 59
+csi.c
+example.scm
+example_wrap.c
+oexample.c
+precsi.c
+simple
+END

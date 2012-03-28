@@ -1,0 +1,367 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="classXapian_1_1TermIterator" kind="class" prot="public">
+    <compoundname>Xapian::TermIterator</compoundname>
+    <includes local="no">termiterator.h</includes>
+      <sectiondef kind="user-defined">
+      <memberdef kind="typedef" id="classXapian_1_1TermIterator_1feab33f745f72c8e9c24a58fe1e25800" prot="private" static="no">
+        <type>std::input_iterator_tag</type>
+        <definition>typedef std::input_iterator_tag Xapian::TermIterator::iterator_category</definition>
+        <argsstring></argsstring>
+        <name>iterator_category</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/termiterator.h" line="119" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/termiterator.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classXapian_1_1TermIterator_11f80825c29a2d6e16f3d4008cedb7833" prot="private" static="no">
+        <type>std::string</type>
+        <definition>typedef std::string Xapian::TermIterator::value_type</definition>
+        <argsstring></argsstring>
+        <name>value_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/termiterator.h" line="121" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/termiterator.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classXapian_1_1TermIterator_12caca0d976af5309003b95e66cbebe73" prot="private" static="no">
+        <type><ref refid="namespaceXapian_1886bd8fd46134d4b488091cfd8a658ed" kindref="member">Xapian::termcount_diff</ref></type>
+        <definition>typedef Xapian::termcount_diff Xapian::TermIterator::difference_type</definition>
+        <argsstring></argsstring>
+        <name>difference_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/termiterator.h" line="123" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/termiterator.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classXapian_1_1TermIterator_1c674b6f574ee46bb6725c0fd41d06fc2" prot="private" static="no">
+        <type>std::string *</type>
+        <definition>typedef std::string* Xapian::TermIterator::pointer</definition>
+        <argsstring></argsstring>
+        <name>pointer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/termiterator.h" line="125" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/termiterator.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classXapian_1_1TermIterator_132f947d758ed204f39f099487412a878" prot="private" static="no">
+        <type>std::string &amp;</type>
+        <definition>typedef std::string&amp; Xapian::TermIterator::reference</definition>
+        <argsstring></argsstring>
+        <name>reference</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/termiterator.h" line="127" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/termiterator.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classXapian_1_1TermIterator_1c7b2ac3c52e0ef9a33567ff7a99a3115" prot="private" static="no" mutable="no">
+        <type>Internal *</type>
+        <definition>Internal* Xapian::TermIterator::internal</definition>
+        <argsstring></argsstring>
+        <name>internal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/termiterator.h" line="41" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/termiterator.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classXapian_1_1TermIterator_1cab902a436d816b02ac90f79ef783022" prot="private" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::TermIterator::TermIterator</definition>
+        <argsstring>(Internal *internal_)</argsstring>
+        <name>TermIterator</name>
+        <param>
+          <type>Internal *</type>
+          <declname>internal_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/termiterator.h" line="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1TermIterator_141cf4f55a73b5cc7a6a912b83323d8a3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::TermIterator::decref</definition>
+        <argsstring>()</argsstring>
+        <name>decref</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/termiterator.h" line="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1TermIterator_19951b96522bf72eaaa211304d8db0a40" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::TermIterator::post_advance</definition>
+        <argsstring>(Internal *res)</argsstring>
+        <name>post_advance</name>
+        <param>
+          <type>Internal *</type>
+          <declname>res</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/termiterator.h" line="133"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classXapian_1_1TermIterator_103e04a51d4aeaa108cdd1f988de4b259" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::TermIterator::TermIterator</definition>
+        <argsstring>(const TermIterator &amp;o)</argsstring>
+        <name>TermIterator</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1TermIterator" kindref="compound">TermIterator</ref> &amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+<para>Copy constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/termiterator.h" line="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1TermIterator_159097c3c1098630a1095218b1ed7da71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classXapian_1_1TermIterator" kindref="compound">TermIterator</ref> &amp;</type>
+        <definition>TermIterator&amp; Xapian::TermIterator::operator=</definition>
+        <argsstring>(const TermIterator &amp;o)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1TermIterator" kindref="compound">TermIterator</ref> &amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+<para>Assignment. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/termiterator.h" line="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1TermIterator_1fd50fb35c84e433fc3762447e28b4bab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::TermIterator::TermIterator</definition>
+        <argsstring>()</argsstring>
+        <name>TermIterator</name>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Creates an uninitialised iterator, which can&apos;t be used before being assigned to, but is sometimes syntactically convenient. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/termiterator.h" line="57" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/termiterator.h" bodystart="57" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1TermIterator_1914de6019011c9c25b00e84f556af681" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::TermIterator::~TermIterator</definition>
+        <argsstring>()</argsstring>
+        <name>~TermIterator</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/termiterator.h" line="60" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/termiterator.h" bodystart="60" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1TermIterator_1dd766c721040fbca391aa13506be9e31" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Xapian::TermIterator::operator*</definition>
+        <argsstring>() const </argsstring>
+        <name>operator*</name>
+        <briefdescription>
+<para>Return the term at the current position. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/termiterator.h" line="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1TermIterator_1aad6e6fcfc9ffb513cef923b65adf6e8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceXapian_172b5a76dd8cfb7b251fe7986e86390cb" kindref="member">Xapian::termcount</ref></type>
+        <definition>Xapian::termcount Xapian::TermIterator::get_wdf</definition>
+        <argsstring>() const </argsstring>
+        <name>get_wdf</name>
+        <briefdescription>
+<para>Return the wdf for the term at the current position. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/termiterator.h" line="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1TermIterator_168adffacecf143bdafafdb35ecac8511" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceXapian_17f30aa95f0c42b117dafaf66ba24241d" kindref="member">Xapian::doccount</ref></type>
+        <definition>Xapian::doccount Xapian::TermIterator::get_termfreq</definition>
+        <argsstring>() const </argsstring>
+        <name>get_termfreq</name>
+        <briefdescription>
+<para>Return the term frequency for the term at the current position. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/termiterator.h" line="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1TermIterator_16ecd77a64b324ddffaa25e9901e362be" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceXapian_172b5a76dd8cfb7b251fe7986e86390cb" kindref="member">Xapian::termcount</ref></type>
+        <definition>Xapian::termcount Xapian::TermIterator::positionlist_count</definition>
+        <argsstring>() const </argsstring>
+        <name>positionlist_count</name>
+        <briefdescription>
+<para>Return the length of the position list for the current position. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/termiterator.h" line="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1TermIterator_1c5cae68c58a8f405721732529d2144d6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classXapian_1_1PositionIterator" kindref="compound">PositionIterator</ref></type>
+        <definition>PositionIterator Xapian::TermIterator::positionlist_begin</definition>
+        <argsstring>() const </argsstring>
+        <name>positionlist_begin</name>
+        <briefdescription>
+<para>Return a <ref refid="classXapian_1_1PositionIterator" kindref="compound">PositionIterator</ref> for the current term. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/termiterator.h" line="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1TermIterator_168a6157a501e51b7043ba86676be026f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classXapian_1_1PositionIterator" kindref="compound">PositionIterator</ref></type>
+        <definition>PositionIterator Xapian::TermIterator::positionlist_end</definition>
+        <argsstring>() const </argsstring>
+        <name>positionlist_end</name>
+        <briefdescription>
+<para>Return an end <ref refid="classXapian_1_1PositionIterator" kindref="compound">PositionIterator</ref> for the current term. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/termiterator.h" line="80" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/termiterator.h" bodystart="80" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1TermIterator_104d4db66b44b0e948f8cd925130aacb0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classXapian_1_1TermIterator" kindref="compound">TermIterator</ref> &amp;</type>
+        <definition>TermIterator&amp; Xapian::TermIterator::operator++</definition>
+        <argsstring>()</argsstring>
+        <name>operator++</name>
+        <briefdescription>
+<para>Advance the iterator to the next position. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/termiterator.h" line="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1TermIterator_12a425243a43291345eef2659fb1d085f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>DerefWrapper_&lt; std::string &gt;</type>
+        <definition>DerefWrapper_&lt;std::string&gt; Xapian::TermIterator::operator++</definition>
+        <argsstring>(int)</argsstring>
+        <name>operator++</name>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+<para>Advance the iterator to the next position (postfix version). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/termiterator.h" line="88" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/termiterator.h" bodystart="88" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1TermIterator_17b1993d2587d6d9acc7c63212c4b56ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::TermIterator::skip_to</definition>
+        <argsstring>(const std::string &amp;term)</argsstring>
+        <name>skip_to</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>term</declname>
+        </param>
+        <briefdescription>
+<para>Advance the iterator to term <emphasis>term</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+<para>If the iteration is over an unsorted list of terms, then this method will throw <ref refid="classXapian_1_1InvalidOperationError" kindref="compound">Xapian::InvalidOperationError</ref>.</para><para>If the specified term isn&apos;t in the stream being iterated, then the iterator is moved to the next term after <emphasis>term</emphasis>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/termiterator.h" line="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1TermIterator_19a7aeca02e3c4dc43d7553f6a0c19abf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Xapian::TermIterator::get_description</definition>
+        <argsstring>() const </argsstring>
+        <name>get_description</name>
+        <briefdescription>
+<para>Return a string describing this object. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/termiterator.h" line="105"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class for iterating over a list of terms. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/termiterator.h" line="36" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/termiterator.h" bodystart="36" bodyend="134"/>
+    <listofallmembers>
+      <member refid="classXapian_1_1TermIterator_141cf4f55a73b5cc7a6a912b83323d8a3" prot="private" virt="non-virtual"><scope>Xapian::TermIterator</scope><name>decref</name></member>
+      <member refid="classXapian_1_1TermIterator_12caca0d976af5309003b95e66cbebe73" prot="private" virt="non-virtual"><scope>Xapian::TermIterator</scope><name>difference_type</name></member>
+      <member refid="classXapian_1_1TermIterator_19a7aeca02e3c4dc43d7553f6a0c19abf" prot="public" virt="non-virtual"><scope>Xapian::TermIterator</scope><name>get_description</name></member>
+      <member refid="classXapian_1_1TermIterator_168adffacecf143bdafafdb35ecac8511" prot="public" virt="non-virtual"><scope>Xapian::TermIterator</scope><name>get_termfreq</name></member>
+      <member refid="classXapian_1_1TermIterator_1aad6e6fcfc9ffb513cef923b65adf6e8" prot="public" virt="non-virtual"><scope>Xapian::TermIterator</scope><name>get_wdf</name></member>
+      <member refid="classXapian_1_1TermIterator_1c7b2ac3c52e0ef9a33567ff7a99a3115" prot="private" virt="non-virtual"><scope>Xapian::TermIterator</scope><name>internal</name></member>
+      <member refid="classXapian_1_1TermIterator_1feab33f745f72c8e9c24a58fe1e25800" prot="private" virt="non-virtual"><scope>Xapian::TermIterator</scope><name>iterator_category</name></member>
+      <member refid="classXapian_1_1TermIterator_1dd766c721040fbca391aa13506be9e31" prot="public" virt="non-virtual"><scope>Xapian::TermIterator</scope><name>operator*</name></member>
+      <member refid="classXapian_1_1TermIterator_104d4db66b44b0e948f8cd925130aacb0" prot="public" virt="non-virtual"><scope>Xapian::TermIterator</scope><name>operator++</name></member>
+      <member refid="classXapian_1_1TermIterator_12a425243a43291345eef2659fb1d085f" prot="public" virt="non-virtual"><scope>Xapian::TermIterator</scope><name>operator++</name></member>
+      <member refid="classXapian_1_1TermIterator_159097c3c1098630a1095218b1ed7da71" prot="public" virt="non-virtual"><scope>Xapian::TermIterator</scope><name>operator=</name></member>
+      <member refid="classXapian_1_1TermIterator_1c674b6f574ee46bb6725c0fd41d06fc2" prot="private" virt="non-virtual"><scope>Xapian::TermIterator</scope><name>pointer</name></member>
+      <member refid="classXapian_1_1TermIterator_1c5cae68c58a8f405721732529d2144d6" prot="public" virt="non-virtual"><scope>Xapian::TermIterator</scope><name>positionlist_begin</name></member>
+      <member refid="classXapian_1_1TermIterator_16ecd77a64b324ddffaa25e9901e362be" prot="public" virt="non-virtual"><scope>Xapian::TermIterator</scope><name>positionlist_count</name></member>
+      <member refid="classXapian_1_1TermIterator_168a6157a501e51b7043ba86676be026f" prot="public" virt="non-virtual"><scope>Xapian::TermIterator</scope><name>positionlist_end</name></member>
+      <member refid="classXapian_1_1TermIterator_19951b96522bf72eaaa211304d8db0a40" prot="private" virt="non-virtual"><scope>Xapian::TermIterator</scope><name>post_advance</name></member>
+      <member refid="classXapian_1_1TermIterator_132f947d758ed204f39f099487412a878" prot="private" virt="non-virtual"><scope>Xapian::TermIterator</scope><name>reference</name></member>
+      <member refid="classXapian_1_1TermIterator_17b1993d2587d6d9acc7c63212c4b56ae" prot="public" virt="non-virtual"><scope>Xapian::TermIterator</scope><name>skip_to</name></member>
+      <member refid="classXapian_1_1TermIterator_1cab902a436d816b02ac90f79ef783022" prot="private" virt="non-virtual"><scope>Xapian::TermIterator</scope><name>TermIterator</name></member>
+      <member refid="classXapian_1_1TermIterator_103e04a51d4aeaa108cdd1f988de4b259" prot="public" virt="non-virtual"><scope>Xapian::TermIterator</scope><name>TermIterator</name></member>
+      <member refid="classXapian_1_1TermIterator_1fd50fb35c84e433fc3762447e28b4bab" prot="public" virt="non-virtual"><scope>Xapian::TermIterator</scope><name>TermIterator</name></member>
+      <member refid="classXapian_1_1TermIterator_11f80825c29a2d6e16f3d4008cedb7833" prot="private" virt="non-virtual"><scope>Xapian::TermIterator</scope><name>value_type</name></member>
+      <member refid="classXapian_1_1TermIterator_1914de6019011c9c25b00e84f556af681" prot="public" virt="non-virtual"><scope>Xapian::TermIterator</scope><name>~TermIterator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,10 @@
+K 13
+svn:eol-style
+V 6
+native
+K 13
+svn:mergeinfo
+V 122
+/branches/replication_fixes/xapian-core/api/registry.cc:14149-14152
+/trunk/xapian-core/api/registry.cc:2-13291,15485-16044
+END

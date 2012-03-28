@@ -1,0 +1,80 @@
+10
+
+dir
+12767
+svn://svn.tartarus.org/swig/trunk/Examples/pike
+svn://svn.tartarus.org/swig
+
+
+
+2008-11-26T21:56:48.882604Z
+10952
+wsfulton
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+cce2a4f7-dc27-40e0-b75d-b3f4d8458e25
+
+enum
+dir
+
+class
+dir
+
+check.list
+file
+
+
+
+
+2012-03-21T13:02:52.629786Z
+38f1bd6be914e3b9a91b0a2c144c6441
+2003-04-30T22:22:11.000000Z
+4758
+ljohnson
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+56
+
+simple
+dir
+
+overload
+dir
+
+template
+dir
+
+constants
+dir
+

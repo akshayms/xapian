@@ -1,0 +1,469 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="classXapian_1_1Utf8Iterator" kind="class" prot="public">
+    <compoundname>Xapian::Utf8Iterator</compoundname>
+    <includes local="no">unicode.h</includes>
+      <sectiondef kind="user-defined">
+      <memberdef kind="typedef" id="classXapian_1_1Utf8Iterator_127b2ddc86e0ffa2e5238108af8db86c0" prot="public" static="no">
+        <type>std::input_iterator_tag</type>
+        <definition>typedef std::input_iterator_tag Xapian::Utf8Iterator::iterator_category</definition>
+        <argsstring></argsstring>
+        <name>iterator_category</name>
+        <briefdescription>
+<para>We implement the semantics of an STL input_iterator. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" line="174" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classXapian_1_1Utf8Iterator_186058d0f4d10857af59328157387fd50" prot="public" static="no">
+        <type>unsigned</type>
+        <definition>typedef unsigned Xapian::Utf8Iterator::value_type</definition>
+        <argsstring></argsstring>
+        <name>value_type</name>
+        <briefdescription>
+<para>We implement the semantics of an STL input_iterator. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" line="175" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classXapian_1_1Utf8Iterator_180a0468ad034f3d6012072a16a3308b2" prot="public" static="no">
+        <type>size_t</type>
+        <definition>typedef size_t Xapian::Utf8Iterator::difference_type</definition>
+        <argsstring></argsstring>
+        <name>difference_type</name>
+        <briefdescription>
+<para>We implement the semantics of an STL input_iterator. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" line="176" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classXapian_1_1Utf8Iterator_14e6c3ab8d6ddfc36c1f2c7d4c1fc550f" prot="public" static="no">
+        <type>const unsigned *</type>
+        <definition>typedef const unsigned* Xapian::Utf8Iterator::pointer</definition>
+        <argsstring></argsstring>
+        <name>pointer</name>
+        <briefdescription>
+<para>We implement the semantics of an STL input_iterator. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" line="177" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classXapian_1_1Utf8Iterator_19eb042f54713d460111b3655f1d187a3" prot="public" static="no">
+        <type>const unsigned &amp;</type>
+        <definition>typedef const unsigned&amp; Xapian::Utf8Iterator::reference</definition>
+        <argsstring></argsstring>
+        <name>reference</name>
+        <briefdescription>
+<para>We implement the semantics of an STL input_iterator. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" line="178" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classXapian_1_1Utf8Iterator_17945a46a289214279469061e2401d8f9" prot="private" static="no" mutable="no">
+        <type>const unsigned char *</type>
+        <definition>const unsigned char* Xapian::Utf8Iterator::p</definition>
+        <argsstring></argsstring>
+        <name>p</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" line="34" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classXapian_1_1Utf8Iterator_11373db572813da69c9e74a514995dbe7" prot="private" static="no" mutable="no">
+        <type>const unsigned char *</type>
+        <definition>const unsigned char* Xapian::Utf8Iterator::end</definition>
+        <argsstring></argsstring>
+        <name>end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" line="35" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classXapian_1_1Utf8Iterator_11e97c7d16afc788ef63dde9707bee2ab" prot="private" static="no" mutable="yes">
+        <type>unsigned</type>
+        <definition>unsigned Xapian::Utf8Iterator::seqlen</definition>
+        <argsstring></argsstring>
+        <name>seqlen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" line="36" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classXapian_1_1Utf8Iterator_1f72b1d2953c3d6f63ce5fbd96d07543a" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::Utf8Iterator::calculate_sequence_length</definition>
+        <argsstring>() const </argsstring>
+        <name>calculate_sequence_length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" line="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Utf8Iterator_11736304c8732d17f380e81b795da5e39" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Xapian::Utf8Iterator::get_char</definition>
+        <argsstring>() const </argsstring>
+        <name>get_char</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" line="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Utf8Iterator_1ea2a71887b80955863709a74c6f52f31" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::Utf8Iterator::Utf8Iterator</definition>
+        <argsstring>(const unsigned char *p_, const unsigned char *end_, unsigned seqlen_)</argsstring>
+        <name>Utf8Iterator</name>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>p_</declname>
+        </param>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>end_</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>seqlen_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" line="43" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" bodystart="42" bodyend="43"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classXapian_1_1Utf8Iterator_17bcb77724d73583f5b71138294df2cf3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* Xapian::Utf8Iterator::raw</definition>
+        <argsstring>() const </argsstring>
+        <name>raw</name>
+        <briefdescription>
+<para>Return the raw const char * pointer for the current position. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" line="47" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" bodystart="47" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Utf8Iterator_1af034edbf2d998513ad0299ae7dd34a5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t Xapian::Utf8Iterator::left</definition>
+        <argsstring>() const </argsstring>
+        <name>left</name>
+        <briefdescription>
+<para>Return the number of bytes left in the iterator&apos;s buffer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" line="52" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" bodystart="52" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Utf8Iterator_129608f4bbfdae0e6da41ed9f7879c410" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::Utf8Iterator::assign</definition>
+        <argsstring>(const char *p_, size_t len)</argsstring>
+        <name>assign</name>
+        <param>
+          <type>const char *</type>
+          <declname>p_</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>Assign a new string to the iterator. </para>        </briefdescription>
+        <detaileddescription>
+<para>The iterator will forget the string it was iterating through, and return characters from the start of the new string when next called. The string is not copied into the iterator, so it must remain valid while the iteration is in progress.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the start of the string to read.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The length of the string to read. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" line="65" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" bodystart="65" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Utf8Iterator_15e9337753766c9a3a0202e86a0016293" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::Utf8Iterator::assign</definition>
+        <argsstring>(const std::string &amp;s)</argsstring>
+        <name>assign</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Assign a new string to the iterator. </para>        </briefdescription>
+        <detaileddescription>
+<para>The iterator will forget the string it was iterating through, and return characters from the start of the new string when next called. The string is not copied into the iterator, so it must remain valid while the iteration is in progress.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The string to read. Must not be modified while the iteration is in progress. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" line="85" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" bodystart="85" bodyend="85"/>
+        <references refid="classXapian_1_1Utf8Iterator_15e9337753766c9a3a0202e86a0016293" compoundref="unicode_8h" startline="85" endline="85">assign</references>
+        <referencedby refid="classXapian_1_1Utf8Iterator_15e9337753766c9a3a0202e86a0016293" compoundref="unicode_8h" startline="85" endline="85">assign</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Utf8Iterator_12bde57da5096615033f2d4e36043ce26" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::Utf8Iterator::Utf8Iterator</definition>
+        <argsstring>(const char *p_)</argsstring>
+        <name>Utf8Iterator</name>
+        <param>
+          <type>const char *</type>
+          <declname>p_</declname>
+        </param>
+        <briefdescription>
+<para>Create an iterator given a pointer to a null terminated string. </para>        </briefdescription>
+        <detaileddescription>
+<para>The iterator will return characters from the start of the string when next called. The string is not copied into the iterator, so it must remain valid while the iteration is in progress.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the start of the null terminated string to read. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" line="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Utf8Iterator_1686c7e0883132abe1992904c89d2a51c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::Utf8Iterator::Utf8Iterator</definition>
+        <argsstring>(const char *p_, size_t len)</argsstring>
+        <name>Utf8Iterator</name>
+        <param>
+          <type>const char *</type>
+          <declname>p_</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>Create an iterator given a pointer and a length. </para>        </briefdescription>
+        <detaileddescription>
+<para>The iterator will return characters from the start of the string when next called. The string is not copied into the iterator, so it must remain valid while the iteration is in progress.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the start of the string to read.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The length of the string to read. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" line="107" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" bodystart="107" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Utf8Iterator_118743b895d83019d549b7c032499465f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::Utf8Iterator::Utf8Iterator</definition>
+        <argsstring>(const std::string &amp;s)</argsstring>
+        <name>Utf8Iterator</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Create an iterator given a string. </para>        </briefdescription>
+        <detaileddescription>
+<para>The iterator will return characters from the start of the string when next called. The string is not copied into the iterator, so it must remain valid while the iteration is in progress.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The string to read. Must not be modified while the iteration is in progress. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" line="118" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" bodystart="118" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Utf8Iterator_1d02aaed2afa0cf3d41878590faf1175e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::Utf8Iterator::Utf8Iterator</definition>
+        <argsstring>()</argsstring>
+        <name>Utf8Iterator</name>
+        <briefdescription>
+<para>Create an iterator which is at the end of its iteration. </para>        </briefdescription>
+        <detaileddescription>
+<para>This can be compared to another iterator to check if the other iterator has reached its end. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" line="125" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" bodystart="125" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Utf8Iterator_10827cbc34100cdbda280bd86cd2c0554" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Xapian::Utf8Iterator::operator*</definition>
+        <argsstring>() const </argsstring>
+        <name>operator*</name>
+        <briefdescription>
+<para>Get the current <ref refid="namespaceXapian_1_1Unicode" kindref="compound">Unicode</ref> character value pointed to by the iterator. </para>        </briefdescription>
+        <detaileddescription>
+<para>Returns unsigned(-1) if the iterator has reached the end of its buffer. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" line="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Utf8Iterator_125aaaef59d9e273af9a4372c2e1e7e65" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classXapian_1_1Utf8Iterator" kindref="compound">Utf8Iterator</ref></type>
+        <definition>Utf8Iterator Xapian::Utf8Iterator::operator++</definition>
+        <argsstring>(int)</argsstring>
+        <name>operator++</name>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+<para>Move forward to the next <ref refid="namespaceXapian_1_1Unicode" kindref="compound">Unicode</ref> character. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>An iterator pointing to the position before the move. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" line="137" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" bodystart="137" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Utf8Iterator_116609767544759ce576c651869193aaf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classXapian_1_1Utf8Iterator" kindref="compound">Utf8Iterator</ref> &amp;</type>
+        <definition>Utf8Iterator&amp; Xapian::Utf8Iterator::operator++</definition>
+        <argsstring>()</argsstring>
+        <name>operator++</name>
+        <briefdescription>
+<para>Move forward to the next <ref refid="namespaceXapian_1_1Unicode" kindref="compound">Unicode</ref> character. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A reference to this object. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" line="152" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" bodystart="152" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Utf8Iterator_1b11f801988488e2bc60d0f5fef4ae9d4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Xapian::Utf8Iterator::operator==</definition>
+        <argsstring>(const Utf8Iterator &amp;other) const </argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1Utf8Iterator" kindref="compound">Utf8Iterator</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Test two Utf8Iterators for equality. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true iff the iterators point to the same position. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" line="164" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" bodystart="164" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Utf8Iterator_1d9aa7675fa604dd2843f423ed0c6a9a9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Xapian::Utf8Iterator::operator!=</definition>
+        <argsstring>(const Utf8Iterator &amp;other) const </argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1Utf8Iterator" kindref="compound">Utf8Iterator</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Test two Utf8Iterators for inequality. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true iff the iterators do not point to the same position. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" line="170" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" bodystart="170" bodyend="170"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An iterator which returns <ref refid="namespaceXapian_1_1Unicode" kindref="compound">Unicode</ref> character values from a UTF-8 encoded string. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" line="33" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/unicode.h" bodystart="33" bodyend="180"/>
+    <listofallmembers>
+      <member refid="classXapian_1_1Utf8Iterator_129608f4bbfdae0e6da41ed9f7879c410" prot="public" virt="non-virtual"><scope>Xapian::Utf8Iterator</scope><name>assign</name></member>
+      <member refid="classXapian_1_1Utf8Iterator_15e9337753766c9a3a0202e86a0016293" prot="public" virt="non-virtual"><scope>Xapian::Utf8Iterator</scope><name>assign</name></member>
+      <member refid="classXapian_1_1Utf8Iterator_1f72b1d2953c3d6f63ce5fbd96d07543a" prot="private" virt="non-virtual"><scope>Xapian::Utf8Iterator</scope><name>calculate_sequence_length</name></member>
+      <member refid="classXapian_1_1Utf8Iterator_180a0468ad034f3d6012072a16a3308b2" prot="public" virt="non-virtual"><scope>Xapian::Utf8Iterator</scope><name>difference_type</name></member>
+      <member refid="classXapian_1_1Utf8Iterator_11373db572813da69c9e74a514995dbe7" prot="private" virt="non-virtual"><scope>Xapian::Utf8Iterator</scope><name>end</name></member>
+      <member refid="classXapian_1_1Utf8Iterator_11736304c8732d17f380e81b795da5e39" prot="private" virt="non-virtual"><scope>Xapian::Utf8Iterator</scope><name>get_char</name></member>
+      <member refid="classXapian_1_1Utf8Iterator_127b2ddc86e0ffa2e5238108af8db86c0" prot="public" virt="non-virtual"><scope>Xapian::Utf8Iterator</scope><name>iterator_category</name></member>
+      <member refid="classXapian_1_1Utf8Iterator_1af034edbf2d998513ad0299ae7dd34a5" prot="public" virt="non-virtual"><scope>Xapian::Utf8Iterator</scope><name>left</name></member>
+      <member refid="classXapian_1_1Utf8Iterator_1d9aa7675fa604dd2843f423ed0c6a9a9" prot="public" virt="non-virtual"><scope>Xapian::Utf8Iterator</scope><name>operator!=</name></member>
+      <member refid="classXapian_1_1Utf8Iterator_10827cbc34100cdbda280bd86cd2c0554" prot="public" virt="non-virtual"><scope>Xapian::Utf8Iterator</scope><name>operator*</name></member>
+      <member refid="classXapian_1_1Utf8Iterator_125aaaef59d9e273af9a4372c2e1e7e65" prot="public" virt="non-virtual"><scope>Xapian::Utf8Iterator</scope><name>operator++</name></member>
+      <member refid="classXapian_1_1Utf8Iterator_116609767544759ce576c651869193aaf" prot="public" virt="non-virtual"><scope>Xapian::Utf8Iterator</scope><name>operator++</name></member>
+      <member refid="classXapian_1_1Utf8Iterator_1b11f801988488e2bc60d0f5fef4ae9d4" prot="public" virt="non-virtual"><scope>Xapian::Utf8Iterator</scope><name>operator==</name></member>
+      <member refid="classXapian_1_1Utf8Iterator_17945a46a289214279469061e2401d8f9" prot="private" virt="non-virtual"><scope>Xapian::Utf8Iterator</scope><name>p</name></member>
+      <member refid="classXapian_1_1Utf8Iterator_14e6c3ab8d6ddfc36c1f2c7d4c1fc550f" prot="public" virt="non-virtual"><scope>Xapian::Utf8Iterator</scope><name>pointer</name></member>
+      <member refid="classXapian_1_1Utf8Iterator_17bcb77724d73583f5b71138294df2cf3" prot="public" virt="non-virtual"><scope>Xapian::Utf8Iterator</scope><name>raw</name></member>
+      <member refid="classXapian_1_1Utf8Iterator_19eb042f54713d460111b3655f1d187a3" prot="public" virt="non-virtual"><scope>Xapian::Utf8Iterator</scope><name>reference</name></member>
+      <member refid="classXapian_1_1Utf8Iterator_11e97c7d16afc788ef63dde9707bee2ab" prot="private" virt="non-virtual"><scope>Xapian::Utf8Iterator</scope><name>seqlen</name></member>
+      <member refid="classXapian_1_1Utf8Iterator_1ea2a71887b80955863709a74c6f52f31" prot="private" virt="non-virtual"><scope>Xapian::Utf8Iterator</scope><name>Utf8Iterator</name></member>
+      <member refid="classXapian_1_1Utf8Iterator_12bde57da5096615033f2d4e36043ce26" prot="public" virt="non-virtual"><scope>Xapian::Utf8Iterator</scope><name>Utf8Iterator</name></member>
+      <member refid="classXapian_1_1Utf8Iterator_1686c7e0883132abe1992904c89d2a51c" prot="public" virt="non-virtual"><scope>Xapian::Utf8Iterator</scope><name>Utf8Iterator</name></member>
+      <member refid="classXapian_1_1Utf8Iterator_118743b895d83019d549b7c032499465f" prot="public" virt="non-virtual"><scope>Xapian::Utf8Iterator</scope><name>Utf8Iterator</name></member>
+      <member refid="classXapian_1_1Utf8Iterator_1d02aaed2afa0cf3d41878590faf1175e" prot="public" virt="non-virtual"><scope>Xapian::Utf8Iterator</scope><name>Utf8Iterator</name></member>
+      <member refid="classXapian_1_1Utf8Iterator_186058d0f4d10857af59328157387fd50" prot="public" virt="non-virtual"><scope>Xapian::Utf8Iterator</scope><name>value_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

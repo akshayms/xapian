@@ -1,0 +1,11 @@
+K 10
+svn:ignore
+V 40
+.*.sw?
+*.lo
+*.obj
+.deps
+.libs
+.dirstamp
+
+END

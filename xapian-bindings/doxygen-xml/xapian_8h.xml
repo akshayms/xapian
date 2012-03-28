@@ -1,0 +1,445 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="xapian_8h" kind="file">
+    <compoundname>xapian.h</compoundname>
+    <includes refid="version_8h" local="no">xapian/version.h</includes>
+    <includes refid="types_8h" local="no">xapian/types.h</includes>
+    <includes refid="error_8h" local="no">xapian/error.h</includes>
+    <includes refid="errorhandler_8h" local="no">xapian/errorhandler.h</includes>
+    <includes refid="database_8h" local="no">xapian/database.h</includes>
+    <includes refid="dbfactory_8h" local="no">xapian/dbfactory.h</includes>
+    <includes refid="document_8h" local="no">xapian/document.h</includes>
+    <includes refid="positioniterator_8h" local="no">xapian/positioniterator.h</includes>
+    <includes refid="postingiterator_8h" local="no">xapian/postingiterator.h</includes>
+    <includes refid="termiterator_8h" local="no">xapian/termiterator.h</includes>
+    <includes refid="valueiterator_8h" local="no">xapian/valueiterator.h</includes>
+    <includes refid="termgenerator_8h" local="no">xapian/termgenerator.h</includes>
+    <includes refid="enquire_8h" local="no">xapian/enquire.h</includes>
+    <includes refid="expanddecider_8h" local="no">xapian/expanddecider.h</includes>
+    <includes refid="keymaker_8h" local="no">xapian/keymaker.h</includes>
+    <includes refid="matchspy_8h" local="no">xapian/matchspy.h</includes>
+    <includes refid="postingsource_8h" local="no">xapian/postingsource.h</includes>
+    <includes refid="query_8h" local="no">xapian/query.h</includes>
+    <includes refid="queryparser_8h" local="no">xapian/queryparser.h</includes>
+    <includes refid="valuesetmatchdecider_8h" local="no">xapian/valuesetmatchdecider.h</includes>
+    <includes refid="weight_8h" local="no">xapian/weight.h</includes>
+    <includes refid="stem_8h" local="no">xapian/stem.h</includes>
+    <includes refid="registry_8h" local="no">xapian/registry.h</includes>
+    <includes refid="unicode_8h" local="no">xapian/unicode.h</includes>
+    <includes refid="compactor_8h" local="no">xapian/compactor.h</includes>
+    <includes local="no">xapian/visibility.h</includes>
+    <includedby refid="letor_8h" local="no">xapian/letor.h</includedby>
+    <incdepgraph>
+      <node id="28">
+        <label>xapian/postingsource.h</label>
+        <link refid="postingsource_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>iterator</label>
+      </node>
+      <node id="13">
+        <label>xapian/derefwrapper.h</label>
+      </node>
+      <node id="32">
+        <label>xapian/weight.h</label>
+        <link refid="weight_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>xapian/visibility.h</label>
+      </node>
+      <node id="1">
+        <label>xapian/version.h</label>
+        <link refid="version_8h"/>
+      </node>
+      <node id="33">
+        <label>xapian/stem.h</label>
+        <link refid="stem_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>xapian/queryparser.h</label>
+        <link refid="queryparser_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+      <node id="20">
+        <label>xapian/termgenerator.h</label>
+        <link refid="termgenerator_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>map</label>
+      </node>
+      <node id="31">
+        <label>xapian/valuesetmatchdecider.h</label>
+        <link refid="valuesetmatchdecider_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>xapian/enquire.h</label>
+        <link refid="enquire_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>xapian/deprecated.h</label>
+      </node>
+      <node id="2">
+        <label>xapian/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>xapian/unicode.h</label>
+        <link refid="unicode_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>xapian/errorhandler.h</label>
+        <link refid="errorhandler_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>sys/types.h</label>
+      </node>
+      <node id="23">
+        <label>xapian/expanddecider.h</label>
+        <link refid="expanddecider_8h"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>xapian/registry.h</label>
+        <link refid="registry_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>xapian/positioniterator.h</label>
+        <link refid="positioniterator_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>vector</label>
+      </node>
+      <node id="35">
+        <label>xapian/compactor.h</label>
+        <link refid="compactor_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>xapian/error.h</label>
+        <link refid="error_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>xapian/valueiterator.h</label>
+        <link refid="valueiterator_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>xapian/postingiterator.h</label>
+        <link refid="postingiterator_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>xapian/termiterator.h</label>
+        <link refid="termiterator_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>xapian/document.h</label>
+        <link refid="document_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>xapian/database.h</label>
+        <link refid="database_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>xapian/query.h</label>
+        <link refid="query_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="0">
+        <label>xapian.h</label>
+        <link refid="xapian.h"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>xapian/intrusive_ptr.h</label>
+      </node>
+      <node id="24">
+        <label>set</label>
+      </node>
+      <node id="26">
+        <label>xapian/matchspy.h</label>
+        <link refid="matchspy_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>xapian/dbfactory.h</label>
+        <link refid="dbfactory_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>xapian/keymaker.h</label>
+        <link refid="keymaker_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="37">
+        <label>xapian/letor.h</label>
+        <link refid="letor_8h"/>
+      </node>
+      <node id="36">
+        <label>xapian.h</label>
+        <link refid="xapian.h"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespaceXapian">Xapian</innernamespace>
+    <briefdescription>
+<para>Public interfaces for the <ref refid="namespaceXapian" kindref="compound">Xapian</ref> library. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian.h"/>
+  </compounddef>
+</doxygen>

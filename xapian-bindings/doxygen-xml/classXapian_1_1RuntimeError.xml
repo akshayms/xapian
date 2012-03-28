@@ -1,0 +1,204 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="classXapian_1_1RuntimeError" kind="class" prot="public">
+    <compoundname>Xapian::RuntimeError</compoundname>
+    <basecompoundref refid="classXapian_1_1Error" prot="public" virt="non-virtual">Xapian::Error</basecompoundref>
+    <derivedcompoundref refid="classXapian_1_1DatabaseError" prot="public" virt="non-virtual">Xapian::DatabaseError</derivedcompoundref>
+    <derivedcompoundref refid="classXapian_1_1DocNotFoundError" prot="public" virt="non-virtual">Xapian::DocNotFoundError</derivedcompoundref>
+    <derivedcompoundref refid="classXapian_1_1FeatureUnavailableError" prot="public" virt="non-virtual">Xapian::FeatureUnavailableError</derivedcompoundref>
+    <derivedcompoundref refid="classXapian_1_1InternalError" prot="public" virt="non-virtual">Xapian::InternalError</derivedcompoundref>
+    <derivedcompoundref refid="classXapian_1_1NetworkError" prot="public" virt="non-virtual">Xapian::NetworkError</derivedcompoundref>
+    <derivedcompoundref refid="classXapian_1_1QueryParserError" prot="public" virt="non-virtual">Xapian::QueryParserError</derivedcompoundref>
+    <derivedcompoundref refid="classXapian_1_1RangeError" prot="public" virt="non-virtual">Xapian::RangeError</derivedcompoundref>
+    <derivedcompoundref refid="classXapian_1_1SerialisationError" prot="public" virt="non-virtual">Xapian::SerialisationError</derivedcompoundref>
+    <includes local="no">error.h</includes>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classXapian_1_1RuntimeError_1338dd180ce754f54a65aa4b067d70578" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::RuntimeError::RuntimeError</definition>
+        <argsstring>(const std::string &amp;msg_, const std::string &amp;context_, const char *type_, const char *error_string_)</argsstring>
+        <name>RuntimeError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>context_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>type_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>error_string_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="160" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="159" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1RuntimeError_1494b34f5ac03d9f927e4d4002d0a9a97" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::RuntimeError::RuntimeError</definition>
+        <argsstring>(const std::string &amp;msg_, const std::string &amp;context_, const char *type_, int errno_)</argsstring>
+        <name>RuntimeError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>context_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>type_</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>errno_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="166" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="165" bodyend="166"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The base class for exceptions indicating errors only detectable at runtime. </para>    </briefdescription>
+    <detaileddescription>
+<para>A subclass of <ref refid="classXapian_1_1RuntimeError" kindref="compound">RuntimeError</ref> will be thrown if <ref refid="namespaceXapian" kindref="compound">Xapian</ref> detects an error which is exception derived from <ref refid="classXapian_1_1RuntimeError" kindref="compound">RuntimeError</ref> is thrown when an error is caused by problems with the data or environment rather than a programming mistake. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="650">
+        <label>Xapian::DatabaseError</label>
+        <link refid="classXapian_1_1DatabaseError"/>
+        <childnode refid="648" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="660">
+        <label>Xapian::NetworkError</label>
+        <link refid="classXapian_1_1NetworkError"/>
+        <childnode refid="648" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="649">
+        <label>Xapian::Error</label>
+        <link refid="classXapian_1_1Error"/>
+      </node>
+      <node id="652">
+        <label>Xapian::DatabaseCreateError</label>
+        <link refid="classXapian_1_1DatabaseCreateError"/>
+        <childnode refid="650" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="648">
+        <label>Xapian::RuntimeError</label>
+        <link refid="classXapian_1_1RuntimeError"/>
+        <childnode refid="649" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="658">
+        <label>Xapian::FeatureUnavailableError</label>
+        <link refid="classXapian_1_1FeatureUnavailableError"/>
+        <childnode refid="648" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="651">
+        <label>Xapian::DatabaseCorruptError</label>
+        <link refid="classXapian_1_1DatabaseCorruptError"/>
+        <childnode refid="650" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="656">
+        <label>Xapian::DatabaseVersionError</label>
+        <link refid="classXapian_1_1DatabaseVersionError"/>
+        <childnode refid="655" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="655">
+        <label>Xapian::DatabaseOpeningError</label>
+        <link refid="classXapian_1_1DatabaseOpeningError"/>
+        <childnode refid="650" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="654">
+        <label>Xapian::DatabaseModifiedError</label>
+        <link refid="classXapian_1_1DatabaseModifiedError"/>
+        <childnode refid="650" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="664">
+        <label>Xapian::SerialisationError</label>
+        <link refid="classXapian_1_1SerialisationError"/>
+        <childnode refid="648" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="653">
+        <label>Xapian::DatabaseLockError</label>
+        <link refid="classXapian_1_1DatabaseLockError"/>
+        <childnode refid="650" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="663">
+        <label>Xapian::RangeError</label>
+        <link refid="classXapian_1_1RangeError"/>
+        <childnode refid="648" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="659">
+        <label>Xapian::InternalError</label>
+        <link refid="classXapian_1_1InternalError"/>
+        <childnode refid="648" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="661">
+        <label>Xapian::NetworkTimeoutError</label>
+        <link refid="classXapian_1_1NetworkTimeoutError"/>
+        <childnode refid="660" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="657">
+        <label>Xapian::DocNotFoundError</label>
+        <link refid="classXapian_1_1DocNotFoundError"/>
+        <childnode refid="648" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="662">
+        <label>Xapian::QueryParserError</label>
+        <link refid="classXapian_1_1QueryParserError"/>
+        <childnode refid="648" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="666">
+        <label>Xapian::Error</label>
+        <link refid="classXapian_1_1Error"/>
+      </node>
+      <node id="665">
+        <label>Xapian::RuntimeError</label>
+        <link refid="classXapian_1_1RuntimeError"/>
+        <childnode refid="666" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="154" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="154" bodyend="167"/>
+    <listofallmembers>
+      <member refid="classXapian_1_1Error_190c683965555b4bc86b08e8667170e44" prot="public" virt="non-virtual"><scope>Xapian::RuntimeError</scope><name>get_context</name></member>
+      <member refid="classXapian_1_1Error_1bd64e380eb6d864dc907ee62c1f58a74" prot="public" virt="non-virtual"><scope>Xapian::RuntimeError</scope><name>get_description</name></member>
+      <member refid="classXapian_1_1Error_16f94a579f8e176f85c6fb036592dab61" prot="public" virt="non-virtual"><scope>Xapian::RuntimeError</scope><name>get_error_string</name></member>
+      <member refid="classXapian_1_1Error_1ea05df48ea71dfd045da28ab984cdaa3" prot="public" virt="non-virtual"><scope>Xapian::RuntimeError</scope><name>get_msg</name></member>
+      <member refid="classXapian_1_1Error_1136945e703317bdf6e18d8cf511a5bfb" prot="public" virt="non-virtual"><scope>Xapian::RuntimeError</scope><name>get_type</name></member>
+      <member refid="classXapian_1_1RuntimeError_1338dd180ce754f54a65aa4b067d70578" prot="private" virt="non-virtual"><scope>Xapian::RuntimeError</scope><name>RuntimeError</name></member>
+      <member refid="classXapian_1_1RuntimeError_1494b34f5ac03d9f927e4d4002d0a9a97" prot="private" virt="non-virtual"><scope>Xapian::RuntimeError</scope><name>RuntimeError</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,653 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="classXapian_1_1MSet" kind="class" prot="public">
+    <compoundname>Xapian::MSet</compoundname>
+    <includes local="no">enquire.h</includes>
+      <sectiondef kind="user-defined">
+      <memberdef kind="typedef" id="classXapian_1_1MSet_14231ddc9c8db70ecdd93c321a92e22bd" prot="public" static="no">
+        <type><ref refid="classXapian_1_1MSetIterator" kindref="compound">MSetIterator</ref></type>
+        <definition>typedef MSetIterator Xapian::MSet::value_type</definition>
+        <argsstring></argsstring>
+        <name>value_type</name>
+        <briefdescription>
+<para>Allow use as an STL container. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="242" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classXapian_1_1MSet_1d42cc068683f5617a17c2389aa69e24d" prot="public" static="no">
+        <type><ref refid="classXapian_1_1MSetIterator" kindref="compound">MSetIterator</ref></type>
+        <definition>typedef MSetIterator Xapian::MSet::iterator</definition>
+        <argsstring></argsstring>
+        <name>iterator</name>
+        <briefdescription>
+<para>Allow use as an STL container. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="243" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classXapian_1_1MSet_13e1cf112c2a7f10a3e296d880fc7305d" prot="public" static="no">
+        <type><ref refid="classXapian_1_1MSetIterator" kindref="compound">MSetIterator</ref></type>
+        <definition>typedef MSetIterator Xapian::MSet::const_iterator</definition>
+        <argsstring></argsstring>
+        <name>const_iterator</name>
+        <briefdescription>
+<para>Allow use as an STL container. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="244" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classXapian_1_1MSet_196269c51f568b512f75427fbb4adfca1" prot="public" static="no">
+        <type><ref refid="classXapian_1_1MSetIterator" kindref="compound">MSetIterator</ref> &amp;</type>
+        <definition>typedef MSetIterator&amp; Xapian::MSet::reference</definition>
+        <argsstring></argsstring>
+        <name>reference</name>
+        <briefdescription>
+<para>Allow use as an STL container. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="245" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classXapian_1_1MSet_13f9841ca77ac0b6dbe082a4761e06cc8" prot="public" static="no">
+        <type><ref refid="classXapian_1_1MSetIterator" kindref="compound">MSetIterator</ref> &amp;</type>
+        <definition>typedef MSetIterator&amp; Xapian::MSet::const_reference</definition>
+        <argsstring></argsstring>
+        <name>const_reference</name>
+        <briefdescription>
+<para>Allow use as an STL container. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="246" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" bodystart="246" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classXapian_1_1MSet_1152550c0053b1bf0c94c575dfc210a60" prot="public" static="no">
+        <type><ref refid="classXapian_1_1MSetIterator" kindref="compound">MSetIterator</ref> *</type>
+        <definition>typedef MSetIterator* Xapian::MSet::pointer</definition>
+        <argsstring></argsstring>
+        <name>pointer</name>
+        <briefdescription>
+<para>Allow use as an STL container. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="247" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" bodystart="247" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classXapian_1_1MSet_11ea96beb6135d960f9c4ff1320116508" prot="public" static="no">
+        <type><ref refid="namespaceXapian_1958ff32fd7a85f2b8a4784ac18397f2b" kindref="member">Xapian::doccount_diff</ref></type>
+        <definition>typedef Xapian::doccount_diff Xapian::MSet::difference_type</definition>
+        <argsstring></argsstring>
+        <name>difference_type</name>
+        <briefdescription>
+<para>Allow use as an STL container. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="248" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" bodystart="248" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classXapian_1_1MSet_1425525da26231b848a8845c39fdc22af" prot="public" static="no">
+        <type><ref refid="namespaceXapian_17f30aa95f0c42b117dafaf66ba24241d" kindref="member">Xapian::doccount</ref></type>
+        <definition>typedef Xapian::doccount Xapian::MSet::size_type</definition>
+        <argsstring></argsstring>
+        <name>size_type</name>
+        <briefdescription>
+<para>Allow use as an STL container. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="249" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" bodystart="249" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classXapian_1_1MSet_177bb4f7edff227072c624631a98f0e18" prot="public" static="no" mutable="no">
+        <type>Xapian::Internal::intrusive_ptr&lt; Internal &gt;</type>
+        <definition>Xapian::Internal::intrusive_ptr&lt;Internal&gt; Xapian::MSet::internal</definition>
+        <argsstring></argsstring>
+        <name>internal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="55" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classXapian_1_1MSet_125c2e0b21d7c61da7f4dc61a9fc4f183" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::MSet::MSet</definition>
+        <argsstring>(Internal *internal_)</argsstring>
+        <name>MSet</name>
+        <param>
+          <type>Internal *</type>
+          <declname>internal_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1MSet_12731b94a40e99a83c3e5d516809dc2e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::MSet::MSet</definition>
+        <argsstring>()</argsstring>
+        <name>MSet</name>
+        <briefdescription>
+<para>Create an empty <ref refid="classXapian_1_1MSet" kindref="compound">Xapian::MSet</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1MSet_184b1c1a6db62dee0ca1aefadf4ef2d18" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::MSet::~MSet</definition>
+        <argsstring>()</argsstring>
+        <name>~MSet</name>
+        <briefdescription>
+<para>Destroy a <ref refid="classXapian_1_1MSet" kindref="compound">Xapian::MSet</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1MSet_1f94806ac9be50ee0a13d291070645eed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::MSet::MSet</definition>
+        <argsstring>(const MSet &amp;other)</argsstring>
+        <name>MSet</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1MSet" kindref="compound">MSet</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Copying is allowed (and is cheap). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1MSet_19f4ba7407c17baa32ce9b3a7cd7d3f05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::MSet::operator=</definition>
+        <argsstring>(const MSet &amp;other)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1MSet" kindref="compound">MSet</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Assignment is allowed (and is cheap). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1MSet_152d96c2df7e63c3fd674e234c0a7c009" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::MSet::fetch</definition>
+        <argsstring>(const MSetIterator &amp;begin, const MSetIterator &amp;end) const </argsstring>
+        <name>fetch</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1MSetIterator" kindref="compound">MSetIterator</ref> &amp;</type>
+          <declname>begin</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classXapian_1_1MSetIterator" kindref="compound">MSetIterator</ref> &amp;</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+<para>Fetch the document info for a set of items in the <ref refid="classXapian_1_1MSet" kindref="compound">MSet</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method causes the documents in the range specified by the iterators to be fetched from the database, and cached in the <ref refid="classXapian_1_1MSet" kindref="compound">Xapian::MSet</ref> object. This has little effect when performing a search across a local database, but will greatly speed up subsequent access to the document contents when the documents are stored in a remote database.</para><para>The iterators must be over this <ref refid="classXapian_1_1MSet" kindref="compound">Xapian::MSet</ref> - undefined behaviour will result otherwise.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>begin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classXapian_1_1MSetIterator" kindref="compound">MSetIterator</ref> for first item to fetch. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classXapian_1_1MSetIterator" kindref="compound">MSetIterator</ref> for item after last item to fetch. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1MSet_1367ce5b6d717042d9baf3c4285272add" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::MSet::fetch</definition>
+        <argsstring>(const MSetIterator &amp;item) const </argsstring>
+        <name>fetch</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1MSetIterator" kindref="compound">MSetIterator</ref> &amp;</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+<para>Fetch the single item specified. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1MSet_1fd639440abc4d569a48b8ff2a88c6e6a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::MSet::fetch</definition>
+        <argsstring>() const </argsstring>
+        <name>fetch</name>
+        <briefdescription>
+<para>Fetch all the items in the <ref refid="classXapian_1_1MSet" kindref="compound">MSet</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1MSet_12211a081b75ebb0c0bd99346a01cb255" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceXapian_122ea0a80c58a2047dd929621b75ed9a2" kindref="member">Xapian::percent</ref></type>
+        <definition>Xapian::percent Xapian::MSet::convert_to_percent</definition>
+        <argsstring>(Xapian::weight wt) const </argsstring>
+        <name>convert_to_percent</name>
+        <param>
+          <type><ref refid="namespaceXapian_1cac12803afc9e24ee5141c119acb8884" kindref="member">Xapian::weight</ref></type>
+          <declname>wt</declname>
+        </param>
+        <briefdescription>
+<para>This converts the weight supplied to a percentage score. </para>        </briefdescription>
+        <detaileddescription>
+<para>The return value will be in the range 0 to 100, and will be 0 if and only if the item did not match the query at all. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1MSet_10c64c6427f73afc9bc3d9ae6d40a4e19" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceXapian_122ea0a80c58a2047dd929621b75ed9a2" kindref="member">Xapian::percent</ref></type>
+        <definition>Xapian::percent Xapian::MSet::convert_to_percent</definition>
+        <argsstring>(const MSetIterator &amp;it) const </argsstring>
+        <name>convert_to_percent</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1MSetIterator" kindref="compound">MSetIterator</ref> &amp;</type>
+          <declname>it</declname>
+        </param>
+        <briefdescription>
+<para>Return the percentage score for a particular item. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1MSet_18b53e97c924c671052f14f690061d0ea" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceXapian_17f30aa95f0c42b117dafaf66ba24241d" kindref="member">Xapian::doccount</ref></type>
+        <definition>Xapian::doccount Xapian::MSet::get_termfreq</definition>
+        <argsstring>(const std::string &amp;tname) const </argsstring>
+        <name>get_termfreq</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>tname</declname>
+        </param>
+        <briefdescription>
+<para>Return the term frequency of the given query term. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The term to look for.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+This is sometimes more efficient than asking the database directly for the term frequency - in particular, if the term was in the query, its frequency will usually be cached in the <ref refid="classXapian_1_1MSet" kindref="compound">MSet</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1MSet_1ab7d3fbad74151431e99659b4cd0a016" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceXapian_1cac12803afc9e24ee5141c119acb8884" kindref="member">Xapian::weight</ref></type>
+        <definition>Xapian::weight Xapian::MSet::get_termweight</definition>
+        <argsstring>(const std::string &amp;tname) const </argsstring>
+        <name>get_termweight</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>tname</declname>
+        </param>
+        <briefdescription>
+<para>Return the term weight of the given query term. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The term to look for.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classXapian_1_1InvalidArgumentError" kindref="compound">Xapian::InvalidArgumentError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is thrown if the term was not in the query. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1MSet_1a347db8d918c7e3b1f2f9e256807229f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceXapian_17f30aa95f0c42b117dafaf66ba24241d" kindref="member">Xapian::doccount</ref></type>
+        <definition>Xapian::doccount Xapian::MSet::get_firstitem</definition>
+        <argsstring>() const </argsstring>
+        <name>get_firstitem</name>
+        <briefdescription>
+<para>The index of the first item in the result which was put into the <ref refid="classXapian_1_1MSet" kindref="compound">MSet</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>This corresponds to the parameter &quot;first&quot; specified in <ref refid="classXapian_1_1Enquire_1edb5fb761acc0bb2249bec375883a093" kindref="member">Xapian::Enquire::get_mset()</ref>. A value of 0 corresponds to the highest result being the first item in the <ref refid="classXapian_1_1MSet" kindref="compound">MSet</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1MSet_150eda0fe21978d088b66e63cfb074814" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceXapian_17f30aa95f0c42b117dafaf66ba24241d" kindref="member">Xapian::doccount</ref></type>
+        <definition>Xapian::doccount Xapian::MSet::get_matches_lower_bound</definition>
+        <argsstring>() const </argsstring>
+        <name>get_matches_lower_bound</name>
+        <briefdescription>
+<para>A lower bound on the number of documents in the database which match the query. </para>        </briefdescription>
+        <detaileddescription>
+<para>This figure takes into account collapsing of duplicates, and weighting cutoff values.</para><para>This number is usually considerably less than the actual number of documents which match the query. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1MSet_1eab0a82126d9f2cf0ef5321549ea9775" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceXapian_17f30aa95f0c42b117dafaf66ba24241d" kindref="member">Xapian::doccount</ref></type>
+        <definition>Xapian::doccount Xapian::MSet::get_matches_estimated</definition>
+        <argsstring>() const </argsstring>
+        <name>get_matches_estimated</name>
+        <briefdescription>
+<para>An estimate for the number of documents in the database which match the query. </para>        </briefdescription>
+        <detaileddescription>
+<para>This figure takes into account collapsing of duplicates, and weighting cutoff values.</para><para>This value is returned because there is sometimes a request to display such information. However, our experience is that presenting this value to users causes them to worry about the large number of results, rather than how useful those at the top of the result set are, and is thus undesirable. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="157"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1MSet_1b7c924c5f2b7e8dee83e533f7a9a7308" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceXapian_17f30aa95f0c42b117dafaf66ba24241d" kindref="member">Xapian::doccount</ref></type>
+        <definition>Xapian::doccount Xapian::MSet::get_matches_upper_bound</definition>
+        <argsstring>() const </argsstring>
+        <name>get_matches_upper_bound</name>
+        <briefdescription>
+<para>An upper bound on the number of documents in the database which match the query. </para>        </briefdescription>
+        <detaileddescription>
+<para>This figure takes into account collapsing of duplicates, and weighting cutoff values.</para><para>This number is usually considerably greater than the actual number of documents which match the query. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="168"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1MSet_1c5c23a4046e1f61302eb141d5445a32d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceXapian_17f30aa95f0c42b117dafaf66ba24241d" kindref="member">Xapian::doccount</ref></type>
+        <definition>Xapian::doccount Xapian::MSet::get_uncollapsed_matches_lower_bound</definition>
+        <argsstring>() const </argsstring>
+        <name>get_uncollapsed_matches_lower_bound</name>
+        <briefdescription>
+<para>A lower bound on the number of documents in the database which would match the query if collapsing wasn&apos;t used. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="173"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1MSet_1eb5ac3c2c021a508e99a589f118ba9e5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceXapian_17f30aa95f0c42b117dafaf66ba24241d" kindref="member">Xapian::doccount</ref></type>
+        <definition>Xapian::doccount Xapian::MSet::get_uncollapsed_matches_estimated</definition>
+        <argsstring>() const </argsstring>
+        <name>get_uncollapsed_matches_estimated</name>
+        <briefdescription>
+<para>A estimate of the number of documents in the database which would match the query if collapsing wasn&apos;t used. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="178"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1MSet_13fe64a64d9d01c5eb046ba22f4a1991c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceXapian_17f30aa95f0c42b117dafaf66ba24241d" kindref="member">Xapian::doccount</ref></type>
+        <definition>Xapian::doccount Xapian::MSet::get_uncollapsed_matches_upper_bound</definition>
+        <argsstring>() const </argsstring>
+        <name>get_uncollapsed_matches_upper_bound</name>
+        <briefdescription>
+<para>A upper bound on the number of documents in the database which would match the query if collapsing wasn&apos;t used. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="183"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1MSet_18317991625dc79949cd6ae52b6dcc920" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceXapian_1cac12803afc9e24ee5141c119acb8884" kindref="member">Xapian::weight</ref></type>
+        <definition>Xapian::weight Xapian::MSet::get_max_possible</definition>
+        <argsstring>() const </argsstring>
+        <name>get_max_possible</name>
+        <briefdescription>
+<para>The maximum possible weight in the <ref refid="classXapian_1_1MSet" kindref="compound">MSet</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>This weight is likely not to be attained in the set of results, but represents an upper bound on the weight which a document could attain for the given query. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="191"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1MSet_18964042d7eeb9e908edd160d07768531" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceXapian_1cac12803afc9e24ee5141c119acb8884" kindref="member">Xapian::weight</ref></type>
+        <definition>Xapian::weight Xapian::MSet::get_max_attained</definition>
+        <argsstring>() const </argsstring>
+        <name>get_max_attained</name>
+        <briefdescription>
+<para>The greatest weight which is attained by any document in the database. </para>        </briefdescription>
+        <detaileddescription>
+<para>If firstitem == 0 and the primary ordering is by relevance, this is the weight of the first entry in the <ref refid="classXapian_1_1MSet" kindref="compound">MSet</ref>.</para><para>If no documents are found by the query, this will be 0.</para><para>Note that calculation of max_attained requires calculation of at least one result item - therefore, if no items were requested when the query was performed (by specifying maxitems = 0 in <ref refid="classXapian_1_1Enquire_1edb5fb761acc0bb2249bec375883a093" kindref="member">Xapian::Enquire::get_mset()</ref>), this value will be 0. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="206"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1MSet_13b050b4734ab96ea08b4f4b396b03ff9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceXapian_17f30aa95f0c42b117dafaf66ba24241d" kindref="member">Xapian::doccount</ref></type>
+        <definition>Xapian::doccount Xapian::MSet::size</definition>
+        <argsstring>() const </argsstring>
+        <name>size</name>
+        <briefdescription>
+<para>The number of items in this <ref refid="classXapian_1_1MSet" kindref="compound">MSet</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="209"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1MSet_144c58632455ae84fb0464eb8c1bd3682" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceXapian_17f30aa95f0c42b117dafaf66ba24241d" kindref="member">Xapian::doccount</ref></type>
+        <definition>Xapian::doccount Xapian::MSet::max_size</definition>
+        <argsstring>() const </argsstring>
+        <name>max_size</name>
+        <briefdescription>
+<para>Required to allow use as an STL container. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="212" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" bodystart="212" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1MSet_1fdd5c88361d0b83fc007a0aef92363b9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Xapian::MSet::empty</definition>
+        <argsstring>() const </argsstring>
+        <name>empty</name>
+        <briefdescription>
+<para>Test if this <ref refid="classXapian_1_1MSet" kindref="compound">MSet</ref> is empty. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="215"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1MSet_18fa74c8d41283fae491f46c690a455cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::MSet::swap</definition>
+        <argsstring>(MSet &amp;other)</argsstring>
+        <name>swap</name>
+        <param>
+          <type><ref refid="classXapian_1_1MSet" kindref="compound">MSet</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Swap the <ref refid="classXapian_1_1MSet" kindref="compound">MSet</ref> we point to with another. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="218"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1MSet_14c5ef6da9fd73cede679081be26df41e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classXapian_1_1MSetIterator" kindref="compound">MSetIterator</ref></type>
+        <definition>MSetIterator Xapian::MSet::begin</definition>
+        <argsstring>() const </argsstring>
+        <name>begin</name>
+        <briefdescription>
+<para>Iterator for the items in this <ref refid="classXapian_1_1MSet" kindref="compound">MSet</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="221"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1MSet_18fbd9cc68354f519f8773b35d121144b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classXapian_1_1MSetIterator" kindref="compound">MSetIterator</ref></type>
+        <definition>MSetIterator Xapian::MSet::end</definition>
+        <argsstring>() const </argsstring>
+        <name>end</name>
+        <briefdescription>
+<para>End iterator corresponding to <ref refid="classXapian_1_1MSet_14c5ef6da9fd73cede679081be26df41e" kindref="member">begin()</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="224"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1MSet_128f44ecf0fbfe729d73e9841fe0172e0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classXapian_1_1MSetIterator" kindref="compound">MSetIterator</ref></type>
+        <definition>MSetIterator Xapian::MSet::back</definition>
+        <argsstring>() const </argsstring>
+        <name>back</name>
+        <briefdescription>
+<para>Iterator pointing to the last element of this <ref refid="classXapian_1_1MSet" kindref="compound">MSet</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="227"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1MSet_1e2da2d1b79ed814652b7c3b3781c2249" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classXapian_1_1MSetIterator" kindref="compound">MSetIterator</ref></type>
+        <definition>MSetIterator Xapian::MSet::operator[]</definition>
+        <argsstring>(Xapian::doccount i) const </argsstring>
+        <name>operator[]</name>
+        <param>
+          <type><ref refid="namespaceXapian_17f30aa95f0c42b117dafaf66ba24241d" kindref="member">Xapian::doccount</ref></type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>This returns the document at position i in this <ref refid="classXapian_1_1MSet" kindref="compound">MSet</ref> object. </para>        </briefdescription>
+        <detaileddescription>
+<para>Note that this is not the same as the document at rank i in the query, unless the &quot;first&quot; parameter to <ref refid="classXapian_1_1Enquire_1edb5fb761acc0bb2249bec375883a093" kindref="member">Xapian::Enquire::get_mset</ref> was 0. Rather, it is the document at rank i + first.</para><para>In other words, the offset is into the documents represented by this object, not into the set of documents matching the query. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="238"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1MSet_178297ec3345af21e915eb061cddca80c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Xapian::MSet::get_description</definition>
+        <argsstring>() const </argsstring>
+        <name>get_description</name>
+        <briefdescription>
+<para>Return a string describing this object. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="253"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A match set (<ref refid="classXapian_1_1MSet" kindref="compound">MSet</ref>). </para>    </briefdescription>
+    <detaileddescription>
+<para>This class represents (a portion of) the results of a query. </para>    </detaileddescription>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" line="51" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/enquire.h" bodystart="51" bodyend="254"/>
+    <listofallmembers>
+      <member refid="classXapian_1_1MSet_128f44ecf0fbfe729d73e9841fe0172e0" prot="public" virt="non-virtual"><scope>Xapian::MSet</scope><name>back</name></member>
+      <member refid="classXapian_1_1MSet_14c5ef6da9fd73cede679081be26df41e" prot="public" virt="non-virtual"><scope>Xapian::MSet</scope><name>begin</name></member>
+      <member refid="classXapian_1_1MSet_13e1cf112c2a7f10a3e296d880fc7305d" prot="public" virt="non-virtual"><scope>Xapian::MSet</scope><name>const_iterator</name></member>
+      <member refid="classXapian_1_1MSet_13f9841ca77ac0b6dbe082a4761e06cc8" prot="public" virt="non-virtual"><scope>Xapian::MSet</scope><name>const_reference</name></member>
+      <member refid="classXapian_1_1MSet_12211a081b75ebb0c0bd99346a01cb255" prot="public" virt="non-virtual"><scope>Xapian::MSet</scope><name>convert_to_percent</name></member>
+      <member refid="classXapian_1_1MSet_10c64c6427f73afc9bc3d9ae6d40a4e19" prot="public" virt="non-virtual"><scope>Xapian::MSet</scope><name>convert_to_percent</name></member>
+      <member refid="classXapian_1_1MSet_11ea96beb6135d960f9c4ff1320116508" prot="public" virt="non-virtual"><scope>Xapian::MSet</scope><name>difference_type</name></member>
+      <member refid="classXapian_1_1MSet_1fdd5c88361d0b83fc007a0aef92363b9" prot="public" virt="non-virtual"><scope>Xapian::MSet</scope><name>empty</name></member>
+      <member refid="classXapian_1_1MSet_18fbd9cc68354f519f8773b35d121144b" prot="public" virt="non-virtual"><scope>Xapian::MSet</scope><name>end</name></member>
+      <member refid="classXapian_1_1MSet_152d96c2df7e63c3fd674e234c0a7c009" prot="public" virt="non-virtual"><scope>Xapian::MSet</scope><name>fetch</name></member>
+      <member refid="classXapian_1_1MSet_1367ce5b6d717042d9baf3c4285272add" prot="public" virt="non-virtual"><scope>Xapian::MSet</scope><name>fetch</name></member>
+      <member refid="classXapian_1_1MSet_1fd639440abc4d569a48b8ff2a88c6e6a" prot="public" virt="non-virtual"><scope>Xapian::MSet</scope><name>fetch</name></member>
+      <member refid="classXapian_1_1MSet_178297ec3345af21e915eb061cddca80c" prot="public" virt="non-virtual"><scope>Xapian::MSet</scope><name>get_description</name></member>
+      <member refid="classXapian_1_1MSet_1a347db8d918c7e3b1f2f9e256807229f" prot="public" virt="non-virtual"><scope>Xapian::MSet</scope><name>get_firstitem</name></member>
+      <member refid="classXapian_1_1MSet_1eab0a82126d9f2cf0ef5321549ea9775" prot="public" virt="non-virtual"><scope>Xapian::MSet</scope><name>get_matches_estimated</name></member>
+      <member refid="classXapian_1_1MSet_150eda0fe21978d088b66e63cfb074814" prot="public" virt="non-virtual"><scope>Xapian::MSet</scope><name>get_matches_lower_bound</name></member>
+      <member refid="classXapian_1_1MSet_1b7c924c5f2b7e8dee83e533f7a9a7308" prot="public" virt="non-virtual"><scope>Xapian::MSet</scope><name>get_matches_upper_bound</name></member>
+      <member refid="classXapian_1_1MSet_18964042d7eeb9e908edd160d07768531" prot="public" virt="non-virtual"><scope>Xapian::MSet</scope><name>get_max_attained</name></member>
+      <member refid="classXapian_1_1MSet_18317991625dc79949cd6ae52b6dcc920" prot="public" virt="non-virtual"><scope>Xapian::MSet</scope><name>get_max_possible</name></member>
+      <member refid="classXapian_1_1MSet_18b53e97c924c671052f14f690061d0ea" prot="public" virt="non-virtual"><scope>Xapian::MSet</scope><name>get_termfreq</name></member>
+      <member refid="classXapian_1_1MSet_1ab7d3fbad74151431e99659b4cd0a016" prot="public" virt="non-virtual"><scope>Xapian::MSet</scope><name>get_termweight</name></member>
+      <member refid="classXapian_1_1MSet_1eb5ac3c2c021a508e99a589f118ba9e5" prot="public" virt="non-virtual"><scope>Xapian::MSet</scope><name>get_uncollapsed_matches_estimated</name></member>
+      <member refid="classXapian_1_1MSet_1c5c23a4046e1f61302eb141d5445a32d" prot="public" virt="non-virtual"><scope>Xapian::MSet</scope><name>get_uncollapsed_matches_lower_bound</name></member>
+      <member refid="classXapian_1_1MSet_13fe64a64d9d01c5eb046ba22f4a1991c" prot="public" virt="non-virtual"><scope>Xapian::MSet</scope><name>get_uncollapsed_matches_upper_bound</name></member>
+      <member refid="classXapian_1_1MSet_177bb4f7edff227072c624631a98f0e18" prot="public" virt="non-virtual"><scope>Xapian::MSet</scope><name>internal</name></member>
+      <member refid="classXapian_1_1MSet_1d42cc068683f5617a17c2389aa69e24d" prot="public" virt="non-virtual"><scope>Xapian::MSet</scope><name>iterator</name></member>
+      <member refid="classXapian_1_1MSet_144c58632455ae84fb0464eb8c1bd3682" prot="public" virt="non-virtual"><scope>Xapian::MSet</scope><name>max_size</name></member>
+      <member refid="classXapian_1_1MSet_125c2e0b21d7c61da7f4dc61a9fc4f183" prot="public" virt="non-virtual"><scope>Xapian::MSet</scope><name>MSet</name></member>
+      <member refid="classXapian_1_1MSet_12731b94a40e99a83c3e5d516809dc2e3" prot="public" virt="non-virtual"><scope>Xapian::MSet</scope><name>MSet</name></member>
+      <member refid="classXapian_1_1MSet_1f94806ac9be50ee0a13d291070645eed" prot="public" virt="non-virtual"><scope>Xapian::MSet</scope><name>MSet</name></member>
+      <member refid="classXapian_1_1MSet_19f4ba7407c17baa32ce9b3a7cd7d3f05" prot="public" virt="non-virtual"><scope>Xapian::MSet</scope><name>operator=</name></member>
+      <member refid="classXapian_1_1MSet_1e2da2d1b79ed814652b7c3b3781c2249" prot="public" virt="non-virtual"><scope>Xapian::MSet</scope><name>operator[]</name></member>
+      <member refid="classXapian_1_1MSet_1152550c0053b1bf0c94c575dfc210a60" prot="public" virt="non-virtual"><scope>Xapian::MSet</scope><name>pointer</name></member>
+      <member refid="classXapian_1_1MSet_196269c51f568b512f75427fbb4adfca1" prot="public" virt="non-virtual"><scope>Xapian::MSet</scope><name>reference</name></member>
+      <member refid="classXapian_1_1MSet_13b050b4734ab96ea08b4f4b396b03ff9" prot="public" virt="non-virtual"><scope>Xapian::MSet</scope><name>size</name></member>
+      <member refid="classXapian_1_1MSet_1425525da26231b848a8845c39fdc22af" prot="public" virt="non-virtual"><scope>Xapian::MSet</scope><name>size_type</name></member>
+      <member refid="classXapian_1_1MSet_18fa74c8d41283fae491f46c690a455cf" prot="public" virt="non-virtual"><scope>Xapian::MSet</scope><name>swap</name></member>
+      <member refid="classXapian_1_1MSet_14231ddc9c8db70ecdd93c321a92e22bd" prot="public" virt="non-virtual"><scope>Xapian::MSet</scope><name>value_type</name></member>
+      <member refid="classXapian_1_1MSet_184b1c1a6db62dee0ca1aefadf4ef2d18" prot="public" virt="non-virtual"><scope>Xapian::MSet</scope><name>~MSet</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

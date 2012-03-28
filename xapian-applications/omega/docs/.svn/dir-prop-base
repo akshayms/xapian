@@ -1,0 +1,15 @@
+K 10
+svn:ignore
+V 136
+.*.sw?
+Makefile
+Makefile.in
+cgiparams.html
+index.html
+omegascript.html
+overview.html
+quickstart.html
+scriptindex.html
+termprefixes.html
+
+END

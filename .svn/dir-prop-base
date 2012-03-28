@@ -1,0 +1,25 @@
+K 9
+svk:merge
+V 55
+e87140ac-b401-0410-b005-f54630ef34f4:/xapian/trunk:6377
+K 13
+svn:externals
+V 48
+swig -r12767 svn://svn.tartarus.org/swig/trunk/
+
+K 10
+svn:ignore
+V 43
+configure
+Makefile
+config.cache
+BUILD
+INST
+
+K 13
+svn:mergeinfo
+V 96
+/branches/chert-shallower-btree:12962
+/branches/replication_fixes:14149-14152
+/trunk:15485-16044
+END

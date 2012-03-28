@@ -1,0 +1,600 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="classXapian_1_1Document" kind="class" prot="public">
+    <compoundname>Xapian::Document</compoundname>
+    <includes local="no">document.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classXapian_1_1Document_191ab95125fce434b2539661f22b4522c" prot="private" static="no" mutable="no">
+        <type>Xapian::Internal::intrusive_ptr&lt; Internal &gt;</type>
+        <definition>Xapian::Internal::intrusive_ptr&lt;Internal&gt; Xapian::Document::internal</definition>
+        <argsstring></argsstring>
+        <name>internal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/document.h" line="60" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/document.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classXapian_1_1Document_1aed3fcea3e5ab0bf9fc3d5b31fc0af52" prot="private" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::Document::Document</definition>
+        <argsstring>(Internal *internal_)</argsstring>
+        <name>Document</name>
+        <param>
+          <type>Internal *</type>
+          <declname>internal_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/document.h" line="66"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classXapian_1_1Document_127316171adc74325e42d5e88b004e189" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::Document::Document</definition>
+        <argsstring>(const Document &amp;other)</argsstring>
+        <name>Document</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1Document" kindref="compound">Document</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Copying is allowed. </para>        </briefdescription>
+        <detaileddescription>
+<para>The internals are reference counted, so copying is cheap. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/document.h" line="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Document_1470144b154e9a7ec40b0875a8d636b9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::Document::operator=</definition>
+        <argsstring>(const Document &amp;other)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1Document" kindref="compound">Document</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Assignment is allowed. </para>        </briefdescription>
+        <detaileddescription>
+<para>The internals are reference counted, so assignment is cheap. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/document.h" line="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Document_1e75d6c6a48b1cfed5b85189cb766531b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::Document::Document</definition>
+        <argsstring>()</argsstring>
+        <name>Document</name>
+        <briefdescription>
+<para>Make a new empty <ref refid="classXapian_1_1Document" kindref="compound">Document</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/document.h" line="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Document_1943a905545bd862dbc7281e6d66e5ee4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::Document::~Document</definition>
+        <argsstring>()</argsstring>
+        <name>~Document</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/document.h" line="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Document_11d8567908657c0d60a47c7ca30a08ebc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Xapian::Document::get_value</definition>
+        <argsstring>(Xapian::valueno slot) const </argsstring>
+        <name>get_value</name>
+        <param>
+          <type><ref refid="namespaceXapian_194a899651fa920c72ffa9635bde630ea" kindref="member">Xapian::valueno</ref></type>
+          <declname>slot</declname>
+        </param>
+        <briefdescription>
+<para>Get value by number. </para>        </briefdescription>
+        <detaileddescription>
+<para>Returns an empty string if no value with the given number is present in the document.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>slot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of the value. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/document.h" line="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Document_112857fccd3448ec1db91311c16d67f6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::Document::add_value</definition>
+        <argsstring>(Xapian::valueno slot, const std::string &amp;value)</argsstring>
+        <name>add_value</name>
+        <param>
+          <type><ref refid="namespaceXapian_194a899651fa920c72ffa9635bde630ea" kindref="member">Xapian::valueno</ref></type>
+          <declname>slot</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Add a new value. </para>        </briefdescription>
+        <detaileddescription>
+<para>The new value will replace any existing value with the same number (or if the new value is empty, it will remove any existing value with the same number). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/document.h" line="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Document_16ffd0e3d1beb8f047b3158a5e5aa41d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::Document::remove_value</definition>
+        <argsstring>(Xapian::valueno slot)</argsstring>
+        <name>remove_value</name>
+        <param>
+          <type><ref refid="namespaceXapian_194a899651fa920c72ffa9635bde630ea" kindref="member">Xapian::valueno</ref></type>
+          <declname>slot</declname>
+        </param>
+        <briefdescription>
+<para>Remove any value with the given number. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/document.h" line="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Document_199f8cb1deeab46df42fed52ea4f55eb9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::Document::clear_values</definition>
+        <argsstring>()</argsstring>
+        <name>clear_values</name>
+        <briefdescription>
+<para>Remove all values associated with the document. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/document.h" line="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Document_1767026a91f3a1421f3d23f7a170509d4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Xapian::Document::get_data</definition>
+        <argsstring>() const </argsstring>
+        <name>get_data</name>
+        <briefdescription>
+<para>Get data stored in the document. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is a potentially expensive operation, and shouldn&apos;t normally be used in a match decider functor. Put data for use by match deciders in a value instead. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/document.h" line="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Document_1b1b0da2e7c76acd754f29a52e14f89ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::Document::set_data</definition>
+        <argsstring>(const std::string &amp;data)</argsstring>
+        <name>set_data</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Set data stored in the document. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/document.h" line="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Document_1161943bb133fea0da4a21fa37621764b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::Document::add_posting</definition>
+        <argsstring>(const std::string &amp;tname, Xapian::termpos tpos, Xapian::termcount wdfinc=1)</argsstring>
+        <name>add_posting</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>tname</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceXapian_1e5a16f073d0c8ed54085a9de07248d45" kindref="member">Xapian::termpos</ref></type>
+          <declname>tpos</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceXapian_172b5a76dd8cfb7b251fe7986e86390cb" kindref="member">Xapian::termcount</ref></type>
+          <declname>wdfinc</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+<para>Add an occurrence of a term at a particular position. </para>        </briefdescription>
+        <detaileddescription>
+<para>Multiple occurrences of the term at the same position are represented only once in the positional information, but do increase the wdf.</para><para>If the term is not already in the document, it will be added to it.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the term. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tpos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position of the term. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>wdfinc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The increment that will be applied to the wdf for this term. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/document.h" line="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Document_1730bb59dda98f19c61fe67360f0adb3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::Document::add_term</definition>
+        <argsstring>(const std::string &amp;tname, Xapian::termcount wdfinc=1)</argsstring>
+        <name>add_term</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>tname</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceXapian_172b5a76dd8cfb7b251fe7986e86390cb" kindref="member">Xapian::termcount</ref></type>
+          <declname>wdfinc</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+<para>Add a term to the document, without positional information. </para>        </briefdescription>
+        <detaileddescription>
+<para>Any existing positional information for the term will be left unmodified.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the term. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>wdfinc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The increment that will be applied to the wdf for this term (default: 1). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/document.h" line="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Document_15dcc3df00ccb9ab3a8dee594f603d299" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::Document::add_boolean_term</definition>
+        <argsstring>(const std::string &amp;term)</argsstring>
+        <name>add_boolean_term</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>term</declname>
+        </param>
+        <briefdescription>
+<para>Add a boolean filter term to the document. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method adds <emphasis>term</emphasis> to the document with wdf of 0 - this is generally what you want for a term used for boolean filtering as the wdf of such terms is ignored, and it doesn&apos;t make sense for them to contribute to the document&apos;s length.</para><para>If the specified term already indexes this document, this method has no effect.</para><para>It is exactly the same as add_term(term, 0).</para><para>This method was added in <ref refid="namespaceXapian" kindref="compound">Xapian</ref> 1.0.18.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>term</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The term to add. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/document.h" line="162" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/document.h" bodystart="162" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Document_111eec629737e496a7077b87f763967a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::Document::remove_posting</definition>
+        <argsstring>(const std::string &amp;tname, Xapian::termpos tpos, Xapian::termcount wdfdec=1)</argsstring>
+        <name>remove_posting</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>tname</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceXapian_1e5a16f073d0c8ed54085a9de07248d45" kindref="member">Xapian::termpos</ref></type>
+          <declname>tpos</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceXapian_172b5a76dd8cfb7b251fe7986e86390cb" kindref="member">Xapian::termcount</ref></type>
+          <declname>wdfdec</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+<para>Remove a posting of a term from the document. </para>        </briefdescription>
+        <detaileddescription>
+<para>Note that the term will still index the document even if all occurrences are removed. To remove a term from a document completely, use <ref refid="classXapian_1_1Document_101e5b7bf54fdee77a978c3b5f1b007ba" kindref="member">remove_term()</ref>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the term. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tpos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position of the term. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>wdfdec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The decrement that will be applied to the wdf when removing this posting. The wdf will not go below the value of 0.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classXapian_1_1InvalidArgumentError" kindref="compound">Xapian::InvalidArgumentError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>will be thrown if the term is not at the position specified in the position list for this term in this document.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="classXapian_1_1InvalidArgumentError" kindref="compound">Xapian::InvalidArgumentError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>will be thrown if the term is not in the document </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/document.h" line="185"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Document_101e5b7bf54fdee77a978c3b5f1b007ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::Document::remove_term</definition>
+        <argsstring>(const std::string &amp;tname)</argsstring>
+        <name>remove_term</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>tname</declname>
+        </param>
+        <briefdescription>
+<para>Remove a term and all postings associated with it. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the term.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classXapian_1_1InvalidArgumentError" kindref="compound">Xapian::InvalidArgumentError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>will be thrown if the term is not in the document </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/document.h" line="194"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Document_1a0bd9e001ffd29b0678938522d4e37e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xapian::Document::clear_terms</definition>
+        <argsstring>()</argsstring>
+        <name>clear_terms</name>
+        <briefdescription>
+<para>Remove all terms (and postings) from the document. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/document.h" line="197"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Document_10249ddf18171ed53d851f9d82290eb62" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceXapian_172b5a76dd8cfb7b251fe7986e86390cb" kindref="member">Xapian::termcount</ref></type>
+        <definition>Xapian::termcount Xapian::Document::termlist_count</definition>
+        <argsstring>() const </argsstring>
+        <name>termlist_count</name>
+        <briefdescription>
+<para>The length of the termlist - i.e. </para>        </briefdescription>
+        <detaileddescription>
+<para>the number of different terms which index this document. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/document.h" line="202"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Document_1591cc11740bd0b293eaa77f117b7f0d6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classXapian_1_1TermIterator" kindref="compound">TermIterator</ref></type>
+        <definition>TermIterator Xapian::Document::termlist_begin</definition>
+        <argsstring>() const </argsstring>
+        <name>termlist_begin</name>
+        <briefdescription>
+<para>Iterator for the terms in this document. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/document.h" line="205"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Document_1b4ba488b850b48b4972bb4e5f8ccf241" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classXapian_1_1TermIterator" kindref="compound">TermIterator</ref></type>
+        <definition>TermIterator Xapian::Document::termlist_end</definition>
+        <argsstring>() const </argsstring>
+        <name>termlist_end</name>
+        <briefdescription>
+<para>Equivalent end iterator for <ref refid="classXapian_1_1Document_1591cc11740bd0b293eaa77f117b7f0d6" kindref="member">termlist_begin()</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/document.h" line="208" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/document.h" bodystart="208" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Document_1139251ac7b57e67703f797b06793d21c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceXapian_172b5a76dd8cfb7b251fe7986e86390cb" kindref="member">Xapian::termcount</ref></type>
+        <definition>Xapian::termcount Xapian::Document::values_count</definition>
+        <argsstring>() const </argsstring>
+        <name>values_count</name>
+        <briefdescription>
+<para>Count the values in this document. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/document.h" line="213"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Document_11ed6315d39adbc6f3e19d7bcc95ad3fe" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classXapian_1_1ValueIterator" kindref="compound">ValueIterator</ref></type>
+        <definition>ValueIterator Xapian::Document::values_begin</definition>
+        <argsstring>() const </argsstring>
+        <name>values_begin</name>
+        <briefdescription>
+<para>Iterator for the values in this document. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/document.h" line="216"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Document_10f8166c5d6feab897cafd0ab6e6dfaeb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classXapian_1_1ValueIterator" kindref="compound">ValueIterator</ref></type>
+        <definition>ValueIterator Xapian::Document::values_end</definition>
+        <argsstring>() const </argsstring>
+        <name>values_end</name>
+        <briefdescription>
+<para>Equivalent end iterator for <ref refid="classXapian_1_1Document_11ed6315d39adbc6f3e19d7bcc95ad3fe" kindref="member">values_begin()</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/document.h" line="219" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/document.h" bodystart="219" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Document_103ff36283ac7d14a1a3b1c9fb26eff61" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceXapian_18fa9094bebe1256a7be935a5ede87a64" kindref="member">docid</ref></type>
+        <definition>docid Xapian::Document::get_docid</definition>
+        <argsstring>() const </argsstring>
+        <name>get_docid</name>
+        <briefdescription>
+<para>Get the document id which is associated with this document (if any). </para>        </briefdescription>
+        <detaileddescription>
+<para>NB If multiple databases are being searched together, then this will be the document id in the individual database, not the merged database!</para><para><simplesect kind="return"><para>If this document came from a database, return the document id in that database. Otherwise, return 0 (in <ref refid="namespaceXapian" kindref="compound">Xapian</ref> 1.0.22/1.2.4 or later; prior to this the returned value was uninitialised). </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/document.h" line="234"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Document_1d6a7536cd6ed7c5b3fe4c9f1d14d6faf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Xapian::Document::serialise</definition>
+        <argsstring>() const </argsstring>
+        <name>serialise</name>
+        <briefdescription>
+<para>Serialise document into a string. </para>        </briefdescription>
+        <detaileddescription>
+<para>The document representation may change between <ref refid="namespaceXapian" kindref="compound">Xapian</ref> releases: even between minor versions. However, it is guaranteed not to change if the remote database protocol has not changed between releases. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/document.h" line="243"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1Document_1eb93627c7cb0556c0935d5c2bb4f0847" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Xapian::Document::get_description</definition>
+        <argsstring>() const </argsstring>
+        <name>get_description</name>
+        <briefdescription>
+<para>Return a string describing this object. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/document.h" line="250"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classXapian_1_1Document_13d7618710ea495101e4799fbe1952a41" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classXapian_1_1Document" kindref="compound">Document</ref></type>
+        <definition>static Document Xapian::Document::unserialise</definition>
+        <argsstring>(const std::string &amp;s)</argsstring>
+        <name>unserialise</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Unserialise a document from a string produced by <ref refid="classXapian_1_1Document_1d6a7536cd6ed7c5b3fe4c9f1d14d6faf" kindref="member">serialise()</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/document.h" line="247"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A handle representing a document in a <ref refid="namespaceXapian" kindref="compound">Xapian</ref> database. </para>    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="classXapian_1_1Document" kindref="compound">Document</ref> class fetches information from the database lazily. Usually this behaviour isn&apos;t visible to users (except for the speed benefits), but if the document in the database is modified or deleted, then preexisting <ref refid="classXapian_1_1Document" kindref="compound">Document</ref> objects may return the old or new versions of data (or throw <ref refid="classXapian_1_1DocNotFoundError" kindref="compound">Xapian::DocNotFoundError</ref> in the case of deletion).</para><para>Since <ref refid="classXapian_1_1Database" kindref="compound">Database</ref> objects work on a snapshot of the database&apos;s state, the situation above can only happen with a <ref refid="classXapian_1_1WritableDatabase" kindref="compound">WritableDatabase</ref> object, or if you call <ref refid="classXapian_1_1Database_1f316aa13ee123e2af75f4b44e1f23db9" kindref="member">Database::reopen()</ref> on a <ref refid="classXapian_1_1Database" kindref="compound">Database</ref> object.</para><para>We recommend you avoid designs where this behaviour is an issue, but if you need a way to make a non-lazy version of a <ref refid="classXapian_1_1Document" kindref="compound">Document</ref> object, you can do this like so:</para><para>doc = <ref refid="classXapian_1_1Document_13d7618710ea495101e4799fbe1952a41" kindref="member">Xapian::Document::unserialise</ref>(doc.serialise()); </para>    </detaileddescription>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/document.h" line="56" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/document.h" bodystart="56" bodyend="251"/>
+    <listofallmembers>
+      <member refid="classXapian_1_1Document_15dcc3df00ccb9ab3a8dee594f603d299" prot="public" virt="non-virtual"><scope>Xapian::Document</scope><name>add_boolean_term</name></member>
+      <member refid="classXapian_1_1Document_1161943bb133fea0da4a21fa37621764b" prot="public" virt="non-virtual"><scope>Xapian::Document</scope><name>add_posting</name></member>
+      <member refid="classXapian_1_1Document_1730bb59dda98f19c61fe67360f0adb3a" prot="public" virt="non-virtual"><scope>Xapian::Document</scope><name>add_term</name></member>
+      <member refid="classXapian_1_1Document_112857fccd3448ec1db91311c16d67f6c" prot="public" virt="non-virtual"><scope>Xapian::Document</scope><name>add_value</name></member>
+      <member refid="classXapian_1_1Document_1a0bd9e001ffd29b0678938522d4e37e5" prot="public" virt="non-virtual"><scope>Xapian::Document</scope><name>clear_terms</name></member>
+      <member refid="classXapian_1_1Document_199f8cb1deeab46df42fed52ea4f55eb9" prot="public" virt="non-virtual"><scope>Xapian::Document</scope><name>clear_values</name></member>
+      <member refid="classXapian_1_1Document_1aed3fcea3e5ab0bf9fc3d5b31fc0af52" prot="private" virt="non-virtual"><scope>Xapian::Document</scope><name>Document</name></member>
+      <member refid="classXapian_1_1Document_127316171adc74325e42d5e88b004e189" prot="public" virt="non-virtual"><scope>Xapian::Document</scope><name>Document</name></member>
+      <member refid="classXapian_1_1Document_1e75d6c6a48b1cfed5b85189cb766531b" prot="public" virt="non-virtual"><scope>Xapian::Document</scope><name>Document</name></member>
+      <member refid="classXapian_1_1Document_1767026a91f3a1421f3d23f7a170509d4" prot="public" virt="non-virtual"><scope>Xapian::Document</scope><name>get_data</name></member>
+      <member refid="classXapian_1_1Document_1eb93627c7cb0556c0935d5c2bb4f0847" prot="public" virt="non-virtual"><scope>Xapian::Document</scope><name>get_description</name></member>
+      <member refid="classXapian_1_1Document_103ff36283ac7d14a1a3b1c9fb26eff61" prot="public" virt="non-virtual"><scope>Xapian::Document</scope><name>get_docid</name></member>
+      <member refid="classXapian_1_1Document_11d8567908657c0d60a47c7ca30a08ebc" prot="public" virt="non-virtual"><scope>Xapian::Document</scope><name>get_value</name></member>
+      <member refid="classXapian_1_1Document_191ab95125fce434b2539661f22b4522c" prot="private" virt="non-virtual"><scope>Xapian::Document</scope><name>internal</name></member>
+      <member refid="classXapian_1_1Document_1470144b154e9a7ec40b0875a8d636b9b" prot="public" virt="non-virtual"><scope>Xapian::Document</scope><name>operator=</name></member>
+      <member refid="classXapian_1_1Document_111eec629737e496a7077b87f763967a5" prot="public" virt="non-virtual"><scope>Xapian::Document</scope><name>remove_posting</name></member>
+      <member refid="classXapian_1_1Document_101e5b7bf54fdee77a978c3b5f1b007ba" prot="public" virt="non-virtual"><scope>Xapian::Document</scope><name>remove_term</name></member>
+      <member refid="classXapian_1_1Document_16ffd0e3d1beb8f047b3158a5e5aa41d4" prot="public" virt="non-virtual"><scope>Xapian::Document</scope><name>remove_value</name></member>
+      <member refid="classXapian_1_1Document_1d6a7536cd6ed7c5b3fe4c9f1d14d6faf" prot="public" virt="non-virtual"><scope>Xapian::Document</scope><name>serialise</name></member>
+      <member refid="classXapian_1_1Document_1b1b0da2e7c76acd754f29a52e14f89ae" prot="public" virt="non-virtual"><scope>Xapian::Document</scope><name>set_data</name></member>
+      <member refid="classXapian_1_1Document_1591cc11740bd0b293eaa77f117b7f0d6" prot="public" virt="non-virtual"><scope>Xapian::Document</scope><name>termlist_begin</name></member>
+      <member refid="classXapian_1_1Document_10249ddf18171ed53d851f9d82290eb62" prot="public" virt="non-virtual"><scope>Xapian::Document</scope><name>termlist_count</name></member>
+      <member refid="classXapian_1_1Document_1b4ba488b850b48b4972bb4e5f8ccf241" prot="public" virt="non-virtual"><scope>Xapian::Document</scope><name>termlist_end</name></member>
+      <member refid="classXapian_1_1Document_13d7618710ea495101e4799fbe1952a41" prot="public" virt="non-virtual"><scope>Xapian::Document</scope><name>unserialise</name></member>
+      <member refid="classXapian_1_1Document_11ed6315d39adbc6f3e19d7bcc95ad3fe" prot="public" virt="non-virtual"><scope>Xapian::Document</scope><name>values_begin</name></member>
+      <member refid="classXapian_1_1Document_1139251ac7b57e67703f797b06793d21c" prot="public" virt="non-virtual"><scope>Xapian::Document</scope><name>values_count</name></member>
+      <member refid="classXapian_1_1Document_10f8166c5d6feab897cafd0ab6e6dfaeb" prot="public" virt="non-virtual"><scope>Xapian::Document</scope><name>values_end</name></member>
+      <member refid="classXapian_1_1Document_1943a905545bd862dbc7281e6d66e5ee4" prot="public" virt="non-virtual"><scope>Xapian::Document</scope><name>~Document</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

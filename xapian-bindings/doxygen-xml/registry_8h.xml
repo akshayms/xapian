@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="registry_8h" kind="file">
+    <compoundname>registry.h</compoundname>
+    <includes local="no">xapian/intrusive_ptr.h</includes>
+    <includes local="no">xapian/visibility.h</includes>
+    <includes local="no">string</includes>
+    <includedby refid="xapian_8h" local="no">xapian.h</includedby>
+    <incdepgraph>
+      <node id="264">
+        <label>xapian/visibility.h</label>
+      </node>
+      <node id="265">
+        <label>string</label>
+      </node>
+      <node id="262">
+        <label>xapian/registry.h</label>
+        <link refid="registry.h"/>
+        <childnode refid="263" relation="include">
+        </childnode>
+        <childnode refid="264" relation="include">
+        </childnode>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="263">
+        <label>xapian/intrusive_ptr.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="268">
+        <label>xapian/letor.h</label>
+        <link refid="letor_8h"/>
+      </node>
+      <node id="266">
+        <label>xapian/registry.h</label>
+        <link refid="registry.h"/>
+        <childnode refid="267" relation="include">
+        </childnode>
+      </node>
+      <node id="267">
+        <label>xapian.h</label>
+        <link refid="xapian_8h"/>
+        <childnode refid="268" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classXapian_1_1Registry" prot="public">Xapian::Registry</innerclass>
+    <innernamespace refid="namespaceXapian">Xapian</innernamespace>
+    <briefdescription>
+<para>Class for looking up user subclasses during unserialisation. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/registry.h"/>
+  </compounddef>
+</doxygen>

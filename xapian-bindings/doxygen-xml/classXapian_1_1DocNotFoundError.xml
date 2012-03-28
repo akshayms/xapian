@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="classXapian_1_1DocNotFoundError" kind="class" prot="public">
+    <compoundname>Xapian::DocNotFoundError</compoundname>
+    <basecompoundref refid="classXapian_1_1RuntimeError" prot="public" virt="non-virtual">Xapian::RuntimeError</basecompoundref>
+    <includes local="no">error.h</includes>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classXapian_1_1DocNotFoundError_1586cfaffe6c1c366d49d6b96f41183c3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::DocNotFoundError::DocNotFoundError</definition>
+        <argsstring>(const std::string &amp;msg_, const std::string &amp;context_, const char *error_string_)</argsstring>
+        <name>DocNotFoundError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>context_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>error_string_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="532" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="531" bodyend="532"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1DocNotFoundError_1c0306adf0074cbfec349bf813bce6592" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::DocNotFoundError::DocNotFoundError</definition>
+        <argsstring>(const std::string &amp;msg_, const std::string &amp;context_, const char *type_, const char *error_string_)</argsstring>
+        <name>DocNotFoundError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>context_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>type_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>error_string_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="544" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="543" bodyend="544"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1DocNotFoundError_1f6d0f2e7547371d9457db08868b082a6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::DocNotFoundError::DocNotFoundError</definition>
+        <argsstring>(const std::string &amp;msg_, const std::string &amp;context_, const char *type_, int errno_)</argsstring>
+        <name>DocNotFoundError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>context_</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>type_</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>errno_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="550" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="549" bodyend="550"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classXapian_1_1DocNotFoundError_1b3ffee7d93c12197e98944922cb99f6a" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::DocNotFoundError::DocNotFoundError</definition>
+        <argsstring>(const std::string &amp;msg_, const std::string &amp;context_=std::string(), int errno_=0)</argsstring>
+        <name>DocNotFoundError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>context_</declname>
+          <defval>std::string()</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>errno_</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>General purpose constructor which allows setting errno. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="535" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="534" bodyend="535"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1DocNotFoundError_1cd940ce536bc0a27bb3ba1f6ceff7356" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::DocNotFoundError::DocNotFoundError</definition>
+        <argsstring>(const std::string &amp;msg_, int errno_)</argsstring>
+        <name>DocNotFoundError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg_</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>errno_</declname>
+        </param>
+        <briefdescription>
+<para>Construct from message and errno value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="538" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="537" bodyend="538"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Indicates an attempt to access a document not present in the database. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="393">
+        <label>Xapian::Error</label>
+        <link refid="classXapian_1_1Error"/>
+      </node>
+      <node id="392">
+        <label>Xapian::RuntimeError</label>
+        <link refid="classXapian_1_1RuntimeError"/>
+        <childnode refid="393" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="391">
+        <label>Xapian::DocNotFoundError</label>
+        <link refid="classXapian_1_1DocNotFoundError"/>
+        <childnode refid="392" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="396">
+        <label>Xapian::Error</label>
+        <link refid="classXapian_1_1Error"/>
+      </node>
+      <node id="395">
+        <label>Xapian::RuntimeError</label>
+        <link refid="classXapian_1_1RuntimeError"/>
+        <childnode refid="396" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="394">
+        <label>Xapian::DocNotFoundError</label>
+        <link refid="classXapian_1_1DocNotFoundError"/>
+        <childnode refid="395" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/error.h" line="524" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/error.h" bodystart="524" bodyend="551"/>
+    <listofallmembers>
+      <member refid="classXapian_1_1DocNotFoundError_1586cfaffe6c1c366d49d6b96f41183c3" prot="private" virt="non-virtual"><scope>Xapian::DocNotFoundError</scope><name>DocNotFoundError</name></member>
+      <member refid="classXapian_1_1DocNotFoundError_1b3ffee7d93c12197e98944922cb99f6a" prot="public" virt="non-virtual"><scope>Xapian::DocNotFoundError</scope><name>DocNotFoundError</name></member>
+      <member refid="classXapian_1_1DocNotFoundError_1cd940ce536bc0a27bb3ba1f6ceff7356" prot="public" virt="non-virtual"><scope>Xapian::DocNotFoundError</scope><name>DocNotFoundError</name></member>
+      <member refid="classXapian_1_1DocNotFoundError_1c0306adf0074cbfec349bf813bce6592" prot="private" virt="non-virtual"><scope>Xapian::DocNotFoundError</scope><name>DocNotFoundError</name></member>
+      <member refid="classXapian_1_1DocNotFoundError_1f6d0f2e7547371d9457db08868b082a6" prot="private" virt="non-virtual"><scope>Xapian::DocNotFoundError</scope><name>DocNotFoundError</name></member>
+      <member refid="classXapian_1_1Error_190c683965555b4bc86b08e8667170e44" prot="public" virt="non-virtual"><scope>Xapian::DocNotFoundError</scope><name>get_context</name></member>
+      <member refid="classXapian_1_1Error_1bd64e380eb6d864dc907ee62c1f58a74" prot="public" virt="non-virtual"><scope>Xapian::DocNotFoundError</scope><name>get_description</name></member>
+      <member refid="classXapian_1_1Error_16f94a579f8e176f85c6fb036592dab61" prot="public" virt="non-virtual"><scope>Xapian::DocNotFoundError</scope><name>get_error_string</name></member>
+      <member refid="classXapian_1_1Error_1ea05df48ea71dfd045da28ab984cdaa3" prot="public" virt="non-virtual"><scope>Xapian::DocNotFoundError</scope><name>get_msg</name></member>
+      <member refid="classXapian_1_1Error_1136945e703317bdf6e18d8cf511a5bfb" prot="public" virt="non-virtual"><scope>Xapian::DocNotFoundError</scope><name>get_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="document_8h" kind="file">
+    <compoundname>document.h</compoundname>
+    <includes local="no">string</includes>
+    <includes local="no">xapian/intrusive_ptr.h</includes>
+    <includes refid="types_8h" local="no">xapian/types.h</includes>
+    <includes refid="termiterator_8h" local="no">xapian/termiterator.h</includes>
+    <includes refid="valueiterator_8h" local="no">xapian/valueiterator.h</includes>
+    <includes local="no">xapian/visibility.h</includes>
+    <includedby refid="xapian_8h" local="no">xapian.h</includedby>
+    <incdepgraph>
+      <node id="78">
+        <label>iterator</label>
+      </node>
+      <node id="79">
+        <label>xapian/derefwrapper.h</label>
+      </node>
+      <node id="81">
+        <label>xapian/visibility.h</label>
+      </node>
+      <node id="73">
+        <label>string</label>
+      </node>
+      <node id="76">
+        <label>xapian/deprecated.h</label>
+      </node>
+      <node id="75">
+        <label>xapian/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="76" relation="include">
+        </childnode>
+      </node>
+      <node id="80">
+        <label>xapian/positioniterator.h</label>
+        <link refid="positioniterator_8h"/>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+      </node>
+      <node id="82">
+        <label>xapian/valueiterator.h</label>
+        <link refid="valueiterator_8h"/>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+      </node>
+      <node id="77">
+        <label>xapian/termiterator.h</label>
+        <link refid="termiterator_8h"/>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+      </node>
+      <node id="72">
+        <label>xapian/document.h</label>
+        <link refid="document.h"/>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+      </node>
+      <node id="74">
+        <label>xapian/intrusive_ptr.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="85">
+        <label>xapian/letor.h</label>
+        <link refid="letor_8h"/>
+      </node>
+      <node id="83">
+        <label>xapian/document.h</label>
+        <link refid="document.h"/>
+        <childnode refid="84" relation="include">
+        </childnode>
+      </node>
+      <node id="84">
+        <label>xapian.h</label>
+        <link refid="xapian_8h"/>
+        <childnode refid="85" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classXapian_1_1Document" prot="public">Xapian::Document</innerclass>
+    <innernamespace refid="namespaceXapian">Xapian</innernamespace>
+    <briefdescription>
+<para>API for working with documents. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/document.h"/>
+  </compounddef>
+</doxygen>

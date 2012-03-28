@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="valuesetmatchdecider_8h" kind="file">
+    <compoundname>valuesetmatchdecider.h</compoundname>
+    <includes refid="enquire_8h" local="no">xapian/enquire.h</includes>
+    <includes refid="types_8h" local="no">xapian/types.h</includes>
+    <includes local="no">string</includes>
+    <includes local="no">set</includes>
+    <includedby refid="xapian_8h" local="no">xapian.h</includedby>
+    <incdepgraph>
+      <node id="353">
+        <label>iterator</label>
+      </node>
+      <node id="354">
+        <label>xapian/derefwrapper.h</label>
+      </node>
+      <node id="356">
+        <label>xapian/visibility.h</label>
+      </node>
+      <node id="348">
+        <label>string</label>
+      </node>
+      <node id="346">
+        <label>xapian/valuesetmatchdecider.h</label>
+        <link refid="valuesetmatchdecider.h"/>
+        <childnode refid="347" relation="include">
+        </childnode>
+        <childnode refid="350" relation="include">
+        </childnode>
+        <childnode refid="348" relation="include">
+        </childnode>
+        <childnode refid="357" relation="include">
+        </childnode>
+      </node>
+      <node id="347">
+        <label>xapian/enquire.h</label>
+        <link refid="enquire_8h"/>
+        <childnode refid="348" relation="include">
+        </childnode>
+        <childnode refid="349" relation="include">
+        </childnode>
+        <childnode refid="350" relation="include">
+        </childnode>
+        <childnode refid="352" relation="include">
+        </childnode>
+        <childnode refid="356" relation="include">
+        </childnode>
+      </node>
+      <node id="351">
+        <label>xapian/deprecated.h</label>
+      </node>
+      <node id="350">
+        <label>xapian/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="351" relation="include">
+        </childnode>
+      </node>
+      <node id="355">
+        <label>xapian/positioniterator.h</label>
+        <link refid="positioniterator_8h"/>
+        <childnode refid="353" relation="include">
+        </childnode>
+        <childnode refid="348" relation="include">
+        </childnode>
+        <childnode refid="354" relation="include">
+        </childnode>
+        <childnode refid="350" relation="include">
+        </childnode>
+        <childnode refid="356" relation="include">
+        </childnode>
+      </node>
+      <node id="352">
+        <label>xapian/termiterator.h</label>
+        <link refid="termiterator_8h"/>
+        <childnode refid="353" relation="include">
+        </childnode>
+        <childnode refid="348" relation="include">
+        </childnode>
+        <childnode refid="354" relation="include">
+        </childnode>
+        <childnode refid="355" relation="include">
+        </childnode>
+        <childnode refid="350" relation="include">
+        </childnode>
+        <childnode refid="356" relation="include">
+        </childnode>
+      </node>
+      <node id="349">
+        <label>xapian/intrusive_ptr.h</label>
+      </node>
+      <node id="357">
+        <label>set</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="358">
+        <label>xapian/valuesetmatchdecider.h</label>
+        <link refid="valuesetmatchdecider.h"/>
+        <childnode refid="359" relation="include">
+        </childnode>
+      </node>
+      <node id="360">
+        <label>xapian/letor.h</label>
+        <link refid="letor_8h"/>
+      </node>
+      <node id="359">
+        <label>xapian.h</label>
+        <link refid="xapian_8h"/>
+        <childnode refid="360" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classXapian_1_1ValueSetMatchDecider" prot="public">Xapian::ValueSetMatchDecider</innerclass>
+    <innernamespace refid="namespaceXapian">Xapian</innernamespace>
+    <briefdescription>
+<para>MatchDecider subclass for filtering results by value. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/valuesetmatchdecider.h"/>
+  </compounddef>
+</doxygen>

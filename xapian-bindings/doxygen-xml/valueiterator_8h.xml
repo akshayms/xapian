@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="valueiterator_8h" kind="file">
+    <compoundname>valueiterator.h</compoundname>
+    <includes local="no">iterator</includes>
+    <includes local="no">string</includes>
+    <includes local="no">xapian/derefwrapper.h</includes>
+    <includes refid="types_8h" local="no">xapian/types.h</includes>
+    <includes local="no">xapian/visibility.h</includes>
+    <includedby refid="database_8h" local="no">xapian/database.h</includedby>
+    <includedby refid="document_8h" local="no">xapian/document.h</includedby>
+    <includedby refid="xapian_8h" local="no">xapian.h</includedby>
+    <incdepgraph>
+      <node id="334">
+        <label>iterator</label>
+      </node>
+      <node id="336">
+        <label>xapian/derefwrapper.h</label>
+      </node>
+      <node id="339">
+        <label>xapian/visibility.h</label>
+      </node>
+      <node id="335">
+        <label>string</label>
+      </node>
+      <node id="338">
+        <label>xapian/deprecated.h</label>
+      </node>
+      <node id="337">
+        <label>xapian/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="338" relation="include">
+        </childnode>
+      </node>
+      <node id="333">
+        <label>xapian/valueiterator.h</label>
+        <link refid="valueiterator.h"/>
+        <childnode refid="334" relation="include">
+        </childnode>
+        <childnode refid="335" relation="include">
+        </childnode>
+        <childnode refid="336" relation="include">
+        </childnode>
+        <childnode refid="337" relation="include">
+        </childnode>
+        <childnode refid="339" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="344">
+        <label>xapian/postingsource.h</label>
+        <link refid="postingsource_8h"/>
+        <childnode refid="342" relation="include">
+        </childnode>
+      </node>
+      <node id="343">
+        <label>xapian/letor.h</label>
+        <link refid="letor_8h"/>
+      </node>
+      <node id="340">
+        <label>xapian/valueiterator.h</label>
+        <link refid="valueiterator.h"/>
+        <childnode refid="341" relation="include">
+        </childnode>
+        <childnode refid="345" relation="include">
+        </childnode>
+        <childnode refid="342" relation="include">
+        </childnode>
+      </node>
+      <node id="345">
+        <label>xapian/document.h</label>
+        <link refid="document_8h"/>
+        <childnode refid="342" relation="include">
+        </childnode>
+      </node>
+      <node id="341">
+        <label>xapian/database.h</label>
+        <link refid="database_8h"/>
+        <childnode refid="342" relation="include">
+        </childnode>
+        <childnode refid="344" relation="include">
+        </childnode>
+      </node>
+      <node id="342">
+        <label>xapian.h</label>
+        <link refid="xapian_8h"/>
+        <childnode refid="343" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classXapian_1_1ValueIterator" prot="public">Xapian::ValueIterator</innerclass>
+    <innernamespace refid="namespaceXapian">Xapian</innernamespace>
+    <briefdescription>
+<para>Class for iterating over document values. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/valueiterator.h"/>
+  </compounddef>
+</doxygen>

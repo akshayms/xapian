@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="dbfactory_8h" kind="file">
+    <compoundname>dbfactory.h</compoundname>
+    <includes local="no">sys/types.h</includes>
+    <includes local="no">string</includes>
+    <includes refid="types_8h" local="no">xapian/types.h</includes>
+    <includes refid="version_8h" local="no">xapian/version.h</includes>
+    <includes local="no">xapian/visibility.h</includes>
+    <includedby refid="xapian_8h" local="no">xapian.h</includedby>
+    <incdepgraph>
+      <node id="68">
+        <label>xapian/visibility.h</label>
+      </node>
+      <node id="67">
+        <label>xapian/version.h</label>
+        <link refid="version_8h"/>
+      </node>
+      <node id="64">
+        <label>string</label>
+      </node>
+      <node id="66">
+        <label>xapian/deprecated.h</label>
+      </node>
+      <node id="65">
+        <label>xapian/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="66" relation="include">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>sys/types.h</label>
+      </node>
+      <node id="62">
+        <label>xapian/dbfactory.h</label>
+        <link refid="dbfactory.h"/>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="71">
+        <label>xapian/letor.h</label>
+        <link refid="letor_8h"/>
+      </node>
+      <node id="70">
+        <label>xapian.h</label>
+        <link refid="xapian_8h"/>
+        <childnode refid="71" relation="include">
+        </childnode>
+      </node>
+      <node id="69">
+        <label>xapian/dbfactory.h</label>
+        <link refid="dbfactory.h"/>
+        <childnode refid="70" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespaceXapian">Xapian</innernamespace>
+    <innernamespace refid="namespaceXapian_1_1Auto">Xapian::Auto</innernamespace>
+    <innernamespace refid="namespaceXapian_1_1InMemory">Xapian::InMemory</innernamespace>
+    <innernamespace refid="namespaceXapian_1_1Brass">Xapian::Brass</innernamespace>
+    <innernamespace refid="namespaceXapian_1_1Chert">Xapian::Chert</innernamespace>
+    <innernamespace refid="namespaceXapian_1_1Remote">Xapian::Remote</innernamespace>
+    <briefdescription>
+<para>Factory functions for constructing Database and WritableDatabase objects. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/dbfactory.h"/>
+  </compounddef>
+</doxygen>

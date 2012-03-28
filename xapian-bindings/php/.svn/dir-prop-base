@@ -1,0 +1,14 @@
+K 10
+svn:ignore
+V 74
+.*.sw?
+*.lo
+Makefile.in
+Makefile
+.deps
+.libs
+xapian.la
+php5
+xapian_wrap.d
+
+END

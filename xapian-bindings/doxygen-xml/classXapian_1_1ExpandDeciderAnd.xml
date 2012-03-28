@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="classXapian_1_1ExpandDeciderAnd" kind="class" prot="public">
+    <compoundname>Xapian::ExpandDeciderAnd</compoundname>
+    <basecompoundref refid="classXapian_1_1ExpandDecider" prot="public" virt="non-virtual">Xapian::ExpandDecider</basecompoundref>
+    <includes local="no">expanddecider.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classXapian_1_1ExpandDeciderAnd_17ea527d305a30c68b2531cfc9d2aad29" prot="private" static="no" mutable="no">
+        <type>const <ref refid="classXapian_1_1ExpandDecider" kindref="compound">ExpandDecider</ref> &amp;</type>
+        <definition>const ExpandDecider&amp; Xapian::ExpandDeciderAnd::first</definition>
+        <argsstring></argsstring>
+        <name>first</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/expanddecider.h" line="47" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/expanddecider.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classXapian_1_1ExpandDeciderAnd_14cdf42f59914151d557c59037a9ad3d6" prot="private" static="no" mutable="no">
+        <type>const <ref refid="classXapian_1_1ExpandDecider" kindref="compound">ExpandDecider</ref> &amp;</type>
+        <definition>const ExpandDecider &amp; Xapian::ExpandDeciderAnd::second</definition>
+        <argsstring></argsstring>
+        <name>second</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/expanddecider.h" line="47" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/expanddecider.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classXapian_1_1ExpandDeciderAnd_19d63accdfda0448b2c2cb6bd1d3de433" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::ExpandDeciderAnd::ExpandDeciderAnd</definition>
+        <argsstring>(const ExpandDecider &amp;first_, const ExpandDecider &amp;second_)</argsstring>
+        <name>ExpandDeciderAnd</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1ExpandDecider" kindref="compound">ExpandDecider</ref> &amp;</type>
+          <declname>first_</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classXapian_1_1ExpandDecider" kindref="compound">ExpandDecider</ref> &amp;</type>
+          <declname>second_</declname>
+        </param>
+        <briefdescription>
+<para>Terms will be checked with <emphasis>first</emphasis>, and if accepted, then checked with <emphasis>second</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/expanddecider.h" line="55" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/expanddecider.h" bodystart="53" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1ExpandDeciderAnd_15c54b7d99e1e31528eae8054d94df43b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Xapian::ExpandDeciderAnd::ExpandDeciderAnd</definition>
+        <argsstring>(const ExpandDecider *first_, const ExpandDecider *second_)</argsstring>
+        <name>ExpandDeciderAnd</name>
+        <param>
+          <type>const <ref refid="classXapian_1_1ExpandDecider" kindref="compound">ExpandDecider</ref> *</type>
+          <declname>first_</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classXapian_1_1ExpandDecider" kindref="compound">ExpandDecider</ref> *</type>
+          <declname>second_</declname>
+        </param>
+        <briefdescription>
+<para>Compatibility method. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/expanddecider.h" line="60" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/expanddecider.h" bodystart="58" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classXapian_1_1ExpandDeciderAnd_1c10c6b84ff534553b3b9e520f6c0ea29" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool Xapian::ExpandDeciderAnd::operator()</definition>
+        <argsstring>(const std::string &amp;term) const </argsstring>
+        <name>operator()</name>
+        <reimplements refid="classXapian_1_1ExpandDecider_16ee544877bb51b85da4536eb8abd1cf8">operator()</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>term</declname>
+        </param>
+        <briefdescription>
+<para>Do we want this term in the <ref refid="classXapian_1_1ESet" kindref="compound">ESet</ref>? </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xapiandev/letor/xapian-core/include/xapian/expanddecider.h" line="62"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classXapian_1_1ExpandDecider" kindref="compound">ExpandDecider</ref> subclass which rejects terms using two ExpandDeciders. </para>    </briefdescription>
+    <detaileddescription>
+<para>Terms are only accepted if they are accepted by both of the specified <ref refid="classXapian_1_1ExpandDecider" kindref="compound">ExpandDecider</ref> objects. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="440">
+        <label>Xapian::ExpandDecider</label>
+        <link refid="classXapian_1_1ExpandDecider"/>
+      </node>
+      <node id="439">
+        <label>Xapian::ExpandDeciderAnd</label>
+        <link refid="classXapian_1_1ExpandDeciderAnd"/>
+        <childnode refid="440" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="442">
+        <label>Xapian::ExpandDecider</label>
+        <link refid="classXapian_1_1ExpandDecider"/>
+      </node>
+      <node id="441">
+        <label>Xapian::ExpandDeciderAnd</label>
+        <link refid="classXapian_1_1ExpandDeciderAnd"/>
+        <childnode refid="442" relation="public-inheritance">
+        </childnode>
+        <childnode refid="442" relation="usage">
+          <edgelabel>second</edgelabel>
+          <edgelabel>first</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/xapiandev/letor/xapian-core/include/xapian/expanddecider.h" line="46" bodyfile="/home/xapiandev/letor/xapian-core/include/xapian/expanddecider.h" bodystart="46" bodyend="63"/>
+    <listofallmembers>
+      <member refid="classXapian_1_1ExpandDeciderAnd_19d63accdfda0448b2c2cb6bd1d3de433" prot="public" virt="non-virtual"><scope>Xapian::ExpandDeciderAnd</scope><name>ExpandDeciderAnd</name></member>
+      <member refid="classXapian_1_1ExpandDeciderAnd_15c54b7d99e1e31528eae8054d94df43b" prot="public" virt="non-virtual"><scope>Xapian::ExpandDeciderAnd</scope><name>ExpandDeciderAnd</name></member>
+      <member refid="classXapian_1_1ExpandDeciderAnd_17ea527d305a30c68b2531cfc9d2aad29" prot="private" virt="non-virtual"><scope>Xapian::ExpandDeciderAnd</scope><name>first</name></member>
+      <member refid="classXapian_1_1ExpandDeciderAnd_1c10c6b84ff534553b3b9e520f6c0ea29" prot="public" virt="virtual"><scope>Xapian::ExpandDeciderAnd</scope><name>operator()</name></member>
+      <member refid="classXapian_1_1ExpandDeciderAnd_14cdf42f59914151d557c59037a9ad3d6" prot="private" virt="non-virtual"><scope>Xapian::ExpandDeciderAnd</scope><name>second</name></member>
+      <member refid="classXapian_1_1ExpandDecider_1c0a1002daa165553770b71abf23348be" prot="public" virt="virtual"><scope>Xapian::ExpandDeciderAnd</scope><name>~ExpandDecider</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
